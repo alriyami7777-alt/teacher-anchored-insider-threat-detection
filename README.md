@@ -1,4 +1,4 @@
-# Teacher-Anchored Differentiable Sequence–Ensemble Learning for Insider Threat Detection
+﻿# Teacher-Anchored Differentiable Sequenceâ€“Ensemble Learning for Insider Threat Detection
 
 This repository is a compact research and reproducibility companion for a PhD study on insider threat detection in enterprise activity logs. It is deliberately separated from the full experimental workspace.
 
@@ -17,7 +17,7 @@ It does **not** distribute CERT datasets, answer files, user identifiers, model 
 | Research objective | Repository area | Chapter 3 phase |
 |---|---|---|
 | Objective 1: develop time-aware preprocessing that preserves inactivity and behavioural chronology | `src/preprocessing`, `protocols/objective1_*` | Phase 1: data preparation and temporal representation |
-| Objective 2: develop and evaluate a unified differentiable sequence–ensemble architecture | `src/models`, `src/training`, `src/evaluation`, `protocols/objective2_*` | Phase 2: model development and comparative evaluation |
+| Objective 2: develop and evaluate a unified differentiable sequenceâ€“ensemble architecture | `src/models`, `src/training`, `src/evaluation`, `protocols/objective2_*` | Phase 2: model development and comparative evaluation |
 | Objective 3: assess explanation evidence and robustness under controlled conditions | `src/explainability`, `src/robustness`, `protocols/objective3_*` | Phase 3: explainability and robustness assessment |
 
 ## Architecture
@@ -40,10 +40,10 @@ Teacher anchoring is used during training. The student model remains independent
 - CERT r4.2 feasibility and architecture-development experiments.
 - CERT r5.2 one-pass independent testing for eligible baselines and the frozen-encoder ODST comparator.
 - CERT r5.2 teacher-anchored train/validation reproducibility across seeds 42, 52, and 62.
-- Same-information attention–linear and ODST comparisons.
+- Same-information attentionâ€“linear and ODST comparisons.
 - Explanation and degraded-input portability analyses on CERT r5.2, with documented limitations.
 - ODST component-latency and reduced-tree viability audits.
-- CERT r6.2 model-free readiness and provenance audit through Stage 1F.
+- CERT r6.2 model-free readiness, provenance, ground-truth package audit, exact-matching strategy, and Stage 2B-1A logon matching.
 
 ### Qualified findings
 
@@ -60,14 +60,14 @@ Teacher anchoring is used during training. The student model remains independent
 
 ## Repository map
 
-- `STATUS.md` — current evidence classification.
-- `REPRODUCIBILITY.md` — reproducibility requirements.
-- `DATA_AVAILABILITY.md` — dataset restrictions and expected local layout.
-- `KNOWN_LIMITATIONS.md` — protocol and interpretation limits.
-- `protocols/` — objective-linked experimental protocols.
-- `manifests/` — experiment registry and result provenance.
-- `results/tables/` — compact manuscript-facing result tables.
-- `src/` and `scripts/` — reviewed implementation only.
+- `STATUS.md` â€” current evidence classification.
+- `REPRODUCIBILITY.md` â€” reproducibility requirements.
+- `DATA_AVAILABILITY.md` â€” dataset restrictions and expected local layout.
+- `KNOWN_LIMITATIONS.md` â€” protocol and interpretation limits.
+- `protocols/` â€” objective-linked experimental protocols.
+- `manifests/` â€” experiment registry and result provenance.
+- `results/tables/` â€” compact manuscript-facing result tables.
+- `src/` and `scripts/` â€” reviewed implementation only.
 
 ## Important interpretation rule
 
@@ -80,3 +80,4 @@ See `SETUP_WINDOWS.md`.
 ## Licence
 
 The initial repository uses a temporary all-rights-reserved notice. A public open-source licence should be selected only after the code and data-sharing position have been reviewed.
+

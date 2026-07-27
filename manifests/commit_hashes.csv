@@ -4,4 +4,5 @@ teacher-anchored reproducibility,objective2-r52-teacher-anchored-reproducibility
 same-information comparison,objective2-r52-same-information-baselines,b1689a9,completed,20 x 13 comparison
 component latency audit,objective2-r52-component-latency-audit,f5f3ca1,completed,
 r5.2 explanation and robustness portability,objective3-r52-explanation-robustness-portability,4017a4b,completed_with_limits,
-r6.2 model-free warm-up,objective1-r62-model-free-warmup,77b954d,completed_through_stage1f,No model evaluation
+r6.2 model-free warm-up,objective1-r62-model-free-warmup,330ac6a,completed_through_stage2b1a,No model evaluation
+

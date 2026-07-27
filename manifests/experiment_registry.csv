@@ -6,6 +6,7 @@ same_information_r52,2,Phase 2,CERT r5.2,train/validation,completed,objective2-r
 odst_8tree_seed42,2,Phase 2,CERT r5.2,validation,failed_viability,objective2-r52-odst-8tree-ablation,49b9226,"Prediction and fidelity checks passed, but inference was 7.4% slower than the 16-tree candidate; seeds 52 and 62 not run."
 component_latency_audit,2,Phase 2,CERT r5.2,device-resident inference audit,completed,objective2-r52-component-latency-audit,f5f3ca1,ODST accounted for approximately 72-73% of inference time under the audited implementation.
 r52_explanation_robustness_portability,3,Phase 3,CERT r5.2,validation portability,completed_with_limits,objective3-r52-explanation-robustness-portability,4017a4b,"Reference-centred ODST faithfulness, attention fidelity, controlled robustness, and dataset-specific differences."
-r62_model_free_warmup_stage1f,1,Phase 1,CERT r6.2,model-free readiness audit,completed_through_stage1f,objective1-r62-model-free-warmup,77b954d,Metadata and streaming readiness audit only; no model-performance claim.
+r62_model_free_matching_stage2b1a,1,Phase 1,CERT r6.2,model-free readiness audit,completed_through_stage2b1a,objective1-r62-model-free-warmup,330ac6a,Model-free readiness, ground-truth audit, exact-matching strategy, and Stage 2B-1A logon matching; no model-performance claim.
 final_student_independent_evaluation,2,Phase 2,to be locked,independent test,planned,,,Must be completed before a final independent-performance conclusion.
 r62_preregistered_stress_test,2 and 3,Phases 2 and 3,CERT r6.2,reserved stress test,planned,,,Major implementation and GPU experiments prioritised after return to Malaysia.
+
