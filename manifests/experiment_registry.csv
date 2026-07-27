@@ -1,0 +1,11 @@
+﻿experiment_id,objective,chapter3_phase,dataset,split_scope,status,branch,commit,evidence_note
+objective1_r42_time_aware_sequences,1,Phase 1,CERT r4.2,development,completed,main/history,,"Dense daily timelines, inactive days retained, 20-day stride-one sequences, chronological boundaries."
+r52_one_pass_test,2,Phase 2,CERT r5.2,independent test,completed_with_scope_limit,objective2-r52-locked-baselines,563f498,Applies to eligible baselines and frozen-encoder ODST comparator; not the final teacher-anchored student.
+teacher_anchored_r52_reproducibility,2,Phase 2,CERT r5.2,train/validation,completed,objective2-r52-teacher-anchored-reproducibility,5109e38,"Seeds 42, 52, and 62. Supports stabilisation and reproducibility."
+same_information_r52,2,Phase 2,CERT r5.2,train/validation,completed,objective2-r52-same-information-baselines,b1689a9,Attention-linear and ODST compared using identical 20 x 13 inputs.
+odst_8tree_seed42,2,Phase 2,CERT r5.2,validation,failed_viability,objective2-r52-odst-8tree-ablation,49b9226,"Prediction and fidelity checks passed, but inference was 7.4% slower than the 16-tree candidate; seeds 52 and 62 not run."
+component_latency_audit,2,Phase 2,CERT r5.2,device-resident inference audit,completed,objective2-r52-component-latency-audit,f5f3ca1,ODST accounted for approximately 72-73% of inference time under the audited implementation.
+r52_explanation_robustness_portability,3,Phase 3,CERT r5.2,validation portability,completed_with_limits,objective3-r52-explanation-robustness-portability,4017a4b,"Reference-centred ODST faithfulness, attention fidelity, controlled robustness, and dataset-specific differences."
+r62_model_free_warmup_stage1f,1,Phase 1,CERT r6.2,model-free readiness audit,completed_through_stage1f,objective1-r62-model-free-warmup,77b954d,Metadata and streaming readiness audit only; no model-performance claim.
+final_student_independent_evaluation,2,Phase 2,to be locked,independent test,planned,,,Must be completed before a final independent-performance conclusion.
+r62_preregistered_stress_test,2 and 3,Phases 2 and 3,CERT r6.2,reserved stress test,planned,,,Major implementation and GPU experiments prioritised after return to Malaysia.

@@ -1,0 +1,7 @@
+﻿component,branch,commit,status,notes
+r5.2 locked baselines,objective2-r52-locked-baselines,563f498,completed,One-pass test and reporting package
+teacher-anchored reproducibility,objective2-r52-teacher-anchored-reproducibility,5109e38,completed,"Seeds 42, 52, and 62"
+same-information comparison,objective2-r52-same-information-baselines,b1689a9,completed,20 x 13 comparison
+component latency audit,objective2-r52-component-latency-audit,f5f3ca1,completed,
+r5.2 explanation and robustness portability,objective3-r52-explanation-robustness-portability,4017a4b,completed_with_limits,
+r6.2 model-free warm-up,objective1-r62-model-free-warmup,77b954d,completed_through_stage1f,No model evaluation

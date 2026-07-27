@@ -1,0 +1,6 @@
+# Add reviewed, pinned package versions only after environment export and validation.
+# Example:
+# numpy==<validated-version>
+# pandas==<validated-version>
+# scikit-learn==<validated-version>
+# torch==<validated-version>
