@@ -1,0 +1,171 @@
+\documentclass{ieeeaccess}
+% -----------------------------------------------------------------------------
+% Packages
+% -----------------------------------------------------------------------------
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{bm}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[hyphens]{url}
+\usepackage{placeins}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{seqsplit}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\usepackage{stfloats}  
+\usepackage{flafter}
+% -----------------------------------------------------------------------------
+% Float-placement settings
+%
+% These settings allow LaTeX to place tables and figures more flexibly
+% while retaining the IEEE two-column layout.
+% -----------------------------------------------------------------------------
+\setcounter{topnumber}{4}
+\setcounter{bottomnumber}{3}
+\setcounter{totalnumber}{6}
+\setcounter{dbltopnumber}{3}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.85}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.80}
+\renewcommand{\dbltopfraction}{0.95}
+\renewcommand{\dblfloatpagefraction}{0.80}
+% -----------------------------------------------------------------------------
+% Bold mathematics configuration required by the IEEE Access template
+% -----------------------------------------------------------------------------
+\makeatletter
+\AtBeginDocument{%
+    \DeclareMathVersion{bold}
+    \SetSymbolFont{operators}{bold}{T1}{times}{b}{n}
+    \SetSymbolFont{NewLetters}{bold}{T1}{times}{b}{it}
+    \SetMathAlphabet{\mathrm}{bold}{T1}{times}{b}{n}
+    \SetMathAlphabet{\mathit}{bold}{T1}{times}{b}{it}
+    \SetMathAlphabet{\mathbf}{bold}{T1}{times}{b}{n}
+    \SetMathAlphabet{\mathtt}{bold}{OT1}{pcr}{b}{n}
+    \SetSymbolFont{symbols}{bold}{OMS}{cmsy}{b}{n}
+    \renewcommand\boldmath{\@nomath\boldmath\mathversion{bold}}
+}
+\makeatother
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+% -----------------------------------------------------------------------------
+% Hyperlinked citations, cross-references, and URLs.
+% Loaded LAST (after cite) so citation numbers link to the reference list.
+% -----------------------------------------------------------------------------
+\usepackage[
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    linktoc=all,
+    pdftitle={Teacher-Anchored Differentiable Sequence-Ensemble Learning for Explainable Insider Threat Detection},
+    pdfauthor={Qasim Mohamed Muhanna Alriyami and Mohd Murtadha Bin Mohamad}
+]{hyperref}
+% -----------------------------------------------------------------------------
+% Document
+% -----------------------------------------------------------------------------
+\begin{document}
+% -----------------------------------------------------------------------------
+% Publisher metadata placeholders
+% -----------------------------------------------------------------------------
+\history{
+Date of publication xxxx 00, 0000,
+date of current version xxxx 00, 0000.
+}
+\doi{10.1109/ACCESS.2026.XXXXXXX}
+% -----------------------------------------------------------------------------
+% Title and authors
+% -----------------------------------------------------------------------------
+\title{
+Teacher-Anchored Differentiable Sequence--Ensemble Learning for
+Explainable Insider Threat Detection
+}
+\author{
+\uppercase{Qasim Mohamed Muhanna Alriyami}\authorrefmark{1},
+AND
+\uppercase{Mohd Murtadha Bin Mohamad}\authorrefmark{1},
+\IEEEmembership{Member, IEEE}
+}
+\address[1]{
+Faculty of Computing,
+Universiti Teknologi Malaysia,
+81310 Johor Bahru, Johor, Malaysia
+}
+\markboth
+{Alriyami and Mohamad:
+Teacher-Anchored Sequence--Ensemble Learning for Insider Threat Detection}
+{Alriyami and Mohamad:
+Teacher-Anchored Sequence--Ensemble Learning for Insider Threat Detection}
+\corresp{
+Corresponding author: Qasim Mohamed Muhanna Alriyami\\
+(e-mail: mohamedmuhanna@graduate.utm.my).
+}
+% -----------------------------------------------------------------------------
+% Abstract
+% -----------------------------------------------------------------------------
+\begin{abstract}
+Insider threat detection is difficult because authorised users can hide harmful
+actions within routine activity. The malicious behaviour also tends to build up
+gradually, across days rather than in a single event. This work evaluates a
+temporal sequence--ensemble architecture for the task. A bidirectional long
+short-term memory (Bi-LSTM) encoder with temporal attention feeds an oblivious
+differentiable sparsemax tree (ODST) classification head. Training uses
+teacher-anchored logit-and-route regularisation. During training, a frozen
+teacher of the same architecture constrains the student's prediction logits and
+its ODST routing; the teacher is then discarded at inference. We developed the
+architecture on CERT r4.2 and validated it on CERT r5.2. Across three
+predefined seeds, the trained students reached a PR-AUC of about 0.93 and
+closely reproduced their frozen teachers. Under identical inputs, they matched
+an attention--linear baseline, at a mean PR-AUC of 0.931. Order-reversal,
+shuffling, and partial-history experiments show that the models rely on
+chronological order and accumulated behavioural history, not on input volume
+alone. On a cohort whose malicious activity spanned multiple days, ODST held a
+statistically supported PR-AUC advantage over Random Forest. The ODST head is
+also interpretable by construction: it exposes the trees, routes, and leaves
+behind each decision. Its reference-centred contribution rankings passed
+top-versus-random ablation at \(k=3,5,10\) across all seeds, which confirms that
+the highlighted components are faithful rather than incidental. The architecture
+therefore pairs competitive accuracy with a decision head that can be audited
+directly.
+\end{abstract}
+% -----------------------------------------------------------------------------
+% Keywords
+% -----------------------------------------------------------------------------
+\begin{keywords}
+Attention mechanism,
+behavioural analytics,
+bidirectional long short-term memory,
+differentiable tree ensemble,
+explainable artificial intelligence,
+insider threat detection,
+oblivious differentiable sparsemax tree,
+teacher-anchored learning,
+temporal sequence modelling.
+\end{keywords}
+\titlepgskip=-21pt
+\maketitle
+% -----------------------------------------------------------------------------
+% Main manuscript sections
+% -----------------------------------------------------------------------------
+\input{01_introduction}
+\input{02_related_work}
+\input{03_methodology}
+\input{04_experimental_results}
+% Prevent unresolved Results floats from entering the Discussion.
+% Do not place FloatBarrier repeatedly inside the Results subsections.
+\FloatBarrier
+\input{05_discussion}
+% Prevent the Discussion table and figures from entering the Conclusion.
+\FloatBarrier
+\input{06_conclusion}
+% Prevent any remaining manuscript floats from entering the references
+% and author biographies.
+\FloatBarrier
+\input{07_back_matter}
+\end{document}

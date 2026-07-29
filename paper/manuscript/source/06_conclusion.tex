@@ -1,0 +1,54 @@
+% -----------------------------------------------------------------------------
+% Conclusion
+% -----------------------------------------------------------------------------
+\section{Conclusion}
+\label{sec:conclusion}
+This study developed and evaluated a chronological sequence--ensemble
+architecture for insider threat detection on the synthetic CERT benchmarks.
+The leakage-checked representation kept inactive days and preserved
+chronological partition boundaries, and the temporal experiments confirmed
+that both the order of activity and the accumulated behavioural history
+contributed to prediction.
+
+\smallskip
+Teacher-anchored logit-and-route regularisation gave stable end-to-end
+optimisation of the bidirectional long short-term memory
+(Bi-LSTM)--attention--oblivious differentiable sparsemax tree (ODST) student
+across all three CERT r5.2 seeds. The students closely matched their frozen
+teachers, supporting reproducibility, and the teacher was removed at
+inference.
+
+\smallskip
+Under matched input content, ODST and attention--linear both reached a mean
+PR-AUC of 0.931. Attention--linear was the stronger efficiency and
+raw-calibration reference, while ODST added faithful reference-centred
+tree-contribution evidence with traceable routes and leaves. Random Forest
+and Extreme Gradient Boosting remained strong engineered-tabular references.
+The explanation faithfulness transferred across CERT versions, grouped
+temperature scaling improved probability calibration, and component
+profiling identified the ODST head as the main target for runtime
+optimisation.
+
+\smallskip
+Future work will extend the evaluation to CERT r6.2 once its metadata,
+ground truth, feature interface, and temporal partition have been audited
+and frozen, and will examine causal sequence encoders, source- and
+noise-aware training, runtime optimisation, and human evaluation of the
+explanation evidence.
+
+\section*{Data Availability}
+The CERT r4.2 and r5.2 insider-threat datasets used in this study are publicly
+available from the Carnegie Mellon University CERT Division insider-threat
+test dataset~\cite{GlasserLindauer2013} and are not redistributed here. The
+derived artifacts required to reproduce the reported results---the
+sequence-construction configuration, dataset manifests, and the SHA-256 hashes
+of the frozen tensors---are provided in the code repository listed below; the
+raw CERT data must be obtained separately from the original source under its
+own licence.
+
+\section*{Code Availability}
+The source code for data preparation, teacher-anchored training, evaluation,
+and the explanation analyses is available at
+\url{https://github.com/alriyami7777-alt/teacher-anchored-insider-threat-detection}.
+The repository includes the fixed seeds, validation-selected thresholds, and
+manifests needed to reproduce the results reported in this paper.

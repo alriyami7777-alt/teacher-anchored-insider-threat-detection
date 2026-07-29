@@ -1,0 +1,14 @@
+# Keep text files stable across platforms for reproducible hashes.
+* text=auto eol=lf
+
+# Binary manuscript artefacts
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary
+*.npz binary
+*.npy binary
+*.pt binary
+*.pth binary

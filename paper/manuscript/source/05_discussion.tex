@@ -1,0 +1,197 @@
+% -----------------------------------------------------------------------------
+% Discussion
+% -----------------------------------------------------------------------------
+\section{Discussion}
+\label{sec:discussion}
+The three research questions posed in Section~\ref{sec:introduction} can now
+be answered directly. For RQ1, under matched input content the sequence
+models (ODST and attention--linear) matched or exceeded the flattened
+references. The order-perturbation and partial-history experiments
+showed that the frozen sequence models rely on both chronological order and
+accumulated behavioural history rather than input volume alone. For RQ2,
+teacher-anchored logit-and-route regularisation produced reproducible
+end-to-end student optimisation across the three predefined r5.2 seeds, with
+students closely matching their frozen teachers and limited prediction and
+routing drift. For RQ3, the architecture provided faithful reference-centred
+tree-contribution evidence, improved probability calibration through grouped
+temperature scaling, an interpretable alert-consolidation view, a
+component-level latency profile identifying the ODST head as the runtime
+target, and reproducible degraded-input sensitivity references. The
+following subsections examine each in turn.
+
+\subsection{Temporal Representation and Predictive Position}
+\label{subsec:discussion_temporal}
+The chronological representation preserved inactive days and prevented
+sequence windows from crossing partition boundaries. It also retained the order
+and duration of behavioural activity. The order-perturbation and
+partial-history experiments confirmed that both chronological arrangement
+and accumulated context contributed to prediction. Performance increased
+as the available history expanded from one to 20 days, while reversing or
+shuffling the same daily observations reduced discrimination. The value of
+the representation therefore arises from temporal structure rather than
+from window size alone.
+
+\smallskip
+The same-information comparison further separated temporal representation
+from input quantity. The oblivious differentiable sparsemax tree (ODST) and
+attention--linear models both achieved a mean average precision (AP),
+reported as PR-AUC, of 0.931, with F1-scores of 0.910 and 0.908. Sequence
+models also achieved metric-specific advantages over several flattened
+references. These results position the bidirectional long short-term memory
+(Bi-LSTM)--attention pathway as the principal source of temporal predictive
+value.
+
+\smallskip
+The multi-day cohort provided complementary evidence for sequences
+containing verified malicious activity on more than one day. ODST remained
+competitive across the evaluated models, with a supported cohort PR-AUC
+advantage over Random Forest (RF). This result strengthens the case for
+preserving distributed behavioural context without converting the cohort
+into a universal definition of low-and-slow activity.
+
+\smallskip
+Strong RF and Extreme Gradient Boosting (XGBoost) results are scientifically
+expected when behavioural records have already been converted into
+structured tabular inputs. Grinsztajn, Oyallon, and Varoquaux showed that
+tree ensembles remain demanding references on typical tabular data
+\cite{Grinsztajn2022}. Their benchmark used balanced classification and
+excluded stream-like and time-series tasks, so it provides useful context
+for the baselines rather than a direct prediction of CERT performance.
+
+\subsection{Teacher-Anchored End-to-End Optimisation}
+\label{subsec:discussion_teacher_anchoring}
+The architectural development progressively identified routing stability as
+the central optimisation requirement. The original differentiable forest
+established a shared gradient pathway through the temporal encoder,
+attention mechanism, and tree classifier. Subsequent diagnostics showed that
+unrestricted joint updates could preserve useful temporal representations
+while concentrating ODST routes and leaves.
+
+\smallskip
+Teacher anchoring addressed this requirement by using stable prediction and
+routing references during student optimisation. The complete
+Bi-LSTM--attention--ODST student remained trainable, while the teacher was
+removed after training. The locked procedure reproduced across CERT r5.2
+seeds 42, 52, and 62. Student PR-AUC values closely matched their frozen
+teachers, with a mean student-minus-teacher difference of approximately
+\(+0.00043\), interpreted as predictive non-degradation rather than
+improvement.
+
+\smallskip
+The importance of this result lies in reproducibility and end-to-end
+viability across the three predefined r5.2 seeds, not in cross-version
+transfer: teacher-anchored training was performed only on r5.2, and no
+equivalent teacher-anchored procedure was run on r4.2. The student preserved
+the functional behaviour of the frozen model while permitting genuine
+updates to the encoder, attention mechanism, and ODST head. Teacher
+anchoring therefore provides the optimisation contribution of the study
+rather than a mechanism for producing a large score increase.
+
+\subsection{Structured Explanation, Calibration, and Alert Interpretation}
+\label{subsec:discussion_explanations}
+The two differentiable heads serve complementary roles. Attention--linear
+provides an efficient neural reference and strong raw probability
+calibration. ODST provides a structured decision layer that exposes feature
+selection over the learned representation, route probabilities, reached
+leaves, individual tree outputs, and tree-level contributions.
+
+\smallskip
+Reference-centred ODST contributions reconstructed the model readout
+exactly. Top-tree ablation exceeded matched random-tree ablation across all
+three final CERT r5.2 seeds at \(k=3\), \(5\), and \(10\). This supports the
+faithfulness of the reference-centred tree-contribution rankings under the
+defined intervention; routes and reached leaves remain traceable internal
+outputs rather than independently validated attribution levels. Ranking by
+raw absolute tree output, together with centred ranking against the median
+training reference, is retained separately as a sensitivity result, while
+the disclosed post-hoc test analysis provides corroboration rather than
+primary evidence.
+
+\smallskip
+The explanation procedure also transferred from CERT r4.2 to r5.2.
+Reference-centred faithfulness remained consistent, while the most
+influential original features and source channels varied by dataset. This
+is an appropriate portability result: the explanation mechanism transferred
+without assuming that different CERT versions must contain identical
+behavioural patterns.
+
+\smallskip
+Grouped out-of-fold temperature scaling substantially improved ODST
+probability quality. For seed 42, the Brier score improved from 0.175 to
+0.004 and expected calibration error from 0.413 to 0.005. Ranking remained
+exact within each fold, although fold-specific temperatures limit direct
+comparison of globally combined out-of-fold ranks.
+
+\smallskip
+Alert consolidation provided an operational view of the overlapping
+sequence outputs. The 661 seed-42 sequence alerts represented 36 users and
+42 one-day-gap analytical episodes. ODST and attention--linear remained
+close at the predefined alert budgets, showing that the predictive
+near-parity also extended to the evaluated alert-volume conditions.
+Episodes are interpreted as temporal analytical groups rather than as
+independently verified incidents.
+
+\subsection{Computational and Degraded-Input Evidence}
+\label{subsec:discussion_efficiency}
+The component audit localised the main inference cost to the ODST head,
+which accounted for approximately 72--73\% of device-resident latency. The
+eight-tree study halved the head parameter count while preserving PR-AUC,
+F1-score, and reference-centred faithfulness. Its batch-32 latency was
+nevertheless 7.4\% higher than that of the protected 16-tree model. The
+smaller head therefore demonstrated removable parameter capacity but did
+not satisfy the predefined runtime objective.
+
+\smallskip
+This result gives a clear engineering direction. Further efficiency work
+should focus on ODST execution, including sparse selection, routing, leaf
+evaluation, and kernel organisation, rather than assuming that reducing
+tree count will automatically reduce latency.
+
+\smallskip
+Controlled source ablation and Gaussian noise provided a separate account
+of model dependency. Source effects were measurable across CERT versions,
+although their ordering varied with the dataset. Continuous noise produced
+dose-dependent PR-AUC degradation, while route and leaf assignments remained
+stable under low noise for cases whose predicted class was unchanged.
+
+\smallskip
+These experiments establish reproducible targets for data-quality controls
+and future hardening. They are controlled degraded-input studies rather
+than evaluations of adversarial evasion or training-time poisoning.
+
+\subsection{Overall Contribution and Scope}
+\label{subsec:discussion_contribution}
+The study makes four connected contributions, matching those introduced in
+Section~\ref{sec:introduction}. It establishes the predictive value of
+chronology and accumulated behavioural history; demonstrates stable
+teacher-anchored end-to-end optimisation, reproducible across three
+predefined r5.2 seeds; compares sequence and flattened models using equal
+information; and provides an intervention-based evaluation of
+reference-centred ODST tree-contribution faithfulness, complemented by
+traceable route and leaf outputs, probability-calibration analysis, alert
+consolidation, component-level latency profiling, and controlled
+degraded-input analysis.
+
+\smallskip
+The resulting component-level interpretation is clear. Bi-LSTM--attention
+provides the principal temporal predictive contribution. Teacher anchoring
+provides the optimisation and within-dataset reproducibility contribution.
+ODST serves as an explanation-oriented differentiable head.
+Attention--linear remains the efficiency- and raw-calibration-oriented
+neural reference, while RF and XGBoost remain demanding engineered-tabular
+comparators.
+
+\smallskip
+The evidence is based on synthetic CERT benchmark activity rather than live
+organisational deployment. The bidirectional encoder supports completed
+behavioural windows, and overlapping sequence alerts are not independent
+incidents. Human-analyst usefulness, live deployment, adversarial evasion,
+and training-time poisoning were not evaluated.
+
+\smallskip
+The next bounded study is a CERT r6.2 metadata, ground-truth,
+feature-interface, and temporal-partition feasibility audit without model
+training or inference. A later extreme-rarity experiment should proceed only
+after a defensible partition has been reviewed and frozen. This preserves
+the completed evidence while extending the research through a controlled
+cross-version study.

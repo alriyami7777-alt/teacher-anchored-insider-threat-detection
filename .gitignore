@@ -58,3 +58,15 @@ desktop.ini
 *.bak
 *.log
 ~$*
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+paper/manuscript/source/*.pfb
+paper/manuscript/source/*.tfm
+paper/manuscript/source/*.map
+paper/manuscript/source/*.fd

@@ -1,0 +1,160 @@
+% -----------------------------------------------------------------------------
+% Introduction
+% -----------------------------------------------------------------------------
+\section{Introduction}
+\label{sec:introduction}
+\PARstart{I}{nsider} threats are hard to detect because authorised users
+can misuse legitimate access without immediately standing out from normal
+organisational activity. Such misuse may expose sensitive information,
+disrupt operations, or weaken organisational trust. It can also build up
+gradually through small changes in logon, file, communication, web, or
+removable-media behaviour that look harmless on their own
+\cite{AlzaabiMehmood2024,AlketbiMehmood2025}. The significance of these
+changes often becomes visible only once related actions are examined
+together over time \cite{Eshmawi2026,Pal2023}.
+
+\smallskip
+Insider-threat activity records are heterogeneous, high-dimensional, and
+severely imbalanced: normal behaviour accounts for almost all observations,
+and malicious activity forms only a small minority
+\cite{AlShehariAlsowail2023,YuanWu2021}. Millions of events must be
+transformed into manageable behavioural representations without discarding
+inactive periods, chronological order, or gradual transitions
+\cite{LeZincirHeywood2021,Alshehri2022,Xiao2024}. Accuracy alone can hide
+poor rare-class detection, so evaluation should emphasise PR-AUC, precision,
+recall, F1-score, false positives, false negatives, and the resulting alert
+burden.
+
+\smallskip
+Random Forest (RF) and Extreme Gradient Boosting (XGBoost) remain strong
+references once behaviour has been converted into engineered tabular
+features. Grinsztajn, Oyallon, and Varoquaux showed that tree ensembles
+remain competitive with deep neural models on typical tabular datasets
+\cite{Grinsztajn2022}. Their benchmark did not cover the stream-like,
+chronological, and extremely imbalanced conditions studied here, so it
+supports including demanding tree baselines without predicting their
+performance on chronological insider-threat data.
+
+\smallskip
+Bidirectional long short-term memory (Bi-LSTM) networks can capture
+relationships across ordered observations, and attention mechanisms
+aggregate evidence across a behavioural window \cite{YuanWu2021,Song2024}.
+Existing security studies often combine representation learning,
+augmentation, temporal analysis, and classification through separately
+trained or sequential stages \cite{He2024,Gayathri2024}. Such modular
+pipelines join complementary strengths, but they do not provide a single
+gradient pathway from the final classification objective through both the
+temporal representation and the downstream decision mechanism. A
+differentiable classifier head permits that shared pathway, which raises a
+more specific question: can the temporal encoder and the differentiable
+decision mechanism be updated jointly without destabilising useful
+prediction and routing behaviour?
+
+\smallskip
+Teacher--student learning offers another route to stable optimisation. In
+knowledge distillation, a trained teacher supplies prediction information
+that complements supervision from the true labels
+\cite{Hinton2015Distillation,Gou2021KDSurvey}, and the student need not be
+smaller than the teacher \cite{Furlanello2018BornAgain}. Security studies
+have used teacher guidance for privacy-preserving knowledge transfer,
+lightweight intrusion detection, and anomalous user-activity analysis
+\cite{Shafee2020Mimic,Hsu2023TeacherStudent,Umair2025KDIDS}. Their principal
+purposes were prediction transfer, multi-label learning, privacy, or
+compression. The reviewed studies do not directly evaluate the preservation
+of differentiable tree-routing behaviour while a same-architecture temporal
+student is optimised jointly.
+
+\smallskip
+The reviewed literature does not establish a controlled procedure for
+updating a temporal differentiable-tree model end-to-end while constraining
+drift in its prediction logits and its ODST route probabilities relative to
+a frozen same-architecture reference. It also leaves open whether the
+resulting tree-contribution rankings remain meaningfully connected to the
+model's prediction function under explicit intervention. This paper
+therefore targets optimisation stability and intervention-tested explanation
+faithfulness for rare, chronologically ordered insider-threat sequences,
+rather than predictive superiority.
+
+\smallskip
+We use a frozen, same-architecture teacher to guide the joint optimisation
+of a temporal sequence--ensemble student. The student combines a Bi-LSTM
+encoder, temporal attention, and an oblivious differentiable sparsemax tree
+(ODST) head. It is initialised from the teacher and trained on the true
+labels together with logit- and route-consistency losses. The logit term
+penalises deviation from the teacher's detached prediction logits, and the
+route term penalises deviation from its detached ODST routing probabilities;
+we call this procedure teacher-anchored logit-and-route regularisation. Its
+aim is not to raise predictive performance beyond the teacher, but to let
+every trainable component of the student update while its prediction-logit
+and routing drift are constrained. The teacher is used only during training
+and removed at inference, so it serves as an optimisation reference rather
+than an inference component or a model-compression mechanism.
+
+\smallskip
+The study addresses three research questions:
+\begin{enumerate}
+    \item[\textbf{RQ1:}] Under the same input content, what predictive
+    differences arise between sequence-specific and fixed-position
+    flattened models, and how do chronological order and available
+    behavioural history affect trained sequence models evaluated without
+    retraining?
+    \item[\textbf{RQ2:}] Can teacher-anchored logit-and-route
+    regularisation permit reproducible end-to-end student updates while
+    retaining teacher-level validation performance and limiting
+    prediction-logit and ODST-routing drift across predefined random seeds?
+    \item[\textbf{RQ3:}] What evidence does the resulting architecture
+    provide concerning explanation faithfulness, probability calibration,
+    alert burden, computational cost, and controlled degraded-input
+    sensitivity?
+\end{enumerate}
+
+\smallskip
+The experimental design separates development, reference-model testing,
+teacher-anchored validation, sensitivity, and post-hoc evidence. Synthetic
+Carnegie Mellon University Computer Emergency Response Team (CERT) r4.2
+supports representation development, routing diagnosis, explanation
+development, and controlled degraded-input analysis. A predefined one-pass
+CERT r5.2 test evaluates the RF, XGBoost, attention--linear, and
+frozen-encoder ODST reference families, whereas the final teacher-anchored
+students are evaluated separately on the CERT r5.2 train/validation split.
+Because that test partition had already been accessed for the reference
+models, any later final-student analysis on it would constitute post-hoc
+corroboration rather than independent test evidence. Full protocol details,
+including the same-user partition structure and predefined viability
+margins, are given in Section~\ref{sec:methodology}.
+
+\smallskip
+Beyond this core comparison, the paper reports four further analyses: a
+same-input-content comparison of sequence-specific and flattened
+representations; controlled reversal, shuffling, and partial-history
+interventions that probe dependence on chronological order; a multi-day
+malicious-activity cohort; and a reference-centred faithfulness evaluation
+of ODST tree contributions. The corresponding predictive, intervention, and
+sensitivity results appear in Section~\ref{sec:experimental_results}. Their
+combined interpretation is component-specific: Bi-LSTM--attention provides
+the principal temporal representation pathway; teacher anchoring provides
+the stabilising optimisation procedure; ODST provides an
+explanation-oriented differentiable head with traceable route, leaf, and
+tree-level outputs; and attention--linear remains the efficiency- and
+raw-calibration-oriented neural reference.
+
+\smallskip
+The paper makes four contributions:
+\begin{itemize}
+    \item A chronological behavioural representation that retains inactive
+    days and prevents sliding windows from crossing temporal partition
+    boundaries, complemented by reversal, shuffling, and partial-history
+    interventions.
+    \item A teacher-anchored logit-and-route regularisation procedure
+    evaluated across three predefined CERT r5.2 validation seeds for
+    predictive non-degradation and routing stability during end-to-end
+    student optimisation.
+    \item A same-information comparison in which sequence-aware and
+    fixed-position flattened models receive identical input values, so the
+    model families can be compared without changing input content.
+    \item An intervention-based evaluation showing that ODST's
+    reference-centred tree-contribution rankings are faithful under the
+    defined top-versus-random replacement test; complementary analyses
+    report route and leaf traceability, probability calibration, alert
+    consolidation, latency, and controlled degraded-input sensitivity.
+\end{itemize}

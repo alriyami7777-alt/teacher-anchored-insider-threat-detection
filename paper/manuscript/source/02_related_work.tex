@@ -1,0 +1,214 @@
+% -----------------------------------------------------------------------------
+% Related Work
+% -----------------------------------------------------------------------------
+\section{Related Work}
+\label{sec:related_work}
+Research on machine-learning-based insider threat detection includes
+engineered-feature classifiers, temporal sequence models, staged security
+pipelines, teacher--student procedures, and differentiable tree
+architectures. Table~\ref{tab:related_work_positioning} positions
+representative model families according to their training relationship,
+explanation basis, and relevance to the present study. The table provides a
+focused architectural synthesis rather than an exhaustive taxonomy of
+insider-threat research.
+
+\begin{table*}[!t]
+\caption{Positioning of Representative Model Families}
+\label{tab:related_work_positioning}
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.15}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}
+{@{}>{\raggedright\arraybackslash}p{2.35cm}
+>{\raggedright\arraybackslash}p{2.70cm}
+Y
+Y
+Y@{}}
+\hline
+\textbf{Family} &
+\textbf{Representative work} &
+\textbf{Training relationship} &
+\textbf{Explanation basis} &
+\textbf{Relevance and boundary} \\
+\hline
+Engineered-feature and anomaly models &
+\cite{Grinsztajn2022,AlMhiqani2022,Jaiswal2024,LeZincirHeywood2021} &
+Trained on engineered, aggregated, or anomaly-based features. &
+Feature importance or anomaly scores. &
+Order and spacing must be encoded in the inputs. \\
+Temporal sequence and attention models &
+\cite{YuanWu2021,Song2024,Pal2023,JainWallace2019Attention,
+SerranoSmith2019Attention,WiegreffePinter2019Attention} &
+Encoder and prediction head share one gradient path. &
+Attention weights and time-step interventions. &
+Attention magnitude is not faithful input importance. \\
+Staged security pipelines &
+\cite{He2024,Gayathri2024,Ketepalli2022LSTMAE} &
+Separate stages; an encoder often feeds a separately trained classifier. &
+Per-component, rarely integrated across stages. &
+No jointly optimised sequence--differentiable-tree pathway. \\
+Teacher--student learning &
+\cite{Hinton2015Distillation,Gou2021KDSurvey,Furlanello2018BornAgain,
+Shafee2020Mimic,Hsu2023TeacherStudent,Umair2025KDIDS} &
+A teacher guides the student via outputs, representations, or soft targets. &
+Teacher--student prediction or attribution comparison. &
+Aimed at transfer, privacy, or compression, not route preservation. \\
+Differentiable tree ensembles &
+\cite{Kontschieder2015,popov2020node,Marton2024GRANDE} &
+Differentiable routing lets trees and neural layers co-train. &
+Routes, leaves, selected dimensions, and tree outputs. &
+Traceability alone does not establish faithfulness. \\
+Related structured tabular models &
+\cite{Prokhorenkova2018CatBoost,ArikPfister2021TabNet,martins2016sparsemax} &
+Oblivious boosting (CatBoost), attentive selection (TabNet), sparsemax
+transform. &
+Structured selection or feature weighting. &
+Not an end-to-end temporal ODST head. \\
+\hline
+\end{tabularx}
+\end{table*}
+
+Engineered-feature and anomaly models remain demanding references when user
+activity has already been converted into fixed or aggregated behavioural
+features \cite{AlMhiqani2022,Jaiswal2024,LeZincirHeywood2021}. As noted in
+Section~\ref{sec:introduction}, Grinsztajn et al. found tree ensembles
+highly competitive with deep neural models on typical, balanced tabular
+data \cite{Grinsztajn2022}; their benchmark excluded stream-like and
+time-series tasks, so it supports the inclusion of demanding tree
+baselines here without predicting their performance on severely imbalanced
+chronological insider-threat sequences. The limitation of engineered-feature
+models in this setting is therefore not weak classification capacity, but
+the need to represent chronology and behavioural spacing explicitly before
+or during training.
+
+\smallskip
+Temporal sequence models instead learn from ordered observations, while
+attention mechanisms aggregate evidence across behavioural intervals
+\cite{YuanWu2021,Song2024,Pal2023}. Security research also includes staged
+architectures in which separate components perform feature preparation,
+augmentation, preliminary detection, temporal analysis, or final
+classification. He et al. present a double-layer enterprise-threat
+detection framework, while Gayathri et al. use behavioural representation,
+SPCAGAN-based augmentation, and Bayesian-neural-network anomaly detection
+as successive stages \cite{He2024,Gayathri2024}. These studies demonstrate
+the value of modular security pipelines, but they do not establish the
+specific jointly optimised sequence-encoder--differentiable-tree
+relationship examined in the present work. A comparable staged pattern --
+a temporal encoder trained first, with its compressed representation then
+used to fit a separately trained, non-differentiable classifier -- appears
+in adjacent security domains: Ketepalli and Bulla train an LSTM
+autoencoder to compress network traffic features and subsequently fit a
+Random Forest classifier on the encoder's frozen output for network
+intrusion detection \cite{Ketepalli2022LSTMAE}. This confirms the pattern
+exists, but its application to insider-threat sequences specifically
+remains, to our knowledge, unestablished in the reviewed literature.
+
+\smallskip
+Deep neural decision forests introduced probabilistic routing within a
+neural computation graph \cite{Kontschieder2015}. Neural Oblivious Decision
+Ensembles (NODE) extended this principle through differentiable oblivious
+trees that can be trained end-to-end by backpropagation
+\cite{popov2020node}. In an oblivious tree, nodes at the same depth use a
+common feature-selection rule and threshold. The ODST head used in this
+study adapts this principle by applying sparsemax selection to the learned
+temporal representation, sigmoid routing around depth-wise thresholds, and
+aggregation of leaf responses across multiple trees
+\cite{popov2020node,martins2016sparsemax}. This implementation should
+therefore be interpreted as an adapted differentiable oblivious-tree head
+rather than an exact reproduction of every NODE operation.
+
+\smallskip
+Other structured tabular architectures are relevant but technically
+distinct. CatBoost uses oblivious trees within a conventional
+gradient-boosting procedure rather than as a neural classifier head
+\cite{Prokhorenkova2018CatBoost}. TabNet performs sequential attentive
+feature selection without using a tree ensemble
+\cite{ArikPfister2021TabNet}, while Gradient-Based Decision Tree Ensembles (GRANDE) provides a separate
+gradient-based decision-tree ensemble design
+\cite{Marton2024GRANDE}. These approaches motivate structured and sparse
+decision mechanisms, but are not interchangeable instances of the same
+sequence--tree architecture.
+
+\smallskip
+Teacher--student learning provides a separate basis for optimisation.
+Knowledge distillation commonly uses information from a trained teacher to
+guide a student alongside supervision from the true labels
+\cite{Hinton2015Distillation,Gou2021KDSurvey}. The student is not required
+to be smaller than the teacher. Born-Again Neural Networks demonstrated
+that a student may retain the same architecture while learning from a
+previously trained model \cite{Furlanello2018BornAgain}.
+
+\smallskip
+Teacher guidance has also been investigated in security detection. Shafee
+et al. transfer intrusion-detection knowledge from a teacher trained on
+private data to a shareable student
+\cite{Shafee2020Mimic}. Hsu et al. use multiple binary teacher classifiers
+to guide a multi-label student for anomalous user-event activity associated
+with insider threats \cite{Hsu2023TeacherStudent}. Umair et al. use
+knowledge distillation to produce a smaller intrusion-detection student and
+compare teacher and student feature attributions using SHAP
+\cite{Umair2025KDIDS}. These studies establish that teacher guidance is
+relevant to both intrusion detection and insider-threat-related
+user-activity analysis. Their principal purposes, however, concern
+knowledge transfer, privacy, multi-label learning, compression, or
+lightweight deployment.
+
+\smallskip
+The present study uses a frozen same-architecture teacher for a different
+optimisation purpose. The teacher constrains both prediction logits and
+ODST routing probabilities while the complete bidirectional long short-term
+memory (Bi-LSTM)--attention--ODST student is updated using the true labels.
+This teacher-anchored logit-and-route regularisation is intended to limit
+prediction and routing drift during end-to-end optimisation rather than to
+compress the student, generate pseudo-labels, or enable
+privacy-preserving sharing. The teacher is removed after training and does
+not form part of the inference architecture.
+
+\smallskip
+The expression \emph{teacher-anchored} has also been used for upper-layer
+alignment in language-model embedding distillation
+\cite{Dao2026TALAS}. In that formulation, the teacher's final embedding
+acts as a stationary reference for selected student layers. It is therefore
+distinct from the present procedure, which constrains prediction logits and
+ODST routing probabilities within a same-architecture
+sequence--ensemble.
+
+\smallskip
+Explanation availability and explanation faithfulness must also be
+distinguished. Attention weights can show where a trained model allocated
+temporal emphasis, but their magnitudes do not necessarily correspond to
+faithful original-input importance
+\cite{JainWallace2019Attention,SerranoSmith2019Attention}. Other work has
+argued that whether attention can serve as an explanation depends on the
+definition of explanation and the diagnostic procedure used
+\cite{WiegreffePinter2019Attention}. Attention should therefore be treated
+as model-specific temporal evidence whose relationship to prediction must
+be tested, rather than accepted automatically as a complete explanation.
+Related concerns apply beyond attention: post-hoc feature-attribution and
+saliency methods can also produce rankings that fail basic sanity checks
+against the model or the data they claim to explain
+\cite{Adebayo2018SanityChecks}, which motivates evaluating ODST
+tree-contribution rankings through explicit intervention rather than
+treating structural traceability as sufficient evidence on its own.
+
+\smallskip
+Original-input occlusion addresses a different level of evidence by
+measuring prediction sensitivity when a behavioural variable is replaced
+with a defined reference value. Native ODST outputs provide selected latent
+dimensions, route probabilities, reached leaves, and individual tree
+scores. These quantities make the internal decision process traceable, but
+their availability alone does not establish that a ranking derived from
+them is faithful.
+
+\smallskip
+Faithfulness concerns whether the reported explanation remains meaningfully
+connected to the underlying prediction function
+\cite{Dasgupta2022Faithfulness}. In the present study, this relationship is
+evaluated through matched interventions: components ranked as influential
+are altered and compared with appropriate randomly selected controls. The
+empirical ODST faithfulness claim is consequently limited to
+reference-centred tree-contribution rankings tested through
+top-versus-random tree-output ablation. Routes and reached leaves are
+reported as traceable internal outputs rather than as independently
+validated faithful explanation levels.
