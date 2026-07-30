@@ -1,1 +1,49 @@
-﻿artifact_id,artifact_type,paper_section,paper_label,repository_path,source_project,source_branch,source_commit,producing_run,evidence_role,verification_status,sha256,notes
+﻿"artifact_id","artifact_type","paper_section","paper_label","repository_path","source_project","source_branch","source_commit","producing_run","evidence_role","verification_status","sha256","notes"
+"TAB-001","table","Related Work","tab:related_work_positioning","paper/manuscript/source/02_related_work.tex","","","","","","UNRESOLVED","","Caption: Positioning of Representative Model Families | LaTeX source line: 15 | Producing table or run provenance not yet assigned"
+"FIG-001","figure","Methodology","fig:data_prep_workflow","paper/manuscript/source/figures/data_preparation_workflow.png","","","","","","UNRESOLVED","4D48DB4E4E25E5360FE8AE4758460119ADFFD5B50BEFEAD0CF88573DF11AE350","Caption: Chronological data-preparation pipeline, from raw multi-source
+CERT r4.2 logs to the two model inputs: 40 window-summary features for the
+tree references and \(B\times20\times13\) tensors for the sequence models. | LaTeX source: paper/manuscript/source/03_methodology.tex | Line: 111"
+"FIG-002","figure","Methodology","fig:architecture_pipeline","paper/manuscript/source/figures/architecture_pipeline.png","","","","","","UNRESOLVED","19882DCFDDD688BFB950ECE271BF308E349AA0A1F9789C09D6EF0FD0063D5BE4","Caption: Teacher-anchored sequence--ensemble architecture. A 20-day
+behavioural sequence is encoded by a bidirectional LSTM, summarised by
+temporal attention into the context vector \(\mathbf z_i\), and classified
+by a two-layer ODST head giving \(\hat y_i\in[0,1]\). | LaTeX source: paper/manuscript/source/03_methodology.tex | Line: 192"
+"FIG-003","figure","Methodology","fig:odst_routing","paper/manuscript/source/figures/odst_routing.png","","","","","","UNRESOLVED","030449BBBC718B0D932D2731629DF4227912A5BFF1E8E36AD29037EF1A056424","Caption: Soft routing of one oblivious tree (drawn at depth two; the model
+uses depth four). Each shared split sends sample \(i\) right with
+probability \(p_{i,m,k}\) (Eq.~\eqref{eq:split}); leaf-reaching
+probabilities multiply along the path (Eq.~\eqref{eq:leaf_prob}), and the
+tree output is the probability-weighted sum of the leaf responses
+(Eq.~\eqref{eq:tree_out}). | LaTeX source: paper/manuscript/source/03_methodology.tex | Line: 383"
+"FIG-004","figure","Methodology","fig:teacher_anchored_architecture","paper/manuscript/source/figures/fig_teacher_anchored_training_architecture.png","","","","","","UNRESOLVED","61FC8E73DFA21F95461492BD671F0EF2FF7EDD45AB1AC3F0A1057B89776BE3E9","Caption: Teacher-anchored training. The frozen teacher and trainable
+student share the same Bi-LSTM--attention--ODST structure. Detached teacher
+logits and routing probabilities anchor the student's consistency losses;
+only the student is updated, and inference uses the student alone. | LaTeX source: paper/manuscript/source/03_methodology.tex | Line: 413"
+"TAB-002","table","Methodology","tab:evidence_streams","paper/manuscript/source/03_methodology.tex","","","","","","UNRESOLVED","","Caption: Data Streams and Their Roles | LaTeX source line: 53 | Producing table or run provenance not yet assigned"
+"TAB-003","table","Methodology","tab:training_hyperparameters","paper/manuscript/source/03_methodology.tex","","","","","","UNRESOLVED","","Caption: Teacher-Anchored Student Training Configuration | LaTeX source line: 537 | Producing table or run provenance not yet assigned"
+"FIG-005","figure","Experimental Results","fig:r52_same_information_fig","paper/manuscript/source/figures/fig_same_information_comparison.png","","","","","","UNRESOLVED","B74080AF386EA15C1C0D3BF9F53F77BC4FABF56BED84D66DC4CE7DC1FEE7514D","Caption: Same-information CERT r5.2 comparison. Every model received the
+same 20-day by 13-feature input; the sequence models kept the
+\(20\times13\) structure, while the others received the same 260 values as
+a flattened vector. | LaTeX source: paper/manuscript/source/04_experimental_results.tex | Line: 388"
+"FIG-006","figure","Experimental Results","fig:r52_temporal_value_fig","paper/manuscript/source/figures/fig_temporal_value_results.png","","","","","","UNRESOLVED","04A65331F2278F16F4F0A668FAF89083228310233F3F02D01F3558F18485B72D","Caption: Temporal-order and partial-history analysis. The first three
+conditions perturb the order of the same observations; the remaining
+conditions increase behavioural history from one to 20 days. | LaTeX source: paper/manuscript/source/04_experimental_results.tex | Line: 399"
+"FIG-007","figure","Experimental Results","fig:temporal_attention_cases","paper/manuscript/source/figures/fig_teacher_temporal_cases.png","","","","","","UNRESOLVED","B2775771289F512673D17C064A4893097D65ED18C39598DC44ADCDDC1E72F905","Caption: Temporal attention across the 20-day input for deterministically
+selected CERT r4.2 seed-42 true-positive, true-negative, false-positive,
+and false-negative cases. Brighter cells indicate greater attention at the
+corresponding sequence position. | LaTeX source: paper/manuscript/source/04_experimental_results.tex | Line: 427"
+"FIG-008","figure","Experimental Results","fig:odst_faithfulness_matrix","paper/manuscript/source/figures/fig_odst_faithfulness_matrix.png","","","","","","UNRESOLVED","337FDBD4C8CBD495FD98CB375CD302FA67F9E94E5B44D06EF286A52B426C9B12","Caption: Reference-centred ODST faithfulness across the final CERT r5.2
+students. Every seed--\(k\) combination was supported, and the centred
+contributions reconstructed the ODST readout exactly. | LaTeX source: paper/manuscript/source/04_experimental_results.tex | Line: 495"
+"FIG-009","figure","Experimental Results","fig:odst_calibration","paper/manuscript/source/figures/fig_odst_calibration_compact.png","","","","","","UNRESOLVED","F0579DC57F84B29C0565F7ED4D99C41BF8794B923A621B0912A2DF26E9199911","Caption: Seed-42 ODST calibration before and after grouped out-of-fold
+temperature scaling. Lower values indicate better probability
+calibration. | LaTeX source: paper/manuscript/source/04_experimental_results.tex | Line: 597"
+"TAB-004","table","Experimental Results","tab:dataset_sequence_summary","paper/manuscript/source/04_experimental_results.tex","","","","","","UNRESOLVED","","Caption: Verified CERT r4.2 Preparation Summary | LaTeX source line: 31 | Producing table or run provenance not yet assigned"
+"TAB-005","table","Experimental Results","tab:sequence_distribution_results","paper/manuscript/source/04_experimental_results.tex","","","","","","UNRESOLVED","","Caption: Chronological CERT r4.2 Sequence Distribution | LaTeX source line: 66 | Producing table or run provenance not yet assigned"
+"TAB-006","table","Experimental Results","tab:temporal_window_comparison","paper/manuscript/source/04_experimental_results.tex","","","","","","UNRESOLVED","","Caption: CERT r4.2 Temporal-Window Development Results | LaTeX source line: 100 | Producing table or run provenance not yet assigned"
+"TAB-007","table","Experimental Results","tab:standalone_baselines","paper/manuscript/source/04_experimental_results.tex","","","","","","UNRESOLVED","","Caption: Standalone CERT r4.2 Development Results | LaTeX source line: 137 | Producing table or run provenance not yet assigned"
+"TAB-008","table","Experimental Results","tab:r52_test_summary","paper/manuscript/source/04_experimental_results.tex","","","","","","UNRESOLVED","","Caption: CERT r5.2 One-Pass Reference-Model Test Summary | LaTeX source line: 204 | Producing table or run provenance not yet assigned"
+"TAB-009","table","Experimental Results","tab:r52_teacher_reproducibility","paper/manuscript/source/04_experimental_results.tex","","","","","","UNRESOLVED","","Caption: Teacher-Anchored CERT r5.2 Reproducibility | LaTeX source line: 262 | Producing table or run provenance not yet assigned"
+"TAB-010","table","Experimental Results","tab:r52_same_information","paper/manuscript/source/04_experimental_results.tex","","","","","","UNRESOLVED","","Caption: Same-Information CERT r5.2 Comparison | LaTeX source line: 304 | Producing table or run provenance not yet assigned"
+"TAB-011","table","Experimental Results","tab:r52_multiday_cohort","paper/manuscript/source/04_experimental_results.tex","","","","","","UNRESOLVED","","Caption: CERT r5.2 Multi-Day Malicious-Behaviour Cohort | LaTeX source line: 349 | Producing table or run provenance not yet assigned"
+"TAB-012","table","Experimental Results","tab:r52_explanation_portability","paper/manuscript/source/04_experimental_results.tex","","","","","","UNRESOLVED","","Caption: CERT r5.2 Explanation and Degraded-Input Evidence | LaTeX source line: 457 | Producing table or run provenance not yet assigned"
+"TAB-013","table","Experimental Results","tab:r52_calibration_alert","paper/manuscript/source/04_experimental_results.tex","","","","","","UNRESOLVED","","Caption: Seed-42 ODST Calibration and Alert Consolidation | LaTeX source line: 539 | Producing table or run provenance not yet assigned"
+"TAB-014","table","Experimental Results","tab:odst_simplification_latency","paper/manuscript/source/04_experimental_results.tex","","","","","","UNRESOLVED","","Caption: ODST Simplification and Batch-32 Latency | LaTeX source line: 564 | Producing table or run provenance not yet assigned"
