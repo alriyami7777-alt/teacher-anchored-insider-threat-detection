@@ -85,21 +85,15 @@ Frozen models, predefined partitions &
 Same-information, temporal, cohort, explanation, calibration, alert,
 latency. &
 Bounded by model, seed, partition, and intervention. \\
-Post-hoc corroboration &
-Previously accessed r5.2 test partition &
-Sealed one-pass confirmation of the final students (planned). &
-Corroborating only; not an untouched independent test. \\
 \hline
 \end{tabularx}
 \end{table*}
 
-% Replace with the test result once the sealed one-pass confirmation is run.
 The r5.2 test partition was used once already, for the reference models.
 Running the final teacher-anchored students on it as well would reuse the
 same test data, so to keep that result clean we did not do so here. The
-final students are evaluated on the r5.2 train/validation protocol instead,
-and a sealed one-pass procedure is kept for a later, independent confirmation
-on the test partition. No final-student test result is reported in this paper.
+final students are evaluated on the r5.2 train/validation protocol instead.
+No final-student test result is reported in this paper.
 
 \subsection{Chronological Data Preparation}
 \label{subsec:data_preparation}
@@ -194,7 +188,7 @@ every quantity that later appears in the training objective
 \includegraphics[width=0.85\columnwidth]{figures/architecture_pipeline.png}
 \caption{Teacher-anchored sequence--ensemble architecture. A 20-day
 behavioural sequence is encoded by a bidirectional LSTM, summarised by
-temporal attention into the context vector \(\mathbf z_i\), and classified
+temporal attention into the context vector \(\mathbf c_i\), and classified
 by a two-layer ODST head giving \(\hat y_i\in[0,1]\).}
 \label{fig:architecture_pipeline}
 \end{figure}
@@ -249,7 +243,7 @@ e_{i,t}
 \qquad
 \sum_{t=1}^{T}\alpha_{i,t}=1,
 \label{eq:attn_weight}\\[2pt]
-\mathbf z_i
+\mathbf c_i
 &=
 \sum_{t=1}^{T}\alpha_{i,t}\,\mathbf h_{i,t}
 \in\mathbb R^{2H},
@@ -259,14 +253,14 @@ where \(\mathbf W\in\mathbb R^{d_a\times 2H}\) is the attention projection
 with hidden size \(d_a=64\), \(\mathbf v\in\mathbb R^{d_a}\) is the scoring
 vector, \(e_{i,t}\) is the unnormalised relevance of day \(t\),
 \(\alpha_{i,t}\in[0,1]\) is its attention weight, and
-\(\mathbf z_i\in\mathbb R^{128}\) is the context vector passed to the tree
+\(\mathbf c_i\in\mathbb R^{128}\) is the context vector passed to the tree
 head. Intuitively, \(\alpha_{i,t}\) is how much day \(t\) contributes to the
-decision, and \(\mathbf z_i\) is the attention-weighted summary of the whole
+decision, and \(\mathbf c_i\) is the attention-weighted summary of the whole
 window.
 
 \subsubsection{Oblivious differentiable sparsemax tree (ODST) head}
 \label{subsubsec:odst}
-The context vector \(\mathbf z_i\) is classified by a differentiable
+The context vector \(\mathbf c_i\) is classified by a differentiable
 soft-tree ensemble. The head contains \(L=2\) stacked layers; each layer
 holds \(T_{\mathrm{tree}}=8\) trees of depth \(D=4\), giving
 \(M=L\cdot T_{\mathrm{tree}}=16\) trees in total. Two properties distinguish
@@ -289,11 +283,11 @@ decided:
 \begin{equation}
 \mathbf q_i^{(2)}
 =
-\big[\,\mathbf z_i\;;\;\mathbf O_i^{(1)}\,\big]
+\big[\,\mathbf c_i\;;\;\mathbf O_i^{(1)}\,\big]
 \in\mathbb R^{128+8}=\mathbb R^{136}.
 \label{eq:stack}
 \end{equation}
-For uniformity we write \(\mathbf q_i^{(1)}=\mathbf z_i\) for the first
+For uniformity we write \(\mathbf q_i^{(1)}=\mathbf c_i\) for the first
 layer, so \(\mathbf q_i^{(\ell)}\) denotes the input to layer \(\ell\).
 \paragraph{Soft split at each depth.}
 Consider one tree \(m\) in layer \(\ell\). At depth \(k\in\{1,\dots,D\}\) the
@@ -519,10 +513,48 @@ the student inherits not just the teacher's scores but its internal
 decision paths.
 
 \smallskip
-Because the two anchoring terms were always applied together, the combined
-anchoring is evaluated as a whole; separate logit-only and route-only
-ablations were not performed. The saved student supported
+To isolate the contribution of each element of this objective, a
+loss-component ablation was conducted under the same CERT r5.2
+train/validation protocol, preprocessing, seeds (42, 52, and 62), optimiser
+settings, epoch limit, early-stopping rule, and threshold selection as the
+final students. Six configurations were compared against the frozen teacher:
+a randomly initialised student trained with the classification loss only
+(C1); a teacher-initialised student trained with the classification loss
+only (C2), which isolates the effect of initialisation; teacher-initialised
+students adding the logit term alone
+(C3, \(\lambda_{\mathrm{logit}}=0.5,\ \lambda_{\mathrm{route}}=0\)) or the
+route term alone
+(C4, \(\lambda_{\mathrm{logit}}=0,\ \lambda_{\mathrm{route}}=0.5\)); the full
+teacher-anchored objective
+(C5, \(\lambda_{\mathrm{logit}}=\lambda_{\mathrm{route}}=0.5\)), which is the
+configuration trained for the final students; and a randomly initialised
+student trained with the full objective (C6). Configuration~C5 was
+additionally re-evaluated at
+\(\lambda_{\mathrm{logit}}=\lambda_{\mathrm{route}}\in\{0.25,0.75\}\) as a
+pre-specified sensitivity check around the locked value \(0.5\); these weights
+were not selected retrospectively. The saved final student supported
 teacher-independent inference.
+
+\smallskip
+Each configuration was scored for predictive retention---PR-AUC, F1, and
+their student-minus-teacher differences---and for four routing- and
+explanation-fidelity measures computed on the r5.2 validation partition
+against the corresponding frozen teacher. The route mean absolute error
+(route MAE) is the mean absolute difference between the student and teacher
+right-branch probabilities of Equation~\eqref{eq:split}, averaged over all
+\(B\times16\times4\) split entries, so smaller values indicate closer
+routing. Hard-route agreement is the fraction of those split entries on which
+the student and teacher send the sample to the same branch, that is, agree on
+whether \(p_{i,m,k}>0.5\). The unused-leaf fraction is the percentage of the
+\(2^{D}=16\) leaves per tree whose soft membership
+\(\mu_{i,m,\mathbf e}\) of Equation~\eqref{eq:leaf_prob} never exceeds a small
+activation threshold on the validation set, serving as a route-concentration
+indicator. The tree-contribution Spearman correlation is the mean, over
+validation sequences, of the Spearman rank correlation between the teacher and
+student reference-centred tree-contribution vectors \(c_{i,m}\) of
+Equation~\eqref{eq:tree_contribution}, and measures whether the two models
+rank the sixteen trees' contributions consistently. The results are reported
+in Section~\ref{subsec:loss_ablation}.
 
 \subsection{Training and Evaluation}
 \label{subsec:training}

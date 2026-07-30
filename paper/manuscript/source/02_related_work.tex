@@ -137,7 +137,13 @@ guide a student alongside supervision from the true labels
 \cite{Hinton2015Distillation,Gou2021KDSurvey}. The student is not required
 to be smaller than the teacher. Born-Again Neural Networks demonstrated
 that a student may retain the same architecture while learning from a
-previously trained model \cite{Furlanello2018BornAgain}.
+previously trained model \cite{Furlanello2018BornAgain}. Distillation has
+also been used to transfer a neural network into an interpretable soft
+decision tree \cite{FrosstHinton2017SoftTree}; the present teacher-anchored
+procedure instead retains a single same-architecture model and can be viewed
+as a consistency-regularisation instantiation applied to the routing of a
+differentiable oblivious-tree head, rather than distilling behaviour into a
+separate tree.
 
 \smallskip
 Teacher guidance has also been investigated in security detection. Shafee

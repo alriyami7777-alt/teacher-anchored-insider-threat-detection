@@ -45,7 +45,8 @@ value.
 The multi-day cohort provided complementary evidence for sequences
 containing verified malicious activity on more than one day. ODST remained
 competitive across the evaluated models, with a supported cohort PR-AUC
-advantage over Random Forest (RF). This result strengthens the case for
+advantage over the flattened Random Forest reference (RF-260). This result
+strengthens the case for
 preserving distributed behavioural context without converting the cohort
 into a universal definition of low-and-slow activity.
 
@@ -87,6 +88,19 @@ updates to the encoder, attention mechanism, and ODST head. Teacher
 anchoring therefore provides the optimisation contribution of the study
 rather than a mechanism for producing a large score increase.
 
+\smallskip
+The loss-component ablation clarifies how this stability arises. Teacher
+initialisation is the load-bearing element: randomly initialised students
+collapse even under the full anchoring objective, so the anchoring terms act
+only once the student already occupies the teacher's region of parameter
+space. Among teacher-initialised configurations the predictive metrics are
+statistically indistinguishable, which confirms that the anchoring terms
+preserve teacher-level prediction rather than improving it, while the
+route-consistency term measurably tightens routing and tree-contribution
+fidelity. The individual contributions of teacher initialisation, logit
+anchoring, and route anchoring are therefore separated rather than evaluated
+only in combination.
+
 \subsection{Structured Explanation, Calibration, and Alert Interpretation}
 \label{subsec:discussion_explanations}
 The two differentiable heads serve complementary roles. Attention--linear
@@ -104,8 +118,8 @@ defined intervention; routes and reached leaves remain traceable internal
 outputs rather than independently validated attribution levels. Ranking by
 raw absolute tree output, together with centred ranking against the median
 training reference, is retained separately as a sensitivity result, while
-the disclosed post-hoc test analysis provides corroboration rather than
-primary evidence.
+the disclosed explanation-only post-hoc test analysis provides corroborating
+explanation evidence rather than primary predictive evidence.
 
 \smallskip
 The explanation procedure also transferred from CERT r4.2 to r5.2.

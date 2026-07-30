@@ -1,4 +1,4 @@
-﻿# Manuscript Source
+# Manuscript Source
 
 The main LaTeX entry file is `access.tex`.
 
@@ -14,8 +14,12 @@ The manuscript sections are maintained in:
 
 `references.bib` contains the working bibliography.
 
-This source was exported from Overleaf on 29 July 2026. It remains under
-active revision and must not be treated as final or submission-ready.
+The current versioned source checkpoint was exported from Overleaf on
+30 July 2026 at 19:00. The manuscript remains under active revision and must
+not be treated as submission-ready.
 
-Loose PDFs stored elsewhere are historical working copies unless they are
-explicitly reconciled with this source.
+Loose PDFs stored elsewhere are historical working copies unless explicitly
+reconciled with a dated source checkpoint in this repository.
+
+Frozen implementation and producing-run evidence take precedence over
+manuscript wording where they conflict.

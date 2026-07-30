@@ -101,7 +101,9 @@ The study addresses three research questions:
     \item[\textbf{RQ2:}] Can teacher-anchored logit-and-route
     regularisation permit reproducible end-to-end student updates while
     retaining teacher-level validation performance and limiting
-    prediction-logit and ODST-routing drift across predefined random seeds?
+    prediction-logit and ODST-routing drift across predefined random seeds,
+    and which components---teacher initialisation, logit anchoring, or route
+    anchoring---account for that stability?
     \item[\textbf{RQ3:}] What evidence does the resulting architecture
     provide concerning explanation faithfulness, probability calibration,
     alert burden, computational cost, and controlled degraded-input
@@ -145,10 +147,13 @@ The paper makes four contributions:
     days and prevents sliding windows from crossing temporal partition
     boundaries, complemented by reversal, shuffling, and partial-history
     interventions.
-    \item A teacher-anchored logit-and-route regularisation procedure
-    evaluated across three predefined CERT r5.2 validation seeds for
-    predictive non-degradation and routing stability during end-to-end
-    student optimisation.
+    \item A teacher-anchored logit-and-route regularisation procedure,
+    evaluated across three predefined CERT r5.2 validation seeds and
+    decomposed by a loss-component ablation, showing that teacher
+    initialisation supplies the baseline routing stability while the
+    route-consistency term further tightens routing and tree-contribution
+    fidelity, with predictive non-degradation preserved throughout
+    end-to-end student optimisation.
     \item A same-information comparison in which sequence-aware and
     fixed-position flattened models receive identical input values, so the
     model families can be compared without changing input content.

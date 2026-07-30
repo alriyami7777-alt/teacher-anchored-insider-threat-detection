@@ -8,9 +8,9 @@ evidence, producing configurations, manifests, and saved outputs.
 
 ## Inventory Summary
 
-- Figures detected: 9
-- Tables detected: 14
-- Total artefacts: 23
+- Figures detected: 7
+- Tables detected: 17
+- Total artefacts: 24
 - Figure paths unresolved: 0
 - Fully verified artefacts: 0
 

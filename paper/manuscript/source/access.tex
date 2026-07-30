@@ -67,6 +67,14 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
     pdftitle={Teacher-Anchored Differentiable Sequence-Ensemble Learning for Explainable Insider Threat Detection},
     pdfauthor={Qasim Mohamed Muhanna Alriyami and Mohd Murtadha Bin Mohamad}
 ]{hyperref}
+% ORCID link, self-contained (no extra package; uses graphicx + hyperref).
+% If orcid.png is in the project it shows the ORCID logo; otherwise it
+% falls back to a small linked "ORCID" tag. Either way it compiles.
+\newcommand{\orcidlink}[1]{%
+  \href{https://orcid.org/#1}{%
+    \IfFileExists{orcid.png}%
+      {\raisebox{-0.15ex}{\includegraphics[height=1em]{orcid.png}}}%
+      {\textsuperscript{\scriptsize ORCID}}}}
 % -----------------------------------------------------------------------------
 % Document
 % -----------------------------------------------------------------------------
@@ -87,9 +95,9 @@ Teacher-Anchored Differentiable Sequence--Ensemble Learning for
 Explainable Insider Threat Detection
 }
 \author{
-\uppercase{Qasim Mohamed Muhanna Alriyami}\authorrefmark{1},
+\uppercase{Qasim Mohamed Muhanna Alriyami}\authorrefmark{1}~\orcidlink{0009-0007-8081-9997},
 AND
-\uppercase{Mohd Murtadha Bin Mohamad}\authorrefmark{1},
+\uppercase{Mohd Murtadha Bin Mohamad}\authorrefmark{1}~\orcidlink{0000-0002-1478-0138},
 \IEEEmembership{Member, IEEE}
 }
 \address[1]{
@@ -126,7 +134,8 @@ an attention--linear baseline, at a mean PR-AUC of 0.931. Order-reversal,
 shuffling, and partial-history experiments show that the models rely on
 chronological order and accumulated behavioural history, not on input volume
 alone. On a cohort whose malicious activity spanned multiple days, ODST held a
-statistically supported PR-AUC advantage over Random Forest. The ODST head is
+statistically supported PR-AUC advantage over the flattened Random Forest
+reference (RF-260). The ODST head is
 also interpretable by construction: it exposes the trees, routes, and leaves
 behind each decision. Its reference-centred contribution rankings passed
 top-versus-random ablation at \(k=3,5,10\) across all seeds, which confirms that
