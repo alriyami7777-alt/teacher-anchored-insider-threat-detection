@@ -1,5 +1,14 @@
 ﻿# Teacher-Anchored Differentiable Sequence-Ensemble Learning for Insider Threat Detection
 
+
+ # Teacher-Anchored Insider Threat Detection
+
+> [!WARNING]
+> This repository supports a manuscript under active revision. Results,
+> documentation, reproducibility material, and supplementary files are not yet
+> submission-final. Frozen implementation evidence takes precedence over
+> provisional manuscript wording.
+
 This repository is a compact research and reproducibility companion for a PhD study on insider threat detection in enterprise activity logs. It is deliberately separated from the full experimental workspace.
 
 The repository is intended to share:
