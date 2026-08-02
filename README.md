@@ -17,7 +17,7 @@ It does **not** distribute CERT datasets, answer files, user identifiers, model 
 | Research objective | Repository area | Chapter 3 phase |
 |---|---|---|
 | Objective 1: develop time-aware preprocessing that preserves inactivity and behavioural chronology | `src/preprocessing`, `protocols/objective1_*` | Phase 1: data preparation and temporal representation |
-| Objective 2: develop and evaluate a unified differentiable sequenceâ€“ensemble architecture | `src/models`, `src/training`, `src/evaluation`, `protocols/objective2_*` | Phase 2: model development and comparative evaluation |
+| Objective 2: develop and evaluate a unified differentiable sequence–ensemble architecture | `src/models`, `src/training`, `src/evaluation`, `protocols/objective2_*` | Phase 2: model development and comparative evaluation |
 | Objective 3: assess explanation evidence and robustness under controlled conditions | `src/explainability`, `src/robustness`, `protocols/objective3_*` | Phase 3: explainability and robustness assessment |
 
 ## Architecture
