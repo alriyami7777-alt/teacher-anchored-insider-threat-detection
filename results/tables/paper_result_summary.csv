@@ -1,9 +1,0 @@
-﻿result_id,dataset,split_scope,metric,model,value,status,qualification
-teacher_student_seed42,CERT r5.2,train/validation,PR-AUC,student,0.9336,completed,Teacher 0.9334
-teacher_student_seed52,CERT r5.2,train/validation,PR-AUC,student,0.9246,completed,Teacher 0.9245
-teacher_student_seed62,CERT r5.2,train/validation,PR-AUC,student,0.9357,completed,Teacher 0.9347
-same_information_mean,CERT r5.2,train/validation,PR-AUC,ODST,0.931,completed,Attention-linear 0.931
-same_information_mean,CERT r5.2,train/validation,F1,ODST,0.910,completed,Attention-linear 0.908
-frozen_odst_one_pass,CERT r5.2,independent test,PR-AUC,frozen-encoder ODST,0.9334,completed_with_scope_limit,Not final teacher-anchored student
-attention_linear_one_pass,CERT r5.2,independent test,PR-AUC,attention-linear,0.9334,completed,
-rf_one_pass,CERT r5.2,independent test,PR-AUC,"random forest, 40 features",0.9986,completed,Different-information comparison

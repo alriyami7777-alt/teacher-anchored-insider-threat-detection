@@ -42,16 +42,21 @@ available from the Carnegie Mellon University CERT Division insider-threat
 test dataset~\cite{GlasserLindauer2013} and are not redistributed here. The
 derived artifacts required to reproduce the reported results---the
 sequence-construction configuration, dataset manifests, and the SHA-256 hashes
-of the frozen tensors---are provided in the code repository listed below; the
-raw CERT data must be obtained separately from the original source under its
-own licence.
+of the frozen tensors---are being made available in the code repository listed
+below; the raw CERT data must be obtained separately from the original source
+under its own licence.
 
 \section*{Code Availability}
-The source code for data preparation, teacher-anchored training, evaluation,
-and the explanation analyses is available at
-\url{https://github.com/alriyami7777-alt/teacher-anchored-insider-threat-detection}.
-The repository includes the fixed seeds, validation-selected thresholds, and
-manifests needed to reproduce the results reported in this paper.
+The repository at
+\url{https://github.com/alriyami7777-alt/teacher-anchored-insider-threat-detection}
+provides the reproducibility protocols and the fixed random seeds (42, 52, and
+62) used in this study. The paper-facing implementation package---covering data
+preparation, teacher-anchored training, evaluation, and explanation
+analyses---together with the validation-selected thresholds,
+sequence-construction configuration, dataset manifests, and frozen-tensor
+hashes, is being prepared for public release in the same repository. CERT data,
+user-level records, tensors, prediction arrays, and model checkpoints are not
+redistributed.
 
 \section*{Funding}
 This work received no specific grant from any funding agency in the public,

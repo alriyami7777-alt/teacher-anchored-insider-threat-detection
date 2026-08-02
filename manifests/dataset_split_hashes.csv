@@ -1,1 +1,2 @@
 ﻿dataset,split_name,hash_type,hash_value,notes
+CERT r5.2,validation sequence tensor,SHA-256,5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c,Frozen tensor hash only; tensor and CERT data are not redistributed

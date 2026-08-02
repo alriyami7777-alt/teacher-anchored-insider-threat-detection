@@ -1,0 +1,41 @@
+﻿schema_version: 1
+status: paper_facing_configuration
+
+sequence_construction:
+  window_days: 20
+  stride_days: 1
+  feature_count: 13
+  retain_inactive_days: true
+  prevent_cross_partition_windows: true
+  positive_sequence_rule: any constituent user-day is malicious
+  tensor_dtype: float32
+
+daily_features:
+  - total_events
+  - logon_count
+  - device_count
+  - file_count
+  - email_count
+  - http_count
+  - active_duration_minutes
+  - has_logon
+  - has_device
+  - has_file
+  - has_email
+  - has_http
+  - is_active_day
+
+scaling:
+  fit_partition: training user-days only
+  standard_deviation: population
+  ddof: 0
+  zero_scale_replacement: 1
+  log_transform: false
+  clipping: false
+
+data_release:
+  raw_cert_data_redistributed: false
+  answer_files_redistributed: false
+  user_level_records_redistributed: false
+  frozen_tensors_redistributed: false
+  model_checkpoints_redistributed: false
