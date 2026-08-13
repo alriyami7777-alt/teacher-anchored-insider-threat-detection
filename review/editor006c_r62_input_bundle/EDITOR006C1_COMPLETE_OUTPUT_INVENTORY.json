@@ -1,0 +1,194 @@
+{
+  "task_id": "EDITOR-006C1",
+  "note": "This inventory hashes every file under the 006C review directory except this inventory file itself (SHA excluded to avoid recursion) and except EDITOR006C_FINAL_RELEASE_MANIFEST.json, which is the capstone that binds this inventory's file SHA. All 13 large bundle components are included.",
+  "inventory_file": {
+    "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006c_r62_input_bundle\\EDITOR006C1_COMPLETE_OUTPUT_INVENTORY.json",
+    "filename": "EDITOR006C1_COMPLETE_OUTPUT_INVENTORY.json",
+    "role": "review_evidence",
+    "sha256_excluded_to_avoid_recursion": true
+  },
+  "capstone_file_written_after_this_inventory": {
+    "filename": "EDITOR006C_FINAL_RELEASE_MANIFEST.json",
+    "role": "review_evidence",
+    "note": "File SHA is FINAL_RELEASE_MANIFEST_SHA256; this inventory SHA is bound inside that capstone."
+  },
+  "files": [
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006c_r62_input_bundle\\EDITOR006C1_BUILDER_PROVENANCE.json",
+      "filename": "EDITOR006C1_BUILDER_PROVENANCE.json",
+      "byte_size": 1782,
+      "sha256": "cc46c7a9497c0fe4787fe05323a3c8661d80a0196b336cf0f5148f0c6cc94408",
+      "role": "review_evidence"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006c_r62_input_bundle\\EDITOR006C_BUNDLE_COMPONENTS.json",
+      "filename": "EDITOR006C_BUNDLE_COMPONENTS.json",
+      "byte_size": 5625,
+      "sha256": "6a49b62dc781a3a3c86e33b9bc77305ea1a4030b2dc8fe021047f5c0c320a7ba",
+      "role": "review_evidence"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006c_r62_input_bundle\\EDITOR006C_BUNDLE_MANIFEST.json",
+      "filename": "EDITOR006C_BUNDLE_MANIFEST.json",
+      "byte_size": 12768,
+      "sha256": "0e53a750b9682aa0ed71105619c0b31fccf2208f67eb6c80896946c0e8564fec",
+      "role": "review_evidence"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006c_r62_input_bundle\\EDITOR006C_BUNDLE_REPORT.md",
+      "filename": "EDITOR006C_BUNDLE_REPORT.md",
+      "byte_size": 7946,
+      "sha256": "f68d5ad368b6d0896738bd809446e42bf980024bbc4e83b950588ebe45140086",
+      "role": "review_evidence"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006c_r62_input_bundle\\EDITOR006C_CONTRACT_BUNDLE.json",
+      "filename": "EDITOR006C_CONTRACT_BUNDLE.json",
+      "byte_size": 1005,
+      "sha256": "5ac6bd14204c2c7c75bdfff448a5401ab15b3f0ed1e666c3f76f6158e7be5e75",
+      "role": "review_evidence"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006c_r62_input_bundle\\EDITOR006C_COUNT_VALIDATION.json",
+      "filename": "EDITOR006C_COUNT_VALIDATION.json",
+      "byte_size": 2291,
+      "sha256": "131198e2145f086718697a56d145b062e30b674154a65cc6c868146e724d94a3",
+      "role": "review_evidence"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006c_r62_input_bundle\\EDITOR006C_EFFECT_REGISTER.json",
+      "filename": "EDITOR006C_EFFECT_REGISTER.json",
+      "byte_size": 6508,
+      "sha256": "274776b643ec31e199607a7cb1678e61461947184913f39201a4f12bcfff4e75",
+      "role": "review_evidence"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006c_r62_input_bundle\\EDITOR006C_METADATA_VALIDATION.json",
+      "filename": "EDITOR006C_METADATA_VALIDATION.json",
+      "byte_size": 1867,
+      "sha256": "b712d22720e63445f57ee9d9791f3529a90baff36413108205c876b333599090",
+      "role": "review_evidence"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006c_r62_input_bundle\\EDITOR006C_RELEASE_CANDIDATE.json",
+      "filename": "EDITOR006C_RELEASE_CANDIDATE.json",
+      "byte_size": 894,
+      "sha256": "5e1387fb0634d51041ca7ee1a227636864e485f84720cf23a584a3f7f0b9b6a4",
+      "role": "review_evidence"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006c_r62_input_bundle\\EDITOR006C_RUN_MANIFEST.json",
+      "filename": "EDITOR006C_RUN_MANIFEST.json",
+      "byte_size": 11092,
+      "sha256": "9bafc42265f0b5ca1ac741ae1d491a02d40e00c5ffd15ffb7867feeca3e98f68",
+      "role": "review_evidence"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006c_r62_input_bundle\\EDITOR006C_STREAMING_PROVIDER_CHECK.json",
+      "filename": "EDITOR006C_STREAMING_PROVIDER_CHECK.json",
+      "byte_size": 1515,
+      "sha256": "ab744d43d97dedfeebc07566c22284e8d593a8c19a739e1c1138e1be5664413f",
+      "role": "review_evidence"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006c_r62_input_bundle\\run_editor006c_r62_input_bundle.py",
+      "filename": "run_editor006c_r62_input_bundle.py",
+      "byte_size": 48053,
+      "sha256": "6d6621f59eb42992ac9b5d3b90118c2b9c1c0beb991f17c2c3161bb26a57e657",
+      "role": "review_evidence"
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006c_bundle\\scaled_dense_daily.npy",
+      "filename": "scaled_dense_daily.npy",
+      "byte_size": 107328128,
+      "sha256": "c32bd47eba93c4154a49768cc5d9d910345ad9275b88e61ab9391d53a7207bd2",
+      "role": "large_bundle_component"
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006c_bundle\\malicious_day_labels.npy",
+      "filename": "malicious_day_labels.npy",
+      "byte_size": 2064128,
+      "sha256": "78e3202cb79f2c58f9d9903763c2a446c7be0b6008b5d4d7c986d12fe30bbcf8",
+      "role": "large_bundle_component"
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006c_bundle\\answer_scenario_day_bitmask.npy",
+      "filename": "answer_scenario_day_bitmask.npy",
+      "byte_size": 2064128,
+      "sha256": "4758148e3957fb9a17797b58f6a56f41274f75635df0dda4cd0e68b903d85e29",
+      "role": "large_bundle_component"
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006c_bundle\\user_ids.npy",
+      "filename": "user_ids.npy",
+      "byte_size": 256128,
+      "sha256": "80e9f043ddf35732eea77a6fbeda916b77402a857570c4620ca802c0ca8a36c2",
+      "role": "large_bundle_component"
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006c_bundle\\calendar_dates.npy",
+      "filename": "calendar_dates.npy",
+      "byte_size": 20768,
+      "sha256": "5db6f62535cc8c1c45ac92dc1111c0e842683403569e1312fcec20ef1a3b4309",
+      "role": "large_bundle_component"
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006c_bundle\\official_insider_flags.npy",
+      "filename": "official_insider_flags.npy",
+      "byte_size": 4128,
+      "sha256": "71188e7fde146989765d20030aa679670b35926a118165047cc6f8957fbaec5d",
+      "role": "large_bundle_component"
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006c_bundle\\official_incident_codes.npy",
+      "filename": "official_incident_codes.npy",
+      "byte_size": 128128,
+      "sha256": "ac6c6860c5cf57fd4ae8f2ebe786dbc8966c903c29c496d6ff176096a522033f",
+      "role": "large_bundle_component"
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006c_bundle\\window_index.npy",
+      "filename": "window_index.npy",
+      "byte_size": 15904128,
+      "sha256": "703d14e489617a8b3fbc63f1b10aa9e1d099c0d81c096de2630aec875776a484",
+      "role": "large_bundle_component"
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006c_bundle\\completed_window_labels.npy",
+      "filename": "completed_window_labels.npy",
+      "byte_size": 1988128,
+      "sha256": "3082df95fa676c96e9d2579e22dfedea02902cb6bc46e563a8006c36d4bd0984",
+      "role": "large_bundle_component"
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006c_bundle\\endpoint_labels.npy",
+      "filename": "endpoint_labels.npy",
+      "byte_size": 1988128,
+      "sha256": "559f9d0b60b2c3093e26260d88b0c3fa3a12c524407016df2275e14d1ae47aca",
+      "role": "large_bundle_component"
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006c_bundle\\deoverlap_offset0_mask.npy",
+      "filename": "deoverlap_offset0_mask.npy",
+      "byte_size": 1988128,
+      "sha256": "dbb430c9734cd0852e19c17cd0e3ef71b399cdf267d81f331bfc679d126c9121",
+      "role": "large_bundle_component"
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006c_bundle\\window_scenario_bitmask.npy",
+      "filename": "window_scenario_bitmask.npy",
+      "byte_size": 1988128,
+      "sha256": "a6854077dc3a2c75695179bd9c33bbb91dbdf3d60d6db84dbc0383c48ab2a481",
+      "role": "large_bundle_component"
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006c_bundle\\endpoint_scenario_bitmask.npy",
+      "filename": "endpoint_scenario_bitmask.npy",
+      "byte_size": 1988128,
+      "sha256": "65d753828783e091f09422358ad9baa28cba9de501f528cad94d3e756ef08439",
+      "role": "large_bundle_component"
+    }
+  ],
+  "review_evidence_file_count": 12,
+  "large_bundle_component_count": 13
+}

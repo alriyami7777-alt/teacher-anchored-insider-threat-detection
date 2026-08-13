@@ -1,0 +1,113 @@
+{
+  "assertions": {
+    "users": {
+      "observed": 4000,
+      "expected": 4000,
+      "pass": true
+    },
+    "calendar_days": {
+      "observed": 516,
+      "expected": 516,
+      "pass": true
+    },
+    "features": {
+      "observed": 13,
+      "expected": 13,
+      "pass": true
+    },
+    "dense_rows": {
+      "observed": 2064000,
+      "expected": 2064000,
+      "pass": true
+    },
+    "eligible_windows": {
+      "observed": 1988000,
+      "expected": 1988000,
+      "pass": true
+    },
+    "completed_positives": {
+      "observed": 715,
+      "expected": 715,
+      "pass": true
+    },
+    "endpoint_positives": {
+      "observed": 78,
+      "expected": 78,
+      "pass": true
+    },
+    "deoverlap_retained": {
+      "observed": 100000,
+      "expected": 100000,
+      "pass": true
+    },
+    "deoverlap_positives": {
+      "observed": 35,
+      "expected": 35,
+      "pass": true
+    },
+    "official_insiders": {
+      "observed": 5,
+      "expected": 5,
+      "pass": true
+    },
+    "official_incidents": {
+      "observed": 5,
+      "expected": 5,
+      "pass": true
+    },
+    "event_level_labelled_users": {
+      "observed": 29,
+      "expected": 29,
+      "pass": true
+    },
+    "official_only_completed": {
+      "observed": 222,
+      "expected": 222,
+      "pass": true
+    },
+    "official_only_endpoint": {
+      "observed": 44,
+      "expected": 44,
+      "pass": true
+    },
+    "official_only_deoverlap": {
+      "observed": 11,
+      "expected": 11,
+      "pass": true
+    },
+    "answer_ids": {
+      "observed": 470,
+      "expected": 470,
+      "pass": true
+    },
+    "matched_once": {
+      "observed": 470,
+      "expected": 470,
+      "pass": true
+    },
+    "unmatched": {
+      "observed": 0,
+      "expected": 0,
+      "pass": true
+    },
+    "multiple": {
+      "observed": 0,
+      "expected": 0,
+      "pass": true
+    }
+  },
+  "all_pass": true,
+  "CDE1846_EVENT_DATE_LABEL_CHECK": "PASS",
+  "CDE1846_matched_event_days": [
+    "2011-02-21",
+    "2011-03-17",
+    "2011-03-22",
+    "2011-03-29",
+    "2011-04-06",
+    "2011-04-07",
+    "2011-04-11",
+    "2011-04-15",
+    "2011-04-25"
+  ],
+  "malformed_summary_field_used": false
+}

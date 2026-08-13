@@ -1,0 +1,27 @@
+{
+  "task_id": "EDITOR-006C1",
+  "builder_path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006c_r62_input_bundle\\run_editor006c_r62_input_bundle.py",
+  "builder_filename": "run_editor006c_r62_input_bundle.py",
+  "builder_sha256": "6d6621f59eb42992ac9b5d3b90118c2b9c1c0beb991f17c2c3161bb26a57e657",
+  "byte_size": 48053,
+  "mtime_utc": "2026-08-13T10:00:30Z",
+  "identity_status": "REVIEWED_POSTRUN_COPY_NOT_PROVEN_EXECUTED",
+  "BUILDER_EXECUTION_IDENTITY_STATUS": "REVIEWED_POSTRUN_COPY_NOT_PROVEN_EXECUTED",
+  "evidence_basis": {
+    "original_006c_manifest_records_builder_sha256": false,
+    "original_006c_run_manifest_records_builder_sha256": false,
+    "original_006c_effect_register_records_builder_sha256": false,
+    "no_pre_execution_builder_hash_in_review_artefacts": true,
+    "current_file_is_the_reviewed_post_run_copy_in_the_006c_evidence_directory": true,
+    "006c1_did_not_modify_builder_source": true,
+    "builder_mtime_utc_vs_006c_run": {
+      "006c_start_timestamp": "2026-08-13T06:58:20Z",
+      "006c_end_timestamp": "2026-08-13T09:48:40Z",
+      "builder_mtime_utc": "2026-08-13T10:00:30Z",
+      "mtime_after_006c_end": true
+    },
+    "note": "EDITOR-006C artefacts record the executed command path review/editor006c_r62_input_bundle/run_editor006c_r62_input_bundle.py but do not record a SHA-256 of those bytes at process start. The on-disk copy is therefore a reviewed post-run copy; exact executed-byte identity is not proven."
+  },
+  "scientific_bundle_note": "All 13 produced arrays were independently verified by EDITOR-006C-R. This builder-identity qualification does not invalidate the independently verified scientific bundle.",
+  "builder_source_modified_during_006c1": false
+}

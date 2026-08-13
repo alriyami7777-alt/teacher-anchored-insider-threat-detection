@@ -1,0 +1,14 @@
+{
+  "files": {
+    "EDITOR006A_MODEL_ALLOWLIST.json": "699c983d1ad98a5dcce7768447dcac4a44f5a5e8fed740b4c8378876efa52e5a",
+    "EDITOR006A_C5_DENYLIST.json": "ae806fdbfa40fb70cfa9269f6375df6dfaddd0e8347599f0b84b1b180c7d8cf5",
+    "EDITOR006A_THRESHOLDS.json": "d964d1fc5b9fb4fdaef3a681917c409c6d65fb43bc9cd1f9933d9c8a0da3c86b",
+    "EDITOR006A_SCALER.json": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+    "EDITOR006A_R62_LABEL_CONTRACT.json": "db4802b28698b965276e03372038200fc511d2167a8bf9f9896f76cce46917f2",
+    "EDITOR006A_INPUT_CONTRACT.json": "91d111411fe3eddedbf75effddee97f759d462639ef4daebcf773d0b16a6af6b",
+    "EDITOR006A_DATA_QUALITY_CAVEATS.json": "627a3dbf526d355f5c1d62c98237e0182d315c6d130d0529f871395c3354ca69"
+  },
+  "serialization": "json.dumps(sort_keys=True, separators=(',', ':')) over filename->sha256 map",
+  "contract_bundle_sha256": "d9f3daf89da4b1d06d22081245a63eac50a0768aece1f1e566187593783e734a",
+  "excludes_mutable_timestamps": true
+}

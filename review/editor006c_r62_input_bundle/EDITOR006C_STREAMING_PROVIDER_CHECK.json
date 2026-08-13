@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "provider": "DenseDailyWindowProvider",
+  "batch_size": 1024,
+  "full_N_20_13_materialised": false,
+  "models_called": false,
+  "checkpoints": [
+    {
+      "checkpoint": "first",
+      "lo": 0,
+      "hi": 1024,
+      "batch_shape": [
+        1024,
+        20,
+        13
+      ],
+      "user_id": "AAB0162",
+      "start_date": "2010-01-02",
+      "end_date": "2010-01-21",
+      "completed_label": 0,
+      "endpoint_label": 0,
+      "window_scenario_ids": [],
+      "endpoint_scenario_ids": [],
+      "official_incident_id": null
+    },
+    {
+      "checkpoint": "middle",
+      "lo": 993280,
+      "hi": 994304,
+      "batch_shape": [
+        1024,
+        20,
+        13
+      ],
+      "user_id": "JRR0769",
+      "start_date": "2010-10-03",
+      "end_date": "2010-10-22",
+      "completed_label": 0,
+      "endpoint_label": 0,
+      "window_scenario_ids": [],
+      "endpoint_scenario_ids": [],
+      "official_incident_id": null
+    },
+    {
+      "checkpoint": "final",
+      "lo": 1987584,
+      "hi": 1988000,
+      "batch_shape": [
+        416,
+        20,
+        13
+      ],
+      "user_id": "ZZO2997",
+      "start_date": "2010-03-24",
+      "end_date": "2010-04-12",
+      "completed_label": 0,
+      "endpoint_label": 0,
+      "window_scenario_ids": [],
+      "endpoint_scenario_ids": [],
+      "official_incident_id": null
+    }
+  ],
+  "first_real_provider_batch_shape": [
+    1024,
+    20,
+    13
+  ]
+}

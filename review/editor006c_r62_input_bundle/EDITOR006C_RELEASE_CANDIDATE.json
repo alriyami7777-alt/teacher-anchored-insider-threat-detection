@@ -1,0 +1,14 @@
+{
+  "dataset_id": "CERT r6.2",
+  "dataset_role": "PRIMARY_UNTOUCHED_CONFIRMATORY_CANDIDATE",
+  "evaluation_type": "UNTOUCHED_CROSS_VERSION_EXTERNAL_COHORT",
+  "harness_release_commit": "2a73123b25f9bf9d92b651e07ce06b8fa1ba6017",
+  "harness_code_sha256": "d287a85e03e8c666be5cf06c2329e6d81fbed3ea08cb1563225ac2d92badc451",
+  "harness_runner_sha256": "3965f47a08fa79f17bc2d4c1cbf54fbdcd3ce1d6add6d7f864c123a501f8d17d",
+  "contract_bundle_sha256": "d9f3daf89da4b1d06d22081245a63eac50a0768aece1f1e566187593783e734a",
+  "model_allowlist_sha256": "699c983d1ad98a5dcce7768447dcac4a44f5a5e8fed740b4c8378876efa52e5a",
+  "input_bundle_manifest_sha256": "0e53a750b9682aa0ed71105619c0b31fccf2208f67eb6c80896946c0e8564fec",
+  "external_predictive_run_authorised": false,
+  "release_status": "MODEL_FREE_INPUT_BUNDLE_READY_FOR_INDEPENDENT_REVIEW",
+  "not_an_external_run_authorisation": true
+}
