@@ -135,7 +135,7 @@ Synthetic fixture includes official-insider positive, contextual non-insider pos
 
 ## TABLE 8 — GIT DELTA
 
-Branch: `repository-hardening`  
+Branch: `repository-hardening`
 HEAD: `b1eee6a11dd35e8b87840ce0974d2d8bf6368a3c`
 
 `git diff --check`: (empty; working tree has no tracked modifications)

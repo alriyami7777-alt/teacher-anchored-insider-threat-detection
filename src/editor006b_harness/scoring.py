@@ -454,4 +454,3 @@ def write_scores_phase_streaming(
     REGISTER.note(man_path, "output_score_complete")
     manifest["manifest_sha256"] = sha256_file(man_path)
     return manifest
-
