@@ -1,0 +1,92 @@
+{
+  "task_id": "EDITOR-006D",
+  "kind": "predeclared_analysis_protocol",
+  "not_executed_on_r62": true,
+  "raw_scores_first": true,
+  "analysis_blocked_until": "ALL_SCORES_COMPLETE.json",
+  "views": [
+    {
+      "name": "COMPLETED_WINDOW",
+      "labels": "completed_window_labels",
+      "N": 1988000
+    },
+    {
+      "name": "ENDPOINT_PAST_ONLY",
+      "labels": "endpoint_labels",
+      "N": 1988000,
+      "interpretation": "endpoint-defined past-only evaluation",
+      "never": ["real-time", "streaming", "intra-day"]
+    },
+    {
+      "name": "DEOVERLAP_OFFSET0",
+      "mask": "deoverlap_offset0_mask",
+      "labels": "completed_window_labels[mask]",
+      "N": 100000
+    }
+  ],
+  "metrics_per_model_seed_view": [
+    "PR-AUC",
+    "F1 at frozen threshold",
+    "precision at frozen threshold",
+    "recall at frozen threshold",
+    "FP",
+    "FN",
+    "Brier score (when scores are valid probabilities)",
+    "log loss (when scores are valid probabilities)"
+  ],
+  "primary_comparison": {
+    "pair": "C5 versus C2 within the same seed",
+    "control": "C2 is the first-class control",
+    "reported": ["C2", "C5", "C5 - C2"],
+    "metrics": ["PR-AUC", "F1"],
+    "positive_delta_is_not_automatic_superiority": true
+  },
+  "uncertainty": {
+    "view": "DEOVERLAP_OFFSET0",
+    "cluster_unit": "user_id",
+    "method": "paired bootstrap",
+    "bootstrap_seed": 2026,
+    "valid_resamples": 2000,
+    "interval": "percentile 95%",
+    "deltas": ["PR-AUC C5-C2", "F1 C5-C2"],
+    "do_not_treat_100000_windows_as_independent_incidents": true,
+    "no_significance_star_language": true,
+    "effective_malicious_cluster_count": 5,
+    "frozen_wording": "Five official insider–incident clusters are represented."
+  },
+  "mechanism": {
+    "models": ["C2", "C5"],
+    "reference": "corresponding frozen teacher",
+    "view": "DEOVERLAP_OFFSET0",
+    "enabled_exact_frozen": [
+      "logit deviation",
+      "route MAE",
+      "route KL",
+      "hard-route agreement",
+      "dominant-leaf agreement"
+    ],
+    "disabled_not_reproducible": [
+      "unused-leaf fraction",
+      "tree-contribution rho"
+    ],
+    "no_c5_must_improve": true
+  },
+  "forbidden_automatic_claims": [
+    "overall predictive superiority",
+    "teacher anchoring improves prediction",
+    "real-time detection",
+    "causal detection",
+    "unseen-user generalisation",
+    "adversarial robustness",
+    "35 independent malicious incidents",
+    "10 independent malicious clusters"
+  ],
+  "required_context": [
+    "cross-version external whole cohort",
+    "same architecture C2 vs C5",
+    "thresholds frozen before r6.2",
+    "five official insider–incident clusters",
+    "event-level labels include contextual users",
+    "de-overlap controls window overlap but not every possible dependence"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "task_id": "EDITOR-006D",
+  "future_output_directory": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores",
+  "require_absent_or_empty_before_run": true,
+  "execution_started_marker": "EXECUTION_STARTED.json",
+  "execution_started_fields": [
+    "task_id",
+    "authorisation_sha256",
+    "external_runner_sha256",
+    "final_release_manifest_sha256",
+    "start_timestamp"
+  ],
+  "if_execution_started_exists": "ABORT",
+  "no_automatic_rerun": true,
+  "no_automatic_overwrite": true,
+  "no_silent_resume": true,
+  "crash_after_execution_started": "STOP; require explicit incident review",
+  "batch_size": 1024,
+  "no_shuffle": true,
+  "never_materialise_N_20_13": true,
+  "external_scorer": "write_scores_phase_streaming",
+  "development_array_scorer_forbidden_for_r62": true,
+  "cli_execute_external_required_for_scoring_path": true,
+  "default_cli_mode": "identity-preflight",
+  "006d_created_true_authorisation": false,
+  "006d_scored_r62": false
+}

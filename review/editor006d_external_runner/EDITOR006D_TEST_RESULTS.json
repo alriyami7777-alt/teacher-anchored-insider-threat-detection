@@ -1,0 +1,20 @@
+{
+  "task_id": "EDITOR-006D",
+  "pytest_invocation": "python -m pytest tests/test_editor006b_*.py tests/test_editor006d_external_runner.py -q",
+  "existing_006b_tests": {
+    "status": "PASS",
+    "n_passed_in_combined_run": 27
+  },
+  "new_006d_tests": {
+    "status": "PASS",
+    "n_passed": 19,
+    "file": "tests/test_editor006d_external_runner.py"
+  },
+  "combined": {
+    "passed": 46,
+    "failed": 0,
+    "elapsed_s": 7.28
+  },
+  "r52_test_opened": false,
+  "r62_predictive_inference_executed": false
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "EDITOR-006E",
+  "dataset_id": "CERT r6.2",
+  "input_bundle_manifest_sha256": "56d3aae461835009471ccb22b1511530bb40e41a294c8bb1640943eaf14354ba",
+  "contract_bundle_sha256": "d9f3daf89da4b1d06d22081245a63eac50a0768aece1f1e566187593783e734a",
+  "harness_code_sha256": "d287a85e03e8c666be5cf06c2329e6d81fbed3ea08cb1563225ac2d92badc451",
+  "model_allowlist_sha256": "699c983d1ad98a5dcce7768447dcac4a44f5a5e8fed740b4c8378876efa52e5a",
+  "authorised_timestamp": "2026-08-13T00:00:00Z",
+  "predictive_external_run_authorised": false,
+  "external_runner_sha256": "f9c33800a5340701c908e7d37fcd0c9fc810c6e550005df2440bb0c1dd4d8061",
+  "harness_runner_sha256": "3965f47a08fa79f17bc2d4c1cbf54fbdcd3ce1d6add6d7f864c123a501f8d17d",
+  "editor006c_release_commit": "b4b19d44b31c4b9d054fa0d782f80e65a18dac4b",
+  "sequence_order_sha256": "21c4dd51f8aefb26fa1987764b0c129fac599fc52653349732a4fd8e39c32b4c",
+  "scaler_sha256": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+  "note": "FALSE template only. Not an external-run authorisation."
+}

@@ -1,0 +1,28 @@
+{
+  "task_id": "EDITOR-006D",
+  "false_authorisation_cli": {
+    "command": "python scripts/run_editor006e_r62_one_pass.py --mode identity-preflight --authorization review/editor006d_external_runner/EDITOR006D_AUTH_TEMPLATE_FALSE.json",
+    "exit_code": 2,
+    "stdout_verdict": "EDITOR006E_EXTERNAL_RUN_ABORTED",
+    "reason": "EXTERNAL GATE: predictive_external_run_authorised is not true",
+    "bundle_opened": false,
+    "models_deserialised": false
+  },
+  "pytest_editor006d": {
+    "wrong_auth_manifest_hash_aborts_before_bundle_open": "PASS",
+    "wrong_external_runner_hash_aborts": "PASS",
+    "wrong_harness_hash_aborts": "PASS",
+    "wrong_sequence_order_hash_aborts": "PASS",
+    "wrong_scaler_hash_aborts": "PASS",
+    "false_authorisation_aborts": "PASS",
+    "output_directory_nonempty_aborts": "PASS",
+    "execution_started_already_present_aborts": "PASS",
+    "dev_array_external_scoring_rejected": "PASS",
+    "streaming_path_selected": "PASS",
+    "metrics_blocked_before_ALL_SCORES_COMPLETE": "PASS",
+    "c5_denylist_preserved": "PASS",
+    "frozen_thresholds_preserved": "PASS",
+    "mechanism_disabled_metrics_remain_disabled": "PASS"
+  },
+  "r62_npy_opened_for_inference": false
+}
