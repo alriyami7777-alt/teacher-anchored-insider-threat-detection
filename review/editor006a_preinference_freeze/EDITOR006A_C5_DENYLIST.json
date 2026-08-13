@@ -1,0 +1,42 @@
+{
+  "task_id": "EDITOR-006A",
+  "deny_list_id": "EDITOR006A_C5_ABLATION_RETRAINED_DO_NOT_USE",
+  "rule": "The future harness MUST abort if any supplied artefact SHA-256 is in denied_sha256.",
+  "do_not_confuse": {
+    "original_paper_C5": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1",
+    "ablation_retrained_C5": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C5"
+  },
+  "n_denied": 3,
+  "artefacts": [
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C5\\seed42\\best_student.pt",
+      "exists": true,
+      "family": "C5_ablation_retrained_DO_NOT_USE",
+      "seed": 42,
+      "denied_sha256": "a5a08dc24a89014fd1bb92c6c6342ed50511b33804e95246e480e90c4692b214",
+      "observed_sha256": "a5a08dc24a89014fd1bb92c6c6342ed50511b33804e95246e480e90c4692b214",
+      "status": "MATCH_DENY_HASH",
+      "harness_rule": "ABORT if this SHA-256 is supplied as a C5 / student artefact"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C5\\seed52\\best_student.pt",
+      "exists": true,
+      "family": "C5_ablation_retrained_DO_NOT_USE",
+      "seed": 52,
+      "denied_sha256": "3203455562ec6ff4018cc5cb3299bc2530bc8eff95aa523e6b7746f43731d971",
+      "observed_sha256": "3203455562ec6ff4018cc5cb3299bc2530bc8eff95aa523e6b7746f43731d971",
+      "status": "MATCH_DENY_HASH",
+      "harness_rule": "ABORT if this SHA-256 is supplied as a C5 / student artefact"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C5\\seed62\\best_student.pt",
+      "exists": true,
+      "family": "C5_ablation_retrained_DO_NOT_USE",
+      "seed": 62,
+      "denied_sha256": "54f879d6b163185073ea586fa50a68edf89b603c269c6208c8b48156dccd4e22",
+      "observed_sha256": "54f879d6b163185073ea586fa50a68edf89b603c269c6208c8b48156dccd4e22",
+      "status": "MATCH_DENY_HASH",
+      "harness_rule": "ABORT if this SHA-256 is supplied as a C5 / student artefact"
+    }
+  ]
+}

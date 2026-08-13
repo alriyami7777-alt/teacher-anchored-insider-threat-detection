@@ -1,0 +1,149 @@
+{
+  "task_id": "EDITOR-006A",
+  "start_timestamp": "2026-08-13T04:46:42Z",
+  "end_timestamp": "2026-08-13T04:46:45Z",
+  "machine_environment": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]"
+  },
+  "verdict": "EDITOR006A_PREINFERENCE_FREEZE_COMPLETE_WITH_QUALIFICATIONS",
+  "R62_LABEL_RULE": "R52_LABEL_RULE_EVENT_LEVEL_ANSWER_MATCH",
+  "MODEL_ALLOWLIST_STATUS": "PASS",
+  "SCALER_FREEZE_STATUS": "PASS",
+  "HTTP_CONTRACT_STATUS": "PASS",
+  "THRESHOLD_FREEZE_STATUS": "PASS",
+  "CDE1846_TIMESTAMP_STATUS": "PASS",
+  "REMAINING_BLOCKERS": [],
+  "qualifications": [
+    "Paper-support registry still points at warmup commit 330ac6a (completed_through_stage2b1a); actual warmup HEAD is later and is recorded honestly, not rewritten.",
+    "Inherited Stage 2B-2 one-email-field mismatch; 470/470 malicious IDs remain MATCHED_ONCE.",
+    "insiders.csv scenario-4 start field is malformed (`/21/2011 11:43:39`); CDE1846 labels use matched event-record timestamps (first event 02/21/2011 11:43:39), not that summary field.",
+    "r6.2 HTTP has an extra `activity` column relative to r5.2; http_count remains one row = one event with no URL/content deduplication (HTTP semantic PASS).",
+    "No r6.2 internal partition was selected (candidates A\u2013D remain UNRESOLVED); frozen counts are whole-cohort.",
+    "Checkpoint/data identity is frozen by SHA-256; that is not a claim of full from-source reproducibility of uncommitted historical producers.",
+    "Official-insider-only de-overlap is reported descriptively and does not replace the frozen EVENT_LEVEL counts 715 / 78 / 35."
+  ],
+  "NEXT_ACTION": "STOP. Do not build or run the predictive harness in this task. EDITOR-006B may build a strict hash-gated inference-only harness on synthetic/development fixtures only. No CERT r6.2 predictive inference is authorised.",
+  "predictive_models_loaded": false,
+  "predictive_inference_executed": false,
+  "model_metrics_computed": false,
+  "training_executed": false,
+  "threshold_selection_executed": false,
+  "scaler_fit_on_r62": false,
+  "r52_test_tensor_opened": false,
+  "raw_r62_files_modified": false,
+  "future_external_test_run": false,
+  "git": {
+    "paper_support": {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection",
+      "exists": "True",
+      "branch": "repository-hardening",
+      "head": "b1eee6a11dd35e8b87840ce0974d2d8bf6368a3c",
+      "short": "b1eee6a",
+      "status_porcelain": "?? review/_tmp_editor006a_freeze.py\n?? review/_tmp_scaler_hash_check.py\n?? review/editor004a_r51_model_free_audit/\n?? review/editor005a_r62_model_free_audit/\n?? review/editor006a_preinference_freeze/",
+      "log1": "b1eee6a Merge public main warning into submission integrity branch"
+    },
+    "warmup": {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\cert-r62-objective1-warmup",
+      "exists": "True",
+      "branch": "objective1-r62-model-free-warmup",
+      "head": "6b45cbc07d3cc2f80df75814329aa086756c717b",
+      "short": "6b45cbc",
+      "status_porcelain": "",
+      "log1": "6b45cbc Freeze CERT r6.2 Stage 3B-1W authorisation readiness reconciliation"
+    }
+  },
+  "provenance": {
+    "r62_warmup_registry_pointer": {
+      "experiment_registry_row": "r62_model_free_matching_stage2b1a",
+      "commit_listed": "330ac6a",
+      "status_listed": "completed_through_stage2b1a",
+      "relationship": "starting pointer in paper-support manifests; later warmup stages exist beyond this commit and are not rewritten into the registry by this task"
+    },
+    "actual_warmup_head": {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\cert-r62-objective1-warmup",
+      "exists": "True",
+      "branch": "objective1-r62-model-free-warmup",
+      "head": "6b45cbc07d3cc2f80df75814329aa086756c717b",
+      "short": "6b45cbc",
+      "status_porcelain": "",
+      "log1": "6b45cbc Freeze CERT r6.2 Stage 3B-1W authorisation readiness reconciliation"
+    },
+    "paper_support": {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection",
+      "exists": "True",
+      "branch": "repository-hardening",
+      "head": "b1eee6a11dd35e8b87840ce0974d2d8bf6368a3c",
+      "short": "b1eee6a",
+      "status_porcelain": "?? review/_tmp_editor006a_freeze.py\n?? review/_tmp_scaler_hash_check.py\n?? review/editor004a_r51_model_free_audit/\n?? review/editor005a_r62_model_free_audit/\n?? review/editor006a_preinference_freeze/",
+      "log1": "b1eee6a Merge public main warning into submission integrity branch"
+    },
+    "feasibility": {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility",
+      "exists": "True",
+      "branch": "HEAD",
+      "head": "fa5a5c62c18693817e1b00d813fec0f084807dc4",
+      "short": "fa5a5c6",
+      "status_porcelain": "M scripts/objective2_r52_odst_vs_attention_linear_value_audit/forward_analyses.py\n M scripts/objective2_teacher_anchored_odst/models.py\n M scripts/objective2_teacher_anchored_odst/train.py\n M scripts/objective3_r52_explanation_robustness_portability/models.py\n M scripts/objective3_r52_odst_explanation_posthoc_test/core.py\n M scripts/objective3_r52_odst_root_cause_audit/audit_core.py\n?? scripts/objective2_r52_teacher_anchoring_ablation/\n?? scripts/run_objective2_r52_teacher_anchoring_ablation.py\n?? tests/test_objective2_r52_teacher_anchoring_ablation.py",
+      "log1": "fa5a5c6 Freeze E08A implementation authorisation"
+    },
+    "locked_baselines": {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines",
+      "exists": "True",
+      "branch": "objective2-r52-locked-baselines",
+      "head": "563f4981df6dc9dc4e0f96410c32b728706310f0",
+      "short": "563f498",
+      "status_porcelain": "?? inputs/",
+      "log1": "563f498 Add r5.2 post-run audit and Chapter 4 reporting package"
+    },
+    "teacher_anchored_reproducibility": {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility",
+      "exists": "True",
+      "branch": "objective2-r52-teacher-anchored-reproducibility",
+      "head": "5109e3817e683941c76547cc214e7bd08ffe2477",
+      "short": "5109e38",
+      "status_porcelain": "M scripts/objective2_r52_teacher_anchored_reproducibility/recorded_results/EXPERIMENTAL_HANDOVER.md",
+      "log1": "5109e38 Record r5.2 teacher-anchored reproducibility package commit hash in study reports."
+    },
+    "preparation": {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-preparation",
+      "exists": "True",
+      "branch": "r52-sequence-preparation",
+      "head": "14def3bd248190c253ecc577d775396a81753981",
+      "short": "14def3b",
+      "status_porcelain": "?? docs/cert_r52_notes.md\n?? scripts/cert_common13_pipeline.py\n?? scripts/prepare_cert_common13_pipeline.py\n?? tests/test_common13_pipeline.py",
+      "log1": "14def3b Add multi-release CERT readiness audit pipeline"
+    },
+    "honest_distinction": {
+      "checkpoint_data_identity": "SHA-256 of frozen artefacts and scaler JSON",
+      "full_from_source_reproducibility": "NOT claimed; uncommitted or later warmup producers are recorded as such"
+    },
+    "source_hashes": {
+      "cert_common13_pipeline.py": "3c6103f2fa019fc15d445bac7c574472aeb7614345fb84f43488f6759b708958",
+      "r52_locked_baselines/data.py": "dd47330f82791bc7c56d3d6019ce80bcd6ca31f497b9fffeabc9165f35b1b2f9",
+      "r52_locked_baselines/inference.py": "2ac85290c0ed3e6d1ff4ef326d4a4dd798489265d6c91ae8adcd781ee59201d1",
+      "r52_locked_baselines/train.py": "108d71482acd88fe0a720e4c259345a182a4e1d0c302ca698a16a410306b3815"
+    }
+  },
+  "output_files": [
+    "EDITOR006A_PREINFERENCE_FREEZE.md",
+    "EDITOR006A_MODEL_ALLOWLIST.json",
+    "EDITOR006A_C5_DENYLIST.json",
+    "EDITOR006A_THRESHOLDS.json",
+    "EDITOR006A_SCALER.json",
+    "EDITOR006A_R62_LABEL_CONTRACT.json",
+    "EDITOR006A_INPUT_CONTRACT.json",
+    "EDITOR006A_DATA_QUALITY_CAVEATS.json",
+    "EDITOR006A_RUN_MANIFEST.json"
+  ],
+  "output_file_hashes": {
+    "EDITOR006A_PREINFERENCE_FREEZE.md": "b352f9166b75a8f2eea2f060ba4ca5e58ef5c1a4184082efcce98cc30bff6bb1",
+    "EDITOR006A_MODEL_ALLOWLIST.json": "699c983d1ad98a5dcce7768447dcac4a44f5a5e8fed740b4c8378876efa52e5a",
+    "EDITOR006A_C5_DENYLIST.json": "ae806fdbfa40fb70cfa9269f6375df6dfaddd0e8347599f0b84b1b180c7d8cf5",
+    "EDITOR006A_THRESHOLDS.json": "d964d1fc5b9fb4fdaef3a681917c409c6d65fb43bc9cd1f9933d9c8a0da3c86b",
+    "EDITOR006A_SCALER.json": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+    "EDITOR006A_R62_LABEL_CONTRACT.json": "db4802b28698b965276e03372038200fc511d2167a8bf9f9896f76cce46917f2",
+    "EDITOR006A_INPUT_CONTRACT.json": "91d111411fe3eddedbf75effddee97f759d462639ef4daebcf773d0b16a6af6b",
+    "EDITOR006A_DATA_QUALITY_CAVEATS.json": "627a3dbf526d355f5c1d62c98237e0182d315c6d130d0529f871395c3354ca69"
+  }
+}

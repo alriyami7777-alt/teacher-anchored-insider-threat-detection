@@ -1,0 +1,33 @@
+{
+  "schema_name": "EDITOR006B1_SEQUENCE_METADATA",
+  "label_rule": "R52_LABEL_RULE_EVENT_LEVEL_ANSWER_MATCH",
+  "distinction": "official_incident_id != contextual scenario evidence",
+  "official_incident_id": {
+    "nullable": true,
+    "derives_from": "official insiders/scenario mapping only",
+    "not_assigned_from": "contextual answer-event scenario membership"
+  },
+  "answer_scenario_ids": {
+    "meaning": "scenario IDs whose matched answer events occur within the user's T=20 window",
+    "cardinality": "zero, one, or more",
+    "representation": "sorted unique tuple of ints"
+  },
+  "endpoint_answer_scenario_ids": {
+    "meaning": "scenario IDs of matched events on decision day d",
+    "cardinality": "zero, one, or more"
+  },
+  "required_fields": [
+    "sequence_id",
+    "user_id",
+    "window_start_date",
+    "window_end_date",
+    "decision_date",
+    "completed_window_label",
+    "endpoint_label",
+    "deoverlap_offset0_flag",
+    "official_insider_flag",
+    "official_incident_id",
+    "answer_scenario_ids",
+    "endpoint_answer_scenario_ids"
+  ]
+}

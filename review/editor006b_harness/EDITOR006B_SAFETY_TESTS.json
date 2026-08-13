@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "files_scanned": [
+    "__init__.py",
+    "bootstrap.py",
+    "cli.py",
+    "contracts.py",
+    "hash_gate.py",
+    "input_bundle.py",
+    "manifests.py",
+    "mechanism.py",
+    "metrics.py",
+    "model_loaders.py",
+    "safety.py",
+    "scoring.py"
+  ],
+  "hits": []
+}

@@ -1,0 +1,800 @@
+{
+  "task_id": "EDITOR-006B",
+  "start_timestamp": "2026-08-13T05:19:16Z",
+  "end_timestamp": "2026-08-13T05:19:59Z",
+  "repository": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection",
+  "git_before": {
+    "branch": "repository-hardening",
+    "head": "b1eee6a11dd35e8b87840ce0974d2d8bf6368a3c",
+    "status_porcelain": "?? review/editor004a_r51_model_free_audit/\n?? review/editor005a_r62_model_free_audit/\n?? review/editor006a_preinference_freeze/\n?? scripts/run_editor006b_harness.py\n?? src/editor006b_harness/\n?? tests/conftest.py\n?? tests/test_editor006b_contracts.py\n?? tests/test_editor006b_determinism.py\n?? tests/test_editor006b_external_gate.py\n?? tests/test_editor006b_hash_gate.py\n?? tests/test_editor006b_identifiers.py\n?? tests/test_editor006b_no_training_paths.py\n?? tests/test_editor006b_raw_scores_first.py\n?? tests/test_editor006b_strict_loading.py",
+    "status_short": "?? review/editor004a_r51_model_free_audit/\n?? review/editor005a_r62_model_free_audit/\n?? review/editor006a_preinference_freeze/\n?? scripts/run_editor006b_harness.py\n?? src/editor006b_harness/\n?? tests/conftest.py\n?? tests/test_editor006b_contracts.py\n?? tests/test_editor006b_determinism.py\n?? tests/test_editor006b_external_gate.py\n?? tests/test_editor006b_hash_gate.py\n?? tests/test_editor006b_identifiers.py\n?? tests/test_editor006b_no_training_paths.py\n?? tests/test_editor006b_raw_scores_first.py\n?? tests/test_editor006b_strict_loading.py",
+    "diff_check": "",
+    "diff_stat": ""
+  },
+  "git_after": {
+    "branch": "repository-hardening",
+    "head": "b1eee6a11dd35e8b87840ce0974d2d8bf6368a3c",
+    "status_porcelain": "?? review/editor004a_r51_model_free_audit/\n?? review/editor005a_r62_model_free_audit/\n?? review/editor006a_preinference_freeze/\n?? review/editor006b_harness/\n?? scripts/run_editor006b_harness.py\n?? src/editor006b_harness/\n?? tests/conftest.py\n?? tests/test_editor006b_contracts.py\n?? tests/test_editor006b_determinism.py\n?? tests/test_editor006b_external_gate.py\n?? tests/test_editor006b_hash_gate.py\n?? tests/test_editor006b_identifiers.py\n?? tests/test_editor006b_no_training_paths.py\n?? tests/test_editor006b_raw_scores_first.py\n?? tests/test_editor006b_strict_loading.py",
+    "status_short": "?? review/editor004a_r51_model_free_audit/\n?? review/editor005a_r62_model_free_audit/\n?? review/editor006a_preinference_freeze/\n?? review/editor006b_harness/\n?? scripts/run_editor006b_harness.py\n?? src/editor006b_harness/\n?? tests/conftest.py\n?? tests/test_editor006b_contracts.py\n?? tests/test_editor006b_determinism.py\n?? tests/test_editor006b_external_gate.py\n?? tests/test_editor006b_hash_gate.py\n?? tests/test_editor006b_identifiers.py\n?? tests/test_editor006b_no_training_paths.py\n?? tests/test_editor006b_raw_scores_first.py\n?? tests/test_editor006b_strict_loading.py",
+    "diff_check": "",
+    "diff_stat": ""
+  },
+  "versions": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "pytorch": "2.13.0+cpu",
+    "numpy": "2.4.6",
+    "device": "cpu",
+    "cuda": null,
+    "scikit_learn": "1.9.0",
+    "xgboost": "3.2.0"
+  },
+  "freeze_contract_file_hashes": {
+    "EDITOR006A_MODEL_ALLOWLIST.json": "699c983d1ad98a5dcce7768447dcac4a44f5a5e8fed740b4c8378876efa52e5a",
+    "EDITOR006A_C5_DENYLIST.json": "ae806fdbfa40fb70cfa9269f6375df6dfaddd0e8347599f0b84b1b180c7d8cf5",
+    "EDITOR006A_THRESHOLDS.json": "d964d1fc5b9fb4fdaef3a681917c409c6d65fb43bc9cd1f9933d9c8a0da3c86b",
+    "EDITOR006A_SCALER.json": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+    "EDITOR006A_R62_LABEL_CONTRACT.json": "db4802b28698b965276e03372038200fc511d2167a8bf9f9896f76cce46917f2",
+    "EDITOR006A_INPUT_CONTRACT.json": "91d111411fe3eddedbf75effddee97f759d462639ef4daebcf773d0b16a6af6b",
+    "EDITOR006A_DATA_QUALITY_CAVEATS.json": "627a3dbf526d355f5c1d62c98237e0182d315c6d130d0529f871395c3354ca69",
+    "EDITOR006A_RUN_MANIFEST.json": "477118162beb19f252cf22ab701c24a447dc65a013b32ad57027e63255f2ccc0"
+  },
+  "model_allowlist_hash": "699c983d1ad98a5dcce7768447dcac4a44f5a5e8fed740b4c8378876efa52e5a",
+  "c5_denylist_hash": "ae806fdbfa40fb70cfa9269f6375df6dfaddd0e8347599f0b84b1b180c7d8cf5",
+  "threshold_file_hash": "d964d1fc5b9fb4fdaef3a681917c409c6d65fb43bc9cd1f9933d9c8a0da3c86b",
+  "scaler_hash": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+  "input_contract_hash": "91d111411fe3eddedbf75effddee97f759d462639ef4daebcf773d0b16a6af6b",
+  "aggregator_source_hash": "dd47330f82791bc7c56d3d6019ce80bcd6ca31f497b9fffeabc9165f35b1b2f9",
+  "harness_code_hash": "fdf7226a6c05a5500fb03eef9d4d6361ddbde542011f1d8fa3c00ba06270851e",
+  "contract_bundle_hash": "003f49a6a981b8a51c4e60d9e027614cfd4c7cd9a1d4e4b77bddcbc49dd9392f",
+  "opened": [
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006a_preinference_freeze\\EDITOR006A_MODEL_ALLOWLIST.json",
+      "role": "freeze",
+      "utc": "2026-08-13T05:19:16Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006a_preinference_freeze\\EDITOR006A_C5_DENYLIST.json",
+      "role": "freeze",
+      "utc": "2026-08-13T05:19:16Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006a_preinference_freeze\\EDITOR006A_THRESHOLDS.json",
+      "role": "freeze",
+      "utc": "2026-08-13T05:19:16Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006a_preinference_freeze\\EDITOR006A_SCALER.json",
+      "role": "freeze",
+      "utc": "2026-08-13T05:19:16Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006a_preinference_freeze\\EDITOR006A_R62_LABEL_CONTRACT.json",
+      "role": "freeze",
+      "utc": "2026-08-13T05:19:16Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006a_preinference_freeze\\EDITOR006A_INPUT_CONTRACT.json",
+      "role": "freeze",
+      "utc": "2026-08-13T05:19:16Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006a_preinference_freeze\\EDITOR006A_DATA_QUALITY_CAVEATS.json",
+      "role": "freeze",
+      "utc": "2026-08-13T05:19:16Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006a_preinference_freeze\\EDITOR006A_RUN_MANIFEST.json",
+      "role": "freeze",
+      "utc": "2026-08-13T05:19:16Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_CONTRACT_VALIDATION.json",
+      "role": "output",
+      "utc": "2026-08-13T05:19:16Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_MODEL_HASH_PREFLIGHT.json",
+      "role": "output",
+      "utc": "2026-08-13T05:19:16Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_train.npz",
+      "role": "fixture_train_npz",
+      "utc": "2026-08-13T05:19:16Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006a_preinference_freeze\\EDITOR006A_SCALER.json",
+      "role": "scaler",
+      "utc": "2026-08-13T05:19:19Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\interval_level\\r52_user_day_intervals_dense.parquet",
+      "role": "fixture_dense_parquet_trainonly",
+      "utc": "2026-08-13T05:19:24Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_validation.npz",
+      "role": "fixture_val_npz_hash_only",
+      "utc": "2026-08-13T05:19:53Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_SCALER_CLOSED_LOOP.json",
+      "role": "output",
+      "utc": "2026-08-13T05:19:53Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed42\\best.pt",
+      "role": "model_teacher_frozen_odst_42",
+      "utc": "2026-08-13T05:19:53Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed52\\best.pt",
+      "role": "model_teacher_frozen_odst_52",
+      "utc": "2026-08-13T05:19:53Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed62\\best.pt",
+      "role": "model_teacher_frozen_odst_62",
+      "utc": "2026-08-13T05:19:53Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed42\\best_student.pt",
+      "role": "model_C2_42",
+      "utc": "2026-08-13T05:19:53Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed52\\best_student.pt",
+      "role": "model_C2_52",
+      "utc": "2026-08-13T05:19:53Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed62\\best_student.pt",
+      "role": "model_C2_62",
+      "utc": "2026-08-13T05:19:53Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed42\\best_student.pt",
+      "role": "model_C5_original_paper_42",
+      "utc": "2026-08-13T05:19:53Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed52\\best_student.pt",
+      "role": "model_C5_original_paper_52",
+      "utc": "2026-08-13T05:19:53Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed62\\best_student.pt",
+      "role": "model_C5_original_paper_62",
+      "utc": "2026-08-13T05:19:53Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed42\\best.pt",
+      "role": "model_attention_linear_42",
+      "utc": "2026-08-13T05:19:54Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed52\\best.pt",
+      "role": "model_attention_linear_52",
+      "utc": "2026-08-13T05:19:54Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed62\\best.pt",
+      "role": "model_attention_linear_62",
+      "utc": "2026-08-13T05:19:54Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed42\\model.joblib",
+      "role": "model_RF_40_42",
+      "utc": "2026-08-13T05:19:54Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed52\\model.joblib",
+      "role": "model_RF_40_52",
+      "utc": "2026-08-13T05:19:54Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed62\\model.joblib",
+      "role": "model_RF_40_62",
+      "utc": "2026-08-13T05:19:54Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed42\\model.json",
+      "role": "model_XGBoost_40_42",
+      "utc": "2026-08-13T05:19:54Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed52\\model.json",
+      "role": "model_XGBoost_40_52",
+      "utc": "2026-08-13T05:19:54Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed62\\model.json",
+      "role": "model_XGBoost_40_62",
+      "utc": "2026-08-13T05:19:54Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_STRICT_LOAD_RESULTS.json",
+      "role": "output",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed42\\best.pt",
+      "role": "model_teacher_frozen_odst_42",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\teacher_seed42.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed52\\best.pt",
+      "role": "model_teacher_frozen_odst_52",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\teacher_seed52.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed62\\best.pt",
+      "role": "model_teacher_frozen_odst_62",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\teacher_seed62.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed42\\best_student.pt",
+      "role": "model_C2_42",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\c2_seed42.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed52\\best_student.pt",
+      "role": "model_C2_52",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\c2_seed52.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed62\\best_student.pt",
+      "role": "model_C2_62",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\c2_seed62.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed42\\best_student.pt",
+      "role": "model_C5_original_paper_42",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\c5_seed42.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed52\\best_student.pt",
+      "role": "model_C5_original_paper_52",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\c5_seed52.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed62\\best_student.pt",
+      "role": "model_C5_original_paper_62",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\c5_seed62.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed42\\best.pt",
+      "role": "model_attention_linear_42",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\attention_linear_seed42.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed52\\best.pt",
+      "role": "model_attention_linear_52",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\attention_linear_seed52.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed62\\best.pt",
+      "role": "model_attention_linear_62",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\attention_linear_seed62.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed42\\model.joblib",
+      "role": "model_RF_40_42",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\rf_seed42.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed52\\model.joblib",
+      "role": "model_RF_40_52",
+      "utc": "2026-08-13T05:19:55Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\rf_seed52.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:56Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed62\\model.joblib",
+      "role": "model_RF_40_62",
+      "utc": "2026-08-13T05:19:56Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\rf_seed62.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:56Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed42\\model.json",
+      "role": "model_XGBoost_40_42",
+      "utc": "2026-08-13T05:19:56Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\xgb_seed42.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:56Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed52\\model.json",
+      "role": "model_XGBoost_40_52",
+      "utc": "2026-08-13T05:19:56Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\xgb_seed52.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:56Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed62\\model.json",
+      "role": "model_XGBoost_40_62",
+      "utc": "2026-08-13T05:19:56Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\xgb_seed62.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:56Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\SCORE_COMPLETE.json",
+      "role": "output_score_complete",
+      "utc": "2026-08-13T05:19:56Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed42\\best.pt",
+      "role": "model_teacher_frozen_odst_42",
+      "utc": "2026-08-13T05:19:56Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_SAFETY_TESTS.json",
+      "role": "output",
+      "utc": "2026-08-13T05:19:56Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_SYNTHETIC_SELFTEST.json",
+      "role": "output",
+      "utc": "2026-08-13T05:19:56Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_RAW_SCORE_ORDER_TEST.json",
+      "role": "output",
+      "utc": "2026-08-13T05:19:56Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_MECHANISM_MODULE_STATUS.json",
+      "role": "output",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_validation.npz",
+      "role": "fixture_validation_npz",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed42\\best.pt",
+      "role": "model_teacher_frozen_odst_42",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\teacher_seed42.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed52\\best.pt",
+      "role": "model_teacher_frozen_odst_52",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\teacher_seed52.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed62\\best.pt",
+      "role": "model_teacher_frozen_odst_62",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\teacher_seed62.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed42\\best_student.pt",
+      "role": "model_C2_42",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\c2_seed42.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed52\\best_student.pt",
+      "role": "model_C2_52",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\c2_seed52.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed62\\best_student.pt",
+      "role": "model_C2_62",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\c2_seed62.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed42\\best_student.pt",
+      "role": "model_C5_original_paper_42",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\c5_seed42.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed52\\best_student.pt",
+      "role": "model_C5_original_paper_52",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\c5_seed52.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed62\\best_student.pt",
+      "role": "model_C5_original_paper_62",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\c5_seed62.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed42\\best.pt",
+      "role": "model_attention_linear_42",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\attention_linear_seed42.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed52\\best.pt",
+      "role": "model_attention_linear_52",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\attention_linear_seed52.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed62\\best.pt",
+      "role": "model_attention_linear_62",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\attention_linear_seed62.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed42\\model.joblib",
+      "role": "model_RF_40_42",
+      "utc": "2026-08-13T05:19:57Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\rf_seed42.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:58Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed52\\model.joblib",
+      "role": "model_RF_40_52",
+      "utc": "2026-08-13T05:19:58Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\rf_seed52.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:58Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed62\\model.joblib",
+      "role": "model_RF_40_62",
+      "utc": "2026-08-13T05:19:58Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\rf_seed62.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:58Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed42\\model.json",
+      "role": "model_XGBoost_40_42",
+      "utc": "2026-08-13T05:19:58Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\xgb_seed42.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:58Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed52\\model.json",
+      "role": "model_XGBoost_40_52",
+      "utc": "2026-08-13T05:19:58Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\xgb_seed52.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:58Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed62\\model.json",
+      "role": "model_XGBoost_40_62",
+      "utc": "2026-08-13T05:19:58Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\xgb_seed62.npy",
+      "role": "output_raw_score",
+      "utc": "2026-08-13T05:19:58Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\SCORE_COMPLETE.json",
+      "role": "output_score_complete",
+      "utc": "2026-08-13T05:19:58Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_DEVELOPMENT_FIXTURE.json",
+      "role": "output",
+      "utc": "2026-08-13T05:19:58Z"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_EXTERNAL_GATE_TESTS.json",
+      "role": "output",
+      "utc": "2026-08-13T05:19:58Z"
+    }
+  ],
+  "models_loaded": [
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed42\\best.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed52\\best.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed62\\best.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed42\\best_student.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed52\\best_student.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed62\\best_student.pt",
+    "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed42\\best_student.pt",
+    "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed52\\best_student.pt",
+    "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed62\\best_student.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed42\\best.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed52\\best.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed62\\best.pt",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed42\\model.joblib",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed52\\model.joblib",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed62\\model.joblib",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed42\\model.json",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed52\\model.json",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed62\\model.json",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed42\\best.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed52\\best.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed62\\best.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed42\\best_student.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed52\\best_student.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed62\\best_student.pt",
+    "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed42\\best_student.pt",
+    "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed52\\best_student.pt",
+    "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed62\\best_student.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed42\\best.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed52\\best.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed62\\best.pt",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed42\\model.joblib",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed52\\model.joblib",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed62\\model.joblib",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed42\\model.json",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed52\\model.json",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed62\\model.json",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed42\\best.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed42\\best.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed52\\best.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed62\\best.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed42\\best_student.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed52\\best_student.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed62\\best_student.pt",
+    "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed42\\best_student.pt",
+    "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed52\\best_student.pt",
+    "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed62\\best_student.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed42\\best.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed52\\best.pt",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed62\\best.pt",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed42\\model.joblib",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed52\\model.joblib",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed62\\model.joblib",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed42\\model.json",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed52\\model.json",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed62\\model.json"
+  ],
+  "fixture_files": [
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_train.npz",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\interval_level\\r52_user_day_intervals_dense.parquet",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_validation.npz",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_validation.npz"
+  ],
+  "outputs_created": [
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_CONTRACT_VALIDATION.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_MODEL_HASH_PREFLIGHT.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_SCALER_CLOSED_LOOP.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_STRICT_LOAD_RESULTS.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\teacher_seed42.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\teacher_seed52.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\teacher_seed62.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\c2_seed42.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\c2_seed52.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\c2_seed62.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\c5_seed42.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\c5_seed52.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\c5_seed62.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\attention_linear_seed42.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\attention_linear_seed52.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\attention_linear_seed62.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\rf_seed42.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\rf_seed52.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\rf_seed62.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\xgb_seed42.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\xgb_seed52.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\raw_scores\\xgb_seed62.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\synthetic_fixture\\SCORE_COMPLETE.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_SAFETY_TESTS.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_SYNTHETIC_SELFTEST.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_RAW_SCORE_ORDER_TEST.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_MECHANISM_MODULE_STATUS.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\teacher_seed42.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\teacher_seed52.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\teacher_seed62.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\c2_seed42.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\c2_seed52.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\c2_seed62.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\c5_seed42.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\c5_seed52.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\c5_seed62.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\attention_linear_seed42.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\attention_linear_seed52.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\attention_linear_seed62.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\rf_seed42.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\rf_seed52.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\rf_seed62.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\xgb_seed42.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\xgb_seed52.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\raw_scores\\xgb_seed62.npy",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\development_fixture\\SCORE_COMPLETE.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_DEVELOPMENT_FIXTURE.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006b_harness\\EDITOR006B_EXTERNAL_GATE_TESTS.json"
+  ],
+  "flags": {
+    "r62_predictive_inference": false,
+    "r62_input_bundle_opened": false,
+    "r52_test_tensor_opened": false,
+    "training_executed": false,
+    "scaler_fit_executed": false,
+    "threshold_selection_executed": false,
+    "calibration_fit_executed": false,
+    "model_selection_executed": false
+  },
+  "test_matrix": {
+    "T01": "PASS",
+    "T02": "PASS",
+    "T03": "PASS",
+    "T04": "PASS",
+    "T05": "PASS",
+    "T06": "PASS",
+    "T07": "PASS",
+    "T08": "PASS",
+    "T09": "PASS",
+    "T10": "PASS",
+    "T11": "PASS",
+    "T12": "PASS",
+    "T13": "PASS",
+    "T14": "PASS",
+    "T15": "PASS",
+    "T16": "PASS",
+    "T17": "PASS",
+    "T18": "PASS",
+    "T19": "PASS",
+    "T20": "PASS",
+    "T21": "PASS",
+    "T22": "PASS",
+    "T23": "PASS",
+    "T24": "PASS",
+    "T25": "PASS",
+    "T26": "PASS",
+    "T27": "PASS",
+    "T28": "PASS",
+    "T29": "PASS",
+    "T30": "PASS",
+    "T31": "PASS",
+    "T32": "PASS",
+    "T33": "PASS",
+    "T34": "PASS",
+    "T35": "PASS",
+    "T36": "PASS",
+    "T37": "PASS",
+    "T38": "PASS",
+    "T39": "PASS",
+    "T40": "PASS"
+  },
+  "verdict": "EDITOR006B_HARNESS_READY_WITH_QUALIFICATIONS",
+  "r62_predictive_inference": false,
+  "r62_predictive_inference_authorised": false,
+  "mechanism_status": "PASS"
+}

@@ -1,0 +1,468 @@
+{
+  "status": "PASS",
+  "n_allow": 18,
+  "n_deny": 3,
+  "allow_deny_disjoint": true,
+  "scaler_sha256": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+  "aggregator_sha256": "dd47330f82791bc7c56d3d6019ce80bcd6ca31f497b9fffeabc9165f35b1b2f9",
+  "c2_seed62_threshold": 0.6544522184133537,
+  "label_rule": "R52_LABEL_RULE_EVENT_LEVEL_ANSWER_MATCH",
+  "freeze_file_sha256": {
+    "EDITOR006A_MODEL_ALLOWLIST.json": "699c983d1ad98a5dcce7768447dcac4a44f5a5e8fed740b4c8378876efa52e5a",
+    "EDITOR006A_C5_DENYLIST.json": "ae806fdbfa40fb70cfa9269f6375df6dfaddd0e8347599f0b84b1b180c7d8cf5",
+    "EDITOR006A_THRESHOLDS.json": "d964d1fc5b9fb4fdaef3a681917c409c6d65fb43bc9cd1f9933d9c8a0da3c86b",
+    "EDITOR006A_SCALER.json": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+    "EDITOR006A_R62_LABEL_CONTRACT.json": "db4802b28698b965276e03372038200fc511d2167a8bf9f9896f76cce46917f2",
+    "EDITOR006A_INPUT_CONTRACT.json": "91d111411fe3eddedbf75effddee97f759d462639ef4daebcf773d0b16a6af6b",
+    "EDITOR006A_DATA_QUALITY_CAVEATS.json": "627a3dbf526d355f5c1d62c98237e0182d315c6d130d0529f871395c3354ca69",
+    "EDITOR006A_RUN_MANIFEST.json": "477118162beb19f252cf22ab701c24a447dc65a013b32ad57027e63255f2ccc0"
+  },
+  "artefacts": [
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed42\\best.pt",
+      "exists": true,
+      "family": "teacher_frozen_odst",
+      "seed": 42,
+      "expected_sha256": "783d0913f85d492ddacec83a274ba2d4f13ad25eaf1a34ebcc64a960bda8ff86",
+      "observed_sha256": "783d0913f85d492ddacec83a274ba2d4f13ad25eaf1a34ebcc64a960bda8ff86",
+      "status": "MATCH",
+      "threshold": 0.56,
+      "threshold_source": "r52_test_freeze_manifest_v2.json"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed52\\best.pt",
+      "exists": true,
+      "family": "teacher_frozen_odst",
+      "seed": 52,
+      "expected_sha256": "7273327495bbe463cfb3d50fa94c81c82de7b304370a816343046f559fc3d191",
+      "observed_sha256": "7273327495bbe463cfb3d50fa94c81c82de7b304370a816343046f559fc3d191",
+      "status": "MATCH",
+      "threshold": 0.8400000000000001,
+      "threshold_source": "r52_test_freeze_manifest_v2.json"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed62\\best.pt",
+      "exists": true,
+      "family": "teacher_frozen_odst",
+      "seed": 62,
+      "expected_sha256": "247d6e71353b49ea0a77a073a8606fbf35b88106faae7dae6ec53361621e9d92",
+      "observed_sha256": "247d6e71353b49ea0a77a073a8606fbf35b88106faae7dae6ec53361621e9d92",
+      "status": "MATCH",
+      "threshold": 0.55,
+      "threshold_source": "r52_test_freeze_manifest_v2.json"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed42\\best_student.pt",
+      "exists": true,
+      "family": "C2",
+      "seed": 42,
+      "expected_sha256": "c5b8ab96a6f347afb85708857cef56b4a632f6092dfda9339ab9a3558daf863e",
+      "observed_sha256": "c5b8ab96a6f347afb85708857cef56b4a632f6092dfda9339ab9a3558daf863e",
+      "status": "MATCH",
+      "threshold": 0.6,
+      "threshold_source": "C2/seed42/seed_summary.json best_threshold"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed52\\best_student.pt",
+      "exists": true,
+      "family": "C2",
+      "seed": 52,
+      "expected_sha256": "2215b36edd015f783de86ecb1b40cdd535fb6f082adc16a377574a24a8d0c22b",
+      "observed_sha256": "2215b36edd015f783de86ecb1b40cdd535fb6f082adc16a377574a24a8d0c22b",
+      "status": "MATCH",
+      "threshold": 0.8300000000000001,
+      "threshold_source": "C2/seed52/seed_summary.json best_threshold"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed62\\best_student.pt",
+      "exists": true,
+      "family": "C2",
+      "seed": 62,
+      "expected_sha256": "595a5e57ec78d6d34e2811609dc97514b0703cab807b7dffe873128a92ecc5c2",
+      "observed_sha256": "595a5e57ec78d6d34e2811609dc97514b0703cab807b7dffe873128a92ecc5c2",
+      "status": "MATCH",
+      "threshold": 0.6544522184133537,
+      "threshold_source": "C2/seed62/seed_summary.json best_threshold"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed42\\best_student.pt",
+      "exists": true,
+      "family": "C5_original_paper",
+      "seed": 42,
+      "expected_sha256": "2b6452698dd0da53f0229bc43040a877017ac9299b277f2f98c1d7ca64c1cc42",
+      "observed_sha256": "2b6452698dd0da53f0229bc43040a877017ac9299b277f2f98c1d7ca64c1cc42",
+      "status": "MATCH",
+      "threshold": 0.56,
+      "threshold_source": "original C5 seed42/seed_summary.json best_threshold"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed52\\best_student.pt",
+      "exists": true,
+      "family": "C5_original_paper",
+      "seed": 52,
+      "expected_sha256": "9c9d035fe81f54898dee4ecf4d2ecaf8423a21ecc3551793dc16d1980af1eb0d",
+      "observed_sha256": "9c9d035fe81f54898dee4ecf4d2ecaf8423a21ecc3551793dc16d1980af1eb0d",
+      "status": "MATCH",
+      "threshold": 0.85,
+      "threshold_source": "original C5 seed52/seed_summary.json best_threshold"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed62\\best_student.pt",
+      "exists": true,
+      "family": "C5_original_paper",
+      "seed": 62,
+      "expected_sha256": "f5e8eb5260113a0aeabfb95ef198e1aa80022a26dfe91f3bf9262acbf5453ec9",
+      "observed_sha256": "f5e8eb5260113a0aeabfb95ef198e1aa80022a26dfe91f3bf9262acbf5453ec9",
+      "status": "MATCH",
+      "threshold": 0.55,
+      "threshold_source": "original C5 seed62/seed_summary.json best_threshold"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed42\\best.pt",
+      "exists": true,
+      "family": "attention_linear",
+      "seed": 42,
+      "expected_sha256": "b807a82343b432343b7e3cbc86ee76cba7011066827f3baa089aa78a02c02b53",
+      "observed_sha256": "b807a82343b432343b7e3cbc86ee76cba7011066827f3baa089aa78a02c02b53",
+      "status": "MATCH",
+      "threshold": 0.9500000000000001,
+      "threshold_source": "r52_test_freeze_manifest_v2.json"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed52\\best.pt",
+      "exists": true,
+      "family": "attention_linear",
+      "seed": 52,
+      "expected_sha256": "5e5e2a136bedba3d3477d05c5b1215331cb97339b74003bcb60f8cb4885ba86c",
+      "observed_sha256": "5e5e2a136bedba3d3477d05c5b1215331cb97339b74003bcb60f8cb4885ba86c",
+      "status": "MATCH",
+      "threshold": 0.9600000000000001,
+      "threshold_source": "r52_test_freeze_manifest_v2.json"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed62\\best.pt",
+      "exists": true,
+      "family": "attention_linear",
+      "seed": 62,
+      "expected_sha256": "4543c167fdab3b0376087731571f7b3bcecadd43f8ff05c6b5371f0073ba425a",
+      "observed_sha256": "4543c167fdab3b0376087731571f7b3bcecadd43f8ff05c6b5371f0073ba425a",
+      "status": "MATCH",
+      "threshold": 0.9400000000000001,
+      "threshold_source": "r52_test_freeze_manifest_v2.json"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed42\\model.joblib",
+      "exists": true,
+      "family": "RF_40",
+      "seed": 42,
+      "expected_sha256": "38b8830acec3b9c399411093ac38ed6bed6dca52a0cf05be9c87178cb05f5780",
+      "observed_sha256": "38b8830acec3b9c399411093ac38ed6bed6dca52a0cf05be9c87178cb05f5780",
+      "status": "MATCH",
+      "threshold": 0.38,
+      "threshold_source": "r52_test_freeze_manifest_v2.json"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed52\\model.joblib",
+      "exists": true,
+      "family": "RF_40",
+      "seed": 52,
+      "expected_sha256": "6f409fb9df15a76319a16988ed5ee0ca42da0a9c48981240e15edee773d3d89d",
+      "observed_sha256": "6f409fb9df15a76319a16988ed5ee0ca42da0a9c48981240e15edee773d3d89d",
+      "status": "MATCH",
+      "threshold": 0.46,
+      "threshold_source": "r52_test_freeze_manifest_v2.json"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed62\\model.joblib",
+      "exists": true,
+      "family": "RF_40",
+      "seed": 62,
+      "expected_sha256": "b0f4e762e34a3e5f0f07a64130130a7f223bfbc486b9bdcd2d2549210fb36df5",
+      "observed_sha256": "b0f4e762e34a3e5f0f07a64130130a7f223bfbc486b9bdcd2d2549210fb36df5",
+      "status": "MATCH",
+      "threshold": 0.37,
+      "threshold_source": "r52_test_freeze_manifest_v2.json"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed42\\model.json",
+      "exists": true,
+      "family": "XGBoost_40",
+      "seed": 42,
+      "expected_sha256": "2109554164abdd002ce0a4377f957c5aa3bc26886a197749ea79fc04d9b94fae",
+      "observed_sha256": "2109554164abdd002ce0a4377f957c5aa3bc26886a197749ea79fc04d9b94fae",
+      "status": "MATCH",
+      "threshold": 0.18000000000000002,
+      "threshold_source": "r52_test_freeze_manifest_v2.json"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed52\\model.json",
+      "exists": true,
+      "family": "XGBoost_40",
+      "seed": 52,
+      "expected_sha256": "0f32857232341cb6a26d6cf55cb2375b8e256e0e0f89519d3059415cac8ad7e6",
+      "observed_sha256": "0f32857232341cb6a26d6cf55cb2375b8e256e0e0f89519d3059415cac8ad7e6",
+      "status": "MATCH",
+      "threshold": 0.16,
+      "threshold_source": "r52_test_freeze_manifest_v2.json"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed62\\model.json",
+      "exists": true,
+      "family": "XGBoost_40",
+      "seed": 62,
+      "expected_sha256": "3062488680b8bc05959ddcb0cab948378988564fc82a88213e346ca570b0c7ab",
+      "observed_sha256": "3062488680b8bc05959ddcb0cab948378988564fc82a88213e346ca570b0c7ab",
+      "status": "MATCH",
+      "threshold": 0.18000000000000002,
+      "threshold_source": "r52_test_freeze_manifest_v2.json"
+    }
+  ],
+  "deny_hashes": [
+    "3203455562ec6ff4018cc5cb3299bc2530bc8eff95aa523e6b7746f43731d971",
+    "54f879d6b163185073ea586fa50a68edf89b603c269c6208c8b48156dccd4e22",
+    "a5a08dc24a89014fd1bb92c6c6342ed50511b33804e95246e480e90c4692b214"
+  ],
+  "thresholds": [
+    {
+      "family": "teacher_frozen_odst",
+      "seed": 42,
+      "threshold": 0.56,
+      "threshold_source": "r52_test_freeze_manifest_v2.json",
+      "artefact_sha256": "783d0913f85d492ddacec83a274ba2d4f13ad25eaf1a34ebcc64a960bda8ff86"
+    },
+    {
+      "family": "teacher_frozen_odst",
+      "seed": 52,
+      "threshold": 0.8400000000000001,
+      "threshold_source": "r52_test_freeze_manifest_v2.json",
+      "artefact_sha256": "7273327495bbe463cfb3d50fa94c81c82de7b304370a816343046f559fc3d191"
+    },
+    {
+      "family": "teacher_frozen_odst",
+      "seed": 62,
+      "threshold": 0.55,
+      "threshold_source": "r52_test_freeze_manifest_v2.json",
+      "artefact_sha256": "247d6e71353b49ea0a77a073a8606fbf35b88106faae7dae6ec53361621e9d92"
+    },
+    {
+      "family": "C2",
+      "seed": 42,
+      "threshold": 0.6,
+      "threshold_source": "C2/seed42/seed_summary.json best_threshold",
+      "artefact_sha256": "c5b8ab96a6f347afb85708857cef56b4a632f6092dfda9339ab9a3558daf863e"
+    },
+    {
+      "family": "C2",
+      "seed": 52,
+      "threshold": 0.8300000000000001,
+      "threshold_source": "C2/seed52/seed_summary.json best_threshold",
+      "artefact_sha256": "2215b36edd015f783de86ecb1b40cdd535fb6f082adc16a377574a24a8d0c22b"
+    },
+    {
+      "family": "C2",
+      "seed": 62,
+      "threshold": 0.6544522184133537,
+      "threshold_source": "C2/seed62/seed_summary.json best_threshold",
+      "artefact_sha256": "595a5e57ec78d6d34e2811609dc97514b0703cab807b7dffe873128a92ecc5c2"
+    },
+    {
+      "family": "C5_original_paper",
+      "seed": 42,
+      "threshold": 0.56,
+      "threshold_source": "original C5 seed42/seed_summary.json best_threshold",
+      "artefact_sha256": "2b6452698dd0da53f0229bc43040a877017ac9299b277f2f98c1d7ca64c1cc42"
+    },
+    {
+      "family": "C5_original_paper",
+      "seed": 52,
+      "threshold": 0.85,
+      "threshold_source": "original C5 seed52/seed_summary.json best_threshold",
+      "artefact_sha256": "9c9d035fe81f54898dee4ecf4d2ecaf8423a21ecc3551793dc16d1980af1eb0d"
+    },
+    {
+      "family": "C5_original_paper",
+      "seed": 62,
+      "threshold": 0.55,
+      "threshold_source": "original C5 seed62/seed_summary.json best_threshold",
+      "artefact_sha256": "f5e8eb5260113a0aeabfb95ef198e1aa80022a26dfe91f3bf9262acbf5453ec9"
+    },
+    {
+      "family": "attention_linear",
+      "seed": 42,
+      "threshold": 0.9500000000000001,
+      "threshold_source": "r52_test_freeze_manifest_v2.json",
+      "artefact_sha256": "b807a82343b432343b7e3cbc86ee76cba7011066827f3baa089aa78a02c02b53"
+    },
+    {
+      "family": "attention_linear",
+      "seed": 52,
+      "threshold": 0.9600000000000001,
+      "threshold_source": "r52_test_freeze_manifest_v2.json",
+      "artefact_sha256": "5e5e2a136bedba3d3477d05c5b1215331cb97339b74003bcb60f8cb4885ba86c"
+    },
+    {
+      "family": "attention_linear",
+      "seed": 62,
+      "threshold": 0.9400000000000001,
+      "threshold_source": "r52_test_freeze_manifest_v2.json",
+      "artefact_sha256": "4543c167fdab3b0376087731571f7b3bcecadd43f8ff05c6b5371f0073ba425a"
+    },
+    {
+      "family": "RF_40",
+      "seed": 42,
+      "threshold": 0.38,
+      "threshold_source": "r52_test_freeze_manifest_v2.json",
+      "artefact_sha256": "38b8830acec3b9c399411093ac38ed6bed6dca52a0cf05be9c87178cb05f5780"
+    },
+    {
+      "family": "RF_40",
+      "seed": 52,
+      "threshold": 0.46,
+      "threshold_source": "r52_test_freeze_manifest_v2.json",
+      "artefact_sha256": "6f409fb9df15a76319a16988ed5ee0ca42da0a9c48981240e15edee773d3d89d"
+    },
+    {
+      "family": "RF_40",
+      "seed": 62,
+      "threshold": 0.37,
+      "threshold_source": "r52_test_freeze_manifest_v2.json",
+      "artefact_sha256": "b0f4e762e34a3e5f0f07a64130130a7f223bfbc486b9bdcd2d2549210fb36df5"
+    },
+    {
+      "family": "XGBoost_40",
+      "seed": 42,
+      "threshold": 0.18000000000000002,
+      "threshold_source": "r52_test_freeze_manifest_v2.json",
+      "artefact_sha256": "2109554164abdd002ce0a4377f957c5aa3bc26886a197749ea79fc04d9b94fae"
+    },
+    {
+      "family": "XGBoost_40",
+      "seed": 52,
+      "threshold": 0.16,
+      "threshold_source": "r52_test_freeze_manifest_v2.json",
+      "artefact_sha256": "0f32857232341cb6a26d6cf55cb2375b8e256e0e0f89519d3059415cac8ad7e6"
+    },
+    {
+      "family": "XGBoost_40",
+      "seed": 62,
+      "threshold": 0.18000000000000002,
+      "threshold_source": "r52_test_freeze_manifest_v2.json",
+      "artefact_sha256": "3062488680b8bc05959ddcb0cab948378988564fc82a88213e346ca570b0c7ab"
+    }
+  ],
+  "scaler": {
+    "dataset_fitted_on": "CERT r5.2 TRAIN ONLY",
+    "ddof": 0,
+    "dtype_rule": "fit on float64 daily rows; transform ((x-mean)/scale).astype(np.float32)",
+    "features": [
+      "total_events",
+      "logon_count",
+      "device_count",
+      "file_count",
+      "email_count",
+      "http_count",
+      "active_duration_minutes",
+      "has_logon_activity",
+      "has_device_activity",
+      "has_file_activity",
+      "has_email_activity",
+      "has_http_activity",
+      "is_active_day"
+    ],
+    "mean": [
+      78.59718886198547,
+      1.7836610169491525,
+      0.8251416464891042,
+      0.8675581113801453,
+      17.155285714285714,
+      57.96554237288136,
+      406.81334624697337,
+      0.6811065375302664,
+      0.10386561743341405,
+      0.085181598062954,
+      0.6808886198547216,
+      0.6795411622276029,
+      0.6820956416464891
+    ],
+    "n_train_daily_rows": 826000,
+    "scale": [
+      81.02700706516129,
+      1.7176145859068708,
+      3.1169736990338817,
+      3.849058287820481,
+      18.331562843202963,
+      62.1667355098788,
+      296.4105369166948,
+      0.4660476607213024,
+      0.3050861369328172,
+      0.27915173904956303,
+      0.4661322850941072,
+      0.4666529449879873,
+      0.4656620848784593
+    ],
+    "scaler_id": "r52_T20_s1_trainonly_standardscaler_v1",
+    "source_code": "cert-r52-preparation/scripts/cert_common13_pipeline.py::TrainOnlyStandardScaler",
+    "source_training_artefact": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\interval_level\\r52_user_day_intervals_dense.parquet",
+    "source_training_artefact_sha256": "ce1436b28c3ba5e1fbe83e307f5705189152253ab9ab634262e0c652d36414db",
+    "train_date_end": "2011-02-18",
+    "train_date_start": "2010-01-02",
+    "zero_scale_rule": "scale[scale==0]=1.0"
+  },
+  "feature_order_40": [
+    "total_events_sum",
+    "total_events_mean",
+    "total_events_max",
+    "total_events_std",
+    "logon_count_sum",
+    "logon_count_mean",
+    "logon_count_max",
+    "logon_count_std",
+    "device_count_sum",
+    "device_count_mean",
+    "device_count_max",
+    "device_count_std",
+    "file_count_sum",
+    "file_count_mean",
+    "file_count_max",
+    "file_count_std",
+    "email_count_sum",
+    "email_count_mean",
+    "email_count_max",
+    "email_count_std",
+    "http_count_sum",
+    "http_count_mean",
+    "http_count_max",
+    "http_count_std",
+    "active_duration_minutes_sum",
+    "active_duration_minutes_mean",
+    "active_duration_minutes_max",
+    "active_duration_minutes_std",
+    "has_logon_activity_active_days",
+    "has_logon_activity_active_proportion",
+    "has_device_activity_active_days",
+    "has_device_activity_active_proportion",
+    "has_file_activity_active_days",
+    "has_file_activity_active_proportion",
+    "has_email_activity_active_days",
+    "has_email_activity_active_proportion",
+    "has_http_activity_active_days",
+    "has_http_activity_active_proportion",
+    "is_active_day_active_days",
+    "is_active_day_active_proportion"
+  ],
+  "common_13": [
+    "total_events",
+    "logon_count",
+    "device_count",
+    "file_count",
+    "email_count",
+    "http_count",
+    "active_duration_minutes",
+    "has_logon_activity",
+    "has_device_activity",
+    "has_file_activity",
+    "has_email_activity",
+    "has_http_activity",
+    "is_active_day"
+  ]
+}

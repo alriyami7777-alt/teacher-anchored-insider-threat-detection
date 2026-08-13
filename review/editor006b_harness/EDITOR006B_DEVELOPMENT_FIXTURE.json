@@ -1,0 +1,10 @@
+{
+  "kind": "engineering_validation_only",
+  "not_scientific_results": true,
+  "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_validation.npz",
+  "source_tensor_sha256": "5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c",
+  "subset_rule": "first_n_validation_sequences_index_order",
+  "subset_n": 256,
+  "subset_indices_sha256": "be66c2867e103fa00c88539675e5cd95f52ec5e38d9038e6d3710539f6c0aec1",
+  "r52_test_opened": false
+}

@@ -1,0 +1,8 @@
+{
+  "kind": "engineering_validation_only",
+  "n_sequences": 84,
+  "identifiers_sha256": "4bbf3b05065e5212fd46249ea25a22aa2076ceb92f24ea365ca41b6c4b52c31e",
+  "score_complete": "89f2b241e6fb3d420a1202e00292180039dc9c4bd98f004218fca273b20f6ae5",
+  "not_scientific_results": true,
+  "protocol_selftest_executed": true
+}

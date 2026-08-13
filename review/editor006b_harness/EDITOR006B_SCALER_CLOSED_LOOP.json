@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "dataset_fitted_on": "CERT r5.2 TRAIN ONLY",
+  "n_train_daily_rows_recorded": 826000,
+  "ddof": 0,
+  "output_dtype": "float32",
+  "no_external_data_fit": true,
+  "train_npz_path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_train.npz",
+  "train_npz_sha256": "b268328d3bf2e98f712d1145958dabe175ce2c07a7c390da4b84a663317ebc2e",
+  "train_x_raw_sha256": "f3eb0ccec75eea247713473bc9e31c5ea6753a1e3fedb126d3651fd3439373b3",
+  "unequal_elements": 0,
+  "max_abs_difference": 0.0,
+  "exact_equality": true,
+  "parquet_reconstruction": {
+    "performed": true,
+    "unequal_elements": 0,
+    "max_abs_difference": 0.0,
+    "exact_equality": true,
+    "n_windows": 788000
+  },
+  "validation_array_check": {
+    "performed": true,
+    "shape": [
+      64000,
+      20,
+      13
+    ],
+    "raw_x_sha256": "73192caa4bfbbaee88e755912768c39b3f39d404686c97eb487756964ba7b292",
+    "expected_raw_x_sha256": "73192caa4bfbbaee88e755912768c39b3f39d404686c97eb487756964ba7b292",
+    "match": true
+  },
+  "r52_test_opened": false,
+  "scaler_sha256": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488"
+}

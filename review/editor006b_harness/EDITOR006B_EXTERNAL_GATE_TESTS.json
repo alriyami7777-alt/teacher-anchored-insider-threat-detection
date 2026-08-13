@@ -1,0 +1,9 @@
+{
+  "missing": "PASS",
+  "malformed": "PASS",
+  "wrong_dataset": "PASS",
+  "wrong_contract_hash": "PASS",
+  "wrong_harness_hash": "PASS",
+  "false_authorisation": "PASS",
+  "r62_path_blocked": "PASS"
+}

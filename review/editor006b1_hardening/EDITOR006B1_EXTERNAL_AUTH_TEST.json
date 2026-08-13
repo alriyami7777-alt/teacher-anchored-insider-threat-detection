@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "r62_authorisation_artefact_created": false,
+  "r62_bundle_opened": false,
+  "order": [
+    "read authorisation",
+    "validate authorisation schema",
+    "validate expected hashes/ids",
+    "only then open external bundle"
+  ],
+  "required_fields": [
+    "task_id",
+    "dataset_id",
+    "input_bundle_manifest_sha256",
+    "contract_bundle_sha256",
+    "harness_code_sha256",
+    "model_allowlist_sha256",
+    "authorised_timestamp",
+    "predictive_external_run_authorised"
+  ],
+  "exact_value_checks": [
+    "task_id",
+    "dataset_id",
+    "input_bundle_manifest_sha256",
+    "contract_bundle_sha256",
+    "harness_code_sha256",
+    "model_allowlist_sha256"
+  ],
+  "future_r62_requirements": {
+    "dataset_id": "CERT r6.2",
+    "predictive_external_run_authorised": true
+  },
+  "cases": [
+    {"case": "missing_bundle_hash", "outcome": "PASS", "bundle_open_invoked": false},
+    {"case": "wrong_bundle_hash", "outcome": "PASS", "bundle_open_invoked": false},
+    {"case": "wrong_task_id", "outcome": "PASS", "bundle_open_invoked": false},
+    {"case": "wrong_dataset_id", "outcome": "PASS", "bundle_open_invoked": false},
+    {"case": "wrong_contract_hash", "outcome": "PASS", "bundle_open_invoked": false},
+    {"case": "wrong_harness_hash", "outcome": "PASS", "bundle_open_invoked": false},
+    {"case": "wrong_allowlist_hash", "outcome": "PASS", "bundle_open_invoked": false},
+    {"case": "predictive_external_run_authorised_false", "outcome": "PASS", "bundle_open_invoked": false},
+    {"case": "malformed_timestamp", "outcome": "PASS", "bundle_open_invoked": false},
+    {"case": "empty_timestamp", "outcome": "PASS", "bundle_open_invoked": false},
+    {"case": "absent_authorisation", "outcome": "PASS", "bundle_open_invoked": false}
+  ]
+}

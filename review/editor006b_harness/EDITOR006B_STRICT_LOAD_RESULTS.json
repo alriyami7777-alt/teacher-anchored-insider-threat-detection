@@ -1,0 +1,198 @@
+{
+  "status": "PASS",
+  "architecture_pins": {
+    "teacher_c2_c5": {
+      "source_file": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\prototype_v3_node\\architecture.py",
+      "source_sha256": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+      "supporting_file": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\prototype_v3_node\\odst.py",
+      "supporting_sha256": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+      "class": "AttentionNodeEnsemble",
+      "configuration": {
+        "input_dim": 13,
+        "hidden_size": 64,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "node_num_layers": 2,
+        "node_n_trees": 8,
+        "node_depth": 4,
+        "node_tree_dim": 1,
+        "node_temperature": 1.0,
+        "node_dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "gate_hidden_dim": 32
+      },
+      "checkpoint_schema": {
+        "torch_load": "weights_only=True",
+        "state_key": "model_state_dict",
+        "load_state_dict": "strict=True"
+      }
+    },
+    "attention_linear": {
+      "source_file": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\models\\sequence_ensemble.py",
+      "source_sha256": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475",
+      "class": "SequenceEnsembleModel",
+      "configuration": {
+        "input_dim": 13,
+        "hidden_size": 64,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "n_trees": 5,
+        "tree_depth": 4,
+        "classification_head": "linear",
+        "temporal_aggregation": "attention"
+      },
+      "checkpoint_schema": {
+        "torch_load": "weights_only=True",
+        "state_key": "model_state_dict",
+        "load_state_dict": "strict=True"
+      }
+    },
+    "rf_xgb_aggregator": {
+      "source_file": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\scripts\\r52_locked_baselines\\data.py",
+      "source_sha256": "dd47330f82791bc7c56d3d6019ce80bcd6ca31f497b9fffeabc9165f35b1b2f9",
+      "function": "aggregate_common13_windows",
+      "expected_sha256": "dd47330f82791bc7c56d3d6019ce80bcd6ca31f497b9fffeabc9165f35b1b2f9"
+    }
+  },
+  "artefacts": [
+    {
+      "family": "teacher_frozen_odst",
+      "seed": 42,
+      "missing_keys": [],
+      "unexpected_keys": [],
+      "n_state_keys": 28,
+      "requires_grad_any": false,
+      "status": "PASS"
+    },
+    {
+      "family": "teacher_frozen_odst",
+      "seed": 52,
+      "missing_keys": [],
+      "unexpected_keys": [],
+      "n_state_keys": 28,
+      "requires_grad_any": false,
+      "status": "PASS"
+    },
+    {
+      "family": "teacher_frozen_odst",
+      "seed": 62,
+      "missing_keys": [],
+      "unexpected_keys": [],
+      "n_state_keys": 28,
+      "requires_grad_any": false,
+      "status": "PASS"
+    },
+    {
+      "family": "C2",
+      "seed": 42,
+      "missing_keys": [],
+      "unexpected_keys": [],
+      "n_state_keys": 28,
+      "requires_grad_any": false,
+      "status": "PASS"
+    },
+    {
+      "family": "C2",
+      "seed": 52,
+      "missing_keys": [],
+      "unexpected_keys": [],
+      "n_state_keys": 28,
+      "requires_grad_any": false,
+      "status": "PASS"
+    },
+    {
+      "family": "C2",
+      "seed": 62,
+      "missing_keys": [],
+      "unexpected_keys": [],
+      "n_state_keys": 28,
+      "requires_grad_any": false,
+      "status": "PASS"
+    },
+    {
+      "family": "C5_original_paper",
+      "seed": 42,
+      "missing_keys": [],
+      "unexpected_keys": [],
+      "n_state_keys": 28,
+      "requires_grad_any": false,
+      "status": "PASS"
+    },
+    {
+      "family": "C5_original_paper",
+      "seed": 52,
+      "missing_keys": [],
+      "unexpected_keys": [],
+      "n_state_keys": 28,
+      "requires_grad_any": false,
+      "status": "PASS"
+    },
+    {
+      "family": "C5_original_paper",
+      "seed": 62,
+      "missing_keys": [],
+      "unexpected_keys": [],
+      "n_state_keys": 28,
+      "requires_grad_any": false,
+      "status": "PASS"
+    },
+    {
+      "family": "attention_linear",
+      "seed": 42,
+      "missing_keys": [],
+      "unexpected_keys": [],
+      "n_state_keys": 13,
+      "requires_grad_any": false,
+      "status": "PASS"
+    },
+    {
+      "family": "attention_linear",
+      "seed": 52,
+      "missing_keys": [],
+      "unexpected_keys": [],
+      "n_state_keys": 13,
+      "requires_grad_any": false,
+      "status": "PASS"
+    },
+    {
+      "family": "attention_linear",
+      "seed": 62,
+      "missing_keys": [],
+      "unexpected_keys": [],
+      "n_state_keys": 13,
+      "requires_grad_any": false,
+      "status": "PASS"
+    },
+    {
+      "family": "RF_40",
+      "seed": 42,
+      "status": "PASS"
+    },
+    {
+      "family": "RF_40",
+      "seed": 52,
+      "status": "PASS"
+    },
+    {
+      "family": "RF_40",
+      "seed": 62,
+      "status": "PASS"
+    },
+    {
+      "family": "XGBoost_40",
+      "seed": 42,
+      "status": "PASS"
+    },
+    {
+      "family": "XGBoost_40",
+      "seed": 52,
+      "status": "PASS"
+    },
+    {
+      "family": "XGBoost_40",
+      "seed": 62,
+      "status": "PASS"
+    }
+  ]
+}

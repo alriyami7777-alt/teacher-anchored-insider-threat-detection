@@ -1,0 +1,78 @@
+{
+  "schema": "EDITOR006B1_MECHANISM_REGISTRY",
+  "primary_incremental_anchoring": [
+    "student_teacher_logit_deviation",
+    "route_mae",
+    "route_kl",
+    "hard_route_agreement"
+  ],
+  "no_c5_external_superiority_claim": true,
+  "no_tree_ranking_monotonicity_claim": true,
+  "metrics": [
+    {
+      "metric_name": "student_teacher_logit_deviation",
+      "status": "EXACT_FROZEN",
+      "source_file": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\objective2_teacher_anchored_odst\\models.py",
+      "source_hash": "2555853dfcf369840fb458bfaa1b734c1b94483173bff87fe7d12ee13862058b",
+      "definition": "logit_consistency_loss: mean((s-t)^2) / (var(t)+1e-6); train.py val_logit_consistency",
+      "required_reference_artefact": null,
+      "paper_facing": true
+    },
+    {
+      "metric_name": "route_mae",
+      "status": "EXACT_FROZEN",
+      "source_file": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\objective2_teacher_anchored_odst\\train.py",
+      "source_hash": "2160f2ab85dd120883aa37c82c630c3c77653f369a551f70b99ca4ed1eca0a26",
+      "definition": "mean absolute deviation of soft Bernoulli route choices (sc vs tc)",
+      "required_reference_artefact": null,
+      "paper_facing": true
+    },
+    {
+      "metric_name": "route_kl",
+      "status": "EXACT_FROZEN",
+      "source_file": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\objective2_teacher_anchored_odst\\models.py",
+      "source_hash": "2555853dfcf369840fb458bfaa1b734c1b94483173bff87fe7d12ee13862058b",
+      "definition": "Bernoulli KL on route choices with eps=1e-6; equals train.py routing_divergence / route_consistency_loss",
+      "required_reference_artefact": null,
+      "paper_facing": true
+    },
+    {
+      "metric_name": "hard_route_agreement",
+      "status": "EXACT_FROZEN",
+      "source_file": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\objective2_teacher_anchored_odst\\train.py",
+      "source_hash": "2160f2ab85dd120883aa37c82c630c3c77653f369a551f70b99ca4ed1eca0a26",
+      "definition": "mean((sc>0.5)==(tc>0.5)) over soft Bernoulli route bits",
+      "required_reference_artefact": null,
+      "paper_facing": true
+    },
+    {
+      "metric_name": "dominant_leaf_agreement",
+      "status": "EXACT_FROZEN",
+      "source_file": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\objective2_teacher_anchored_odst\\train.py",
+      "source_hash": "2160f2ab85dd120883aa37c82c630c3c77653f369a551f70b99ca4ed1eca0a26",
+      "definition": "fraction of (sample, tree) pairs whose argmax leaf agrees; computed on all-layer leaf_probs (train.py lines 256-259)",
+      "required_reference_artefact": null,
+      "paper_facing": true
+    },
+    {
+      "metric_name": "unused_leaf_fraction",
+      "status": "DISABLED_NOT_REPRODUCIBLE",
+      "source_file": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\prototype_v3_node\\diagnostics.py",
+      "source_hash": "59457bdb2d3024ad70c7478ed62e648b2f4610ca7d4db62e2f9785cd58742919",
+      "definition": "UNUSED_LEAF_METRIC_NOT_REPRODUCIBLE",
+      "required_reference_artefact": "frozen activation threshold and max-over-samples comparison; not recovered. Producing ablation used mean leaf mass < 1e-4 (leaf_utilization_stats), which is not the paper unused-leaf definition max_over_samples(membership) <= activation_threshold. Mean membership is not substituted.",
+      "paper_facing": false,
+      "disabled_reason": "UNUSED_LEAF_METRIC_NOT_REPRODUCIBLE"
+    },
+    {
+      "metric_name": "tree_contribution_rho",
+      "status": "DISABLED_NOT_REPRODUCIBLE",
+      "source_file": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\objective2_teacher_anchored_odst\\train.py",
+      "source_hash": "2160f2ab85dd120883aa37c82c630c3c77653f369a551f70b99ca4ed1eca0a26",
+      "definition": "TREE_CONTRIBUTION_RHO_NOT_REPRODUCIBLE",
+      "required_reference_artefact": "16 reference-centred tree-contribution vectors using frozen training-median per-tree references; not pinned for C2/C5 external analysis. Ablation train.py used abs(tree_outputs) Spearman without reference-centring. Scalar-logit Pearson is not the frozen statistic and is removed (no PROXY).",
+      "paper_facing": false,
+      "disabled_reason": "TREE_CONTRIBUTION_RHO_NOT_REPRODUCIBLE"
+    }
+  ]
+}

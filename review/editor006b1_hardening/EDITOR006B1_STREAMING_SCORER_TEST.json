@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "r62_benchmarked": false,
+  "architecture": {
+    "dense_daily": "scaled_dense_daily shape (users, days, 13) dtype float32 memory-mappable",
+    "flow": "dense daily memmap -> deterministic batch of sequence indices -> gather B x 20 x 13 -> score -> discard batch",
+    "classical": "gather B x 20 x 13 -> aggregate_common13_windows(batch) -> B x 40 -> RF/XGB -> discard",
+    "shuffle": false,
+    "resume": "fail and restart unless explicitly manifest-bound; silent append forbidden",
+    "final_row_count": "must equal expected sequence count"
+  },
+  "memory_safety": {
+    "synthetic_larger_than_one_batch": true,
+    "window_provider_called_batchwise": true,
+    "full_N_20_13_created_by_scorer": false,
+    "rf_xgb_aggregator_max_batch": "<= batch_size",
+    "output_order_preserved": true,
+    "repeated_execution_deterministic": true
+  },
+  "tests": {
+    "H05": "PASS",
+    "H06": "PASS",
+    "H07": "PASS"
+  }
+}

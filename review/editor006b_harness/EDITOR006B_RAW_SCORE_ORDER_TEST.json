@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "n_score_files": 18,
+  "order": "sequence_id order; no shuffle",
+  "score_complete_before_metrics": true
+}

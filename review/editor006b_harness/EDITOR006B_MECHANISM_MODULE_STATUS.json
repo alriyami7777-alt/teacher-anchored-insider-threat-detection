@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "definitions_source": "cert-r42-feasibility/scripts/objective2_teacher_anchored_odst/train.py + models.py (inference fragments only)",
+  "threshold_selection_invoked": false,
+  "per_seed": {
+    "42": {
+      "C2_vs_teacher": {
+        "student_teacher_logit_deviation": 1.269677996635437,
+        "route_mae": 0.05265434831380844,
+        "route_kl": 0.08991740643978119,
+        "hard_route_agreement": 0.94921875,
+        "dominant_leaf_agreement": 0.857421875,
+        "student_unused_leaves_frac": 0.5078125,
+        "student_unused_leaves_frac_all_layers": 0.55078125,
+        "teacher_unused_leaves_frac": 0.3515625,
+        "teacher_unused_leaves_frac_all_layers": 0.3671875,
+        "tree_contribution_pearson_proxy": 0.9150330655415878,
+        "tree_contribution_note": "neutral diagnostic; prior validation is non-monotone; not a ranking claim",
+        "per_sequence_summaries_only": true,
+        "n": 32,
+        "mean_logit_abs_dev": 0.20484490878880024,
+        "mean_route_mae_seq": 0.052654352301033214
+      },
+      "C5_vs_teacher": {
+        "student_teacher_logit_deviation": 0.11217324435710907,
+        "route_mae": 0.02747698500752449,
+        "route_kl": 0.017908267676830292,
+        "hard_route_agreement": 0.97607421875,
+        "dominant_leaf_agreement": 0.912109375,
+        "student_unused_leaves_frac": 0.3671875,
+        "student_unused_leaves_frac_all_layers": 0.38671875,
+        "teacher_unused_leaves_frac": 0.3515625,
+        "teacher_unused_leaves_frac_all_layers": 0.3671875,
+        "tree_contribution_pearson_proxy": 0.9797604510798931,
+        "tree_contribution_note": "neutral diagnostic; prior validation is non-monotone; not a ranking claim",
+        "per_sequence_summaries_only": true,
+        "n": 32,
+        "mean_logit_abs_dev": 0.052187724970281124,
+        "mean_route_mae_seq": 0.027476983559608925
+      }
+    },
+    "52": {
+      "C2_vs_teacher": {
+        "student_teacher_logit_deviation": 12.768827438354492,
+        "route_mae": 0.0067780762910842896,
+        "route_kl": 0.017547132447361946,
+        "hard_route_agreement": 0.99365234375,
+        "dominant_leaf_agreement": 0.974609375,
+        "student_unused_leaves_frac": 0.859375,
+        "student_unused_leaves_frac_all_layers": 0.87109375,
+        "teacher_unused_leaves_frac": 0.8046875,
+        "teacher_unused_leaves_frac_all_layers": 0.83984375,
+        "tree_contribution_pearson_proxy": 0.9092676058827344,
+        "tree_contribution_note": "neutral diagnostic; prior validation is non-monotone; not a ranking claim",
+        "per_sequence_summaries_only": true,
+        "n": 32,
+        "mean_logit_abs_dev": 0.511841107159853,
+        "mean_route_mae_seq": 0.006778076665582944
+      },
+      "C5_vs_teacher": {
+        "student_teacher_logit_deviation": 2.815500020980835,
+        "route_mae": 0.008755779825150967,
+        "route_kl": 0.012127196416258812,
+        "hard_route_agreement": 0.99365234375,
+        "dominant_leaf_agreement": 0.974609375,
+        "student_unused_leaves_frac": 0.796875,
+        "student_unused_leaves_frac_all_layers": 0.796875,
+        "teacher_unused_leaves_frac": 0.8046875,
+        "teacher_unused_leaves_frac_all_layers": 0.83984375,
+        "tree_contribution_pearson_proxy": 0.9495873763024036,
+        "tree_contribution_note": "neutral diagnostic; prior validation is non-monotone; not a ranking claim",
+        "per_sequence_summaries_only": true,
+        "n": 32,
+        "mean_logit_abs_dev": 0.22532488033175468,
+        "mean_route_mae_seq": 0.008755779422504162
+      }
+    },
+    "62": {
+      "C2_vs_teacher": {
+        "student_teacher_logit_deviation": 2.086946487426758,
+        "route_mae": 0.018549321219325066,
+        "route_kl": 0.03852362930774689,
+        "hard_route_agreement": 0.9912109375,
+        "dominant_leaf_agreement": 0.966796875,
+        "student_unused_leaves_frac": 0.5,
+        "student_unused_leaves_frac_all_layers": 0.6171875,
+        "teacher_unused_leaves_frac": 0.390625,
+        "teacher_unused_leaves_frac_all_layers": 0.3984375,
+        "tree_contribution_pearson_proxy": 0.9951372140671458,
+        "tree_contribution_note": "neutral diagnostic; prior validation is non-monotone; not a ranking claim",
+        "per_sequence_summaries_only": true,
+        "n": 32,
+        "mean_logit_abs_dev": 0.4046689374372363,
+        "mean_route_mae_seq": 0.018549322209764796
+      },
+      "C5_vs_teacher": {
+        "student_teacher_logit_deviation": 0.05485871434211731,
+        "route_mae": 0.0164048969745636,
+        "route_kl": 0.008620389737188816,
+        "hard_route_agreement": 0.99267578125,
+        "dominant_leaf_agreement": 0.970703125,
+        "student_unused_leaves_frac": 0.4140625,
+        "student_unused_leaves_frac_all_layers": 0.4296875,
+        "teacher_unused_leaves_frac": 0.390625,
+        "teacher_unused_leaves_frac_all_layers": 0.3984375,
+        "tree_contribution_pearson_proxy": 0.9967991546379156,
+        "tree_contribution_note": "neutral diagnostic; prior validation is non-monotone; not a ranking claim",
+        "per_sequence_summaries_only": true,
+        "n": 32,
+        "mean_logit_abs_dev": 0.05002050381153822,
+        "mean_route_mae_seq": 0.016404897420216003
+      }
+    }
+  },
+  "kind": "engineering_mechanism_selftest",
+  "not_scientific_results": true
+}
