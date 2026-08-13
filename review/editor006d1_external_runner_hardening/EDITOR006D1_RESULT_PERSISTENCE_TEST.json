@@ -1,0 +1,27 @@
+{
+  "task_id": "EDITOR-006D1",
+  "check": "H2_result_persistence",
+  "status": "PASS",
+  "write_order": [
+    "EDITOR006E_PREDICTIVE_RESULTS.json",
+    "EDITOR006E_MECHANISM_RESULTS.json",
+    "EDITOR006E_RUN_MANIFEST.json",
+    "EXECUTION_COMPLETE.json"
+  ],
+  "execution_complete_binds": [
+    "EXECUTION_STARTED.json",
+    "ALL_SCORES_COMPLETE.json",
+    "EDITOR006E_PREDICTIVE_RESULTS.json",
+    "EDITOR006E_MECHANISM_RESULTS.json",
+    "EDITOR006E_RUN_MANIFEST.json"
+  ],
+  "tests": {
+    "predictive_results_persisted": "PASS",
+    "run_manifest_has_18_checkpoint_identities": "PASS",
+    "run_manifest_inherits_006c1_builder_identity": "PASS",
+    "no_threshold_model_or_calibration_selection": "PASS",
+    "EXECUTION_COMPLETE_blocked_if_mechanism_missing": "PASS",
+    "EXECUTION_COMPLETE_binds_required_sha256": "PASS"
+  },
+  "metrics_printed_during_scoring": false
+}

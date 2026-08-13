@@ -1,0 +1,32 @@
+{
+  "task_id": "EDITOR-006D1",
+  "check": "H3_mechanism_execution_path",
+  "status": "PASS",
+  "previously_defined_but_uncalled": "mechanism_on_deoverlap",
+  "now_invoked_via": "run_authorised_mechanism_pass",
+  "view": "DEOVERLAP_OFFSET0",
+  "families_loaded": ["teacher_frozen_odst", "C2", "C5_original_paper"],
+  "seeds": [42, 52, 62],
+  "n_models_loaded": 9,
+  "enabled_exact_frozen": [
+    "student_teacher_logit_deviation",
+    "route_mae",
+    "route_kl",
+    "hard_route_agreement",
+    "dominant_leaf_agreement"
+  ],
+  "disabled": [
+    "unused_leaf_fraction",
+    "tree_contribution_rho"
+  ],
+  "c5_improvement_hard_coded": false,
+  "model_selection_executed": false,
+  "threshold_selection_executed": false,
+  "tests": {
+    "mechanism_path_invoked": "PASS",
+    "attention_linear_and_classical_not_loaded_for_mechanism": "PASS",
+    "unused_leaf_remains_disabled": "PASS",
+    "tree_contribution_rho_remains_disabled": "PASS"
+  },
+  "r62_predictive_inference_executed": false
+}

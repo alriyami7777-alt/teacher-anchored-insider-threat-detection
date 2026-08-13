@@ -1,0 +1,34 @@
+{
+  "task_id": "EDITOR-006D1",
+  "check": "H1_bundle_component_identity",
+  "status": "PASS",
+  "n_components_required": 13,
+  "function": "verify_bundle_component_identity",
+  "abort_code": "BUNDLE_COMPONENT_IDENTITY_MISMATCH",
+  "real_bundle_tampered": false,
+  "real_bundle_rewritten": false,
+  "tests": {
+    "all_13_correct_synthetic_fixture": "PASS",
+    "one_copied_tampered_fixture_aborts": "PASS",
+    "missing_component_aborts": "PASS",
+    "byte_size_mismatch_aborts": "PASS",
+    "tamper_blocks_before_EXECUTION_STARTED": "PASS",
+    "identity_before_write_execution_started_and_streaming_scores": "PASS"
+  },
+  "component_filenames": [
+    "scaled_dense_daily.npy",
+    "malicious_day_labels.npy",
+    "answer_scenario_day_bitmask.npy",
+    "user_ids.npy",
+    "calendar_dates.npy",
+    "official_insider_flags.npy",
+    "official_incident_codes.npy",
+    "window_index.npy",
+    "completed_window_labels.npy",
+    "endpoint_labels.npy",
+    "deoverlap_offset0_mask.npy",
+    "window_scenario_bitmask.npy",
+    "endpoint_scenario_bitmask.npy"
+  ],
+  "notes": "Tests hash copied synthetic bytes only. Authorised 006E execution must hash the actual files in C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006c_bundle\\ against EDITOR006C_FINAL_RELEASE_MANIFEST.json."
+}

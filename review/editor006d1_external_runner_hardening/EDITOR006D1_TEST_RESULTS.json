@@ -1,0 +1,47 @@
+{
+  "task_id": "EDITOR-006D1",
+  "pytest_invocation": "python -m pytest tests/test_editor006b_*.py tests/test_editor006d_external_runner.py tests/test_editor006d1_*.py -q",
+  "existing_006b_tests": {
+    "status": "PASS",
+    "n_collected": 27,
+    "n_passed": 27
+  },
+  "existing_006d_tests": {
+    "status": "PASS",
+    "n_collected": 19,
+    "n_passed": 19,
+    "file": "tests/test_editor006d_external_runner.py"
+  },
+  "new_006d1_tests": {
+    "status": "PASS",
+    "n_collected": 23,
+    "n_passed": 23,
+    "files": [
+      "tests/test_editor006d1_component_gate.py",
+      "tests/test_editor006d1_persistence_mechanism.py",
+      "tests/test_editor006d1_failure_probability_scenario.py"
+    ]
+  },
+  "combined": {
+    "passed": 69,
+    "failed": 0,
+    "elapsed_s": 9.39
+  },
+  "required_checks": {
+    "D1_component_byte_tamper_blocks_before_EXECUTION_STARTED": "PASS",
+    "D2_all_13_component_identities_validated": "PASS",
+    "D3_analysis_results_are_persisted": "PASS",
+    "D4_mechanism_result_path_actually_invoked": "PASS",
+    "D5_unused_leaf_tree_rho_remain_disabled": "PASS",
+    "D6_failure_before_bundle_open_reports_NO": "PASS",
+    "D7_failure_after_EXECUTION_STARTED_does_not_report_predictive_NO": "PASS",
+    "D8_EXECUTION_COMPLETE_only_after_all_required_outputs": "PASS",
+    "D9_probability_scale_violation_does_not_produce_Brier_log_loss": "PASS",
+    "D10_scenario_summary_preserves_exactly_five_identities": "PASS",
+    "D11_no_true_authorisation_created": "PASS",
+    "D12_no_r62_predictive_inference_executed_during_tests": "PASS"
+  },
+  "r52_test_opened": false,
+  "r62_predictive_inference_executed": false,
+  "true_predictive_auth_created": false
+}

@@ -1,0 +1,25 @@
+{
+  "task_id": "EDITOR-006D1",
+  "check": "H4_failure_state_audit",
+  "status": "PASS",
+  "flags": [
+    "bundle_opened",
+    "execution_started",
+    "scoring_started",
+    "all_scores_complete",
+    "analysis_complete",
+    "mechanism_complete",
+    "execution_complete"
+  ],
+  "tests": {
+    "failure_before_bundle_open_reports_NO": "PASS",
+    "identity_mismatch_does_not_set_bundle_opened": "PASS",
+    "CLI_identity_preflight_failure_prints_NO": "PASS",
+    "failure_after_EXECUTION_STARTED_reports_STARTED_OR_PARTIAL": "PASS",
+    "EXECUTION_ABORTED_written_on_unexpected_Exception": "PASS",
+    "outputs_not_deleted": "PASS",
+    "automatic_rerun_false": "PASS"
+  },
+  "unexpected_exception_caught": true,
+  "harness_protocol_error_caught": true
+}
