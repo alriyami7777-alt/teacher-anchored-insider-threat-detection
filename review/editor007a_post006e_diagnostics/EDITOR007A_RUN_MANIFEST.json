@@ -1,0 +1,244 @@
+{
+  "task_id": "EDITOR-007A",
+  "created_utc": "2026-08-13T23:18:33Z",
+  "branch": "repository-hardening",
+  "HEAD_before": "658e8f8b677ca443bd58947f7ecf964708182282",
+  "HEAD_after": "PENDING_DIAGNOSTIC_COMMIT",
+  "HEAD_at_run": "658e8f8b677ca443bd58947f7ecf964708182282",
+  "006E_authorisation_commit": "658e8f8b677ca443bd58947f7ecf964708182282",
+  "006D1_runner_release": "b10119cf6b5e7f33f20402a0d380ec9259b36089",
+  "files_read": [
+    "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\EXECUTION_STARTED.json",
+    "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\SCORE_COMPLETE.json",
+    "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\ALL_SCORES_COMPLETE.json",
+    "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\EDITOR006E_PREDICTIVE_RESULTS.json",
+    "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\EDITOR006E_MECHANISM_RESULTS.json",
+    "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\EDITOR006E_RUN_MANIFEST.json",
+    "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\EXECUTION_COMPLETE.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006e_authorisation\\EDITOR006E_TRUE_AUTHORISATION.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\scripts\\run_editor006e_r62_one_pass.py",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_validation.npz",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_train.npz"
+  ],
+  "files_created": [
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_006E_EVIDENCE_FREEZE.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_R62_SCORE_ORIENTATION_AUDIT.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_R62_SCORE_ORIENTATION_AUDIT.csv",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_R52_PARITY_REFERENCE_REGISTER.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_R52_VALIDATION_PARITY.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_R52_VALIDATION_PARITY.csv",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_FEATURE_SHIFT.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_FEATURE_SHIFT.csv",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_SCORE_DISTRIBUTION_SHIFT.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_SCORE_DISTRIBUTION_SHIFT.csv",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_DECISION_GATE.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_RUN_MANIFEST.json",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_REPORT.md"
+  ],
+  "files_modified": [],
+  "protocol_flags": {
+    "r62_predictive_model_loaded": false,
+    "r62_predictive_inference_executed": false,
+    "r52_test_opened": false,
+    "training_executed": false,
+    "threshold_selection_executed": false,
+    "scaler_fit_executed": false,
+    "calibration_fit_executed": false,
+    "model_selection_executed": false,
+    "r51_predictive_inference_executed": false
+  },
+  "006E_output_hashes": {
+    "authorisation": "e7c169c3f02a6ff28cbcfb32aa4af8830d05e7dc9d5857a46000938e6e8f080f",
+    "runner": "54f93cb57a66aa384cb3eb5e1fdcbca792009d9058ecdb980cf77be7a2c5b6ba",
+    "EXECUTION_STARTED": "a517250129cf01a7c2dd27c99d5c51de82c7f6973d7cb46f6ecf97dc227b2732",
+    "SCORE_COMPLETE": "aa6eafba4241c90bc1b4395ea86880ee4bfd37b23f4014d62533aa1fba58f272",
+    "ALL_SCORES_COMPLETE": "e20eafc4e8b9ad2c4553c16ee8afa592b9a97f594b664b5ae0f18aa40c35635f",
+    "predictive_results": "7f2d11939b5fbe8c5c4b82d0be85e3a38a341fbebd6be45e1269aa3839132c3c",
+    "mechanism_results": "5ffd236a656c59c46aecfc75c3b35b8249f184c80c4ac0c5c27b23faa9982a08",
+    "run_manifest": "35359fbff1096882e0e1a341352b83487d9e1f092c27b38232626cd6b11a0cd5",
+    "EXECUTION_COMPLETE": "7d3c9a8313c3bbb5f6b113bd072892d7a6f9a8d1e571ea322c9803a43d5f2dd5"
+  },
+  "r62_score_hashes": {
+    "teacher_seed42.npy": "a583ba8bcaa4ba2de217bdd7338edf37de20d89955a9c3556eb3c95e0e60b212",
+    "teacher_seed52.npy": "7ba82e5364bd2fad32f886e6744b2579f0832cb49f70c0916f183fab92d27ad9",
+    "teacher_seed62.npy": "a72d399ecdc81839cdbf6e1cc11a7c38b83cdc756a4b81654e3583ee1cea1b36",
+    "c2_seed42.npy": "8a3e9a904c15d4d2d65e0175afc15095c35393a4d6e0c86743c9bc606e3d8eac",
+    "c2_seed52.npy": "78469bf3c29d815a7625678e9453c71c8a05f67bcff070f2b0a6a5f6966121b1",
+    "c2_seed62.npy": "affb99c041e4fb5447332bcc7c54609765c7c604a13dd8a2781c73b65227708e",
+    "c5_seed42.npy": "0f853993ccd3381d8a9cf8f31477dbe25ad76ab7fc1a66eac47b62e2f8749192",
+    "c5_seed52.npy": "375a7af0906ba9622037e06ff025065dd14f27e7ae58cbc637d17ba96d81fa9a",
+    "c5_seed62.npy": "d4225ac760eae419d59e86e5a24e740cef92cc071a87bd0c19b8c8e25736f33b",
+    "attention_linear_seed42.npy": "b64c301219e8d11fe90f7b67f67bd864f1f395902c19cd78f3ac08eaf3525660",
+    "attention_linear_seed52.npy": "599d7a310f84ee254a7ec9d372b3980ad081fb3d5f80c5e1966346e5293a6fd7",
+    "attention_linear_seed62.npy": "d0d2dc230b5f1cfe74bf62bda6c2cfb68aff00da3d244ebeda9b127e64eadba5",
+    "rf_seed42.npy": "5c0b435886aa37c7327fc0054f251b5e6f8035c2360062e030e140b30f69d8e3",
+    "rf_seed52.npy": "ba807cbf8e87d8fe2714d0fd7181e238d656453e6fedaf7349233d7f0030c45f",
+    "rf_seed62.npy": "ca2578815ea5b53f5c8176d2989cc269f83b8ae7843243dce33927d27470916b",
+    "xgb_seed42.npy": "e471265c27577552abb3a1a68227ff1cd585c07d2ecf650050707f86ddd6fd7f",
+    "xgb_seed52.npy": "dc2b249fc0ec9bf35caceb3928d405ab53eaf5651406d552fc57e7e68156ae61",
+    "xgb_seed62.npy": "d97bcc4e4c74ae391b09812f1bc294e0fca726d368afd879bd6ae52a52f699b7"
+  },
+  "r52_validation_input_sha256": "73192caa4bfbbaee88e755912768c39b3f39d404686c97eb487756964ba7b292",
+  "r52_validation_label_sha256": "d9eb45b3e9381b105ae924d61a338b1235e8479dc3a22224a11a3b95063c92fc",
+  "r52_validation_npz_sha256": "5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c",
+  "checkpoint_hashes": [
+    "783d0913f85d492ddacec83a274ba2d4f13ad25eaf1a34ebcc64a960bda8ff86",
+    "7273327495bbe463cfb3d50fa94c81c82de7b304370a816343046f559fc3d191",
+    "247d6e71353b49ea0a77a073a8606fbf35b88106faae7dae6ec53361621e9d92",
+    "c5b8ab96a6f347afb85708857cef56b4a632f6092dfda9339ab9a3558daf863e",
+    "2215b36edd015f783de86ecb1b40cdd535fb6f082adc16a377574a24a8d0c22b",
+    "595a5e57ec78d6d34e2811609dc97514b0703cab807b7dffe873128a92ecc5c2",
+    "2b6452698dd0da53f0229bc43040a877017ac9299b277f2f98c1d7ca64c1cc42",
+    "9c9d035fe81f54898dee4ecf4d2ecaf8423a21ecc3551793dc16d1980af1eb0d",
+    "f5e8eb5260113a0aeabfb95ef198e1aa80022a26dfe91f3bf9262acbf5453ec9",
+    "b807a82343b432343b7e3cbc86ee76cba7011066827f3baa089aa78a02c02b53",
+    "5e5e2a136bedba3d3477d05c5b1215331cb97339b74003bcb60f8cb4885ba86c",
+    "4543c167fdab3b0376087731571f7b3bcecadd43f8ff05c6b5371f0073ba425a",
+    "38b8830acec3b9c399411093ac38ed6bed6dca52a0cf05be9c87178cb05f5780",
+    "6f409fb9df15a76319a16988ed5ee0ca42da0a9c48981240e15edee773d3d89d",
+    "b0f4e762e34a3e5f0f07a64130130a7f223bfbc486b9bdcd2d2549210fb36df5",
+    "2109554164abdd002ce0a4377f957c5aa3bc26886a197749ea79fc04d9b94fae",
+    "0f32857232341cb6a26d6cf55cb2375b8e256e0e0f89519d3059415cac8ad7e6",
+    "3062488680b8bc05959ddcb0cab948378988564fc82a88213e346ca570b0c7ab"
+  ],
+  "scaler_sha256": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+  "aggregator_sha256": "dd47330f82791bc7c56d3d6019ce80bcd6ca31f497b9fffeabc9165f35b1b2f9",
+  "harness_code_sha256": "d287a85e03e8c666be5cf06c2329e6d81fbed3ea08cb1563225ac2d92badc451",
+  "sequence_order_sha256": "21c4dd51f8aefb26fa1987764b0c129fac599fc52653349732a4fd8e39c32b4c",
+  "threshold_source": "EDITOR006A_THRESHOLDS.json bound through validate_contracts",
+  "reference_artefacts_used_for_parity": [
+    {
+      "family": "teacher_frozen_odst",
+      "seed": 42,
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed42\\summary.json",
+      "sha256": "1bda9db8412879eb3312dde98405ebefd7cb4380c911712e7add3fdc9e9c2443"
+    },
+    {
+      "family": "teacher_frozen_odst",
+      "seed": 52,
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed52\\summary.json",
+      "sha256": "7e100f5aa8db507a950b924438c3285e88f3d80547828f63a3607c6a82d3b746"
+    },
+    {
+      "family": "teacher_frozen_odst",
+      "seed": 62,
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed62\\summary.json",
+      "sha256": "fc41284ac851151a690665d4fba289fdb99d5654a5bbd7acdb544403536c988a"
+    },
+    {
+      "family": "C2",
+      "seed": 42,
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed42\\seed_summary.json",
+      "sha256": "a6034cde1262bf5113cb6e574539ca30787fb50d49c50071e810250fe5e320a5"
+    },
+    {
+      "family": "C2",
+      "seed": 52,
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed52\\seed_summary.json",
+      "sha256": "21afab9b13039518f1f60234700f121e42874b2e7592161eadae2e515d1e1ebf"
+    },
+    {
+      "family": "C2",
+      "seed": 62,
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed62\\seed_summary.json",
+      "sha256": "5a94d58a9901c5bc4fad5e1a99c8ae89952441555c8af025a5668e78abe73fba"
+    },
+    {
+      "family": "C5_original_paper",
+      "seed": 42,
+      "path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed42\\seed_summary.json",
+      "sha256": "251777503b970832efef3b1501c1188f9a6332e2d261a87b49af2b7bca44e2b9"
+    },
+    {
+      "family": "C5_original_paper",
+      "seed": 52,
+      "path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed52\\seed_summary.json",
+      "sha256": "7f6f8a09a8bc4da7fb25989d9ea4a945c4aee52563485ba18f05a6abf1bb6c0c"
+    },
+    {
+      "family": "C5_original_paper",
+      "seed": 62,
+      "path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed62\\seed_summary.json",
+      "sha256": "fc72e14360d0c84ce5519a47697670d42e6b3f255afb2fe4208ad6f1a928f7a9"
+    },
+    {
+      "family": "attention_linear",
+      "seed": 42,
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed42\\summary.json",
+      "sha256": "8ae1a6b604ec14a5b2dc9f34dda13ff6121ef47168e66729256b84a401836bd9"
+    },
+    {
+      "family": "attention_linear",
+      "seed": 52,
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed52\\summary.json",
+      "sha256": "13dc17e4d0edff707471187125e8284f168d9917fd672a3fe144e51793f0f6cb"
+    },
+    {
+      "family": "attention_linear",
+      "seed": 62,
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed62\\summary.json",
+      "sha256": "17b0f53bdedb01d00f1a4369cb6adcf923dc5642ebbe0a6c7ef6e7e0942b95c7"
+    },
+    {
+      "family": "RF_40",
+      "seed": 42,
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed42\\summary.json",
+      "sha256": "660abeb2251af6359c7c23cb71e1801dd77de9e6f47f302f0714d1c0b3f03efc"
+    },
+    {
+      "family": "RF_40",
+      "seed": 52,
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed52\\summary.json",
+      "sha256": "aa7541221c4d41eeb3fe73eb3746e2bb78f1d1a7a1e6397369bf96a8b3e60a36"
+    },
+    {
+      "family": "RF_40",
+      "seed": 62,
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed62\\summary.json",
+      "sha256": "2cd667dab7f0b9824b7f9c650c81210c23268f71b7269ae35a1ef11034c57ebc"
+    },
+    {
+      "family": "XGBoost_40",
+      "seed": 42,
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed42\\summary.json",
+      "sha256": "58ee4079b9914ea081cab92a5603ce5995ba4bcec1acafd3e8731f1f47679652"
+    },
+    {
+      "family": "XGBoost_40",
+      "seed": 52,
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed52\\summary.json",
+      "sha256": "4cd1f082c5a6ef88768dd2177296371351e0bec121118f987507800d8d6ec12a"
+    },
+    {
+      "family": "XGBoost_40",
+      "seed": 62,
+      "path": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed62\\summary.json",
+      "sha256": "2363d4715dfab2ffd4a484ca8f26ff52d0044dc66b5b6ef8d3fcca88088b718c"
+    }
+  ],
+  "parity_replay_score_hashes": {
+    "teacher_frozen_odst_seed42.npy": "8721ee82ed168a6584da507b85b31fb62cb4f46cd4d621cfdbbe0aea452a54a8",
+    "teacher_frozen_odst_seed52.npy": "c3d16778b768833bfa49f4f786d26316b8c63d6d481de357d9137e7fd3944ab4",
+    "teacher_frozen_odst_seed62.npy": "ef6cf5230803a2e22d108493b118b6e5dbfe4fb63fce8686351c662f139a418e",
+    "C2_seed42.npy": "b8a1a0dfccaa04ff4caa5323174cc9f049546218aeb9b7c3e9d7693b0b9169c8",
+    "C2_seed52.npy": "4882857e0985dadda8fef992cd0304003968e119effadef6e2d51a5c874fa0bd",
+    "C2_seed62.npy": "fe4d4679d0eb66241869673e32a3e1633b5f0c372f6ed90f7ba8b7423eba7b7b",
+    "C5_original_paper_seed42.npy": "4e053a209b3bc5fa4034d0e2cfa6035ed6b2a429cac0d64aab9d09da56cd2722",
+    "C5_original_paper_seed52.npy": "2d855b3d0fcb6a619b36109e3eff2d64c74c31085a8639342a709599bdff4c09",
+    "C5_original_paper_seed62.npy": "16118e490fcd7c3883a0c2ecc46e297d78f3a556574c63763c54c24611292354",
+    "attention_linear_seed42.npy": "d6040ac1e4ffdfacb7f9442080b272167fe2d5b3b15b8b8971b982dbb3cc7aa8",
+    "attention_linear_seed52.npy": "509d3cafc3f10a2fcf0dcde07e057f613ffddc76668637ab086224c5203d022d",
+    "attention_linear_seed62.npy": "6b47068e4565ee8c59f1a34c8ba5215d9333b43c78a242f57b55d664246a772d",
+    "RF_40_seed42.npy": "888739c2c2eef7bd2d5c8cb566aad665826c414eb21f4e85b902de05d7e955c1",
+    "RF_40_seed52.npy": "b9f5ad4d991405c5a43303a85131bbb98c91cb2ca3d96d84f6e999542f6e9c15",
+    "RF_40_seed62.npy": "5d3b035ec6359cd9896396978ffd9a34ceaff8ac2d5cd44842566fabc85ae5dd",
+    "XGBoost_40_seed42.npy": "1426cb784a46723ee07d86897fd3fcd1d8299248fe6d8138db2a59a298726bb5",
+    "XGBoost_40_seed52.npy": "b63eb072a5b3e5b532ca660877c47771b9c37b953e89642f44419d6a7828fde6",
+    "XGBoost_40_seed62.npy": "e583dfeabcd8a9d796341e012185b09a11d8242e3d71db1a1c9f6aa8e2ef25f7"
+  },
+  "parity_gate": "R52_PARITY_FAIL",
+  "decision": "EDITOR007A_R62_INTERPRETATION_BLOCKED_MECHANICAL_FAILURE",
+  "R51_SECONDARY_STRESS_WARRANTED": "NO",
+  "any_forbidden_protocol_flag_true": false,
+  "rescue_experiments_executed": false
+}

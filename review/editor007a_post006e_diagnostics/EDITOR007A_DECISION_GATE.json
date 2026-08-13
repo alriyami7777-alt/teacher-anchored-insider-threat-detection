@@ -1,0 +1,122 @@
+{
+  "task_id": "EDITOR-007A",
+  "decision": "EDITOR007A_R62_INTERPRETATION_BLOCKED_MECHANICAL_FAILURE",
+  "R51_SECONDARY_STRESS_WARRANTED": "NO",
+  "r51_role_if_warranted": null,
+  "r51_predictive_inference_executed": false,
+  "r62_predictive_inference_rerun": false,
+  "rescue_experiments_executed": false,
+  "SCORE_ORIENTATION": "UNRESOLVED",
+  "R62_INVERTED_SCORE_DIAGNOSTIC": "UNRESOLVED",
+  "r52_raw_orientation_higher": [
+    [
+      "teacher_frozen_odst",
+      42
+    ],
+    [
+      "teacher_frozen_odst",
+      52
+    ],
+    [
+      "teacher_frozen_odst",
+      62
+    ],
+    [
+      "C2",
+      42
+    ],
+    [
+      "C2",
+      52
+    ],
+    [
+      "C2",
+      62
+    ],
+    [
+      "C5_original_paper",
+      42
+    ],
+    [
+      "C5_original_paper",
+      52
+    ],
+    [
+      "C5_original_paper",
+      62
+    ],
+    [
+      "attention_linear",
+      42
+    ],
+    [
+      "attention_linear",
+      52
+    ],
+    [
+      "attention_linear",
+      62
+    ],
+    [
+      "RF_40",
+      42
+    ],
+    [
+      "RF_40",
+      52
+    ],
+    [
+      "RF_40",
+      62
+    ],
+    [
+      "XGBoost_40",
+      42
+    ],
+    [
+      "XGBoost_40",
+      52
+    ],
+    [
+      "XGBoost_40",
+      62
+    ]
+  ],
+  "r52_inverted_higher": [],
+  "r62_inverted_views": [
+    [
+      "C2",
+      52,
+      "COMPLETED_WINDOW"
+    ],
+    [
+      "C2",
+      52,
+      "ENDPOINT_PAST_ONLY"
+    ],
+    [
+      "C2",
+      52,
+      "DEOVERLAP_OFFSET0"
+    ],
+    [
+      "C5_original_paper",
+      52,
+      "DEOVERLAP_OFFSET0"
+    ]
+  ],
+  "note": "r5.2 replay raw orientation is higher for all 18, but formal SCORE_ORIENTATION_MECHANICALLY_VALIDATED requires R52_PARITY_PASS",
+  "questions": {
+    "Q1": "Not under the exact unrounded-metric identity rule. Parity gate=R52_PARITY_FAIL. Replay confusion counts match producing evidence for 17/18 models; C2 seed 62 differs by FP=1. Neural PR-AUC differs by about 1e-6 to 3e-5 versus producing JSON; RF seed 42 differs by one unit in the last place. Five classical models have RESULT_PARITY_EXACT. This identity miss cannot numerically explain the r6.2 PR-AUC collapse.",
+    "Q2": "No systematic r5.2 sign/loader error: replay raw AP is higher for 18/18 and inverted-higher for 0/18. Teacher r6.2 completed-window raw AP is also higher than 1-score AP, so the neural r6.2 collapse is not explained by flipping the score. C2 seed 52 (all views) and C5 seed 52 (de-overlap only) show r6.2 inverted-diagnostic-higher ranking; that is a diagnostic ranking reversal, not a corrected result. Formal SCORE_ORIENTATION remains UNRESOLVED because R52_PARITY_PASS was not reached.",
+    "Q3": "Yes: r6.2 negative-class mean scores moved relative to r5.2 VALIDATION for the frozen 18 models (min delta=0.0673031, max delta=0.467937).",
+    "Q4": "Yes: frozen r5.2 thresholds occupy different regions of the r6.2 score distributions than of r5.2 VALIDATION (see TABLE 7 exceedance rates).",
+    "Q5": "Largest absolute scaled mean shifts vs r5.2 TRAIN: email_count (delta=-0.644615); has_file_activity (delta=0.230593); total_events (delta=-0.161378); active_duration_minutes (delta=-0.0535081); logon_count (delta=-0.0419572)",
+    "Q6": "Frozen 006E completed-window results for RF/XGBoost show ranking far below the r5.2 VALIDATION producing level, with very large false-positive counts at the frozen thresholds. That is compatible with threshold/probability-scale non-portability even if some ranking above prevalence remains. RF_40 seed 42: PR-AUC=0.001174560711377733 FP=825097 precision=0.0004385438889151369 RF_40 seed 52: PR-AUC=0.0011171867801702388 FP=824153 precision=0.00042086112795633717 RF_40 seed 62: PR-AUC=0.017253394539005595 FP=825537 precision=0.00043952052306574647 XGBoost_40 seed 42: PR-AUC=0.012142874649416489 FP=831852 precision=0.0004674126845469041 XGBoost_40 seed 52: PR-AUC=0.0015069321120279413 FP=832537 precision=0.0004670282834249381 XGBoost_40 seed 62: PR-AUC=0.009627565598946357 FP=829639 precision=0.0004686588886158057",
+    "Q7": "Interpretation of r6.2 is blocked by a mechanical failure. Do not use r6.2 results in the manuscript yet. Do not run r5.1.",
+    "freeze_ok": true,
+    "inverted_is_diagnostic_only": true
+  },
+  "MECHANICAL_CAUSE_FOUND": "YES",
+  "NEXT_ACTION": "Do not use r6.2 results in the manuscript yet. Do not run r5.1. Exact discrepancy: R52_PARITY_FAIL under unrounded PR-AUC identity (neural abs diff about 1e-6 to 3e-5; RF seed 42 ULP 3.33e-16) plus C2 seed 62 FP off by 1 (replay 30 vs producing 31). Confusion counts match for the other 17/18. All 18 r5.2 replays have RAW_ORIENTATION_HIGHER. This identity miss does not numerically explain the r6.2 collapse."
+}
