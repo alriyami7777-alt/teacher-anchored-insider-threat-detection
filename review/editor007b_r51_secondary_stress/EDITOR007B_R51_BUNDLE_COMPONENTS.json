@@ -1,0 +1,152 @@
+{
+  "components": [
+    {
+      "filename": "scaled_dense_daily.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\scaled_dense_daily.npy",
+      "byte_size": 53768128,
+      "shape": [
+        2000,
+        517,
+        13
+      ],
+      "dtype": "float32",
+      "sha256": "019d04f827eba7f2b4d3814307a75bf3d77665791fb091924139f54c8d254794",
+      "semantic_role": "scaled common-13 daily design; frozen r5.2 scaler transform-only"
+    },
+    {
+      "filename": "malicious_day_labels.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\malicious_day_labels.npy",
+      "byte_size": 1034128,
+      "shape": [
+        2000,
+        517
+      ],
+      "dtype": "uint8",
+      "sha256": "e501687c7cd39ffa641cb023bd96cfc8b86ad03e1f11e8b68ad8ec3a8ede5a25",
+      "semantic_role": "event-level answer-match user-day labels (primary producing label)"
+    },
+    {
+      "filename": "answer_scenario_day_bitmask.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\answer_scenario_day_bitmask.npy",
+      "byte_size": 1034128,
+      "shape": [
+        2000,
+        517
+      ],
+      "dtype": "uint8",
+      "sha256": "5d344192be9da971135693884da4ff5ba79b145a899ae63daef760a3286b198e",
+      "semantic_role": "uint8 bits 0-3 = r5.1-1..r5.1-4"
+    },
+    {
+      "filename": "user_ids.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\user_ids.npy",
+      "byte_size": 128128,
+      "shape": [
+        2000
+      ],
+      "dtype": "<U16",
+      "sha256": "861d6a3485a2796f54bdaac5dd829e5e724c8a9da36c0679a6ba090482d6ace3",
+      "semantic_role": "lexicographic ascending event-observed user IDs"
+    },
+    {
+      "filename": "calendar_dates.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\calendar_dates.npy",
+      "byte_size": 20808,
+      "shape": [
+        517
+      ],
+      "dtype": "<U10",
+      "sha256": "6204f215044b554e1ad94a9186d91e60df5ba86cacaf0bb0d8ec30b23ba0c6cf",
+      "semantic_role": "contiguous YYYY-MM-DD calendar"
+    },
+    {
+      "filename": "official_insider_flags.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\official_insider_flags.npy",
+      "byte_size": 2128,
+      "shape": [
+        2000
+      ],
+      "dtype": "uint8",
+      "sha256": "a60f02e4211938d43e0c0417c8cf2953333cd44a42f2bb9ef363340e1d617864",
+      "semantic_role": "1 iff official mapped insider"
+    },
+    {
+      "filename": "official_incident_codes.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\official_incident_codes.npy",
+      "byte_size": 64128,
+      "shape": [
+        2000
+      ],
+      "dtype": "<U8",
+      "sha256": "1617bbc2d2a6fe32d9f7faa69051f38d78d5ed6821baa1a8f416c66f7a3039c0",
+      "semantic_role": "official incident id or sentinel '' for null"
+    },
+    {
+      "filename": "window_index.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\window_index.npy",
+      "byte_size": 7968128,
+      "shape": [
+        996000,
+        2
+      ],
+      "dtype": "int32",
+      "sha256": "9b918cb35ebe34fa44f2297f6dceea16cf7fc5f945560c4b6ed4ff0e2110ed39",
+      "semantic_role": "int32 [user_index, start_day_index]; user then start ascending"
+    },
+    {
+      "filename": "completed_window_labels.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\completed_window_labels.npy",
+      "byte_size": 996128,
+      "shape": [
+        996000
+      ],
+      "dtype": "uint8",
+      "sha256": "ae322d3ef47e898bef82bb279da8dea4ae314bee8eb1034c03ef0400e50d832a",
+      "semantic_role": "any-day event-level label in T=20 window"
+    },
+    {
+      "filename": "endpoint_labels.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\endpoint_labels.npy",
+      "byte_size": 996128,
+      "shape": [
+        996000
+      ],
+      "dtype": "uint8",
+      "sha256": "fa4e865a4c851badde4d3a768ad493498eed2eb71b6d4d716e5c3e2c809f3443",
+      "semantic_role": "malicious status of decision day only"
+    },
+    {
+      "filename": "deoverlap_offset0_mask.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\deoverlap_offset0_mask.npy",
+      "byte_size": 996128,
+      "shape": [
+        996000
+      ],
+      "dtype": "uint8",
+      "sha256": "c8a820f2160409b59a345d33507d28f6ec0b8b147cc601bb81f8d771a4354940",
+      "semantic_role": "start_day_index % 20 == 0"
+    },
+    {
+      "filename": "window_scenario_bitmask.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\window_scenario_bitmask.npy",
+      "byte_size": 996128,
+      "shape": [
+        996000
+      ],
+      "dtype": "uint8",
+      "sha256": "8ec9b57ad3d20865ca3c58aaec994c99bad4fb569d84d3d6973654ebce730c4d",
+      "semantic_role": "OR of day scenario bits across T=20"
+    },
+    {
+      "filename": "endpoint_scenario_bitmask.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\endpoint_scenario_bitmask.npy",
+      "byte_size": 996128,
+      "shape": [
+        996000
+      ],
+      "dtype": "uint8",
+      "sha256": "063786160dddc44e528cbae305126cf3f65850df623c1ae86c42324154d46ed6",
+      "semantic_role": "scenario bitmask on decision day"
+    }
+  ]
+}

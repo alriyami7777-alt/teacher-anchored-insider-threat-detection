@@ -1,0 +1,431 @@
+{
+  "task_id": "EDITOR-007B",
+  "dataset_id": "CERT r5.1",
+  "dataset_role": "R51_SECONDARY_STRESS_ONLY",
+  "evaluation_type": "SECONDARY_STRESS_ONLY",
+  "creation_timestamp": "2026-08-13T23:37:59Z",
+  "authoritative_sources": {
+    "CERT_R51_ROOT": "C:\\PhD\\06_Datasets\\r5.1\\r5.1",
+    "CERT_ANSWERS_CANONICAL": "C:\\PhD\\06_Datasets\\answers",
+    "recovered_from": "EDITOR-004A; EDITOR-004B evidence not present",
+    "raw_files": {
+      "logon": {
+        "path": "C:\\PhD\\06_Datasets\\r5.1\\r5.1\\logon.csv",
+        "exists": true,
+        "byte_size": 125264192,
+        "mtime_utc": "2013-09-17T17:56:32Z",
+        "frozen_bytes": 125264192,
+        "frozen_mtime_utc": "2013-09-17T17:56:32Z",
+        "frozen_sha256": "fcb9baad7294569a95dcc8e100a2332229da9382e4dc3ee6db5931cf6b7d9fed",
+        "observed_sha256": "fcb9baad7294569a95dcc8e100a2332229da9382e4dc3ee6db5931cf6b7d9fed",
+        "size_mtime_match_004a": true,
+        "rehashed": false
+      },
+      "device": {
+        "path": "C:\\PhD\\06_Datasets\\r5.1\\r5.1\\device.csv",
+        "exists": true,
+        "byte_size": 82815266,
+        "mtime_utc": "2013-09-17T17:49:43Z",
+        "frozen_bytes": 82815266,
+        "frozen_mtime_utc": "2013-09-17T17:49:43Z",
+        "frozen_sha256": "5bc69c3e8e346b813aef11d839ff1aeb76301cbc875eccc3cd98cf430cdab0a8",
+        "observed_sha256": "5bc69c3e8e346b813aef11d839ff1aeb76301cbc875eccc3cd98cf430cdab0a8",
+        "size_mtime_match_004a": true,
+        "rehashed": false
+      },
+      "file": {
+        "path": "C:\\PhD\\06_Datasets\\r5.1\\r5.1\\file.csv",
+        "exists": true,
+        "byte_size": 435215504,
+        "mtime_utc": "2013-09-17T17:49:42Z",
+        "frozen_bytes": 435215504,
+        "frozen_mtime_utc": "2013-09-17T17:49:42Z",
+        "frozen_sha256": "d10cd5cae32e28ff543ef1281c6345ab617e3f8f040fe5bd9bd4ffb963fa65c0",
+        "observed_sha256": "d10cd5cae32e28ff543ef1281c6345ab617e3f8f040fe5bd9bd4ffb963fa65c0",
+        "size_mtime_match_004a": true,
+        "rehashed": false
+      },
+      "email": {
+        "path": "C:\\PhD\\06_Datasets\\r5.1\\r5.1\\email.csv",
+        "exists": true,
+        "byte_size": 9555883511,
+        "mtime_utc": "2013-09-17T17:49:27Z",
+        "frozen_bytes": 9555883511,
+        "frozen_mtime_utc": "2013-09-17T17:49:27Z",
+        "frozen_sha256": "eb45c082e05854afbe31a0c651923b275e5788e4c53fcbb1225b19c1ea6e7920",
+        "observed_sha256": "eb45c082e05854afbe31a0c651923b275e5788e4c53fcbb1225b19c1ea6e7920",
+        "size_mtime_match_004a": true,
+        "rehashed": false
+      },
+      "http": {
+        "path": "C:\\PhD\\06_Datasets\\r5.1\\r5.1\\http.csv",
+        "exists": true,
+        "byte_size": 30497635168,
+        "mtime_utc": "2013-09-17T17:56:31Z",
+        "frozen_bytes": 30497635168,
+        "frozen_mtime_utc": "2013-09-17T17:56:31Z",
+        "frozen_sha256": "c8299b480cda67075b4b7d1cdf751931c056d1f562436fa4ee2a425bc9a0b835",
+        "observed_sha256": "c8299b480cda67075b4b7d1cdf751931c056d1f562436fa4ee2a425bc9a0b835",
+        "size_mtime_match_004a": true,
+        "rehashed": false
+      }
+    },
+    "answer_files": [
+      {
+        "file": "readme.txt",
+        "bytes": "820",
+        "sha256": "fb341d6fb6e36831e63f204a9bd71d59d81714d13ae64aaa88d153bc54a3fe30",
+        "match": true
+      },
+      {
+        "file": "scenarios.txt",
+        "bytes": "1055",
+        "sha256": "dc86447f1669fb1c4fd400264bfcfd8f5f9b94d94fcfe4bcb0bf8acbf6f3c0e0",
+        "match": true
+      },
+      {
+        "file": "insiders.csv",
+        "bytes": "13792",
+        "sha256": "394202dfd70884edb61fc9ecde9f08d6f616700e4eee0984bf06a52d1a99d726",
+        "match": true
+      },
+      {
+        "file": "r5.1-1.csv",
+        "bytes": "6763",
+        "sha256": "149466404a4d59fcc4e23b15977cf13017c18723102f3edd7e7580b6d2398c47",
+        "match": true
+      },
+      {
+        "file": "r5.1-2.csv",
+        "bytes": "64106",
+        "sha256": "01c599bd652a02e939e289f58d5119997e4a800a8a1cdf7c173935938ec362f0",
+        "match": true
+      },
+      {
+        "file": "r5.1-3.csv",
+        "bytes": "19897",
+        "sha256": "8800625e9e5e980a8a126b143f2eb6fcd79d1cdc70bc4cffd793f8dfda123361",
+        "match": true
+      },
+      {
+        "file": "r5.1-4.csv",
+        "bytes": "46082",
+        "sha256": "a56b2b2fe549b7639af07c734e8cdffe525da9afdec8e1aebe3d05976977bb24",
+        "match": true
+      }
+    ]
+  },
+  "users": 2000,
+  "calendar_start": "2010-01-02",
+  "calendar_end": "2011-06-02",
+  "calendar_days": 517,
+  "dense_user_days": 1034000,
+  "feature_order": [
+    "total_events",
+    "logon_count",
+    "device_count",
+    "file_count",
+    "email_count",
+    "http_count",
+    "active_duration_minutes",
+    "has_logon_activity",
+    "has_device_activity",
+    "has_file_activity",
+    "has_email_activity",
+    "has_http_activity",
+    "is_active_day"
+  ],
+  "T": 20,
+  "stride": 1,
+  "label_rule": "R52_LABEL_RULE_EVENT_LEVEL_ANSWER_MATCH",
+  "matching_rule": "declared-source-scoped event ID match (r5.1 IDs unique within a CSV, not globally)",
+  "user_order": "lexicographic ascending user ID (event-observed cohort)",
+  "window_order": "for user_index ascending: for start_day_index = 0..497 ascending; no shuffle",
+  "official_mapped_insiders": [
+    "JTC1885",
+    "LBE0376",
+    "BGC0686",
+    "JAK0783"
+  ],
+  "official_incidents": [
+    "r5.1-1",
+    "r5.1-2",
+    "r5.1-3",
+    "r5.1-4"
+  ],
+  "event_level_labelled_users": [
+    "ACB0270",
+    "BGC0686",
+    "DKB0259",
+    "EHW0689",
+    "GJB0268",
+    "HCW0681",
+    "HRS0274",
+    "JAK0783",
+    "JTC1885",
+    "KSC0148",
+    "LBE0376",
+    "LHO0687",
+    "MAH0683",
+    "RNW0269",
+    "SDP0271",
+    "SKR0266",
+    "UNK0265"
+  ],
+  "contextual_event_level_users": [
+    "ACB0270",
+    "DKB0259",
+    "EHW0689",
+    "GJB0268",
+    "HCW0681",
+    "HRS0274",
+    "KSC0148",
+    "LHO0687",
+    "MAH0683",
+    "RNW0269",
+    "SDP0271",
+    "SKR0266",
+    "UNK0265"
+  ],
+  "effective_malicious_cluster_count": 4,
+  "frozen_wording": "Four official insider\u2013incident clusters are represented. They are not 8 independent malicious units.",
+  "eligible_completed_windows": 996000,
+  "completed_positive_count": 461,
+  "endpoint_positive_count": 58,
+  "deoverlap_retained_count": 50000,
+  "deoverlap_positive_count": 24,
+  "official_only_completed_positive_count": 200,
+  "official_only_endpoint_positive_count": 44,
+  "official_only_deoverlap_positive_count": 11,
+  "sequence_id_template": "{user_id}|{window_start_date}|{window_end_date}",
+  "sequence_order_sha256": "9c5f9f36bded4fb0d70820fe54cd91964a0286fd134bbb806f4562dc15ce7118",
+  "official_incident_null_sentinel": "",
+  "scenario_bit_legend": {
+    "bit_0": "r5.1-1",
+    "bit_1": "r5.1-2",
+    "bit_2": "r5.1-3",
+    "bit_3": "r5.1-4"
+  },
+  "component_files": [
+    {
+      "filename": "scaled_dense_daily.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\scaled_dense_daily.npy",
+      "byte_size": 53768128,
+      "shape": [
+        2000,
+        517,
+        13
+      ],
+      "dtype": "float32",
+      "sha256": "019d04f827eba7f2b4d3814307a75bf3d77665791fb091924139f54c8d254794",
+      "semantic_role": "scaled common-13 daily design; frozen r5.2 scaler transform-only"
+    },
+    {
+      "filename": "malicious_day_labels.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\malicious_day_labels.npy",
+      "byte_size": 1034128,
+      "shape": [
+        2000,
+        517
+      ],
+      "dtype": "uint8",
+      "sha256": "e501687c7cd39ffa641cb023bd96cfc8b86ad03e1f11e8b68ad8ec3a8ede5a25",
+      "semantic_role": "event-level answer-match user-day labels (primary producing label)"
+    },
+    {
+      "filename": "answer_scenario_day_bitmask.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\answer_scenario_day_bitmask.npy",
+      "byte_size": 1034128,
+      "shape": [
+        2000,
+        517
+      ],
+      "dtype": "uint8",
+      "sha256": "5d344192be9da971135693884da4ff5ba79b145a899ae63daef760a3286b198e",
+      "semantic_role": "uint8 bits 0-3 = r5.1-1..r5.1-4"
+    },
+    {
+      "filename": "user_ids.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\user_ids.npy",
+      "byte_size": 128128,
+      "shape": [
+        2000
+      ],
+      "dtype": "<U16",
+      "sha256": "861d6a3485a2796f54bdaac5dd829e5e724c8a9da36c0679a6ba090482d6ace3",
+      "semantic_role": "lexicographic ascending event-observed user IDs"
+    },
+    {
+      "filename": "calendar_dates.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\calendar_dates.npy",
+      "byte_size": 20808,
+      "shape": [
+        517
+      ],
+      "dtype": "<U10",
+      "sha256": "6204f215044b554e1ad94a9186d91e60df5ba86cacaf0bb0d8ec30b23ba0c6cf",
+      "semantic_role": "contiguous YYYY-MM-DD calendar"
+    },
+    {
+      "filename": "official_insider_flags.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\official_insider_flags.npy",
+      "byte_size": 2128,
+      "shape": [
+        2000
+      ],
+      "dtype": "uint8",
+      "sha256": "a60f02e4211938d43e0c0417c8cf2953333cd44a42f2bb9ef363340e1d617864",
+      "semantic_role": "1 iff official mapped insider"
+    },
+    {
+      "filename": "official_incident_codes.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\official_incident_codes.npy",
+      "byte_size": 64128,
+      "shape": [
+        2000
+      ],
+      "dtype": "<U8",
+      "sha256": "1617bbc2d2a6fe32d9f7faa69051f38d78d5ed6821baa1a8f416c66f7a3039c0",
+      "semantic_role": "official incident id or sentinel '' for null"
+    },
+    {
+      "filename": "window_index.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\window_index.npy",
+      "byte_size": 7968128,
+      "shape": [
+        996000,
+        2
+      ],
+      "dtype": "int32",
+      "sha256": "9b918cb35ebe34fa44f2297f6dceea16cf7fc5f945560c4b6ed4ff0e2110ed39",
+      "semantic_role": "int32 [user_index, start_day_index]; user then start ascending"
+    },
+    {
+      "filename": "completed_window_labels.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\completed_window_labels.npy",
+      "byte_size": 996128,
+      "shape": [
+        996000
+      ],
+      "dtype": "uint8",
+      "sha256": "ae322d3ef47e898bef82bb279da8dea4ae314bee8eb1034c03ef0400e50d832a",
+      "semantic_role": "any-day event-level label in T=20 window"
+    },
+    {
+      "filename": "endpoint_labels.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\endpoint_labels.npy",
+      "byte_size": 996128,
+      "shape": [
+        996000
+      ],
+      "dtype": "uint8",
+      "sha256": "fa4e865a4c851badde4d3a768ad493498eed2eb71b6d4d716e5c3e2c809f3443",
+      "semantic_role": "malicious status of decision day only"
+    },
+    {
+      "filename": "deoverlap_offset0_mask.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\deoverlap_offset0_mask.npy",
+      "byte_size": 996128,
+      "shape": [
+        996000
+      ],
+      "dtype": "uint8",
+      "sha256": "c8a820f2160409b59a345d33507d28f6ec0b8b147cc601bb81f8d771a4354940",
+      "semantic_role": "start_day_index % 20 == 0"
+    },
+    {
+      "filename": "window_scenario_bitmask.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\window_scenario_bitmask.npy",
+      "byte_size": 996128,
+      "shape": [
+        996000
+      ],
+      "dtype": "uint8",
+      "sha256": "8ec9b57ad3d20865ca3c58aaec994c99bad4fb569d84d3d6973654ebce730c4d",
+      "semantic_role": "OR of day scenario bits across T=20"
+    },
+    {
+      "filename": "endpoint_scenario_bitmask.npy",
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\endpoint_scenario_bitmask.npy",
+      "byte_size": 996128,
+      "shape": [
+        996000
+      ],
+      "dtype": "uint8",
+      "sha256": "063786160dddc44e528cbae305126cf3f65850df623c1ae86c42324154d46ed6",
+      "semantic_role": "scenario bitmask on decision day"
+    }
+  ],
+  "scaler_sha256": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+  "contract_bundle_sha256": "d9f3daf89da4b1d06d22081245a63eac50a0768aece1f1e566187593783e734a",
+  "model_allowlist_sha256": "699c983d1ad98a5dcce7768447dcac4a44f5a5e8fed740b4c8378876efa52e5a",
+  "harness_code_sha256": "d287a85e03e8c666be5cf06c2329e6d81fbed3ea08cb1563225ac2d92badc451",
+  "harness_runner_sha256": "3965f47a08fa79f17bc2d4c1cbf54fbdcd3ce1d6add6d7f864c123a501f8d17d",
+  "frozen_checkpoint_contract": "18 frozen 006A artefacts; bytes unmodified in EDITOR-007B",
+  "predeclared_views": [
+    {
+      "name": "COMPLETED_WINDOW",
+      "definition": "any-day event-level label in T=20 completed window; stride=1"
+    },
+    {
+      "name": "ENDPOINT_PAST_ONLY",
+      "definition": "label = malicious status of decision day only; features days s..s+19"
+    },
+    {
+      "name": "DEOVERLAP_OFFSET0",
+      "definition": "completed-window labels retained where start_day_index % 20 == 0"
+    }
+  ],
+  "predeclared_metrics": {
+    "per_family_seed_view": [
+      "PR-AUC",
+      "F1 at frozen threshold",
+      "precision",
+      "recall",
+      "FP",
+      "FN"
+    ],
+    "brier_logloss": "only if scores are on [0,1] probability scale",
+    "mechanism_allowed": [
+      "logit deviation",
+      "route MAE",
+      "route KL",
+      "hard-route agreement",
+      "dominant-leaf agreement"
+    ],
+    "mechanism_disabled": [
+      "unused-leaf fraction",
+      "tree-contribution rho"
+    ],
+    "no_new_view_after_results": true,
+    "no_superiority_hypothesis": true,
+    "diagnostic_questions": [
+      "Does ranking portability resemble r5.2 or r6.2?",
+      "Do frozen-threshold exceedance rates resemble r5.2 or r6.2?",
+      "Do neural models collapse?",
+      "Do RF/XGBoost retain ranking?",
+      "Does C5 differ predictively from C2?",
+      "Does C5 remain closer to teacher in route/logit behaviour?"
+    ]
+  },
+  "predictive_models_loaded": false,
+  "predictive_inference_executed": false,
+  "external_predictive_run_authorised": false,
+  "true_authorisation_created": false,
+  "nan_count": 0,
+  "inf_count": 0,
+  "http_row_equals_one_event": true,
+  "active_duration": "max(minutes(latest_event - earliest_event), 0) over five principal event sources",
+  "no_answer_derived_predictor": true,
+  "no_full_N_20_13_tensor": true,
+  "reserved_future_score_dir": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores",
+  "reserved_score_dir_populated": false,
+  "r62_predictive_inference_executed": false,
+  "r51_predictive_inference_executed": false,
+  "r52_test_opened": false,
+  "training_executed": false,
+  "threshold_selection_executed": false,
+  "scaler_fit_executed": false,
+  "calibration_fit_executed": false,
+  "model_selection_executed": false
+}

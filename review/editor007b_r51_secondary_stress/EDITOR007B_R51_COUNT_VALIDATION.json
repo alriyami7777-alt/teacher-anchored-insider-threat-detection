@@ -1,0 +1,178 @@
+{
+  "assertions": {
+    "users": {
+      "observed": 2000,
+      "expected": 2000,
+      "pass": true
+    },
+    "calendar_days": {
+      "observed": 517,
+      "expected": 517,
+      "pass": true
+    },
+    "features": {
+      "observed": 13,
+      "expected": 13,
+      "pass": true
+    },
+    "dense_rows": {
+      "observed": 1034000,
+      "expected": 1034000,
+      "pass": true
+    },
+    "eligible_windows": {
+      "observed": 996000,
+      "expected": 996000,
+      "pass": true
+    },
+    "completed_positives": {
+      "observed": 461,
+      "expected": 461,
+      "pass": true
+    },
+    "endpoint_positives": {
+      "observed": 58,
+      "expected": 58,
+      "pass": true
+    },
+    "deoverlap_retained": {
+      "observed": 50000,
+      "expected": 50000,
+      "pass": true
+    },
+    "deoverlap_positives": {
+      "observed": 24,
+      "expected": 24,
+      "pass": true
+    },
+    "official_insiders": {
+      "observed": 4,
+      "expected": 4,
+      "pass": true
+    },
+    "official_incidents": {
+      "observed": 4,
+      "expected": 4,
+      "pass": true
+    },
+    "event_level_labelled_users": {
+      "observed": 17,
+      "expected": 17,
+      "pass": true
+    },
+    "answer_ids": {
+      "observed": 351,
+      "expected": 351,
+      "pass": true
+    },
+    "matched_once": {
+      "observed": 351,
+      "expected": 351,
+      "pass": true
+    },
+    "unmatched": {
+      "observed": 0,
+      "expected": 0,
+      "pass": true
+    },
+    "multiple": {
+      "observed": 0,
+      "expected": 0,
+      "pass": true
+    }
+  },
+  "all_pass": true,
+  "geometry": {
+    "users": 2000,
+    "calendar_start": "2010-01-02",
+    "calendar_end": "2011-06-02",
+    "calendar_days": 517,
+    "dense_user_days": 1034000,
+    "eligible_T20_windows": 996000,
+    "n_starts": 498,
+    "deoverlap_retained_windows": 50000
+  },
+  "consistency_with_editor004a": true,
+  "matching": {
+    "rule": "declared-source-scoped",
+    "MATCHED_ONCE": 351,
+    "UNMATCHED": 0,
+    "MULTIPLE": 0
+  },
+  "source_scan": [
+    {
+      "source": "logon",
+      "n_data_rows": 1829996,
+      "header": [
+        "id",
+        "date",
+        "user",
+        "pc",
+        "activity"
+      ],
+      "malformed": 0
+    },
+    {
+      "source": "device",
+      "n_data_rows": 908379,
+      "header": [
+        "id",
+        "date",
+        "user",
+        "pc",
+        "file_tree",
+        "activity"
+      ],
+      "malformed": 0
+    },
+    {
+      "source": "file",
+      "n_data_rows": 947613,
+      "header": [
+        "id",
+        "date",
+        "user",
+        "pc",
+        "filename",
+        "activity",
+        "to_removable_media",
+        "from_removable_media",
+        "content"
+      ],
+      "malformed": 0
+    },
+    {
+      "source": "email",
+      "n_data_rows": 17608751,
+      "header": [
+        "id",
+        "date",
+        "user",
+        "pc",
+        "to",
+        "cc",
+        "bcc",
+        "from",
+        "activity",
+        "size",
+        "attachments",
+        "content"
+      ],
+      "malformed": 0
+    },
+    {
+      "source": "http",
+      "n_data_rows": 59686023,
+      "header": [
+        "id",
+        "date",
+        "user",
+        "pc",
+        "url",
+        "content"
+      ],
+      "malformed": 0
+    }
+  ],
+  "validated_contracts_status": "PASS"
+}

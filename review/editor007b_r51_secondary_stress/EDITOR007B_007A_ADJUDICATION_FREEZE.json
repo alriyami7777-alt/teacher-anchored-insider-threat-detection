@@ -1,0 +1,72 @@
+{
+  "task_id": "EDITOR-007B",
+  "title": "EDITOR-007A independent scientific-parity adjudication freeze",
+  "frozen_ruling": "EDITOR007A_R_SCIENTIFIC_PARITY_WITH_NUMERICAL_NONIDENTITY",
+  "historical_automated_007a_record_preserved": true,
+  "automated_protocol_gate": {
+    "status": "FAIL_EXACT_NUMERICAL_IDENTITY",
+    "decision": "EDITOR007A_R62_INTERPRETATION_BLOCKED_MECHANICAL_FAILURE",
+    "source": "review/editor007a_post006e_diagnostics/EDITOR007A_DECISION_GATE.json",
+    "note": "The automated EDITOR-007A exact-identity gate required unrounded floating-point PR-AUC identity. That historical FAIL is not erased."
+  },
+  "independent_scientific_adjudication": {
+    "status": "SCIENTIFIC_PARITY_WITH_NUMERICAL_NONIDENTITY",
+    "ruling": "EDITOR007A_R_SCIENTIFIC_PARITY_WITH_NUMERICAL_NONIDENTITY",
+    "supersedes": "EDITOR007A INTERPRETATION only; does not erase AUTOMATED_PROTOCOL_GATE"
+  },
+  "key_evidence": {
+    "r52_validation_confusion_matrices_exact": "17/18",
+    "c2_seed_62": {
+      "replay_fp": 30,
+      "producing_fp": 31,
+      "fn_exact": true
+    },
+    "neural_pr_auc_replay_abs_diff_approx": "1e-6 to 3e-5",
+    "rf_seed_42": "one floating-point ULP versus producing PR-AUC",
+    "rf_seeds_52_62_and_all_three_xgboost": "RESULT_PARITY_EXACT",
+    "all_18_replay_models_raw_orientation": "RAW_ORIENTATION_HIGHER",
+    "score_sign_class_column_loader_inversion_found": false,
+    "identity_miss_capable_of_explaining_r52_pr_auc_approx_0_93_vs_r62_approx_0_0004": false,
+    "r62_negative_frozen_threshold_exceedance": {
+      "r52_validation_approx": 0.01,
+      "r62_approx": [0.41, 0.45]
+    },
+    "largest_observed_scaled_feature_shifts": [
+      "email_count",
+      "has_file_activity",
+      "total_events"
+    ]
+  },
+  "scientific_ruling": {
+    "MECHANICAL_CAUSE_CAPABLE_OF_EXPLAINING_R62_COLLAPSE": "NO",
+    "R62_INTERPRETATION_MAY_REOPEN": "YES",
+    "R51_SECONDARY_STRESS_WARRANTED": "YES"
+  },
+  "r51_role": "R51_SECONDARY_STRESS_ONLY",
+  "r51_is_not": [
+    "a replacement primary test",
+    "a rescue dataset chosen because r6.2 failed",
+    "a new training domain in EDITOR-007B"
+  ],
+  "r51_purpose": [
+    "A. broad cross-version portability failure",
+    "B. r6.2-specific/extreme-rarity shift",
+    "C. ranking transfer with threshold/calibration failure",
+    "D. model-family-specific portability differences"
+  ],
+  "claims_forbidden_by_this_freeze": [
+    "The exact-identity automated gate never failed",
+    "r5.1 is a true predictive authorisation",
+    "teacher anchoring improves prediction"
+  ],
+  "this_task_did_not": [
+    "score CERT r5.1",
+    "rerun CERT r6.2",
+    "retrain or fine-tune any model",
+    "fit or adapt a scaler",
+    "tune thresholds or recalibrate probabilities",
+    "open r5.2 TEST",
+    "modify the 18 checkpoints or frozen 006E scores"
+  ],
+  "editor007a_head_at_freeze": "002d7aadef893bf4c2ab186c3a123bc1b21e4a94"
+}

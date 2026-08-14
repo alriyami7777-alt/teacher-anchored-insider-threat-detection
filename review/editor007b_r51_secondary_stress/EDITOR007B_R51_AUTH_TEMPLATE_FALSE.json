@@ -1,0 +1,19 @@
+{
+  "task_id": "EDITOR-007C",
+  "dataset_id": "CERT r5.1",
+  "dataset_role": "R51_SECONDARY_STRESS_ONLY",
+  "predictive_external_run_authorised": false,
+  "true_authorisation_created": false,
+  "authorised_timestamp": "2026-08-14T00:30:00Z",
+  "input_bundle_manifest_sha256": "366a1dd742a24b9470326c411dd5b40a7a2424c9c48ae3c5eb4b523f7fe01903",
+  "contract_bundle_sha256": "d9f3daf89da4b1d06d22081245a63eac50a0768aece1f1e566187593783e734a",
+  "harness_code_sha256": "d287a85e03e8c666be5cf06c2329e6d81fbed3ea08cb1563225ac2d92badc451",
+  "model_allowlist_sha256": "699c983d1ad98a5dcce7768447dcac4a44f5a5e8fed740b4c8378876efa52e5a",
+  "scaler_sha256": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+  "sequence_order_sha256": "9c5f9f36bded4fb0d70820fe54cd91964a0286fd134bbb806f4562dc15ce7118",
+  "harness_runner_sha256": "3965f47a08fa79f17bc2d4c1cbf54fbdcd3ce1d6add6d7f864c123a501f8d17d",
+  "external_runner_sha256": "03b3c47aecbcec28fd3cceb0509c70bd6553e74f6d352e3b88697bfec7acab57",
+  "editor007a_release_commit": "002d7aadef893bf4c2ab186c3a123bc1b21e4a94",
+  "label_rule": "R52_LABEL_RULE_EVENT_LEVEL_ANSWER_MATCH",
+  "note": "FALSE authorisation template only. predictive_external_run_authorised is false. This is not a true EDITOR-007C authorisation. Do not execute scoring."
+}

@@ -1,0 +1,91 @@
+{
+  "official_insiders_true_count": 4,
+  "official_incidents": [
+    "r5.1-1",
+    "r5.1-2",
+    "r5.1-3",
+    "r5.1-4"
+  ],
+  "contextual_users_official_incident_null": true,
+  "null_sentinel": "",
+  "event_level_labelled_users": [
+    "ACB0270",
+    "BGC0686",
+    "DKB0259",
+    "EHW0689",
+    "GJB0268",
+    "HCW0681",
+    "HRS0274",
+    "JAK0783",
+    "JTC1885",
+    "KSC0148",
+    "LBE0376",
+    "LHO0687",
+    "MAH0683",
+    "RNW0269",
+    "SDP0271",
+    "SKR0266",
+    "UNK0265"
+  ],
+  "contextual_users": [
+    "ACB0270",
+    "DKB0259",
+    "EHW0689",
+    "GJB0268",
+    "HCW0681",
+    "HRS0274",
+    "KSC0148",
+    "LHO0687",
+    "MAH0683",
+    "RNW0269",
+    "SDP0271",
+    "SKR0266",
+    "UNK0265"
+  ],
+  "feature_order": [
+    "total_events",
+    "logon_count",
+    "device_count",
+    "file_count",
+    "email_count",
+    "http_count",
+    "active_duration_minutes",
+    "has_logon_activity",
+    "has_device_activity",
+    "has_file_activity",
+    "has_email_activity",
+    "has_http_activity",
+    "is_active_day"
+  ],
+  "user_order": "lexicographic ascending",
+  "window_index_monotonic_users": true,
+  "scenario_bits_allow_multiple": true,
+  "scenario_bit_legend": {
+    "bit_0": "r5.1-1",
+    "bit_1": "r5.1-2",
+    "bit_2": "r5.1-3",
+    "bit_3": "r5.1-4"
+  },
+  "distinction": "official_incident_id != contextual scenario evidence",
+  "invented_official_incident_ids_for_contextual_users": false,
+  "effective_malicious_cluster_count": 4,
+  "not_eight_independent_malicious_units": true,
+  "label_rule": "R52_LABEL_RULE_EVENT_LEVEL_ANSWER_MATCH",
+  "harness_schema": {
+    "scaled_dtype": "float32",
+    "scaled_shape": [
+      2000,
+      517,
+      13
+    ],
+    "T": 20,
+    "N_FEATURES": 13,
+    "BATCH_SIZE_FROZEN": 1024
+  },
+  "c2_remains_first_class_control": true,
+  "c5_is": [
+    "teacher initialisation",
+    "logit anchoring",
+    "route anchoring"
+  ]
+}
