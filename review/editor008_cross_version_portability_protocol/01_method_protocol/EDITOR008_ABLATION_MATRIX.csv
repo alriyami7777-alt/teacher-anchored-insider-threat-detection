@@ -1,0 +1,12 @@
+rung,parent,only_change,description,scores_or_predictions_change,ladder
+A0,,single-source ERM neural reference,single-source ERM neural reference,YES,CORE_PREDICTIVE
+A1,A0,source composition,A0 + multi-source training,YES,CORE_PREDICTIVE
+A2,A1,source-risk optimisation,A1 + GroupDRO,YES,CORE_PREDICTIVE
+A3,A2,representation alignment,A2 + CORAL,YES,CORE_PREDICTIVE
+A4,A3,decision rule,A3 + portable decision policy,NO_MODEL_SCORES_CHECKPOINT_UNCHANGED_FROM_A3,CORE_PREDICTIVE
+A5,A4,diagnostic reporting,A4 + shift diagnostic,NO_PREDICTIONS_UNCHANGED,CORE_PREDICTIVE
+H0,matched source-training regime after portability protocol freeze,head = attention-linear,attention-linear head,YES_SEPARATE_FROM_PORTABILITY_LADDER,HEAD_COMPARISON
+H1,matched source-training regime after portability protocol freeze,head = ODST,ODST head; not required to outperform attention-linear predictively,YES_SEPARATE_FROM_PORTABILITY_LADDER,HEAD_COMPARISON
+T0,matched ODST branch,teacher/reference ODST,teacher/reference ODST,ORTHOGONAL,TEACHER_ANCHORING_ORTHOGONAL
+T1,T0,teacher-initialisation-only student,teacher-initialisation-only student,ORTHOGONAL,TEACHER_ANCHORING_ORTHOGONAL
+T2,T1,teacher-relative anchoring regularisation,T1 + teacher anchoring,ORTHOGONAL,TEACHER_ANCHORING_ORTHOGONAL

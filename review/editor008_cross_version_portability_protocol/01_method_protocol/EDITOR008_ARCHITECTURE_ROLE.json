@@ -1,0 +1,13 @@
+{
+  "task_id": "EDITOR-008B",
+  "BiLSTM_ATTENTION_ARCHITECTURE": "INHERITED_NOT_NEW_CONTRIBUTION",
+  "inherited_pathway": "20-day sequence \u2192 Bi-LSTM \u2192 temporal attention \u2192 predictive head",
+  "ODST_ROLE": "EXPLANATION_ORIENTED_DIFFERENTIABLE_HEAD",
+  "ATTENTION_LINEAR_ROLE": "PRIMARY_NEURAL_EFFICIENCY_AND_CALIBRATION_REFERENCE",
+  "architectural_novelty_claimed": false,
+  "RF": "REQUIRED",
+  "XGBOOST": "REQUIRED",
+  "tabular_schema_compatibility": "source-release engineered-feature schema must be verified before training; untouched-target check is schema/header identity only",
+  "do_not_silently_alter_target_features": true,
+  "do_not_drop_tabular_baselines_for_inconvenience": true
+}

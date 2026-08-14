@@ -1,0 +1,15 @@
+{
+  "task_id": "EDITOR-008B",
+  "scaling": "SOURCE_ONLY",
+  "lovo": {
+    "fit_scaler_on": "training source domains only",
+    "apply_frozen_fold_scaler_to": "held-out source domain"
+  },
+  "final_source_trained_model": {
+    "fit_final_scaler_on": "all declared source-development domains only",
+    "freeze_scaler_before_target_access": true
+  },
+  "never_fit_scaler_on_untouched_target": true,
+  "do_not_independently_normalise_target_releases": true,
+  "calibration": "SOURCE_ONLY if used; report raw and calibrated separately"
+}

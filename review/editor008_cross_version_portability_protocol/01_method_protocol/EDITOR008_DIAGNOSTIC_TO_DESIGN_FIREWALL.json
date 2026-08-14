@@ -1,0 +1,13 @@
+{
+  "task_id": "EDITOR-008B",
+  "r62_specific_feature_targeting": "PROHIBITED",
+  "email_count_specific_remediation": "PROHIBITED",
+  "has_file_activity_specific_remediation": "PROHIBITED",
+  "total_events_specific_remediation": "PROHIBITED",
+  "r62_specific_threshold_remediation": "PROHIBITED",
+  "r62_specific_hyperparameters": "PROHIBITED",
+  "r62_specific_model_selection_weight": "PROHIBITED",
+  "justification": "general domain-generalisation principles; all source versions treated symmetrically as domains",
+  "r62_special_fold": false,
+  "r62_special_objective": false
+}

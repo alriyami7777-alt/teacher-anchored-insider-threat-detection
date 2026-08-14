@@ -1,0 +1,40 @@
+{
+  "task_id": "EDITOR-008B",
+  "ranking_separated_from_decisions": true,
+  "PRIMARY_RANKING": "PR_AUC",
+  "thresholded_decision_results": "SECONDARY",
+  "WORST_SOURCE_F1_PRIMARY_THRESHOLD": "REMOVED",
+  "preferred_ordering": [
+    "FIXED_ALERT_BUDGET / FIXED_FLAGGING_RATE",
+    "FIXED_FPR SOURCE-FROZEN SCORE THRESHOLD",
+    "LEGACY F1 THRESHOLD \u2014 descriptive comparison only"
+  ],
+  "DECISION_OPERATING_POINT_VALUES": "UNRESOLVED_PENDING_PRETRAINING_NUMERIC_FREEZE",
+  "PORTABLE_DECISION_PRIMARY": "UNRESOLVED_PENDING_NUMERIC_FREEZE",
+  "PORTABLE_DECISION_SECONDARY": "UNRESOLVED_PENDING_NUMERIC_FREEZE",
+  "LEGACY_F1_THRESHOLD_ROLE": "DESCRIPTIVE_REFERENCE_ONLY",
+  "legacy_reference": "review/editor006a_preinference_freeze/EDITOR006A_THRESHOLDS.json",
+  "historical_r52_alert_budgets": {
+    "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\src\\objective2_r52_calibration_alert_burden\\constants.py",
+    "recorded_config": "C:\\PhD\\07_Projects\\cert-r52-calibration-alert-burden\\scripts\\objective2_r52_calibration_alert_burden\\recorded_results\\calibration_alert_config.json",
+    "budgets": [
+      0.0005,
+      0.001,
+      0.0025,
+      0.005,
+      0.01
+    ],
+    "scientifically_compatible_as_generation2_freeze": false,
+    "reason": "r5.2-validation alert-burden candidates; not independently audited as multi-source Generation-2 source-frozen operating points."
+  },
+  "TRAINING_AUTHORISED": "NO",
+  "no_target_labels_to_choose_or_modify_budget": true,
+  "report_at_frozen_budget_when_later_frozen": [
+    "coverage / flagging rate",
+    "precision",
+    "recall",
+    "F1",
+    "FP",
+    "FN"
+  ]
+}

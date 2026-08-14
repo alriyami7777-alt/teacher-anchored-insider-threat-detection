@@ -1,0 +1,72 @@
+{
+  "task_id": "EDITOR-008B",
+  "n_artefacts": 11,
+  "artefacts": [
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor008_cross_version_portability_protocol\\00_target_lock\\EDITOR008_FINAL_TARGET_LOCK.json",
+      "sha256": "9679ca470e308401930186c0c08d41229e2fd0f62253ae9556697dc401a41147",
+      "byte_size": 1662,
+      "role": "phase_a_lock"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor008_cross_version_portability_protocol\\00_target_lock\\EDITOR008_UNTOUCHED_TARGET_INVENTORY.json",
+      "sha256": "54074504789dcb49bb3673170bb80359b2ad47519d888fe2b13750658dbc37f1",
+      "byte_size": 13479,
+      "role": "phase_a_inventory"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor008_cross_version_portability_protocol\\00_target_lock\\EDITOR008_TARGET_LOCK_MANIFEST.json",
+      "sha256": "6c1c51fd6fbf8c6dc7e38e4ce0d5611dc5b926f72871553781a80aebec7bfc2d",
+      "byte_size": 1329,
+      "role": "phase_a_manifest"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d1_freeze_compliance\\EDITOR007D1_PORTABILITY_PHENOTYPE.json",
+      "sha256": "726e3e103f7251e9944641129f2e3b614f10ca5bed29efb239e064a032b53fed",
+      "byte_size": 1873,
+      "role": "d1_phenotype"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d1_freeze_compliance\\EDITOR007D1_EDITOR008_RELEASE_GATE.json",
+      "sha256": "1d50133e3ffc89629b6f41b53cf93b85e1cc04c20e04cc3bf12d5592d3f7a377",
+      "byte_size": 1525,
+      "role": "d1_gate"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d1_freeze_compliance\\EDITOR007D1_R52_C2_C5_MECHANISM_EVIDENCE.json",
+      "sha256": "1bfbbbb421ebf7e6c5aeea61ede45d64d94ca26017df1f2fe3c04768ada51291",
+      "byte_size": 1973,
+      "role": "unresolved_r52_mechanism"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006a_preinference_freeze\\EDITOR006A_THRESHOLDS.json",
+      "sha256": "d964d1fc5b9fb4fdaef3a681917c409c6d65fb43bc9cd1f9933d9c8a0da3c86b",
+      "byte_size": 4826,
+      "role": "legacy_f1_thresholds"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\src\\objective2_r52_calibration_alert_burden\\constants.py",
+      "sha256": "e1c584a9907d7a165a5aab941e66690bb7266cbea0c28ca9fa752f26b0b16841",
+      "byte_size": 5895,
+      "role": "historical_r52_alert_budget_constants"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-calibration-alert-burden\\scripts\\objective2_r52_calibration_alert_burden\\recorded_results\\calibration_alert_config.json",
+      "sha256": "55e2b9b34bb869f68a56f5d61c61acd2f8aad13d696e177ddd1872a3e786b457",
+      "byte_size": 622,
+      "role": "historical_r52_alert_budget_recorded_config"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\src\\dataset_registry.py",
+      "sha256": "4fd6418275ac4ad4a89302cf685d515e02fff7793a60a233f02c7805a8c6f9dd",
+      "byte_size": 17996,
+      "role": "dataset_registry"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\manifests\\experiment_registry.csv",
+      "sha256": "48a61d8a7b31cb2a560809d436c214b23be438328613ab2fefb54654597dc2c4",
+      "byte_size": 2269,
+      "role": "experiment_registry"
+    }
+  ]
+}

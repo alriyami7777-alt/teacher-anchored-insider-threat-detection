@@ -1,0 +1,13 @@
+{
+  "task_id": "EDITOR-008B",
+  "intended_contribution": "A prospectively controlled source-robust portability framework for explainable insider-threat detection, combining version-as-domain multi-source development, domain-robust optimisation, source-only representation alignment, prevalence-robust portable decision policies, source-frozen shift diagnosis, and dependence-aware cross-release evaluation.",
+  "explicit_exclusions": [
+    "NOT a new Bi-LSTM architecture",
+    "NOT evidence that teacher anchoring improves prediction",
+    "NOT cross-population generalisation",
+    "NOT real-world deployment validation",
+    "NOT adversarial robustness"
+  ],
+  "PROSPECTIVE_FINAL_TARGET_CLAIM": "NOT_AVAILABLE",
+  "optimizer_novelty_claim": false
+}

@@ -1,0 +1,57 @@
+{
+  "task_id": "EDITOR-008B",
+  "primary_method_family": [
+    "MULTI_SOURCE_DOMAIN_BALANCED_TRAINING",
+    "GROUPDRO_STYLE_SOURCE_RISK_OPTIMISATION",
+    "SOURCE_ONLY_CORAL_REPRESENTATION_ALIGNMENT"
+  ],
+  "GroupDRO_role": "control worst-source/domain risk",
+  "CORAL_role": "reduce source-domain representation covariance discrepancy",
+  "separately_ablatable": true,
+  "may_use_final_target_information": false,
+  "preferred_neural_alignment_location": "attended representation",
+  "target_alignment_loss": "PROHIBITED",
+  "GroupDRO_fairness": {
+    "initial_source_domain_weighting": "symmetric",
+    "sample_count_must_not_determine_domain_importance": true,
+    "no_r62_specific_weight": true,
+    "no_target_domain_weight": true,
+    "per_domain_risk_must_be_reported": true,
+    "learned_adaptive_domain_weights_must_be_logged": true,
+    "natural_emphasis_of_current_worst_source": "PERMITTED",
+    "designing_weighting_rule_to_make_r62_dominate": "PROHIBITED"
+  },
+  "not_an_optimizer_novelty_claim": true,
+  "TRAINING_AUTHORISED": "NO",
+  "unresolved_numeric_parameters": [
+    {
+      "parameter": "Generation-2 FIXED_ALERT_BUDGET_RATE",
+      "STATUS": "REQUIRES_PRETRAINING_NUMERIC_FREEZE",
+      "historical_source": "r5.2 calibration-alert BUDGETS=(0.0005,0.001,0.0025,0.005,0.01)",
+      "adopted_as_generation2_operating_point": false,
+      "reason": "Historical r5.2-only alert-burden candidates are not prospectively frozen for multi-source Generation-2 decision portability."
+    },
+    {
+      "parameter": "Generation-2 FIXED_FPR numeric anchor",
+      "STATUS": "REQUIRES_PRETRAINING_NUMERIC_FREEZE",
+      "historical_source": null,
+      "adopted_as_generation2_operating_point": false,
+      "reason": "No source-only fixed-FPR numeric operating point was found that is scientifically compatible with domain-balanced multi-source Generation-2."
+    },
+    {
+      "parameter": "GroupDRO step-size / group-weight learning-rate / robustness radius",
+      "STATUS": "REQUIRES_PRETRAINING_NUMERIC_FREEZE",
+      "reason": "No frozen GroupDRO hyperparameters exist in this research programme."
+    },
+    {
+      "parameter": "CORAL alignment penalty weight",
+      "STATUS": "REQUIRES_PRETRAINING_NUMERIC_FREEZE",
+      "reason": "No frozen CORAL hyperparameters exist in this research programme."
+    },
+    {
+      "parameter": "Optional abstention/OOD gate numeric threshold",
+      "STATUS": "REQUIRES_PRETRAINING_NUMERIC_FREEZE",
+      "reason": "Abstention is optional and not part of the primary predictor; no numeric gate is frozen."
+    }
+  ]
+}

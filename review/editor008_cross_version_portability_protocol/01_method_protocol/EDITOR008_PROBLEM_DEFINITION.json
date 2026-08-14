@@ -1,0 +1,21 @@
+{
+  "task_id": "EDITOR-008B",
+  "manuscript": "Teacher-Anchored Differentiable Sequence\u2013Ensemble Learning for Explainable Insider Threat Detection",
+  "scientific_purpose": "Cross-release portability of explainable insider-threat detectors under heterogeneous CERT releases, where strong within-release ranking and teacher-relative fidelity do not guarantee ranking or decision portability.",
+  "CROSS_RELEASE_NOT_CROSS_POPULATION": true,
+  "cross_release_limitation": "CERT releases belong to the same synthetic benchmark lineage. The Generation-2 experiment evaluates cross-release transfer within that benchmark family. It does not establish cross-organisation, cross-population, or real-world external generalisation.",
+  "untouched_target_definition": "UNOBSERVED_BY_THIS_RESEARCH_PROGRAM_BEFORE_PROSPECTIVE_LOCK",
+  "untouched_target_is_not": "an independently sampled real-world population",
+  "PROSPECTIVE_FINAL_TARGET_CLAIM": "NOT_AVAILABLE",
+  "EDITOR008_PROSPECTIVE_TARGET_PROTOCOL": "BLOCKED",
+  "paper_mode_if_executed_later": "RETROSPECTIVE_SOURCE_DOMAIN_LOVO_PORTABILITY_STUDY",
+  "PRIMARY_PORTABILITY_PHENOTYPE": "P2_R62_SEVERE_DISTRIBUTION_AND_DECISION_SHIFT",
+  "not_a_new_bilstm_architecture": true,
+  "not_an_optimizer_novelty_claim": true,
+  "inherited_predictive_pathway": [
+    "20-day sequence",
+    "Bi-LSTM",
+    "temporal attention",
+    "predictive head"
+  ]
+}

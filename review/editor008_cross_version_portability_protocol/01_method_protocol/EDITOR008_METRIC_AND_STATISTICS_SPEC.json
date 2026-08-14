@@ -1,0 +1,58 @@
+{
+  "task_id": "EDITOR-008B",
+  "overlapping_stride_one_windows": "CORRELATED_OBSERVATIONS",
+  "seeds": "REPRODUCIBILITY_REPETITIONS_NOT_INDEPENDENT_EXPERIMENTAL_UNITS",
+  "inferential_uncertainty": "USER_CLUSTER_AWARE_RESAMPLING where defensible",
+  "incident_resampling": "INSIDER_INCIDENT_CLUSTER_AWARE_RESAMPLING where official mapping is reliable",
+  "tiny_effective_malicious_cluster_counts": "must be explicitly reported",
+  "if_insufficient": "INFERENTIAL_CLAIM = NOT_SUPPORTED; use descriptive uncertainty",
+  "evaluation_views_separately_labelled": [
+    "COMPLETED_WINDOW",
+    "DEOVERLAP",
+    "ENDPOINT_PAST_ONLY"
+  ],
+  "do_not_pool_views": true,
+  "completed_window_not_independent_incidents": true,
+  "endpoint_past_only_does_not_imply_realtime": true,
+  "primary_ranking": "PR_AUC",
+  "always_report_prevalence_beside_pr_auc": true,
+  "secondary_predictive": [
+    "F1",
+    "precision",
+    "recall",
+    "FP",
+    "FN",
+    "predicted-positive fraction",
+    "negative threshold exceedance"
+  ],
+  "calibration_if_frozen": [
+    "Brier",
+    "log loss",
+    "reliability summary"
+  ],
+  "portability_metrics": [
+    "LOVO per-domain PR_AUC",
+    "domain-balanced source selection",
+    "final-target PR_AUC if a prospective target later exists",
+    "source-to-held-out ranking retention",
+    "portable decision-policy behaviour",
+    "shift-detector status"
+  ],
+  "explainability_under_shift": {
+    "status": "SECONDARY_PROSPECTIVE_ANALYSIS",
+    "procedure": "REFERENCE_CENTRED TOP-k VERSUS RANDOM INTERVENTION-BASED FAITHFULNESS",
+    "centring": "source/training reference centring",
+    "REFERENCE_CENTRED_TREE_CONTRIBUTION_FAITHFULNESS": "SUPPORTED",
+    "ROUTE_LEAF_TRACEABILITY": "SUPPORTED_AS_INTERNAL_EVIDENCE",
+    "ROUTE_LEAF_INDEPENDENT_FAITHFULNESS": "UNSUPPORTED",
+    "if_sparse_malicious_evidence": "FAITHFULNESS_INFERENCE = INSUFFICIENT_CLUSTER_SUPPORT",
+    "secondary_question": "Does reference-centred tree-contribution intervention faithfulness remain positive under a prospectively untouched cross-release shift?",
+    "not_a_model_selection_criterion": true
+  },
+  "degraded_input": {
+    "SOURCE_ABLATION": "CONTROLLED_DEGRADED_INPUT_ANALYSIS",
+    "GAUSSIAN_NOISE": "CONTROLLED_DEGRADED_INPUT_ANALYSIS",
+    "ADVERSARIAL_ROBUSTNESS": "UNSUPPORTED",
+    "new_adversarial_evasion_or_poisoning": "NOT_AUTHORISED"
+  }
+}

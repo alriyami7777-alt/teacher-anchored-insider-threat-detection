@@ -1,0 +1,34 @@
+{
+  "task_id": "EDITOR-008B",
+  "status": "MANDATORY_DIAGNOSTIC",
+  "detector_must_not_modify_predictions": true,
+  "primary_detector": "MMD on common-13 feature representations",
+  "SHIFT_DETECTION_PRIMARY": "RAW_COMMON13_MMD",
+  "secondary_detector": "MMD on learned attended representations",
+  "SHIFT_DETECTION_SECONDARY": "ATTENDED_REPRESENTATION_MMD",
+  "optional_descriptive_channel": "score-distribution divergence",
+  "score_distribution_must_not_replace_model_free_feature_detector": true,
+  "source_only_construction": {
+    "kernel": "RBF",
+    "bandwidth": "source-only median heuristic",
+    "source_shift_envelope": "maximum observed inter-source-domain MMD",
+    "alternative_envelope": "another explicitly justified source-only deterministic envelope, documented before training"
+  },
+  "final_target_flagged_only_after_all_freezes": true,
+  "output": [
+    "IN_SOURCE_ENVELOPE",
+    "PORTABILITY_WARNING"
+  ],
+  "no_target_labels_involved": true,
+  "warning_cannot_trigger_retraining_under_same_protocol": true,
+  "abstention_ood": {
+    "status": "OPTIONAL",
+    "part_of_primary_predictor": false,
+    "UNGATED_FULL_COVERAGE_RESULTS": "MANDATORY",
+    "GATED_RESULTS": "SECONDARY",
+    "COVERAGE": "REPORTED",
+    "SELECTIVE_METRICS": "REPORTED",
+    "TARGET_LABEL_OPTIMISATION": "PROHIBITED",
+    "portability_warning_cannot_hide_failed_ungated_model": true
+  }
+}

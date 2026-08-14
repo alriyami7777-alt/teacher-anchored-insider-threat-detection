@@ -1,0 +1,14 @@
+{
+  "task_id": "EDITOR-008B",
+  "target_labels_before_final_freeze": "PROHIBITED",
+  "target_feature_distribution_before_final_freeze": "PROHIBITED",
+  "target_score_distribution_before_final_freeze": "PROHIBITED",
+  "target_threshold_selection": "PROHIBITED",
+  "target_scaler_fit": "PROHIBITED",
+  "target_calibration_fit": "PROHIBITED",
+  "target_hyperparameter_selection": "PROHIBITED",
+  "target_model_selection": "PROHIBITED",
+  "target_specific_architecture_change": "PROHIBITED",
+  "post_target_failure_retraining_under_same_protocol": "PROHIBITED",
+  "target_failure_is_retained_as_a_result": true
+}

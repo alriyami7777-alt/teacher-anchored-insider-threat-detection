@@ -1,0 +1,20 @@
+{
+  "task_id": "EDITOR-008B",
+  "TEACHER_ANCHORING_ROLE": "AUXILIARY_FIDELITY_REGULARISER",
+  "not_an_additive_rung_in_main_portability_ladder": true,
+  "orthogonal_branch_on_matched_ODST": {
+    "T0": "teacher/reference ODST",
+    "T1": "teacher-initialisation-only student",
+    "T2": "T1 + teacher anchoring",
+    "only_difference_T1_T2": "teacher-relative anchoring regularisation"
+  },
+  "TEACHER_INITIALISATION_ONLY_CONTROL": "REQUIRED",
+  "separate": [
+    "predictive portability",
+    "teacher-relative fidelity"
+  ],
+  "R52_C2_C5_ORIGINAL_MECHANISM": "UNRESOLVED",
+  "do_not_substitute_wrong_r52_C5_checkpoint": true,
+  "do_not_fill_unresolved_r52_mechanism_gap": true,
+  "no_predictive_superiority_from_anchoring_unless_prospective_gates_pass": true
+}

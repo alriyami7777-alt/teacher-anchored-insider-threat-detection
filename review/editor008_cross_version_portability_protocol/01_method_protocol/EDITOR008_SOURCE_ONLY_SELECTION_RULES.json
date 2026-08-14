@@ -1,0 +1,27 @@
+{
+  "task_id": "EDITOR-008B",
+  "design": "LEAVE_ONE_SOURCE_VERSION_OUT",
+  "for_every_source_release_d": {
+    "TRAIN": "all source domains except d",
+    "HELD_OUT_SOURCE": "d"
+  },
+  "held_out_release_is_development_evidence_only": true,
+  "random_split_cross_release_windows_as_substitute": "PROHIBITED",
+  "primary_ranking_metric": "PR_AUC",
+  "always_report_prevalence_beside_pr_auc": true,
+  "domain_balanced_selection_hierarchy": {
+    "PRIMARY": "best worst held-out-domain PR-AUC rank",
+    "TIE_BREAK_1": "best mean held-out-domain PR-AUC rank",
+    "TIE_BREAK_2": "highest equal-domain mean held-out PR-AUC",
+    "TIE_BREAK_3": "simpler configuration"
+  },
+  "prohibited_selection_criteria": [
+    "pooled window count",
+    "pooled PR-AUC across all held-out windows",
+    "r62-specific priority",
+    "target results"
+  ],
+  "compute_pr_auc_separately_on_each_held_out_source_domain": true,
+  "rank_configurations_within_each_held_out_domain": true,
+  "equal_domain_weight": true
+}

@@ -1,0 +1,44 @@
+{
+  "task_id": "EDITOR-008B",
+  "VERSION": "DOMAIN",
+  "SOURCE_DOMAIN_WEIGHTING": "DOMAIN_BALANCED_NOT_SAMPLE_BALANCED",
+  "source_domains": [
+    {
+      "version": "CERT r4.2",
+      "role": "GENERATION2_SOURCE_DEVELOPMENT_DOMAIN",
+      "previously_observed": true,
+      "historical_role": "primary_development_dataset"
+    },
+    {
+      "version": "CERT r5.2 TRAIN/VALIDATION",
+      "role": "GENERATION2_SOURCE_DEVELOPMENT_DOMAIN",
+      "previously_observed": true,
+      "historical_role": "in_domain_train_validation",
+      "TEST": "PROHIBITED"
+    },
+    {
+      "version": "CERT r5.1",
+      "role": "GENERATION2_SOURCE_DEVELOPMENT_DOMAIN",
+      "labels": [
+        "GENERATION2_SOURCE_DEVELOPMENT_DOMAIN",
+        "PREVIOUSLY_OBSERVED_DIAGNOSTICALLY"
+      ],
+      "historical_results": "frozen_historical_evidence",
+      "may_be_presented_as_prospective_untouched_target": false
+    },
+    {
+      "version": "CERT r6.2",
+      "role": "GENERATION2_SOURCE_DEVELOPMENT_DOMAIN",
+      "labels": [
+        "GENERATION2_SOURCE_DEVELOPMENT_DOMAIN",
+        "PREVIOUSLY_OBSERVED_DIAGNOSTICALLY"
+      ],
+      "historical_results": "frozen_historical_evidence",
+      "may_be_presented_as_prospective_untouched_target": false,
+      "special_fold_or_objective": false
+    }
+  ],
+  "R52_TEST_ROLE": "PROHIBITED",
+  "symmetric_domain_treatment": true,
+  "r62_is_one_lovo_domain_only": true
+}

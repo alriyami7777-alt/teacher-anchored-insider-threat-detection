@@ -1,0 +1,29 @@
+{
+  "task_id": "EDITOR-008B",
+  "do_not_combine_into_generic_success": true,
+  "separate_findings": [
+    "RANKING_PORTABILITY",
+    "DECISION_PORTABILITY",
+    "SHIFT_DIAGNOSIS",
+    "TEACHER_FIDELITY",
+    "PREDICTIVE_SUPERIORITY",
+    "EXPLAINABILITY"
+  ],
+  "shift_warning_with_strong_predictive_performance": "POSSIBLE",
+  "shift_warning_with_failure": "POSSIBLE",
+  "teacher_fidelity_with_predictive_failure": "POSSIBLE",
+  "predictive_superiority_permitted_only_if": [
+    "comparison prospectively declared",
+    "baseline matched",
+    "target untouched (not available under this lock)",
+    "cluster-aware uncertainty adequate",
+    "prospectively frozen comparison supports the claim"
+  ],
+  "positive_point_estimates_alone_insufficient": true,
+  "final_target_claim_scope": {
+    "FINAL_TARGET_COUNT": 0,
+    "GENERALISATION_CLAIM_SCOPE": "NOT_AVAILABLE_NO_PROSPECTIVE_TARGET",
+    "do_not_claim_generic_CERT_portability": true,
+    "do_not_pool_away_failures": true
+  }
+}

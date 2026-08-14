@@ -1,0 +1,26 @@
+{
+  "task_id": "EDITOR-008B",
+  "execute_now": false,
+  "TRAINING_AUTHORISED": "NO",
+  "future_order_do_not_execute_now": [
+    "complete all source-only implementation/testing",
+    "complete LOVO model/hyperparameter selection",
+    "freeze architecture",
+    "freeze preprocessing/scaler",
+    "freeze model checkpoints",
+    "freeze portable decision policy",
+    "freeze calibration if used",
+    "freeze shift detector",
+    "freeze optional abstention rule",
+    "freeze explanation-analysis protocol",
+    "hash all artefacts",
+    "receive explicit final-target authorisation",
+    "perform schema-only compatibility gate",
+    "score each locked target exactly once (none locked under this protocol)",
+    "compute predeclared predictive outputs",
+    "compute predeclared shift diagnostics",
+    "compute predeclared secondary analyses",
+    "freeze all outcomes immediately"
+  ],
+  "no_rescue_retraining_under_same_protocol": true
+}
