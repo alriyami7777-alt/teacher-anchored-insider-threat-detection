@@ -1,0 +1,56 @@
+{
+  "task_id": "EDITOR-007D",
+  "no_manuscript_rewriting": true,
+  "claims": [
+    {
+      "claim": "teacher initialisation is load-bearing",
+      "status": "SUPPORTED_WITH_QUALIFICATION",
+      "note": "Teacher-relative fidelity of C5 versus C2 is reproducible on r5.1/r6.2 exact-frozen mechanism metrics. External predictive load-bearing is not shown."
+    },
+    {
+      "claim": "anchoring constrains teacher-relative logit drift",
+      "status": "SUPPORTED_WITH_QUALIFICATION",
+      "note": "C5 logit deviation is lower than C2 on r5.1 and r6.2. r5.2 validation mechanism comparison not included."
+    },
+    {
+      "claim": "anchoring constrains routing drift",
+      "status": "SUPPORTED_WITH_QUALIFICATION",
+      "note": "C5 route MAE/KL are lower and hard-route/dominant-leaf agreement higher than C2 on r5.1 and r6.2."
+    },
+    {
+      "claim": "anchoring improves predictive performance",
+      "status": "NEGATIVE_RESULT",
+      "note": "No reproducible C5 predictive advantage over C2 across external versions. De-overlap intervals often include zero. r6.2 deltas are on a collapsed scale."
+    },
+    {
+      "claim": "ODST is predictively superior to attention-linear",
+      "status": "UNSUPPORTED",
+      "note": "Not supported as a cross-version claim. Both neural families collapse on r6.2; r5.1 completed-window means are in a similar band."
+    },
+    {
+      "claim": "model generalises across CERT versions",
+      "status": "NEGATIVE_RESULT",
+      "note": "r6.2 is a severe version-specific failure. r5.1 ranking transfer does not imply r6.2 portability."
+    },
+    {
+      "claim": "frozen thresholds are portable",
+      "status": "NEGATIVE_RESULT",
+      "note": "Negative frozen-threshold exceedance (FP/N_negative) rises from ~0.0003\u20130.001 on r5.2 validation to ~0.41\u20130.45 on r6.2."
+    },
+    {
+      "claim": "RF/XGBoost remain strong engineered-tabular references",
+      "status": "SUPPORTED_WITH_QUALIFICATION",
+      "note": "Relative ranking portability on r6.2 versus neural families. They do not succeed as portable detectors at frozen thresholds."
+    },
+    {
+      "claim": "reference-centred explanation evidence",
+      "status": "UNSUPPORTED",
+      "note": "unused-leaf fraction and tree-contribution rho remain DISABLED_NOT_REPRODUCIBLE."
+    },
+    {
+      "claim": "degraded-input evidence",
+      "status": "UNSUPPORTED",
+      "note": "Not evaluated in this synthesis; no frozen degraded-input artefact was consumed."
+    }
+  ]
+}

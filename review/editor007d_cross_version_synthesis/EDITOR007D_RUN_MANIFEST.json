@@ -1,0 +1,99 @@
+{
+  "task_id": "EDITOR-007D",
+  "branch": "repository-hardening",
+  "HEAD_before": "3655707631c2a437429538c159e2a6cd50f59c0c",
+  "HEAD_after_synthesis": "3655707631c2a437429538c159e2a6cd50f59c0c",
+  "source_evidence": [
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_R52_VALIDATION_PARITY.json",
+      "sha256": "7f558990f6fb78c0dd4de8def9008b5be36070afb82f6d244d095e4bcc1d5bce"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_FEATURE_SHIFT.json",
+      "sha256": "5f431a25f0e6d54e6b569780e266698bebe7b1b0ebbe01a5f729aab9e3771178"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_SCORE_DISTRIBUTION_SHIFT.json",
+      "sha256": "42c4876787776b5dcc0f729a69c738501ed9fe4c77c053e9235048c02e99a2c2"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_R62_SCORE_ORIENTATION_AUDIT.json",
+      "sha256": "6f99bf52f6e0f82ebb8132ec8ce6f70d8a9302224e0d178c7d40e6a5a3aae6c6"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_DECISION_GATE.json",
+      "sha256": "6d41ef67bdea4e3200f12862a4dfa25827eb960e0e8fe387c533451739c70cf9"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_RUN_MANIFEST.json",
+      "sha256": "19b072665ad14f35c742ecb65236b49c9b21f5d9661e92f9523611e699a3d413"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007b_r51_secondary_stress\\EDITOR007B_007A_ADJUDICATION_FREEZE.json",
+      "sha256": "d17915082a61a2624eb5fc23129ac6d425312db44295522d69121931342c02b7"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007c1_r51_result_freeze\\EDITOR007C_PREDICTIVE_RESULTS_PAPER_CORRECTED.json",
+      "sha256": "5b99c1189236f867455003f83854b4ff8130a0f8678681f5de748a30b880f9b2"
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\EDITOR007C_MECHANISM_RESULTS.json",
+      "sha256": "f7185f18c9fe35db287dc6c0a5da8478a01b5f3ea03c2f8de90cb21a6a76b360"
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\EDITOR006E_PREDICTIVE_RESULTS.json",
+      "sha256": "7f2d11939b5fbe8c5c4b82d0be85e3a38a341fbebd6be45e1269aa3839132c3c"
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\EDITOR006E_MECHANISM_RESULTS.json",
+      "sha256": "5ffd236a656c59c46aecfc75c3b35b8249f184c80c4ac0c5c27b23faa9982a08"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007b_r51_secondary_stress\\EDITOR007B_R51_FEATURE_PROFILE.json",
+      "sha256": "d8f37997d45f7fa67bc90615cd8046c949ececb41d2ace77a3fa06ad3919b6b3"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006a_preinference_freeze\\EDITOR006A_THRESHOLDS.json",
+      "sha256": "d964d1fc5b9fb4fdaef3a681917c409c6d65fb43bc9cd1f9933d9c8a0da3c86b"
+    }
+  ],
+  "files_created": [
+    "EDITOR007D_C2_C5_COMPARISON.csv",
+    "EDITOR007D_C2_C5_COMPARISON.json",
+    "EDITOR007D_CLAIM_IMPACT.json",
+    "EDITOR007D_DATASET_CONTEXT.csv",
+    "EDITOR007D_DATASET_CONTEXT.json",
+    "EDITOR007D_DIAGNOSTIC_RULING.json",
+    "EDITOR007D_FEATURE_SHIFT.csv",
+    "EDITOR007D_FEATURE_SHIFT.json",
+    "EDITOR007D_MECHANISM_PORTABILITY.csv",
+    "EDITOR007D_MECHANISM_PORTABILITY.json",
+    "EDITOR007D_MODEL_PORTABILITY.csv",
+    "EDITOR007D_MODEL_PORTABILITY.json",
+    "EDITOR007D_REPORT.md",
+    "EDITOR007D_RUN_MANIFEST.json",
+    "EDITOR007D_SCORE_SHIFT.csv",
+    "EDITOR007D_SCORE_SHIFT.json",
+    "EDITOR007D_THRESHOLD_PORTABILITY.csv",
+    "EDITOR007D_THRESHOLD_PORTABILITY.json"
+  ],
+  "files_modified": [],
+  "protocol_flags": {
+    "predictive_model_loaded": false,
+    "predictive_inference_executed": false,
+    "training_executed": false,
+    "r52_test_opened": false,
+    "threshold_selection_executed": false,
+    "scaler_fit_executed": false,
+    "calibration_fit_executed": false,
+    "model_selection_executed": false,
+    "new_dataset_evaluated": false
+  },
+  "val_npz_opened_for_frozen_labels_only": true,
+  "val_npz_sha256": "5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c",
+  "val_npz_is_validation_not_test": true,
+  "r51_predictive_source": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007c1_r51_result_freeze\\EDITOR007C_PREDICTIVE_RESULTS_PAPER_CORRECTED.json",
+  "r51_cluster_count": 4,
+  "r62_cluster_count": 5,
+  "timestamp_utc": "2026-08-14T07:39:13Z"
+}

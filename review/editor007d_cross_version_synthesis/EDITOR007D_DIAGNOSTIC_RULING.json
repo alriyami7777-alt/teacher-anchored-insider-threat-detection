@@ -1,0 +1,129 @@
+{
+  "task_id": "EDITOR-007D",
+  "AUTOMATED_PROTOCOL_GATE": "FAIL_EXACT_NUMERICAL_IDENTITY",
+  "INDEPENDENT_SCIENTIFIC_ADJUDICATION": "SCIENTIFIC_PARITY_WITH_NUMERICAL_NONIDENTITY",
+  "GENERAL_CROSS_VERSION_COLLAPSE": "NOT_SUPPORTED",
+  "R51_SUBSTANTIAL_RANKING_TRANSFER": "SUPPORTED",
+  "R62_SEVERE_VERSION_SPECIFIC_FAILURE": "SUPPORTED",
+  "R62_RANKING_COLLAPSE": "MODEL_FAMILY_DEPENDENT",
+  "R62_THRESHOLD_PORTABILITY_FAILURE": "SUPPORTED",
+  "TABULAR_RELATIVE_PORTABILITY": "SUPPORTED",
+  "C5_PREDICTIVE_ADVANTAGE_OVER_C2": "MIXED",
+  "C5_TEACHER_FIDELITY_EFFECT": "SUPPORTED",
+  "PRIMARY_PORTABILITY_PHENOTYPE": "P2_R62_SEVERE_DISTRIBUTION_AND_DECISION_SHIFT",
+  "secondary_contributors": [
+    "P3_PRIMARILY_THRESHOLD_CALIBRATION_PORTABILITY_FAILURE",
+    "P4_MODEL_FAMILY_SPECIFIC_PORTABILITY_FAILURE"
+  ],
+  "no_proven_causal_language": true,
+  "questions": {
+    "Q1": {
+      "question": "Is the r5.2 \u2192 r6.2 failure a general cross-version failure?",
+      "answer": "NO. r5.1 secondary-stress completed-window neural mean PR-AUC remains far above prevalence, so the r6.2 near-prevalence collapse is not shown to be a general CERT-version failure."
+    },
+    "Q2": {
+      "question": "Does r5.1 show substantial cross-version ranking transfer?",
+      "answer": "YES, descriptively. Neural completed-window mean PR-AUC on r5.1 remains orders of magnitude above prevalence, indicating retained ranking despite large absolute drop from r5.2 validation."
+    },
+    "Q3": {
+      "question": "Is r6.2 qualitatively more severe than r5.1?",
+      "answer": "YES. r6.2 neural completed-window PR-AUC sits near prevalence; r5.1 does not."
+    },
+    "Q4": {
+      "question": "Is r6.2 failure predominantly ranking collapse, decision-threshold shift, or both?",
+      "answer": "BOTH, with family dependence: neural ranking collapses to near prevalence, while all 18 frozen models show a large negative-class frozen-threshold exceedance shift on r6.2. Tabular families retain more ranking than the neural pathway but still fail at the frozen decision boundary."
+    },
+    "Q5": {
+      "question": "Do RF/XGBoost retain more ranking portability than the neural pathway?",
+      "answer": "YES, relatively, on r6.2 completed-window PR-AUC. This is descriptive relative portability, not a claim that tabular models succeed."
+    },
+    "Q6": {
+      "question": "Does teacher anchoring show a reproducible predictive advantage over C2 across external versions?",
+      "answer": "NO as a general predictive-superiority claim. Point deltas are small; several de-overlap PR-AUC intervals include zero; r6.2 deltas sit on a collapsed PR-AUC scale. A positive point estimate is not predictive superiority."
+    },
+    "Q7": {
+      "question": "Does teacher anchoring show reproducible teacher-relative mechanism/fidelity preservation across external versions?",
+      "answer": "YES on the exact-frozen metrics compared here (r5.1 and r6.2). C5 remains closer to the teacher than C2 on logit deviation, route MAE/KL, and agreement. r5.2 validation mechanism values are not included (provenance insufficient)."
+    },
+    "Q8": {
+      "question": "Which input/score shifts best distinguish r6.2 from r5.1?",
+      "answer": "Largest |r6.2 mean \u2212 r5.2 TRAIN mean| features: email_count, has_file_activity, total_events. r5.1 scaled means remain close to r5.2 TRAIN. Score-side, r6.2 negative frozen-threshold exceedance rises from ~0.0003\u20130.001 on r5.2 validation to ~0.41\u20130.45, far above the r5.1 elevation."
+    },
+    "Q9": {
+      "question": "What exact failure mechanism should EDITOR-008 attempt to address?",
+      "answer": "A version-specific r6.2 representation/distribution shift that both destroys neural ranking and moves negatives across frozen r5.2 decision thresholds, while teacher-anchoring fidelity does not restore predictive portability. EDITOR-008 should treat shift detection, source-robust representation, and decision portability as required capabilities, with teacher anchoring auxiliary only. Do not freeze an architecture here."
+    }
+  },
+  "descriptive_anchors": {
+    "r52_completed_neural_mean_PR_AUC": 0.9305874275361957,
+    "r51_completed_neural_mean_PR_AUC": 0.26712829358893725,
+    "r62_completed_neural_mean_PR_AUC": 0.0004729180045527008,
+    "r52_completed_tabular_mean_PR_AUC": 0.9478776198105153,
+    "r51_completed_tabular_mean_PR_AUC": 0.35229700248987417,
+    "r62_completed_tabular_mean_PR_AUC": 0.007137085731824059,
+    "r51_completed_prevalence": 0.00046285140562249,
+    "r62_completed_prevalence": 0.0003596579476861167,
+    "r51_neural_AP_prevalence_lift_DESCRIPTIVE_ONLY": 577.1361831118904,
+    "r62_neural_AP_prevalence_lift_DESCRIPTIVE_ONLY": 1.3149104797912856,
+    "r62_tabular_AP_prevalence_lift_DESCRIPTIVE_ONLY": 19.844092915896827,
+    "r52_mean_negative_threshold_exceedance": 0.0006708250797263314,
+    "r51_mean_negative_threshold_exceedance": 0.0011197172810128205,
+    "r62_mean_negative_threshold_exceedance": 0.428966431868381,
+    "r62_feature_rank_abs_mean_shift_vs_r52_train": [
+      "email_count",
+      "has_file_activity",
+      "total_events",
+      "active_duration_minutes",
+      "logon_count",
+      "file_count",
+      "has_device_activity",
+      "has_email_activity",
+      "device_count",
+      "http_count",
+      "is_active_day",
+      "has_logon_activity",
+      "has_http_activity"
+    ],
+    "r51_feature_rank_abs_mean_shift_vs_r52_train": [
+      "active_duration_minutes",
+      "device_count",
+      "has_device_activity",
+      "file_count",
+      "has_file_activity",
+      "is_active_day",
+      "has_logon_activity",
+      "has_email_activity",
+      "logon_count",
+      "has_http_activity",
+      "email_count",
+      "http_count",
+      "total_events"
+    ],
+    "previously_observed_r62_major_shifts_remain_top3": true,
+    "r62_top3_abs_mean_shift": [
+      "email_count",
+      "has_file_activity",
+      "total_events"
+    ],
+    "deoverlap_bootstrap_PR_AUC_CI_classes": [
+      "CI_INCLUDES_ZERO",
+      "CI_INCLUDES_ZERO",
+      "CI_INCLUDES_ZERO",
+      "CI_INCLUDES_ZERO",
+      "CI_INCLUDES_ZERO",
+      "CI_INCLUDES_ZERO"
+    ],
+    "deoverlap_bootstrap_F1_CI_classes": [
+      "CI_INCLUDES_ZERO",
+      "CI_EXCLUDES_ZERO_POSITIVE",
+      "CI_EXCLUDES_ZERO_NEGATIVE",
+      "CI_EXCLUDES_ZERO_POSITIVE",
+      "CI_EXCLUDES_ZERO_POSITIVE",
+      "CI_EXCLUDES_ZERO_NEGATIVE"
+    ],
+    "c5_closer_to_teacher_on_all_exact_frozen_metrics_r51_and_r62": true
+  },
+  "r51_cluster_count": 4,
+  "r62_cluster_count": 5,
+  "r51_role": "R51_SECONDARY_STRESS_ONLY"
+}
