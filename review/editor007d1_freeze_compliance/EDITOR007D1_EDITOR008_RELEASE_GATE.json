@@ -1,0 +1,31 @@
+{
+  "task_id": "EDITOR-007D1",
+  "EDITOR008_PROTOCOL_DRAFTING_AUTHORISED": "YES",
+  "authorises": "drafting and independent audit of EDITOR-008 only",
+  "does_not_authorise": "training, Generation-2 execution, threshold tuning, or target scaler/calibration fit",
+  "conditions": {
+    "no_numerical_evidence_changed": true,
+    "unresolved_sources_explicitly_declared": true,
+    "claim_matrix_approved_vocabulary": true,
+    "c5_predictive_superiority_unsupported": true,
+    "explainability_distinction_corrected": true,
+    "degraded_input_adversarial_distinction_corrected": true,
+    "primary_phenotype_evidence_supported": true,
+    "r52_test_untouched": true,
+    "no_new_model_execution": true,
+    "no_target_tuning": true,
+    "historical_007d_unchanged": true
+  },
+  "EDITOR008_SHIFT_DETECTION_REQUIRED": "YES",
+  "EDITOR008_SOURCE_ROBUST_REPRESENTATION_REQUIRED": "YES",
+  "EDITOR008_DECISION_PORTABILITY_REQUIRED": "YES",
+  "EDITOR008_TEACHER_ANCHORING_ROLE": "AUXILIARY_FIDELITY_REGULARISER",
+  "EDITOR008_ABSTENTION_OR_OOD_GATING_REQUIRED": "CONDITIONAL",
+  "EDITOR008_MULTI_SOURCE_DEVELOPMENT_REQUIRED": "CONDITIONAL",
+  "EDITOR008_EXPLAINABILITY_UNDER_SHIFT_REQUIRED": "CONDITIONAL",
+  "TABULAR_BASELINES_MUST_REMAIN": "YES",
+  "architecture_frozen": false,
+  "rationale": {
+    "CONDITIONAL": "007D establishes the failure phenotype; it does not establish a unique solution (abstention/OOD, multi-version development, or a precise explainability-under-shift protocol)."
+  }
+}

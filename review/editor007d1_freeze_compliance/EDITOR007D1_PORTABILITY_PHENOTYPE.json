@@ -1,0 +1,44 @@
+{
+  "task_id": "EDITOR-007D1",
+  "PRIMARY_PORTABILITY_PHENOTYPE": "P2_R62_SEVERE_DISTRIBUTION_AND_DECISION_SHIFT",
+  "PRIMARY_PORTABILITY_PHENOTYPE_CHANGED": false,
+  "scientific_rulings_preserved": {
+    "GENERAL_CROSS_VERSION_COLLAPSE": "NOT_SUPPORTED",
+    "R51_SUBSTANTIAL_RANKING_TRANSFER": "SUPPORTED",
+    "R62_SEVERE_VERSION_SPECIFIC_FAILURE": "SUPPORTED",
+    "R62_RANKING_COLLAPSE": "MODEL_FAMILY_DEPENDENT",
+    "R62_THRESHOLD_PORTABILITY_FAILURE": "SUPPORTED",
+    "TABULAR_RELATIVE_PORTABILITY": "SUPPORTED",
+    "C5_TEACHER_FIDELITY_EFFECT": "SUPPORTED",
+    "C5_PREDICTIVE_ADVANTAGE_OVER_C2": "UNSUPPORTED",
+    "POINT_ESTIMATE_PATTERN": "MIXED_OR_VERSION_DEPENDENT"
+  },
+  "observed_evidence": [
+    "substantial r5.1 ranking transfer",
+    "severe r6.2 neural ranking collapse",
+    "relatively greater r6.2 tabular ranking retention",
+    "severe r6.2 frozen-threshold failure",
+    "r6.2 common-feature distribution differences",
+    "r6.2 score-distribution differences",
+    "C5 teacher-relative fidelity preservation on r5.1 and r6.2"
+  ],
+  "not_causally_established": [
+    "feature shift caused ranking collapse",
+    "distribution shift destroyed the neural model",
+    "specific feature X caused failure",
+    "teacher anchoring caused portability"
+  ],
+  "approved_associative_wording": [
+    "co-occurs with",
+    "is associated with",
+    "is consistent with",
+    "diagnostically accompanies"
+  ],
+  "corrected_wording": "the severe r6.2 distribution shift co-occurs with neural ranking collapse",
+  "forbidden_wording_example": "shift destroys neural ranking",
+  "r51_role": "R51_SECONDARY_STRESS_ONLY",
+  "r51_official_insider_incident_clusters": 4,
+  "r62_official_insider_incident_clusters": 5,
+  "R51_FUTURE_UNTOUCHED_TARGET_ELIGIBLE": false,
+  "R62_FUTURE_UNTOUCHED_TARGET_ELIGIBLE": false
+}

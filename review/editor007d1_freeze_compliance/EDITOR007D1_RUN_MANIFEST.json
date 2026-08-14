@@ -1,0 +1,32 @@
+{
+  "task_id": "EDITOR-007D1",
+  "branch": "repository-hardening",
+  "HEAD": "aadda34ac9d77f67e2f487f55719b45224719c19",
+  "original_editor007d_commit": "aadda34ac9d77f67e2f487f55719b45224719c19",
+  "editor007c1_commit": "3655707631c2a437429538c159e2a6cd50f59c0c",
+  "files_created": [
+    "EDITOR007D1_CLAIM_STATUS.csv",
+    "EDITOR007D1_EDITOR008_RELEASE_GATE.json",
+    "EDITOR007D1_FREEZE_COMPLIANCE_REPORT.md",
+    "EDITOR007D1_INPUT_CHECKSUMS.json",
+    "EDITOR007D1_INTERNAL_CONSISTENCY.json",
+    "EDITOR007D1_PORTABILITY_PHENOTYPE.json",
+    "EDITOR007D1_R52_C2_C5_MECHANISM_EVIDENCE.json",
+    "EDITOR007D1_R52_C2_C5_PREDICTIVE_EVIDENCE.json",
+    "EDITOR007D1_RUN_MANIFEST.json",
+    "_build_editor007d1.py"
+  ],
+  "files_modified_historical_007d": [],
+  "protocol_flags": {
+    "r52_test_accessed": false,
+    "new_model_execution": false,
+    "training_executed": false,
+    "fresh_predictive_inference": false,
+    "r51_rerun": false,
+    "r62_rerun": false,
+    "threshold_tuning": false,
+    "target_scaler_fit": false,
+    "target_calibration_fit": false
+  },
+  "timestamp_utc": "2026-08-14T08:02:27Z"
+}

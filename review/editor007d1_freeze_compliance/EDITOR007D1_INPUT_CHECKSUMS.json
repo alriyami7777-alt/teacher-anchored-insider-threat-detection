@@ -1,0 +1,1515 @@
+{
+  "task_id": "EDITOR-007D1",
+  "n_artefacts": 110,
+  "artefacts": [
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\ALL_SCORES_COMPLETE.json",
+      "sha256": "19a0960b8a898a080d853edf8b6722afca98fb55cba1c37b9a9a82c0f401cf70",
+      "byte_size": 7575,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "score_manifest",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\ALL_SCORES_COMPLETE.json",
+      "sha256": "e20eafc4e8b9ad2c4553c16ee8afa592b9a97f594b664b5ae0f18aa40c35635f",
+      "byte_size": 7594,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "score_manifest",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_R52_VALIDATION_PARITY.json",
+      "sha256": "7f558990f6fb78c0dd4de8def9008b5be36070afb82f6d244d095e4bcc1d5bce",
+      "byte_size": 37005,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "parity",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_R52_PARITY_REFERENCE_REGISTER.json",
+      "sha256": "7da1a8078b89f5af5716faa97c8b4b6a0332b75791164478cd13bc7811f6b0df",
+      "byte_size": 24973,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "parity_reference_register",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_FEATURE_SHIFT.json",
+      "sha256": "5f431a25f0e6d54e6b569780e266698bebe7b1b0ebbe01a5f729aab9e3771178",
+      "byte_size": 47721,
+      "dataset_or_role": "r52_train_val_r62",
+      "evidence_type": "feature_shift",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_SCORE_DISTRIBUTION_SHIFT.json",
+      "sha256": "42c4876787776b5dcc0f729a69c738501ed9fe4c77c053e9235048c02e99a2c2",
+      "byte_size": 40351,
+      "dataset_or_role": "r52_validation_r62",
+      "evidence_type": "score_shift",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_R62_SCORE_ORIENTATION_AUDIT.json",
+      "sha256": "6f99bf52f6e0f82ebb8132ec8ce6f70d8a9302224e0d178c7d40e6a5a3aae6c6",
+      "byte_size": 76037,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "orientation_audit",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_DECISION_GATE.json",
+      "sha256": "6d41ef67bdea4e3200f12862a4dfa25827eb960e0e8fe387c533451739c70cf9",
+      "byte_size": 4787,
+      "dataset_or_role": "protocol",
+      "evidence_type": "decision_gate",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007a_post006e_diagnostics\\EDITOR007A_RUN_MANIFEST.json",
+      "sha256": "19b072665ad14f35c742ecb65236b49c9b21f5d9661e92f9523611e699a3d413",
+      "byte_size": 16200,
+      "dataset_or_role": "protocol",
+      "evidence_type": "run_manifest",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007b_r51_secondary_stress\\EDITOR007B_007A_ADJUDICATION_FREEZE.json",
+      "sha256": "d17915082a61a2624eb5fc23129ac6d425312db44295522d69121931342c02b7",
+      "byte_size": 2907,
+      "dataset_or_role": "protocol",
+      "evidence_type": "adjudication",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007c1_r51_result_freeze\\EDITOR007C_PREDICTIVE_RESULTS_PAPER_CORRECTED.json",
+      "sha256": "5b99c1189236f867455003f83854b4ff8130a0f8678681f5de748a30b880f9b2",
+      "byte_size": 49840,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "predictive_results",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "corrected_metadata_only",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\EDITOR007C_MECHANISM_RESULTS.json",
+      "sha256": "f7185f18c9fe35db287dc6c0a5da8478a01b5f3ea03c2f8de90cb21a6a76b360",
+      "byte_size": 10292,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "mechanism",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007b_r51_secondary_stress\\EDITOR007B_R51_FEATURE_PROFILE.json",
+      "sha256": "d8f37997d45f7fa67bc90615cd8046c949ececb41d2ace77a3fa06ad3919b6b3",
+      "byte_size": 8761,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "feature_profile",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007b_r51_secondary_stress\\EDITOR007B_R51_COUNT_VALIDATION.json",
+      "sha256": "8aa671a5e31c7bdfc721dcf324445a8733aaa64e29a47de79b6447a99d027114",
+      "byte_size": 3473,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "counts",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007b_r51_secondary_stress\\EDITOR007B_R51_METADATA_VALIDATION.json",
+      "sha256": "422977c21254614bc37d54fc4e6d05a4886de36d709472400736fa9098c73840",
+      "byte_size": 1979,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "metadata",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007b_r51_secondary_stress\\EDITOR007B_R51_BUNDLE_MANIFEST.json",
+      "sha256": "366a1dd742a24b9470326c411dd5b40a7a2424c9c48ae3c5eb4b523f7fe01903",
+      "byte_size": 15428,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "bundle_manifest",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007b_bundle\\completed_window_labels.npy",
+      "sha256": "ae322d3ef47e898bef82bb279da8dea4ae314bee8eb1034c03ef0400e50d832a",
+      "byte_size": 996128,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "completed_window_labels",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\EDITOR006E_PREDICTIVE_RESULTS.json",
+      "sha256": "7f2d11939b5fbe8c5c4b82d0be85e3a38a341fbebd6be45e1269aa3839132c3c",
+      "byte_size": 52227,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "predictive_results",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\EDITOR006E_MECHANISM_RESULTS.json",
+      "sha256": "5ffd236a656c59c46aecfc75c3b35b8249f184c80c4ac0c5c27b23faa9982a08",
+      "byte_size": 10289,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "mechanism",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006c_r62_input_bundle\\EDITOR006C_COUNT_VALIDATION.json",
+      "sha256": "131198e2145f086718697a56d145b062e30b674154a65cc6c868146e724d94a3",
+      "byte_size": 2291,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "counts",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006c_r62_input_bundle\\EDITOR006C_METADATA_VALIDATION.json",
+      "sha256": "b712d22720e63445f57ee9d9791f3529a90baff36413108205c876b333599090",
+      "byte_size": 1867,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "metadata",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006c_r62_input_bundle\\EDITOR006C_BUNDLE_MANIFEST.json",
+      "sha256": "0e53a750b9682aa0ed71105619c0b31fccf2208f67eb6c80896946c0e8564fec",
+      "byte_size": 12768,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "bundle_manifest",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006c_bundle\\completed_window_labels.npy",
+      "sha256": "3082df95fa676c96e9d2579e22dfedea02902cb6bc46e563a8006c36d4bd0984",
+      "byte_size": 1988128,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "completed_window_labels",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_validation.npz",
+      "sha256": "5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c",
+      "byte_size": 1291503,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "validation_tensor",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006a_preinference_freeze\\EDITOR006A_THRESHOLDS.json",
+      "sha256": "d964d1fc5b9fb4fdaef3a681917c409c6d65fb43bc9cd1f9933d9c8a0da3c86b",
+      "byte_size": 4826,
+      "dataset_or_role": "r52_thresholds",
+      "evidence_type": "frozen_thresholds",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d_cross_version_synthesis\\EDITOR007D_C2_C5_COMPARISON.csv",
+      "sha256": "c828a083ba58454e64ddd885512efb39384493b30e330bc810e9d76754a34759",
+      "byte_size": 4854,
+      "dataset_or_role": "cross_version",
+      "evidence_type": "historical_007d_packet",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d_cross_version_synthesis\\EDITOR007D_C2_C5_COMPARISON.json",
+      "sha256": "e84152677b71600949ac8cc88537d4935c4d87834a30721a5864bb8a0155a75d",
+      "byte_size": 12158,
+      "dataset_or_role": "cross_version",
+      "evidence_type": "historical_007d_packet",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d_cross_version_synthesis\\EDITOR007D_CLAIM_IMPACT.json",
+      "sha256": "7f18ca7ff4272706cf0083dd93c0deae143ab851a47217585312100eba8398f3",
+      "byte_size": 2555,
+      "dataset_or_role": "cross_version",
+      "evidence_type": "historical_007d_packet",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d_cross_version_synthesis\\EDITOR007D_DATASET_CONTEXT.csv",
+      "sha256": "2d3add168d8c8637e5840da5e17704be19f4e72f2bd5d91a59f77561e6c440a7",
+      "byte_size": 1229,
+      "dataset_or_role": "cross_version",
+      "evidence_type": "historical_007d_packet",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d_cross_version_synthesis\\EDITOR007D_DATASET_CONTEXT.json",
+      "sha256": "5eb857c99e9a0adcecf515d700e6a2ef30812f8d3158029f8f36461154538d3d",
+      "byte_size": 3070,
+      "dataset_or_role": "cross_version",
+      "evidence_type": "historical_007d_packet",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d_cross_version_synthesis\\EDITOR007D_DIAGNOSTIC_RULING.json",
+      "sha256": "09a642c0a70a75f42c82a13d07b44dd81b1175ee2c2d6a10252f0b9c857e3f82",
+      "byte_size": 6714,
+      "dataset_or_role": "cross_version",
+      "evidence_type": "historical_007d_packet",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d_cross_version_synthesis\\EDITOR007D_FEATURE_SHIFT.csv",
+      "sha256": "b435d81b1bcdd4d4f23dc7d166b110bc3cbcf4896b74fffc87c48ebe70971ea6",
+      "byte_size": 3796,
+      "dataset_or_role": "cross_version",
+      "evidence_type": "historical_007d_packet",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d_cross_version_synthesis\\EDITOR007D_FEATURE_SHIFT.json",
+      "sha256": "18cc81ab3663bc65699be90e53efef3ae3ea7063401a712eedd553b661b55cd7",
+      "byte_size": 32112,
+      "dataset_or_role": "cross_version",
+      "evidence_type": "historical_007d_packet",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d_cross_version_synthesis\\EDITOR007D_MECHANISM_PORTABILITY.csv",
+      "sha256": "e05180f5d227d83b08db2752c2ae4f8ed1b3f7811228432387a197d2b62935c7",
+      "byte_size": 3212,
+      "dataset_or_role": "cross_version",
+      "evidence_type": "historical_007d_packet",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d_cross_version_synthesis\\EDITOR007D_MECHANISM_PORTABILITY.json",
+      "sha256": "6bc354ee017fd67ede627f78c6b2ff4c822bf9cf73160c5b3260614cb4f9a16a",
+      "byte_size": 9184,
+      "dataset_or_role": "cross_version",
+      "evidence_type": "historical_007d_packet",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d_cross_version_synthesis\\EDITOR007D_MODEL_PORTABILITY.csv",
+      "sha256": "d62cabe97efa7ec5ee6bcb37fa447d84b6b88775f484b859b96b859a94d1505b",
+      "byte_size": 43440,
+      "dataset_or_role": "cross_version",
+      "evidence_type": "historical_007d_packet",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d_cross_version_synthesis\\EDITOR007D_MODEL_PORTABILITY.json",
+      "sha256": "b972dfdb0d24253dbedbde88a3d2802d4ee16133057b79875ac59f629c50ef38",
+      "byte_size": 156580,
+      "dataset_or_role": "cross_version",
+      "evidence_type": "historical_007d_packet",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d_cross_version_synthesis\\EDITOR007D_REPORT.md",
+      "sha256": "88333bcc58b2391d1bb7bb6674f745e0747d122322b20a2893b1e6add4f776c3",
+      "byte_size": 16314,
+      "dataset_or_role": "cross_version",
+      "evidence_type": "historical_007d_packet",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d_cross_version_synthesis\\EDITOR007D_RUN_MANIFEST.json",
+      "sha256": "a42c9ade31ceb4ad0e201bf0c3701fb2675e615c0290d41c6b35eb4e60205f63",
+      "byte_size": 5100,
+      "dataset_or_role": "cross_version",
+      "evidence_type": "historical_007d_packet",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d_cross_version_synthesis\\EDITOR007D_SCORE_SHIFT.csv",
+      "sha256": "0ba72c5e4c7ecf3d1212863a471656e27702ddb4f4b1496fa8571e2335827283",
+      "byte_size": 17776,
+      "dataset_or_role": "cross_version",
+      "evidence_type": "historical_007d_packet",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d_cross_version_synthesis\\EDITOR007D_SCORE_SHIFT.json",
+      "sha256": "6fe7c5954df51b6af0e6d49f46c16aa203d40e6d7f5110b2399025417c4ab29b",
+      "byte_size": 48139,
+      "dataset_or_role": "cross_version",
+      "evidence_type": "historical_007d_packet",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d_cross_version_synthesis\\EDITOR007D_THRESHOLD_PORTABILITY.csv",
+      "sha256": "3472202e47637f36ebe051a5c4767bbc983deb8f83d9cc55e73043da72e65d8c",
+      "byte_size": 12722,
+      "dataset_or_role": "cross_version",
+      "evidence_type": "historical_007d_packet",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d_cross_version_synthesis\\EDITOR007D_THRESHOLD_PORTABILITY.json",
+      "sha256": "3c46a0fd4254a8083abbab2ebf6e3b46ee977775189874a802e15f5ad9a11d8d",
+      "byte_size": 41766,
+      "dataset_or_role": "cross_version",
+      "evidence_type": "historical_007d_packet",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\objective3_r52_explanation_robustness_portability\\recorded_results\\r52_odst_centred_faithfulness.csv",
+      "sha256": "b40f048efa2f47a76d78e0f7f8803f245d2ccfc46dd9667d45aa1cb908e7e413",
+      "byte_size": 2691,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "reference_centred_faithfulness",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\objective3_r52_explanation_robustness_portability\\recorded_results\\r52_portability_claim_register.csv",
+      "sha256": "b933f6da5b4428dd20f1f93cf4009f10814641b70cdc55e36916aa9cadbb27e4",
+      "byte_size": 1056,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "claim_register",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\objective3_r52_explanation_robustness_portability\\recorded_results\\r52_source_ablation.csv",
+      "sha256": "c0453aedc3a54ead7291512e27f57a50271ea47fcd28373f571614516c48b49f",
+      "byte_size": 3158,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "source_ablation_degraded_input",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\objective3_r52_explanation_robustness_portability\\recorded_results\\r52_noise_robustness.csv",
+      "sha256": "62fbd4cd8acff8480db0ed5a86be9a3e4ed104b6f775d6afe5831b537af0dc04",
+      "byte_size": 2159,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "gaussian_noise_degraded_input",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed42\\seed_summary.json",
+      "sha256": "a6034cde1262bf5113cb6e574539ca30787fb50d49c50071e810250fe5e320a5",
+      "byte_size": 6241,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "producing_c2_seed_summary_inspected",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed42\\seed_summary.json",
+      "sha256": "251777503b970832efef3b1501c1188f9a6332e2d261a87b49af2b7bca44e2b9",
+      "byte_size": 6539,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "producing_c5_original_paper_seed_summary_inspected",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C5\\seed42\\seed_summary.json",
+      "sha256": "5dbb310eec5066323934de04734471fd1c46cd4a030d2b6ee6b60bff1867e2d9",
+      "byte_size": 6245,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "producing_ablation_c5_seed_summary_identity_check_only",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed52\\seed_summary.json",
+      "sha256": "21afab9b13039518f1f60234700f121e42874b2e7592161eadae2e515d1e1ebf",
+      "byte_size": 6257,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "producing_c2_seed_summary_inspected",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed52\\seed_summary.json",
+      "sha256": "7f6f8a09a8bc4da7fb25989d9ea4a945c4aee52563485ba18f05a6abf1bb6c0c",
+      "byte_size": 6542,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "producing_c5_original_paper_seed_summary_inspected",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C5\\seed52\\seed_summary.json",
+      "sha256": "2677daccf28461f56d31da574724dcf034133c816f1ae6522c432a67466fb481",
+      "byte_size": 6243,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "producing_ablation_c5_seed_summary_identity_check_only",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed62\\seed_summary.json",
+      "sha256": "5a94d58a9901c5bc4fad5e1a99c8ae89952441555c8af025a5668e78abe73fba",
+      "byte_size": 6252,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "producing_c2_seed_summary_inspected",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed62\\seed_summary.json",
+      "sha256": "fc72e14360d0c84ce5519a47697670d42e6b3f255afb2fe4208ad6f1a928f7a9",
+      "byte_size": 6541,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "producing_c5_original_paper_seed_summary_inspected",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C5\\seed62\\seed_summary.json",
+      "sha256": "80ad76551f90ea3e209aac4b84bb323dba8ac435a67ac2775d0678fb841cc2a4",
+      "byte_size": 6248,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "producing_ablation_c5_seed_summary_identity_check_only",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\raw_scores\\teacher_seed42.npy",
+      "sha256": "62f752129e8c49fdbda1c0e60e064de025a33e563f7aee68ba57f28d13c2c652",
+      "byte_size": 7968128,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\raw_scores\\teacher_seed52.npy",
+      "sha256": "3a12ff39f7669ab38f6fc5d71aa65cf93b12789f2d6c67b52e17ab44e7b7d238",
+      "byte_size": 7968128,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\raw_scores\\teacher_seed62.npy",
+      "sha256": "74c309b3523440df84af7796b4ae9316ebebdff265f35d94b67637e0bf094bf0",
+      "byte_size": 7968128,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\raw_scores\\c2_seed42.npy",
+      "sha256": "870207bb0840378c589b4e65db0ff2c97f6b89a95b166855dc02f4ef1b26d147",
+      "byte_size": 7968128,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\raw_scores\\c2_seed52.npy",
+      "sha256": "b135c491fdb1e5de50717b39eee8c18c51e8f328c1d8fe60b70142c09518980d",
+      "byte_size": 7968128,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\raw_scores\\c2_seed62.npy",
+      "sha256": "1994cf9ad6bcdee12892824ab540adbbf22355f73619bd93f0355a35ac309fed",
+      "byte_size": 7968128,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\raw_scores\\c5_seed42.npy",
+      "sha256": "36df615fbb02e50b977c86af1bc3d3f39a7f0d0b11f0fdc462f07e8a8c63b6b2",
+      "byte_size": 7968128,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\raw_scores\\c5_seed52.npy",
+      "sha256": "84c35cd2a1349f303182e3a69b68b544ca767ad3aa6ba32f4eb65cc7002731ca",
+      "byte_size": 7968128,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\raw_scores\\c5_seed62.npy",
+      "sha256": "66de3b9ca0fdf288dc88e76eb38962ce7e90087dff1c8aebf7124fbd53d91fcc",
+      "byte_size": 7968128,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\raw_scores\\attention_linear_seed42.npy",
+      "sha256": "bba72a0b293967ab098bd174ff850f687f5456bb07875145a7533813d8d6628b",
+      "byte_size": 7968128,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\raw_scores\\attention_linear_seed52.npy",
+      "sha256": "be455dd9203a77fa47734b0b6c42456e88f2b080981fe58f330066f66f6aa1ef",
+      "byte_size": 7968128,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\raw_scores\\attention_linear_seed62.npy",
+      "sha256": "91a46dcdbdbe45da5b13983a792648a1a30b1815ef94e01cabb504b779e0a78c",
+      "byte_size": 7968128,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\raw_scores\\rf_seed42.npy",
+      "sha256": "7523e3c29274f3b4b1ca8093a27b8b1707437a07ca69ef748bb0dfb9a5f7b9f8",
+      "byte_size": 7968128,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\raw_scores\\rf_seed52.npy",
+      "sha256": "7150512e20f9412eb1a3c3edcc7ab076014df01319ff0962504413c1f9548992",
+      "byte_size": 7968128,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\raw_scores\\rf_seed62.npy",
+      "sha256": "3e5e46fa38ad9203ce23be4abc968ded8035e67c9a309cf66e82ce163fcab877",
+      "byte_size": 7968128,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\raw_scores\\xgb_seed42.npy",
+      "sha256": "eec4bf79e7ef1370a7718e7c376aa17a9a0d85b46afe9c6f8307d58c1f0b3ebb",
+      "byte_size": 7968128,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\raw_scores\\xgb_seed52.npy",
+      "sha256": "bd627daa1bc9e7b89728e3ff2876b6909670fc424c02907174b8a0388db49274",
+      "byte_size": 7968128,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\raw_scores\\xgb_seed62.npy",
+      "sha256": "576a950ee252866c07601253d8478d2aeeea181a7bd82f5aaf2709ecde0d551c",
+      "byte_size": 7968128,
+      "dataset_or_role": "r51_secondary_stress",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\raw_scores\\teacher_seed42.npy",
+      "sha256": "a583ba8bcaa4ba2de217bdd7338edf37de20d89955a9c3556eb3c95e0e60b212",
+      "byte_size": 15904128,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\raw_scores\\teacher_seed52.npy",
+      "sha256": "7ba82e5364bd2fad32f886e6744b2579f0832cb49f70c0916f183fab92d27ad9",
+      "byte_size": 15904128,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\raw_scores\\teacher_seed62.npy",
+      "sha256": "a72d399ecdc81839cdbf6e1cc11a7c38b83cdc756a4b81654e3583ee1cea1b36",
+      "byte_size": 15904128,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\raw_scores\\c2_seed42.npy",
+      "sha256": "8a3e9a904c15d4d2d65e0175afc15095c35393a4d6e0c86743c9bc606e3d8eac",
+      "byte_size": 15904128,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\raw_scores\\c2_seed52.npy",
+      "sha256": "78469bf3c29d815a7625678e9453c71c8a05f67bcff070f2b0a6a5f6966121b1",
+      "byte_size": 15904128,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\raw_scores\\c2_seed62.npy",
+      "sha256": "affb99c041e4fb5447332bcc7c54609765c7c604a13dd8a2781c73b65227708e",
+      "byte_size": 15904128,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\raw_scores\\c5_seed42.npy",
+      "sha256": "0f853993ccd3381d8a9cf8f31477dbe25ad76ab7fc1a66eac47b62e2f8749192",
+      "byte_size": 15904128,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\raw_scores\\c5_seed52.npy",
+      "sha256": "375a7af0906ba9622037e06ff025065dd14f27e7ae58cbc637d17ba96d81fa9a",
+      "byte_size": 15904128,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\raw_scores\\c5_seed62.npy",
+      "sha256": "d4225ac760eae419d59e86e5a24e740cef92cc071a87bd0c19b8c8e25736f33b",
+      "byte_size": 15904128,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\raw_scores\\attention_linear_seed42.npy",
+      "sha256": "b64c301219e8d11fe90f7b67f67bd864f1f395902c19cd78f3ac08eaf3525660",
+      "byte_size": 15904128,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\raw_scores\\attention_linear_seed52.npy",
+      "sha256": "599d7a310f84ee254a7ec9d372b3980ad081fb3d5f80c5e1966346e5293a6fd7",
+      "byte_size": 15904128,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\raw_scores\\attention_linear_seed62.npy",
+      "sha256": "d0d2dc230b5f1cfe74bf62bda6c2cfb68aff00da3d244ebeda9b127e64eadba5",
+      "byte_size": 15904128,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\raw_scores\\rf_seed42.npy",
+      "sha256": "5c0b435886aa37c7327fc0054f251b5e6f8035c2360062e030e140b30f69d8e3",
+      "byte_size": 15904128,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\raw_scores\\rf_seed52.npy",
+      "sha256": "ba807cbf8e87d8fe2714d0fd7181e238d656453e6fedaf7349233d7f0030c45f",
+      "byte_size": 15904128,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\raw_scores\\rf_seed62.npy",
+      "sha256": "ca2578815ea5b53f5c8176d2989cc269f83b8ae7843243dce33927d27470916b",
+      "byte_size": 15904128,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\raw_scores\\xgb_seed42.npy",
+      "sha256": "e471265c27577552abb3a1a68227ff1cd585c07d2ecf650050707f86ddd6fd7f",
+      "byte_size": 15904128,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\raw_scores\\xgb_seed52.npy",
+      "sha256": "dc2b249fc0ec9bf35caceb3928d405ab53eaf5651406d552fc57e7e68156ae61",
+      "byte_size": 15904128,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006e_scores\\raw_scores\\xgb_seed62.npy",
+      "sha256": "d97bcc4e4c74ae391b09812f1bc294e0fca726d368afd879bd6ae52a52f699b7",
+      "byte_size": 15904128,
+      "dataset_or_role": "r62_external",
+      "evidence_type": "raw_score_array",
+      "producing_or_derivative": "producing",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_editor007a_r52_validation_parity\\teacher_frozen_odst_seed42.npy",
+      "sha256": "8721ee82ed168a6584da507b85b31fb62cb4f46cd4d621cfdbbe0aea452a54a8",
+      "byte_size": 512128,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "replay_score_array",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_editor007a_r52_validation_parity\\teacher_frozen_odst_seed52.npy",
+      "sha256": "c3d16778b768833bfa49f4f786d26316b8c63d6d481de357d9137e7fd3944ab4",
+      "byte_size": 512128,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "replay_score_array",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_editor007a_r52_validation_parity\\teacher_frozen_odst_seed62.npy",
+      "sha256": "ef6cf5230803a2e22d108493b118b6e5dbfe4fb63fce8686351c662f139a418e",
+      "byte_size": 512128,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "replay_score_array",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_editor007a_r52_validation_parity\\C2_seed42.npy",
+      "sha256": "b8a1a0dfccaa04ff4caa5323174cc9f049546218aeb9b7c3e9d7693b0b9169c8",
+      "byte_size": 512128,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "replay_score_array",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_editor007a_r52_validation_parity\\C2_seed52.npy",
+      "sha256": "4882857e0985dadda8fef992cd0304003968e119effadef6e2d51a5c874fa0bd",
+      "byte_size": 512128,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "replay_score_array",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_editor007a_r52_validation_parity\\C2_seed62.npy",
+      "sha256": "fe4d4679d0eb66241869673e32a3e1633b5f0c372f6ed90f7ba8b7423eba7b7b",
+      "byte_size": 512128,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "replay_score_array",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_editor007a_r52_validation_parity\\C5_original_paper_seed42.npy",
+      "sha256": "4e053a209b3bc5fa4034d0e2cfa6035ed6b2a429cac0d64aab9d09da56cd2722",
+      "byte_size": 512128,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "replay_score_array",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_editor007a_r52_validation_parity\\C5_original_paper_seed52.npy",
+      "sha256": "2d855b3d0fcb6a619b36109e3eff2d64c74c31085a8639342a709599bdff4c09",
+      "byte_size": 512128,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "replay_score_array",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_editor007a_r52_validation_parity\\C5_original_paper_seed62.npy",
+      "sha256": "16118e490fcd7c3883a0c2ecc46e297d78f3a556574c63763c54c24611292354",
+      "byte_size": 512128,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "replay_score_array",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_editor007a_r52_validation_parity\\attention_linear_seed42.npy",
+      "sha256": "d6040ac1e4ffdfacb7f9442080b272167fe2d5b3b15b8b8971b982dbb3cc7aa8",
+      "byte_size": 512128,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "replay_score_array",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_editor007a_r52_validation_parity\\attention_linear_seed52.npy",
+      "sha256": "509d3cafc3f10a2fcf0dcde07e057f613ffddc76668637ab086224c5203d022d",
+      "byte_size": 512128,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "replay_score_array",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_editor007a_r52_validation_parity\\attention_linear_seed62.npy",
+      "sha256": "6b47068e4565ee8c59f1a34c8ba5215d9333b43c78a242f57b55d664246a772d",
+      "byte_size": 512128,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "replay_score_array",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_editor007a_r52_validation_parity\\RF_40_seed42.npy",
+      "sha256": "888739c2c2eef7bd2d5c8cb566aad665826c414eb21f4e85b902de05d7e955c1",
+      "byte_size": 512128,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "replay_score_array",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_editor007a_r52_validation_parity\\RF_40_seed52.npy",
+      "sha256": "b9f5ad4d991405c5a43303a85131bbb98c91cb2ca3d96d84f6e999542f6e9c15",
+      "byte_size": 512128,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "replay_score_array",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_editor007a_r52_validation_parity\\RF_40_seed62.npy",
+      "sha256": "5d3b035ec6359cd9896396978ffd9a34ceaff8ac2d5cd44842566fabc85ae5dd",
+      "byte_size": 512128,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "replay_score_array",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_editor007a_r52_validation_parity\\XGBoost_40_seed42.npy",
+      "sha256": "1426cb784a46723ee07d86897fd3fcd1d8299248fe6d8138db2a59a298726bb5",
+      "byte_size": 512128,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "replay_score_array",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_editor007a_r52_validation_parity\\XGBoost_40_seed52.npy",
+      "sha256": "b63eb072a5b3e5b532ca660877c47771b9c37b953e89642f44419d6a7828fde6",
+      "byte_size": 512128,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "replay_score_array",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_editor007a_r52_validation_parity\\XGBoost_40_seed62.npy",
+      "sha256": "e583dfeabcd8a9d796341e012185b09a11d8242e3d71db1a1c9f6aa8e2ef25f7",
+      "byte_size": 512128,
+      "dataset_or_role": "r52_validation",
+      "evidence_type": "replay_score_array",
+      "producing_or_derivative": "derivative",
+      "numerical_values_original_or_corrected": "original",
+      "consumed_by": [
+        "EDITOR-007D",
+        "EDITOR-007D1"
+      ],
+      "exists": true
+    }
+  ],
+  "coverage_note": "Every artefact materially consumed by EDITOR-007D scoring/feature/label reads or by EDITOR-007D1 provenance repair is listed."
+}

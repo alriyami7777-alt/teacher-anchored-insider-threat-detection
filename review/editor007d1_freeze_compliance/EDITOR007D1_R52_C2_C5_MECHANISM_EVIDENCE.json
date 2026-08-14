@@ -1,0 +1,23 @@
+{
+  "task_id": "EDITOR-007D1",
+  "R52_C2_C5_MECHANISM_EVIDENCE_STATUS": "UNRESOLVED",
+  "does_not_invalidate_external_r51_r62_fidelity": true,
+  "editor007d_statement_preserved": "R52_MECHANISM_COMPARISON_NOT_INCLUDED_PROVENANCE_INSUFFICIENT",
+  "search": {
+    "ablation_C2_seed_summary_has_exact_frozen_field_names": true,
+    "ablation_C2_checkpoint_matches_007D_C2": true,
+    "ablation_C5_seed_summary_has_exact_frozen_field_names": true,
+    "ablation_C5_checkpoint_sha256_seed42": "a5a08dc24a89014fd1bb92c6c6342ed50511b33804e95246e480e90c4692b214",
+    "C5_original_paper_checkpoint_sha256_seed42": "2b6452698dd0da53f0229bc43040a877017ac9299b277f2f98c1d7ca64c1cc42",
+    "ablation_C5_is_same_checkpoint_as_C5_original_paper": false,
+    "C5_original_paper_seed_summary_keys_include_exact_frozen_set": false,
+    "C5_original_paper_seed_summary_has_routing_divergence_only": true
+  },
+  "missing_provenance": "Paired r5.2 validation C2 vs C5_original_paper exact-frozen mechanism metrics are not available for the same C5 checkpoint used by EDITOR-007D. Ablation C5 seed42 SHA256=a5a08dc24a89014fd1bb92c6c6342ed50511b33804e95246e480e90c4692b214 differs from C5_original_paper seed42 SHA256=2b6452698dd0da53f0229bc43040a877017ac9299b277f2f98c1d7ca64c1cc42. Reproducibility seed_summary.json does not record val_logit_consistency, route_mae, hard_route_agreement, or dominant_leaf_agreement. Manuscript prose was not used.",
+  "producing_paths_inspected": [
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed42\\seed_summary.json",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C5\\seed42\\seed_summary.json",
+    "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed42\\seed_summary.json"
+  ],
+  "values_reconstructed_from_manuscript": false
+}
