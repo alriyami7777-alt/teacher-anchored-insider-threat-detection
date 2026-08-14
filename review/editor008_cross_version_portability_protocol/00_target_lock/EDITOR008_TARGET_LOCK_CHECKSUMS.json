@@ -1,0 +1,82 @@
+{
+  "task_id": "EDITOR-008A",
+  "n_artefacts": 10,
+  "artefacts": [
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d1_freeze_compliance\\EDITOR007D1_INTERNAL_CONSISTENCY.json",
+      "sha256": "6fc32a84343ba77f7f0a1b0918d3c09620ed1aa6c3a9565221b6f70240a92a37",
+      "byte_size": 1700,
+      "role": "d1_leftover_and_gate_record",
+      "contents_semantically_inspected": false
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d1_freeze_compliance\\EDITOR007D1_EDITOR008_RELEASE_GATE.json",
+      "sha256": "1d50133e3ffc89629b6f41b53cf93b85e1cc04c20e04cc3bf12d5592d3f7a377",
+      "byte_size": 1525,
+      "role": "d1_editor008_authorisation",
+      "contents_semantically_inspected": false
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007d1_freeze_compliance\\EDITOR007D1_PORTABILITY_PHENOTYPE.json",
+      "sha256": "726e3e103f7251e9944641129f2e3b614f10ca5bed29efb239e064a032b53fed",
+      "byte_size": 1873,
+      "role": "frozen_phenotype",
+      "contents_semantically_inspected": false
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\manifests\\experiment_registry.csv",
+      "sha256": "48a61d8a7b31cb2a560809d436c214b23be438328613ab2fefb54654597dc2c4",
+      "byte_size": 2269,
+      "role": "experiment_registry",
+      "contents_semantically_inspected": false
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\src\\dataset_registry.py",
+      "sha256": "4fd6418275ac4ad4a89302cf685d515e02fff7793a60a233f02c7805a8c6f9dd",
+      "byte_size": 17996,
+      "role": "dataset_registry",
+      "contents_semantically_inspected": false
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\manifests\\dataset_split_hashes.csv",
+      "sha256": "635276297811daba868157659bcc286ea90332f51da08aa687d4c9350c933bce",
+      "byte_size": 227,
+      "role": "dataset_split_hashes",
+      "contents_semantically_inspected": false
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\paper\\manuscript\\source\\03_methodology.tex",
+      "sha256": "123afe8d813db241f67eaa413c1aafa42bac9bce6ffcff327b64150ac93fbbbc",
+      "byte_size": 35345,
+      "role": "manuscript_methodology_provenance",
+      "contents_semantically_inspected": false
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\docs\\cert_r42_notes.md",
+      "sha256": "c15c9d7ec8fff5fdfaabd12f0ee06668224e7da0e3a01f40048cfa7dabb37720",
+      "byte_size": 170897,
+      "role": "sister_repo_answer_path_catalogue",
+      "contents_semantically_inspected": false
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor008_cross_version_portability_protocol\\00_target_lock\\EDITOR008_UNTOUCHED_TARGET_INVENTORY.json",
+      "sha256": "54074504789dcb49bb3673170bb80359b2ad47519d888fe2b13750658dbc37f1",
+      "byte_size": 13479,
+      "role": "phase_a_inventory",
+      "contents_semantically_inspected": false
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor008_cross_version_portability_protocol\\00_target_lock\\EDITOR008_FINAL_TARGET_LOCK.json",
+      "sha256": "9679ca470e308401930186c0c08d41229e2fd0f62253ae9556697dc401a41147",
+      "byte_size": 1662,
+      "role": "phase_a_lock",
+      "contents_semantically_inspected": false
+    }
+  ],
+  "not_hashed": [
+    "Raw CERT activity CSVs (byte sizes recorded in inventory filenames only).",
+    "Answer CSVs (filenames/sizes only; contents not opened).",
+    "r52_T20_s1_test.npz (filename observed; file not opened or hashed).",
+    "Score/label NPY arrays (not opened)."
+  ]
+}

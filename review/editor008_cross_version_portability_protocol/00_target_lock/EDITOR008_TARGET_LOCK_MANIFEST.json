@@ -1,0 +1,35 @@
+{
+  "task_id": "EDITOR-008A",
+  "branch": "repository-hardening",
+  "HEAD": "d5a6416bfe5ea582b2439803ffc0d896c091d844",
+  "controlling_editor007d1_commit": "d5a6416bfe5ea582b2439803ffc0d896c091d844",
+  "editor007d1_is_ancestor": true,
+  "tracked_working_tree_clean": true,
+  "leftovers": [
+    "EDITOR006B_REVIEW_PACKAGE.zip",
+    "EDITOR006B_REVIEW_PACKAGE/",
+    "review/editor004a_r51_model_free_audit/",
+    "review/editor005a_r62_model_free_audit/"
+  ],
+  "leftovers_match_editor007d1_record": true,
+  "leftovers_unstaged": true,
+  "leftovers_untouched": true,
+  "r52_test_accessed": false,
+  "new_model_training": false,
+  "new_predictive_inference": false,
+  "candidate_target_labels_inspected": false,
+  "candidate_target_feature_distributions_inspected": false,
+  "candidate_target_scores_inspected": false,
+  "historical_editor007d_modified": false,
+  "historical_editor007d1_modified": false,
+  "N_ELIGIBLE_UNTOUCHED_TARGETS": 0,
+  "FINAL_TARGET_SELECTION_RULE": "NO_PROSPECTIVE_TARGET_AVAILABLE",
+  "timestamp_utc": "2026-08-14T17:49:15Z",
+  "files_created": [
+    "EDITOR008_FINAL_TARGET_LOCK.json",
+    "EDITOR008_TARGET_LOCK_CHECKSUMS.json",
+    "EDITOR008_TARGET_LOCK_MANIFEST.json",
+    "EDITOR008_UNTOUCHED_TARGET_INVENTORY.json",
+    "_build_editor008a_target_lock.py"
+  ]
+}

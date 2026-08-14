@@ -1,0 +1,30 @@
+{
+  "task_id": "EDITOR-008A",
+  "FINAL_UNTOUCHED_TARGETS": [],
+  "FINAL_TARGET_COUNT": 0,
+  "FINAL_TARGET_SELECTION_RULE": "NO_PROSPECTIVE_TARGET_AVAILABLE",
+  "PROSPECTIVE_UNTOUCHED_TARGET_AVAILABLE": false,
+  "EDITOR008_PROSPECTIVE_TARGET_PROTOCOL": "BLOCKED",
+  "PROSPECTIVE_FINAL_TARGET_CLAIM": "NOT_AVAILABLE",
+  "TARGET_LOCK_TIMESTAMP": "2026-08-14T17:49:15Z",
+  "TARGET_INVENTORY_SHA256": "54074504789dcb49bb3673170bb80359b2ad47519d888fe2b13750658dbc37f1",
+  "CROSS_RELEASE_NOT_CROSS_POPULATION": true,
+  "TARGET_NO_INSPECTION_BARRIER": "ACTIVE",
+  "target_no_inspection_barrier": {
+    "labels_before_final_model_freeze": "PROHIBITED",
+    "answer_contents_before_final_model_freeze": "PROHIBITED",
+    "feature_values_before_final_model_freeze": "PROHIBITED",
+    "feature_distribution_before_final_model_freeze": "PROHIBITED",
+    "score_distribution_before_final_model_freeze": "PROHIBITED",
+    "target_scaler_fit": "PROHIBITED",
+    "target_calibration_fit": "PROHIBITED",
+    "target_threshold_selection": "PROHIBITED",
+    "target_hyperparameter_selection": "PROHIBITED",
+    "target_model_selection": "PROHIBITED",
+    "target_specific_method_design": "PROHIBITED",
+    "schema_header_filename_check_after_lock": "PERMITTED_WITHOUT_VALUE_DISTRIBUTIONS"
+  },
+  "controlling_editor007d1_commit": "d5a6416bfe5ea582b2439803ffc0d896c091d844",
+  "PRIMARY_PORTABILITY_PHENOTYPE": "P2_R62_SEVERE_DISTRIBUTION_AND_DECISION_SHIFT",
+  "note": "No eligible prospective untouched CERT release was locked. Phase B may draft a retrospective source-domain/LOVO protocol only, with the prospective untouched-target claim removed."
+}
