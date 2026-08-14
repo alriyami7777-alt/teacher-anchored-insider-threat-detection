@@ -1,0 +1,55 @@
+{
+  "task_id": "EDITOR-007C1",
+  "original_path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\EDITOR007C_PREDICTIVE_RESULTS.json",
+  "corrected_path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor007c1_r51_result_freeze\\EDITOR007C_PREDICTIVE_RESULTS_PAPER_CORRECTED.json",
+  "numeric_values_changed": 0,
+  "unexpected_fields_changed": 0,
+  "approved_metadata_fields_changed": 6,
+  "approved_paths": [
+    "deoverlap_user_cluster_bootstrap.42.effective_malicious_cluster_count",
+    "deoverlap_user_cluster_bootstrap.42.frozen_wording",
+    "deoverlap_user_cluster_bootstrap.52.effective_malicious_cluster_count",
+    "deoverlap_user_cluster_bootstrap.52.frozen_wording",
+    "deoverlap_user_cluster_bootstrap.62.effective_malicious_cluster_count",
+    "deoverlap_user_cluster_bootstrap.62.frozen_wording"
+  ],
+  "observed_diffs": [
+    {
+      "path": "deoverlap_user_cluster_bootstrap.42.effective_malicious_cluster_count",
+      "old": 5,
+      "new": 4,
+      "kind": "value"
+    },
+    {
+      "path": "deoverlap_user_cluster_bootstrap.42.frozen_wording",
+      "old": "Five official insider\u2013incident clusters are represented.",
+      "new": "Four official insider\u2013incident clusters are represented.",
+      "kind": "value"
+    },
+    {
+      "path": "deoverlap_user_cluster_bootstrap.52.effective_malicious_cluster_count",
+      "old": 5,
+      "new": 4,
+      "kind": "value"
+    },
+    {
+      "path": "deoverlap_user_cluster_bootstrap.52.frozen_wording",
+      "old": "Five official insider\u2013incident clusters are represented.",
+      "new": "Four official insider\u2013incident clusters are represented.",
+      "kind": "value"
+    },
+    {
+      "path": "deoverlap_user_cluster_bootstrap.62.effective_malicious_cluster_count",
+      "old": 5,
+      "new": 4,
+      "kind": "value"
+    },
+    {
+      "path": "deoverlap_user_cluster_bootstrap.62.frozen_wording",
+      "old": "Five official insider\u2013incident clusters are represented.",
+      "new": "Four official insider\u2013incident clusters are represented.",
+      "kind": "value"
+    }
+  ],
+  "status": "PASS"
+}

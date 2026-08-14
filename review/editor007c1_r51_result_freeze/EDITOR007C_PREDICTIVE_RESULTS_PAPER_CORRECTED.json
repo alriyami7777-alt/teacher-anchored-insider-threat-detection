@@ -1,0 +1,1442 @@
+{
+  "task_id": "EDITOR-007C",
+  "by_family_seed": {
+    "teacher_frozen_odst": {
+      "42": {
+        "COMPLETED_WINDOW": {
+          "PR_AUC": 0.27087294219405555,
+          "precision": 0.13263665594855306,
+          "recall": 0.3579175704989154,
+          "F1": 0.1935483870967742,
+          "FP": 1079,
+          "FN": 296,
+          "threshold": 0.56,
+          "n": 996000,
+          "n_pos": 461,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.17563057642410196,
+          "log_loss": 0.543106290012926
+        },
+        "ENDPOINT_PAST_ONLY": {
+          "PR_AUC": 0.03715175495863989,
+          "precision": 0.02009646302250804,
+          "recall": 0.43103448275862066,
+          "F1": 0.03840245775729647,
+          "FP": 1219,
+          "FN": 33,
+          "threshold": 0.56,
+          "n": 996000,
+          "n_pos": 58,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.1756223967618839,
+          "log_loss": 0.5430896782044118,
+          "interpretation": "endpoint-defined past-only evaluation",
+          "never": [
+            "real-time",
+            "streaming",
+            "intra-day"
+          ]
+        },
+        "DEOVERLAP_OFFSET0": {
+          "PR_AUC": 0.3089415473297194,
+          "precision": 0.125,
+          "recall": 0.375,
+          "F1": 0.1875,
+          "FP": 63,
+          "FN": 15,
+          "threshold": 0.56,
+          "n": 50000,
+          "n_pos": 24,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.17566317835658576,
+          "log_loss": 0.5431716499347587,
+          "n_retained": 50000
+        }
+      },
+      "52": {
+        "COMPLETED_WINDOW": {
+          "PR_AUC": 0.28890085056570775,
+          "precision": 0.17222222222222222,
+          "recall": 0.3362255965292842,
+          "F1": 0.22777369581190302,
+          "FP": 745,
+          "FN": 306,
+          "threshold": 0.8400000000000001,
+          "n": 996000,
+          "n_pos": 461,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.013484999526774117,
+          "log_loss": 0.11189991813499134
+        },
+        "ENDPOINT_PAST_ONLY": {
+          "PR_AUC": 0.04171246424884647,
+          "precision": 0.024444444444444446,
+          "recall": 0.3793103448275862,
+          "F1": 0.04592901878914405,
+          "FP": 878,
+          "FN": 36,
+          "threshold": 0.8400000000000001,
+          "n": 996000,
+          "n_pos": 58,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.013427139837791808,
+          "log_loss": 0.11173296816732958,
+          "interpretation": "endpoint-defined past-only evaluation",
+          "never": [
+            "real-time",
+            "streaming",
+            "intra-day"
+          ]
+        },
+        "DEOVERLAP_OFFSET0": {
+          "PR_AUC": 0.34907059467109963,
+          "precision": 0.1956521739130435,
+          "recall": 0.375,
+          "F1": 0.2571428571428571,
+          "FP": 37,
+          "FN": 15,
+          "threshold": 0.8400000000000001,
+          "n": 50000,
+          "n_pos": 24,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.013666345476066842,
+          "log_loss": 0.11230314250336103,
+          "n_retained": 50000
+        }
+      },
+      "62": {
+        "COMPLETED_WINDOW": {
+          "PR_AUC": 0.22481585532636636,
+          "precision": 0.0990691489361702,
+          "recall": 0.3232104121475054,
+          "F1": 0.15165394402035623,
+          "FP": 1355,
+          "FN": 312,
+          "threshold": 0.55,
+          "n": 996000,
+          "n_pos": 461,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.17358893591358662,
+          "log_loss": 0.5389292849953622
+        },
+        "ENDPOINT_PAST_ONLY": {
+          "PR_AUC": 0.035689369140266484,
+          "precision": 0.013962765957446808,
+          "recall": 0.3620689655172414,
+          "F1": 0.026888604353393086,
+          "FP": 1483,
+          "FN": 37,
+          "threshold": 0.55,
+          "n": 996000,
+          "n_pos": 58,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.1735692758974463,
+          "log_loss": 0.5388895535016482,
+          "interpretation": "endpoint-defined past-only evaluation",
+          "never": [
+            "real-time",
+            "streaming",
+            "intra-day"
+          ]
+        },
+        "DEOVERLAP_OFFSET0": {
+          "PR_AUC": 0.24646669548649214,
+          "precision": 0.14754098360655737,
+          "recall": 0.375,
+          "F1": 0.21176470588235294,
+          "FP": 52,
+          "FN": 15,
+          "threshold": 0.55,
+          "n": 50000,
+          "n_pos": 24,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.17355506042118082,
+          "log_loss": 0.5388610609070946,
+          "n_retained": 50000
+        }
+      }
+    },
+    "C2": {
+      "42": {
+        "COMPLETED_WINDOW": {
+          "PR_AUC": 0.267713916404488,
+          "precision": 0.09066523605150215,
+          "recall": 0.3665943600867679,
+          "F1": 0.14537634408602151,
+          "FP": 1695,
+          "FN": 292,
+          "threshold": 0.6,
+          "n": 996000,
+          "n_pos": 461,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.13457767508727497,
+          "log_loss": 0.45684880887537305
+        },
+        "ENDPOINT_PAST_ONLY": {
+          "PR_AUC": 0.03406502908840928,
+          "precision": 0.012875536480686695,
+          "recall": 0.41379310344827586,
+          "F1": 0.02497398543184183,
+          "FP": 1840,
+          "FN": 34,
+          "threshold": 0.6,
+          "n": 996000,
+          "n_pos": 58,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.13456825160652058,
+          "log_loss": 0.4568289394801957,
+          "interpretation": "endpoint-defined past-only evaluation",
+          "never": [
+            "real-time",
+            "streaming",
+            "intra-day"
+          ]
+        },
+        "DEOVERLAP_OFFSET0": {
+          "PR_AUC": 0.31586300510656723,
+          "precision": 0.08490566037735849,
+          "recall": 0.375,
+          "F1": 0.13846153846153847,
+          "FP": 97,
+          "FN": 15,
+          "threshold": 0.6,
+          "n": 50000,
+          "n_pos": 24,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.13464941949078058,
+          "log_loss": 0.4569940355619327,
+          "n_retained": 50000
+        }
+      },
+      "52": {
+        "COMPLETED_WINDOW": {
+          "PR_AUC": 0.28350544433667274,
+          "precision": 0.11238367931281316,
+          "recall": 0.3405639913232104,
+          "F1": 0.1689989235737352,
+          "FP": 1240,
+          "FN": 304,
+          "threshold": 0.8300000000000001,
+          "n": 996000,
+          "n_pos": 461,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.0073563195664591114,
+          "log_loss": 0.06860816553236246
+        },
+        "ENDPOINT_PAST_ONLY": {
+          "PR_AUC": 0.05017771350162756,
+          "precision": 0.015748031496062992,
+          "recall": 0.3793103448275862,
+          "F1": 0.030240549828178694,
+          "FP": 1375,
+          "FN": 36,
+          "threshold": 0.8300000000000001,
+          "n": 996000,
+          "n_pos": 58,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.007307939371411869,
+          "log_loss": 0.06842385882150227,
+          "interpretation": "endpoint-defined past-only evaluation",
+          "never": [
+            "real-time",
+            "streaming",
+            "intra-day"
+          ]
+        },
+        "DEOVERLAP_OFFSET0": {
+          "PR_AUC": 0.31837264540874344,
+          "precision": 0.14516129032258066,
+          "recall": 0.375,
+          "F1": 0.20930232558139536,
+          "FP": 53,
+          "FN": 15,
+          "threshold": 0.8300000000000001,
+          "n": 50000,
+          "n_pos": 24,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.0073989945821268,
+          "log_loss": 0.06866540224197594,
+          "n_retained": 50000
+        }
+      },
+      "62": {
+        "COMPLETED_WINDOW": {
+          "PR_AUC": 0.2548657536366779,
+          "precision": 0.1561822125813449,
+          "recall": 0.3123644251626898,
+          "F1": 0.20824295010845986,
+          "FP": 778,
+          "FN": 317,
+          "threshold": 0.6544522184133537,
+          "n": 996000,
+          "n_pos": 461,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.1004423645743967,
+          "log_loss": 0.380968803855709
+        },
+        "ENDPOINT_PAST_ONLY": {
+          "PR_AUC": 0.04044977787151638,
+          "precision": 0.021691973969631236,
+          "recall": 0.3448275862068966,
+          "F1": 0.04081632653061224,
+          "FP": 902,
+          "FN": 38,
+          "threshold": 0.6544522184133537,
+          "n": 996000,
+          "n_pos": 58,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.10039210274865468,
+          "log_loss": 0.3808629089805598,
+          "interpretation": "endpoint-defined past-only evaluation",
+          "never": [
+            "real-time",
+            "streaming",
+            "intra-day"
+          ]
+        },
+        "DEOVERLAP_OFFSET0": {
+          "PR_AUC": 0.28630782802785526,
+          "precision": 0.23684210526315788,
+          "recall": 0.375,
+          "F1": 0.2903225806451613,
+          "FP": 29,
+          "FN": 15,
+          "threshold": 0.6544522184133537,
+          "n": 50000,
+          "n_pos": 24,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.10033645754274036,
+          "log_loss": 0.3807489345022072,
+          "n_retained": 50000
+        }
+      }
+    },
+    "C5_original_paper": {
+      "42": {
+        "COMPLETED_WINDOW": {
+          "PR_AUC": 0.28015763337107696,
+          "precision": 0.10872313527180784,
+          "recall": 0.37310195227765725,
+          "F1": 0.16837983357807146,
+          "FP": 1410,
+          "FN": 289,
+          "threshold": 0.56,
+          "n": 996000,
+          "n_pos": 461,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.17508198048366852,
+          "log_loss": 0.541979678072141
+        },
+        "ENDPOINT_PAST_ONLY": {
+          "PR_AUC": 0.03972487825325646,
+          "precision": 0.01706700379266751,
+          "recall": 0.46551724137931033,
+          "F1": 0.032926829268292684,
+          "FP": 1555,
+          "FN": 31,
+          "threshold": 0.56,
+          "n": 996000,
+          "n_pos": 58,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.17507829847651565,
+          "log_loss": 0.5419723140997825,
+          "interpretation": "endpoint-defined past-only evaluation",
+          "never": [
+            "real-time",
+            "streaming",
+            "intra-day"
+          ]
+        },
+        "DEOVERLAP_OFFSET0": {
+          "PR_AUC": 0.3336809531886092,
+          "precision": 0.0989010989010989,
+          "recall": 0.375,
+          "F1": 0.1565217391304348,
+          "FP": 82,
+          "FN": 15,
+          "threshold": 0.56,
+          "n": 50000,
+          "n_pos": 24,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.1751117138093156,
+          "log_loss": 0.5420392592662779,
+          "n_retained": 50000
+        }
+      },
+      "52": {
+        "COMPLETED_WINDOW": {
+          "PR_AUC": 0.2858707809680644,
+          "precision": 0.17023675310033823,
+          "recall": 0.3275488069414317,
+          "F1": 0.22403560830860533,
+          "FP": 736,
+          "FN": 310,
+          "threshold": 0.85,
+          "n": 996000,
+          "n_pos": 461,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.01277241626049415,
+          "log_loss": 0.10894295963113941
+        },
+        "ENDPOINT_PAST_ONLY": {
+          "PR_AUC": 0.05100362117220001,
+          "precision": 0.02480270574971815,
+          "recall": 0.3793103448275862,
+          "F1": 0.04656084656084656,
+          "FP": 865,
+          "FN": 36,
+          "threshold": 0.85,
+          "n": 996000,
+          "n_pos": 58,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.012712656705446256,
+          "log_loss": 0.10878618565386995,
+          "interpretation": "endpoint-defined past-only evaluation",
+          "never": [
+            "real-time",
+            "streaming",
+            "intra-day"
+          ]
+        },
+        "DEOVERLAP_OFFSET0": {
+          "PR_AUC": 0.33072504557930593,
+          "precision": 0.1956521739130435,
+          "recall": 0.375,
+          "F1": 0.2571428571428571,
+          "FP": 37,
+          "FN": 15,
+          "threshold": 0.85,
+          "n": 50000,
+          "n_pos": 24,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.012891253089150184,
+          "log_loss": 0.10920373612099701,
+          "n_retained": 50000
+        }
+      },
+      "62": {
+        "COMPLETED_WINDOW": {
+          "PR_AUC": 0.26476856486126965,
+          "precision": 0.08849557522123894,
+          "recall": 0.32537960954446854,
+          "F1": 0.1391465677179963,
+          "FP": 1545,
+          "FN": 311,
+          "threshold": 0.55,
+          "n": 996000,
+          "n_pos": 461,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.17310241206014848,
+          "log_loss": 0.5379265065648837
+        },
+        "ENDPOINT_PAST_ONLY": {
+          "PR_AUC": 0.04383626155969133,
+          "precision": 0.012389380530973451,
+          "recall": 0.3620689655172414,
+          "F1": 0.023958927552766685,
+          "FP": 1674,
+          "FN": 37,
+          "threshold": 0.55,
+          "n": 996000,
+          "n_pos": 58,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.173088621299256,
+          "log_loss": 0.5378988418695124,
+          "interpretation": "endpoint-defined past-only evaluation",
+          "never": [
+            "real-time",
+            "streaming",
+            "intra-day"
+          ]
+        },
+        "DEOVERLAP_OFFSET0": {
+          "PR_AUC": 0.29467497662199166,
+          "precision": 0.12162162162162163,
+          "recall": 0.375,
+          "F1": 0.1836734693877551,
+          "FP": 65,
+          "FN": 15,
+          "threshold": 0.55,
+          "n": 50000,
+          "n_pos": 24,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.17306244937046808,
+          "log_loss": 0.5378458891053234,
+          "n_retained": 50000
+        }
+      }
+    },
+    "attention_linear": {
+      "42": {
+        "COMPLETED_WINDOW": {
+          "PR_AUC": 0.23718933273375337,
+          "precision": 0.11483253588516747,
+          "recall": 0.3644251626898048,
+          "F1": 0.17463617463617465,
+          "FP": 1295,
+          "FN": 293,
+          "threshold": 0.9500000000000001,
+          "n": 996000,
+          "n_pos": 461,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.009774307585883204,
+          "log_loss": 0.0363313930539562
+        },
+        "ENDPOINT_PAST_ONLY": {
+          "PR_AUC": 0.03272959357022383,
+          "precision": 0.017088174982911826,
+          "recall": 0.43103448275862066,
+          "F1": 0.03287310979618672,
+          "FP": 1438,
+          "FN": 33,
+          "threshold": 0.9500000000000001,
+          "n": 996000,
+          "n_pos": 58,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.009798200215037073,
+          "log_loss": 0.03643287564050326,
+          "interpretation": "endpoint-defined past-only evaluation",
+          "never": [
+            "real-time",
+            "streaming",
+            "intra-day"
+          ]
+        },
+        "DEOVERLAP_OFFSET0": {
+          "PR_AUC": 0.27984686055647456,
+          "precision": 0.10227272727272728,
+          "recall": 0.375,
+          "F1": 0.16071428571428573,
+          "FP": 79,
+          "FN": 15,
+          "threshold": 0.9500000000000001,
+          "n": 50000,
+          "n_pos": 24,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.009932987763205064,
+          "log_loss": 0.03706447272269075,
+          "n_retained": 50000
+        }
+      },
+      "52": {
+        "COMPLETED_WINDOW": {
+          "PR_AUC": 0.28799537219275984,
+          "precision": 0.129004329004329,
+          "recall": 0.3232104121475054,
+          "F1": 0.1844059405940594,
+          "FP": 1006,
+          "FN": 312,
+          "threshold": 0.9600000000000001,
+          "n": 996000,
+          "n_pos": 461,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.012267822028147569,
+          "log_loss": 0.040444316799395495
+        },
+        "ENDPOINT_PAST_ONLY": {
+          "PR_AUC": 0.03940881947256479,
+          "precision": 0.01904761904761905,
+          "recall": 0.3793103448275862,
+          "F1": 0.036273701566364384,
+          "FP": 1133,
+          "FN": 36,
+          "threshold": 0.9600000000000001,
+          "n": 996000,
+          "n_pos": 58,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.012279561718994919,
+          "log_loss": 0.04022013220992671,
+          "interpretation": "endpoint-defined past-only evaluation",
+          "never": [
+            "real-time",
+            "streaming",
+            "intra-day"
+          ]
+        },
+        "DEOVERLAP_OFFSET0": {
+          "PR_AUC": 0.35791332649009877,
+          "precision": 0.14754098360655737,
+          "recall": 0.375,
+          "F1": 0.21176470588235294,
+          "FP": 52,
+          "FN": 15,
+          "threshold": 0.9600000000000001,
+          "n": 50000,
+          "n_pos": 24,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.01245621840920022,
+          "log_loss": 0.04107100852833194,
+          "n_retained": 50000
+        }
+      },
+      "62": {
+        "COMPLETED_WINDOW": {
+          "PR_AUC": 0.2588830764763543,
+          "precision": 0.09430379746835443,
+          "recall": 0.3232104121475054,
+          "F1": 0.14600685938265556,
+          "FP": 1431,
+          "FN": 312,
+          "threshold": 0.9400000000000001,
+          "n": 996000,
+          "n_pos": 461,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.0036287893069310625,
+          "log_loss": 0.015218608770798487
+        },
+        "ENDPOINT_PAST_ONLY": {
+          "PR_AUC": 0.04255758387582326,
+          "precision": 0.013291139240506329,
+          "recall": 0.3620689655172414,
+          "F1": 0.02564102564102564,
+          "FP": 1559,
+          "FN": 37,
+          "threshold": 0.9400000000000001,
+          "n": 996000,
+          "n_pos": 58,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.0035476379017568083,
+          "log_loss": 0.015187448095526327,
+          "interpretation": "endpoint-defined past-only evaluation",
+          "never": [
+            "real-time",
+            "streaming",
+            "intra-day"
+          ]
+        },
+        "DEOVERLAP_OFFSET0": {
+          "PR_AUC": 0.2889152949274257,
+          "precision": 0.140625,
+          "recall": 0.375,
+          "F1": 0.20454545454545456,
+          "FP": 55,
+          "FN": 15,
+          "threshold": 0.9400000000000001,
+          "n": 50000,
+          "n_pos": 24,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.0033850990126473896,
+          "log_loss": 0.01415031379052781,
+          "n_retained": 50000
+        }
+      }
+    },
+    "RF_40": {
+      "42": {
+        "COMPLETED_WINDOW": {
+          "PR_AUC": 0.30861991345486983,
+          "precision": 0.11895910780669144,
+          "recall": 0.3470715835140998,
+          "F1": 0.17718715393134,
+          "FP": 1185,
+          "FN": 301,
+          "threshold": 0.38,
+          "n": 996000,
+          "n_pos": 461,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.001022103597943179,
+          "log_loss": 0.011898488420112015
+        },
+        "ENDPOINT_PAST_ONLY": {
+          "PR_AUC": 0.052993567356629655,
+          "precision": 0.017100371747211896,
+          "recall": 0.39655172413793105,
+          "F1": 0.03278688524590164,
+          "FP": 1322,
+          "FN": 35,
+          "threshold": 0.38,
+          "n": 996000,
+          "n_pos": 58,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.0008561876936554931,
+          "log_loss": 0.005292329461413926,
+          "interpretation": "endpoint-defined past-only evaluation",
+          "never": [
+            "real-time",
+            "streaming",
+            "intra-day"
+          ]
+        },
+        "DEOVERLAP_OFFSET0": {
+          "PR_AUC": 0.35573490972102034,
+          "precision": 0.1323529411764706,
+          "recall": 0.375,
+          "F1": 0.1956521739130435,
+          "FP": 59,
+          "FN": 15,
+          "threshold": 0.38,
+          "n": 50000,
+          "n_pos": 24,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.0010113871299311625,
+          "log_loss": 0.011774634400887237,
+          "n_retained": 50000
+        }
+      },
+      "52": {
+        "COMPLETED_WINDOW": {
+          "PR_AUC": 0.3108282679739255,
+          "precision": 0.17760180995475114,
+          "recall": 0.3405639913232104,
+          "F1": 0.23345724907063198,
+          "FP": 727,
+          "FN": 304,
+          "threshold": 0.46,
+          "n": 996000,
+          "n_pos": 461,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.001105615806997302,
+          "log_loss": 0.011893835437393899
+        },
+        "ENDPOINT_PAST_ONLY": {
+          "PR_AUC": 0.06021207107043327,
+          "precision": 0.026018099547511313,
+          "recall": 0.39655172413793105,
+          "F1": 0.04883227176220807,
+          "FP": 861,
+          "FN": 35,
+          "threshold": 0.46,
+          "n": 996000,
+          "n_pos": 58,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.000944604019342032,
+          "log_loss": 0.005547399507642702,
+          "interpretation": "endpoint-defined past-only evaluation",
+          "never": [
+            "real-time",
+            "streaming",
+            "intra-day"
+          ]
+        },
+        "DEOVERLAP_OFFSET0": {
+          "PR_AUC": 0.35929725770627147,
+          "precision": 0.1956521739130435,
+          "recall": 0.375,
+          "F1": 0.2571428571428571,
+          "FP": 37,
+          "FN": 15,
+          "threshold": 0.46,
+          "n": 50000,
+          "n_pos": 24,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.0010811265124585645,
+          "log_loss": 0.012019826552261983,
+          "n_retained": 50000
+        }
+      },
+      "62": {
+        "COMPLETED_WINDOW": {
+          "PR_AUC": 0.3081031709231024,
+          "precision": 0.12141280353200883,
+          "recall": 0.3579175704989154,
+          "F1": 0.1813186813186813,
+          "FP": 1194,
+          "FN": 296,
+          "threshold": 0.37,
+          "n": 996000,
+          "n_pos": 461,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.000989588578363648,
+          "log_loss": 0.01185493860656753
+        },
+        "ENDPOINT_PAST_ONLY": {
+          "PR_AUC": 0.05401470893013848,
+          "precision": 0.019867549668874173,
+          "recall": 0.46551724137931033,
+          "F1": 0.038108680310515175,
+          "FP": 1332,
+          "FN": 31,
+          "threshold": 0.37,
+          "n": 996000,
+          "n_pos": 58,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.0008228461933264061,
+          "log_loss": 0.00525225658142593,
+          "interpretation": "endpoint-defined past-only evaluation",
+          "never": [
+            "real-time",
+            "streaming",
+            "intra-day"
+          ]
+        },
+        "DEOVERLAP_OFFSET0": {
+          "PR_AUC": 0.35156321337085994,
+          "precision": 0.12857142857142856,
+          "recall": 0.375,
+          "F1": 0.19148936170212766,
+          "FP": 61,
+          "FN": 15,
+          "threshold": 0.37,
+          "n": 50000,
+          "n_pos": 24,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.0009721359627191817,
+          "log_loss": 0.012312257759337888,
+          "n_retained": 50000
+        }
+      }
+    },
+    "XGBoost_40": {
+      "42": {
+        "COMPLETED_WINDOW": {
+          "PR_AUC": 0.39943937055118217,
+          "precision": 0.19898477157360406,
+          "recall": 0.42516268980477223,
+          "F1": 0.2710926694329184,
+          "FP": 789,
+          "FN": 265,
+          "threshold": 0.18000000000000002,
+          "n": 996000,
+          "n_pos": 461,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.0004951761031891697,
+          "log_loss": 0.0038829706039775185
+        },
+        "ENDPOINT_PAST_ONLY": {
+          "PR_AUC": 0.1524738608027607,
+          "precision": 0.0416243654822335,
+          "recall": 0.7068965517241379,
+          "F1": 0.07861936720997123,
+          "FP": 944,
+          "FN": 17,
+          "threshold": 0.18000000000000002,
+          "n": 996000,
+          "n_pos": 58,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.0003939087351319312,
+          "log_loss": 0.002394752549627438,
+          "interpretation": "endpoint-defined past-only evaluation",
+          "never": [
+            "real-time",
+            "streaming",
+            "intra-day"
+          ]
+        },
+        "DEOVERLAP_OFFSET0": {
+          "PR_AUC": 0.43527217953563246,
+          "precision": 0.22,
+          "recall": 0.4583333333333333,
+          "F1": 0.2972972972972973,
+          "FP": 39,
+          "FN": 13,
+          "threshold": 0.18000000000000002,
+          "n": 50000,
+          "n_pos": 24,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.00046256260242630146,
+          "log_loss": 0.0038557733083013643,
+          "n_retained": 50000
+        }
+      },
+      "52": {
+        "COMPLETED_WINDOW": {
+          "PR_AUC": 0.3871054556492118,
+          "precision": 0.16375727348295926,
+          "recall": 0.42733188720173537,
+          "F1": 0.23677884615384615,
+          "FP": 1006,
+          "FN": 264,
+          "threshold": 0.16,
+          "n": 996000,
+          "n_pos": 461,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.000521192371020432,
+          "log_loss": 0.004018250228764569
+        },
+        "ENDPOINT_PAST_ONLY": {
+          "PR_AUC": 0.13114533701934883,
+          "precision": 0.03408146300914381,
+          "recall": 0.7068965517241379,
+          "F1": 0.06502775574940524,
+          "FP": 1162,
+          "FN": 17,
+          "threshold": 0.16,
+          "n": 996000,
+          "n_pos": 58,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.00041887798424567103,
+          "log_loss": 0.002519257766897145,
+          "interpretation": "endpoint-defined past-only evaluation",
+          "never": [
+            "real-time",
+            "streaming",
+            "intra-day"
+          ]
+        },
+        "DEOVERLAP_OFFSET0": {
+          "PR_AUC": 0.4132700327495939,
+          "precision": 0.171875,
+          "recall": 0.4583333333333333,
+          "F1": 0.25,
+          "FP": 53,
+          "FN": 13,
+          "threshold": 0.16,
+          "n": 50000,
+          "n_pos": 24,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.00047862385629239427,
+          "log_loss": 0.003958299904339102,
+          "n_retained": 50000
+        }
+      },
+      "62": {
+        "COMPLETED_WINDOW": {
+          "PR_AUC": 0.3996858363869531,
+          "precision": 0.1898854961832061,
+          "recall": 0.4316702819956616,
+          "F1": 0.2637508283631544,
+          "FP": 849,
+          "FN": 262,
+          "threshold": 0.18000000000000002,
+          "n": 996000,
+          "n_pos": 461,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.0004953249305730041,
+          "log_loss": 0.0037285439918549627
+        },
+        "ENDPOINT_PAST_ONLY": {
+          "PR_AUC": 0.14723984712067018,
+          "precision": 0.04198473282442748,
+          "recall": 0.7586206896551724,
+          "F1": 0.07956600361663653,
+          "FP": 1004,
+          "FN": 14,
+          "threshold": 0.18000000000000002,
+          "n": 996000,
+          "n_pos": 58,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.00039481575304229824,
+          "log_loss": 0.0023465300718048263,
+          "interpretation": "endpoint-defined past-only evaluation",
+          "never": [
+            "real-time",
+            "streaming",
+            "intra-day"
+          ]
+        },
+        "DEOVERLAP_OFFSET0": {
+          "PR_AUC": 0.42723951113481917,
+          "precision": 0.2,
+          "recall": 0.4583333333333333,
+          "F1": 0.27848101265822783,
+          "FP": 44,
+          "FN": 13,
+          "threshold": 0.18000000000000002,
+          "n": 50000,
+          "n_pos": 24,
+          "observations_correlated": true,
+          "naive_independent_window_ci": "NOT_ATTACHED",
+          "probability_metric_status": "PROBABILITY_SCALE",
+          "Brier": 0.0004698180890593883,
+          "log_loss": 0.0037311419706060884,
+          "n_retained": 50000
+        }
+      }
+    }
+  },
+  "primary_c5_vs_c2": {
+    "42": {
+      "COMPLETED_WINDOW": {
+        "C2_PR_AUC": 0.267713916404488,
+        "C5_PR_AUC": 0.28015763337107696,
+        "delta_PR_AUC_C5_minus_C2": 0.012443716966588969,
+        "C2_F1": 0.14537634408602151,
+        "C5_F1": 0.16837983357807146,
+        "delta_F1_C5_minus_C2": 0.023003489492049944,
+        "positive_delta_is_not_automatic_superiority": true
+      },
+      "ENDPOINT_PAST_ONLY": {
+        "C2_PR_AUC": 0.03406502908840928,
+        "C5_PR_AUC": 0.03972487825325646,
+        "delta_PR_AUC_C5_minus_C2": 0.005659849164847186,
+        "C2_F1": 0.02497398543184183,
+        "C5_F1": 0.032926829268292684,
+        "delta_F1_C5_minus_C2": 0.007952843836450854,
+        "positive_delta_is_not_automatic_superiority": true
+      },
+      "DEOVERLAP_OFFSET0": {
+        "C2_PR_AUC": 0.31586300510656723,
+        "C5_PR_AUC": 0.3336809531886092,
+        "delta_PR_AUC_C5_minus_C2": 0.017817948082041957,
+        "C2_F1": 0.13846153846153847,
+        "C5_F1": 0.1565217391304348,
+        "delta_F1_C5_minus_C2": 0.018060200668896326,
+        "positive_delta_is_not_automatic_superiority": true
+      }
+    },
+    "52": {
+      "COMPLETED_WINDOW": {
+        "C2_PR_AUC": 0.28350544433667274,
+        "C5_PR_AUC": 0.2858707809680644,
+        "delta_PR_AUC_C5_minus_C2": 0.002365336631391657,
+        "C2_F1": 0.1689989235737352,
+        "C5_F1": 0.22403560830860533,
+        "delta_F1_C5_minus_C2": 0.05503668473487014,
+        "positive_delta_is_not_automatic_superiority": true
+      },
+      "ENDPOINT_PAST_ONLY": {
+        "C2_PR_AUC": 0.05017771350162756,
+        "C5_PR_AUC": 0.05100362117220001,
+        "delta_PR_AUC_C5_minus_C2": 0.0008259076705724525,
+        "C2_F1": 0.030240549828178694,
+        "C5_F1": 0.04656084656084656,
+        "delta_F1_C5_minus_C2": 0.016320296732667865,
+        "positive_delta_is_not_automatic_superiority": true
+      },
+      "DEOVERLAP_OFFSET0": {
+        "C2_PR_AUC": 0.31837264540874344,
+        "C5_PR_AUC": 0.33072504557930593,
+        "delta_PR_AUC_C5_minus_C2": 0.012352400170562494,
+        "C2_F1": 0.20930232558139536,
+        "C5_F1": 0.2571428571428571,
+        "delta_F1_C5_minus_C2": 0.04784053156146176,
+        "positive_delta_is_not_automatic_superiority": true
+      }
+    },
+    "62": {
+      "COMPLETED_WINDOW": {
+        "C2_PR_AUC": 0.2548657536366779,
+        "C5_PR_AUC": 0.26476856486126965,
+        "delta_PR_AUC_C5_minus_C2": 0.009902811224591745,
+        "C2_F1": 0.20824295010845986,
+        "C5_F1": 0.1391465677179963,
+        "delta_F1_C5_minus_C2": -0.06909638239046356,
+        "positive_delta_is_not_automatic_superiority": true
+      },
+      "ENDPOINT_PAST_ONLY": {
+        "C2_PR_AUC": 0.04044977787151638,
+        "C5_PR_AUC": 0.04383626155969133,
+        "delta_PR_AUC_C5_minus_C2": 0.00338648368817495,
+        "C2_F1": 0.04081632653061224,
+        "C5_F1": 0.023958927552766685,
+        "delta_F1_C5_minus_C2": -0.016857398977845557,
+        "positive_delta_is_not_automatic_superiority": true
+      },
+      "DEOVERLAP_OFFSET0": {
+        "C2_PR_AUC": 0.28630782802785526,
+        "C5_PR_AUC": 0.29467497662199166,
+        "delta_PR_AUC_C5_minus_C2": 0.008367148594136398,
+        "C2_F1": 0.2903225806451613,
+        "C5_F1": 0.1836734693877551,
+        "delta_F1_C5_minus_C2": -0.1066491112574062,
+        "positive_delta_is_not_automatic_superiority": true
+      }
+    }
+  },
+  "deoverlap_user_cluster_bootstrap": {
+    "42": {
+      "cluster": "user_id",
+      "n_valid_resamples": 2000,
+      "n_attempted_draws": 2000,
+      "seed": 2026,
+      "percentile_95": {
+        "delta_PR_AUC_C5_minus_C2": [
+          -0.009358858828274686,
+          0.08212684987203289
+        ],
+        "delta_F1_C5_minus_C2": [
+          -0.0015016333398546983,
+          0.05534805458233444
+        ]
+      },
+      "point_delta_PR_AUC_C5_minus_C2": 0.017817948082041957,
+      "point_delta_F1_C5_minus_C2": 0.018060200668896326,
+      "interpretation": "interval is evidence, not a selection rule; no hard-coded superiority",
+      "user_and_incident_not_independent": true,
+      "frozen_wording": "Four official insider\u2013incident clusters are represented.",
+      "effective_malicious_cluster_count": 4
+    },
+    "52": {
+      "cluster": "user_id",
+      "n_valid_resamples": 2000,
+      "n_attempted_draws": 2000,
+      "seed": 2026,
+      "percentile_95": {
+        "delta_PR_AUC_C5_minus_C2": [
+          -0.0025588844476466077,
+          0.044686805915478134
+        ],
+        "delta_F1_C5_minus_C2": [
+          0.002960353175305061,
+          0.09439120705035521
+        ]
+      },
+      "point_delta_PR_AUC_C5_minus_C2": 0.012352400170562494,
+      "point_delta_F1_C5_minus_C2": 0.04784053156146176,
+      "interpretation": "interval is evidence, not a selection rule; no hard-coded superiority",
+      "user_and_incident_not_independent": true,
+      "frozen_wording": "Four official insider\u2013incident clusters are represented.",
+      "effective_malicious_cluster_count": 4
+    },
+    "62": {
+      "cluster": "user_id",
+      "n_valid_resamples": 2000,
+      "n_attempted_draws": 2000,
+      "seed": 2026,
+      "percentile_95": {
+        "delta_PR_AUC_C5_minus_C2": [
+          -0.04065181637802544,
+          0.06047055317717448
+        ],
+        "delta_F1_C5_minus_C2": [
+          -0.17622523310023314,
+          -0.017827281959055356
+        ]
+      },
+      "point_delta_PR_AUC_C5_minus_C2": 0.008367148594136398,
+      "point_delta_F1_C5_minus_C2": -0.1066491112574062,
+      "interpretation": "interval is evidence, not a selection rule; no hard-coded superiority",
+      "user_and_incident_not_independent": true,
+      "frozen_wording": "Four official insider\u2013incident clusters are represented.",
+      "effective_malicious_cluster_count": 4
+    }
+  },
+  "scenario_deoverlap_summary": {
+    "kind": "descriptive_only",
+    "view": "DEOVERLAP_OFFSET0",
+    "scenario_identities": [
+      "r5.1-1",
+      "r5.1-2",
+      "r5.1-3",
+      "r5.1-4"
+    ],
+    "n_scenario_identities": 4,
+    "effective_malicious_cluster_count": 4,
+    "frozen_wording": "Four official insider\u2013incident clusters are represented.",
+    "contextual_users_are_not_additional_incidents": true,
+    "no_hypothesis_test": true,
+    "per_family_seed": {
+      "C2": {
+        "42": {
+          "r5.1-1": {
+            "n_positive_deoverlap_windows": 2,
+            "n_detected": 2,
+            "recall": 1.0,
+            "official_only_n_positive": 2,
+            "official_only_n_detected": 2,
+            "official_only_recall": 1.0
+          },
+          "r5.1-2": {
+            "n_positive_deoverlap_windows": 5,
+            "n_detected": 2,
+            "recall": 0.4,
+            "official_only_n_positive": 4,
+            "official_only_n_detected": 2,
+            "official_only_recall": 0.5
+          },
+          "r5.1-3": {
+            "n_positive_deoverlap_windows": 13,
+            "n_detected": 1,
+            "recall": 0.07692307692307693,
+            "official_only_n_positive": 1,
+            "official_only_n_detected": 1,
+            "official_only_recall": 1.0
+          },
+          "r5.1-4": {
+            "n_positive_deoverlap_windows": 4,
+            "n_detected": 4,
+            "recall": 1.0,
+            "official_only_n_positive": 4,
+            "official_only_n_detected": 4,
+            "official_only_recall": 1.0
+          }
+        },
+        "52": {
+          "r5.1-1": {
+            "n_positive_deoverlap_windows": 2,
+            "n_detected": 2,
+            "recall": 1.0,
+            "official_only_n_positive": 2,
+            "official_only_n_detected": 2,
+            "official_only_recall": 1.0
+          },
+          "r5.1-2": {
+            "n_positive_deoverlap_windows": 5,
+            "n_detected": 2,
+            "recall": 0.4,
+            "official_only_n_positive": 4,
+            "official_only_n_detected": 2,
+            "official_only_recall": 0.5
+          },
+          "r5.1-3": {
+            "n_positive_deoverlap_windows": 13,
+            "n_detected": 1,
+            "recall": 0.07692307692307693,
+            "official_only_n_positive": 1,
+            "official_only_n_detected": 1,
+            "official_only_recall": 1.0
+          },
+          "r5.1-4": {
+            "n_positive_deoverlap_windows": 4,
+            "n_detected": 4,
+            "recall": 1.0,
+            "official_only_n_positive": 4,
+            "official_only_n_detected": 4,
+            "official_only_recall": 1.0
+          }
+        },
+        "62": {
+          "r5.1-1": {
+            "n_positive_deoverlap_windows": 2,
+            "n_detected": 2,
+            "recall": 1.0,
+            "official_only_n_positive": 2,
+            "official_only_n_detected": 2,
+            "official_only_recall": 1.0
+          },
+          "r5.1-2": {
+            "n_positive_deoverlap_windows": 5,
+            "n_detected": 2,
+            "recall": 0.4,
+            "official_only_n_positive": 4,
+            "official_only_n_detected": 2,
+            "official_only_recall": 0.5
+          },
+          "r5.1-3": {
+            "n_positive_deoverlap_windows": 13,
+            "n_detected": 1,
+            "recall": 0.07692307692307693,
+            "official_only_n_positive": 1,
+            "official_only_n_detected": 1,
+            "official_only_recall": 1.0
+          },
+          "r5.1-4": {
+            "n_positive_deoverlap_windows": 4,
+            "n_detected": 4,
+            "recall": 1.0,
+            "official_only_n_positive": 4,
+            "official_only_n_detected": 4,
+            "official_only_recall": 1.0
+          }
+        }
+      },
+      "C5_original_paper": {
+        "42": {
+          "r5.1-1": {
+            "n_positive_deoverlap_windows": 2,
+            "n_detected": 2,
+            "recall": 1.0,
+            "official_only_n_positive": 2,
+            "official_only_n_detected": 2,
+            "official_only_recall": 1.0
+          },
+          "r5.1-2": {
+            "n_positive_deoverlap_windows": 5,
+            "n_detected": 2,
+            "recall": 0.4,
+            "official_only_n_positive": 4,
+            "official_only_n_detected": 2,
+            "official_only_recall": 0.5
+          },
+          "r5.1-3": {
+            "n_positive_deoverlap_windows": 13,
+            "n_detected": 1,
+            "recall": 0.07692307692307693,
+            "official_only_n_positive": 1,
+            "official_only_n_detected": 1,
+            "official_only_recall": 1.0
+          },
+          "r5.1-4": {
+            "n_positive_deoverlap_windows": 4,
+            "n_detected": 4,
+            "recall": 1.0,
+            "official_only_n_positive": 4,
+            "official_only_n_detected": 4,
+            "official_only_recall": 1.0
+          }
+        },
+        "52": {
+          "r5.1-1": {
+            "n_positive_deoverlap_windows": 2,
+            "n_detected": 2,
+            "recall": 1.0,
+            "official_only_n_positive": 2,
+            "official_only_n_detected": 2,
+            "official_only_recall": 1.0
+          },
+          "r5.1-2": {
+            "n_positive_deoverlap_windows": 5,
+            "n_detected": 2,
+            "recall": 0.4,
+            "official_only_n_positive": 4,
+            "official_only_n_detected": 2,
+            "official_only_recall": 0.5
+          },
+          "r5.1-3": {
+            "n_positive_deoverlap_windows": 13,
+            "n_detected": 1,
+            "recall": 0.07692307692307693,
+            "official_only_n_positive": 1,
+            "official_only_n_detected": 1,
+            "official_only_recall": 1.0
+          },
+          "r5.1-4": {
+            "n_positive_deoverlap_windows": 4,
+            "n_detected": 4,
+            "recall": 1.0,
+            "official_only_n_positive": 4,
+            "official_only_n_detected": 4,
+            "official_only_recall": 1.0
+          }
+        },
+        "62": {
+          "r5.1-1": {
+            "n_positive_deoverlap_windows": 2,
+            "n_detected": 2,
+            "recall": 1.0,
+            "official_only_n_positive": 2,
+            "official_only_n_detected": 2,
+            "official_only_recall": 1.0
+          },
+          "r5.1-2": {
+            "n_positive_deoverlap_windows": 5,
+            "n_detected": 2,
+            "recall": 0.4,
+            "official_only_n_positive": 4,
+            "official_only_n_detected": 2,
+            "official_only_recall": 0.5
+          },
+          "r5.1-3": {
+            "n_positive_deoverlap_windows": 13,
+            "n_detected": 1,
+            "recall": 0.07692307692307693,
+            "official_only_n_positive": 1,
+            "official_only_n_detected": 1,
+            "official_only_recall": 1.0
+          },
+          "r5.1-4": {
+            "n_positive_deoverlap_windows": 4,
+            "n_detected": 4,
+            "recall": 1.0,
+            "official_only_n_positive": 4,
+            "official_only_n_detected": 4,
+            "official_only_recall": 1.0
+          }
+        }
+      }
+    }
+  },
+  "forbidden_claims": [
+    "overall predictive superiority",
+    "teacher anchoring improves prediction",
+    "real-time detection",
+    "causal detection",
+    "unseen-user generalisation",
+    "adversarial robustness",
+    "8 independent malicious units",
+    "8 independent malicious incidents",
+    "replacement primary test"
+  ],
+  "effective_malicious_cluster_count": 4,
+  "frozen_wording": "Four official insider\u2013incident clusters are represented.",
+  "positive_delta_is_not_automatic_superiority": true,
+  "threshold_selection_executed": false,
+  "model_selection_executed": false,
+  "calibration_fit_executed": false
+}

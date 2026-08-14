@@ -1,0 +1,49 @@
+{
+  "task_id": "EDITOR-007C1",
+  "source_task": "EDITOR-007C",
+  "source_predictive_results_path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\EDITOR007C_PREDICTIVE_RESULTS.json",
+  "source_predictive_results_sha256": "2a3744937e04e8c469d4aa1ed4f43ebd0c31881df76852c2d23c775ec99b08de",
+  "source_mechanism_results_path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\EDITOR007C_MECHANISM_RESULTS.json",
+  "source_mechanism_results_sha256": "f7185f18c9fe35db287dc6c0a5da8478a01b5f3ea03c2f8de90cb21a6a76b360",
+  "source_run_manifest_path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r51_editor007c_scores\\EDITOR007C_RUN_MANIFEST.json",
+  "source_run_manifest_sha256": "0fb9dae25b379c9d8ab098649e782cafbb1b3e6faa6c329308a5a9307ebd52c2",
+  "correction_type": "POST_HOC_METADATA_ONLY",
+  "numerical_results_changed": false,
+  "bootstrap_recomputed": false,
+  "predictive_inference_rerun": false,
+  "affected_fields": [
+    "deoverlap_user_cluster_bootstrap.42.effective_malicious_cluster_count",
+    "deoverlap_user_cluster_bootstrap.42.frozen_wording",
+    "deoverlap_user_cluster_bootstrap.52.effective_malicious_cluster_count",
+    "deoverlap_user_cluster_bootstrap.52.frozen_wording",
+    "deoverlap_user_cluster_bootstrap.62.effective_malicious_cluster_count",
+    "deoverlap_user_cluster_bootstrap.62.frozen_wording"
+  ],
+  "incorrect_value": 5,
+  "correct_value": 4,
+  "incorrect_wording": "Five official insider\u2013incident clusters are represented.",
+  "correct_wording": "Four official insider\u2013incident clusters are represented.",
+  "scientific_basis": "r5.1 has four official mapped insider\u2013incident clusters; contextual event-level positive users are not additional official incidents.",
+  "bootstrap_numerical_effect": "UNALTERED",
+  "correction_status": "VERIFIED_METADATA_ONLY",
+  "provenance": {
+    "producing_stamp": "src/editor006b_harness/bootstrap.py paired_user_cluster_bootstrap return metadata (historical r6.2 five-cluster wording). Frozen harness not patched.",
+    "sampling_uses": "np.unique(user_ids); rng.choice(unique, size=len(unique), replace=True)",
+    "n_valid_resamples_source": "BOOTSTRAP_VALID_RESAMPLES = 2000",
+    "variable_p5_means": "C5 model scores, not cluster count 5",
+    "mechanism_results_contains_incorrect_five_cluster_metadata": false,
+    "run_manifest_contains_incorrect_five_cluster_metadata": false,
+    "other_result_files_with_incorrect_five_cluster_metadata": [],
+    "paper_facing_derivatives_for_mechanism_or_run_manifest": false
+  },
+  "already_correct_in_original": [
+    "effective_malicious_cluster_count",
+    "frozen_wording",
+    "scenario_deoverlap_summary.effective_malicious_cluster_count",
+    "scenario_deoverlap_summary.frozen_wording",
+    "scenario_deoverlap_summary.n_scenario_identities"
+  ],
+  "do_not_change": [
+    "scenario_deoverlap_summary per-scenario n_positive_deoverlap_windows empirical counts"
+  ]
+}
