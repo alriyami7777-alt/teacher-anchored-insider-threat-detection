@@ -1,0 +1,115 @@
+{
+  "task_id": "EDITOR-015",
+  "frozen_before_results": true,
+  "TEACHER_GUIDANCE_VS_INITIALISATION": "SUPPORTED_STRONG",
+  "POST_ATTENTION_ODST_INCREMENTAL_VALUE": "NOT_SUPPORTED",
+  "TEMPORAL_ODST_INCREMENTAL_VALUE": "NOT_SUPPORTED",
+  "BEST_CURRENT_PAPER_MODEL": "TA2",
+  "TA2_REFERENCE_CENTRED_GLOBAL_TOPK_FAITHFULNESS": "NOT_SUPPORTED",
+  "encoder": "matched L1 Bi-LSTM + attention + linear head",
+  "odst046": {
+    "n_trees": 4,
+    "depth": 4,
+    "temperature": 0.5,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "num_layers": 2,
+    "dropout": 0.0,
+    "leaf_init_std": 0.05,
+    "choice_function": "sparsemax_sigmoid",
+    "readout": "canonical_tree_average",
+    "candidate_id": "ODST-046",
+    "tree_dim": 1,
+    "fusion_variant": "sparsemax_sigmoid_odst"
+  },
+  "residual": {
+    "g_theta": "live ODST-046 on attended z",
+    "g_theta0": "frozen identical initial copy, requires_grad=FALSE",
+    "r_theta": "g_theta(z) - stop_gradient(g_theta0(z))",
+    "final_logit": "L1_logit + r_theta(z)",
+    "initial_residual": 0.0,
+    "no_zero_alpha_gate": true
+  },
+  "conditions": {
+    "R0": {
+      "family": "residual",
+      "task": true,
+      "final_distill": true,
+      "residual_teacher": false,
+      "route": false,
+      "identity": "task residual + ensemble guidance on final_logit"
+    },
+    "R1": {
+      "family": "residual",
+      "task": true,
+      "final_distill": false,
+      "residual_teacher": true,
+      "route": false,
+      "identity": "teacher-residual ODST"
+    },
+    "R2": {
+      "family": "residual",
+      "task": true,
+      "final_distill": false,
+      "residual_teacher": true,
+      "route": true,
+      "identity": "teacher-residual ODST + route fidelity"
+    },
+    "R3": {
+      "family": "residual",
+      "task": true,
+      "final_distill": true,
+      "residual_teacher": false,
+      "route": false,
+      "identity": "residual + final-logit teacher guidance",
+      "redundant_if_frozen_base": true
+    }
+  },
+  "R3_policy": "REDUNDANT_NOT_EXECUTED if algebraically identical to R1 under frozen L1",
+  "teacher_guidance": {
+    "ensemble": "equal-weight mean of T-OPT(42/52/62) logits",
+    "lambda_distill": 0.5,
+    "lambda_residual_teacher": 0.5,
+    "lambda_route": 0.5,
+    "historical_C5_single_teacher_logit_anchor": false,
+    "not_tuned": true
+  },
+  "fixed_combinations": {
+    "C0": "0.5 L1_logit + 0.5 TA2_logit",
+    "C1": "0.5 sigmoid(L1) + 0.5 sigmoid(TA2)",
+    "C2": "0.5 percentile_rank(L1) + 0.5 percentile_rank(TA2)",
+    "learned_weights": false,
+    "validation_tuned_blend": false
+  },
+  "promotion_margin": 0.001,
+  "max_promoted_residual": 2,
+  "no_tree_count_depth_temperature_grid": true,
+  "no_temporal_placement_search": true,
+  "no_learned_tree_weights": true,
+  "no_focal_pairwise": true,
+  "T": 20,
+  "F": 13,
+  "n_trees_total": 8,
+  "tree_order": [
+    "layer0_tree0",
+    "layer0_tree1",
+    "layer0_tree2",
+    "layer0_tree3",
+    "layer1_tree0",
+    "layer1_tree1",
+    "layer1_tree2",
+    "layer1_tree3"
+  ],
+  "directional_k": [
+    1,
+    2,
+    3
+  ],
+  "frozen_L1_mean_PR_AUC": 0.9388809579807144,
+  "frozen_TA2_mean_PR_AUC": 0.9428421883320307,
+  "frozen_TA2_minus_L1": 0.003961230351316347,
+  "frozen_TA2_L1_CI": [
+    -0.0013708139376007687,
+    0.011356265117941461
+  ]
+}
