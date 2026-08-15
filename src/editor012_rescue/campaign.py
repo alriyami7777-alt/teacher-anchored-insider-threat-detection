@@ -486,7 +486,7 @@ def classify_teacher_guidance(
     return "MIXED"
 
 
-def run_campaign(*, skip_training: bool = False) -> dict[str, Any]:
+def _bootstrap_runtime(*, skip_training: bool = False) -> dict[str, Any]:
     started = utc_now()
     write_protocol_packet()
     identities = verify_identities()
@@ -504,11 +504,60 @@ def run_campaign(*, skip_training: bool = False) -> dict[str, Any]:
 
     ens_train = precompute_ensemble(teachers, bundle["train"].X, bundle["train"].y, device, "train")
     ens_val = precompute_ensemble(teachers, bundle["val"].X, bundle["val"].y, device, "val")
-
+    ctx = {
+        "started": started,
+        "identities": identities,
+        "bundle": bundle,
+        "user_map": user_map,
+        "device": device,
+        "pos_weight": pos_weight,
+        "teachers": teachers,
+        "ens_train": ens_train,
+        "ens_val": ens_val,
+    }
     if skip_training:
-        return {"identities": identities, "user_map": user_map, "status": "PROTOCOL_ONLY"}
+        ctx["status"] = "PROTOCOL_ONLY"
+    return ctx
 
+
+def run_inner_phase() -> dict[str, Any]:
+    ctx = _bootstrap_runtime()
     inner = run_inner_search(
+        bundle=ctx["bundle"],
+        teachers=ctx["teachers"],
+        ens_train=ctx["ens_train"],
+        device=ctx["device"],
+        pos_weight=ctx["pos_weight"],
+    )
+    write_json(
+        _review("EDITOR012_PROMOTION_COMMIT_READY.json"),
+        {"ready": True, "promoted": inner["decision"]["promoted"], "utc": utc_now()},
+    )
+    print("[EDITOR-012] INNER SEARCH COMPLETE — promotion freeze written; stop for EDITOR-012B commit", flush=True)
+    return {"identities": ctx["identities"], "inner": inner["decision"], "status": "INNER_COMPLETE"}
+
+
+def run_campaign(*, skip_training: bool = False, resume_after_inner: bool = False) -> dict[str, Any]:
+    ctx = _bootstrap_runtime(skip_training=skip_training)
+    identities = ctx["identities"]
+    bundle = ctx["bundle"]
+    teachers = ctx["teachers"]
+    ens_train = ctx["ens_train"]
+    ens_val = ctx["ens_val"]
+    device = ctx["device"]
+    pos_weight = ctx["pos_weight"]
+    started = ctx["started"]
+    if skip_training:
+        return {"identities": identities, "user_map": ctx["user_map"], "status": "PROTOCOL_ONLY"}
+
+    if resume_after_inner:
+        freeze_path = _review("01_inner_anchor_search", "EDITOR012_PROMOTION_FREEZE.json")
+        if not freeze_path.is_file():
+            raise Editor012Blocked("promotion freeze missing; cannot resume confirmation")
+        inner = {"decision": json.loads(freeze_path.read_text(encoding="utf-8"))}
+        print("[EDITOR-012] resuming after promotion freeze", flush=True)
+    else:
+        inner = run_inner_search(
         bundle=bundle,
         teachers=teachers,
         ens_train=ens_train,
@@ -966,6 +1015,12 @@ def main() -> None:
     if len(sys.argv) > 1 and sys.argv[1] == "--protocol-only":
         write_protocol_packet()
         verify_identities()
+        return
+    if len(sys.argv) > 1 and sys.argv[1] == "--inner-only":
+        run_inner_phase()
+        return
+    if len(sys.argv) > 1 and sys.argv[1] == "--confirm":
+        run_campaign(resume_after_inner=True)
         return
     run_campaign()
 
