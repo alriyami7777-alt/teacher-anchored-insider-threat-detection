@@ -1,0 +1,6 @@
+condition,family,placement,hybrid,center,distill,teacher,route,select_PR_AUC,select_F1,Brier,log_loss,best_epoch,learned_beta,frozen_train_mean,official_validation_used
+B0,linear,none,False,False,True,ensemble,False,0.9317661852802129,0.8885245901639345,0.003854866413906477,0.03153945342147551,6,,,False
+B1,odst,post_attention,False,False,True,ensemble,True,0.9350171069071892,0.8830963665086888,0.003913812421481652,0.031592352911943476,2,,,False
+T0,temporal_odst,pre_pooling,False,False,True,ensemble,False,0.9309682668899748,0.8966355897851642,0.0038779725855488784,0.031306525125759876,2,,,False
+T1,temporal_hybrid,pre_pooling,True,False,True,ensemble,False,0.9326860467392628,0.8911209321012454,0.0037131777120596433,0.030971832820191152,2,0.3604428470134735,,False
+T2,temporal_hybrid,pre_pooling,True,True,True,ensemble,False,0.9294644658738517,0.8992248062015504,0.004243990506265459,0.03389797910466628,1,0.30037203431129456,-3.8417978286743164,False

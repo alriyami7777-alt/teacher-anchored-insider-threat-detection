@@ -526,6 +526,27 @@ def run_confirmation(
     faith_ruling = "NOT_APPLICABLE"
     if best_name != "NONE":
         faith_ruling = _run_temporal_explain(bundle, packs, best_name, teachers, device, users, y_val)
+    else:
+        write_csv(
+            _review("03_temporal_explainability", "EDITOR014_TIME_TREE_CONTRIBUTIONS.csv"),
+            [{"note": "no temporal candidate promoted; time×tree contributions not estimated"}],
+        )
+        write_csv(
+            _review("03_temporal_explainability", "EDITOR014_FAITHFULNESS_RESULTS.csv"),
+            [{"note": "no temporal candidate promoted; faithfulness not estimated"}],
+        )
+        write_json(
+            _review("03_temporal_explainability", "EDITOR014_FAITHFULNESS_BOOTSTRAP.json"),
+            {"note": "no temporal candidate promoted", "cluster": "user"},
+        )
+        write_json(
+            _review("03_temporal_explainability", "EDITOR014_EXPLANATION_RULING.json"),
+            {
+                "TEMPORAL_ODST_REFERENCE_CENTRED_FAITHFULNESS": "NOT_APPLICABLE",
+                "reason": "no temporal ODST candidate promoted on INNER_SELECT",
+                "ROUTE_LEAF_INDEPENDENT_FAITHFULNESS": "UNSUPPORTED",
+            },
+        )
 
     paper = _write_handover(
         inner=inner,
@@ -800,10 +821,9 @@ def finalize_handover(confirm: dict[str, Any], ta2: dict[str, Any]) -> None:
         next_action = "promote temporal ODST into the paper model and freeze explanation tables"
     elif competitive and (better_cal or better_eff) and faith["TA2_ROUTE_TRACEABILITY"] == "SUPPORTED":
         why = (
-            "predictive competitive ranking versus matched L1, plus supported structural "
-            "route/leaf traceability"
-            + ("; better calibration" if better_cal else "")
-            + ("; better or comparable efficiency" if better_eff else "")
+            "competitive point ranking versus matched L1, plus supported route/leaf "
+            "structural traceability; Brier point estimate favours TA2 but the user-cluster "
+            "CI includes zero; TA2 is not faster; reference-centred faithfulness is not supported"
         )
         outcome = "C"
         issue = "PARTIALLY_RESOLVED"

@@ -1,0 +1,49 @@
+{
+  "WAS_TA2_ITSELF_TESTED_WITH_THE_FROZEN_REFERENCE_CENTRED_INTERVENTION_PROTOCOL": true,
+  "source": "review/editor013_odst_value_proof/05_explainability/EDITOR013_EXPLAINABILITY_RULING.json",
+  "seed_tested": 42,
+  "base_pr_auc": 0.9454098053584642,
+  "matches_TA2_seed42": true,
+  "PROMOTED_ODST_REFERENCE_CENTRED_FAITHFULNESS": "NOT_SUPPORTED",
+  "note": "EDITOR-013 used TA2 after no inner candidate was promoted. Result reused; protocol not redesigned.",
+  "reverified_with_frozen_protocol": true,
+  "references_from": "r5.2 TRAIN only",
+  "TA2_REFERENCE_CENTRED_FAITHFULNESS": "NOT_SUPPORTED",
+  "TA2_ROUTE_TRACEABILITY": "SUPPORTED",
+  "TA2_LEAF_TRACEABILITY": "SUPPORTED",
+  "faithfulness": {
+    "rows": [
+      {
+        "k": 3,
+        "base_pr_auc": 0.9454098053584642,
+        "top_k_pr_auc": 0.9502016912148874,
+        "random_k_pr_auc": 0.9390067157918981,
+        "top_k_drop": -0.004791885856423206,
+        "random_k_drop": 0.0064030895665661,
+        "top_minus_random_drop": -0.011194975422989306,
+        "n_trees": 8,
+        "references_from": "r5.2 TRAIN only"
+      },
+      {
+        "k": 5,
+        "base_pr_auc": 0.9454098053584642,
+        "top_k_pr_auc": 0.9513449423869758,
+        "random_k_pr_auc": 0.9364472170249096,
+        "top_k_drop": -0.005935137028511561,
+        "random_k_drop": 0.008962588333554566,
+        "top_minus_random_drop": -0.014897725362066128,
+        "n_trees": 8,
+        "references_from": "r5.2 TRAIN only"
+      }
+    ],
+    "PROMOTED_ODST_REFERENCE_CENTRED_FAITHFULNESS": "NOT_SUPPORTED",
+    "ODST_ROUTE_TRACEABILITY": "SUPPORTED",
+    "ODST_LEAF_TRACEABILITY": "SUPPORTED",
+    "ROUTE_LEAF_INDEPENDENT_FAITHFULNESS": "UNSUPPORTED",
+    "n_trees": 8,
+    "users_available_for_bootstrap": true
+  },
+  "train_reference_shape": [
+    8
+  ]
+}

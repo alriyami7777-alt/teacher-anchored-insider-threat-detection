@@ -1,0 +1,9 @@
+{
+  "outcome": "C",
+  "WHY_ODST": "competitive point ranking versus matched L1, plus supported route/leaf structural traceability; Brier point estimate favours TA2 but the user-cluster CI includes zero; TA2 is not faster; reference-centred faithfulness is not supported",
+  "WHY_TEACHER_GUIDANCE": "the frozen ensemble-guided TA2 formulation improves prediction beyond matched teacher initialisation",
+  "TEACHER_GUIDANCE_VS_INITIALISATION": "SUPPORTED_STRONG",
+  "CONSENSUS_TEACHER_ADVANTAGE": "MIXED",
+  "formal_non_inferiority_margin": null,
+  "competitive_point_performance_used": true
+}
