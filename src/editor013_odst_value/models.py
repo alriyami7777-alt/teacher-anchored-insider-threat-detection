@@ -116,9 +116,27 @@ def editor013_forward(
     modules: Editor013Modules,
 ) -> dict[str, torch.Tensor]:
     z, enc = student.encode_attention_h(x)
+    historical_linear = enc["linear_logit"]
+    if modules.family == "linear":
+        assert modules.linear_head is not None
+        linear_logit = modules.linear_head(z)
+        zeros = linear_logit.new_zeros(linear_logit.shape)
+        return {
+            "logit": linear_logit,
+            "linear_logit": linear_logit,
+            "odst_logit": zeros,
+            "historical_linear_logit": historical_linear,
+            "z": z,
+            "choices": z.new_zeros(z.size(0), N_TREES_TOTAL, 4),
+            "leaf_probs": z.new_zeros(z.size(0), 4, 16),
+            "leaf_probs_all": z.new_zeros(z.size(0), N_TREES_TOTAL, 16),
+            "tree_outputs": z.new_zeros(z.size(0), N_TREES_TOTAL),
+            "tree_weights": z.new_full((N_TREES_TOTAL,), 1.0 / N_TREES_TOTAL),
+            "alpha": zeros,
+            "attention_weights": enc["attention_weights"],
+        }
     od = live_odst_forward(student.node_head, z)
     tree_outputs = od["tree_outputs"]
-    historical_linear = enc["linear_logit"]
 
     if modules.readout == "weighted":
         assert modules.tree_readout is not None
@@ -132,9 +150,7 @@ def editor013_forward(
     else:
         linear_logit = historical_linear
 
-    if modules.family == "linear":
-        final = linear_logit
-    elif modules.hybrid:
+    if modules.hybrid:
         assert modules.alpha_mod is not None
         final = modules.alpha_mod(linear_logit, odst_logit)
     else:
@@ -166,6 +182,22 @@ def editor013_forward_from_z(
     modules: Editor013Modules,
 ) -> dict[str, torch.Tensor]:
     """Head-only forward on cached attended representation z."""
+    if modules.family == "linear":
+        assert modules.linear_head is not None
+        linear_logit = modules.linear_head(z)
+        zeros = linear_logit.new_zeros(linear_logit.shape)
+        return {
+            "logit": linear_logit,
+            "linear_logit": linear_logit,
+            "odst_logit": zeros,
+            "z": z,
+            "choices": z.new_zeros(z.size(0), N_TREES_TOTAL, 4),
+            "leaf_probs": z.new_zeros(z.size(0), 4, 16),
+            "leaf_probs_all": z.new_zeros(z.size(0), N_TREES_TOTAL, 16),
+            "tree_outputs": z.new_zeros(z.size(0), N_TREES_TOTAL),
+            "tree_weights": z.new_full((N_TREES_TOTAL,), 1.0 / N_TREES_TOTAL),
+            "alpha": zeros,
+        }
     od = live_odst_forward(student.node_head, z)
     tree_outputs = od["tree_outputs"]
     if modules.readout == "weighted":
@@ -178,9 +210,7 @@ def editor013_forward_from_z(
         linear_logit = modules.linear_head(z)
     else:
         linear_logit = odst_logit.new_zeros(odst_logit.shape)
-    if modules.family == "linear":
-        final = linear_logit
-    elif modules.hybrid:
+    if modules.hybrid:
         assert modules.alpha_mod is not None
         final = modules.alpha_mod(linear_logit, odst_logit)
     else:
