@@ -1,0 +1,46 @@
+{
+  "task_id": "EDITOR-014",
+  "campaign": "EDITOR-014 TEMPORAL ODST PLACEMENT AND TA2 VALUE PROOF",
+  "status": "PHASE_B_FROZEN_BEFORE_RESULTS",
+  "scientific_question": "Does applying a shared ODST to contextualised per-time-step Bi-LSTM states before attention aggregation provide incremental predictive value over the matched teacher-guided linear model?",
+  "authorised_partitions": [
+    "CERT r5.2 TRAIN",
+    "CERT r5.2 VALIDATION"
+  ],
+  "TEST_ACCESS": "PROHIBITED",
+  "R51_EXECUTION": "PROHIBITED",
+  "R62_EXECUTION": "PROHIBITED",
+  "inner_search_uses": "INNER_TRAIN / INNER_SELECT only",
+  "official_validation_never_used_to_promote": true,
+  "user_mapping": {
+    "n_users": 2000,
+    "windows_per_user": 32,
+    "malicious_users": 31,
+    "expected_sha256": "851385f9c926cf945b3c74b5c9442e3ccb94cf1d9dabb98106a29cbfea01c5c0"
+  },
+  "inner_split_expected": {
+    "n_inner_train": 622000,
+    "n_inner_select": 128000,
+    "n_inner_train_pos": 2457,
+    "n_inner_select_pos": 1214
+  },
+  "TEACHER_GUIDANCE_VS_INITIALISATION": "SUPPORTED_STRONG",
+  "POST_ATTENTION_ODST_INCREMENTAL_VALUE": "NOT_SUPPORTED_FROM_EDITOR013",
+  "frozen_before_first_training_result": true,
+  "encoder_arch": {
+    "input_dim": 13,
+    "hidden_size": 64,
+    "dropout": 0.2,
+    "attention_dim": 64,
+    "fusion_variant": "sparsemax_sigmoid_odst",
+    "node_num_layers": 2,
+    "node_n_trees": 4,
+    "node_depth": 4,
+    "node_tree_dim": 1,
+    "node_temperature": 0.5,
+    "node_dropout": 0.0,
+    "leaf_init_std": 0.05,
+    "gate_hidden_dim": 32
+  },
+  "LINEAR_AFTER_ATTENTION_EQUIVALENT_TO_ATTENTION_WEIGHTED_LINEAR_PER_TIME": "YES"
+}
