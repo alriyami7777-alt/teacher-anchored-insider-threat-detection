@@ -1,0 +1,68 @@
+{
+  "frozen_before_results": true,
+  "ORIGINAL_SINGLE_TEACHER_LOGIT_ANCHOR": "RETIRED_AFTER_GRADIENT_CONFLICT_DIAGNOSIS",
+  "ET1": {
+    "id": "A0",
+    "loss": "L_task + 0.5 * MSE(student_logit, equal_weight_mean(T-OPT logits))",
+    "temperature": null,
+    "lambda_et1": 0.5,
+    "route": false,
+    "recovered_from": "editor010_rescue/train.py train_head_distill",
+    "not_reconstructed_from_console_summary": true
+  },
+  "anchors": {
+    "A0": {
+      "name": "frozen_ET1_equal_weight_logit_mse",
+      "confidence_weight": false,
+      "agreement_weight": false,
+      "class_balanced_reduction": false,
+      "simplicity_rank": 0
+    },
+    "A1": {
+      "name": "consensus_confidence_weighting",
+      "confidence_weight": true,
+      "agreement_weight": false,
+      "class_balanced_reduction": false,
+      "simplicity_rank": 1
+    },
+    "A2": {
+      "name": "ensemble_agreement_weighting",
+      "confidence_weight": false,
+      "agreement_weight": true,
+      "class_balanced_reduction": false,
+      "simplicity_rank": 1
+    },
+    "A3": {
+      "name": "class_balanced_ensemble_anchor",
+      "confidence_weight": false,
+      "agreement_weight": false,
+      "class_balanced_reduction": true,
+      "simplicity_rank": 1
+    },
+    "A4": {
+      "name": "confidence_plus_class_balance",
+      "confidence_weight": true,
+      "agreement_weight": false,
+      "class_balanced_reduction": true,
+      "simplicity_rank": 2
+    },
+    "A5": {
+      "name": "agreement_plus_class_balance",
+      "confidence_weight": false,
+      "agreement_weight": true,
+      "class_balanced_reduction": true,
+      "simplicity_rank": 2
+    }
+  },
+  "route_on_best_two": {
+    "lambda_route": 0.5,
+    "conditional": true
+  },
+  "screening_seed": 42,
+  "inner_metric": "INNER_SELECT PR-AUC",
+  "tie_break": [
+    "F1",
+    "simpler_anchor_formulation"
+  ],
+  "promotion": "at most 2 formulations that beat A0 or are within 0.001 and simpler"
+}

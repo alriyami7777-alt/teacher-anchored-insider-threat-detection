@@ -1,0 +1,71 @@
+{
+  "frozen_before_results": true,
+  "architecture": "20x13 -> Bi-LSTM -> temporal attention -> ODST-046",
+  "odst046": {
+    "n_trees": 4,
+    "depth": 4,
+    "temperature": 0.5,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "num_layers": 2,
+    "dropout": 0.0,
+    "leaf_init_std": 0.05,
+    "choice_function": "sparsemax_sigmoid",
+    "readout": "canonical_tree_average",
+    "candidate_id": "ODST-046",
+    "tree_dim": 1,
+    "fusion_variant": "sparsemax_sigmoid_odst"
+  },
+  "primary_seeds": [
+    42,
+    52,
+    62
+  ],
+  "start": "all matched students begin from same-seed T-OPT bytes",
+  "factorial": {
+    "F00": {
+      "condition": "F00_C2OPT",
+      "alias": "C2-OPT",
+      "ensemble_teacher_predictive_anchor": false,
+      "route_anchor": false,
+      "lambda_et1": 0.0,
+      "lambda_route": 0.0,
+      "historical_single_teacher_logit_anchor": false,
+      "import_editor011": "C2-OPT"
+    },
+    "F10": {
+      "condition": "F10_DOPT",
+      "alias": "D-OPT",
+      "ensemble_teacher_predictive_anchor": true,
+      "route_anchor": false,
+      "lambda_et1": 0.5,
+      "lambda_route": 0.0,
+      "historical_single_teacher_logit_anchor": false,
+      "anchor_id": "A0"
+    },
+    "F01": {
+      "condition": "F01_R2OPT",
+      "alias": "R2-OPT",
+      "ensemble_teacher_predictive_anchor": false,
+      "route_anchor": true,
+      "lambda_et1": 0.0,
+      "lambda_route": 0.5,
+      "historical_single_teacher_logit_anchor": false,
+      "import_editor011": "R2-OPT"
+    },
+    "F11": {
+      "condition": "F11_DROPT",
+      "alias": "DR-OPT",
+      "ensemble_teacher_predictive_anchor": true,
+      "route_anchor": true,
+      "lambda_et1": 0.5,
+      "lambda_route": 0.5,
+      "historical_single_teacher_logit_anchor": false,
+      "anchor_id": "A0"
+    }
+  },
+  "no_historical_single_teacher_logit_anchor": true,
+  "no_new_odst_search": true,
+  "no_focal_search": true,
+  "no_pairwise_ranking_search": true
+}

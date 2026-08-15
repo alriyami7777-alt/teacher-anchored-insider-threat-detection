@@ -1,0 +1,36 @@
+{
+  "task_id": "EDITOR-012",
+  "campaign": "EDITOR-012 TEACHER-ANCHOR PREDICTIVE RESCUE",
+  "status": "PHASE_A_FROZEN_BEFORE_RESULTS",
+  "scientific_question": "Does an appropriately formulated teacher anchor add predictive value beyond matched teacher initialisation?",
+  "authorised_partitions": [
+    "CERT r5.2 TRAIN",
+    "CERT r5.2 VALIDATION"
+  ],
+  "TEST_ACCESS": "PROHIBITED",
+  "R51_EXECUTION": "PROHIBITED",
+  "R62_EXECUTION": "PROHIBITED",
+  "inner_search_uses": "EDITOR-010 INNER_TRAIN / INNER_SELECT only",
+  "official_validation_never_used_to_promote": true,
+  "user_mapping": {
+    "n_users": 2000,
+    "windows_per_user": 32,
+    "malicious_users": 31,
+    "expected_sha256": "851385f9c926cf945b3c74b5c9442e3ccb94cf1d9dabb98106a29cbfea01c5c0"
+  },
+  "inner_split_expected": {
+    "n_inner_train": 622000,
+    "n_inner_select": 128000,
+    "n_inner_train_pos": 2457,
+    "n_inner_select_pos": 1214
+  },
+  "bootstrap": {
+    "n_resamples": 2000,
+    "seed": 42,
+    "sampling_unit": "validation user",
+    "f1_thresholds": "frozen condition thresholds; not retuned in-replicate"
+  },
+  "TA2_temporary_identifier": "optimised ODST + ensemble teacher predictive anchor + optional route anchor",
+  "do_not_relabel_historical_C5": true,
+  "frozen_before_first_training_result": true
+}
