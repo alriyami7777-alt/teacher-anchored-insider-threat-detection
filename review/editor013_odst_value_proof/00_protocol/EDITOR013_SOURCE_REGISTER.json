@@ -1,0 +1,40 @@
+{
+  "task_id": "EDITOR-013",
+  "EDITOR012_PROTOCOL_COMMIT": "065d8080ec06148e12a46f0a5710b0225c9b66c7",
+  "EDITOR012_IMPLEMENTATION_COMMIT": "7007fa7927a46951129aa428970dd9cc567eb4d1",
+  "EDITOR012_PROMOTION_COMMIT": "6c9fa3fca92e3820d236d1d001c5c709245c00f9",
+  "EDITOR012_RESULTS_COMMIT": "4bcf522a502ed98e5dd393a80bd9da7fffd51964",
+  "EDITOR012_RESULTS_FULL_COMMIT": "4bcf522a502ed98e5dd393a80bd9da7fffd51964",
+  "historical_packets_readonly": true,
+  "do_not_relabel_historical_C5_as_TA2": true,
+  "TEACHER_GUIDANCE_VS_INITIALISATION": "SUPPORTED_STRONG",
+  "producing_pins": {
+    "architecture": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+    "odst": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+    "sequence_ensemble": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475"
+  },
+  "topt_hashes": {
+    "42": "b007f48085ef42b146b22a0d5ace5bb9c8380874405622281a5903831599fb20",
+    "52": "5b4c17e15a8f49ba8cf240c0092b893e6e665232967fafce8eb13e0650227f2a",
+    "62": "24bf2efa2343e4aaf5f32871c0a9bffb3d511f345375ce754e9f081f82eac02c"
+  },
+  "historical_references_frozen": [
+    "Original_Teacher",
+    "Original_C2",
+    "Original_C5",
+    "Attention_linear",
+    "EDITOR009_R2",
+    "EDITOR010_P1",
+    "EDITOR010_P4_ET1",
+    "EDITOR011_TOPT",
+    "EDITOR011_C2OPT",
+    "EDITOR011_R2OPT",
+    "EDITOR012_F00_C2OPT",
+    "EDITOR012_F10_DOPT",
+    "EDITOR012_F01_R2OPT",
+    "EDITOR012_F11_TA2"
+  ],
+  "r52_test_opened": false,
+  "r51_rerun": false,
+  "r62_rerun": false
+}

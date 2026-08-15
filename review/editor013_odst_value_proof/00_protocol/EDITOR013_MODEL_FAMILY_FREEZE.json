@@ -1,0 +1,214 @@
+{
+  "task_id": "EDITOR-013",
+  "frozen_before_results": true,
+  "encoder": "20x13 -> Bi-LSTM -> temporal attention; no encoder change",
+  "odst046": {
+    "n_trees": 4,
+    "depth": 4,
+    "temperature": 0.5,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "num_layers": 2,
+    "dropout": 0.0,
+    "leaf_init_std": 0.05,
+    "choice_function": "sparsemax_sigmoid",
+    "readout": "canonical_tree_average",
+    "candidate_id": "ODST-046",
+    "tree_dim": 1,
+    "fusion_variant": "sparsemax_sigmoid_odst"
+  },
+  "teacher_guidance": {
+    "ensemble": "equal-weight mean of T-OPT(42/52/62) logits",
+    "L_distill": "MSE(student_final_logit, ensemble_teacher_logit)",
+    "lambda_distill": 0.5,
+    "temperature": null,
+    "not_tuned_in_EDITOR013": true
+  },
+  "route_regularisation": {
+    "lambda_route": 0.5,
+    "form": "EDITOR-012 route-consistency loss",
+    "no_route_weight_search": true
+  },
+  "HISTORICAL_SINGLE_TEACHER_LOGIT_ANCHOR": "RETIRED",
+  "single_teacher_mse_is_not_historical_C5": true,
+  "single_teacher_mse": {
+    "form": "MSE(student_final_logit, matched_TOPT_seed_logit)",
+    "lambda": 0.5,
+    "temperature": null,
+    "variance_normalisation": false
+  },
+  "head_conditions": {
+    "H0-LIN": {
+      "family": "linear",
+      "readout": "none",
+      "hybrid": false,
+      "distill": false,
+      "teacher": "none",
+      "route": false
+    },
+    "H1-LIN-D": {
+      "family": "linear",
+      "readout": "none",
+      "hybrid": false,
+      "distill": true,
+      "teacher": "ensemble",
+      "route": false
+    },
+    "H2-ODST-U": {
+      "family": "odst",
+      "readout": "uniform",
+      "hybrid": false,
+      "distill": false,
+      "teacher": "none",
+      "route": false
+    },
+    "H3-ODST-U-D": {
+      "family": "odst",
+      "readout": "uniform",
+      "hybrid": false,
+      "distill": true,
+      "teacher": "ensemble",
+      "route": false
+    },
+    "H4-ODST-W": {
+      "family": "odst",
+      "readout": "weighted",
+      "hybrid": false,
+      "distill": false,
+      "teacher": "none",
+      "route": false
+    },
+    "H5-ODST-W-D": {
+      "family": "odst",
+      "readout": "weighted",
+      "hybrid": false,
+      "distill": true,
+      "teacher": "ensemble",
+      "route": false
+    },
+    "H6-HYB-U": {
+      "family": "hybrid",
+      "readout": "uniform",
+      "hybrid": true,
+      "distill": false,
+      "teacher": "none",
+      "route": false
+    },
+    "H7-HYB-U-D": {
+      "family": "hybrid",
+      "readout": "uniform",
+      "hybrid": true,
+      "distill": true,
+      "teacher": "ensemble",
+      "route": false
+    },
+    "H8-HYB-W": {
+      "family": "hybrid",
+      "readout": "weighted",
+      "hybrid": true,
+      "distill": false,
+      "teacher": "none",
+      "route": false
+    },
+    "H9-HYB-W-D": {
+      "family": "hybrid",
+      "readout": "weighted",
+      "hybrid": true,
+      "distill": true,
+      "teacher": "ensemble",
+      "route": false
+    },
+    "H1-LIN-S": {
+      "family": "linear",
+      "readout": "none",
+      "hybrid": false,
+      "distill": true,
+      "teacher": "single",
+      "route": false
+    },
+    "H3-ODST-U-S": {
+      "family": "odst",
+      "readout": "uniform",
+      "hybrid": false,
+      "distill": true,
+      "teacher": "single",
+      "route": false
+    }
+  },
+  "validation_mandatory": {
+    "L0": {
+      "family": "linear",
+      "distill": false,
+      "teacher": "none",
+      "route": false,
+      "readout": "none",
+      "hybrid": false
+    },
+    "L1": {
+      "family": "linear",
+      "distill": true,
+      "teacher": "ensemble",
+      "route": false,
+      "readout": "none",
+      "hybrid": false
+    },
+    "O0": {
+      "family": "odst",
+      "distill": false,
+      "teacher": "none",
+      "route": false,
+      "readout": "uniform",
+      "hybrid": false,
+      "reuse": "C2-OPT"
+    },
+    "O1": {
+      "family": "odst",
+      "distill": true,
+      "teacher": "ensemble",
+      "route": false,
+      "readout": "uniform",
+      "hybrid": false,
+      "reuse": "F10"
+    },
+    "TA2": {
+      "family": "odst",
+      "distill": true,
+      "teacher": "ensemble",
+      "route": true,
+      "readout": "uniform",
+      "hybrid": false,
+      "reuse": "F11"
+    },
+    "SINGLE-MSE": {
+      "family": "odst",
+      "distill": true,
+      "teacher": "single",
+      "route": false,
+      "readout": "uniform",
+      "hybrid": false
+    },
+    "ENSEMBLE-MSE": {
+      "family": "odst",
+      "distill": true,
+      "teacher": "ensemble",
+      "route": false,
+      "readout": "uniform",
+      "hybrid": false,
+      "reuse": "F10"
+    }
+  },
+  "hybrid": {
+    "final_logit": "l(x) + alpha * o(x)",
+    "alpha_init": 0.0,
+    "no_sample_dependent_gate": true
+  },
+  "no_GroupDRO": true,
+  "no_CORAL": true,
+  "no_focal_search": true,
+  "no_pairwise_ranking_search": true,
+  "T": 20,
+  "F": 13,
+  "feature_set_unchanged": true,
+  "split_unchanged": true,
+  "no_broad_odst_search": true
+}
