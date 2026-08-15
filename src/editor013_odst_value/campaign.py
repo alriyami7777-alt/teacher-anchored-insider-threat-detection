@@ -757,13 +757,16 @@ def run_confirmation(
     write_csv(_review("04_statistics", "EDITOR013_STABILITY_RESULTS.csv"), stab_rows)
     write_json(_review("04_statistics", "EDITOR013_STABILITY_RULING.json"), ruling)
 
-    odst_value = classify_odst_value(
-        float(best_delta),
-        int(best_pos),
-        float(best_ci[0]) if best_ci and np.isfinite(best_ci[0]) else None,
-        ext_pos,
-        ext_trig,
-    )
+    if not inner["decision"]["promoted"]:
+        odst_value = "NO_INCREMENTAL_ODST_VALUE"
+    else:
+        odst_value = classify_odst_value(
+            float(best_delta),
+            int(best_pos),
+            float(best_ci[0]) if best_ci and np.isfinite(best_ci[0]) else None,
+            ext_pos,
+            ext_trig,
+        )
 
     faith = {
         "PROMOTED_ODST_REFERENCE_CENTRED_FAITHFULNESS": "NOT_EVALUATED",

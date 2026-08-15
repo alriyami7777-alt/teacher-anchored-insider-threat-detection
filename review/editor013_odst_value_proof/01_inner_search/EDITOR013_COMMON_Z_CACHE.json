@@ -1,0 +1,19 @@
+{
+  "screening_seed": 42,
+  "topt_sha256": "b007f48085ef42b146b22a0d5ace5bb9c8380874405622281a5903831599fb20",
+  "encoder_frozen": true,
+  "attention_frozen": true,
+  "official_validation_used": false,
+  "inner_train": {
+    "z_sha256": "56153d9cf552573d12a117691f876975c7421d1559bf5443ee54bf082c10fda8",
+    "y_sha256": "24c75b51508dc246d2542771807e630f6aee2874fc30fa0652831e84d7af6890",
+    "n": 622000,
+    "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\z_cache\\inner_train_z.npy"
+  },
+  "inner_select": {
+    "z_sha256": "8e523cc50bf2e2da94b80be67df44a5bf56f22c73c648df6aeb4720cabb66d24",
+    "y_sha256": "965e3f84388dca2b2b7bcd71bdf7099b815c53441510272c67bde2ca75e905d1",
+    "n": 128000,
+    "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\z_cache\\inner_select_z.npy"
+  }
+}
