@@ -1,0 +1,11 @@
+{
+  "CONSENSUS_TEACHER_ADVANTAGE": "MIXED",
+  "ENSEMBLE_minus_SINGLE_mean": 0.0039851251819887175,
+  "positive_seeds": "2/3",
+  "user_cluster_ci": [
+    -0.0006397713898269477,
+    0.010175464623806382
+  ],
+  "TEACHER_GUIDANCE_VS_INITIALISATION": "SUPPORTED_STRONG",
+  "single_teacher_mse_is_not_historical_C5": true
+}
