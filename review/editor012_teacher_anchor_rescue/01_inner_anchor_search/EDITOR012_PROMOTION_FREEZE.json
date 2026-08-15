@@ -1,0 +1,64 @@
+{
+  "a0_pr_auc": 0.9368916493927097,
+  "a0_f1": 0.8835504885993485,
+  "ranked": [
+    {
+      "anchor_id": "A0",
+      "route_on": false,
+      "inner_select_pr_auc": 0.9368916493927097,
+      "inner_select_f1": 0.8835504885993485
+    },
+    {
+      "anchor_id": "A0",
+      "route_on": true,
+      "inner_select_pr_auc": 0.9338819530778155,
+      "inner_select_f1": 0.8939828080229226
+    },
+    {
+      "anchor_id": "A3",
+      "route_on": false,
+      "inner_select_pr_auc": 0.9303915282611669,
+      "inner_select_f1": 0.8805132317562149
+    },
+    {
+      "anchor_id": "A5",
+      "route_on": false,
+      "inner_select_pr_auc": 0.9298783261049942,
+      "inner_select_f1": 0.8691222570532915
+    },
+    {
+      "anchor_id": "A4",
+      "route_on": false,
+      "inner_select_pr_auc": 0.928292923833427,
+      "inner_select_f1": 0.8692277842452464
+    },
+    {
+      "anchor_id": "A2",
+      "route_on": false,
+      "inner_select_pr_auc": 0.9278651905144648,
+      "inner_select_f1": 0.8909382518043304
+    },
+    {
+      "anchor_id": "A3",
+      "route_on": true,
+      "inner_select_pr_auc": 0.925937413172459,
+      "inner_select_f1": 0.8869286287089013
+    },
+    {
+      "anchor_id": "A1",
+      "route_on": false,
+      "inner_select_pr_auc": 0.9214531387771856,
+      "inner_select_f1": 0.8678362573099415
+    }
+  ],
+  "promoted": [],
+  "promotion_source": "INNER_SELECT",
+  "official_r52_validation_not_used_for_selection": true,
+  "max_n": 2,
+  "margin": 0.001,
+  "frozen_before_official_validation_evaluation_of_candidates": true,
+  "best_two_for_route_on": [
+    "A0",
+    "A3"
+  ]
+}
