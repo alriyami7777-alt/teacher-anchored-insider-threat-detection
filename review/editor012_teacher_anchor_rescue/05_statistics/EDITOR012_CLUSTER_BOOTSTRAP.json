@@ -1,0 +1,74 @@
+{
+  "F10_minus_F00": {
+    "cluster": "user",
+    "n_users": 2000,
+    "n_valid_resamples": 2000,
+    "n_attempted_draws": 2000,
+    "seed": 42,
+    "sampling_unit": "validation user",
+    "statistic": "mean_across_seeds_delta_PR_AUC_F10_minus_F00",
+    "mean_delta_pr_auc": 0.007435125811261133,
+    "ci95_pr_auc": [
+      0.0003567499912600673,
+      0.01739075869395418
+    ],
+    "mean_delta_f1": 0.01658045831448305,
+    "ci95_f1": [
+      0.0006891109003764949,
+      0.03785536899232752
+    ],
+    "f1_thresholds_frozen": true,
+    "f1_retuned_inside_bootstrap": false,
+    "windows_not_independent": true,
+    "three_seeds_are_not_independent_experimental_units": true,
+    "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+  },
+  "F11_minus_F00": {
+    "cluster": "user",
+    "n_users": 2000,
+    "n_valid_resamples": 2000,
+    "n_attempted_draws": 2000,
+    "seed": 42,
+    "sampling_unit": "validation user",
+    "statistic": "mean_across_seeds_delta_PR_AUC_F11_minus_F00",
+    "mean_delta_pr_auc": 0.007696784403448762,
+    "ci95_pr_auc": [
+      0.00034465199044249334,
+      0.018250330566862167
+    ],
+    "mean_delta_f1": 0.015838816914443523,
+    "ci95_f1": [
+      -0.0008904306701769365,
+      0.036384141425419264
+    ],
+    "f1_thresholds_frozen": true,
+    "f1_retuned_inside_bootstrap": false,
+    "windows_not_independent": true,
+    "three_seeds_are_not_independent_experimental_units": true,
+    "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+  },
+  "F11_minus_F10": {
+    "cluster": "user",
+    "n_users": 2000,
+    "n_valid_resamples": 2000,
+    "n_attempted_draws": 2000,
+    "seed": 42,
+    "sampling_unit": "validation user",
+    "statistic": "mean_across_seeds_delta_PR_AUC_F11_minus_F10",
+    "mean_delta_pr_auc": 0.00026165859218762967,
+    "ci95_pr_auc": [
+      -0.0005179566065391281,
+      0.0013740422414832219
+    ],
+    "mean_delta_f1": -0.0007416414000395244,
+    "ci95_f1": [
+      -0.004546920819660051,
+      0.0028845157879629863
+    ],
+    "f1_thresholds_frozen": true,
+    "f1_retuned_inside_bootstrap": false,
+    "windows_not_independent": true,
+    "three_seeds_are_not_independent_experimental_units": true,
+    "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+  }
+}
