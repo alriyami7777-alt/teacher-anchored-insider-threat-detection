@@ -1,0 +1,146 @@
+{
+  "C0_minus_L1": {
+    "cluster": "user",
+    "n_users": 2000,
+    "n_valid_resamples": 2000,
+    "n_attempted_draws": 2000,
+    "seed": 42,
+    "sampling_unit": "validation user",
+    "statistic": "mean_across_seeds_delta_PR_AUC_C0_minus_L1",
+    "mean_delta_pr_auc": 0.0024536917930393985,
+    "ci95_pr_auc": [
+      -0.000293307302929228,
+      0.006266288983891744
+    ],
+    "mean_delta_f1": 0.0008761701830729929,
+    "ci95_f1": [
+      -0.004710522470387351,
+      0.007630852747696816
+    ],
+    "f1_thresholds_frozen": true,
+    "f1_retuned_inside_bootstrap": false,
+    "windows_not_independent": true,
+    "three_seeds_are_not_independent_experimental_units": true,
+    "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+  },
+  "C0_minus_TA2": {
+    "cluster": "user",
+    "n_users": 2000,
+    "n_valid_resamples": 2000,
+    "n_attempted_draws": 2000,
+    "seed": 42,
+    "sampling_unit": "validation user",
+    "statistic": "mean_across_seeds_delta_PR_AUC_C0_minus_TA2",
+    "mean_delta_pr_auc": -0.0013772260325305514,
+    "ci95_pr_auc": [
+      -0.005411855913986934,
+      0.0012450262974103665
+    ],
+    "mean_delta_f1": 0.0009218942035572748,
+    "ci95_f1": [
+      -0.0021149021142562127,
+      0.004095837968110787
+    ],
+    "f1_thresholds_frozen": true,
+    "f1_retuned_inside_bootstrap": false,
+    "windows_not_independent": true,
+    "three_seeds_are_not_independent_experimental_units": true,
+    "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+  },
+  "C1_minus_L1": {
+    "cluster": "user",
+    "n_users": 2000,
+    "n_valid_resamples": 2000,
+    "n_attempted_draws": 2000,
+    "seed": 42,
+    "sampling_unit": "validation user",
+    "statistic": "mean_across_seeds_delta_PR_AUC_C1_minus_L1",
+    "mean_delta_pr_auc": 0.002647655289225411,
+    "ci95_pr_auc": [
+      -2.6311234661080534e-05,
+      0.0064946310083522744
+    ],
+    "mean_delta_f1": 0.00031083871815330334,
+    "ci95_f1": [
+      -0.003716064456995703,
+      0.0050994948550699025
+    ],
+    "f1_thresholds_frozen": true,
+    "f1_retuned_inside_bootstrap": false,
+    "windows_not_independent": true,
+    "three_seeds_are_not_independent_experimental_units": true,
+    "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+  },
+  "C1_minus_TA2": {
+    "cluster": "user",
+    "n_users": 2000,
+    "n_valid_resamples": 2000,
+    "n_attempted_draws": 2000,
+    "seed": 42,
+    "sampling_unit": "validation user",
+    "statistic": "mean_across_seeds_delta_PR_AUC_C1_minus_TA2",
+    "mean_delta_pr_auc": -0.0011832625363445391,
+    "ci95_pr_auc": [
+      -0.0054974774822890565,
+      0.0017388273802520574
+    ],
+    "mean_delta_f1": 0.0003565627386375851,
+    "ci95_f1": [
+      -0.0038934643167966103,
+      0.004120522180384491
+    ],
+    "f1_thresholds_frozen": true,
+    "f1_retuned_inside_bootstrap": false,
+    "windows_not_independent": true,
+    "three_seeds_are_not_independent_experimental_units": true,
+    "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+  },
+  "C2_minus_L1": {
+    "cluster": "user",
+    "n_users": 2000,
+    "n_valid_resamples": 2000,
+    "n_attempted_draws": 2000,
+    "seed": 42,
+    "sampling_unit": "validation user",
+    "statistic": "mean_across_seeds_delta_PR_AUC_C2_minus_L1",
+    "mean_delta_pr_auc": 0.002364023998473521,
+    "ci95_pr_auc": [
+      -0.0003535532428984541,
+      0.006304149020472147
+    ],
+    "mean_delta_f1": -0.010432789752878624,
+    "ci95_f1": [
+      -0.028944693486611803,
+      0.0008116791516176978
+    ],
+    "f1_thresholds_frozen": true,
+    "f1_retuned_inside_bootstrap": false,
+    "windows_not_independent": true,
+    "three_seeds_are_not_independent_experimental_units": true,
+    "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+  },
+  "C2_minus_TA2": {
+    "cluster": "user",
+    "n_users": 2000,
+    "n_valid_resamples": 2000,
+    "n_attempted_draws": 2000,
+    "seed": 42,
+    "sampling_unit": "validation user",
+    "statistic": "mean_across_seeds_delta_PR_AUC_C2_minus_TA2",
+    "mean_delta_pr_auc": -0.0014668938270964284,
+    "ci95_pr_auc": [
+      -0.005293175165637499,
+      0.00115310968030876
+    ],
+    "mean_delta_f1": -0.01038706573239434,
+    "ci95_f1": [
+      -0.03179662906123318,
+      0.003391758988744202
+    ],
+    "f1_thresholds_frozen": true,
+    "f1_retuned_inside_bootstrap": false,
+    "windows_not_independent": true,
+    "three_seeds_are_not_independent_experimental_units": true,
+    "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+  }
+}

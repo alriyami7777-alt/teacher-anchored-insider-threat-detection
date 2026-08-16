@@ -1,0 +1,27 @@
+{
+  "RESIDUAL_ODST_VALUE": "NO_RESIDUAL_ODST_VALUE",
+  "FIXED_LINEAR_ODST_COMPLEMENTARITY": "MIXED",
+  "LOCAL_DIRECTIONAL_TREE_FAITHFULNESS": "SUPPORTED",
+  "HISTORICAL_GLOBAL_TOPK_FAITHFULNESS": "NOT_SUPPORTED",
+  "TEACHER_GUIDANCE_VS_INITIALISATION": "SUPPORTED_STRONG",
+  "EDITOR_ISSUE_TEACHER_INITIALISATION_ONLY": "RESOLVED",
+  "EDITOR_ISSUE_C5_NEGLIGIBLE_INCREMENT": "RESOLVED_BY_TA2",
+  "EDITOR_ISSUE_ODST_VALUE": "PARTIALLY_RESOLVED",
+  "BEST_CURRENT_PAPER_MODEL": "TA2",
+  "WHY_TEACHER_GUIDANCE": "Equal-weight ensemble logit guidance remains the only intervention with a supported predictive increment over matched task-only training; residual experiments inherit that L1 base.",
+  "WHY_ODST": "Neither the function-preserving residual nor a fixed L1+TA2 combination established reproducible incremental ranking value over the matched teacher-guided linear base.",
+  "NEXT_RECOMMENDED_ACTION": "Keep TA2 as BEST_CURRENT_PAPER_MODEL. Do not launch another generic ODST search.",
+  "PREVIOUS_RESIDUAL_ODST_INITIAL_GRADIENT": "ZERO",
+  "FUNCTION_PRESERVING_RESIDUAL_INITIAL_OUTPUT": "ZERO",
+  "FUNCTION_PRESERVING_RESIDUAL_INITIAL_ODST_GRADIENT": "NONZERO",
+  "mechanism": {
+    "skipped_residual": true,
+    "reason": "no promoted residual model"
+  },
+  "commits": {
+    "EDITOR015_PROTOCOL_COMMIT": "ba6fd93d8a2e1260ccb2e953e326885fe4e26afd",
+    "EDITOR015_IMPLEMENTATION_COMMIT": "ba6fd93d8a2e1260ccb2e953e326885fe4e26afd",
+    "EDITOR015_PROMOTION_COMMIT": "335dac8622c793c0468db14eca06d42cb405fed1",
+    "EDITOR015_RESULTS_COMMIT": "PENDING_015C"
+  }
+}
