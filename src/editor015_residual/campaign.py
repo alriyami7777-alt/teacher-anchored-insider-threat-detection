@@ -835,18 +835,32 @@ def run_mechanism_and_directional(
     users = np.asarray(bundle["val"].user).astype(str)
     best = confirm["best_name"]
     if best == "NONE" or (best, SCREENING_SEED) not in confirm["packs"]:
-        empty = {
-            "skipped": True,
-            "reason": "no promoted residual model",
-            "HISTORICAL_GLOBAL_TOPK_FAITHFULNESS": TA2_REFERENCE_CENTRED_GLOBAL_TOPK_FAITHFULNESS,
-            "LOCAL_DIRECTIONAL_TREE_FAITHFULNESS": "NOT_SUPPORTED",
-            "MALICIOUS_DIRECTIONAL_FAITHFULNESS": "NOT_SUPPORTED",
-            "BENIGN_DIRECTIONAL_FAITHFULNESS": "NOT_SUPPORTED",
-        }
-        write_csv(_review("05_directional_faithfulness", "EDITOR015_DIRECTIONAL_CONTRIBUTIONS.csv"), [])
-        write_json(_review("05_directional_faithfulness", "EDITOR015_DIRECTIONAL_FAITHFULNESS.json"), empty)
-        write_json(_review("05_directional_faithfulness", "EDITOR015_DIRECTIONAL_BOOTSTRAP.json"), {})
-        return {"directional": empty, "mechanism": {}}
+        ta2, _ = load_ta2(SCREENING_SEED, device)
+        train_loader = make_xy_loader(bundle["train"].X, bundle["train"].y, seed=0, shuffle=False)
+        val_loader = make_xy_loader(bundle["val"].X, bundle["val"].y, seed=0, shuffle=False)
+        tr = score_ta2(ta2, train_loader, device)
+        va = score_ta2(ta2, val_loader, device)
+        refs = train_references(tr["tree_outputs"])
+        faith = directional_table(
+            y=y_val,
+            tree_outputs=va["tree_outputs"],
+            references=refs,
+            linear_logit=np.zeros(len(y_val), dtype=np.float64),
+            reference_tree_outputs=None,
+            users=users,
+        )
+        write_csv(_review("05_directional_faithfulness", "EDITOR015_DIRECTIONAL_CONTRIBUTIONS.csv"), faith["contributions"])
+        write_json(
+            _review("05_directional_faithfulness", "EDITOR015_DIRECTIONAL_FAITHFULNESS.json"),
+            {
+                **{k: faith[k] for k in faith if k not in {"contributions", "bootstrap"}},
+                "model": "TA2",
+                "residual_promoted": False,
+                "HISTORICAL_GLOBAL_TOPK_FAITHFULNESS": TA2_REFERENCE_CENTRED_GLOBAL_TOPK_FAITHFULNESS,
+            },
+        )
+        write_json(_review("05_directional_faithfulness", "EDITOR015_DIRECTIONAL_BOOTSTRAP.json"), faith["bootstrap"])
+        return {"directional": faith, "mechanism": {"skipped_residual": True, "reason": "no promoted residual model"}}
 
     pack = confirm["packs"][(best, SCREENING_SEED)]
     student, modules = load_trained_residual(pack["best_checkpoint"], device)
@@ -1067,10 +1081,22 @@ def run_campaign(*, resume_after_inner: bool = False) -> dict[str, Any]:
     comp = run_complementarity(bundle=bundle, ens=ens, device=device)
     promo_path = _review("02_inner_residual", "EDITOR015_PROMOTION_FREEZE.json")
     if resume_after_inner and promo_path.is_file():
+        import csv
         import json
 
         decision = json.loads(promo_path.read_text(encoding="utf-8"))
-        inner = {"rows": [], "packs": {}, "decision": decision, "e2e_rows": [], "r3": "REDUNDANT_NOT_EXECUTED"}
+        inner_csv = _review("02_inner_residual", "EDITOR015_INNER_RESIDUAL_RESULTS.csv")
+        rows = []
+        if inner_csv.is_file():
+            with inner_csv.open(encoding="utf-8") as handle:
+                for rec in csv.DictReader(handle):
+                    if rec.get("select_PR_AUC") not in {"", "nan", "None"}:
+                        rec["select_PR_AUC"] = float(rec["select_PR_AUC"])
+                    if rec.get("select_F1") not in {"", "nan", "None"}:
+                        rec["select_F1"] = float(rec["select_F1"])
+                    rec["executed"] = str(rec.get("executed", "True")).lower() == "true"
+                    rows.append(rec)
+        inner = {"rows": rows, "packs": {}, "decision": decision, "e2e_rows": [], "r3": "REDUNDANT_NOT_EXECUTED"}
         mark_promotion_frozen()
     else:
         inner = run_inner_residual(
