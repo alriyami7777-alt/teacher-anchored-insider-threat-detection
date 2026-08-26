@@ -1,5 +1,7 @@
 # Objective 2 Protocol: CERT r5.2 Evaluation
 
+> **Status note:** This document is a historical July 2026 protocol scaffold retained for provenance. It predates the repaired teacher-guided IEEE Access resubmission and is not the current paper protocol. Current paper-facing claims and producing evidence are governed by the later frozen EDITOR protocols and resubmission freeze record.
+
 **Research objective:** Confirm model behaviour on CERT r5.2 under locked controls.
 
 **Chapter 3 phase:** Phase 2, comparative evaluation.

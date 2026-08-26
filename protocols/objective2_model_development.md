@@ -1,5 +1,7 @@
 # Objective 2 Protocol: Model Development
 
+> **Status note:** This document is a historical July 2026 protocol scaffold retained for provenance. It predates the repaired teacher-guided IEEE Access resubmission and is not the current paper protocol. Current paper-facing claims and producing evidence are governed by the later frozen EDITOR protocols and resubmission freeze record.
+
 **Research objective:** Develop and evaluate a unified differentiable sequence–ensemble architecture.
 
 **Chapter 3 phase:** Phase 2, model development and comparative evaluation.
