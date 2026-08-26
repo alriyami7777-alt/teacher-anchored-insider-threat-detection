@@ -19,7 +19,7 @@ Each completed experiment should record:
 
 1. experiment identifier;
 2. research objective;
-3. Chapter 3 phase;
+3. manuscript evidence role;
 4. dataset release and split;
 5. branch and commit hash;
 6. configuration file;
@@ -30,9 +30,11 @@ Each completed experiment should record:
 11. evidence status;
 12. known limitations.
 
-## Teacher-anchored procedure
+## Teacher-guided procedure
 
 The attention-based teacher is used only during student training. The student must be evaluated independently at inference. Any comparison must clearly identify whether it concerns training/validation evidence, a frozen comparator, or an independent test result.
+
+Teacher-informed initialisation, ensemble-teacher prediction guidance, and matched-teacher route regularisation are distinct components and must be reported separately. Route regularisation must not be reported as the principal predictive contribution.
 
 ## Reporting rule
 

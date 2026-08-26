@@ -62,7 +62,7 @@
 
 ## Important interpretation controls
 
-- Final teacher-anchored students are supported by CERT r5.2 train/validation evidence.
+- Final teacher-guided students are supported by CERT r5.2 train/validation evidence.
 - Earlier guarded-test results must not be assigned to the final students.
 - Attention–linear remains the stronger efficiency- and raw-calibration-oriented neural reference.
 - ODST is an explanation-oriented differentiable head, not an overall predictively superior classifier.
