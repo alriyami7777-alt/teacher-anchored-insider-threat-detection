@@ -1,0 +1,9 @@
+anchor,route_on,INNER_SELECT_PR_AUC,INNER_SELECT_F1,best_epoch,data,source
+A0,False,0.9368916493927097,0.8835504885993485,15,seed 42; INNER_TRAIN 622000 / INNER_SELECT 128000 windows carved from r5.2 TRAIN,review/editor012_teacher_anchor_rescue/01_inner_anchor_search/EDITOR012_INNER_ANCHOR_RESULTS.csv
+A0,True,0.9338819530778155,0.8939828080229226,9,seed 42; INNER_TRAIN 622000 / INNER_SELECT 128000 windows carved from r5.2 TRAIN,review/editor012_teacher_anchor_rescue/01_inner_anchor_search/EDITOR012_ROUTE_CONDITIONAL_RESULTS.csv
+A3,False,0.9303915282611669,0.8805132317562149,13,seed 42; INNER_TRAIN 622000 / INNER_SELECT 128000 windows carved from r5.2 TRAIN,review/editor012_teacher_anchor_rescue/01_inner_anchor_search/EDITOR012_INNER_ANCHOR_RESULTS.csv
+A5,False,0.9298783261049942,0.8691222570532915,15,seed 42; INNER_TRAIN 622000 / INNER_SELECT 128000 windows carved from r5.2 TRAIN,review/editor012_teacher_anchor_rescue/01_inner_anchor_search/EDITOR012_INNER_ANCHOR_RESULTS.csv
+A4,False,0.928292923833427,0.8692277842452464,6,seed 42; INNER_TRAIN 622000 / INNER_SELECT 128000 windows carved from r5.2 TRAIN,review/editor012_teacher_anchor_rescue/01_inner_anchor_search/EDITOR012_INNER_ANCHOR_RESULTS.csv
+A2,False,0.9278651905144648,0.8909382518043304,4,seed 42; INNER_TRAIN 622000 / INNER_SELECT 128000 windows carved from r5.2 TRAIN,review/editor012_teacher_anchor_rescue/01_inner_anchor_search/EDITOR012_INNER_ANCHOR_RESULTS.csv
+A3,True,0.925937413172459,0.8869286287089013,2,seed 42; INNER_TRAIN 622000 / INNER_SELECT 128000 windows carved from r5.2 TRAIN,review/editor012_teacher_anchor_rescue/01_inner_anchor_search/EDITOR012_ROUTE_CONDITIONAL_RESULTS.csv
+A1,False,0.9214531387771856,0.8678362573099415,4,seed 42; INNER_TRAIN 622000 / INNER_SELECT 128000 windows carved from r5.2 TRAIN,review/editor012_teacher_anchor_rescue/01_inner_anchor_search/EDITOR012_INNER_ANCHOR_RESULTS.csv

@@ -1,4 +1,4 @@
-﻿# Teacher-Guided Differentiable Sequence–Ensemble Learning for Explainable Insider Threat Detection
+# Teacher-Guided Differentiable Sequence–Ensemble Learning for Explainable Insider Threat Detection
 
 This repository is the paper-support and reproducibility repository for the
 IEEE Access manuscript of the same title. It is not a general PhD companion
@@ -12,7 +12,7 @@ The repository shares reviewed model and evaluation code, experiment protocols
 and configuration templates, result summaries and provenance records,
 explanation and robustness procedures, and documented limitations.
 
-It does **not** distribute CERT datasets, answer files, user identifiers, model
+It does **not** distribute CERT datasets, answer files, raw user identifiers (exported evidence uses pseudonyms), model
 checkpoints, large prediction arrays, or private organisational material.
 
 ## Current architecture
@@ -101,10 +101,31 @@ cross-release evaluation exposed limited transfer to CERT r6.1 despite strong
 r5.2 validation performance. The route-structural result remains supported and
 does not imply predictive transfer.
 
+## IEEE Access revision R2 (Access-2026-42960): where every result lives
+
+This section answers the reviewers' request that the repository support every analysis reported in the paper.
+
+| Paper result | Frozen source (branch @ commit : path) | Copy in this branch |
+|---|---|---|
+| r5.2 validation factorial, Eq. (18), ten-seed extension | `editor012-teacher-anchor-rescue` @ `4bcf522` : `review/editor012_teacher_anchor_rescue/` | `results/tables/r52_validation_all_models.csv`, `results/tables/ten_seed_extension_extra_seeds.csv` |
+| Formulation search before the factorial (8 candidates) | same : `01_inner_anchor_search/` | `results/tables/formulation_search_editor012_inner.csv` |
+| XGBoost-40 / RF-40 on the same r5.2 validation partition | `editor015-residual-complementarity` @ `d8e1d04` : `review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv` | `results/tables/r52_validation_all_models.csv` |
+| CERT r5.1 and r6.2 (frozen pre-TA2 family) | same : `review/editor007d_cross_version_synthesis/` | `results/tables/cross_version_r51_r62_frozen_family.csv` |
+| Non-overlapping and endpoint analyses | `editor029-endpoint-dependence-aware` @ `28475d5` : `review/editor029_endpoint_dependence/` | `evidence/` (redacted export) |
+| CERT r6.1 cross-release | `editor024-r61-final-confirmation` @ `23794a7` : `review/editor024_r61_final_confirmation/` | `evidence/` (redacted export) |
+| Explanation and degraded-input analyses | `editor017-…` @ `c75321a`, `editor023-…` @ `a480fa2` | `evidence/` (redacted export) |
+| User-disjoint untouched holdout (pre-registered) | new, see `revision_r2/` | `revision_r2/holdout/` |
+
+- **Disclosures** of results and selection steps that the submitted manuscript did not report: `revision_r2/DISCLOSURES.md`.
+- **Claim-to-evidence matrix:** `review/CLAIM_EVIDENCE_MATRIX.csv`.
+- **Pinned environment:** `requirements.txt`, `revision_r2/ENVIRONMENT.md`.
+- **CERT user identifiers** (synthetic, from the public CERT generator) are pseudonymised in the `evidence/` export: each identifier is replaced consistently by `U_` + the first 10 hex characters of its SHA-256. This is pseudonymisation, not irreversible anonymisation. `evidence/EXPORT_MANIFEST.csv` records the SHA-256 of every original and exported file, so each exported file can be matched to its frozen original. Binary arrays, predictions and checkpoints are listed but not published.
+- **Historical branches.** `editor015-residual-complementarity` is a superseded working branch, kept unchanged for transparency.
+
 ## Key limitations
 
-- CERT r5.2 temporal partitions contain the same users, so the evidence does not
-  test entirely unseen-user generalisation.
+- CERT r5.2 temporal partitions contain the same users. Unseen-user generalisation
+  is tested only by the R2 pre-registered user-disjoint holdout (`revision_r2/`).
 - Explanation support is bounded. The local signed reference-centred
   tree-contribution intervention is supported. Routes, reached leaves, tree
   outputs and memberships are traceable internal evidence only. General global
@@ -141,6 +162,4 @@ See `SETUP_WINDOWS.md`.
 
 ## Licence
 
-The initial repository uses a temporary all-rights-reserved notice. A public
-open-source licence should be selected only after the code and data-sharing
-position have been reviewed.
+Code and documentation: MIT (see `LICENSE`). The CERT Insider Threat datasets are **not** redistributed here; they remain subject to their providers' terms.

@@ -1,0 +1,41 @@
+model,seed,PR_AUC,F1,note,source (branch editor015-residual-complementarity)
+teacher_frozen_odst,42,0.9334097970800642,0.9161849710982659,frozen reference (pre-repair family),review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv
+teacher_frozen_odst,52,0.9244683742138952,0.9059334298118669,frozen reference (pre-repair family),review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv
+teacher_frozen_odst,62,0.9347401734577593,0.9024561403508772,frozen reference (pre-repair family),review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv
+C2,42,0.9318562820153213,0.9115549215406562,frozen reference (pre-repair family),review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv
+C2,52,0.9241070335969491,0.9028169014084507,frozen reference (pre-repair family),review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv
+C2,62,0.9311632461405431,0.8926223520818115,frozen reference (pre-repair family),review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv
+C5_original_paper,42,0.9335913824585874,0.9200863930885529,frozen reference (pre-repair family),review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv
+C5_original_paper,52,0.924619601134615,0.9075144508670521,frozen reference (pre-repair family),review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv
+C5_original_paper,62,0.9357124093097354,0.9015471167369902,frozen reference (pre-repair family),review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv
+attention_linear,42,0.9378816467540203,0.9188801148600143,frozen reference (pre-repair family),review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv
+attention_linear,52,0.9096510434894257,0.9041697147037308,frozen reference (pre-repair family),review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv
+attention_linear,62,0.9458481407834319,0.9014675052410901,frozen reference (pre-repair family),review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv
+RF_40,42,0.9332817385294396,0.8361498897869214,frozen reference (pre-repair family),review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv
+RF_40,52,0.9274669636876686,0.8260869565217391,frozen reference (pre-repair family),review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv
+RF_40,62,0.9268576618039058,0.8338192419825073,frozen reference (pre-repair family),review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv
+XGBoost_40,42,0.9669215203190463,0.923501033769814,frozen reference (pre-repair family),review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv
+XGBoost_40,52,0.9649758249486352,0.9251040221914009,frozen reference (pre-repair family),review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv
+XGBoost_40,62,0.9677620095743968,0.9302004146510021,frozen reference (pre-repair family),review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv
+F00_C2OPT | teacher-initialised task-only control (C2-OPT),42,0.9443205892331505,0.9113018597997139,EDITOR-012 factorial; checkpoint selected on this partition,review/editor012_teacher_anchor_rescue/02_factorial_confirmation/EDITOR012_FACTORIAL_RESULTS.csv
+"F10_DOPT | ensemble guidance, route off (D-OPT)",42,0.9441007472746944,0.9190751445086706,EDITOR-012 factorial; checkpoint selected on this partition,review/editor012_teacher_anchor_rescue/02_factorial_confirmation/EDITOR012_FACTORIAL_RESULTS.csv
+F01_R2OPT | route only (R2-OPT),42,0.9471384496065599,0.9179157744468237,EDITOR-012 factorial; checkpoint selected on this partition,review/editor012_teacher_anchor_rescue/02_factorial_confirmation/EDITOR012_FACTORIAL_RESULTS.csv
+F11_DROPT | TA2 final (guidance + route),42,0.9454098053584642,0.9194244604316547,EDITOR-012 factorial; checkpoint selected on this partition,review/editor012_teacher_anchor_rescue/02_factorial_confirmation/EDITOR012_FACTORIAL_RESULTS.csv
+F00_C2OPT | teacher-initialised task-only control (C2-OPT),52,0.9214711755922543,0.9100071994240461,EDITOR-012 factorial; checkpoint selected on this partition,review/editor012_teacher_anchor_rescue/02_factorial_confirmation/EDITOR012_FACTORIAL_RESULTS.csv
+"F10_DOPT | ensemble guidance, route off (D-OPT)",52,0.9361330144482553,0.9205202312138728,EDITOR-012 factorial; checkpoint selected on this partition,review/editor012_teacher_anchor_rescue/02_factorial_confirmation/EDITOR012_FACTORIAL_RESULTS.csv
+F01_R2OPT | route only (R2-OPT),52,0.9257403375052433,0.9092208720514653,EDITOR-012 factorial; checkpoint selected on this partition,review/editor012_teacher_anchor_rescue/02_factorial_confirmation/EDITOR012_FACTORIAL_RESULTS.csv
+F11_DROPT | TA2 final (guidance + route),52,0.9337067425514769,0.9178674351585014,EDITOR-012 factorial; checkpoint selected on this partition,review/editor012_teacher_anchor_rescue/02_factorial_confirmation/EDITOR012_FACTORIAL_RESULTS.csv
+F00_C2OPT | teacher-initialised task-only control (C2-OPT),62,0.9401799007272055,0.8918353105373342,EDITOR-012 factorial; checkpoint selected on this partition,review/editor012_teacher_anchor_rescue/02_factorial_confirmation/EDITOR012_FACTORIAL_RESULTS.csv
+"F10_DOPT | ensemble guidance, route off (D-OPT)",62,0.9475508279790588,0.9222144358794674,EDITOR-012 factorial; checkpoint selected on this partition,review/editor012_teacher_anchor_rescue/02_factorial_confirmation/EDITOR012_FACTORIAL_RESULTS.csv
+F01_R2OPT | route only (R2-OPT),62,0.9396079561231327,0.8924187725631769,EDITOR-012 factorial; checkpoint selected on this partition,review/editor012_teacher_anchor_rescue/02_factorial_confirmation/EDITOR012_FACTORIAL_RESULTS.csv
+F11_DROPT | TA2 final (guidance + route),62,0.9494100170861509,0.9222065063649222,EDITOR-012 factorial; checkpoint selected on this partition,review/editor012_teacher_anchor_rescue/02_factorial_confirmation/EDITOR012_FACTORIAL_RESULTS.csv
+teacher_frozen_odst,MEAN,0.930873,,derived mean of seeds 42/52/62,
+C2,MEAN,0.929042,,derived mean of seeds 42/52/62,
+C5_original_paper,MEAN,0.931308,,derived mean of seeds 42/52/62,
+attention_linear,MEAN,0.931127,,derived mean of seeds 42/52/62,
+RF_40,MEAN,0.929202,,derived mean of seeds 42/52/62,
+XGBoost_40,MEAN,0.966553,,derived mean of seeds 42/52/62,
+F00_C2OPT | teacher-initialised task-only control (C2-OPT),MEAN,0.935324,,derived mean of seeds 42/52/62,
+"F10_DOPT | ensemble guidance, route off (D-OPT)",MEAN,0.942595,,derived mean of seeds 42/52/62,
+F01_R2OPT | route only (R2-OPT),MEAN,0.937496,,derived mean of seeds 42/52/62,
+F11_DROPT | TA2 final (guidance + route),MEAN,0.942842,,derived mean of seeds 42/52/62,
