@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-22T09:04:00.450127+00:00",
+  "cache_receipts": [
+    {
+      "split": "train",
+      "cache": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\full_train_preflight_20261007_r1\\train_daily_F29.npy",
+      "sha256": "c63b721b7c5e09adac93e537cd54aaf457dca205f33b65b778506774c440bc1a",
+      "historical_receipt": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\full_train_preflight_20261007_r1\\OUTPUT_IDENTITY.json",
+      "historical_receipt_sha256": "4caeac710cf92b15586b1c859ba4e1dd8e5352fb5977b48a2408ec39d2dc4607",
+      "matches_historical_receipt": true
+    },
+    {
+      "split": "validation",
+      "cache": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\validation_preflight_20261007_r1\\validation_daily_F29.npy",
+      "sha256": "1a706dd9b0e4b271282311d3616511bd62abdfe2a8fa534bdbdfa3f9bff4c6ba",
+      "historical_receipt": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\validation_preflight_20261007_r1\\OUTPUT_IDENTITY.json",
+      "historical_receipt_sha256": "566ed8c3f7e426c45d2bdaf68b87cf1f44b4df3e6d892b9ff7c97517ef3a7cc9",
+      "matches_historical_receipt": true
+    }
+  ],
+  "feature_catalog": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\revision_v0.2\\feature_catalog_v0.2.json",
+  "feature_catalog_sha256": "7c77878c855752042ad5d202f1c84b7aafab7aa29ee5b3ac574cf877400ad2e4",
+  "hashing_only_no_holdout_values_materialized": true
+}

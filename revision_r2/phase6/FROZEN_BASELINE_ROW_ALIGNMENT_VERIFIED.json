@@ -1,0 +1,78 @@
+{
+  "utc": "2026-10-22T09:24:43.107117+00:00",
+  "checks": [
+    {
+      "model": "XGBoost-260",
+      "seed": 42,
+      "development_rows": 48000,
+      "user_and_sequence_order_exact": true
+    },
+    {
+      "model": "XGBoost-260",
+      "seed": 52,
+      "development_rows": 48000,
+      "user_and_sequence_order_exact": true
+    },
+    {
+      "model": "XGBoost-260",
+      "seed": 62,
+      "development_rows": 48000,
+      "user_and_sequence_order_exact": true
+    },
+    {
+      "model": "MLP-260",
+      "seed": 42,
+      "development_rows": 48000,
+      "user_and_sequence_order_exact": true
+    },
+    {
+      "model": "MLP-260",
+      "seed": 52,
+      "development_rows": 48000,
+      "user_and_sequence_order_exact": true
+    },
+    {
+      "model": "MLP-260",
+      "seed": 62,
+      "development_rows": 48000,
+      "user_and_sequence_order_exact": true
+    },
+    {
+      "model": "RF-260",
+      "seed": 42,
+      "development_rows": 48000,
+      "user_and_sequence_order_exact": true
+    },
+    {
+      "model": "RF-260",
+      "seed": 52,
+      "development_rows": 48000,
+      "user_and_sequence_order_exact": true
+    },
+    {
+      "model": "RF-260",
+      "seed": 62,
+      "development_rows": 48000,
+      "user_and_sequence_order_exact": true
+    },
+    {
+      "model": "Logistic-260",
+      "seed": 42,
+      "development_rows": 48000,
+      "user_and_sequence_order_exact": true
+    },
+    {
+      "model": "Logistic-260",
+      "seed": 52,
+      "development_rows": 48000,
+      "user_and_sequence_order_exact": true
+    },
+    {
+      "model": "Logistic-260",
+      "seed": 62,
+      "development_rows": 48000,
+      "user_and_sequence_order_exact": true
+    }
+  ],
+  "excluded_users_metadata_only_no_scores_used": true
+}

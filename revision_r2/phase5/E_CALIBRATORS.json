@@ -1,0 +1,24 @@
+[
+  {
+    "model": "TRACE",
+    "method": "temperature_scaling",
+    "temperature": 0.305295910699814,
+    "fit_calls": 1,
+    "optimizer_success": true,
+    "fit_population": "DEVELOPMENT VALIDATION; three fixed seeds pooled equally",
+    "rows": 144000,
+    "positive_labels": 1419,
+    "negative_log_likelihood": 0.00934303897083688
+  },
+  {
+    "model": "XGBoost_40",
+    "method": "Platt_scaling",
+    "slope": 0.6695761306253203,
+    "intercept": 1.020627081342814,
+    "fit_calls": 1,
+    "fit_population": "DEVELOPMENT VALIDATION; three fixed seeds pooled equally",
+    "rows": 144000,
+    "positive_labels": 1419,
+    "iterations": 11
+  }
+]

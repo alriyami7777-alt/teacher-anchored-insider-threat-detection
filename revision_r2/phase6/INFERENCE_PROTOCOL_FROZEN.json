@@ -1,0 +1,236 @@
+{
+  "utc": "2026-10-22T08:21:18.628189+00:00",
+  "models": [
+    {
+      "model": "TRACE",
+      "seed": 42,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed42\\best_student.pt",
+      "sha256": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8",
+      "threshold": 0.79,
+      "block": "original",
+      "frozen_predictions": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed42\\val_logits.npy",
+      "predictions_sha256": "78ad45e4e13a8d802062aa54599a9c4a82c086e504efecae3b2d34b57ebfdb5c"
+    },
+    {
+      "model": "TRACE",
+      "seed": 52,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed52\\best_student.pt",
+      "sha256": "7613ba559bcf55827d04129066eb595b677994494609646f8b2463308ed5edb4",
+      "threshold": 0.74,
+      "block": "original",
+      "frozen_predictions": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed52\\val_logits.npy",
+      "predictions_sha256": "a8f8452a64243da6e0107b5e12ffd5d762b2f8e18b8c7e3db2c039979974b592"
+    },
+    {
+      "model": "TRACE",
+      "seed": 62,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed62\\best_student.pt",
+      "sha256": "904003dca219435464476cf36abedb11ee4e2f7a11ff09caa3791d685b8f644d",
+      "threshold": 0.59,
+      "block": "original",
+      "frozen_predictions": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed62\\val_logits.npy",
+      "predictions_sha256": "b36030b4d52e04bdde6f93eba67da7e8a0c27831685e79b0a9d164a90d0bfa62"
+    },
+    {
+      "model": "XGBoost-260",
+      "seed": 42,
+      "threshold": 0.5800000000000001,
+      "checkpoint": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\xgboost_seed42\\model.json",
+      "sha256": "6c5ef7d7e3d58af06484f2fa530ddc53f213c9013b06658ac37d0b99b98b9a3a",
+      "frozen_predictions": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\xgboost_seed42\\validation_predictions.npz",
+      "predictions_sha256": "7ab2c561f4225a2439b0f913cf7250b00b9e86a33ab902553f424b834329233a"
+    },
+    {
+      "model": "XGBoost-260",
+      "seed": 52,
+      "threshold": 0.59,
+      "checkpoint": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\xgboost_seed52\\model.json",
+      "sha256": "4189f89ee24f22607c22d3f9909ecce3a1da9d209e8e7d409333839537ff828e",
+      "frozen_predictions": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\xgboost_seed52\\validation_predictions.npz",
+      "predictions_sha256": "0c8a835564e7c0c3385af2209cf1c780b7672403d8572b45ee8ef96643dedfa6"
+    },
+    {
+      "model": "XGBoost-260",
+      "seed": 62,
+      "threshold": 0.5,
+      "checkpoint": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\xgboost_seed62\\model.json",
+      "sha256": "5769338092e96e1731a2fb5623c7fd2a6d3efcde1f1ad0aaf52705f08015818b",
+      "frozen_predictions": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\xgboost_seed62\\validation_predictions.npz",
+      "predictions_sha256": "a1a629f9f4afc310985a055b01cab386ceab9c6509a53bb25590d2202f042f9d"
+    },
+    {
+      "model": "MLP-260",
+      "seed": 42,
+      "threshold": 0.9400000000000001,
+      "checkpoint": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\mlp_seed42\\model.pt",
+      "sha256": "760dfce5cad903afcebc724ec45cb0d439df3cdfdd5d94dc75b20419571e4dc4",
+      "frozen_predictions": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\mlp_seed42\\validation_predictions.npz",
+      "predictions_sha256": "36f6864675eb37cb8f1e5d835a6c1cf6a7a8395cd61495b90269afb5cb67116a",
+      "scaler": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\mlp_seed42\\scaler.joblib",
+      "scaler_sha256": "43c2570b92f7432a9f89e43ce90110cfa4332e9d81652dbd3141a24d13602fcd"
+    },
+    {
+      "model": "MLP-260",
+      "seed": 52,
+      "threshold": 0.91,
+      "checkpoint": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\mlp_seed52\\model.pt",
+      "sha256": "d1190eb6253bf621fbc2fe72b571dffa78f2d71210e228f701d0d70d2414a9e5",
+      "frozen_predictions": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\mlp_seed52\\validation_predictions.npz",
+      "predictions_sha256": "be4bea5f8865ffaae8ee74644a003a3808ade59ffd5c1f3fd9654c4310b63de7",
+      "scaler": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\mlp_seed52\\scaler.joblib",
+      "scaler_sha256": "43c2570b92f7432a9f89e43ce90110cfa4332e9d81652dbd3141a24d13602fcd"
+    },
+    {
+      "model": "MLP-260",
+      "seed": 62,
+      "threshold": 0.86,
+      "checkpoint": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\mlp_seed62\\model.pt",
+      "sha256": "44f7ccde0fcbe5a1c9a5ca21ab2727bab8fee022036c930bf46f5e71b3a5f9b5",
+      "frozen_predictions": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\mlp_seed62\\validation_predictions.npz",
+      "predictions_sha256": "525df81194c51b4b2eefb0ee7002e484c760d1636f9c0df7120ab30ae5a69ea2",
+      "scaler": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\mlp_seed62\\scaler.joblib",
+      "scaler_sha256": "43c2570b92f7432a9f89e43ce90110cfa4332e9d81652dbd3141a24d13602fcd"
+    },
+    {
+      "model": "RF-260",
+      "seed": 42,
+      "threshold": 0.41000000000000003,
+      "checkpoint": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\random_forest_seed42\\model.joblib",
+      "sha256": "048e9c0381d6ea8e3ec217c9bc502f41a7c05c8341c427e288cb171b17609f51",
+      "frozen_predictions": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\random_forest_seed42\\validation_predictions.npz",
+      "predictions_sha256": "5addabb72ee53c763666e5de239a9ccbcc820df33de453300f93581a0dfb19de"
+    },
+    {
+      "model": "RF-260",
+      "seed": 52,
+      "threshold": 0.39,
+      "checkpoint": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\random_forest_seed52\\model.joblib",
+      "sha256": "4836713111f9d391c2232dec29f606e298079174d58d695b51fa757bf1d8e303",
+      "frozen_predictions": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\random_forest_seed52\\validation_predictions.npz",
+      "predictions_sha256": "71cfa07237edcf7d2f61fcd986f13e7787567617c4b04f15cc329ec06724d062"
+    },
+    {
+      "model": "RF-260",
+      "seed": 62,
+      "threshold": 0.39,
+      "checkpoint": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\random_forest_seed62\\model.joblib",
+      "sha256": "b39435aea26e48009b5c07fa6cd48d8b2158e758be81e2b1cb3aecc2dc138f5a",
+      "frozen_predictions": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\random_forest_seed62\\validation_predictions.npz",
+      "predictions_sha256": "500d5c074d2fe67566cdfe108db38cacef201fc03db2bf99df569625cfb54549"
+    },
+    {
+      "model": "Logistic-260",
+      "seed": 42,
+      "threshold": 0.7000000000000001,
+      "checkpoint": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\logistic_regression_seed42\\model.joblib",
+      "sha256": "509fb9106b8abd4b479415febe0c7f576f56f0f8dbe52e474a11f362749fcd4f",
+      "frozen_predictions": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\logistic_regression_seed42\\validation_predictions.npz",
+      "predictions_sha256": "a29548ee60f857fef28c61568abb32072c56b65dd0f61e16a825894e5ed5639f",
+      "scaler": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\logistic_regression_seed42\\scaler.joblib",
+      "scaler_sha256": "43c2570b92f7432a9f89e43ce90110cfa4332e9d81652dbd3141a24d13602fcd"
+    },
+    {
+      "model": "Logistic-260",
+      "seed": 52,
+      "threshold": 0.99,
+      "checkpoint": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\logistic_regression_seed52\\model.joblib",
+      "sha256": "8a09dc7288e8371c806ed1c316f2096f95d159be3b192895ca554613cc4664f3",
+      "frozen_predictions": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\logistic_regression_seed52\\validation_predictions.npz",
+      "predictions_sha256": "a669096a5e7b2c4523ec7aefc57df298aed0c767087a31d1fecc5271abcb8650",
+      "scaler": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\logistic_regression_seed52\\scaler.joblib",
+      "scaler_sha256": "43c2570b92f7432a9f89e43ce90110cfa4332e9d81652dbd3141a24d13602fcd"
+    },
+    {
+      "model": "Logistic-260",
+      "seed": 62,
+      "threshold": 0.99,
+      "checkpoint": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\logistic_regression_seed62\\model.joblib",
+      "sha256": "0eb05e4003e037741e8e26a463015774be97dfe2327265f7bf3689f30d73ee58",
+      "frozen_predictions": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\logistic_regression_seed62\\validation_predictions.npz",
+      "predictions_sha256": "a62506d8bfc2fb9dc7f8b6dc1132fa6d29f7274176ef910847a5447e94d31c55",
+      "scaler": "C:\\PhD\\07_Projects\\cert-r52-same-information-baselines\\outputs\\objective2\\r52_same_information_baselines_v1\\logistic_regression_seed62\\scaler.joblib",
+      "scaler_sha256": "43c2570b92f7432a9f89e43ce90110cfa4332e9d81652dbd3141a24d13602fcd"
+    },
+    {
+      "model": "Attention-linear",
+      "seed": 42,
+      "threshold": 0.9500000000000001,
+      "checkpoint": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed42\\best.pt",
+      "sha256": "b807a82343b432343b7e3cbc86ee76cba7011066827f3baa089aa78a02c02b53",
+      "frozen_predictions": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed42\\validation_predictions.csv",
+      "predictions_sha256": "250a27cddd69ace07331c8f456a76f586e230d2dc9b932f97f7667a15febb934"
+    },
+    {
+      "model": "Attention-linear",
+      "seed": 52,
+      "threshold": 0.9600000000000001,
+      "checkpoint": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed52\\best.pt",
+      "sha256": "5e5e2a136bedba3d3477d05c5b1215331cb97339b74003bcb60f8cb4885ba86c",
+      "frozen_predictions": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed52\\validation_predictions.csv",
+      "predictions_sha256": "141946d18fe6f0c0c4c0df7b5c210dce209be48a33a576c6c94707d494ea0c53"
+    },
+    {
+      "model": "Attention-linear",
+      "seed": 62,
+      "threshold": 0.9400000000000001,
+      "checkpoint": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed62\\best.pt",
+      "sha256": "4543c167fdab3b0376087731571f7b3bcecadd43f8ff05c6b5371f0073ba425a",
+      "frozen_predictions": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed62\\validation_predictions.csv",
+      "predictions_sha256": "abb152bf6af8b7b7dfd5206dc70e69021aad025fd6277301e6db519db2c0fbe2"
+    }
+  ],
+  "cohort": {
+    "users": 1500,
+    "windows": 48000,
+    "positive_windows": 473,
+    "multi_day_positives": 384,
+    "multi_day_users": 16,
+    "negatives": 47527,
+    "historical_all_user_multiday_positives": 613,
+    "historical_all_user_multiday_users": 26,
+    "exclusions": "500 HOLDOUT users omitted before feature access and all metrics"
+  },
+  "methods": {
+    "shuffle_seed": 2026,
+    "partial_history": "TRAIN medians from frozen original TRAIN_REFERENCES.json",
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 42,
+    "attention_cases": "Each seed: deterministic stable probability ranks 25/50/75 percentiles within TP/TN/FP/FN; seed42 median heatmap",
+    "attention_interventions": "existing objective3_attention_faithfulness.forward_with_timestep_mask: zero invalid timestep vectors and masked-softmax invalid energies, positions retained; top-k deletion and sufficiency against 25 matched controls",
+    "attention_protocol_seed": 20260724,
+    "attention_484_inconsistency": "484/151 belongs to r4.2; use actual r5.2 deterministic case protocol, restricted development cohort",
+    "historical_all_user_TRACE_AP": 0.942842
+  },
+  "files": {
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\Attention-linear_42_T0.npy": "879a3e8f8d1e5bfbbbf82673fdd50e8f6c8bc0e0c42e4726c4b863e776e40aa7",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\Attention-linear_52_T0.npy": "126f3c74de9dd358c0984ec4a58012007b9bde4aacdc3d07ed7ff6917641e5b2",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\Attention-linear_62_T0.npy": "5ec76000ad23d656ed3135b0c64596c579339cda4494b2896469607da9f00d96",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\Logistic-260_42_T0.npy": "044b1a4845937490255395efde78b350d2dda43042118f390bc229bd0425f8f8",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\Logistic-260_52_T0.npy": "e0ed05e9a19992f49c1355bd215d4f7b6c7e71555459a33dc085c979860be995",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\Logistic-260_62_T0.npy": "f4f9a033b05e96ae8774847d85098fdbdaa4d4f7c5b0c08d8bbc36bad601eb5d",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\metadata.npz": "9c37fb1f12407970031e1fec468f1279f1ae93430c1400c3a3b99d1437cf1d8c",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\MLP-260_42_T0.npy": "7e72bffb6ed72e162e1fa1031a7156bbe449f262ed9da0a0cb6cf8c954ed0812",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\MLP-260_52_T0.npy": "14eccfb66f5d6e08e901ee6415c2a37e430135e6198f759efd46e6e85891b575",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\MLP-260_62_T0.npy": "5b6a6136552f2796874f0f956d4b2d4e8dd7c5cf1493f8f085c5c7d12cb72a1b",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\multi_day_counts.npy": "7a5418ecb1b5a009cf4317c68b98d5a5a82ccfcd7c8034d5d9939ed80f04190d",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\original_row_indices.npy": "103c609d13aa0cc068be069e8d458af58f1144a65f28c77ef454681ebc1ab73b",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\original_validation_X.npy": "1f4fe7397859d71d0d7660716ade54e18ad9242d3013205d5b1ed7170040e50d",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\RF-260_42_T0.npy": "4258db686205e8785f411aa9c565350d57a0dad4b97bc36199d7f02640a1f1dd",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\RF-260_52_T0.npy": "10230a015952ae74cd5d02bebef2b451950dbc5f6000f9fddd12a75372a3bb83",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\RF-260_62_T0.npy": "b4d72e41de4b4506cafbfbcfe9f6e69315746cf922516106aed44b43bf935abb",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\TRACE_42_T0.npy": "ec7a4fa53fb140389cab2d49a8a2960e7d4c9d7ad54cbc2f618baf04392b0012",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\TRACE_52_T0.npy": "d5a898f5f9d76f84526f69f56e3bcf884d70a9057a61d08c6ac7b9447f822a0a",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\TRACE_62_T0.npy": "9ca2b0eb541f851de6de100e7e5be60e71b0e2b85725ebf6a2366f747fe216eb",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\TRAIN_MEDIANS.npy": "9c97914c8d365a00012fa0ef23a3ff5efd4d04b2bba68171c00f2ef2da33ed02",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\XGBoost-260_42_T0.npy": "9c01b302a4551881200c3caab36880cd853d56f3a78b16a8d1dfed8208b0e019",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\XGBoost-260_52_T0.npy": "5454902a2fc0a9cc85f380e76f714ff022dbbd548550bd2bfe6a4c4f3f95c47a",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\XGBoost-260_62_T0.npy": "598024c4e27b72ab2ae9ee22bd90415d297c105a6011b780353f186ea182d303",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\inference\\y.npy": "00a48050bc36c82682fcf2bc6f29875c8cefee8a71865a087fa03431bb993e76"
+  },
+  "code_hashes": {
+    "C:\\PhD\\00_RESEARCH_CONTROL\\phase6_staging\\bootstrap6.py": "7c885e5f2662caf1a3e9a8c41a33a9fe8b28bcd6f1ce382ea835e23c48933b50",
+    "C:\\PhD\\00_RESEARCH_CONTROL\\phase6_staging\\common6.py": "7497364bc62bfdb7f2dafd8e4e0a3aee5791169b0d9d6c89cc4409c4ef5d5cca",
+    "C:\\PhD\\00_RESEARCH_CONTROL\\phase6_staging\\inference6.py": "7e211abc2a21547d70e006f5c03ef1d9f5a4ce79c82b4a3c201e5453802cd002",
+    "C:\\PhD\\00_RESEARCH_CONTROL\\phase6_staging\\prepare_inference6.py": "9a3e86158a87bb2026d606aa9714702465a6c9f1c22ceb65e51840c1b5d6a56d"
+  }
+}

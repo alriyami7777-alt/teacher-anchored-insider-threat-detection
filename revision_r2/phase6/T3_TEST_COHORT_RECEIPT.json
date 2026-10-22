@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-22T10:13:17.844963+00:00",
+  "release": "r4.2",
+  "period": [
+    "2011-03-28",
+    "2011-05-17"
+  ],
+  "users": 1000,
+  "windows": 32000,
+  "positive_windows": 84,
+  "scaler_fit": "TRAIN only",
+  "scaler_sha256": "629c597a736eb8c5615bf999c03b6a8d7613e89a03b8c28c3025fb038ea3a9cb",
+  "r52_test_accessed": false,
+  "holdout_user_overlap": 0,
+  "metadata_source_sha256": "3616ecc3f4dc2054a82bf657ecbb0df3bcd05b1a5813e484cc964219fd7617f9"
+}

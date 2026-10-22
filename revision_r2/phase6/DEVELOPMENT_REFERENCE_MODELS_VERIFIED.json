@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-22T09:19:46.485595+00:00",
+  "models": [
+    {
+      "model": "TRACE development reference",
+      "seed": 42,
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\TA2\\seed42\\best.pt",
+      "sha256": "80fd6ecbd8c3f22b5241aad353c02ca34426c9dc34c8c1fa489bb679f87234d9",
+      "threshold": 0.56,
+      "matches_existing_freeze": true
+    },
+    {
+      "model": "TRACE development reference",
+      "seed": 52,
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\TA2\\seed52\\best.pt",
+      "sha256": "2927c9975a4f59b219afd448c709b964396a879ac4f36b82bfef7538d3612080",
+      "threshold": 0.56,
+      "matches_existing_freeze": true
+    },
+    {
+      "model": "TRACE development reference",
+      "seed": 62,
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\TA2\\seed62\\best.pt",
+      "sha256": "0d246d87aecbc078bf46bf211fc2a03df7bdf41355da17f82079da39849d5f18",
+      "threshold": 0.38,
+      "matches_existing_freeze": true
+    }
+  ],
+  "source_manifest_sha256": "90fcc54224afba7c2f63c8a1d8f38065780bbf662c0379ef9bd8950d0d0e515b"
+}

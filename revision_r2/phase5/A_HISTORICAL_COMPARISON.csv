@@ -1,0 +1,13 @@
+release,historical_family,historical_mean_AP,current_original_TRACE_mean_AP,difference,descriptive_transfer,inference
+r5.1,C2,0.26869503812594614,0.2778720494169021,0.009177011290955939,better point estimate,descriptive historical comparison; no paired superiority claim across different frozen families
+r5.1,C5_original_paper,0.27693232640013693,0.2778720494169021,0.0009397230167651482,better point estimate,descriptive historical comparison; no paired superiority claim across different frozen families
+r5.1,RF_40,0.30918378411729924,0.2778720494169021,-0.031311734700397165,worse point estimate,descriptive historical comparison; no paired superiority claim across different frozen families
+r5.1,XGBoost_40,0.395410220862449,0.2778720494169021,-0.1175381714455469,worse point estimate,descriptive historical comparison; no paired superiority claim across different frozen families
+r5.1,attention_linear,0.2613559271342891,0.2778720494169021,0.016516122282612955,better point estimate,descriptive historical comparison; no paired superiority claim across different frozen families
+r5.1,teacher_frozen_odst,0.2615298826953765,0.2778720494169021,0.016342166721525553,better point estimate,descriptive historical comparison; no paired superiority claim across different frozen families
+r6.2,C2,0.00045516555891120003,0.0004429517130215331,-1.2213845889666919e-05,worse point estimate,descriptive historical comparison; no paired superiority claim across different frozen families
+r6.2,C5_original_paper,0.0004318686666786333,0.0004429517130215331,1.1083046342899789e-05,better point estimate,descriptive historical comparison; no paired superiority claim across different frozen families
+r6.2,RF_40,0.0065150473435178005,0.0004429517130215331,-0.006072095630496268,worse point estimate,descriptive historical comparison; no paired superiority claim across different frozen families
+r6.2,XGBoost_40,0.0077591241201302,0.0004429517130215331,-0.007316172407108667,worse point estimate,descriptive historical comparison; no paired superiority claim across different frozen families
+r6.2,attention_linear,0.0005118724438886666,0.0004429517130215331,-6.892073086713351e-05,worse point estimate,descriptive historical comparison; no paired superiority claim across different frozen families
+r6.2,teacher_frozen_odst,0.0004927653487321334,0.0004429517130215331,-4.981363571060027e-05,worse point estimate,descriptive historical comparison; no paired superiority claim across different frozen families

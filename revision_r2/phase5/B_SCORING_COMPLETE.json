@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-22T07:38:24.908224+00:00",
+  "conditions": 26,
+  "model_seeds_per_condition": 27,
+  "new_inference_passes": 702,
+  "clean_passes_reused": true,
+  "reruns": 0
+}

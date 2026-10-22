@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-22T10:16:19.034246+00:00",
+  "changes": [
+    "Clarified full-cohort exclusions and zero failed/timed-out runs",
+    "Clarified tree/boosting-round counts in epoch columns",
+    "Added observations derived only from saved result tables and linked integrity receipts",
+    "Moved attention CI legend outside panels and used the actual k ticks",
+    "Added positive-user count and exact bootstrap validity/zero-denominator conventions from saved TEST labels and intervals"
+  ],
+  "report_before_sha256": "85fb9efa4f77fc79d754c46fab39966712c45c6624f515dd788207e51e258a39",
+  "report_after_sha256": "3ce7c12e35d12136bdd29432d6826acceabe3a498c10f29c27253adb1d849db7",
+  "attention_figure_before_sha256": "aa0aa5f75243d9ba8073616b8c4b5b28914b44e7497924216fe9e237899cd257",
+  "attention_figure_after_sha256": "7a1b10272688a5165b86ba40e7d7e89a172efd09a123c580c0e92366c3028b32",
+  "all_numerical_inputs_unchanged": true,
+  "numerical_input_hashes": {
+    "I1_ORDER_HISTORY.csv": "38e53774f74a2c1a2650ecdba54c19a40fc0e8abd31c2cc26be1bcaf0b4e5e03",
+    "I1_PAIRED_CIS.csv": "97845668fec1a0df84feea53665515c0030cc2bbde8584caee419ee5b4ecd1d0",
+    "I1_TRACE_ORDER_HISTORY_data.csv": "9dc085bf3077bc417dca1c0c4a0f65d1b5fe04b8ab2592741e7b795726e48dc0",
+    "I2_PAIRED_CIS.csv": "81eac17a2083266a5fcff92fcad93aa792444d75966aaa1b9ea8eba5ba7dde2c",
+    "I2_SAME_INFORMATION.csv": "d5401ee22c1917699fdf48d2364f0ecb11aa2fab86e9ae7fae11847e7c8e7ccc",
+    "I2_SAME_INFORMATION_data.csv": "d5401ee22c1917699fdf48d2364f0ecb11aa2fab86e9ae7fae11847e7c8e7ccc",
+    "I3_MULTI_DAY.csv": "b7a08ca0f6e9d99e7380ca27daffa116750d36fdb69bb06ac86ac5cf1532ba0c",
+    "I3_MULTI_DAY_data.csv": "b7a08ca0f6e9d99e7380ca27daffa116750d36fdb69bb06ac86ac5cf1532ba0c",
+    "I4_ATTENTION_CIS.csv": "2fc8d7659ebe899f62562011eb36e627cbe7057e9b259f99881b1753b2340ddc",
+    "I4_ATTENTION_EFFECTS.csv": "49cd987d2ed6dea6af7cc88592db72bfb262729ef3bf18365c26f49612859355",
+    "I4_ATTENTION_EFFECT_CIS_data.csv": "2fc8d7659ebe899f62562011eb36e627cbe7057e9b259f99881b1753b2340ddc",
+    "I4_ATTENTION_HEATMAP_data.csv": "8f80b819c089eebc0ff156b24f926a6f3fe4e1d5c2e942702e1a2ab2d554cb4c",
+    "I4_CASES.csv": "ab14faeed78dfc8842520e81075e06c17fc5a0fba4eed682a73263c24ef1545f",
+    "I_RESULTS.json": "19dbc44fa39650bd91ea2bbe97b7fe8ff921a0c9c6481fe9bf7498678b01e7b5",
+    "PHASE6_RESULTS.json": "cbc91d744dab88200e5f92e8b4d5d63666ab63119351b3fa7291ce290b73c783",
+    "T1_WINDOW_LENGTH_data.csv": "72c290593ce1081bbe757f10222556e541b2bdecf3b8b38cc28d3dbf8b986c92",
+    "T2_FEATURE_SETS_data.csv": "5064864e5d6c4384458d96f7b6d8a0612eb5a46636f060ec257b802e2d7556b8",
+    "T2_PAIRED_CIS.csv": "4755d0951a4ea6a504cc2f3d3f4673823b32036dcf967d6ce5ba63803c306103",
+    "T3_R42_TEST_data.csv": "8ad1e2ae3f5df0fde6374203eb70a14a9e2f8fb826da6e84a2aac67b4c21e170",
+    "T3_TEST_PAIRED_CIS.csv": "fd325c383fc46fd986594b10486fb8c528c635f350c5a7505506a3a5360a6ab6",
+    "T3_TEST_RESULTS.csv": "8ad1e2ae3f5df0fde6374203eb70a14a9e2f8fb826da6e84a2aac67b4c21e170",
+    "TRAINING_LOG_PHASE6.csv": "972f72e5c508799066df1370f00e259910da88470c5f78115390046e550c181a",
+    "TRAINING_RESULTS_PHASE6.json": "6ca591f3b2f4082247bd2f79a46dbe49721b2fbddbfac10587a56c52464e30da",
+    "T_RESULTS.json": "692b0644754bff242cae6eab976100b022a081f37aa413b3960387bbc06281cf",
+    "T_VALIDATION_RESULTS.csv": "d74d458f61231d397d9919efa0d2637ea386ab6108a7a3a86235a3e69c01f15d"
+  },
+  "training_and_inference_repeated": false,
+  "script_sha256": "676f0f69d77c35221de32fe696c8922b647916d8c6e606554adab071496bb3f6",
+  "postscoring_context_sha256": "e0838e8be2da4c8616c1bbffb8a997ef0a805e1e4fcb68e07de7ab1ff507b8e2",
+  "visual_QA": {
+    "all_eight_figures_inspected": true,
+    "attention_legend_clear": true,
+    "all_actual_k_ticks_visible": true,
+    "axis_labels_and_titles_unclipped": true
+  },
+  "final_context_script_sha256": "cc3a2e56e6f08fd9825ce8187ff245e33f33dd1ffb5e96c35a633d3ee845fe41"
+}

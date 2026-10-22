@@ -1,0 +1,1121 @@
+{
+  "utc": "2026-10-22T10:13:16.401587+00:00",
+  "models": [
+    {
+      "phase6_config": "r42_T20_F13",
+      "model": "AL_PRECURSOR",
+      "seed": 42,
+      "config": {
+        "model": "AL_PRECURSOR",
+        "seed": 42,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 136.2972972972973,
+        "optimizer": "Adam",
+        "encoder_lr": 0.001,
+        "attention_lr": 0.001,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+        "pos_weight_multiplier": 1.0,
+        "scheduler": {
+          "name": "ReduceLROnPlateau",
+          "factor": 0.5,
+          "patience": 2,
+          "min_lr": 1e-05
+        },
+        "improvement_epsilon": 1e-06,
+        "role": "development-only prerequisite for frozen T-OPT initialization",
+        "phase6_config": "r42_T20_F13",
+        "features": [
+          "total_events",
+          "logon_count",
+          "device_count",
+          "file_count",
+          "email_count",
+          "http_count",
+          "active_duration_minutes",
+          "has_logon_activity",
+          "has_device_activity",
+          "has_file_activity",
+          "has_email_activity",
+          "has_http_activity",
+          "is_active_day"
+        ],
+        "sequence_length": 20,
+        "training_partition": "TRAIN",
+        "selection_partition": "VALIDATION",
+        "excluded_holdout": true
+      },
+      "epochs": 8,
+      "best_epoch": 4,
+      "dev_validation_pr_auc": 0.8239024818428299,
+      "threshold": 0.88,
+      "wall_seconds": 53.96414540000842,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r42_T20_F13\\checkpoints\\AL_PRECURSOR\\seed42\\best.pt",
+      "sha256": "8f0cfd42f303d8bae91567d29274ed9706fc5f227927208f3f350ead4941d1b2",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.6087027183208631,
+          "train_loss": 0.6462181136870947,
+          "seconds": 7.33727469999576
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.7045220397441316,
+          "train_loss": 0.2820119486105411,
+          "seconds": 6.099601299996721
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.7120030013826903,
+          "train_loss": 0.2309414449126076,
+          "seconds": 6.006114799994975
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.8239024818428299,
+          "train_loss": 0.2046667464743136,
+          "seconds": 6.464935700001661
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.7945280094267518,
+          "train_loss": 0.18157505363327625,
+          "seconds": 6.366295999992872
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.7497424828812989,
+          "train_loss": 0.1609219675211534,
+          "seconds": 6.381770599982701
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.7824633183546353,
+          "train_loss": 0.15490425234219535,
+          "seconds": 6.499905200005742
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.7540470647536546,
+          "train_loss": 0.11406325506796361,
+          "seconds": 6.465794499992626
+        }
+      ]
+    },
+    {
+      "phase6_config": "r42_T20_F13",
+      "model": "AL_PRECURSOR",
+      "seed": 52,
+      "config": {
+        "model": "AL_PRECURSOR",
+        "seed": 52,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 136.2972972972973,
+        "optimizer": "Adam",
+        "encoder_lr": 0.001,
+        "attention_lr": 0.001,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+        "pos_weight_multiplier": 1.0,
+        "scheduler": {
+          "name": "ReduceLROnPlateau",
+          "factor": 0.5,
+          "patience": 2,
+          "min_lr": 1e-05
+        },
+        "improvement_epsilon": 1e-06,
+        "role": "development-only prerequisite for frozen T-OPT initialization",
+        "phase6_config": "r42_T20_F13",
+        "features": [
+          "total_events",
+          "logon_count",
+          "device_count",
+          "file_count",
+          "email_count",
+          "http_count",
+          "active_duration_minutes",
+          "has_logon_activity",
+          "has_device_activity",
+          "has_file_activity",
+          "has_email_activity",
+          "has_http_activity",
+          "is_active_day"
+        ],
+        "sequence_length": 20,
+        "training_partition": "TRAIN",
+        "selection_partition": "VALIDATION",
+        "excluded_holdout": true
+      },
+      "epochs": 9,
+      "best_epoch": 5,
+      "dev_validation_pr_auc": 0.7908656326208355,
+      "threshold": 0.8400000000000001,
+      "wall_seconds": 59.215078300010646,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r42_T20_F13\\checkpoints\\AL_PRECURSOR\\seed52\\best.pt",
+      "sha256": "e1565c985ffe30be95bad1269c585d2b315b2aa7b1e21ec89e27d1def3bfc8bf",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.6714851360755417,
+          "train_loss": 0.6348767094242916,
+          "seconds": 6.868768099986482
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.7268969598327005,
+          "train_loss": 0.28029446760594373,
+          "seconds": 6.104403999983333
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.7593274166944474,
+          "train_loss": 0.23637095614790604,
+          "seconds": 6.110883400018793
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.5613602491114781,
+          "train_loss": 0.2106785986044119,
+          "seconds": 6.370718599995598
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.7908656326208355,
+          "train_loss": 0.20276713385700867,
+          "seconds": 6.328324999980396
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.6739648612950104,
+          "train_loss": 0.1599991808682289,
+          "seconds": 6.172291199996835
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.7822168019612494,
+          "train_loss": 0.169852274307898,
+          "seconds": 6.314042700018035
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.7110554196562219,
+          "train_loss": 0.15130183127170474,
+          "seconds": 6.07884770000237
+        },
+        {
+          "epoch": 9,
+          "dev_validation_pr_auc": 0.7439565422077364,
+          "train_loss": 0.12088211237781943,
+          "seconds": 6.14768069999991
+        }
+      ]
+    },
+    {
+      "phase6_config": "r42_T20_F13",
+      "model": "AL_PRECURSOR",
+      "seed": 62,
+      "config": {
+        "model": "AL_PRECURSOR",
+        "seed": 62,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 136.2972972972973,
+        "optimizer": "Adam",
+        "encoder_lr": 0.001,
+        "attention_lr": 0.001,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+        "pos_weight_multiplier": 1.0,
+        "scheduler": {
+          "name": "ReduceLROnPlateau",
+          "factor": 0.5,
+          "patience": 2,
+          "min_lr": 1e-05
+        },
+        "improvement_epsilon": 1e-06,
+        "role": "development-only prerequisite for frozen T-OPT initialization",
+        "phase6_config": "r42_T20_F13",
+        "features": [
+          "total_events",
+          "logon_count",
+          "device_count",
+          "file_count",
+          "email_count",
+          "http_count",
+          "active_duration_minutes",
+          "has_logon_activity",
+          "has_device_activity",
+          "has_file_activity",
+          "has_email_activity",
+          "has_http_activity",
+          "is_active_day"
+        ],
+        "sequence_length": 20,
+        "training_partition": "TRAIN",
+        "selection_partition": "VALIDATION",
+        "excluded_holdout": true
+      },
+      "epochs": 8,
+      "best_epoch": 4,
+      "dev_validation_pr_auc": 0.8253337476155406,
+      "threshold": 0.78,
+      "wall_seconds": 53.26892329999828,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r42_T20_F13\\checkpoints\\AL_PRECURSOR\\seed62\\best.pt",
+      "sha256": "a222a23035bd6970eba445d7286835be14be11313572a0f5e9d2306a7433bf40",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.6858806551005254,
+          "train_loss": 0.6312689544115793,
+          "seconds": 6.484937700006412
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.7420550683771682,
+          "train_loss": 0.3212704749723745,
+          "seconds": 6.182630299997982
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.6881441417483182,
+          "train_loss": 0.23883620216464746,
+          "seconds": 6.225876499986043
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.8253337476155406,
+          "train_loss": 0.21635353136657104,
+          "seconds": 6.473242600011872
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.8057324089016145,
+          "train_loss": 0.18826783840362168,
+          "seconds": 6.3016989000025205
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.7953464039466587,
+          "train_loss": 0.17047847519400394,
+          "seconds": 6.04725140001392
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.7213661809855266,
+          "train_loss": 0.16671661506988245,
+          "seconds": 6.287988600000972
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.771348608636498,
+          "train_loss": 0.14865409633494286,
+          "seconds": 6.572973500005901
+        }
+      ]
+    },
+    {
+      "phase6_config": "r42_T20_F13",
+      "model": "TA2",
+      "seed": 42,
+      "config": {
+        "model": "TA2",
+        "seed": 42,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 34.07432432432432,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.5,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT",
+        "phase6_config": "r42_T20_F13",
+        "features": [
+          "total_events",
+          "logon_count",
+          "device_count",
+          "file_count",
+          "email_count",
+          "http_count",
+          "active_duration_minutes",
+          "has_logon_activity",
+          "has_device_activity",
+          "has_file_activity",
+          "has_email_activity",
+          "has_http_activity",
+          "is_active_day"
+        ],
+        "sequence_length": 20,
+        "training_partition": "TRAIN",
+        "selection_partition": "VALIDATION",
+        "excluded_holdout": true
+      },
+      "epochs": 15,
+      "best_epoch": 14,
+      "dev_validation_pr_auc": 0.810301473746062,
+      "threshold": 0.65,
+      "wall_seconds": 190.96547369999462,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r42_T20_F13\\checkpoints\\TA2\\seed42\\best.pt",
+      "sha256": "9bf338b1394f99969af2f7ea109c9fa033a0f2ad6190963043ec0bc019d19958",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.7909467053112091,
+          "train_loss": 0.3133392175432891,
+          "seconds": 12.77217060001567
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.7936761091042344,
+          "train_loss": 0.2984965314258115,
+          "seconds": 12.602774099999806
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.7821427911065263,
+          "train_loss": 0.293473178553769,
+          "seconds": 12.866859700006898
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.780975252760646,
+          "train_loss": 0.2900599390853421,
+          "seconds": 12.75740329999826
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.8024567404947219,
+          "train_loss": 0.2878046079698823,
+          "seconds": 12.080932599987136
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.7903953431063866,
+          "train_loss": 0.2863031246874902,
+          "seconds": 12.22469989999081
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.7960743797837051,
+          "train_loss": 0.28512081503430065,
+          "seconds": 12.524917500006268
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.7937169123165887,
+          "train_loss": 0.28365818520293146,
+          "seconds": 12.51347039997927
+        },
+        {
+          "epoch": 9,
+          "dev_validation_pr_auc": 0.8033712176133501,
+          "train_loss": 0.2829472696308702,
+          "seconds": 10.95837860001484
+        },
+        {
+          "epoch": 10,
+          "dev_validation_pr_auc": 0.8040612370090909,
+          "train_loss": 0.2822387199289217,
+          "seconds": 10.758558300003642
+        },
+        {
+          "epoch": 11,
+          "dev_validation_pr_auc": 0.8036467732769248,
+          "train_loss": 0.2812841400261626,
+          "seconds": 10.592136699997354
+        },
+        {
+          "epoch": 12,
+          "dev_validation_pr_auc": 0.8001568216875699,
+          "train_loss": 0.28164916372267906,
+          "seconds": 10.717299799987813
+        },
+        {
+          "epoch": 13,
+          "dev_validation_pr_auc": 0.7965715081456426,
+          "train_loss": 0.2808854430979631,
+          "seconds": 10.96889319998445
+        },
+        {
+          "epoch": 14,
+          "dev_validation_pr_auc": 0.810301473746062,
+          "train_loss": 0.2804814015445434,
+          "seconds": 10.804447399976198
+        },
+        {
+          "epoch": 15,
+          "dev_validation_pr_auc": 0.8093294454187124,
+          "train_loss": 0.28026249745824516,
+          "seconds": 11.13551500000176
+        }
+      ]
+    },
+    {
+      "phase6_config": "r42_T20_F13",
+      "model": "TA2",
+      "seed": 52,
+      "config": {
+        "model": "TA2",
+        "seed": 52,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 34.07432432432432,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.5,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT",
+        "phase6_config": "r42_T20_F13",
+        "features": [
+          "total_events",
+          "logon_count",
+          "device_count",
+          "file_count",
+          "email_count",
+          "http_count",
+          "active_duration_minutes",
+          "has_logon_activity",
+          "has_device_activity",
+          "has_file_activity",
+          "has_email_activity",
+          "has_http_activity",
+          "is_active_day"
+        ],
+        "sequence_length": 20,
+        "training_partition": "TRAIN",
+        "selection_partition": "VALIDATION",
+        "excluded_holdout": true
+      },
+      "epochs": 5,
+      "best_epoch": 1,
+      "dev_validation_pr_auc": 0.8341471516873277,
+      "threshold": 0.72,
+      "wall_seconds": 57.44560570002068,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r42_T20_F13\\checkpoints\\TA2\\seed52\\best.pt",
+      "sha256": "e86039e873205457c35c616bfa820092c59c77c4e05a3eaad1c7edfd0e079d23",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.8341471516873277,
+          "train_loss": 0.5378986583106474,
+          "seconds": 11.279118500009645
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.8244022214514038,
+          "train_loss": 0.37323538529841604,
+          "seconds": 10.59900290000951
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.8154456411467074,
+          "train_loss": 0.3143340299279671,
+          "seconds": 10.898277100000996
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.8124176228014928,
+          "train_loss": 0.29619298917289794,
+          "seconds": 11.346405400021467
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.8103373126842898,
+          "train_loss": 0.2900043075372541,
+          "seconds": 10.963953800004674
+        }
+      ]
+    },
+    {
+      "phase6_config": "r42_T20_F13",
+      "model": "TA2",
+      "seed": 62,
+      "config": {
+        "model": "TA2",
+        "seed": 62,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 34.07432432432432,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.5,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT",
+        "phase6_config": "r42_T20_F13",
+        "features": [
+          "total_events",
+          "logon_count",
+          "device_count",
+          "file_count",
+          "email_count",
+          "http_count",
+          "active_duration_minutes",
+          "has_logon_activity",
+          "has_device_activity",
+          "has_file_activity",
+          "has_email_activity",
+          "has_http_activity",
+          "is_active_day"
+        ],
+        "sequence_length": 20,
+        "training_partition": "TRAIN",
+        "selection_partition": "VALIDATION",
+        "excluded_holdout": true
+      },
+      "epochs": 7,
+      "best_epoch": 3,
+      "dev_validation_pr_auc": 0.8505482905239043,
+      "threshold": 0.68,
+      "wall_seconds": 79.49194750000606,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r42_T20_F13\\checkpoints\\TA2\\seed62\\best.pt",
+      "sha256": "caa3eb56cb7cb6d0ed70d82ff2ada1ea035b865aa383a54a2d4ce37c4341eac9",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.8387292046815362,
+          "train_loss": 0.32961852401948666,
+          "seconds": 11.969357499998296
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.8443997014664454,
+          "train_loss": 0.30073357841349024,
+          "seconds": 10.605217799980892
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.8505482905239043,
+          "train_loss": 0.28856063695998957,
+          "seconds": 10.657079100026749
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.8497587832057379,
+          "train_loss": 0.28638677341262186,
+          "seconds": 10.745440400001826
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.8500303964593316,
+          "train_loss": 0.2848454338327793,
+          "seconds": 11.264785300008953
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.848452680903611,
+          "train_loss": 0.284181298006238,
+          "seconds": 10.735281800007215
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.8443859192933003,
+          "train_loss": 0.2831248658185243,
+          "seconds": 11.045590399997309
+        }
+      ]
+    },
+    {
+      "phase6_config": "r42_T20_F13",
+      "model": "XGBoost_40",
+      "seed": 42,
+      "config": {
+        "model": "XGBoost_40",
+        "seed": 42,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "features": [
+          "total_events",
+          "logon_count",
+          "device_count",
+          "file_count",
+          "email_count",
+          "http_count",
+          "active_duration_minutes",
+          "has_logon_activity",
+          "has_device_activity",
+          "has_file_activity",
+          "has_email_activity",
+          "has_http_activity",
+          "is_active_day"
+        ],
+        "params": {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "learning_rate": 0.1,
+          "subsample": 0.8,
+          "colsample_bytree": 0.8,
+          "reg_lambda": 1.0,
+          "objective": "binary:logistic",
+          "eval_metric": "aucpr",
+          "scale_pos_weight": 136.2972972972973,
+          "n_jobs": 2,
+          "random_state": 42,
+          "tree_method": "hist"
+        },
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "development_only": true,
+        "phase6_config": "r42_T20_F13",
+        "sequence_length": 20,
+        "training_partition": "TRAIN",
+        "selection_partition": "VALIDATION",
+        "excluded_holdout": true
+      },
+      "epochs": 300,
+      "best_epoch": 300,
+      "dev_validation_pr_auc": 0.9738722786554492,
+      "threshold": 0.61,
+      "wall_seconds": 10.994717399997171,
+      "gpu": "CPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r42_T20_F13\\checkpoints\\XGBoost_40\\seed42\\best.json",
+      "sha256": "340bf50365b19380944cbfc246a57f435e1cd345b5486bbd4b659e094a17d893",
+      "status": "ok"
+    },
+    {
+      "phase6_config": "r42_T20_F13",
+      "model": "XGBoost_40",
+      "seed": 52,
+      "config": {
+        "model": "XGBoost_40",
+        "seed": 52,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "features": [
+          "total_events",
+          "logon_count",
+          "device_count",
+          "file_count",
+          "email_count",
+          "http_count",
+          "active_duration_minutes",
+          "has_logon_activity",
+          "has_device_activity",
+          "has_file_activity",
+          "has_email_activity",
+          "has_http_activity",
+          "is_active_day"
+        ],
+        "params": {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "learning_rate": 0.1,
+          "subsample": 0.8,
+          "colsample_bytree": 0.8,
+          "reg_lambda": 1.0,
+          "objective": "binary:logistic",
+          "eval_metric": "aucpr",
+          "scale_pos_weight": 136.2972972972973,
+          "n_jobs": 2,
+          "random_state": 52,
+          "tree_method": "hist"
+        },
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "development_only": true,
+        "phase6_config": "r42_T20_F13",
+        "sequence_length": 20,
+        "training_partition": "TRAIN",
+        "selection_partition": "VALIDATION",
+        "excluded_holdout": true
+      },
+      "epochs": 300,
+      "best_epoch": 300,
+      "dev_validation_pr_auc": 0.9786762774062447,
+      "threshold": 0.4,
+      "wall_seconds": 10.652691700001014,
+      "gpu": "CPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r42_T20_F13\\checkpoints\\XGBoost_40\\seed52\\best.json",
+      "sha256": "0768ce139cf4fc57135579bf7ee66a22d58fc0d3b793676aba707557ded457ae",
+      "status": "ok"
+    },
+    {
+      "phase6_config": "r42_T20_F13",
+      "model": "XGBoost_40",
+      "seed": 62,
+      "config": {
+        "model": "XGBoost_40",
+        "seed": 62,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "features": [
+          "total_events",
+          "logon_count",
+          "device_count",
+          "file_count",
+          "email_count",
+          "http_count",
+          "active_duration_minutes",
+          "has_logon_activity",
+          "has_device_activity",
+          "has_file_activity",
+          "has_email_activity",
+          "has_http_activity",
+          "is_active_day"
+        ],
+        "params": {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "learning_rate": 0.1,
+          "subsample": 0.8,
+          "colsample_bytree": 0.8,
+          "reg_lambda": 1.0,
+          "objective": "binary:logistic",
+          "eval_metric": "aucpr",
+          "scale_pos_weight": 136.2972972972973,
+          "n_jobs": 2,
+          "random_state": 62,
+          "tree_method": "hist"
+        },
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "development_only": true,
+        "phase6_config": "r42_T20_F13",
+        "sequence_length": 20,
+        "training_partition": "TRAIN",
+        "selection_partition": "VALIDATION",
+        "excluded_holdout": true
+      },
+      "epochs": 300,
+      "best_epoch": 300,
+      "dev_validation_pr_auc": 0.975487839943721,
+      "threshold": 0.7000000000000001,
+      "wall_seconds": 10.697285200003535,
+      "gpu": "CPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r42_T20_F13\\checkpoints\\XGBoost_40\\seed62\\best.json",
+      "sha256": "8641c1ab8fd6ae778adc214729989c3df01f65ceb58030eca46b21435e720500",
+      "status": "ok"
+    },
+    {
+      "phase6_config": "r42_T20_F13",
+      "model": "RF_40",
+      "seed": 42,
+      "config": {
+        "model": "RF_40",
+        "seed": 42,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "features": [
+          "total_events",
+          "logon_count",
+          "device_count",
+          "file_count",
+          "email_count",
+          "http_count",
+          "active_duration_minutes",
+          "has_logon_activity",
+          "has_device_activity",
+          "has_file_activity",
+          "has_email_activity",
+          "has_http_activity",
+          "is_active_day"
+        ],
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 20,
+          "min_samples_leaf": 2,
+          "n_jobs": 2,
+          "class_weight": "balanced_subsample",
+          "random_state": 42
+        },
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "development_only": true,
+        "phase6_config": "r42_T20_F13",
+        "sequence_length": 20,
+        "training_partition": "TRAIN",
+        "selection_partition": "VALIDATION",
+        "excluded_holdout": true
+      },
+      "epochs": 200,
+      "best_epoch": 200,
+      "dev_validation_pr_auc": 0.9801492121523997,
+      "threshold": 0.23,
+      "wall_seconds": 46.862305900023784,
+      "gpu": "CPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r42_T20_F13\\checkpoints\\RF_40\\seed42\\best.joblib",
+      "sha256": "aec4c456459334005a22dbe47cfcb6fc686d5334c1d0909df4a9338508764a96",
+      "status": "ok"
+    },
+    {
+      "phase6_config": "r42_T20_F13",
+      "model": "RF_40",
+      "seed": 52,
+      "config": {
+        "model": "RF_40",
+        "seed": 52,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "features": [
+          "total_events",
+          "logon_count",
+          "device_count",
+          "file_count",
+          "email_count",
+          "http_count",
+          "active_duration_minutes",
+          "has_logon_activity",
+          "has_device_activity",
+          "has_file_activity",
+          "has_email_activity",
+          "has_http_activity",
+          "is_active_day"
+        ],
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 20,
+          "min_samples_leaf": 2,
+          "n_jobs": 2,
+          "class_weight": "balanced_subsample",
+          "random_state": 52
+        },
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "development_only": true,
+        "phase6_config": "r42_T20_F13",
+        "sequence_length": 20,
+        "training_partition": "TRAIN",
+        "selection_partition": "VALIDATION",
+        "excluded_holdout": true
+      },
+      "epochs": 200,
+      "best_epoch": 200,
+      "dev_validation_pr_auc": 0.9817162180893507,
+      "threshold": 0.26,
+      "wall_seconds": 46.57533479999984,
+      "gpu": "CPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r42_T20_F13\\checkpoints\\RF_40\\seed52\\best.joblib",
+      "sha256": "bc6b33aeb0928834638877bfa105c6bb440ae7930ba298d270fc3fe7e9f6d0ef",
+      "status": "ok"
+    },
+    {
+      "phase6_config": "r42_T20_F13",
+      "model": "RF_40",
+      "seed": 62,
+      "config": {
+        "model": "RF_40",
+        "seed": 62,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "features": [
+          "total_events",
+          "logon_count",
+          "device_count",
+          "file_count",
+          "email_count",
+          "http_count",
+          "active_duration_minutes",
+          "has_logon_activity",
+          "has_device_activity",
+          "has_file_activity",
+          "has_email_activity",
+          "has_http_activity",
+          "is_active_day"
+        ],
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 20,
+          "min_samples_leaf": 2,
+          "n_jobs": 2,
+          "class_weight": "balanced_subsample",
+          "random_state": 62
+        },
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "development_only": true,
+        "phase6_config": "r42_T20_F13",
+        "sequence_length": 20,
+        "training_partition": "TRAIN",
+        "selection_partition": "VALIDATION",
+        "excluded_holdout": true
+      },
+      "epochs": 200,
+      "best_epoch": 200,
+      "dev_validation_pr_auc": 0.9794720684242936,
+      "threshold": 0.23,
+      "wall_seconds": 46.86601739999605,
+      "gpu": "CPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r42_T20_F13\\checkpoints\\RF_40\\seed62\\best.joblib",
+      "sha256": "f264b86c7254ad28fc08de93f4594db3262f9c14c09436b203bec14b7059f70c",
+      "status": "ok"
+    }
+  ],
+  "training_complete_sha256": "b8ae239987c781e9288bd1f23dcd53ada333422932179060176ca0f54c316132",
+  "threshold_selection": "VALIDATION only",
+  "test_evaluations_per_model": 1
+}

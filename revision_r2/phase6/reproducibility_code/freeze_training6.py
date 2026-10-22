@@ -1,0 +1,9 @@
+from common6 import *
+import ast
+assert not (OUT/'TRAINING_PROTOCOL_FROZEN.json').exists()
+for p in CODE.glob('*.py'):ast.parse(p.read_text(encoding='utf-8'))
+x=np.random.default_rng(1).normal(size=(4,20,13)).astype(np.float32)
+assert np.array_equal(aggregate(x),rt.aggregate_common13_windows(x)[0])
+data=read(OUT/'DATA_MANIFEST_PHASE6.json')
+f=dict(utc=utc(),amendment4=read(OUT/'AMENDMENT4_RECEIPT.json'),data_manifest_sha256=sha(OUT/'DATA_MANIFEST_PHASE6.json'),source_hashes={str(p):sha(p) for p in [ROOT/'phase2_runtime.py',CODE/'common6.py',CODE/'prepare6.py',CODE/'train6.py',CODE/'training_worker6.py']},config_manifests={c['config']:sha(PRIVATE/'data'/c['config']/'manifest.json') for c in data['configs']},policy=dict(seeds=SEEDS,teacher_sequence='each configuration: three AL_PRECURSOR -> three T-OPT -> three TRACE TA2; TRACE uses equal-mean ensemble teacher logits and matched-seed routes',task_lambda=1,teacher_logit_MSE_lambda=.5,route_KL_lambda=.5,training='TRAIN only; development 1500 for r5.2',selection='VALIDATION only, max AP checkpoint and max F1 threshold from frozen Phase2 candidate rule',run_timeout_seconds=7200,resources='two CPU threads, one GPU process at a time, 35% GPU allocator limit, 2 ms pause per forward call',r52_test_sealed=True,holdout_user_data_used=False,feature_scaling='TRAIN daily median imputation and ddof0 standardization; no missing indicators, realized F29 study schema has none',window_40_aggregation='identical producing equations, timestep length generalized to 10/30; T20 equality verified',inference_part='Original all-user TRACE specified by user; Phase6 validation rows restricted to development. Both original and matched development T20/F13 references will be disclosed.'))
+dump(OUT/'TRAINING_PROTOCOL_FROZEN.json',f);status('TRAINING_PROTOCOL_FROZEN')

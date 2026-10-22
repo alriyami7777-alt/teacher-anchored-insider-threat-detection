@@ -1,0 +1,56 @@
+[
+  {
+    "model": "TRACE",
+    "seed": 42,
+    "frozen_prediction_error": 9.880113352456199e-09,
+    "all_valid_attention_mask_parity_error": 0.0
+  },
+  {
+    "model": "TRACE",
+    "seed": 52,
+    "frozen_prediction_error": 2.9359664237976757e-08,
+    "all_valid_attention_mask_parity_error": 0.0
+  },
+  {
+    "model": "TRACE",
+    "seed": 62,
+    "frozen_prediction_error": 1.5927198257770225e-06,
+    "all_valid_attention_mask_parity_error": 0.0
+  },
+  {
+    "model": "XGBoost-260",
+    "seed": 42,
+    "frozen_prediction_error": 0.0,
+    "all_valid_attention_mask_parity_error": null
+  },
+  {
+    "model": "XGBoost-260",
+    "seed": 52,
+    "frozen_prediction_error": 0.0,
+    "all_valid_attention_mask_parity_error": null
+  },
+  {
+    "model": "XGBoost-260",
+    "seed": 62,
+    "frozen_prediction_error": 0.0,
+    "all_valid_attention_mask_parity_error": null
+  },
+  {
+    "model": "MLP-260",
+    "seed": 42,
+    "frozen_prediction_error": 7.395570986446986e-32,
+    "all_valid_attention_mask_parity_error": null
+  },
+  {
+    "model": "MLP-260",
+    "seed": 52,
+    "frozen_prediction_error": 7.642090019328552e-31,
+    "all_valid_attention_mask_parity_error": null
+  },
+  {
+    "model": "MLP-260",
+    "seed": 62,
+    "frozen_prediction_error": 4.683861624749758e-31,
+    "all_valid_attention_mask_parity_error": null
+  }
+]

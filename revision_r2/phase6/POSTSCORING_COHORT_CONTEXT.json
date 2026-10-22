@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-22T10:18:20.684800+00:00",
+  "release": "r4.2",
+  "partition": "TEST",
+  "users": 1000,
+  "positive_users": 6,
+  "positive_windows": 84,
+  "windows": 32000,
+  "AP_valid_bootstrap_replicates": [
+    1994
+  ],
+  "attempted_replicates": 2000,
+  "bootstrap_seed": 42,
+  "AP_rule": "Draws with no positive windows omitted",
+  "ratio_zero_denominator_rule": "F1, precision and recall use zero_division=0",
+  "new_model_evaluation": false
+}

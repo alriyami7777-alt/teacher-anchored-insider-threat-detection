@@ -1,0 +1,45 @@
+{
+  "utc": "2026-10-22T08:15:43.106456+00:00",
+  "amendment4": {
+    "amendment4_sha256": "1152334b1a702a3084b1a16b0dd0545ef05fc38003b8945f23bafd242ba32542",
+    "previous_bytes": 14211,
+    "previous_sha256": "1c3b65854f364eeee13bbbe0d5e76ade6835a1e3d02e51d927cb1c15f65943d6",
+    "utc": "2026-10-22T08:07:12.6588409Z",
+    "preregistration_final_sha256": "5c6d6df2ecb33da9a5dd55b711de7150a5079e80020b88256ba0162647d9ad8c"
+  },
+  "data_manifest_sha256": "3ab09bd9fafe288d6fa2f89d1e3e07ecc0f3817c8bb893e316912bbd2c8cba47",
+  "source_hashes": {
+    "C:\\PhD\\07_Projects\\r2_holdout\\phase2_runtime.py": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+    "C:\\PhD\\00_RESEARCH_CONTROL\\phase6_staging\\common6.py": "7497364bc62bfdb7f2dafd8e4e0a3aee5791169b0d9d6c89cc4409c4ef5d5cca",
+    "C:\\PhD\\00_RESEARCH_CONTROL\\phase6_staging\\prepare6.py": "80550d0f9fced517119c60431e408eb3222c20d79f398b49feef669cc7af6b62",
+    "C:\\PhD\\00_RESEARCH_CONTROL\\phase6_staging\\train6.py": "705c3993a43b686a1377413f7a68f89441273989373ea464514fabb89f399ebe",
+    "C:\\PhD\\00_RESEARCH_CONTROL\\phase6_staging\\training_worker6.py": "e7f7df95de8e3bd8d290488bcb1475d4532f6d6c47ae0360bfc444e133f22694"
+  },
+  "config_manifests": {
+    "r52_T10_F13": "cef50dbd3c5acb6650ad2fe9d9c184959f83f7ad5588459e738fa903b1d9440d",
+    "r52_T30_F13": "469d4cafb2cc2cd21e3a15b9c49125cc83d6c944d2b9cd43edf2f6e30327279a",
+    "r52_T20_F6": "497c998da5355f33518b3e5bd254e858536f3a21c879257682235fecdd0fee2a",
+    "r52_T20_F29": "adf5455322a34058d4d2a36f19ea6f0fa3486dd9c348c52d37bb6c986195be4e",
+    "r42_T20_F13": "59830b34eebef0525aa5cc44ec408c70ed3a3a7f135fea740e23f51f09779a35"
+  },
+  "policy": {
+    "seeds": [
+      42,
+      52,
+      62
+    ],
+    "teacher_sequence": "each configuration: three AL_PRECURSOR -> three T-OPT -> three TRACE TA2; TRACE uses equal-mean ensemble teacher logits and matched-seed routes",
+    "task_lambda": 1,
+    "teacher_logit_MSE_lambda": 0.5,
+    "route_KL_lambda": 0.5,
+    "training": "TRAIN only; development 1500 for r5.2",
+    "selection": "VALIDATION only, max AP checkpoint and max F1 threshold from frozen Phase2 candidate rule",
+    "run_timeout_seconds": 7200,
+    "resources": "two CPU threads, one GPU process at a time, 35% GPU allocator limit, 2 ms pause per forward call",
+    "r52_test_sealed": true,
+    "holdout_user_data_used": false,
+    "feature_scaling": "TRAIN daily median imputation and ddof0 standardization; no missing indicators, realized F29 study schema has none",
+    "window_40_aggregation": "identical producing equations, timestep length generalized to 10/30; T20 equality verified",
+    "inference_part": "Original all-user TRACE specified by user; Phase6 validation rows restricted to development. Both original and matched development T20/F13 references will be disclosed."
+  }
+}

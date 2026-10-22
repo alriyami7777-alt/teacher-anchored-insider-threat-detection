@@ -1,0 +1,22 @@
+source,contrast,metric,estimate,ci95_low,ci95_high,valid_bootstrap_replicates,decision
+logon,TRACE - L1,normalised severity-retention AURC,0.014434105386315546,-0.026078313789175318,0.04022206176448279,2000,comparable / not distinguishable
+logon,TRACE - XGBoost_40,normalised severity-retention AURC,-0.06246043459993748,-0.12346753275387509,-0.01783604555929441,2000,ranks below
+logon,TRACE - Transformer,normalised severity-retention AURC,0.047674746551066995,-0.01702888085644983,0.08912283459920912,2000,comparable / not distinguishable
+device,TRACE - L1,normalised severity-retention AURC,0.08099902581075463,-0.0023114207935697583,0.15187192308167158,2000,comparable / not distinguishable
+device,TRACE - XGBoost_40,normalised severity-retention AURC,-0.04791874300909945,-0.1471465596684956,0.04830391811069227,2000,comparable / not distinguishable
+device,TRACE - Transformer,normalised severity-retention AURC,-0.0710300494166829,-0.128090573605984,-0.01709768531099997,2000,ranks below
+file,TRACE - L1,normalised severity-retention AURC,0.026422329007052103,-0.008329751891764397,0.05433557833980881,2000,comparable / not distinguishable
+file,TRACE - XGBoost_40,normalised severity-retention AURC,-0.28359007199083996,-0.36826258126883693,-0.18856430673618596,2000,ranks below
+file,TRACE - Transformer,normalised severity-retention AURC,-0.02343250667135403,-0.09378766571648077,0.058491297605963874,2000,comparable / not distinguishable
+email,TRACE - L1,normalised severity-retention AURC,-0.045177690417752214,-0.08892206890449199,0.0007303551431614826,2000,comparable / not distinguishable
+email,TRACE - XGBoost_40,normalised severity-retention AURC,-0.17983536965136218,-0.2776278474032716,-0.10418620983406447,2000,ranks below
+email,TRACE - Transformer,normalised severity-retention AURC,-0.14729099882236726,-0.23485190804301126,-0.08178023430092553,2000,ranks below
+http,TRACE - L1,normalised severity-retention AURC,0.016178905861629178,-0.007732948961295549,0.03346938464217184,2000,comparable / not distinguishable
+http,TRACE - XGBoost_40,normalised severity-retention AURC,0.21165675738373532,0.0929421778189609,0.35076529637883314,2000,ranks above (bounded to the evaluated cohort)
+http,TRACE - Transformer,normalised severity-retention AURC,0.0033887680092831163,-0.03131012269493942,0.036202355199266366,2000,comparable / not distinguishable
+source_mean,TRACE - L1,normalised severity-retention AURC,0.018571335129599853,-0.011813184703837206,0.0406761435830114,2000,comparable / not distinguishable
+source_mean,TRACE - XGBoost_40,normalised severity-retention AURC,-0.07242957237350071,-0.10785402465302103,-0.03270619800188535,2000,ranks below
+source_mean,TRACE - Transformer,normalised severity-retention AURC,-0.03813800807001085,-0.06619345535309906,-0.015273044049413364,2000,ranks below
+noise,TRACE - L1,normalised severity-retention AURC,-0.024929522372151736,-0.08562009503588938,0.009422912512723008,2000,comparable / not distinguishable
+noise,TRACE - XGBoost_40,normalised severity-retention AURC,0.726150000774833,0.5763387055357521,0.8513680877612991,2000,ranks above (bounded to the evaluated cohort)
+noise,TRACE - Transformer,normalised severity-retention AURC,0.1035321105184865,0.03189034235197386,0.21757214517000475,2000,ranks above (bounded to the evaluated cohort)

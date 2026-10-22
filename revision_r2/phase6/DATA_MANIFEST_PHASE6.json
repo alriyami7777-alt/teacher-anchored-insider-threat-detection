@@ -1,0 +1,241 @@
+{
+  "utc": "2026-10-22T08:14:27.606179+00:00",
+  "r52_test_read": false,
+  "holdout_data_read": false,
+  "development_user_list_sha256": "7559b7357eb1b4c7fbb11a23bbee9da6bc2262e8af53163f263e9f91fdc48aad",
+  "holdout_list_used_for_exclusion_only": true,
+  "configs": [
+    {
+      "config": "r52_T10_F13",
+      "length": 10,
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "periods": {
+        "train": [
+          "2010-01-02",
+          "2011-02-18"
+        ],
+        "validation": [
+          "2011-02-19",
+          "2011-04-10"
+        ]
+      },
+      "scaler_sha256": "6600c7f47da4f35680aded9da163332e75392ff2330c23e9e4b4cd58f0e9f3db",
+      "splits": {
+        "train": {
+          "windows": 606000,
+          "positives": 2430,
+          "users": 1500
+        },
+        "validation": {
+          "windows": 63000,
+          "positives": 493,
+          "users": 1500
+        }
+      }
+    },
+    {
+      "config": "r52_T30_F13",
+      "length": 30,
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "periods": {
+        "train": [
+          "2010-01-02",
+          "2011-02-18"
+        ],
+        "validation": [
+          "2011-02-19",
+          "2011-04-10"
+        ]
+      },
+      "scaler_sha256": "6600c7f47da4f35680aded9da163332e75392ff2330c23e9e4b4cd58f0e9f3db",
+      "splits": {
+        "train": {
+          "windows": 576000,
+          "positives": 3507,
+          "users": 1500
+        },
+        "validation": {
+          "windows": 33000,
+          "positives": 364,
+          "users": 1500
+        }
+      }
+    },
+    {
+      "config": "r52_T20_F6",
+      "length": 20,
+      "features": [
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes"
+      ],
+      "periods": {
+        "train": [
+          "2010-01-02",
+          "2011-02-18"
+        ],
+        "validation": [
+          "2011-02-19",
+          "2011-04-10"
+        ]
+      },
+      "scaler_sha256": "4777766c333a34c1d53e0e7b6181f48708879a6783a0c810951aae3fe433666d",
+      "splits": {
+        "train": {
+          "windows": 591000,
+          "positives": 3040,
+          "users": 1500
+        },
+        "validation": {
+          "windows": 48000,
+          "positives": 473,
+          "users": 1500
+        }
+      }
+    },
+    {
+      "config": "r52_T20_F29",
+      "length": 20,
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day",
+        "outside_0800_1800_event_count",
+        "outside_0800_1800_event_fraction",
+        "active_hour_bins",
+        "largest_hour_event_fraction",
+        "unique_pc_count",
+        "largest_pc_event_fraction",
+        "logon_start_count",
+        "device_connect_count",
+        "file_write_count",
+        "file_to_removable_count",
+        "email_sent_count",
+        "email_sent_unique_recipient_count",
+        "email_sent_size_sum",
+        "email_sent_attachment_count",
+        "http_unique_hostname_count",
+        "largest_http_hostname_fraction"
+      ],
+      "periods": {
+        "train": [
+          "2010-01-02",
+          "2011-02-18"
+        ],
+        "validation": [
+          "2011-02-19",
+          "2011-04-10"
+        ]
+      },
+      "scaler_sha256": "6e9ceaa9bdb024b1bef3e708fcdd59f1ca9e435b2a5cf586e06f2b529bdb4e24",
+      "splits": {
+        "train": {
+          "windows": 591000,
+          "positives": 3040,
+          "users": 1500
+        },
+        "validation": {
+          "windows": 48000,
+          "positives": 473,
+          "users": 1500
+        }
+      }
+    },
+    {
+      "config": "r42_T20_F13",
+      "length": 20,
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "periods": {
+        "train": [
+          "2010-01-02",
+          "2011-02-05"
+        ],
+        "validation": [
+          "2011-02-06",
+          "2011-03-27"
+        ]
+      },
+      "scaler_sha256": "629c597a736eb8c5615bf999c03b6a8d7613e89a03b8c28c3025fb038ea3a9cb",
+      "splits": {
+        "train": {
+          "windows": 381000,
+          "positives": 2775,
+          "users": 1000
+        },
+        "validation": {
+          "windows": 31000,
+          "positives": 252,
+          "users": 1000
+        }
+      }
+    }
+  ],
+  "F29_parity": [
+    {
+      "split": "train",
+      "development_F13_daily_parity": true,
+      "excluded_user_slices_read": 0
+    },
+    {
+      "split": "validation",
+      "development_F13_daily_parity": true,
+      "excluded_user_slices_read": 0
+    }
+  ],
+  "r42_excluded_overlap": 0
+}

@@ -1,0 +1,2 @@
+contrast,observed_estimate,observed_ci95_low,observed_ci95_high,observed_CI_width,normal_SE_proxy,approx_95pct_half_width,approx_MDE_80pct_power_two_sided_alpha_0_05,assumptions
+TRACE - XGBoost_40,-0.1118024728974328,-0.2969604244392398,0.0587761873435058,0.3557366117827456,0.09075080322616912,0.1778683058913728,0.25424610885031407,Normal approximation using observed bootstrap CI width; not a prospective power guarantee or evidence of equivalence

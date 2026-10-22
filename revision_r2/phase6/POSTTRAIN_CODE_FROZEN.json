@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-22T08:27:34.194309+00:00",
+  "files": {
+    "C:\\PhD\\00_RESEARCH_CONTROL\\phase6_staging\\training_analysis6.py": "6969080ff8a43606c6ef239cad5677ae36ba31f1578f1b8ff19160b9467d3dbb",
+    "C:\\PhD\\00_RESEARCH_CONTROL\\phase6_staging\\report6.py": "7bb3db8d1773b6aeb6a610e374450f8d9fb1717ec6539528825c52004d5a2e98",
+    "C:\\PhD\\00_RESEARCH_CONTROL\\phase6_staging\\verify6.py": "771dd4fbdf9f7697a50ec017ed6d9887b94930cedb6bd560f57265aeafc4ed60",
+    "C:\\PhD\\00_RESEARCH_CONTROL\\phase6_staging\\pipeline6.py": "a7efb90044ad2bfcf33e84b866c1cb078b0d7a67bde91a21136994d97002ef23"
+  },
+  "policy": "Frozen before Part I inference, design-choice analyses, and r4.2 TEST access; inference6.py separately frozen earlier. r4.2 TEST one-pass per selected model/seed after training/checkpoint/threshold freeze."
+}

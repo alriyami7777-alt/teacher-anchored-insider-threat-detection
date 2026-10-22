@@ -1,0 +1,13 @@
+{
+  "r52_test_sealed": true,
+  "previous_bytes": 7934,
+  "sha256": "3e50d01f5c7863281ef283d0715cf930567f53fab95d7d0448c744c106cac454",
+  "previous_sha256": "1f4e8ad4c759ddf90221a741314749d390fc6c4db2bf7ca71aa97e79ed00e37f",
+  "no_training": true,
+  "amendment": 3,
+  "preregistration_sha256": "1c3b65854f364eeee13bbbe0d5e76ade6835a1e3d02e51d927cb1c15f65943d6",
+  "exploratory": true,
+  "utc": "2026-10-22T06:00:50.6121208Z",
+  "section_bytes": 6055,
+  "approval_local": "2026-10-22T13:58:00+08:00"
+}

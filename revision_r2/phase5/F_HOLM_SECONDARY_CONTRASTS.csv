@@ -1,0 +1,13 @@
+contrast,raw_bootstrap_two_sided_p,original_label,estimate,Holm_adjusted_p,Holm_reject_0_05,adjusted_label,label_changed
+TRACE - L1,0.014992503748125937,ranks above (bounded to unseen CERT r5.2 users),0.0377042556308643,0.111944027986007,False,comparable / not distinguishable,True
+TRACE - RF_40,0.20689655172413793,comparable / not distinguishable,0.0890003854355452,1.0,False,comparable / not distinguishable,False
+F10 - F00,0.001999000499750125,ranks above (bounded to unseen CERT r5.2 users),0.0225312626316714,0.019990004997501247,True,ranks above (bounded to unseen CERT r5.2 users),False
+TRACE - uniTRACE,0.2888555722138931,comparable / not distinguishable,0.0194805708210483,1.0,False,comparable / not distinguishable,False
+TRACE - BiLSTM_noAttn,0.3028485757121439,comparable / not distinguishable,0.018583380393797,1.0,False,comparable / not distinguishable,False
+TRACE - BiGRU_Attn,0.0069965017491254375,ranks above (bounded to unseen CERT r5.2 users),0.0679412923310517,0.06296851574212894,False,comparable / not distinguishable,True
+TRACE - TCN,0.9165417291354323,comparable / not distinguishable,0.0011554451978396,1.0,False,comparable / not distinguishable,False
+TRACE - Transformer,0.6136931534232883,comparable / not distinguishable,-0.0179460006626409,1.0,False,comparable / not distinguishable,False
+TRACE - MLP,0.013993003498250875,ranks above (bounded to unseen CERT r5.2 users),0.0863271941940341,0.111944027986007,False,comparable / not distinguishable,True
+TRACE - LSTM_AE,0.0009995002498750624,ranks above (bounded to unseen CERT r5.2 users),0.6933241402561987,0.01199400299850075,True,ranks above (bounded to unseen CERT r5.2 users),False
+TRACE - IsolationForest,0.0009995002498750624,ranks above (bounded to unseen CERT r5.2 users),0.7010509502032631,0.01199400299850075,True,ranks above (bounded to unseen CERT r5.2 users),False
+TRACE - LightGBM_40,0.3268365817091454,comparable / not distinguishable,-0.0844867198402532,1.0,False,comparable / not distinguishable,False
