@@ -34,3 +34,9 @@ The repository's `.gitattributes` normalises text files to LF. The `.py` files w
 | Code | `phase6b/reproducibility_code/`: 11 scripts from `phase6b\private\code_snapshot\` (code only). 11/11 SHA-256 match the hashes frozen in the Phase 6B JSON records. |
 | Audit | No CERT user IDs, CERT raw/answer data, binaries, `private/` content or files >10 MB. Absolute paths only under `C:\PhD\04_Journal_Papers` and `C:\PhD\07_Projects`, already public. |
 | Line endings | Two scripts (`bootstrap6b.py`, `common6b.py`) have mixed line endings. `revision_r2/.gitattributes` marks every `reproducibility_code/*.py` as `-text`, so clones keep the exact bytes and the hashes hold. |
+
+## `analysis/` and `paper_figures/` (added 22 Oct 2026)
+- `analysis/efficiency/`: `efficiency_profile.py`, `efficiency_profile.csv` and the five `*_result.json` files. Left out: console logs (contain the Python install path under `C:\Users\`), `*_partial.json` duplicates, `efficiency_profile.json` (Python executable path) and `model_complexity_and_training.csv` (GPU serial UUID). Their table values are all in the result JSONs.
+- `analysis/feature_study_evidence.json`, `phase1_verification.json`, `xgb40_vs_ta2_validation_bootstrap.py/.json`: paths only under `C:\PhD\07_Projects`.
+- `paper_figures/`: four plotting scripts copied from the current manuscript source. `plot_user_split.py` writes to a sandbox path (`/home/claude/...`), not a personal path.
+- Audit: no CERT user IDs, CERT data, binaries or `private/` content.

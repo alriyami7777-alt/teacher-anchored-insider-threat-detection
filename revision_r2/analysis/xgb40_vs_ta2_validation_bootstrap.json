@@ -1,0 +1,95 @@
+{
+  "status": "COMPLETE",
+  "comparison": "PR-AUC(XGBoost_40) minus PR-AUC(TA2/F11_DROPT)",
+  "partition": "r5.2 VALIDATION only",
+  "metric": "sklearn noninterpolated average precision",
+  "seeds": [
+    42,
+    52,
+    62
+  ],
+  "replicates_attempted": 2000,
+  "replicates_valid": 2000,
+  "single_class_draws": 0,
+  "rng": "numpy.default_rng(42), PCG64",
+  "sampling": "Resample 2000 users with replacement; retain all windows and multiplicity; use the same draw for both models and all seeds",
+  "seed_mean_statistic": "Mean of the three within-seed AP differences, not pooled-score AP",
+  "windows": 64000,
+  "positive_windows": 728,
+  "users": 2000,
+  "mapping_sha256": "851385f9c926cf945b3c74b5c9442e3ccb94cf1d9dabb98106a29cbfea01c5c0",
+  "alignment": "Same frozen validation tensor SHA256 in locked-baseline manifest and EDITOR-012; both labels match elementwise; no order-changing preprocessing in producer",
+  "observed_per_seed": [
+    {
+      "seed": 42,
+      "PR_AUC_XGBoost_40": 0.9669215203190463,
+      "PR_AUC_TA2": 0.9454098053584642,
+      "difference": 0.02151171496058213
+    },
+    {
+      "seed": 52,
+      "PR_AUC_XGBoost_40": 0.9649758249486352,
+      "PR_AUC_TA2": 0.9337067425514769,
+      "difference": 0.03126908239715831
+    },
+    {
+      "seed": 62,
+      "PR_AUC_XGBoost_40": 0.9677620095743968,
+      "PR_AUC_TA2": 0.9494100170861509,
+      "difference": 0.018351992488245927
+    }
+  ],
+  "per_seed": {
+    "42": {
+      "observed_difference": 0.02151171496058213,
+      "bootstrap_mean_difference": 0.021335812985916434,
+      "ci95_percentile": [
+        -0.00990952448753287,
+        0.06821900304664898
+      ]
+    },
+    "52": {
+      "observed_difference": 0.03126908239715831,
+      "bootstrap_mean_difference": 0.03110614717543136,
+      "ci95_percentile": [
+        -0.033737171294273526,
+        0.11892472379196409
+      ]
+    },
+    "62": {
+      "observed_difference": 0.018351992488245927,
+      "bootstrap_mean_difference": 0.018383212258042576,
+      "ci95_percentile": [
+        -0.035620977664104686,
+        0.08801205689208508
+      ]
+    }
+  },
+  "three_seed_mean": {
+    "observed_difference": 0.023710929948662123,
+    "bootstrap_mean_difference": 0.023608390806463455,
+    "ci95_percentile": [
+      -0.025343776486255857,
+      0.08978612792356332
+    ]
+  },
+  "checks": {
+    "weighted_AP_matches_explicit_cluster_resampling_sklearn_first_draw": true,
+    "inference_run": false,
+    "training_run": false,
+    "validation_feature_tensor_materialized": false
+  },
+  "input_sha256": {
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_validation.npz": "5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed42\\validation_probabilities.npz": "d7d263cf3be78faad6253e2d531cb6eaa05de6378c9edc8295ffc6d035358056",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed42\\val_y.npy": "6cb3100f2b550b0fcbd2c8ad15df80737c43f04107eb96b12a9168d0e125529c",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed42\\val_logits.npy": "78ad45e4e13a8d802062aa54599a9c4a82c086e504efecae3b2d34b57ebfdb5c",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed52\\validation_probabilities.npz": "85b901fc7ed316fe1fa272c7570e1cc657c1f422ab5d1b0490d53ef8122da549",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed52\\val_y.npy": "6cb3100f2b550b0fcbd2c8ad15df80737c43f04107eb96b12a9168d0e125529c",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed52\\val_logits.npy": "a8f8452a64243da6e0107b5e12ffd5d762b2f8e18b8c7e3db2c039979974b592",
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed62\\validation_probabilities.npz": "bfc519055305b94ff3e1c1db035b0d020630ecba24d6673a4d253db1a33da9dc",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed62\\val_y.npy": "6cb3100f2b550b0fcbd2c8ad15df80737c43f04107eb96b12a9168d0e125529c",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed62\\val_logits.npy": "b36030b4d52e04bdde6f93eba67da7e8a0c27831685e79b0a9d164a90d0bfa62"
+  },
+  "limitations": "Conditional on frozen fitted models and observed validation users/calendar; no model-retraining uncertainty. Historical validation is outcome-exposed."
+}

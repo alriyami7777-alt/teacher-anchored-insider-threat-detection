@@ -1,0 +1,93 @@
+{
+  "model": "RF_40",
+  "seed": 42,
+  "status": "COMPLETE",
+  "checkpoint": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed42\\model.joblib",
+  "checkpoint_sha256": "38b8830acec3b9c399411093ac38ed6bed6dca52a0cf05be9c87178cb05f5780",
+  "rows": [
+    {
+      "model": "RF_40",
+      "seed": 42,
+      "device": "cpu",
+      "batch_size": 1,
+      "warmup_batches_per_repeat": 50,
+      "timed_batches_per_repeat": 200,
+      "repeats": 3,
+      "repeat_median_latency_seconds": [
+        0.030411150000873022,
+        0.03029219999734778,
+        0.0307081999926595
+      ],
+      "median_latency_seconds": 0.030411150000873022,
+      "throughput_sequences_per_second": 32.88267625431109,
+      "peak_GPU_memory_bytes": null,
+      "peak_RSS_bytes": 690597888,
+      "incremental_peak_RSS_bytes": 688128,
+      "memory_repeats": [
+        {
+          "peak_RSS_bytes": 690003968,
+          "baseline_RSS_bytes": 688189440,
+          "increment_bytes": 1814528
+        },
+        {
+          "peak_RSS_bytes": 690597888,
+          "baseline_RSS_bytes": 689909760,
+          "increment_bytes": 688128
+        },
+        {
+          "peak_RSS_bytes": 690880512,
+          "baseline_RSS_bytes": 690475008,
+          "increment_bytes": 405504
+        }
+      ]
+    },
+    {
+      "model": "RF_40",
+      "seed": 42,
+      "device": "cpu",
+      "batch_size": 1024,
+      "warmup_batches_per_repeat": 50,
+      "timed_batches_per_repeat": 200,
+      "repeats": 3,
+      "repeat_median_latency_seconds": [
+        0.04030464999959804,
+        0.04029894998529926,
+        0.041268650005804375
+      ],
+      "median_latency_seconds": 0.04030464999959804,
+      "throughput_sequences_per_second": 25406.49776167793,
+      "peak_GPU_memory_bytes": null,
+      "peak_RSS_bytes": 692596736,
+      "incremental_peak_RSS_bytes": 1196032,
+      "memory_repeats": [
+        {
+          "peak_RSS_bytes": 692228096,
+          "baseline_RSS_bytes": 691032064,
+          "increment_bytes": 1196032
+        },
+        {
+          "peak_RSS_bytes": 692596736,
+          "baseline_RSS_bytes": 691265536,
+          "increment_bytes": 1331200
+        },
+        {
+          "peak_RSS_bytes": 693014528,
+          "baseline_RSS_bytes": 692482048,
+          "increment_bytes": 532480
+        }
+      ]
+    }
+  ],
+  "number_of_trees": 200,
+  "total_nodes": 167902,
+  "max_depth": 20,
+  "features": 40,
+  "n_jobs": -1,
+  "training_wall_clock": {
+    "total_seconds": 29.980166400026064,
+    "per_epoch": "not applicable to tree models",
+    "source": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\random_forest_seed42\\summary.json",
+    "units": "seconds"
+  },
+  "gpu_status": "SKIPPED: frozen sklearn RandomForestClassifier has no CUDA prediction backend"
+}

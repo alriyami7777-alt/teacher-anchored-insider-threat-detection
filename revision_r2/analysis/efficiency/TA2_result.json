@@ -1,0 +1,121 @@
+{
+  "model": "TA2",
+  "seed": 42,
+  "status": "COMPLETE",
+  "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed42\\best_student.pt",
+  "checkpoint_sha256": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8",
+  "rows": [
+    {
+      "model": "TA2",
+      "seed": 42,
+      "device": "cpu",
+      "batch_size": 1,
+      "warmup_batches_per_repeat": 50,
+      "timed_batches_per_repeat": 200,
+      "repeats": 3,
+      "repeat_median_latency_seconds": [
+        0.0013693500077351928,
+        0.0013195000065024942,
+        0.0014830000000074506
+      ],
+      "median_latency_seconds": 0.0013693500077351928,
+      "throughput_sequences_per_second": 730.2734832958658,
+      "peak_GPU_memory_bytes": null,
+      "peak_RSS_bytes": null,
+      "incremental_peak_RSS_bytes": null,
+      "memory_repeats": []
+    },
+    {
+      "model": "TA2",
+      "seed": 42,
+      "device": "cpu",
+      "batch_size": 1024,
+      "warmup_batches_per_repeat": 50,
+      "timed_batches_per_repeat": 200,
+      "repeats": 3,
+      "repeat_median_latency_seconds": [
+        0.014870249986415729,
+        0.015252099983626977,
+        0.016827250001369976
+      ],
+      "median_latency_seconds": 0.015252099983626977,
+      "throughput_sequences_per_second": 67138.29578217144,
+      "peak_GPU_memory_bytes": null,
+      "peak_RSS_bytes": null,
+      "incremental_peak_RSS_bytes": null,
+      "memory_repeats": []
+    },
+    {
+      "model": "TA2",
+      "seed": 42,
+      "device": "cuda",
+      "batch_size": 1,
+      "warmup_batches_per_repeat": 50,
+      "timed_batches_per_repeat": 200,
+      "repeats": 3,
+      "repeat_median_latency_seconds": [
+        0.002315650010132231,
+        0.0023585000017192215,
+        0.002394750001258217
+      ],
+      "median_latency_seconds": 0.0023585000017192215,
+      "throughput_sequences_per_second": 423.99830369771166,
+      "peak_GPU_memory_bytes": 26914816,
+      "peak_RSS_bytes": null,
+      "incremental_peak_RSS_bytes": null,
+      "memory_repeats": [
+        26914816,
+        26914816,
+        26914816
+      ]
+    },
+    {
+      "model": "TA2",
+      "seed": 42,
+      "device": "cuda",
+      "batch_size": 1024,
+      "warmup_batches_per_repeat": 50,
+      "timed_batches_per_repeat": 200,
+      "repeats": 3,
+      "repeat_median_latency_seconds": [
+        0.0025569999852450565,
+        0.0029083499975968152,
+        0.0027034500089939684
+      ],
+      "median_latency_seconds": 0.0027034500089939684,
+      "throughput_sequences_per_second": 378775.2673780936,
+      "peak_GPU_memory_bytes": 204877824,
+      "peak_RSS_bytes": null,
+      "incremental_peak_RSS_bytes": null,
+      "memory_repeats": [
+        204877824,
+        204877824,
+        204877824
+      ]
+    }
+  ],
+  "forward_source_sha256": "56261513d4be6424972798a1afa2a3e312b35c84c0e3817e0c1b64161b2aebc7",
+  "architecture_source_sha256": {
+    "prototype_v3_node/architecture.py": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+    "prototype_v3_node/odst.py": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+    "models/sequence_ensemble.py": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475"
+  },
+  "parameter_count_loaded": 57548,
+  "parameter_count_classification_path": 53257,
+  "forward_semantics": "Frozen encoder/attention and final classification head only; output sigmoid; stored historical linear head still computed by encode_attention_h but its output is unused; diagnostics dictionaries not retained",
+  "FLOPs_per_sequence": 1921152,
+  "FLOP_operator_counts": {
+    "aten.addmm": 1904896,
+    "aten.mm": 2560,
+    "aten.bmm": 13696
+  },
+  "FLOPs_scope": "torch.utils.flop_counter.FlopCounterMode; CPU batch 1, MKLDNN disabled for LSTM matrix-operation visibility; multiply+add=2; excludes elementwise/nonregistered operations",
+  "training_wall_clock": {
+    "total": "not recorded",
+    "per_epoch": "not recorded",
+    "history_source": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed42\\history.json",
+    "history_sha256": "cbd31df85a62cf7d87b9feb29340a44b1598e06849f1fc0c4bd420d11677968b",
+    "duration_fields_found": [],
+    "note": "No retraining; do not infer duration from file timestamps."
+  }
+}

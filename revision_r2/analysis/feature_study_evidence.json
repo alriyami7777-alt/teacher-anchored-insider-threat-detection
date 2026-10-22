@@ -1,0 +1,146 @@
+{
+  "status": "COMPLETE",
+  "study_folder": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study",
+  "branch": "not recorded; standalone study folder",
+  "commit": "not recorded; no .git at study or ancestors",
+  "git_locations": [],
+  "stage1": {
+    "campaign_folder": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\experiment_runs\\campaign_20261007_r1",
+    "logical_fits": 174,
+    "total_fitted_attempts": 175,
+    "additional_recovery_attempts": 1,
+    "run_folders": [
+      "inner_xgb_20261007_r1",
+      "outer_xgb_20261007_r1",
+      "secondary_20261007_r1",
+      "secondary_20261007_r1_recovery_20261008_r1",
+      "campaign_20261007_r1"
+    ],
+    "complete_sha256": "98294661afb77562362096c9f633acd09e7b4a32c7ccc136ee0ed6ead5938d40"
+  },
+  "stage2": {
+    "folder": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\experiment_runs\\stage2_v06_tl_review_20261009_r1",
+    "logical_fits": 72,
+    "complete_sha256": "cba5c0d81f31fe45e07a1693627e601e32b3c725e8f42c7f90cd7ad2c50ceb7c",
+    "manifest_sha256": "55d25c09e52b70161fec902034776659eff2370219c76e07321cfea4ecdc32f9",
+    "analysis_sha256": "4692552d05612c551e6ce5dc80f828f42d6cdbe1b71fc862d34f86ce84e4318d",
+    "protocol_sha256": "fccb2da6c266c6101cad73e6087654f112c014038abc00450f150b849c40bb02",
+    "recipe": {
+      "seeds": [
+        42,
+        52,
+        62
+      ],
+      "fit_budget": 72,
+      "max_epochs": 30,
+      "patience": 4,
+      "batch_size": 1024,
+      "epoch_policy": "T min4; shared outer C/G=max rounded medians"
+    },
+    "F13_outer_epoch_budgets": {
+      "L": 9,
+      "T": 4,
+      "C": 4,
+      "G": 4
+    },
+    "CG_pairing_checks": [
+      {
+        "partition": "inner",
+        "seed": 42,
+        "same_starting_state": true,
+        "same_training_rng_seed": true,
+        "same_outer_epochs": true
+      },
+      {
+        "partition": "inner",
+        "seed": 52,
+        "same_starting_state": true,
+        "same_training_rng_seed": true,
+        "same_outer_epochs": true
+      },
+      {
+        "partition": "inner",
+        "seed": 62,
+        "same_starting_state": true,
+        "same_training_rng_seed": true,
+        "same_outer_epochs": true
+      },
+      {
+        "partition": "outer",
+        "seed": 42,
+        "same_starting_state": true,
+        "same_training_rng_seed": true,
+        "same_outer_epochs": true
+      },
+      {
+        "partition": "outer",
+        "seed": 52,
+        "same_starting_state": true,
+        "same_training_rng_seed": true,
+        "same_outer_epochs": true
+      },
+      {
+        "partition": "outer",
+        "seed": 62,
+        "same_starting_state": true,
+        "same_training_rng_seed": true,
+        "same_outer_epochs": true
+      }
+    ]
+  },
+  "reported_G_minus_C_at_F13": {
+    "frozen_file": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\experiment_runs\\stage2_v06_tl_review_20261009_r1\\ANALYSIS.json",
+    "json_selector": "paired_contrasts[arm=G/F13,reference=C/F13]",
+    "values": {
+      "role": "EXPLORATORY_UNCORRECTED",
+      "arm": "G/F13",
+      "reference": "C/F13",
+      "per_seed_ap_difference": [
+        -0.015511592668056906,
+        0.014954188332499618,
+        0.0005728777240591176
+      ],
+      "observed_mean_seed_ap_difference": 5.157796167276629e-06,
+      "attempted_draws": 2000,
+      "valid_draws": 2000,
+      "invalid_single_class_draws": 0,
+      "paired_95_percentile_interval": [
+        -0.01238735175614051,
+        0.013020268080634053
+      ],
+      "one_sided_95_lower_bound": -0.010187728795920158,
+      "interval_reliable": true,
+      "random_seed": 42,
+      "rng": "numpy.default_rng PCG64",
+      "percentile_method": "linear",
+      "scope": "Conditional on fitted models and observed calendar; no selection/time-shock/retraining uncertainty"
+    },
+    "C_F13": {
+      "seed_ap": [
+        0.9010735289878536,
+        0.880159676413406,
+        0.8916665905139748
+      ],
+      "mean_seed_ap": 0.8909665986384114
+    },
+    "G_F13": {
+      "seed_ap": [
+        0.8855619363197967,
+        0.8951138647459056,
+        0.8922394682380339
+      ],
+      "mean_seed_ap": 0.8909717564345788
+    }
+  },
+  "summary_export_files": 1143,
+  "protocol_and_source_export_files": 12,
+  "export_counts": {
+    "EXACT": 1155
+  },
+  "summary_selection": "All per-fit RESULT, run RESULTS/ANALYSIS/SUMMARY, completion, selection, identity, manifest and protocol summary files in the completed Stage 1 campaigns (including recovery) and final 72-fit Stage 2 campaign; model/array/checkpoint/cache payloads excluded",
+  "limitations": [
+    "No Git commit attribution exists for these standalone study snapshots; hashes bind exact frozen files instead.",
+    "Stage 2 differs from historical EDITOR-012 in checkpoint selection, budgets and fresh teacher chain; G-C is not the historical F11-F00 contrast.",
+    "Frozen validation is outcome-exposed and intervals are conditional on fitted models and observed calendar."
+  ]
+}

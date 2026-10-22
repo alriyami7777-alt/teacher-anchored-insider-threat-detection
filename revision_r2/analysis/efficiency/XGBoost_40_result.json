@@ -1,0 +1,133 @@
+{
+  "model": "XGBoost_40",
+  "seed": 42,
+  "status": "COMPLETE",
+  "checkpoint": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed42\\model.json",
+  "checkpoint_sha256": "2109554164abdd002ce0a4377f957c5aa3bc26886a197749ea79fc04d9b94fae",
+  "rows": [
+    {
+      "model": "XGBoost_40",
+      "seed": 42,
+      "device": "cpu",
+      "batch_size": 1,
+      "warmup_batches_per_repeat": 50,
+      "timed_batches_per_repeat": 200,
+      "repeats": 3,
+      "repeat_median_latency_seconds": [
+        0.00027150000096298754,
+        0.0002832999889506027,
+        0.00027165000210516155
+      ],
+      "median_latency_seconds": 0.00027165000210516155,
+      "throughput_sequences_per_second": 3681.20740751137,
+      "peak_GPU_memory_bytes": null,
+      "peak_RSS_bytes": 788070400,
+      "incremental_peak_RSS_bytes": 28672,
+      "memory_repeats": [
+        {
+          "peak_RSS_bytes": 788000768,
+          "baseline_RSS_bytes": 787914752,
+          "increment_bytes": 86016
+        },
+        {
+          "peak_RSS_bytes": 788070400,
+          "baseline_RSS_bytes": 788041728,
+          "increment_bytes": 28672
+        },
+        {
+          "peak_RSS_bytes": 788070400,
+          "baseline_RSS_bytes": 788049920,
+          "increment_bytes": 20480
+        }
+      ]
+    },
+    {
+      "model": "XGBoost_40",
+      "seed": 42,
+      "device": "cpu",
+      "batch_size": 1024,
+      "warmup_batches_per_repeat": 50,
+      "timed_batches_per_repeat": 200,
+      "repeats": 3,
+      "repeat_median_latency_seconds": [
+        0.0011471000034362078,
+        0.0011938500101678073,
+        0.001297900002100505
+      ],
+      "median_latency_seconds": 0.0011938500101678073,
+      "throughput_sequences_per_second": 857729.1881549398,
+      "peak_GPU_memory_bytes": null,
+      "peak_RSS_bytes": 788115456,
+      "incremental_peak_RSS_bytes": 20480,
+      "memory_repeats": [
+        {
+          "peak_RSS_bytes": 788115456,
+          "baseline_RSS_bytes": 788094976,
+          "increment_bytes": 20480
+        },
+        {
+          "peak_RSS_bytes": 788115456,
+          "baseline_RSS_bytes": 788094976,
+          "increment_bytes": 20480
+        },
+        {
+          "peak_RSS_bytes": 788115456,
+          "baseline_RSS_bytes": 788094976,
+          "increment_bytes": 20480
+        }
+      ]
+    },
+    {
+      "model": "XGBoost_40",
+      "seed": 42,
+      "device": "cuda",
+      "batch_size": 1,
+      "warmup_batches_per_repeat": 50,
+      "timed_batches_per_repeat": 200,
+      "repeats": 3,
+      "repeat_median_latency_seconds": [
+        0.0013480499910656363,
+        0.001269450003746897,
+        0.0015241000073729083
+      ],
+      "median_latency_seconds": 0.0013480499910656363,
+      "throughput_sequences_per_second": 741.8122522366533,
+      "peak_GPU_memory_bytes": null,
+      "peak_RSS_bytes": 821645312,
+      "incremental_peak_RSS_bytes": 184320,
+      "memory_repeats": [],
+      "GPU_memory_note": "PyTorch allocator peak excludes XGBoost CUDA allocations; native XGBoost peak GPU memory unavailable from this counter"
+    },
+    {
+      "model": "XGBoost_40",
+      "seed": 42,
+      "device": "cuda",
+      "batch_size": 1024,
+      "warmup_batches_per_repeat": 50,
+      "timed_batches_per_repeat": 200,
+      "repeats": 3,
+      "repeat_median_latency_seconds": [
+        0.0018756500066956505,
+        0.0017519000102765858,
+        0.00206610000168439
+      ],
+      "median_latency_seconds": 0.0018756500066956505,
+      "throughput_sequences_per_second": 545944.0707725585,
+      "peak_GPU_memory_bytes": null,
+      "peak_RSS_bytes": 822489088,
+      "incremental_peak_RSS_bytes": 20480,
+      "memory_repeats": [],
+      "GPU_memory_note": "PyTorch allocator peak excludes XGBoost CUDA allocations; native XGBoost peak GPU memory unavailable from this counter"
+    }
+  ],
+  "number_of_trees": 300,
+  "total_nodes": 20830,
+  "max_depth": 6,
+  "features": 40,
+  "training_wall_clock": {
+    "total_seconds": 5.998026100045536,
+    "per_epoch": "not applicable to tree models",
+    "source": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed42\\summary.json",
+    "units": "seconds"
+  }
+}
