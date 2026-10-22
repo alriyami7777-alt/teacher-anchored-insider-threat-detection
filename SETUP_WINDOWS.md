@@ -4,7 +4,7 @@
 
 ```powershell
 $source = "<path-to-this-starter-folder>"
-$destination = "C:\PhD\07_Projects\teacher-anchored-insider-threat-detection"
+$destination = "C:\PhD\07_Projects\teacher-guided-insider-threat-detection"
 
 Copy-Item -Recurse -Force $source $destination
 Set-Location $destination
@@ -19,7 +19,7 @@ git commit -m "Initial paper reproducibility repository scaffold"
 Create a new **private** GitHub repository named:
 
 ```text
-teacher-anchored-insider-threat-detection
+teacher-guided-insider-threat-detection
 ```
 
 Do not initialise it with a README, licence, or `.gitignore`, because those files already exist locally.
@@ -27,7 +27,7 @@ Do not initialise it with a README, licence, or `.gitignore`, because those file
 Then connect and push:
 
 ```powershell
-git remote add origin https://github.com/<your-account>/teacher-anchored-insider-threat-detection.git
+git remote add origin https://github.com/<your-account>/teacher-guided-insider-threat-detection.git
 git push -u origin main
 ```
 

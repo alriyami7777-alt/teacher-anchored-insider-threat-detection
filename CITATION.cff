@@ -7,6 +7,6 @@ authors:
     given-names: "Qasim Mohamed Muhanna"
 date-released: "2026-07-27"
 version: "0.1.0"
-# The repository name retains the original "teacher-anchored" wording for continuity.
-repository-code: "https://github.com/alriyami7777-alt/teacher-anchored-insider-threat-detection"
-license: "proprietary"
+# Renamed from teacher-anchored-insider-threat-detection on 2026-10-22; the old URL redirects.
+repository-code: "https://github.com/alriyami7777-alt/teacher-guided-insider-threat-detection"
+license: "MIT"

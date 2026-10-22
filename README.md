@@ -4,9 +4,11 @@ This repository is the paper-support and reproducibility repository for the
 IEEE Access manuscript of the same title. It is not a general PhD companion
 repository.
 
-The repository name retains the original `teacher-anchored-insider-threat-detection`
-wording for continuity, although the revised manuscript now uses
-"Teacher-Guided".
+The repository was renamed on 22 October 2026 from
+`teacher-anchored-insider-threat-detection` to
+`teacher-guided-insider-threat-detection` to match the revised manuscript
+title. GitHub redirects the old URL, so links in earlier versions of the
+manuscript still resolve.
 
 The repository shares reviewed model and evaluation code, experiment protocols
 and configuration templates, result summaries and provenance records,
