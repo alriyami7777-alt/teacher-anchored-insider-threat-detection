@@ -1,0 +1,75 @@
+{
+  "R61_SCENARIO4_ANSWER_AVAILABLE": "NO",
+  "R61_GROUND_TRUTH_COVERAGE_COMPLETE": "NO",
+  "R61_OFFICIAL_INSIDERS": [
+    "U_61115a27a3",
+    "U_957f28909a",
+    "U_d19fa9f3b4",
+    "U_92d7304a8e",
+    "U_251843f2a3"
+  ],
+  "n_official_insiders": 5,
+  "R61_POSITIVE_LABEL_USERS_UNDER_EDITOR024_RULE": [
+    "U_61115a27a3",
+    "U_957f28909a",
+    "U_a3540c6adb",
+    "U_d19fa9f3b4",
+    "U_92d7304a8e",
+    "U_24b72046e2",
+    "U_47daf48588",
+    "U_8a00b7b0ec",
+    "U_f6ad523c1b"
+  ],
+  "n_positive_label_users": 9,
+  "insider_map": {
+    "r6.1-1": "U_957f28909a",
+    "r6.1-2": "U_92d7304a8e",
+    "r6.1-3": "U_d19fa9f3b4",
+    "r6.1-4": "U_251843f2a3",
+    "r6.1-5": "U_61115a27a3"
+  },
+  "attribution_by_scenario": {
+    "r6.1-1": {
+      "official": 22,
+      "other": 0,
+      "missing": 0,
+      "n": 22
+    },
+    "r6.1-2": {
+      "official": 226,
+      "other": 0,
+      "missing": 0,
+      "n": 226
+    },
+    "r6.1-3": {
+      "official": 16,
+      "other": 12,
+      "missing": 0,
+      "n": 28
+    },
+    "r6.1-5": {
+      "official": 4,
+      "other": 0,
+      "missing": 0,
+      "n": 4
+    }
+  },
+  "semantic_mismatch_established_from_authoritative_fields": false,
+  "SCENARIO_INSIDER_CONSISTENT_AVAILABLE": true,
+  "n_scenarios_with_answers": 4,
+  "n_official_scenarios": 5,
+  "written_at": "2026-08-18T10:26:29Z",
+  "diagnostic_mean_pr_auc": {
+    "C2-OPT": 7.678337147457205e-05,
+    "F10": 7.334556986803534e-05,
+    "TA2": 7.471499955922729e-05,
+    "L1": 7.87467568808086e-05
+  },
+  "diagnostic_prevalence": 6.99195171026157e-05,
+  "diagnostic_ranking_excess": {
+    "C2-OPT": 6.863854371956353e-06,
+    "F10": 3.426052765419642e-06,
+    "TA2": 4.795482456611592e-06,
+    "L1": 8.827239778192908e-06
+  }
+}

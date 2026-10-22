@@ -1,0 +1,132 @@
+{
+  "TA2_minus_C2_CLEAN": {
+    "favourable_seeds": 3,
+    "n_primary_seeds": 3,
+    "fraction": "3/3",
+    "by_seed": {
+      "42": true,
+      "52": true,
+      "62": true
+    },
+    "unfavourable_seeds_retained": true
+  },
+  "F10_minus_C2_CLEAN": {
+    "favourable_seeds": 2,
+    "n_primary_seeds": 3,
+    "fraction": "2/3",
+    "by_seed": {
+      "42": false,
+      "52": true,
+      "62": true
+    },
+    "unfavourable_seeds_retained": true
+  },
+  "F10_minus_C2_SOURCE_AURC": {
+    "favourable_seeds": 2,
+    "n_primary_seeds": 3,
+    "fraction": "2/3",
+    "by_seed": {
+      "42": false,
+      "52": true,
+      "62": true
+    },
+    "unfavourable_seeds_retained": true
+  },
+  "TA2_minus_C2_SOURCE_AURC": {
+    "favourable_seeds": 2,
+    "n_primary_seeds": 3,
+    "fraction": "2/3",
+    "by_seed": {
+      "42": false,
+      "52": true,
+      "62": true
+    },
+    "unfavourable_seeds_retained": true
+  },
+  "TA2_minus_F10_SOURCE_AURC": {
+    "favourable_seeds": 2,
+    "n_primary_seeds": 3,
+    "fraction": "2/3",
+    "by_seed": {
+      "42": false,
+      "52": true,
+      "62": true
+    },
+    "unfavourable_seeds_retained": true
+  },
+  "TA2_minus_L1_SOURCE_AURC": {
+    "favourable_seeds": 3,
+    "n_primary_seeds": 3,
+    "fraction": "3/3",
+    "by_seed": {
+      "42": true,
+      "52": true,
+      "62": true
+    },
+    "unfavourable_seeds_retained": true
+  },
+  "F10_minus_C2_NOISE_AURC": {
+    "favourable_seeds": 2,
+    "n_primary_seeds": 3,
+    "fraction": "2/3",
+    "by_seed": {
+      "42": false,
+      "52": true,
+      "62": true
+    },
+    "unfavourable_seeds_retained": true
+  },
+  "TA2_minus_C2_NOISE_AURC": {
+    "favourable_seeds": 2,
+    "n_primary_seeds": 3,
+    "fraction": "2/3",
+    "by_seed": {
+      "42": false,
+      "52": true,
+      "62": true
+    },
+    "unfavourable_seeds_retained": true
+  },
+  "TA2_minus_F10_NOISE_AURC": {
+    "favourable_seeds": 3,
+    "n_primary_seeds": 3,
+    "fraction": "3/3",
+    "by_seed": {
+      "42": true,
+      "52": true,
+      "62": true
+    },
+    "unfavourable_seeds_retained": true
+  },
+  "TA2_minus_L1_NOISE_AURC": {
+    "favourable_seeds": 3,
+    "n_primary_seeds": 3,
+    "fraction": "3/3",
+    "by_seed": {
+      "42": true,
+      "52": true,
+      "62": true
+    },
+    "unfavourable_seeds_retained": true
+  },
+  "TA2_minus_F10_ROUTE_MAE": {
+    "by_seed": {
+      "42": {
+        "clean_delta_TA2_minus_F10": -0.003189321223339533,
+        "degraded_delta_TA2_minus_F10": -0.0035210921491212674
+      },
+      "52": {
+        "clean_delta_TA2_minus_F10": -0.0024681342714802904,
+        "degraded_delta_TA2_minus_F10": -0.0028691832772942015
+      },
+      "62": {
+        "clean_delta_TA2_minus_F10": -0.00973866668514329,
+        "degraded_delta_TA2_minus_F10": -0.010328943606837403
+      }
+    },
+    "clean_favourable": "3/3",
+    "degraded_favourable": "3/3",
+    "higher_is_better": false,
+    "unfavourable_seeds_retained": true
+  }
+}

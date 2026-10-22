@@ -1,0 +1,274 @@
+{
+  "TEACHER_GUIDANCE_VS_INITIALISATION": "SUPPORTED_STRONG",
+  "ROUTE_ANCHOR_INCREMENTAL_PREDICTIVE_EFFECT": "NOT_SUPPORTED",
+  "ROUTE_FIDELITY_EFFECT": "SUPPORTED",
+  "ODST_PREDICTIVE_SUPERIORITY_OVER_LINEAR": "NOT_SUPPORTED",
+  "CLEAN": {
+    "C2OPT_PR_AUC": 0.9353307201032156,
+    "F10_PR_AUC": 0.9426058055231795,
+    "TA2_PR_AUC": 0.942845927422141,
+    "L1_PR_AUC": 0.9388928847825109
+  },
+  "SOURCE_ABLATION": {
+    "models": {
+      "C2-OPT": {
+        "MEAN_SOURCE_DELTA": -0.40995982507365447,
+        "MEAN_SOURCE_DELTA_by_seed": {
+          "42": -0.3942241014976577,
+          "52": -0.35082284658809737,
+          "62": -0.4848325271352083
+        },
+        "WORST_SOURCE_DELTA": -0.8920290657694908,
+        "WORST_SOURCE_by_seed": {
+          "42": "file",
+          "52": "file",
+          "62": "file"
+        },
+        "per_source_mean_delta": {
+          "logon": -0.06842430495362654,
+          "device": -0.8201678483171628,
+          "file": -0.8920290657694908,
+          "email": -0.20665915217278089,
+          "http": -0.06251875415521135
+        }
+      },
+      "F10": {
+        "MEAN_SOURCE_DELTA": -0.3870633497549547,
+        "MEAN_SOURCE_DELTA_by_seed": {
+          "42": -0.3812840560577112,
+          "52": -0.3615779351374745,
+          "62": -0.4183280580696784
+        },
+        "WORST_SOURCE_DELTA": -0.8955058962722261,
+        "WORST_SOURCE_by_seed": {
+          "42": "file",
+          "52": "file",
+          "62": "file"
+        },
+        "per_source_mean_delta": {
+          "logon": -0.0858876907940634,
+          "device": -0.8029364880047377,
+          "file": -0.8955058962722261,
+          "email": -0.0997967869111962,
+          "http": -0.051189886792550064
+        }
+      },
+      "TA2": {
+        "MEAN_SOURCE_DELTA": -0.3853127732910046,
+        "MEAN_SOURCE_DELTA_by_seed": {
+          "42": -0.4053613535883331,
+          "52": -0.3493503094618669,
+          "62": -0.4012266568228138
+        },
+        "WORST_SOURCE_DELTA": -0.8989039133204084,
+        "WORST_SOURCE_by_seed": {
+          "42": "file",
+          "52": "file",
+          "62": "file"
+        },
+        "per_source_mean_delta": {
+          "logon": -0.08027903415900035,
+          "device": -0.8075790986011193,
+          "file": -0.8989039133204084,
+          "email": -0.08734655509969196,
+          "http": -0.05245526527480282
+        }
+      },
+      "L1": {
+        "MEAN_SOURCE_DELTA": -0.39770500416778054,
+        "MEAN_SOURCE_DELTA_by_seed": {
+          "42": -0.38467229663704117,
+          "52": -0.3667514515122239,
+          "62": -0.44169126435407646
+        },
+        "WORST_SOURCE_DELTA": -0.8833087738519545,
+        "WORST_SOURCE_by_seed": {
+          "42": "file",
+          "52": "file",
+          "62": "file"
+        },
+        "per_source_mean_delta": {
+          "logon": -0.09093884249512312,
+          "device": -0.8312970491703403,
+          "file": -0.8833087738519545,
+          "email": -0.12748989512936923,
+          "http": -0.0554904601921152
+        }
+      }
+    },
+    "TA2_WORST_SOURCE": "file",
+    "TA2_WORST_SOURCE_DELTA": -0.8989039133204084,
+    "TEACHER_GUIDANCE_SOURCE_RESILIENCE_EFFECT": 0.02289647531869976,
+    "ROUTE_ANCHOR_SOURCE_RESILIENCE_EFFECT": 0.0017505764639501042,
+    "TA2_VS_LINEAR_SOURCE_RESILIENCE_EFFECT": 0.012392230876775934
+  },
+  "GAUSSIAN_NOISE": {
+    "models": {
+      "C2-OPT": {
+        "MEAN_NOISE_RETENTION": 0.92090325910195,
+        "MEAN_NOISE_RETENTION_by_seed": {
+          "42": 0.934005457478367,
+          "52": 0.9210045280834397,
+          "62": 0.9076997917440434
+        },
+        "degradation_slope": -0.27579818790517785,
+        "degradation_slope_by_seed": {
+          "42": -0.24771130317823808,
+          "52": -0.2649835804657506,
+          "62": -0.3146996800715449
+        }
+      },
+      "F10": {
+        "MEAN_NOISE_RETENTION": 0.9300872310306101,
+        "MEAN_NOISE_RETENTION_by_seed": {
+          "42": 0.9285114776778393,
+          "52": 0.9260615382103999,
+          "62": 0.9356886772035908
+        },
+        "degradation_slope": -0.26202274533673614,
+        "degradation_slope_by_seed": {
+          "42": -0.26906775526026433,
+          "52": -0.27119417728283013,
+          "62": -0.24580630346711396
+        }
+      },
+      "TA2": {
+        "MEAN_NOISE_RETENTION": 0.9355917807697932,
+        "MEAN_NOISE_RETENTION_by_seed": {
+          "42": 0.933722870268651,
+          "52": 0.9314544627239659,
+          "62": 0.9415980093167627
+        },
+        "degradation_slope": -0.23685398541317462,
+        "degradation_slope_by_seed": {
+          "42": -0.24599756220622582,
+          "52": -0.24202028214815058,
+          "62": -0.2225441118851475
+        }
+      },
+      "L1": {
+        "MEAN_NOISE_RETENTION": 0.9258249295057069,
+        "MEAN_NOISE_RETENTION_by_seed": {
+          "42": 0.9179654902433563,
+          "52": 0.9183422303454568,
+          "62": 0.9411670679283074
+        },
+        "degradation_slope": -0.27217677084750064,
+        "degradation_slope_by_seed": {
+          "42": -0.30543219565417806,
+          "52": -0.2896992036356604,
+          "62": -0.22139891325266348
+        }
+      }
+    },
+    "slope_definition": "ordinary_least_squares_PR_AUC_on_0.00_0.05_0.10_0.20",
+    "TEACHER_GUIDANCE_NOISE_RESILIENCE_EFFECT": 0.00918397192866005,
+    "ROUTE_ANCHOR_NOISE_RESILIENCE_EFFECT": 0.005504549739183129,
+    "TA2_VS_LINEAR_NOISE_RESILIENCE_EFFECT": 0.009766851264086274
+  },
+  "ROUTING": {
+    "F10_CLEAN_ROUTE_MAE_teacher_relative": 0.007548301982433658,
+    "TA2_CLEAN_ROUTE_MAE_teacher_relative": 0.0024161417232044756,
+    "F10_source_teacher_relative_route_MAE": 0.010442341994934013,
+    "TA2_source_teacher_relative_route_MAE": 0.004904688682017194,
+    "F10_noise_teacher_relative_route_MAE": 0.01294997204028136,
+    "TA2_noise_teacher_relative_route_MAE": 0.006890751136911964,
+    "F10_source_own_clean_route_MAE": 0.03312291080493296,
+    "TA2_source_own_clean_route_MAE": 0.03192406958014791,
+    "F10_noise_own_clean_route_MAE": 0.01202494480995098,
+    "TA2_noise_own_clean_route_MAE": 0.01030023018581995,
+    "note": "route identities compared only within the same model/seed; teacher-relative uses matched T-OPT",
+    "three_seeds_are_not_independent_experimental_units": true
+  },
+  "ROUTE_ANCHOR_STRUCTURAL_ROBUSTNESS": "SUPPORTED",
+  "EXPLANATION": {
+    "F10_LOCAL_DIRECTIONAL_FAITHFULNESS": [
+      "SUPPORTED",
+      "SUPPORTED",
+      "SUPPORTED"
+    ],
+    "TA2_LOCAL_DIRECTIONAL_FAITHFULNESS": [
+      "SUPPORTED",
+      "SUPPORTED",
+      "SUPPORTED"
+    ],
+    "TA2_DIRECTIONAL_POSITIVE_SEEDS": "3/3",
+    "TA2_EXPLANATION_STABILITY_UNDER_SOURCE_ABLATION": 0.3349181664862521,
+    "TA2_EXPLANATION_STABILITY_UNDER_NOISE": 0.2967473460744269,
+    "TA2_VS_F10_EXPLANATION_STABILITY_EFFECT": 0.018135801925027145
+  },
+  "LOCAL_DIRECTIONAL_TREE_FAITHFULNESS": "SUPPORTED",
+  "TREE_EXPLANATION_DEGRADED_INPUT_STABILITY": "SUPPORTED",
+  "ROUTE_TRACEABILITY": "SUPPORTED",
+  "LEAF_TRACEABILITY": "SUPPORTED",
+  "GLOBAL_TOPK_PR_AUC_FAITHFULNESS": "NOT_SUPPORTED",
+  "TEACHER_GUIDANCE_DEGRADED_INPUT_VALUE": "CONSISTENT",
+  "ODST_DEGRADED_INPUT_ADVANTAGE_OVER_LINEAR": "CONSISTENT",
+  "predictive_bootstrap": {
+    "teacher_guidance_source_ci_excludes_zero": true,
+    "teacher_guidance_noise_ci_excludes_zero": false,
+    "ta2_vs_l1_source_ci_excludes_zero": false,
+    "ta2_vs_l1_noise_ci_excludes_zero": true
+  },
+  "issue_matrix": [
+    {
+      "issue": "teacher_guidance_vs_initialisation_clean",
+      "frozen_status": "SUPPORTED_STRONG",
+      "editor017_status": "PRESERVED",
+      "evidence": "clean PR-AUC F10/TA2 > C2-OPT; no mechanical contradiction"
+    },
+    {
+      "issue": "route_anchor_incremental_predictive_effect",
+      "frozen_status": "NOT_SUPPORTED",
+      "editor017_status": "PRESERVED",
+      "evidence": "clean TA2 vs F10 remains a small non-promoted predictive increment"
+    },
+    {
+      "issue": "teacher_guidance_degraded_input_value",
+      "frozen_status": "UNTESTED_BEFORE_EDITOR017",
+      "editor017_status": "CONSISTENT",
+      "evidence": "source_effect=0.02289647531869976; noise_effect=0.00918397192866005"
+    },
+    {
+      "issue": "route_anchor_structural_robustness",
+      "frozen_status": "UNTESTED_BEFORE_EDITOR017",
+      "editor017_status": "SUPPORTED",
+      "evidence": "source_route_deg TA2=0.002488546958812719 F10=0.0028940400125003546; noise_route_deg TA2=0.0044746094137074885 F10=0.005401670057847702"
+    },
+    {
+      "issue": "odst_degraded_input_advantage_over_linear",
+      "frozen_status": "UNTESTED_BEFORE_EDITOR017",
+      "editor017_status": "CONSISTENT",
+      "evidence": "source_effect=0.012392230876775934; noise_effect=0.009766851264086274"
+    },
+    {
+      "issue": "local_directional_tree_faithfulness",
+      "frozen_status": "SUPPORTED_FROM_EDITOR015",
+      "editor017_status": "SUPPORTED",
+      "evidence": "TA2_positive_seeds=3/3 F10_positive_seeds=3/3"
+    },
+    {
+      "issue": "global_topk_pr_auc_faithfulness",
+      "frozen_status": "NOT_SUPPORTED",
+      "editor017_status": "NOT_SUPPORTED",
+      "evidence": "historical negative result preserved; not retested as a promotion claim"
+    },
+    {
+      "issue": "tree_explanation_degraded_input_stability",
+      "frozen_status": "UNTESTED_BEFORE_EDITOR017",
+      "editor017_status": "SUPPORTED",
+      "evidence": "TA2_vs_F10_effect=0.018135801925027145"
+    }
+  ],
+  "forbidden_terms_used": false,
+  "terminology_lock": [
+    "ADVERSARIAL_ROBUSTNESS",
+    "EVASION_ROBUSTNESS",
+    "POISONING_ROBUSTNESS",
+    "PHYSICAL_SENSOR_FAILURE"
+  ],
+  "user_mapping": "851385f9c926cf945b3c74b5c9442e3ccb94cf1d9dabb98106a29cbfea01c5c0",
+  "parameter_update": false,
+  "threshold_retuned": false,
+  "written_at": "2026-08-16T12:10:11Z"
+}

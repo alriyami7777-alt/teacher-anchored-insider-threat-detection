@@ -1,0 +1,4 @@
+{
+  "status": "NOT_AVAILABLE_NO_WINDOW_USER_ID_IN_TENSOR",
+  "note": "r5.2 validation npz used for EDITOR-009 does not expose a user_id field in the loaded keys required for paired user-cluster bootstrap. Na\u00efve window bootstrap is forbidden. Incident clustering was not invented."
+}

@@ -1,0 +1,148 @@
+{
+  "CHECKPOINT_GATE": "PASS",
+  "n_student_checkpoints": 12,
+  "records": [
+    {
+      "model": "C2-OPT",
+      "seed": 42,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed42\\best_student.pt",
+      "expected_sha256": "d64651d25e48b3bcd4cad7d107d3bc55a4c555a2827f3656a087624e94ac4baf",
+      "observed_sha256": "d64651d25e48b3bcd4cad7d107d3bc55a4c555a2827f3656a087624e94ac4baf",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "C2-OPT",
+      "seed": 52,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed52\\best_student.pt",
+      "expected_sha256": "f0eea90099ba7dd3e721efb930e367e868049c94f6542d5b2156d9fe469acb7e",
+      "observed_sha256": "f0eea90099ba7dd3e721efb930e367e868049c94f6542d5b2156d9fe469acb7e",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "C2-OPT",
+      "seed": 62,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed62\\best_student.pt",
+      "expected_sha256": "50512aa5392ee7f4d93dc5f84471fc1074baeb757ae9fb5b96caed141ee586da",
+      "observed_sha256": "50512aa5392ee7f4d93dc5f84471fc1074baeb757ae9fb5b96caed141ee586da",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "F10",
+      "seed": 42,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F10_DOPT\\seed42\\best_student.pt",
+      "expected_sha256": "ea8cd41a1ae3f845719956fd7a49230fa82807ffac87841be5f5ab95c64ac0c2",
+      "observed_sha256": "ea8cd41a1ae3f845719956fd7a49230fa82807ffac87841be5f5ab95c64ac0c2",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "F10",
+      "seed": 52,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F10_DOPT\\seed52\\best_student.pt",
+      "expected_sha256": "829135230c5629f0b11161e11d76eba7a15e65bf9d03b5a55ffa297a93ddf959",
+      "observed_sha256": "829135230c5629f0b11161e11d76eba7a15e65bf9d03b5a55ffa297a93ddf959",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "F10",
+      "seed": 62,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F10_DOPT\\seed62\\best_student.pt",
+      "expected_sha256": "06313d6f2602de51f8dd6e15e1d1292864fd8cbd158f33977fa42c8a47036aee",
+      "observed_sha256": "06313d6f2602de51f8dd6e15e1d1292864fd8cbd158f33977fa42c8a47036aee",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "TA2",
+      "seed": 42,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed42\\best_student.pt",
+      "expected_sha256": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8",
+      "observed_sha256": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "TA2",
+      "seed": 52,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed52\\best_student.pt",
+      "expected_sha256": "7613ba559bcf55827d04129066eb595b677994494609646f8b2463308ed5edb4",
+      "observed_sha256": "7613ba559bcf55827d04129066eb595b677994494609646f8b2463308ed5edb4",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "TA2",
+      "seed": 62,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed62\\best_student.pt",
+      "expected_sha256": "904003dca219435464476cf36abedb11ee4e2f7a11ff09caa3791d685b8f644d",
+      "observed_sha256": "904003dca219435464476cf36abedb11ee4e2f7a11ff09caa3791d685b8f644d",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "L1",
+      "seed": 42,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed42\\best.pt",
+      "expected_sha256": "513e272063250aa209efa2c42b490cc44316c7979fa6b2be5dd8cce4592d1ab2",
+      "observed_sha256": "513e272063250aa209efa2c42b490cc44316c7979fa6b2be5dd8cce4592d1ab2",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "L1",
+      "seed": 52,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed52\\best.pt",
+      "expected_sha256": "a503f6705955da221bdbd1921034e9102b90db6acb5187114276ccaeb474e1c4",
+      "observed_sha256": "a503f6705955da221bdbd1921034e9102b90db6acb5187114276ccaeb474e1c4",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "L1",
+      "seed": 62,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed62\\best.pt",
+      "expected_sha256": "60d5c43692a17ba6971c8d23f74048ac3c4fe0bd1b18889eeb21bbab7bf3d3e9",
+      "observed_sha256": "60d5c43692a17ba6971c8d23f74048ac3c4fe0bd1b18889eeb21bbab7bf3d3e9",
+      "exists": true,
+      "PASS": true
+    }
+  ],
+  "teacher": {
+    "TEACHER_CHECKPOINT_GATE": "PASS",
+    "records": [
+      {
+        "model": "T-OPT",
+        "seed": 42,
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed42\\best_teacher.pt",
+        "expected_sha256": "b007f48085ef42b146b22a0d5ace5bb9c8380874405622281a5903831599fb20",
+        "observed_sha256": "b007f48085ef42b146b22a0d5ace5bb9c8380874405622281a5903831599fb20",
+        "exists": true,
+        "PASS": true
+      },
+      {
+        "model": "T-OPT",
+        "seed": 52,
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed52\\best_teacher.pt",
+        "expected_sha256": "5b4c17e15a8f49ba8cf240c0092b893e6e665232967fafce8eb13e0650227f2a",
+        "observed_sha256": "5b4c17e15a8f49ba8cf240c0092b893e6e665232967fafce8eb13e0650227f2a",
+        "exists": true,
+        "PASS": true
+      },
+      {
+        "model": "T-OPT",
+        "seed": 62,
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed62\\best_teacher.pt",
+        "expected_sha256": "24bf2efa2343e4aaf5f32871c0a9bffb3d511f345375ce754e9f081f82eac02c",
+        "observed_sha256": "24bf2efa2343e4aaf5f32871c0a9bffb3d511f345375ce754e9f081f82eac02c",
+        "exists": true,
+        "PASS": true
+      }
+    ],
+    "compatible": true
+  },
+  "phase": "pre_inference"
+}

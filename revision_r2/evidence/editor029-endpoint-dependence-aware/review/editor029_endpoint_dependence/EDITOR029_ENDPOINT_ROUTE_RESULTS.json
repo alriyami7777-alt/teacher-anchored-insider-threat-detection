@@ -1,0 +1,60 @@
+{
+  "EP_F10": {
+    "42": {
+      "teacher_logit_deviation": 0.7996617755303159,
+      "logit_pearson": 0.9008423834882786,
+      "route_MAE": 0.004625078809825576,
+      "route_KL": 0.019084725052679486,
+      "hard_route_agreement": 0.99593017578125,
+      "dominant_leaf_agreement": 0.98719921875
+    },
+    "52": {
+      "teacher_logit_deviation": 1.560863845563028,
+      "logit_pearson": 0.9333047395145654,
+      "route_MAE": 0.0027823774402419986,
+      "route_KL": 0.012982576982845462,
+      "hard_route_agreement": 0.9974150390625,
+      "dominant_leaf_agreement": 0.99256640625
+    },
+    "62": {
+      "teacher_logit_deviation": 2.4647317280148853,
+      "logit_pearson": 0.9557571323102154,
+      "route_MAE": 0.13628669042691924,
+      "route_KL": 1.429111371895256,
+      "hard_route_agreement": 0.86544384765625,
+      "dominant_leaf_agreement": 0.501240234375
+    }
+  },
+  "EP_FINAL": {
+    "42": {
+      "teacher_logit_deviation": 0.8001644894940546,
+      "logit_pearson": 0.9255868259757026,
+      "route_MAE": 0.0030313080953650114,
+      "route_KL": 0.004581156953035931,
+      "hard_route_agreement": 0.99746435546875,
+      "dominant_leaf_agreement": 0.99192578125
+    },
+    "52": {
+      "teacher_logit_deviation": 1.5594557198304684,
+      "logit_pearson": 0.9548391715330093,
+      "route_MAE": 0.001405683039509524,
+      "route_KL": 0.0023410010038617075,
+      "hard_route_agreement": 0.99885888671875,
+      "dominant_leaf_agreement": 0.996201171875
+    },
+    "62": {
+      "teacher_logit_deviation": 2.4235459665074597,
+      "logit_pearson": 0.9547912876333816,
+      "route_MAE": 0.06598398137054602,
+      "route_KL": 0.08250565318230767,
+      "hard_route_agreement": 0.98429296875,
+      "dominant_leaf_agreement": 0.937712890625
+    }
+  },
+  "mean_route_MAE": {
+    "EP_F10": 0.04789804889232894,
+    "EP_FINAL": 0.02347365750180685
+  },
+  "paired_user_cluster_ci_for_mae": "NOT_WINDOW_LEVEL_ROUTE_AVAILABLE",
+  "ENDPOINT_ROUTE_STRUCTURAL_VALUE": "CONSISTENT"
+}

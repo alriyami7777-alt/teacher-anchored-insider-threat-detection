@@ -1,0 +1,4 @@
+issue,status,evidence
+teacher_initialisation_only,RESOLVED,EDITOR-012 SUPPORTED_STRONG
+C5_negligible_increment,RESOLVED_BY_TA2,TA2 vs C2-OPT teacher-guidance result remains frozen
+ODST_value,PARTIALLY_RESOLVED,"competitive point ranking versus matched L1, plus supported route/leaf structural traceability; Brier point estimate favours TA2 but the user-cluster CI includes zero; TA2 is not faster; reference-centred faithfulness is not supported"

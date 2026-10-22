@@ -1,0 +1,358 @@
+{
+  "means": {
+    "ALIGN0": 0.9003078720440825,
+    "ALIGN01": 0.9006765948174543,
+    "ALIGN05": 0.9006533046916095,
+    "ALIGN10": 0.9007084941358162
+  },
+  "selection": {
+    "ALIGN0_mean_r52_pr_auc": 0.9003078720440825,
+    "ALIGN0_LATENT_CORAL_DISCREPANCY": 0.002866549184732522,
+    "ALIGN0_mean_r52_separation": 13.374751521918265,
+    "candidates": {
+      "ALIGN01": {
+        "lambda_CORAL": 0.01,
+        "mean_r52_pr_auc": 0.9006765948174543,
+        "seed_r52_pr_auc": {
+          "42": 0.9077254570531186,
+          "52": 0.8863559382851294,
+          "62": 0.9079483891141151
+        },
+        "LATENT_CORAL_DISCREPANCY": 0.0028516968442733382,
+        "seed_coral": {
+          "42": 0.002413642446323935,
+          "52": 0.002862846081076756,
+          "62": 0.003278602005419324
+        },
+        "ALIGNMENT_REDUCTION": 0.005181261336204779,
+        "R52_LATENT_SEPARATION_RETENTION": 0.9908172878359943,
+        "seed_retention": {
+          "42": 0.4567019367825929,
+          "52": 1.204289933295442,
+          "62": 1.3114599934299478
+        },
+        "S1": false,
+        "S2": false,
+        "S3": true,
+        "S4": false,
+        "S5": true,
+        "S6": true,
+        "label_blind_gate": false,
+        "alignment_gate": false,
+        "clean_gate": false
+      },
+      "ALIGN05": {
+        "lambda_CORAL": 0.05,
+        "mean_r52_pr_auc": 0.9006533046916095,
+        "seed_r52_pr_auc": {
+          "42": 0.9075994046975936,
+          "52": 0.8864340012005453,
+          "62": 0.9079265081766901
+        },
+        "LATENT_CORAL_DISCREPANCY": 0.0026931130997023384,
+        "seed_coral": {
+          "42": 0.00239048625524347,
+          "52": 0.0025762390474226462,
+          "62": 0.0031126139964408996
+        },
+        "ALIGNMENT_REDUCTION": 0.06050343945044401,
+        "R52_LATENT_SEPARATION_RETENTION": 0.9713855684804962,
+        "seed_retention": {
+          "42": 0.45665250005637464,
+          "52": 1.1433016086727343,
+          "62": 1.3142025967123794
+        },
+        "S1": false,
+        "S2": false,
+        "S3": true,
+        "S4": false,
+        "S5": true,
+        "S6": true,
+        "label_blind_gate": false,
+        "alignment_gate": false,
+        "clean_gate": false
+      },
+      "ALIGN10": {
+        "lambda_CORAL": 0.1,
+        "mean_r52_pr_auc": 0.9007084941358162,
+        "seed_r52_pr_auc": {
+          "42": 0.9081640036009575,
+          "52": 0.8860965138844882,
+          "62": 0.9078649649220031
+        },
+        "LATENT_CORAL_DISCREPANCY": 0.0025934579173603005,
+        "seed_coral": {
+          "42": 0.002343618513009121,
+          "52": 0.0025350165982852375,
+          "62": 0.0029017386407865424
+        },
+        "ALIGNMENT_REDUCTION": 0.09526829988710062,
+        "R52_LATENT_SEPARATION_RETENTION": 0.9903500775716579,
+        "seed_retention": {
+          "42": 0.4567484422526319,
+          "52": 1.186197411955946,
+          "62": 1.3281043785063962
+        },
+        "S1": false,
+        "S2": false,
+        "S3": true,
+        "S4": false,
+        "S5": true,
+        "S6": true,
+        "label_blind_gate": false,
+        "alignment_gate": false,
+        "clean_gate": false
+      }
+    },
+    "eligible": [],
+    "EDITOR028_SELECTED_CANDIDATE": "NONE",
+    "ruling": "LATENT_ALIGNMENT_NOT_SUPPORTED",
+    "alignment_pass_any": false,
+    "clean_pass_any_aligned": false
+  },
+  "r61_used": false,
+  "r61_labels_used": false,
+  "rows": [
+    {
+      "model": "ALIGN0",
+      "seed": 42,
+      "lambda_CORAL": 0.0,
+      "validation_PR_AUC": 0.9071946537631362,
+      "threshold": 0.8400000000000001,
+      "best_epoch": 5,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN0\\seed42\\best_student.pt",
+      "sha256": "c627f9f0cba4851af3e630ffeeba1ba147c969947069dd4175dd9ffe6e92cbcd"
+    },
+    {
+      "model": "ALIGN0",
+      "seed": 52,
+      "lambda_CORAL": 0.0,
+      "validation_PR_AUC": 0.8871235775603635,
+      "threshold": 0.91,
+      "best_epoch": 9,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN0\\seed52\\best_student.pt",
+      "sha256": "f0b368ca6fe78e82b6b32d8f170508af5060b294f2ca73cd7725fd14b336c335"
+    },
+    {
+      "model": "ALIGN0",
+      "seed": 62,
+      "lambda_CORAL": 0.0,
+      "validation_PR_AUC": 0.9066053848087477,
+      "threshold": 0.25,
+      "best_epoch": 4,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN0\\seed62\\best_student.pt",
+      "sha256": "ee5521124287b02d75aadff665737a6133097138392f57c419c8b6ca45a39b70"
+    },
+    {
+      "model": "ALIGN01",
+      "seed": 42,
+      "lambda_CORAL": 0.01,
+      "validation_PR_AUC": 0.9077254570531186,
+      "threshold": 0.73,
+      "best_epoch": 5,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN01\\seed42\\best_student.pt",
+      "sha256": "36aa3f4fce241c86e831645ec9ea947416750cae882514fc3ed0b8f8ec5c4c5c"
+    },
+    {
+      "model": "ALIGN01",
+      "seed": 52,
+      "lambda_CORAL": 0.01,
+      "validation_PR_AUC": 0.8863559382851294,
+      "threshold": 0.91,
+      "best_epoch": 9,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN01\\seed52\\best_student.pt",
+      "sha256": "be6f259d2c0ee7c5a967f56de5ce0014ec22cd200b987b1fc639f5201585b24a"
+    },
+    {
+      "model": "ALIGN01",
+      "seed": 62,
+      "lambda_CORAL": 0.01,
+      "validation_PR_AUC": 0.9079483891141151,
+      "threshold": 0.32,
+      "best_epoch": 4,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN01\\seed62\\best_student.pt",
+      "sha256": "7982915924362bfacc1abf914f318dc24a0306e3ff3c462b5d500468cdac6564"
+    },
+    {
+      "model": "ALIGN05",
+      "seed": 42,
+      "lambda_CORAL": 0.05,
+      "validation_PR_AUC": 0.9075994046975936,
+      "threshold": 0.72,
+      "best_epoch": 5,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN05\\seed42\\best_student.pt",
+      "sha256": "94d55621fffa0bf03886a0b3a72f4c2548a69bd6e132b8370f592cdfd3ce8ede"
+    },
+    {
+      "model": "ALIGN05",
+      "seed": 52,
+      "lambda_CORAL": 0.05,
+      "validation_PR_AUC": 0.8864340012005453,
+      "threshold": 0.93,
+      "best_epoch": 12,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN05\\seed52\\best_student.pt",
+      "sha256": "db20e06c3ae8b2debf1eda632487db214af3e1767bc1896c1c76949079a1f20d"
+    },
+    {
+      "model": "ALIGN05",
+      "seed": 62,
+      "lambda_CORAL": 0.05,
+      "validation_PR_AUC": 0.9079265081766901,
+      "threshold": 0.32,
+      "best_epoch": 4,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN05\\seed62\\best_student.pt",
+      "sha256": "8248ace76ba50b2b9d6c339a1dffac201d5321010378d1e6d414507b56f0de8b"
+    },
+    {
+      "model": "ALIGN10",
+      "seed": 42,
+      "lambda_CORAL": 0.1,
+      "validation_PR_AUC": 0.9081640036009575,
+      "threshold": 0.79,
+      "best_epoch": 5,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN10\\seed42\\best_student.pt",
+      "sha256": "de373aa5b5845005c081ffd358f8832f9c30b458b524c1aefddb0a37e5115387"
+    },
+    {
+      "model": "ALIGN10",
+      "seed": 52,
+      "lambda_CORAL": 0.1,
+      "validation_PR_AUC": 0.8860965138844882,
+      "threshold": 0.91,
+      "best_epoch": 9,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN10\\seed52\\best_student.pt",
+      "sha256": "5dfc37d15fa57bec665f19a646d76e57a3d98b56dedb2afda49ca03be9305b62"
+    },
+    {
+      "model": "ALIGN10",
+      "seed": 62,
+      "lambda_CORAL": 0.1,
+      "validation_PR_AUC": 0.9078649649220031,
+      "threshold": 0.32,
+      "best_epoch": 4,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN10\\seed62\\best_student.pt",
+      "sha256": "b675586db6523ed64d40450e985126b2e69391f1167722d5890037b8f1463e20"
+    }
+  ],
+  "teacher_ckpts": {
+    "42": {
+      "id": "CENTERED_TEACHER_42",
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\teachers\\CENTERED_TEACHER_42\\seed42\\best_teacher.pt",
+      "sha256": "177ff7d57755abb5d502983b0ef2fa43c4340cf707152fdca987a50e6b044f15",
+      "validation_PR_AUC": 0.9009943415747212,
+      "threshold": 0.7759158802478505
+    },
+    "52": {
+      "id": "CENTERED_TEACHER_52",
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\teachers\\CENTERED_TEACHER_52\\seed52\\best_teacher.pt",
+      "sha256": "39691f681e1e18c712a208c25a8f0d5b23dcf00bbbe327d0c4ddc3c653a7017a",
+      "validation_PR_AUC": 0.8800686770237661,
+      "threshold": 0.9400000000000001
+    },
+    "62": {
+      "id": "CENTERED_TEACHER_62",
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\teachers\\CENTERED_TEACHER_62\\seed62\\best_teacher.pt",
+      "sha256": "368eb951165b91a74838a9bd4529c15fee53724f2345e108c4daa21326f7e4d6",
+      "validation_PR_AUC": 0.8946941958234347,
+      "threshold": 0.32
+    }
+  },
+  "student_packs_meta": {
+    "ALIGN0_42": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN0\\seed42\\best_student.pt",
+      "sha256": "c627f9f0cba4851af3e630ffeeba1ba147c969947069dd4175dd9ffe6e92cbcd",
+      "validation_PR_AUC": 0.9071946537631362,
+      "threshold": 0.8400000000000001,
+      "best_epoch": 5,
+      "lambda_CORAL": 0.0
+    },
+    "ALIGN0_52": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN0\\seed52\\best_student.pt",
+      "sha256": "f0b368ca6fe78e82b6b32d8f170508af5060b294f2ca73cd7725fd14b336c335",
+      "validation_PR_AUC": 0.8871235775603635,
+      "threshold": 0.91,
+      "best_epoch": 9,
+      "lambda_CORAL": 0.0
+    },
+    "ALIGN0_62": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN0\\seed62\\best_student.pt",
+      "sha256": "ee5521124287b02d75aadff665737a6133097138392f57c419c8b6ca45a39b70",
+      "validation_PR_AUC": 0.9066053848087477,
+      "threshold": 0.25,
+      "best_epoch": 4,
+      "lambda_CORAL": 0.0
+    },
+    "ALIGN01_42": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN01\\seed42\\best_student.pt",
+      "sha256": "36aa3f4fce241c86e831645ec9ea947416750cae882514fc3ed0b8f8ec5c4c5c",
+      "validation_PR_AUC": 0.9077254570531186,
+      "threshold": 0.73,
+      "best_epoch": 5,
+      "lambda_CORAL": 0.01
+    },
+    "ALIGN01_52": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN01\\seed52\\best_student.pt",
+      "sha256": "be6f259d2c0ee7c5a967f56de5ce0014ec22cd200b987b1fc639f5201585b24a",
+      "validation_PR_AUC": 0.8863559382851294,
+      "threshold": 0.91,
+      "best_epoch": 9,
+      "lambda_CORAL": 0.01
+    },
+    "ALIGN01_62": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN01\\seed62\\best_student.pt",
+      "sha256": "7982915924362bfacc1abf914f318dc24a0306e3ff3c462b5d500468cdac6564",
+      "validation_PR_AUC": 0.9079483891141151,
+      "threshold": 0.32,
+      "best_epoch": 4,
+      "lambda_CORAL": 0.01
+    },
+    "ALIGN05_42": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN05\\seed42\\best_student.pt",
+      "sha256": "94d55621fffa0bf03886a0b3a72f4c2548a69bd6e132b8370f592cdfd3ce8ede",
+      "validation_PR_AUC": 0.9075994046975936,
+      "threshold": 0.72,
+      "best_epoch": 5,
+      "lambda_CORAL": 0.05
+    },
+    "ALIGN05_52": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN05\\seed52\\best_student.pt",
+      "sha256": "db20e06c3ae8b2debf1eda632487db214af3e1767bc1896c1c76949079a1f20d",
+      "validation_PR_AUC": 0.8864340012005453,
+      "threshold": 0.93,
+      "best_epoch": 12,
+      "lambda_CORAL": 0.05
+    },
+    "ALIGN05_62": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN05\\seed62\\best_student.pt",
+      "sha256": "8248ace76ba50b2b9d6c339a1dffac201d5321010378d1e6d414507b56f0de8b",
+      "validation_PR_AUC": 0.9079265081766901,
+      "threshold": 0.32,
+      "best_epoch": 4,
+      "lambda_CORAL": 0.05
+    },
+    "ALIGN10_42": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN10\\seed42\\best_student.pt",
+      "sha256": "de373aa5b5845005c081ffd358f8832f9c30b458b524c1aefddb0a37e5115387",
+      "validation_PR_AUC": 0.9081640036009575,
+      "threshold": 0.79,
+      "best_epoch": 5,
+      "lambda_CORAL": 0.1
+    },
+    "ALIGN10_52": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN10\\seed52\\best_student.pt",
+      "sha256": "5dfc37d15fa57bec665f19a646d76e57a3d98b56dedb2afda49ca03be9305b62",
+      "validation_PR_AUC": 0.8860965138844882,
+      "threshold": 0.91,
+      "best_epoch": 9,
+      "lambda_CORAL": 0.1
+    },
+    "ALIGN10_62": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\ALIGN10\\seed62\\best_student.pt",
+      "sha256": "b675586db6523ed64d40450e985126b2e69391f1167722d5890037b8f1463e20",
+      "validation_PR_AUC": 0.9078649649220031,
+      "threshold": 0.32,
+      "best_epoch": 4,
+      "lambda_CORAL": 0.1
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "EDITOR010_PAPER_RESCUE_GATE": "MULTI_FACTOR_RESCUE_FOUND",
+  "ODST_PREDICTIVE_HEADROOM_DEMONSTRATED": "NO",
+  "TEACHER_DIVERSITY_HEADROOM": "NOT_SUPPORTED",
+  "STRONGER_TEACHER_DISTILLATION_RESCUE": "SUPPORTED",
+  "best_candidate": {
+    "candidate_id": "P4_ET1",
+    "mean_pr_auc": 0.9395197554210609,
+    "delta_vs_C2_mean": 0.010474013646443736,
+    "delta_vs_C5_mean": 0.008226059182307788,
+    "delta_vs_attention_linear_mean": 0.008392811745434936,
+    "per_seed_delta_vs_C2": {
+      "42": 0.01151659451490561,
+      "52": 0.009179668161565457,
+      "62": 0.010725778262860586
+    },
+    "per_seed_delta_vs_C5": {
+      "42": 0.009780764287677823,
+      "52": 0.008678480930214616,
+      "62": 0.006218932329031035
+    },
+    "per_seed_delta_vs_AL": {
+      "42": 0.005476679108276983,
+      "52": 0.023634021415878115,
+      "62": -0.0039322652878501785
+    },
+    "POSITIVE_DELTA_VS_C2_SEEDS": "3/3",
+    "POSITIVE_DELTA_VS_ATTENTION_LINEAR_SEEDS": "2/3",
+    "classification": "CLEAR_DEVELOPMENT_RESCUE"
+  },
+  "promoted": [
+    "P1_best_current_objective",
+    "P2_best_ranking_aware",
+    "P3_best_focal_or_balanced",
+    "P4_ET1"
+  ],
+  "do_not_claim_anchoring_caused_gain": true,
+  "r52_test_accessed": false
+}

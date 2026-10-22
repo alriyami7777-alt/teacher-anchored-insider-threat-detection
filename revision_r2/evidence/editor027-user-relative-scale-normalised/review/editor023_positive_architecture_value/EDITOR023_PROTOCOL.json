@@ -1,0 +1,271 @@
+{
+  "task_id": "EDITOR-023",
+  "task_name": "POSITIVE ARCHITECTURE-VALUE CONFIRMATION",
+  "EDITOR022_RESULTS_COMMIT": "ac50596ed8c3b480c887640911092e46b4631670",
+  "evaluation_mode": "frozen_checkpoint_only",
+  "model_training": "PROHIBITED",
+  "hyperparameter_tuning": "PROHIBITED",
+  "architecture_search": "PROHIBITED",
+  "result_status_at_start": "UNSEEN_FOR_NEW_CONFIRMATORY_METRICS",
+  "architecture": "20-day x 13-feature input -> Bi-LSTM -> temporal attention -> attention-pooled representation -> ODST-046 -> binary logit",
+  "training_formulation": "task loss + 0.5 x equal-weight ensemble-teacher logit MSE + 0.5 x matched-teacher route consistency",
+  "comparators": {
+    "C2-OPT": "teacher initialisation without repaired teacher guidance",
+    "F10": "same ODST architecture + ensemble teacher-logit guidance + route anchor OFF",
+    "TA2": "same ODST architecture + ensemble teacher-logit guidance + route anchor ON",
+    "L1": "matched Bi-LSTM + attention representation + ensemble teacher guidance + linear prediction head"
+  },
+  "models": [
+    "C2-OPT",
+    "F10",
+    "TA2",
+    "L1"
+  ],
+  "seeds": [
+    42,
+    52,
+    62
+  ],
+  "source_channels": [
+    "logon",
+    "device",
+    "file",
+    "email",
+    "http"
+  ],
+  "source_degradation_levels": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "source_interpolation": "x_degraded=(1-d)*x_clean+d*x_historical_ablation",
+  "d1_equals_editor017_complete_ablation": true,
+  "noise_levels": [
+    0.0,
+    0.025,
+    0.05,
+    0.075,
+    0.1,
+    0.15,
+    0.2
+  ],
+  "noise_levels_historical": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "noise_levels_new": [
+    0.025,
+    0.075,
+    0.15
+  ],
+  "aurc_source_definition": "trapezoidal_area_under_retention_versus_degradation_d_for_d_in_0.00_0.25_0.50_0.75_1.00_then_equal_mean_across_five_source_channels",
+  "aurc_noise_definition": "trapezoidal_area_under_retention_versus_sigma_for_sigma_in_0.00_0.025_0.05_0.075_0.10_0.15_0.20_divided_by_evaluated_sigma_interval_0.20",
+  "primary_contrasts": [
+    "F10-C2",
+    "TA2-C2",
+    "TA2-F10",
+    "TA2-L1"
+  ],
+  "hypotheses": {
+    "H1": {
+      "name": "teacher_guidance_predictive_value",
+      "statement": "TA2 clean PR-AUC > C2-OPT clean PR-AUC",
+      "historical_status": "SUPPORTED_STRONG"
+    },
+    "H2": {
+      "name": "teacher_guidance_source_degradation_value",
+      "statement": "F10 has smaller aggregate source-channel PR-AUC degradation than C2-OPT",
+      "historical_point_effect": 0.0229
+    },
+    "H3": {
+      "name": "teacher_guidance_gaussian_noise_value",
+      "statement": "F10 retains more ranking performance under Gaussian input noise than C2-OPT",
+      "historical_point_effect": 0.0092
+    },
+    "H4": {
+      "name": "route_anchor_structural_value",
+      "statement": "TA2 remains closer than F10 to matched-teacher ODST routes under clean and degraded inputs",
+      "note": "Do not require a large clean PR-AUC increment from route anchoring"
+    },
+    "H5": {
+      "name": "ta2_degraded_input_value_over_matched_linear_reference",
+      "statement": "TA2 has better aggregate resilience than L1 under controlled degraded input",
+      "historical_source_effect": 0.0124,
+      "historical_noise_effect": 0.0098
+    },
+    "H6": {
+      "name": "explanation_stability",
+      "statement": "TA2 reference-centred signed tree-contribution rankings are more stable under degraded inputs than F10",
+      "explanation_definition": "reference-centred signed tree-contribution vector"
+    }
+  },
+  "historical_official_clean_mean": {
+    "C2-OPT": 0.9353238885,
+    "F10": 0.9425948632,
+    "TA2": 0.9428421883,
+    "L1": 0.938880958
+  },
+  "historical_ta2_vs_c2_clean": {
+    "mean_pr_auc_gain": 0.007518,
+    "primary_seeds_positive": "3/3",
+    "user_cluster_ci95": [
+      0.000345,
+      0.01825
+    ],
+    "extended_panel_positive": "9/10",
+    "extended_mean_gain": 0.006157,
+    "status": "HISTORICAL_INPUT_NOT_A_NEW_EDITOR023_DISCOVERY"
+  },
+  "frozen_clean_pr_auc_per_seed": {
+    "C2-OPT": {
+      "42": 0.9443205892331505,
+      "52": 0.9214711755922543,
+      "62": 0.9401799007272055
+    },
+    "F10": {
+      "42": 0.9441007472746944,
+      "52": 0.9361330144482553,
+      "62": 0.9475508279790588
+    },
+    "TA2": {
+      "42": 0.9454098053584642,
+      "52": 0.9337067425514769,
+      "62": 0.9494100170861509
+    },
+    "L1": {
+      "42": 0.9368690603400606,
+      "52": 0.9360656904165168,
+      "62": 0.9437081231855656
+    }
+  },
+  "bootstrap": {
+    "n_resamples": 2000,
+    "rng_seed": 42,
+    "sampling_unit": "validation user",
+    "mapping_sha256": "851385f9c926cf945b3c74b5c9442e3ccb94cf1d9dabb98106a29cbfea01c5c0",
+    "three_seeds_are_not_independent_experimental_units": true
+  },
+  "parity": {
+    "clean_tolerance": 0.0005,
+    "route_tolerance": 0.0005,
+    "explanation_tolerance": 0.005,
+    "editor017_review": "review\\editor017_explanation_robustness"
+  },
+  "perturbation_lock": {
+    "source_ablation": {
+      "implementation_id": "objective3_missing_source_robustness.apply_missing_source_condition",
+      "module": "src/objective3_missing_source_robustness.py",
+      "function": "apply_missing_source_condition",
+      "feature_treatment": "inverse_scale_raw_zero_then_forward_scale",
+      "reference_value": "raw_0.0_maps_to_scaled_minus_mean_over_scale",
+      "scaler": "r52_T20_s1_trainonly_standardscaler_v1",
+      "total_events_recomputed": true,
+      "is_active_day_recomputed": true,
+      "active_duration_rule": "zero_if_day_inactive_else_retain_residual_multi_source_span",
+      "labels_change": false,
+      "intervention_class": "CONTROLLED_SOURCE_CHANNEL_ABLATION",
+      "not_physical_source_absence": true,
+      "source_list": [
+        "logon",
+        "device",
+        "file",
+        "email",
+        "http"
+      ],
+      "source_selection": "predeclared_five_channels_no_result_driven_choice",
+      "terminology": "CONTROLLED_SOURCE_CHANNEL_ABLATION"
+    },
+    "gaussian_noise": {
+      "implementation_id": "objective3_perturbations.gaussian_noise_continuous",
+      "module": "src/objective3_perturbations.py",
+      "function": "apply_paired_perturbation",
+      "inner_function": "gaussian_noise_continuous",
+      "distribution": "bounded_gaussian_elementwise",
+      "scale_definition": "std_equals_level_times_max_abs_x_1e-3_clip_pm_level_times_scale_floor_at_0",
+      "binary_features": "untouched_indices_7_to_12",
+      "continuous_features": "indices_0_to_6_only",
+      "levels": [
+        0.05,
+        0.1,
+        0.2
+      ],
+      "perturbation_seed": 101,
+      "rng": "apply_paired_perturbation_sha256_derived_per_level",
+      "labels_change": false,
+      "total_events_recomputed": false,
+      "active_duration_changed_by_rule": false,
+      "validation_derived_parameter": false,
+      "terminology": "CONTROLLED_GAUSSIAN_INPUT_NOISE"
+    },
+    "rejected_mixins": [
+      "scaled_space_zero_ablation_used_only_as_r52_fallback_when_scaler_unverified",
+      "additive_all_feature_gaussian_from_value_audit_and_tradeoff",
+      "paper_r42_scaler_must_not_be_applied_to_r52_tensors"
+    ],
+    "severities_frozen_before_results": true,
+    "source_list_frozen_before_results": true,
+    "validation_derived_noise_parameter": false,
+    "validation_derived_source_selection": false,
+    "labels_unchanged": true
+  },
+  "perturbation_module_hashes": {
+    "objective3_missing_source_robustness.py": "dc83b14cbf27822f86b1626032c5947ac79aa55c264b0a2c524ca44c9e1b07c2",
+    "objective3_perturbations.py": "bcab265042f6b6363d6bc7245d5a0bf6d177d2fcb75528a124978f04d8d9bb1f",
+    "EDITOR006A_SCALER.json": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488"
+  },
+  "expected_source_sha256": "dc83b14cbf27822f86b1626032c5947ac79aa55c264b0a2c524ca44c9e1b07c2",
+  "expected_gaussian_sha256": "bcab265042f6b6363d6bc7245d5a0bf6d177d2fcb75528a124978f04d8d9bb1f",
+  "scaler_sha256": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+  "train_npz_sha256": "b268328d3bf2e98f712d1145958dabe175ce2c07a7c390da4b84a663317ebc2e",
+  "validation_npz_sha256": "5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c",
+  "producing_pins": {
+    "architecture": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+    "odst": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+    "sequence_ensemble": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475"
+  },
+  "partitions": {
+    "train": "AUTHORISED",
+    "validation": "AUTHORISED",
+    "test": "HARD_DENY"
+  },
+  "r52_test_opened": false,
+  "r51_rerun": false,
+  "r62_rerun": false,
+  "threshold_retuning": false,
+  "calibration_refit": false,
+  "parameter_update": false,
+  "terminology_lock": {
+    "allowed": [
+      "controlled degraded-input resilience",
+      "data-quality resilience",
+      "teacher-guidance predictive value",
+      "teacher-relative route stability",
+      "explanation stability"
+    ],
+    "forbidden": [
+      "ADVERSARIAL_ROBUSTNESS",
+      "EVASION_ROBUSTNESS",
+      "POISONING_ROBUSTNESS",
+      "PHYSICAL_SENSOR_FAILURE"
+    ],
+    "claim_boundaries_forbidden": [
+      "adversarial robustness",
+      "evasion resistance",
+      "poisoning resistance",
+      "physical sensor failure resistance",
+      "unseen-user generalisation",
+      "overall superiority to RF",
+      "overall superiority to XGBoost",
+      "clean ODST superiority over attention-linear",
+      "route faithfulness",
+      "leaf faithfulness",
+      "global top-k faithfulness"
+    ]
+  },
+  "current_paper_model": "TA2",
+  "no_outcome_chasing": true,
+  "written_at": "2026-08-17T18:01:23Z"
+}

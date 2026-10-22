@@ -1,0 +1,107 @@
+[
+  {
+    "branch": "editor025-r61-failure-autopsy",
+    "commit": "1f176bb7bf589da20be8ae9b02a23a4c8f0e0af7",
+    "path": "review/editor025_r61_failure_autopsy/EDITOR025_LABEL_EVENT_CROSSWALK.csv",
+    "bytes": 23880,
+    "reason": "hard rule: forbidden-release per-user/per-event data; content and SHA256 not read"
+  },
+  {
+    "branch": "editor025-r61-failure-autopsy",
+    "commit": "1f176bb7bf589da20be8ae9b02a23a4c8f0e0af7",
+    "path": "review/editor025_r61_failure_autopsy/EDITOR025_POSITIVE_USER_AUDIT.csv",
+    "bytes": 463,
+    "reason": "hard rule: forbidden-release per-user/per-event data; content and SHA256 not read"
+  },
+  {
+    "branch": "editor025-r61-failure-autopsy",
+    "commit": "1f176bb7bf589da20be8ae9b02a23a4c8f0e0af7",
+    "path": "review/editor025_r61_failure_autopsy/EDITOR025_SCENARIO_USER_PROFILE.csv",
+    "bytes": 1586,
+    "reason": "hard rule: forbidden-release per-user/per-event data; content and SHA256 not read"
+  },
+  {
+    "branch": "editor026-user-relative-representation",
+    "commit": "83f3f8f6cbe2b75faa176e2840bec84bf84b09d0",
+    "path": "review/editor025_r61_failure_autopsy/EDITOR025_LABEL_EVENT_CROSSWALK.csv",
+    "bytes": 23880,
+    "reason": "hard rule: forbidden-release per-user/per-event data; content and SHA256 not read"
+  },
+  {
+    "branch": "editor026-user-relative-representation",
+    "commit": "83f3f8f6cbe2b75faa176e2840bec84bf84b09d0",
+    "path": "review/editor025_r61_failure_autopsy/EDITOR025_POSITIVE_USER_AUDIT.csv",
+    "bytes": 463,
+    "reason": "hard rule: forbidden-release per-user/per-event data; content and SHA256 not read"
+  },
+  {
+    "branch": "editor026-user-relative-representation",
+    "commit": "83f3f8f6cbe2b75faa176e2840bec84bf84b09d0",
+    "path": "review/editor025_r61_failure_autopsy/EDITOR025_SCENARIO_USER_PROFILE.csv",
+    "bytes": 1586,
+    "reason": "hard rule: forbidden-release per-user/per-event data; content and SHA256 not read"
+  },
+  {
+    "branch": "editor027-user-relative-scale-normalised",
+    "commit": "c491b79c2f552318ff3993e585a7abd3d2d7857b",
+    "path": "review/editor025_r61_failure_autopsy/EDITOR025_LABEL_EVENT_CROSSWALK.csv",
+    "bytes": 23880,
+    "reason": "hard rule: forbidden-release per-user/per-event data; content and SHA256 not read"
+  },
+  {
+    "branch": "editor027-user-relative-scale-normalised",
+    "commit": "c491b79c2f552318ff3993e585a7abd3d2d7857b",
+    "path": "review/editor025_r61_failure_autopsy/EDITOR025_POSITIVE_USER_AUDIT.csv",
+    "bytes": 463,
+    "reason": "hard rule: forbidden-release per-user/per-event data; content and SHA256 not read"
+  },
+  {
+    "branch": "editor027-user-relative-scale-normalised",
+    "commit": "c491b79c2f552318ff3993e585a7abd3d2d7857b",
+    "path": "review/editor025_r61_failure_autopsy/EDITOR025_SCENARIO_USER_PROFILE.csv",
+    "bytes": 1586,
+    "reason": "hard rule: forbidden-release per-user/per-event data; content and SHA256 not read"
+  },
+  {
+    "branch": "editor028-cross-release-latent-alignment",
+    "commit": "8d139c67e71cd2d2fca28e98f6214d059a0abc92",
+    "path": "review/editor025_r61_failure_autopsy/EDITOR025_LABEL_EVENT_CROSSWALK.csv",
+    "bytes": 23880,
+    "reason": "hard rule: forbidden-release per-user/per-event data; content and SHA256 not read"
+  },
+  {
+    "branch": "editor028-cross-release-latent-alignment",
+    "commit": "8d139c67e71cd2d2fca28e98f6214d059a0abc92",
+    "path": "review/editor025_r61_failure_autopsy/EDITOR025_POSITIVE_USER_AUDIT.csv",
+    "bytes": 463,
+    "reason": "hard rule: forbidden-release per-user/per-event data; content and SHA256 not read"
+  },
+  {
+    "branch": "editor028-cross-release-latent-alignment",
+    "commit": "8d139c67e71cd2d2fca28e98f6214d059a0abc92",
+    "path": "review/editor025_r61_failure_autopsy/EDITOR025_SCENARIO_USER_PROFILE.csv",
+    "bytes": 1586,
+    "reason": "hard rule: forbidden-release per-user/per-event data; content and SHA256 not read"
+  },
+  {
+    "branch": "editor029-endpoint-dependence-aware",
+    "commit": "28475d575d5196a09c7267d09781050008ccc6d3",
+    "path": "review/editor025_r61_failure_autopsy/EDITOR025_LABEL_EVENT_CROSSWALK.csv",
+    "bytes": 23880,
+    "reason": "hard rule: forbidden-release per-user/per-event data; content and SHA256 not read"
+  },
+  {
+    "branch": "editor029-endpoint-dependence-aware",
+    "commit": "28475d575d5196a09c7267d09781050008ccc6d3",
+    "path": "review/editor025_r61_failure_autopsy/EDITOR025_POSITIVE_USER_AUDIT.csv",
+    "bytes": 463,
+    "reason": "hard rule: forbidden-release per-user/per-event data; content and SHA256 not read"
+  },
+  {
+    "branch": "editor029-endpoint-dependence-aware",
+    "commit": "28475d575d5196a09c7267d09781050008ccc6d3",
+    "path": "review/editor025_r61_failure_autopsy/EDITOR025_SCENARIO_USER_PROFILE.csv",
+    "bytes": 1586,
+    "reason": "hard rule: forbidden-release per-user/per-event data; content and SHA256 not read"
+  }
+]

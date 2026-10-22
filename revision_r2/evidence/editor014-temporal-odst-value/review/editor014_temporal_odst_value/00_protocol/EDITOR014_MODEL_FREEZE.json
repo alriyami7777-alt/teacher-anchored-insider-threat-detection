@@ -1,0 +1,117 @@
+{
+  "task_id": "EDITOR-014",
+  "frozen_before_results": true,
+  "POST_ATTENTION_ODST_INCREMENTAL_VALUE": "NOT_SUPPORTED_FROM_EDITOR013",
+  "TEACHER_GUIDANCE_VS_INITIALISATION": "SUPPORTED_STRONG",
+  "encoder": "20x13 -> Bi-LSTM -> temporal attention; no encoder architecture change",
+  "odst046": {
+    "n_trees": 4,
+    "depth": 4,
+    "temperature": 0.5,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "num_layers": 2,
+    "dropout": 0.0,
+    "leaf_init_std": 0.05,
+    "choice_function": "sparsemax_sigmoid",
+    "readout": "canonical_tree_average",
+    "candidate_id": "ODST-046",
+    "tree_dim": 1,
+    "fusion_variant": "sparsemax_sigmoid_odst"
+  },
+  "shared_temporal_odst": {
+    "g_theta": "one shared ODST-046 applied to every h_t",
+    "separate_ensembles_per_timestep": false,
+    "learned_tree_weighting": false,
+    "q_t": "mean_j tree_j(h_t)",
+    "temporal_odst_logit": "\u03a3_t \u03b1_t q_t",
+    "attention_mechanism_unchanged": true
+  },
+  "conditions": {
+    "B0": {
+      "family": "linear",
+      "placement": "none",
+      "hybrid": false,
+      "center": false,
+      "distill": true,
+      "teacher": "ensemble",
+      "route": false,
+      "identity": "matched teacher-guided linear (L1)"
+    },
+    "B1": {
+      "family": "odst",
+      "placement": "post_attention",
+      "hybrid": false,
+      "center": false,
+      "distill": true,
+      "teacher": "ensemble",
+      "route": true,
+      "identity": "current TA2 / post-attention ODST-046"
+    },
+    "T0": {
+      "family": "temporal_odst",
+      "placement": "pre_pooling",
+      "hybrid": false,
+      "center": false,
+      "distill": true,
+      "teacher": "ensemble",
+      "route": false,
+      "identity": "shared temporal ODST before attention aggregation"
+    },
+    "T1": {
+      "family": "temporal_hybrid",
+      "placement": "pre_pooling",
+      "hybrid": true,
+      "center": false,
+      "distill": true,
+      "teacher": "ensemble",
+      "route": false,
+      "identity": "teacher-guided linear + temporal ODST residual"
+    },
+    "T2": {
+      "family": "temporal_hybrid",
+      "placement": "pre_pooling",
+      "hybrid": true,
+      "center": true,
+      "distill": true,
+      "teacher": "ensemble",
+      "route": false,
+      "identity": "teacher-guided linear + centred temporal ODST residual"
+    }
+  },
+  "T1_T2_beta_init": 0.0,
+  "T2_centering": "o(x) - mean_TRAIN[o(x)]; INNER_TRAIN during inner; full TRAIN during final; no validation centering",
+  "teacher_guidance": {
+    "ensemble": "equal-weight mean of T-OPT(42/52/62) logits",
+    "operates_on": "final_logit",
+    "lambda_distill": 0.5,
+    "not_tuned": true
+  },
+  "promotion_margin": 0.001,
+  "max_promoted_temporal": 2,
+  "no_sample_dependent_gates": true,
+  "no_tree_count_depth_temperature_grid": true,
+  "no_focal_pairwise_GroupDRO_CORAL": true,
+  "T": 20,
+  "F": 13,
+  "n_trees_total": 8,
+  "tree_order": [
+    "layer0_tree0",
+    "layer0_tree1",
+    "layer0_tree2",
+    "layer0_tree3",
+    "layer1_tree0",
+    "layer1_tree1",
+    "layer1_tree2",
+    "layer1_tree3"
+  ],
+  "frozen_ta2_l1": {
+    "TA2_mean_PR_AUC": 0.9428421883320307,
+    "L1_mean_PR_AUC": 0.9388809579807144,
+    "TA2_minus_L1": 0.003961230351316347,
+    "CI": [
+      -0.0013708139376007687,
+      0.011356265117941461
+    ]
+  }
+}

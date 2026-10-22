@@ -1,0 +1,37 @@
+{
+  "sample_n_r52": 20000,
+  "sample_n_r61": 20000,
+  "order": "ascending SHA256(sequence_id)",
+  "class_stratification": false,
+  "r61_labels_used": false,
+  "ALIGN0_LATENT_CORAL_DISCREPANCY": 0.002866549184732522,
+  "candidates": {
+    "ALIGN01": {
+      "LATENT_CORAL_DISCREPANCY": 0.0028516968442733382,
+      "ALIGNMENT_REDUCTION": 0.005181261336204779,
+      "seed_coral": {
+        "42": 0.002413642446323935,
+        "52": 0.002862846081076756,
+        "62": 0.003278602005419324
+      }
+    },
+    "ALIGN05": {
+      "LATENT_CORAL_DISCREPANCY": 0.0026931130997023384,
+      "ALIGNMENT_REDUCTION": 0.06050343945044401,
+      "seed_coral": {
+        "42": 0.00239048625524347,
+        "52": 0.0025762390474226462,
+        "62": 0.0031126139964408996
+      }
+    },
+    "ALIGN10": {
+      "LATENT_CORAL_DISCREPANCY": 0.0025934579173603005,
+      "ALIGNMENT_REDUCTION": 0.09526829988710062,
+      "seed_coral": {
+        "42": 0.002343618513009121,
+        "52": 0.0025350165982852375,
+        "62": 0.0029017386407865424
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "pytorch": "2.11.0+cu128",
+  "cuda_available": true,
+  "cuda": "12.8",
+  "device": "cuda",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "git_commit": "66aefb5fa21eaa9e6dae724892730b441627f9e0",
+  "git_branch": "editor022-sequential-clean-optimum-robustness",
+  "utc": "2026-08-17T16:32:51Z",
+  "EDITOR022_PARENT_COMMIT": "b41944b3b67518eb1afc69b17450eeef29f5b8f7",
+  "EDITOR021_RESULTS_COMMIT": "b3d5ef1e57299bd019fdd482e95ccdc44dfc165e",
+  "EDITOR021P1_CORRECTION_COMMIT": "b41944b3b67518eb1afc69b17450eeef29f5b8f7",
+  "R52_TEST_ACCESSED": "NO",
+  "R52_TEST_PREDICTIONS_GENERATED": "NO",
+  "R51_RERUN": "NO",
+  "R62_RERUN": "NO",
+  "TARGET_SCALER_FIT": "NO",
+  "TARGET_CALIBRATION_FIT": "NO",
+  "TARGET_THRESHOLD_SEARCH": "NO",
+  "STAGE2_EPOCHS": 1,
+  "FRESH_STAGE2_OPTIMISER": "YES",
+  "OPTIMISER_STATE_CONTINUED_FROM_CFP0": "NO",
+  "cfp0_inner": {
+    "42": {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor021\\outputs\\editor021_clean_function_representation_robustness\\CFP0\\seed42\\best.pt",
+      "logical_path": "outputs/editor021_clean_function_representation_robustness/CFP0/seed42/best.pt",
+      "sha256": "af47cebd144c7f3c2aac2c71697f726242b7fbb17f9d6fc1126449096910a438"
+    },
+    "52": {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor021\\outputs\\editor021_clean_function_representation_robustness\\CFP0\\seed52\\best.pt",
+      "logical_path": "outputs/editor021_clean_function_representation_robustness/CFP0/seed52/best.pt",
+      "sha256": "3a06349cdb872840a51b87711e5b49f57498e499780d4930738d3c4a6ad8fa25"
+    },
+    "62": {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor021\\outputs\\editor021_clean_function_representation_robustness\\CFP0\\seed62\\best.pt",
+      "logical_path": "outputs/editor021_clean_function_representation_robustness/CFP0/seed62/best.pt",
+      "sha256": "ce153b2b379195b40aa96984cc0c3d9fb96bb86bbf3f5d6cbf0b9fa5b1218a5c"
+    }
+  },
+  "starting_ta2": {
+    "42": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8",
+    "52": "7613ba559bcf55827d04129066eb595b677994494609646f8b2463308ed5edb4",
+    "62": "904003dca219435464476cf36abedb11ee4e2f7a11ff09caa3791d685b8f644d"
+  },
+  "teacher_topt_note": "matched seed-specific T-OPT from editor012 hash gate",
+  "hashes": {
+    "objective3_missing_source_robustness.py": "dc83b14cbf27822f86b1626032c5947ac79aa55c264b0a2c524ca44c9e1b07c2",
+    "objective3_perturbations.py": "bcab265042f6b6363d6bc7245d5a0bf6d177d2fcb75528a124978f04d8d9bb1f",
+    "EDITOR006A_SCALER.json": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488"
+  }
+}

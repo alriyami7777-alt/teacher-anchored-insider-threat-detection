@@ -1,0 +1,337 @@
+{
+  "task_id": "EDITOR-024",
+  "task_name": "PROSPECTIVELY RESERVED CERT r6.1 FINAL CONFIRMATION",
+  "experiment_type": "ONE-PASS FROZEN-MODEL CROSS-RELEASE CONFIRMATION",
+  "target_release": "CERT r6.1",
+  "target_status": "PROSPECTIVELY_RESERVED_EMPIRICALLY_UNTOUCHED_WITH_DISCLOSED_PRIOR_EXISTENCE_KNOWLEDGE",
+  "EDITOR023_RESULTS_COMMIT": "a480fa2413cf0b70c398081ca5f8f52470a665a3",
+  "model_training": "PROHIBITED",
+  "model_selection": "PROHIBITED",
+  "target_adaptation": "PROHIBITED",
+  "result_status_at_start": "UNSEEN",
+  "current_paper_model": "TA2",
+  "designated_final_model": "TA2",
+  "designated_final_model_irrespective_of_target_outcome": true,
+  "R61_UNTOUCHED_ELIGIBILITY": "PASS_WITH_DISCLOSED_PRIOR_EXISTENCE_KNOWLEDGE",
+  "untouchedness": {
+    "R61_PRIOR_TRAINING_USE": "NO",
+    "R61_PRIOR_MODEL_SELECTION_USE": "NO",
+    "R61_PRIOR_DIAGNOSTIC_SCORING": "NO",
+    "R61_PRIOR_FEATURE_DISTRIBUTION_INSPECTION": "NO",
+    "R61_PRIOR_LABEL_OR_PREVALENCE_INSPECTION": "NO",
+    "R61_PRIOR_CALIBRATION_USE": "NO",
+    "R61_PRIOR_THRESHOLD_SELECTION_USE": "NO",
+    "R61_PRIOR_EXISTENCE_OR_FILENAME_KNOWLEDGE": "YES"
+  },
+  "models": [
+    "C2-OPT",
+    "F10",
+    "TA2",
+    "L1"
+  ],
+  "comparator_set": [
+    "C2-OPT",
+    "F10",
+    "TA2",
+    "L1"
+  ],
+  "seeds": [
+    42,
+    52,
+    62
+  ],
+  "comparators": {
+    "C2-OPT": "teacher-initialised task-only control",
+    "F10": "ensemble-guided ODST student with predictive teacher guidance ON and route anchoring OFF",
+    "TA2": "final ensemble-guided, route-anchored ODST student",
+    "L1": "matched attention-linear reference"
+  },
+  "primary_metric": "PR_AUC",
+  "primary_view": "COMPLETED_WINDOW",
+  "secondary_view": "DEOVERLAP_OFFSET0",
+  "label_semantics": "COMPLETED_WINDOW",
+  "label_rule": "R52_LABEL_RULE_EVENT_LEVEL_ANSWER_MATCH",
+  "feature_order": [
+    "total_events",
+    "logon_count",
+    "device_count",
+    "file_count",
+    "email_count",
+    "http_count",
+    "active_duration_minutes",
+    "has_logon_activity",
+    "has_device_activity",
+    "has_file_activity",
+    "has_email_activity",
+    "has_http_activity",
+    "is_active_day"
+  ],
+  "n_features": 13,
+  "sequence_length": 20,
+  "stride_primary": 1,
+  "scaler_source": "R52_TRAIN",
+  "scaler_sha256": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+  "scaler_path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\review\\editor006a_preinference_freeze\\EDITOR006A_SCALER.json",
+  "expected_scaler_sha256": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+  "TARGET_SCALER_FIT": "NO",
+  "TARGET_CALIBRATION_FIT": "NO",
+  "TARGET_THRESHOLD_SEARCH": "NO",
+  "TARGET_MODEL_SELECTION": "NO",
+  "TARGET_FEATURE_SELECTION": "NO",
+  "THRESHOLD_SOURCE": "R52_FROZEN",
+  "frozen_thresholds": {
+    "C2-OPT": {
+      "42": 0.85,
+      "52": 0.89,
+      "62": 0.17
+    },
+    "F10": {
+      "42": 0.8400000000000001,
+      "52": 0.79,
+      "62": 0.54
+    },
+    "TA2": {
+      "42": 0.79,
+      "52": 0.74,
+      "62": 0.59
+    },
+    "L1": {
+      "42": 0.75,
+      "52": 0.73,
+      "62": 0.63
+    }
+  },
+  "r52_validation_pr_auc": {
+    "C2-OPT": {
+      "42": 0.9443205892331505,
+      "52": 0.9214711755922543,
+      "62": 0.9401799007272055
+    },
+    "F10": {
+      "42": 0.9441007472746944,
+      "52": 0.9361330144482553,
+      "62": 0.9475508279790588
+    },
+    "TA2": {
+      "42": 0.9454098053584642,
+      "52": 0.9337067425514769,
+      "62": 0.9494100170861509
+    },
+    "L1": {
+      "42": 0.9368690603400606,
+      "52": 0.9360656904165168,
+      "62": 0.9437081231855656
+    }
+  },
+  "bootstrap": {
+    "n_resamples": 2000,
+    "rng_seed": 42,
+    "sampling_unit": "r6.1 user",
+    "matched_models_share_resampled_users": true
+  },
+  "H1": {
+    "name": "ta2_ranking_transfer",
+    "statement": "The final TA2 model retains ranking signal on prospectively reserved CERT r6.1.",
+    "statistic": "mean TA2 PR-AUC - r6.1 prevalence"
+  },
+  "primary_contrasts": {
+    "TA2-C2-OPT": "complete final formulation versus teacher initialisation alone",
+    "F10-C2-OPT": "ensemble predictive teacher-guidance contribution",
+    "TA2-F10": "incremental route-anchor contribution",
+    "TA2-L1": "final ODST formulation versus matched attention-linear reference"
+  },
+  "claim_rule": {
+    "SUPPORTED": "mean > 0 AND user-cluster 95% CI lower bound > 0",
+    "CONSISTENT": "mean > 0 but CI lower bound <= 0",
+    "NOT_SUPPORTED": "mean <= 0"
+  },
+  "raw_r61_root": "C:\\PhD\\06_Datasets\\r6.1\\r6.1",
+  "answer_bundle_candidates": [
+    "C:\\PhD\\06_Datasets\\answers",
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\answers\\answers"
+  ],
+  "student_checkpoints": [
+    {
+      "model": "C2-OPT",
+      "seed": 42,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed42\\best_student.pt",
+      "expected_sha256": "d64651d25e48b3bcd4cad7d107d3bc55a4c555a2827f3656a087624e94ac4baf",
+      "observed_sha256": "d64651d25e48b3bcd4cad7d107d3bc55a4c555a2827f3656a087624e94ac4baf",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "C2-OPT",
+      "seed": 52,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed52\\best_student.pt",
+      "expected_sha256": "f0eea90099ba7dd3e721efb930e367e868049c94f6542d5b2156d9fe469acb7e",
+      "observed_sha256": "f0eea90099ba7dd3e721efb930e367e868049c94f6542d5b2156d9fe469acb7e",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "C2-OPT",
+      "seed": 62,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed62\\best_student.pt",
+      "expected_sha256": "50512aa5392ee7f4d93dc5f84471fc1074baeb757ae9fb5b96caed141ee586da",
+      "observed_sha256": "50512aa5392ee7f4d93dc5f84471fc1074baeb757ae9fb5b96caed141ee586da",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "F10",
+      "seed": 42,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F10_DOPT\\seed42\\best_student.pt",
+      "expected_sha256": "ea8cd41a1ae3f845719956fd7a49230fa82807ffac87841be5f5ab95c64ac0c2",
+      "observed_sha256": "ea8cd41a1ae3f845719956fd7a49230fa82807ffac87841be5f5ab95c64ac0c2",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "F10",
+      "seed": 52,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F10_DOPT\\seed52\\best_student.pt",
+      "expected_sha256": "829135230c5629f0b11161e11d76eba7a15e65bf9d03b5a55ffa297a93ddf959",
+      "observed_sha256": "829135230c5629f0b11161e11d76eba7a15e65bf9d03b5a55ffa297a93ddf959",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "F10",
+      "seed": 62,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F10_DOPT\\seed62\\best_student.pt",
+      "expected_sha256": "06313d6f2602de51f8dd6e15e1d1292864fd8cbd158f33977fa42c8a47036aee",
+      "observed_sha256": "06313d6f2602de51f8dd6e15e1d1292864fd8cbd158f33977fa42c8a47036aee",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "TA2",
+      "seed": 42,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed42\\best_student.pt",
+      "expected_sha256": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8",
+      "observed_sha256": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "TA2",
+      "seed": 52,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed52\\best_student.pt",
+      "expected_sha256": "7613ba559bcf55827d04129066eb595b677994494609646f8b2463308ed5edb4",
+      "observed_sha256": "7613ba559bcf55827d04129066eb595b677994494609646f8b2463308ed5edb4",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "TA2",
+      "seed": 62,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed62\\best_student.pt",
+      "expected_sha256": "904003dca219435464476cf36abedb11ee4e2f7a11ff09caa3791d685b8f644d",
+      "observed_sha256": "904003dca219435464476cf36abedb11ee4e2f7a11ff09caa3791d685b8f644d",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "L1",
+      "seed": 42,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed42\\best.pt",
+      "expected_sha256": "513e272063250aa209efa2c42b490cc44316c7979fa6b2be5dd8cce4592d1ab2",
+      "observed_sha256": "513e272063250aa209efa2c42b490cc44316c7979fa6b2be5dd8cce4592d1ab2",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "L1",
+      "seed": 52,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed52\\best.pt",
+      "expected_sha256": "a503f6705955da221bdbd1921034e9102b90db6acb5187114276ccaeb474e1c4",
+      "observed_sha256": "a503f6705955da221bdbd1921034e9102b90db6acb5187114276ccaeb474e1c4",
+      "exists": true,
+      "PASS": true
+    },
+    {
+      "model": "L1",
+      "seed": 62,
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed62\\best.pt",
+      "expected_sha256": "60d5c43692a17ba6971c8d23f74048ac3c4fe0bd1b18889eeb21bbab7bf3d3e9",
+      "observed_sha256": "60d5c43692a17ba6971c8d23f74048ac3c4fe0bd1b18889eeb21bbab7bf3d3e9",
+      "exists": true,
+      "PASS": true
+    }
+  ],
+  "preprocessing_provenance": {
+    "parent_commit": "a480fa2413cf0b70c398081ca5f8f52470a665a3",
+    "event_parsing": {
+      "file": "scripts/run_editor007b_r51_bundle.py",
+      "functions": [
+        "parse_cert_ts",
+        "looks_like_event_id",
+        "normalize_event_id",
+        "scan_source"
+      ],
+      "twin_file": "review/editor006c_r62_input_bundle/run_editor006c_r62_input_bundle.py"
+    },
+    "daily_aggregation": {
+      "file": "scripts/run_editor007b_r51_bundle.py",
+      "functions": [
+        "scan_source",
+        "main.13-feature construction"
+      ],
+      "feature_order": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ]
+    },
+    "daily_grid_and_windows": {
+      "file": "src/editor006b_harness/input_bundle.py",
+      "functions": [
+        "DenseDailyWindowProvider",
+        "SequenceIdentifiers"
+      ],
+      "sequence_length": 20,
+      "stride": 1
+    },
+    "completed_window_labels": {
+      "contract": "review/editor006a_preinference_freeze/EDITOR006A_R62_LABEL_CONTRACT.json",
+      "rule": "R52_LABEL_RULE_EVENT_LEVEL_ANSWER_MATCH",
+      "semantics": "y=1 iff any day in the T=20 window has an official answer-matched event",
+      "implementation": "scripts/run_editor007b_r51_bundle.py completed_window_labels"
+    },
+    "deoverlap": {
+      "file": "src/editor006b_harness/input_bundle.py",
+      "rule": "start_day_index % T_WINDOW == 0",
+      "flag": "deoverlap_offset0_flag",
+      "implementation": "scripts/run_editor007b_r51_bundle.py deoverlap_offset0_mask"
+    },
+    "scaler": {
+      "file": "review/editor006a_preinference_freeze/EDITOR006A_SCALER.json",
+      "function": "src/editor006b_harness/input_bundle.py::apply_persisted_scaler",
+      "sha256": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+      "source": "R52_TRAIN",
+      "mode": "transform_only"
+    }
+  },
+  "partitions": {
+    "r52_train": "HISTORICAL_SOURCE_OF_FROZEN_MODELS_AND_SCALER",
+    "r52_validation": "HISTORICAL_SOURCE_OF_THRESHOLDS_AND_RETENTION_DENOMINATOR",
+    "r52_test": "HARD_DENY",
+    "r51": "DO_NOT_RERUN",
+    "r62": "DO_NOT_RERUN",
+    "r61": "FINAL_PROSPECTIVELY_RESERVED_CONFIRMATION_TARGET"
+  },
+  "review_rel": "review\\editor024_r61_final_confirmation",
+  "written_at": "2026-08-18T05:24:41Z",
+  "content_access_authorised": false
+}

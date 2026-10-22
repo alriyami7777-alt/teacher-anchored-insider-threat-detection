@@ -1,0 +1,23 @@
+{
+  "average_precision": 0.8694644679060796,
+  "roc_auc": 0.9944909667734949,
+  "prevalence": 0.009484375,
+  "ap_minus_prevalence": 0.8599800929060796,
+  "precision": 0.8700564971751412,
+  "recall": 0.7611202635914333,
+  "f1": 0.81195079086116,
+  "tp": 924,
+  "fp": 138,
+  "tn": 126648,
+  "fn": 290,
+  "alerts_per_1000": 8.296875,
+  "threshold": 0.9086935520172119,
+  "windows": 128000,
+  "positives": 1214,
+  "learner": "attention",
+  "schema": "LOCO_active_duration_minutes",
+  "seed": 42,
+  "best_epoch": 3,
+  "threshold_role": "INNER_SELECT_CALIBRATED_DEVELOPMENT",
+  "evidence_role": "NEW_INNER_SELECTION"
+}

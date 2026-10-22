@@ -1,0 +1,155 @@
+{
+  "promoted": [],
+  "promoted_names": [],
+  "selected_mode": {},
+  "L1_PR_AUC": 0.9381787168197482,
+  "L1_select_metrics": {
+    "threshold": 0.8400000000000001,
+    "precision": 0.8894230769230769,
+    "recall": 0.914332784184514,
+    "f1": 0.9017059301380991,
+    "pr_auc": 0.9381787168197482,
+    "roc_auc": 0.9991208447312705,
+    "tn": 126648,
+    "fp": 138,
+    "fn": 104,
+    "tp": 1110,
+    "Brier": 0.0036337377989377117,
+    "log_loss": 0.031100671256004568,
+    "predicted_positive_fraction": 0.00975,
+    "n": 128000,
+    "n_pos": 1214
+  },
+  "inner_rows": [
+    {
+      "condition": "LIN40-T",
+      "family": "LIN40",
+      "teacher": false,
+      "seed": 42,
+      "select_PR_AUC": 0.9189495040057336,
+      "select_F1": 0.8921161825726142,
+      "select_Brier": 0.003989913082636321,
+      "select_log_loss": 0.025328395370931737,
+      "best_epoch": 2,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor018\\outputs\\editor018_cross_view_tree_rescue\\LIN40-T\\seed42\\best.pt"
+    },
+    {
+      "condition": "LIN40-D",
+      "family": "LIN40",
+      "teacher": true,
+      "seed": 42,
+      "select_PR_AUC": 0.9358751875507038,
+      "select_F1": 0.9029363784665579,
+      "select_Brier": 0.0033828254403864373,
+      "select_log_loss": 0.030306005155732584,
+      "best_epoch": 1,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor018\\outputs\\editor018_cross_view_tree_rescue\\LIN40-D\\seed42\\best.pt"
+    },
+    {
+      "condition": "MLP40-T",
+      "family": "MLP40",
+      "teacher": false,
+      "seed": 42,
+      "select_PR_AUC": 0.8933542657603925,
+      "select_F1": 0.875,
+      "select_Brier": 0.0033382315862798884,
+      "select_log_loss": 0.014682871052634749,
+      "best_epoch": 2,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor018\\outputs\\editor018_cross_view_tree_rescue\\MLP40-T\\seed42\\best.pt"
+    },
+    {
+      "condition": "MLP40-D",
+      "family": "MLP40",
+      "teacher": true,
+      "seed": 42,
+      "select_PR_AUC": 0.9401117154719215,
+      "select_F1": 0.9018961253091509,
+      "select_Brier": 0.00330987929821055,
+      "select_log_loss": 0.029935099247374922,
+      "best_epoch": 2,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor018\\outputs\\editor018_cross_view_tree_rescue\\MLP40-D\\seed42\\best.pt"
+    },
+    {
+      "condition": "ODST40-T",
+      "family": "ODST40",
+      "teacher": false,
+      "seed": 42,
+      "select_PR_AUC": 0.935407704342691,
+      "select_F1": 0.9005799502899752,
+      "select_Brier": 0.0034096388378079133,
+      "select_log_loss": 0.024026203716871967,
+      "best_epoch": 1,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor018\\outputs\\editor018_cross_view_tree_rescue\\ODST40-T\\seed42\\best.pt"
+    },
+    {
+      "condition": "ODST40-D",
+      "family": "ODST40",
+      "teacher": true,
+      "seed": 42,
+      "select_PR_AUC": 0.9382243122714573,
+      "select_F1": 0.9017857142857143,
+      "select_Brier": 0.003420433917483116,
+      "select_log_loss": 0.030252817585953783,
+      "best_epoch": 2,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor018\\outputs\\editor018_cross_view_tree_rescue\\ODST40-D\\seed42\\best.pt"
+    },
+    {
+      "condition": "IWODST40-T",
+      "family": "IWODST40",
+      "teacher": false,
+      "seed": 42,
+      "select_PR_AUC": 0.9324399302859377,
+      "select_F1": 0.9003751563151313,
+      "select_Brier": 0.003474195035408144,
+      "select_log_loss": 0.023289727211642193,
+      "best_epoch": 1,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor018\\outputs\\editor018_cross_view_tree_rescue\\IWODST40-T\\seed42\\best.pt"
+    },
+    {
+      "condition": "IWODST40-D",
+      "family": "IWODST40",
+      "teacher": true,
+      "seed": 42,
+      "select_PR_AUC": 0.9374952794840229,
+      "select_F1": 0.9022312373225152,
+      "select_Brier": 0.0033898406049391017,
+      "select_log_loss": 0.03013649181775827,
+      "best_epoch": 1,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor018\\outputs\\editor018_cross_view_tree_rescue\\IWODST40-D\\seed42\\best.pt"
+    }
+  ],
+  "effects": {
+    "A_second_view_helps": {
+      "best_branch_minus_L1": 0.0019329986521733344
+    },
+    "B_tree_structure": {
+      "ODST40-D_minus_LIN40-D": 0.002349124720753548,
+      "ODST40-D_minus_MLP40-D": -0.0018874032004642105,
+      "IWODST40-D_minus_LIN40-D": 0.0016200919333191344,
+      "IWODST40-D_minus_MLP40-D": -0.0026164359878986243
+    },
+    "C_teacher_within_tree": {
+      "ODST40-D_minus_ODST40-T": 0.002816607928766257,
+      "IWODST40-D_minus_IWODST40-T": 0.005055349198085146
+    },
+    "non_tree_available": [
+      "LIN40-D",
+      "MLP40-D"
+    ],
+    "best_non_tree": "MLP40-D",
+    "best_non_tree_PR_AUC": 0.9401117154719215
+  },
+  "scaler": {
+    "class": "sklearn.preprocessing.StandardScaler",
+    "fitted_on": "INNER_TRAIN",
+    "n_features": 40,
+    "with_mean": true,
+    "with_std": true,
+    "mean_sha256": "6ac21c91b2c9347d3876a031943760c9fa1ca5ddbd4041de595ee04057b108dc",
+    "scale_sha256": "803f1e000f18354aa623939a2ebfd872048b2ae7bebeff9797aa7d4578290548",
+    "state_sha256": "ef7aa307aafe8a7ef357aa540ae62ffe59044d26f5b645d56cc47aa6bba3d7eb",
+    "n_fit_rows": 622000
+  },
+  "no_architecture_may_be_added_after_this_commit": true,
+  "utc": "2026-08-16T13:12:12Z"
+}

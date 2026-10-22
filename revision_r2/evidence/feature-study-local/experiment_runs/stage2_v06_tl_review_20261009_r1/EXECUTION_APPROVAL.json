@@ -1,0 +1,11 @@
+{
+  "scope": "CERT_STUDY",
+  "manifest_sha256": "55d25c09e52b70161fec902034776659eff2370219c76e07321cfea4ecdc32f9",
+  "recorded_utc": "2026-10-09T04:43:07.978736+00:00",
+  "authorized": true,
+  "approver": "Qasim",
+  "authorization_source": "Human user written message in this Codex thread on 2026-10-09",
+  "exact_user_message": "I approve launch for manifest 55d25c09e52b70161fec902034776659eff2370219c76e07321cfea4ecdc32f9. Mains power is connected, sleep is disabled, and OS/driver updates are paused.",
+  "fit_budget": 72,
+  "no_new_review_without_user_approval": true
+}

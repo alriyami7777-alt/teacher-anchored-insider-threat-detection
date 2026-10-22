@@ -1,0 +1,10 @@
+{
+  "teacher_ensemble_pr_auc": 0.9373497808604082,
+  "attention_linear_ensemble_pr_auc": 0.9404029786152506,
+  "best_single_teacher_pr_auc": 0.9347250769667722,
+  "best_single_teacher_seed": 62,
+  "equal_weight": true,
+  "learned_validation_weights": false,
+  "ENSEMBLE_ROUTE_ANCHORING": "OFF",
+  "ensemble_better_than_best_single": true
+}

@@ -1,0 +1,46 @@
+{
+  "definition": {
+    "n_offsets": 20,
+    "pooled_as_independent_observations": false,
+    "p_value_from_offsets_forbidden": true,
+    "role": "sensitivity_views",
+    "primary_offset": 0,
+    "selection_rule": "within each user, chronological positions k, k+20, k+40, ...",
+    "mask_depends_on": [
+      "user identity",
+      "chronological sequence position",
+      "window dates"
+    ],
+    "mask_forbidden": [
+      "label",
+      "model score",
+      "prediction",
+      "malicious scenario"
+    ]
+  },
+  "n_validation": 64000,
+  "offset_counts": {
+    "0": 4000,
+    "1": 4000,
+    "2": 4000,
+    "3": 4000,
+    "4": 4000,
+    "5": 4000,
+    "6": 4000,
+    "7": 4000,
+    "8": 4000,
+    "9": 4000,
+    "10": 4000,
+    "11": 4000,
+    "12": 2000,
+    "13": 2000,
+    "14": 2000,
+    "15": 2000,
+    "16": 2000,
+    "17": 2000,
+    "18": 2000,
+    "19": 2000
+  },
+  "score_blind": true,
+  "label_blind": true
+}

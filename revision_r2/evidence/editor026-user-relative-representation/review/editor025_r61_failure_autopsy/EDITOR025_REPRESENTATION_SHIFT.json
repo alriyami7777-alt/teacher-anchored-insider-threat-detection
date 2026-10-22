@@ -1,0 +1,131 @@
+{
+  "transfer_ratios_mean_over_seeds": {
+    "C2-OPT": 0.15626504499761829,
+    "F10": 0.15855185810847014,
+    "TA2": 0.15950650800769253,
+    "L1": 0.18111742091721014
+  },
+  "rows": [
+    {
+      "R52_REPRESENTATION_SEPARATION": 4.699021757189301,
+      "R61_REPRESENTATION_SEPARATION": 0.85344633367417,
+      "REPRESENTATION_TRANSFER_RATIO": 0.1816221285565307,
+      "r52_neg_proj_sd": 6.316969017129339,
+      "domain_cosine_distance": 0.2977258965110321,
+      "cov_frobenius_ratio": 1.4277685801855124,
+      "model": "C2-OPT",
+      "seed": 42
+    },
+    {
+      "R52_REPRESENTATION_SEPARATION": 3.901027679338695,
+      "R61_REPRESENTATION_SEPARATION": 0.6783560478945503,
+      "REPRESENTATION_TRANSFER_RATIO": 0.17389162642638456,
+      "r52_neg_proj_sd": 9.35222153601261,
+      "domain_cosine_distance": 0.1966065000358198,
+      "cov_frobenius_ratio": 1.1580565483553016,
+      "model": "C2-OPT",
+      "seed": 52
+    },
+    {
+      "R52_REPRESENTATION_SEPARATION": 6.0694934231308855,
+      "R61_REPRESENTATION_SEPARATION": 0.6875605909335188,
+      "REPRESENTATION_TRANSFER_RATIO": 0.11328138000993958,
+      "r52_neg_proj_sd": 5.17346622881021,
+      "domain_cosine_distance": 0.33145139457958983,
+      "cov_frobenius_ratio": 1.9666538655326367,
+      "model": "C2-OPT",
+      "seed": 62
+    },
+    {
+      "R52_REPRESENTATION_SEPARATION": 4.717754092359605,
+      "R61_REPRESENTATION_SEPARATION": 0.8511889747541508,
+      "REPRESENTATION_TRANSFER_RATIO": 0.18042249724983547,
+      "r52_neg_proj_sd": 6.262609655015773,
+      "domain_cosine_distance": 0.2964050404702602,
+      "cov_frobenius_ratio": 1.4273761157139686,
+      "model": "F10",
+      "seed": 42
+    },
+    {
+      "R52_REPRESENTATION_SEPARATION": 4.179892880759277,
+      "R61_REPRESENTATION_SEPARATION": 0.7200758909544267,
+      "REPRESENTATION_TRANSFER_RATIO": 0.17227137429024858,
+      "r52_neg_proj_sd": 8.295118670056965,
+      "domain_cosine_distance": 0.21328822470668873,
+      "cov_frobenius_ratio": 1.264307304183703,
+      "model": "F10",
+      "seed": 52
+    },
+    {
+      "R52_REPRESENTATION_SEPARATION": 5.837573795429559,
+      "R61_REPRESENTATION_SEPARATION": 0.7177980140210188,
+      "REPRESENTATION_TRANSFER_RATIO": 0.12296170278532635,
+      "r52_neg_proj_sd": 5.7335299066064795,
+      "domain_cosine_distance": 0.3241384860673229,
+      "cov_frobenius_ratio": 1.8914209828096153,
+      "model": "F10",
+      "seed": 62
+    },
+    {
+      "R52_REPRESENTATION_SEPARATION": 4.729436499968511,
+      "R61_REPRESENTATION_SEPARATION": 0.8520608950908698,
+      "REPRESENTATION_TRANSFER_RATIO": 0.18016118729927824,
+      "r52_neg_proj_sd": 6.242575220380751,
+      "domain_cosine_distance": 0.2980662937192734,
+      "cov_frobenius_ratio": 1.4382068225609694,
+      "model": "TA2",
+      "seed": 42
+    },
+    {
+      "R52_REPRESENTATION_SEPARATION": 4.110967539276167,
+      "R61_REPRESENTATION_SEPARATION": 0.7372953520149833,
+      "REPRESENTATION_TRANSFER_RATIO": 0.1793483760138864,
+      "r52_neg_proj_sd": 8.266042532338592,
+      "domain_cosine_distance": 0.20783898482692076,
+      "cov_frobenius_ratio": 1.2464094655881262,
+      "model": "TA2",
+      "seed": 52
+    },
+    {
+      "R52_REPRESENTATION_SEPARATION": 5.881918421528756,
+      "R61_REPRESENTATION_SEPARATION": 0.7000068802450503,
+      "REPRESENTATION_TRANSFER_RATIO": 0.11900996070991293,
+      "r52_neg_proj_sd": 5.582777699697492,
+      "domain_cosine_distance": 0.3240311831657614,
+      "cov_frobenius_ratio": 1.9091275278669735,
+      "model": "TA2",
+      "seed": 62
+    },
+    {
+      "R52_REPRESENTATION_SEPARATION": 4.674458586632281,
+      "R61_REPRESENTATION_SEPARATION": 0.9602395377414594,
+      "REPRESENTATION_TRANSFER_RATIO": 0.20542262166735017,
+      "r52_neg_proj_sd": 6.954885416578477,
+      "domain_cosine_distance": 0.2179049639610423,
+      "cov_frobenius_ratio": 1.3187114200193109,
+      "model": "L1",
+      "seed": 42
+    },
+    {
+      "R52_REPRESENTATION_SEPARATION": 4.534350848342098,
+      "R61_REPRESENTATION_SEPARATION": 0.8332955790492476,
+      "REPRESENTATION_TRANSFER_RATIO": 0.18377395285896916,
+      "r52_neg_proj_sd": 6.916396921150408,
+      "domain_cosine_distance": 0.1814777697857719,
+      "cov_frobenius_ratio": 1.2033091340440398,
+      "model": "L1",
+      "seed": 52
+    },
+    {
+      "R52_REPRESENTATION_SEPARATION": 6.55850282037199,
+      "R61_REPRESENTATION_SEPARATION": 1.0110305160020876,
+      "REPRESENTATION_TRANSFER_RATIO": 0.15415568822531103,
+      "r52_neg_proj_sd": 4.642390652288368,
+      "domain_cosine_distance": 0.26541901268528356,
+      "cov_frobenius_ratio": 1.7057006051059604,
+      "model": "L1",
+      "seed": 62
+    }
+  ],
+  "head_swapping": "NOT_PERFORMED"
+}

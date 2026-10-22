@@ -1,0 +1,12 @@
+{
+  "scope": "CERT_STUDY",
+  "manifest_sha256": "55d25c09e52b70161fec902034776659eff2370219c76e07321cfea4ecdc32f9",
+  "recorded_utc": "2026-10-09T04:43:07.978736+00:00",
+  "ready": true,
+  "acknowledged_by": "Qasim",
+  "source": "Same explicit human user message",
+  "mains_connected": true,
+  "sleep_disabled": true,
+  "os_updates_paused": true,
+  "driver_updates_paused": true
+}

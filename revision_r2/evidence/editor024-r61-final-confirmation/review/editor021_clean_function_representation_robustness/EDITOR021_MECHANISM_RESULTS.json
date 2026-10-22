@@ -1,0 +1,40 @@
+{
+  "split": "inner_select",
+  "results": {
+    "CFP0": {
+      "42": {
+        "clean_logit_mse_to_starting_ta2": 0.003914935514330864,
+        "clean_logit_mae_to_starting_ta2": 0.013399142771959305,
+        "clean_student_reference_repr_cosine": 0.9931312701676177,
+        "teacher_logit_deviation": 0.17890487633894372,
+        "logit_pearson": 0.9797637785682956,
+        "route_MAE": 0.002765956204778573,
+        "route_KL": 0.0037443758707926635,
+        "hard_route_agreement": 0.997822509765625,
+        "dominant_leaf_agreement": 0.992365234375
+      },
+      "52": {
+        "clean_logit_mse_to_starting_ta2": 0.0012286625569686294,
+        "clean_logit_mae_to_starting_ta2": 0.0058663939125835896,
+        "clean_student_reference_repr_cosine": 0.9997945703626576,
+        "teacher_logit_deviation": 0.48715988413350714,
+        "logit_pearson": 0.969501480735925,
+        "route_MAE": 0.003719237704765004,
+        "route_KL": 0.006707598725465486,
+        "hard_route_agreement": 0.99686767578125,
+        "dominant_leaf_agreement": 0.9898720703125
+      },
+      "62": {
+        "clean_logit_mse_to_starting_ta2": 0.0009453190141357481,
+        "clean_logit_mae_to_starting_ta2": 0.006106409709900618,
+        "clean_student_reference_repr_cosine": 0.9995483331149444,
+        "teacher_logit_deviation": 0.276550698309904,
+        "logit_pearson": 0.9733966434509737,
+        "route_MAE": 0.0026831400511016694,
+        "route_KL": 0.0038696513747019513,
+        "hard_route_agreement": 0.998290771484375,
+        "dominant_leaf_agreement": 0.9938173828125
+      }
+    }
+  }
+}

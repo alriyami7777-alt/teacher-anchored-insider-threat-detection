@@ -1,0 +1,20 @@
+{
+  "R61_UNTOUCHED_ELIGIBILITY": "PASS_WITH_DISCLOSED_PRIOR_EXISTENCE_KNOWLEDGE",
+  "R61_PRIOR_TRAINING_USE": "NO",
+  "R61_PRIOR_MODEL_SELECTION_USE": "NO",
+  "R61_PRIOR_DIAGNOSTIC_SCORING": "NO",
+  "R61_PRIOR_FEATURE_DISTRIBUTION_INSPECTION": "NO",
+  "R61_PRIOR_LABEL_OR_PREVALENCE_INSPECTION": "NO",
+  "R61_PRIOR_CALIBRATION_USE": "NO",
+  "R61_PRIOR_THRESHOLD_SELECTION_USE": "NO",
+  "R61_PRIOR_EXISTENCE_OR_FILENAME_KNOWLEDGE": "YES",
+  "disclosed_prior_knowledge": [
+    "CERT r6.1 existence",
+    "directory/file names",
+    "file sizes/timestamps",
+    "answer-bundle filenames",
+    "planned or forbidden code references"
+  ],
+  "empirical_content_examined": false,
+  "written_at": "2026-08-18T05:24:41Z"
+}

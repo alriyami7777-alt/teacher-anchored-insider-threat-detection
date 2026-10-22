@@ -1,0 +1,9 @@
+{
+  "triggered": true,
+  "positive_seeds": "9/10",
+  "mean_delta": 0.006157051655527679,
+  "median_delta": 0.005413539594087913,
+  "min_delta": -0.0007682569094878966,
+  "max_delta": 0.012490258240289598,
+  "seeds_are_not_independent_experimental_units": true
+}

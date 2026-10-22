@@ -1,0 +1,24 @@
+{
+  "editor_issue_teacher_initialisation_is_load_bearing": {
+    "evidence": "C2-OPT is the matched teacher-initialisation-only control under ODST-046.",
+    "C2_OPT_mean_PR_AUC": 0.9353238885175368
+  },
+  "editor_issue_original_C5_gives_almost_no_incremental_gain": {
+    "evidence": "original C5 retained the antagonistic static logit anchor.",
+    "EDITOR009_gradient": "cos(task, logit anchor) \u2248 -0.25; route cosine \u2248 +0.15",
+    "repaired_condition": "R2-OPT removes logit anchoring (lambda_logit=0)."
+  },
+  "editor_issue_is_anchoring_itself_useful": {
+    "answer_source": "R2-OPT versus C2-OPT only",
+    "PRIMARY_ROUTE_ANCHOR_CONFIRMATION": "MIXED_ROUTE_ANCHOR_EFFECT",
+    "mean_delta": 0.002171692560775207,
+    "positive_delta_seeds": "2/3"
+  },
+  "editor_issue_ODST_optimisation": {
+    "evidence": "EDITOR-010 selected ODST-046; EDITOR-011 tests repaired anchoring under that configuration."
+  },
+  "editor_issue_random_init_collapse": {
+    "preserve_EDITOR009": "random encoder + ODST fails to enter viable basin; raw-index route anchoring is additionally invalid under random initialisation. Route indexing alone did not cause the collapse."
+  },
+  "R2_OPT_is_not_historical_C5": true
+}

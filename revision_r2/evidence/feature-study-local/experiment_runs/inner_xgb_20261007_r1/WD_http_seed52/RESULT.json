@@ -1,0 +1,22 @@
+{
+  "average_precision": 0.742801188228154,
+  "roc_auc": 0.9615370739383107,
+  "prevalence": 0.009484375,
+  "ap_minus_prevalence": 0.733316813228154,
+  "precision": 0.7129032258064516,
+  "recall": 0.728171334431631,
+  "f1": 0.7204563977180114,
+  "tp": 884,
+  "fp": 356,
+  "tn": 126430,
+  "fn": 330,
+  "alerts_per_1000": 9.6875,
+  "threshold": 0.4110516607761383,
+  "windows": 128000,
+  "positives": 1214,
+  "schema": "WD_http",
+  "seed": 52,
+  "evidence_role": "NEW_INNER_SELECTION_EXPLORATORY_NOT_IEEE_ACCESS_OR_CONFIRMATION",
+  "threshold_role": "INNER_SELECT_CALIBRATED_DEVELOPMENT",
+  "identity_sha256": "847d290a69a56a3bf50302d085d24f02f088bca21a67591abd71687a63647cb7"
+}

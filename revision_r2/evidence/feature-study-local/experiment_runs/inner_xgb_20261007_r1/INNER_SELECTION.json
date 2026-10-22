@@ -1,0 +1,51 @@
+{
+  "S13": {
+    "selected": "LOCO_active_duration_minutes",
+    "mean_ap": 0.8270529647068051,
+    "best_candidate_mean_ap": 0.8270529647068051,
+    "tolerance": 0.002,
+    "eligible": [
+      "LOCO_active_duration_minutes"
+    ],
+    "all_mean_ap": {
+      "F13": 0.7584838828522463,
+      "F6_PRIMITIVES": 0.743285895147635,
+      "F7_NUMERIC": 0.7420105993126721,
+      "FLAGS6": 0.5597213253982964,
+      "LOCO_total_events": 0.755260850703782,
+      "LOCO_logon_count": 0.7067497595953797,
+      "LOCO_device_count": 0.6576492911648086,
+      "LOCO_file_count": 0.7324657871092205,
+      "LOCO_email_count": 0.753307507870594,
+      "LOCO_http_count": 0.7503695503883754,
+      "LOCO_active_duration_minutes": 0.8270529647068051,
+      "LOCO_has_logon_activity": 0.7543600320565974,
+      "LOCO_has_device_activity": 0.7407081625122647,
+      "LOCO_has_file_activity": 0.7485171198369055,
+      "LOCO_has_email_activity": 0.7580927823876347,
+      "LOCO_has_http_activity": 0.7578537854995364,
+      "LOCO_is_active_day": 0.7511264302463873
+    }
+  },
+  "Splus": {
+    "selected": "FAM_actions",
+    "mean_ap": 0.7832045014430428,
+    "best_candidate_mean_ap": 0.7832045014430428,
+    "tolerance": 0.002,
+    "eligible": [
+      "FAM_actions"
+    ],
+    "all_mean_ap": {
+      "F13": 0.7584838828522463,
+      "FAM_timing": 0.7428796927844245,
+      "FAM_workstation": 0.7538682625525359,
+      "FAM_actions": 0.7832045014430428,
+      "FAM_email": 0.7597211389977131,
+      "FAM_web": 0.7324868293757817,
+      "F29": 0.7709559039207408
+    }
+  },
+  "fit_count": 84,
+  "evidence_role": "NEW_INNER_SELECTION_EXPLORATORY_NOT_IEEE_ACCESS_OR_CONFIRMATION",
+  "outer_validation_used": false
+}

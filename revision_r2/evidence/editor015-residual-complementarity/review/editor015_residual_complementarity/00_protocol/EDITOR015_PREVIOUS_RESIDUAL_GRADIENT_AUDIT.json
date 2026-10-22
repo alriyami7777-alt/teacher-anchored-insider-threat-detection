@@ -1,0 +1,14 @@
+{
+  "task_id": "EDITOR-015",
+  "previous_formula": "final_logit = linear_logit + alpha * odst_logit",
+  "alpha_initial": 0.0,
+  "beta_initial": 0.0,
+  "EDITOR013_HybridAlpha_used": true,
+  "EDITOR014_ResidualBeta_used": true,
+  "d_final_d_theta_ODST_at_init": 0.0,
+  "autograd_l1_norm_HybridAlpha": 0.0,
+  "autograd_l1_norm_ResidualBeta": 0.0,
+  "PREVIOUS_RESIDUAL_ODST_INITIAL_GRADIENT": "ZERO",
+  "mechanistically_distinct_new_residual": true,
+  "reason": "zero scalar gate multiplies the ODST logit, so parameter gradients are exactly zero at step 0"
+}

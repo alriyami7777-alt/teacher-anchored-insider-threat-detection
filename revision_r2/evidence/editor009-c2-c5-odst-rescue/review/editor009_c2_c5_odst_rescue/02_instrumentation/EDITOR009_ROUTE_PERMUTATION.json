@@ -1,0 +1,14 @@
+{
+  "raw_index_route_loss": 0.06557057797908783,
+  "permuted_route_loss_mean": 1.7085140496492386,
+  "permuted_route_loss_std": 0.28824763536304526,
+  "ratio_perm_over_raw": 26.056107820097733,
+  "ROUTE_ANCHOR_PERMUTATION_SENSITIVE": "YES",
+  "RAW_INDEX_CORRESPONDENCE_IS_STRUCTURALLY_INVALID_UNDER_RANDOM_INIT": "SUPPORTED",
+  "ROUTE_INDEX_IDENTITY_ASSUMED": "YES",
+  "matched_route_loss": 1.7543364763259888,
+  "raw_vs_matched": {
+    "raw": 0.06557057797908783,
+    "matched": 1.7543364763259888
+  }
+}

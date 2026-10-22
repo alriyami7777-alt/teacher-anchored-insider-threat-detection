@@ -1,0 +1,74 @@
+{
+  "R52_DEOVERLAP_RANKING_SIGNAL": "SUPPORTED",
+  "component_signals": {
+    "F10-C2-OPT": "CONSISTENT",
+    "TA2-C2-OPT": "CONSISTENT",
+    "TA2-F10": "NOT_SUPPORTED",
+    "TA2-L1": "CONSISTENT"
+  },
+  "model_offset_summaries": {
+    "C2-OPT": {
+      "median": 0.9442812011450112,
+      "minimum": 0.9085669102308045,
+      "maximum": 0.9554805202608297,
+      "Q25": 0.9233975418539798,
+      "Q75": 0.9470153516087129,
+      "n_offsets_PR_AUC_above_prevalence": 20
+    },
+    "F10": {
+      "median": 0.9486319019424796,
+      "minimum": 0.917011694668306,
+      "maximum": 0.9627641049495926,
+      "Q25": 0.9345453790948838,
+      "Q75": 0.9548816657878856,
+      "n_offsets_PR_AUC_above_prevalence": 20
+    },
+    "TA2": {
+      "median": 0.94875501987761,
+      "minimum": 0.9174826889536346,
+      "maximum": 0.9604835284933646,
+      "Q25": 0.935070623713623,
+      "Q75": 0.9543180849417054,
+      "n_offsets_PR_AUC_above_prevalence": 20
+    },
+    "L1": {
+      "median": 0.9441451645330776,
+      "minimum": 0.9123161741568198,
+      "maximum": 0.9557534717530957,
+      "Q25": 0.9331500714662638,
+      "Q75": 0.9509189976926129,
+      "n_offsets_PR_AUC_above_prevalence": 20
+    }
+  },
+  "contrast_offset_summaries": {
+    "F10-C2-OPT": {
+      "median_difference": 0.008113219592123688,
+      "minimum_difference": 0.0007227642171580007,
+      "maximum_difference": 0.016095875518088554,
+      "n_favourable_offsets": 20,
+      "n_offsets": 20
+    },
+    "TA2-C2-OPT": {
+      "median_difference": 0.007222281671328101,
+      "minimum_difference": 0.000682729700278828,
+      "maximum_difference": 0.015286773569023193,
+      "n_favourable_offsets": 20,
+      "n_offsets": 20
+    },
+    "TA2-F10": {
+      "median_difference": -0.000604207842465343,
+      "minimum_difference": -0.0032480875210045834,
+      "maximum_difference": 0.002519145080519425,
+      "n_favourable_offsets": 9,
+      "n_offsets": 20
+    },
+    "TA2-L1": {
+      "median_difference": 0.00484468512196784,
+      "minimum_difference": -0.004820018536646931,
+      "maximum_difference": 0.0072964257535226285,
+      "n_favourable_offsets": 19,
+      "n_offsets": 20
+    }
+  },
+  "offsets_pooled_as_independent": false
+}

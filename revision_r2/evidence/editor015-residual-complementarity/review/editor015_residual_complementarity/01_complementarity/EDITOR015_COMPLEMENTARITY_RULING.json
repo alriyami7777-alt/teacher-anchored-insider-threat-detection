@@ -1,0 +1,75 @@
+{
+  "PREDICTIVE_COMPLEMENTARITY": "SUPPORTED",
+  "INNER_SELECT": {
+    "L1_PR_AUC": 0.9381738173639047,
+    "TA2_PR_AUC": 0.931890211974079,
+    "C0_PR_AUC": 0.9387088229116003,
+    "C1_PR_AUC": 0.9396348757177356,
+    "C2_PR_AUC": 0.9393693302985571,
+    "BEST_FIXED_COMBINATION": "C1",
+    "score_relationship": {
+      "pearson_score": 0.9743489243766995,
+      "spearman_rank": 0.6081954779084895,
+      "probability_correlation": 0.9843503842539776,
+      "binary_prediction_disagreement": 0.000640625,
+      "positive_labelled_disagreement": 0.015650741350906095,
+      "negative_labelled_disagreement": 0.0004969002886754058,
+      "n": 128000,
+      "n_pos": 1214,
+      "n_neg": 126786
+    },
+    "error_complementarity": {
+      "all_L1_correct_TA2_wrong": 62,
+      "all_TA2_correct_L1_wrong": 20,
+      "all_both_correct": 127696,
+      "all_both_wrong": 222,
+      "all_n": 128000,
+      "positive_L1_correct_TA2_wrong": 4,
+      "positive_TA2_correct_L1_wrong": 15,
+      "positive_both_correct": 1106,
+      "positive_both_wrong": 89,
+      "positive_n": 1214,
+      "negative_L1_correct_TA2_wrong": 58,
+      "negative_TA2_correct_L1_wrong": 5,
+      "negative_both_correct": 126590,
+      "negative_both_wrong": 133,
+      "negative_n": 126786
+    },
+    "teacher_residual": {
+      "TA2_correction_vs_teacher_residual_all": 0.6927161222277596,
+      "TA2_correction_vs_teacher_residual_positive": 0.8056567415445288,
+      "TA2_correction_vs_teacher_residual_negative": 0.658818911730271,
+      "TA2_correction_vs_teacher_residual_teacher_confident": 0.999993072625647,
+      "TA2_correction_vs_teacher_residual_teacher_uncertain": 0.6507929996799928,
+      "confidence_quantity": "EDITOR-012 w_conf = 1 - H(p_bar)/log(2)",
+      "confidence_split": "sample median of continuous w_conf; not a searched threshold",
+      "confidence_median": 0.8572454452514648,
+      "n_confident": 64023,
+      "n_uncertain": 63977
+    }
+  },
+  "VALIDATION_diagnostic_not_used_for_selection": {
+    "user_level": {
+      "user_mean_spearman": 0.6689698831825049,
+      "user_max_spearman": 0.28725533387932306,
+      "user_flag_spearman": 0.9419027985625799,
+      "user_flag_disagreement_rate": 0.002,
+      "n_users": 2000,
+      "descriptive_only": true
+    },
+    "teacher_residual_seed42": {
+      "TA2_correction_vs_teacher_residual_all": 0.7253620313324735,
+      "TA2_correction_vs_teacher_residual_positive": 0.8224564437014812,
+      "TA2_correction_vs_teacher_residual_negative": 0.6577995296426914,
+      "TA2_correction_vs_teacher_residual_teacher_confident": 0.9999886933601312,
+      "TA2_correction_vs_teacher_residual_teacher_uncertain": 0.6960028551971748,
+      "confidence_quantity": "EDITOR-012 w_conf = 1 - H(p_bar)/log(2)",
+      "confidence_split": "sample median of continuous w_conf; not a searched threshold",
+      "confidence_median": 0.8572540283203125,
+      "n_confident": 32022,
+      "n_uncertain": 31978
+    }
+  },
+  "official_validation_not_used_to_select_hyperparameters": true,
+  "no_retraining": true
+}

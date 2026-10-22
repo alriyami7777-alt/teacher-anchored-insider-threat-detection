@@ -1,0 +1,72 @@
+{
+  "task_id": "EDITOR-016",
+  "created_utc": "2026-08-16T05:43:26Z",
+  "device": "cuda",
+  "promoted": [],
+  "architecture": {
+    "input_dim": 13,
+    "hidden_size": 64,
+    "dropout": 0.2,
+    "attention_dim": 64,
+    "fusion_variant": "sparsemax_sigmoid_odst",
+    "node_num_layers": 2,
+    "node_n_trees": 4,
+    "node_depth": 4,
+    "node_tree_dim": 1,
+    "node_temperature": 0.5,
+    "node_dropout": 0.0,
+    "leaf_init_std": 0.05,
+    "gate_hidden_dim": 32
+  },
+  "EDITOR015_RESULTS_FULL_COMMIT": "d8e1d04b8c199f56cab9956f62c16cd4301f0bac",
+  "EDITOR012_RESULTS_COMMIT": "4bcf522a502ed98e5dd393a80bd9da7fffd51964",
+  "EDITOR013_RESULTS_COMMIT": "09c4bb97b143810147feef08f31a8d8d042a6726",
+  "EDITOR014_RESULTS_COMMIT": "c3343462dc3b35d20907da6ad017f5f853852f84",
+  "r52_test_accessed": false,
+  "r51_rerun": false,
+  "r62_rerun": false,
+  "identities": {
+    "r52_test_hard_denied": true,
+    "odst046_identity_verified": true,
+    "lambda_teacher": 0.5,
+    "lambda_route": 0.5,
+    "producing_pins": {
+      "architecture": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+      "odst": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+      "sequence_ensemble": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475"
+    },
+    "architecture": {
+      "n_trees": 4,
+      "depth": 4,
+      "temperature": 0.5,
+      "num_layers": 2,
+      "tree_dim": 1,
+      "choice_function": "sparsemax_sigmoid",
+      "readout": "canonical_tree_average",
+      "fusion_variant": "sparsemax_sigmoid_odst",
+      "n_trees_total": 8
+    },
+    "EDITOR015_RESULTS_FULL_COMMIT": "d8e1d04b8c199f56cab9956f62c16cd4301f0bac",
+    "EDITOR012_RESULTS_COMMIT": "4bcf522a502ed98e5dd393a80bd9da7fffd51964",
+    "EDITOR013_RESULTS_COMMIT": "09c4bb97b143810147feef08f31a8d8d042a6726",
+    "EDITOR014_RESULTS_COMMIT": "c3343462dc3b35d20907da6ad017f5f853852f84",
+    "TEACHER_GUIDANCE_VS_INITIALISATION": "SUPPORTED_STRONG",
+    "POST_ATTENTION_ODST_INCREMENTAL_VALUE": "NOT_SUPPORTED",
+    "TEMPORAL_ODST_INCREMENTAL_VALUE": "NOT_SUPPORTED",
+    "RESIDUAL_ODST_VALUE": "NO_RESIDUAL_ODST_VALUE",
+    "FIXED_LINEAR_ODST_COMPLEMENTARITY": "MIXED"
+  },
+  "comparisons": {
+    "MATCHED_L1_MEAN_PR_AUC": 0.9388809579807144,
+    "TA2_MEAN_PR_AUC": 0.9428421883320307,
+    "BEST_GATED_ODST_SYSTEM": "NONE",
+    "BEST_GATED_ODST_MEAN_PR_AUC": null,
+    "BEST_Q": null,
+    "FULL_SYSTEM_DELTA_VS_L1": null
+  },
+  "FULL_SYSTEM_SUPERIORITY": "NOT_SUPPORTED",
+  "ODST_SPECIALIST_INCREMENTAL_VALUE": "NOT_SUPPORTED",
+  "TEACHER_GUIDANCE_SPECIALIST_EFFECT": "NOT_SUPPORTED",
+  "EDITOR_ISSUE_ODST_VALUE": "NOT_RESOLVED",
+  "user_mapping": "851385f9c926cf945b3c74b5c9442e3ccb94cf1d9dabb98106a29cbfea01c5c0"
+}

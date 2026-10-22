@@ -1,0 +1,127 @@
+{
+  "phase": "complete",
+  "utc": "2026-08-17T14:38:40Z",
+  "CFP0_SCAFFOLD_GATE": "PASS",
+  "SOURCE_GATE": "PASS",
+  "PERTURBATION_HASH_GATE": "PASS",
+  "CFPR10_INNER_CLEAN_DELTA": -0.001530637755941533,
+  "CFPR10_INNER_COMPOSITE_ROBUSTNESS_DELTA": 0.01301134656445474,
+  "CFPR10_INNER_GATE": "FAIL",
+  "CFPR25_INNER_CLEAN_DELTA": -0.0019835194238896348,
+  "CFPR25_INNER_COMPOSITE_ROBUSTNESS_DELTA": 0.02942189353970434,
+  "CFPR25_INNER_GATE": "FAIL",
+  "CFPR50_INNER_CLEAN_DELTA": -0.002219914364553488,
+  "CFPR50_INNER_COMPOSITE_ROBUSTNESS_DELTA": 0.03067442271706383,
+  "CFPR50_INNER_GATE": "FAIL",
+  "EDITOR021_SELECTED_CANDIDATE": null,
+  "EDITOR021_INNER_PROMOTION": "NONE",
+  "EDITOR021_OFFICIAL_VALIDATION_EXECUTED": "NO",
+  "EDITOR021_PROMOTION": "NO",
+  "CURRENT_PAPER_MODEL": "TA2",
+  "reason": "no CFPR passed G1-G5",
+  "scaffold": {
+    "pass": true,
+    "mean_clean_delta_vs_starting_ta2": 0.0011981632369316708,
+    "seed_clean_deltas_vs_starting_ta2": [
+      0.006395915921734718,
+      -0.0011088047146530222,
+      -0.0016926214962866837
+    ],
+    "G_mean": true,
+    "G_seed": true,
+    "reference": "starting TA2 (F11) scored on INNER_SELECT; EDITOR-020 TA2-R0 not rerun",
+    "editor020_ta2_r0_inner": {
+      "42": 0.9357336366198652
+    }
+  },
+  "inner_selection": {
+    "candidates": [
+      {
+        "candidate": "CFPR10",
+        "clean_delta": -0.001530637755941533,
+        "seed_clean_deltas": [
+          -0.0037917209273592434,
+          -0.0010194693873887273,
+          0.00021927704692370487
+        ],
+        "source_gain": 0.006301294547176983,
+        "noise_gain": 0.019721398581732344,
+        "composite_delta": 0.01301134656445474,
+        "seed_composite_deltas": [
+          0.014475981437024138,
+          0.010475873836256144,
+          0.014082184420083799
+        ],
+        "G1": false,
+        "G2": false,
+        "G3": true,
+        "G4": true,
+        "G5": true,
+        "eligible": false,
+        "mean_S_composite": -0.23858128507734433,
+        "rho": 0.1
+      },
+      {
+        "candidate": "CFPR25",
+        "clean_delta": -0.0019835194238896348,
+        "seed_clean_deltas": [
+          -0.004488374843673593,
+          -0.001154633887798906,
+          -0.00030754954019618364
+        ],
+        "source_gain": 0.029901122895349797,
+        "noise_gain": 0.0289426641840589,
+        "composite_delta": 0.02942189353970434,
+        "seed_composite_deltas": [
+          0.04941258064126755,
+          0.015039387564841217,
+          0.023813712413004257
+        ],
+        "G1": false,
+        "G2": false,
+        "G3": true,
+        "G4": true,
+        "G5": true,
+        "eligible": false,
+        "mean_S_composite": -0.22217073810209473,
+        "rho": 0.25
+      },
+      {
+        "candidate": "CFPR50",
+        "clean_delta": -0.002219914364553488,
+        "seed_clean_deltas": [
+          -0.004879462439311921,
+          -0.0012767377849528527,
+          -0.00050354286939569
+        ],
+        "source_gain": 0.031068746248200885,
+        "noise_gain": 0.030280099185926723,
+        "composite_delta": 0.03067442271706383,
+        "seed_composite_deltas": [
+          0.04963006739122003,
+          0.015923836647241646,
+          0.026469364112729765
+        ],
+        "G1": false,
+        "G2": false,
+        "G3": true,
+        "G4": true,
+        "G5": true,
+        "eligible": false,
+        "mean_S_composite": -0.22091820892473524,
+        "rho": 0.5
+      }
+    ],
+    "EDITOR021_SELECTED_CANDIDATE": null,
+    "EDITOR021_INNER_PROMOTION": "NONE",
+    "selection_rule": "none_passed",
+    "weighted_robustness_score_invented": false,
+    "manual_override": false
+  },
+  "EDITOR021_CLEAN_FUNCTION_SCAFFOLD": "PASS",
+  "EDITOR021_ROBUSTNESS_CANDIDATES_EXECUTED": "YES",
+  "EDITOR021_RULING": "NOT_SUPPORTED",
+  "EDITOR021_CLEAN_FUNCTION_PRESERVATION": "SUPPORTED",
+  "EDITOR021_TRAINING_TIME_ROBUSTNESS_HARDENING": "NOT_SUPPORTED",
+  "protocol_commit": "a1e7825c1f11bfe36595ef28c197c7a105685aaf"
+}

@@ -1,0 +1,24 @@
+{
+  "definition": "R3 minus R1; both see the same degraded training examples; R3 receives clean-teacher consistency",
+  "inner_seed42": {
+    "L1": {
+      "source": 0.07546236442729637,
+      "noise": 0.03127109311377163,
+      "clean": -0.0443270891043116
+    },
+    "F10": {
+      "source": 0.05446052781236749,
+      "noise": 0.03748854851531913,
+      "clean": -0.017374859412162214
+    },
+    "TA2": {
+      "source": 0.04717431610047773,
+      "noise": 0.028402219088530245,
+      "clean": -0.00999077304640772
+    }
+  },
+  "inner_mean_source": 0.0590324027800472,
+  "inner_mean_noise": 0.03238728690587367,
+  "official_source_any_ci_excludes_zero": false,
+  "official_noise_any_ci_excludes_zero": false
+}

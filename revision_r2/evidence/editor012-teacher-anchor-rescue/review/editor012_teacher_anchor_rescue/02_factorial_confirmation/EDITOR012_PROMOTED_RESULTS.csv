@@ -1,0 +1,2 @@
+condition,seed,validation_PR_AUC,validation_F1,precision,recall,FP,FN,Brier,log_loss,predicted_positive_fraction,best_epoch,best_checkpoint_sha256,ensemble_on,route_on,note
+,,,,,,,,,,,,,,"no inner-search formulation beat A0 on INNER_SELECT; none promoted"

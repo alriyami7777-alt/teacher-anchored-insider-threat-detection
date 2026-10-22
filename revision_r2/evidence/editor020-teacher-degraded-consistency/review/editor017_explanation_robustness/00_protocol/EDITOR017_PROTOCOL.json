@@ -1,0 +1,175 @@
+{
+  "task_id": "EDITOR-017",
+  "evaluation_mode": "frozen_checkpoint_only",
+  "partitions": {
+    "train": "AUTHORISED",
+    "validation": "AUTHORISED",
+    "test": "HARD_DENY"
+  },
+  "models": [
+    "C2-OPT",
+    "F10",
+    "TA2",
+    "L1"
+  ],
+  "seeds": [
+    42,
+    52,
+    62
+  ],
+  "source_channels": [
+    "logon",
+    "device",
+    "file",
+    "email",
+    "http"
+  ],
+  "noise_levels": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "noise_slope_levels": [
+    0.0,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "noise_slope_definition": "ordinary_least_squares_slope_of_PR_AUC_on_noise_level_using_ordered_points_0.00_0.05_0.10_0.20",
+  "noise_slope_frozen_before_results": true,
+  "directional_k": [
+    1,
+    2,
+    3
+  ],
+  "directional_references": "r5.2 TRAIN only",
+  "directional_random_control": "same-sign eligible trees only",
+  "bootstrap": {
+    "n_users": 2000,
+    "windows_per_user": 32,
+    "malicious_users": 31,
+    "mapping_sha256": "851385f9c926cf945b3c74b5c9442e3ccb94cf1d9dabb98106a29cbfea01c5c0",
+    "n_resamples": 2000,
+    "rng_seed": 42,
+    "sampling_unit": "validation user"
+  },
+  "perturbation_lock": {
+    "source_ablation": {
+      "implementation_id": "objective3_missing_source_robustness.apply_missing_source_condition",
+      "module": "src/objective3_missing_source_robustness.py",
+      "function": "apply_missing_source_condition",
+      "feature_treatment": "inverse_scale_raw_zero_then_forward_scale",
+      "reference_value": "raw_0.0_maps_to_scaled_minus_mean_over_scale",
+      "scaler": "r52_T20_s1_trainonly_standardscaler_v1",
+      "total_events_recomputed": true,
+      "is_active_day_recomputed": true,
+      "active_duration_rule": "zero_if_day_inactive_else_retain_residual_multi_source_span",
+      "labels_change": false,
+      "intervention_class": "CONTROLLED_SOURCE_CHANNEL_ABLATION",
+      "not_physical_source_absence": true,
+      "source_list": [
+        "logon",
+        "device",
+        "file",
+        "email",
+        "http"
+      ],
+      "source_selection": "predeclared_five_channels_no_result_driven_choice",
+      "terminology": "CONTROLLED_SOURCE_CHANNEL_ABLATION"
+    },
+    "gaussian_noise": {
+      "implementation_id": "objective3_perturbations.gaussian_noise_continuous",
+      "module": "src/objective3_perturbations.py",
+      "function": "apply_paired_perturbation",
+      "inner_function": "gaussian_noise_continuous",
+      "distribution": "bounded_gaussian_elementwise",
+      "scale_definition": "std_equals_level_times_max_abs_x_1e-3_clip_pm_level_times_scale_floor_at_0",
+      "binary_features": "untouched_indices_7_to_12",
+      "continuous_features": "indices_0_to_6_only",
+      "levels": [
+        0.05,
+        0.1,
+        0.2
+      ],
+      "perturbation_seed": 101,
+      "rng": "apply_paired_perturbation_sha256_derived_per_level",
+      "labels_change": false,
+      "total_events_recomputed": false,
+      "active_duration_changed_by_rule": false,
+      "validation_derived_parameter": false,
+      "terminology": "CONTROLLED_GAUSSIAN_INPUT_NOISE"
+    },
+    "rejected_mixins": [
+      "scaled_space_zero_ablation_used_only_as_r52_fallback_when_scaler_unverified",
+      "additive_all_feature_gaussian_from_value_audit_and_tradeoff",
+      "paper_r42_scaler_must_not_be_applied_to_r52_tensors"
+    ],
+    "severities_frozen_before_results": true,
+    "source_list_frozen_before_results": true,
+    "validation_derived_noise_parameter": false,
+    "validation_derived_source_selection": false,
+    "labels_unchanged": true
+  },
+  "authoritative_source_ablation": {
+    "implementation_id": "objective3_missing_source_robustness.apply_missing_source_condition",
+    "module": "src/objective3_missing_source_robustness.py",
+    "function": "apply_missing_source_condition",
+    "feature_treatment": "inverse_scale_raw_zero_then_forward_scale",
+    "reference_value": "raw_0.0_maps_to_scaled_minus_mean_over_scale",
+    "scaler": "r52_T20_s1_trainonly_standardscaler_v1",
+    "total_events_recomputed": true,
+    "is_active_day_recomputed": true,
+    "active_duration_rule": "zero_if_day_inactive_else_retain_residual_multi_source_span",
+    "labels_change": false,
+    "intervention_class": "CONTROLLED_SOURCE_CHANNEL_ABLATION",
+    "not_physical_source_absence": true,
+    "source_list": [
+      "logon",
+      "device",
+      "file",
+      "email",
+      "http"
+    ],
+    "source_selection": "predeclared_five_channels_no_result_driven_choice"
+  },
+  "authoritative_gaussian": {
+    "implementation_id": "objective3_perturbations.gaussian_noise_continuous",
+    "module": "src/objective3_perturbations.py",
+    "function": "apply_paired_perturbation",
+    "inner_function": "gaussian_noise_continuous",
+    "distribution": "bounded_gaussian_elementwise",
+    "scale_definition": "std_equals_level_times_max_abs_x_1e-3_clip_pm_level_times_scale_floor_at_0",
+    "binary_features": "untouched_indices_7_to_12",
+    "continuous_features": "indices_0_to_6_only",
+    "levels": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "perturbation_seed": 101,
+    "rng": "apply_paired_perturbation_sha256_derived_per_level",
+    "labels_change": false,
+    "total_events_recomputed": false,
+    "active_duration_changed_by_rule": false,
+    "validation_derived_parameter": false
+  },
+  "fixed_feature_explanation_stability": "NOT_AVAILABLE_no_ODST_native_original_feature_importance_for_M0_M3",
+  "tree_identities_across_seeds": "FORBIDDEN",
+  "threshold_retuning": false,
+  "parameter_update": false,
+  "terminology_lock": {
+    "allowed": [
+      "CONTROLLED_SOURCE_CHANNEL_ABLATION",
+      "CONTROLLED_GAUSSIAN_INPUT_NOISE",
+      "DEGRADED_INPUT_RESILIENCE",
+      "DATA_QUALITY_SENSITIVITY"
+    ],
+    "forbidden": [
+      "ADVERSARIAL_ROBUSTNESS",
+      "EVASION_ROBUSTNESS",
+      "POISONING_ROBUSTNESS",
+      "PHYSICAL_SENSOR_FAILURE"
+    ]
+  },
+  "written_at": "2026-08-16T09:56:49Z"
+}

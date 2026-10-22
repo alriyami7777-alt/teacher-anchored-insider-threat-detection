@@ -1,0 +1,81 @@
+{
+  "task_id": "EDITOR-011",
+  "status": "PHASE0_FROZEN_BEFORE_TRAINING",
+  "hash_method": "SHA-256 of file bytes",
+  "r52_test_opened": false,
+  "r52_test_hashed": false,
+  "inputs": [
+    {
+      "role": "r52_train_npz",
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_train.npz",
+      "sha256": "b268328d3bf2e98f712d1145958dabe175ce2c07a7c390da4b84a663317ebc2e",
+      "expected_sha256": "b268328d3bf2e98f712d1145958dabe175ce2c07a7c390da4b84a663317ebc2e",
+      "bytes": 12866585,
+      "expected_shape": [788000, 20, 13],
+      "expected_positives": 3957,
+      "keys_documented_by_EDITOR010": ["X", "y", "sequence_id", "user", "start_date", "end_date", "feature_names"],
+      "status": "MATCH"
+    },
+    {
+      "role": "r52_validation_npz",
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_validation.npz",
+      "sha256": "5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c",
+      "expected_sha256": "5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c",
+      "bytes": 1291503,
+      "expected_shape": [64000, 20, 13],
+      "expected_positives": 728,
+      "status": "MATCH"
+    },
+    {
+      "role": "r52_trainonly_scaler_freeze_json",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006a_preinference_freeze\\EDITOR006A_SCALER.json",
+      "sha256": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+      "expected_sha256": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+      "status": "MATCH",
+      "note": "Tensors are prebaked with this train-only scaler. EDITOR-011 must not fit a new scaler."
+    },
+    {
+      "role": "producing_architecture",
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\prototype_v3_node\\architecture.py",
+      "sha256": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+      "expected_sha256": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+      "status": "MATCH"
+    },
+    {
+      "role": "producing_odst",
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\prototype_v3_node\\odst.py",
+      "sha256": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+      "expected_sha256": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+      "status": "MATCH"
+    },
+    {
+      "role": "attention_linear_seed42",
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed42\\best.pt",
+      "sha256": "b807a82343b432343b7e3cbc86ee76cba7011066827f3baa089aa78a02c02b53",
+      "expected_sha256": "b807a82343b432343b7e3cbc86ee76cba7011066827f3baa089aa78a02c02b53",
+      "status": "MATCH"
+    },
+    {
+      "role": "attention_linear_seed52",
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed52\\best.pt",
+      "sha256": "5e5e2a136bedba3d3477d05c5b1215331cb97339b74003bcb60f8cb4885ba86c",
+      "expected_sha256": "5e5e2a136bedba3d3477d05c5b1215331cb97339b74003bcb60f8cb4885ba86c",
+      "status": "MATCH"
+    },
+    {
+      "role": "attention_linear_seed62",
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed62\\best.pt",
+      "sha256": "4543c167fdab3b0376087731571f7b3bcecadd43f8ff05c6b5371f0073ba425a",
+      "expected_sha256": "4543c167fdab3b0376087731571f7b3bcecadd43f8ff05c6b5371f0073ba425a",
+      "status": "MATCH"
+    }
+  ],
+  "denied_tensors": {
+    "r52_test": {
+      "canonical_relative_path": "data/processed/r5.2/tensors/r52_T20_s1_test.npz",
+      "status": "HARD_DENY",
+      "not_opened": true,
+      "not_hashed": true
+    }
+  }
+}

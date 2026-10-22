@@ -1,0 +1,511 @@
+{
+  "condition": "TA2-CLEAN",
+  "promoted_ta2": null,
+  "LOCAL_DIRECTIONAL_TREE_FAITHFULNESS": "SUPPORTED_CLEAN_TA2_ONLY",
+  "clean_TA2_faithfulness": "SUPPORTED",
+  "seeds": [
+    {
+      "rows": [
+        {
+          "k": 1,
+          "n_malicious_used": 728,
+          "n_benign_used": 62469,
+          "n_malicious_skipped_insufficient_same_sign": 0,
+          "n_benign_skipped_insufficient_same_sign": 803,
+          "malicious_top_k_logit_decrease": 0.947025222313525,
+          "malicious_random_same_sign_logit_decrease": 0.8588916249315243,
+          "malicious_primary_stat": 0.08813359738200077,
+          "malicious_top_k_prob_decrease": 0.0485204584158744,
+          "benign_top_k_logit_increase": 0.01002155559529201,
+          "benign_random_same_sign_logit_increase": 0.0058995819112722375,
+          "benign_primary_stat": 0.004121973684019772,
+          "benign_top_k_prob_increase": 0.00020057593274937466,
+          "random_control": "same-sign eligible trees only",
+          "n_trees": 8,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "k": 2,
+          "n_malicious_used": 728,
+          "n_benign_used": 61986,
+          "n_malicious_skipped_insufficient_same_sign": 0,
+          "n_benign_skipped_insufficient_same_sign": 1286,
+          "malicious_top_k_logit_decrease": 1.866533473912062,
+          "malicious_random_same_sign_logit_decrease": 1.7079418134581787,
+          "malicious_primary_stat": 0.1585916604538833,
+          "malicious_top_k_prob_decrease": 0.14049162848635427,
+          "benign_top_k_logit_increase": 0.016740821814380226,
+          "benign_random_same_sign_logit_increase": 0.011837999526644319,
+          "benign_primary_stat": 0.004902822287735907,
+          "benign_top_k_prob_increase": 0.0003333475130712262,
+          "random_control": "same-sign eligible trees only",
+          "n_trees": 8,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "k": 3,
+          "n_malicious_used": 728,
+          "n_benign_used": 60902,
+          "n_malicious_skipped_insufficient_same_sign": 0,
+          "n_benign_skipped_insufficient_same_sign": 2370,
+          "malicious_top_k_logit_decrease": 2.7471492839273535,
+          "malicious_random_same_sign_logit_decrease": 2.5728285837765643,
+          "malicious_primary_stat": 0.17432070015078915,
+          "malicious_top_k_prob_decrease": 0.2934791166511865,
+          "benign_top_k_logit_increase": 0.020837386101414158,
+          "benign_random_same_sign_logit_increase": 0.017721623015591798,
+          "benign_primary_stat": 0.00311576308582236,
+          "benign_top_k_prob_increase": 0.00041375141147298146,
+          "random_control": "same-sign eligible trees only",
+          "n_trees": 8,
+          "references_from": "r5.2 TRAIN only"
+        }
+      ],
+      "contributions": [
+        {
+          "tree": 0,
+          "mean_centred_contribution": 0.08384438384448502,
+          "mean_abs_centred_contribution": 0.18734108273064085,
+          "reference": -3.8800957997639975,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 1,
+          "mean_centred_contribution": 0.09218176817980338,
+          "mean_abs_centred_contribution": 0.15434863360560838,
+          "reference": -3.8799389203389487,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 2,
+          "mean_centred_contribution": 0.1391365801642337,
+          "mean_abs_centred_contribution": 0.1391365801642337,
+          "reference": -3.8950912157694497,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 3,
+          "mean_centred_contribution": 0.16589996234909996,
+          "mean_abs_centred_contribution": 0.16589996234909996,
+          "reference": -3.9159603118896484,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 4,
+          "mean_centred_contribution": 0.13595186046482785,
+          "mean_abs_centred_contribution": 0.13610181950997974,
+          "reference": -3.9072784582773843,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 5,
+          "mean_centred_contribution": 0.16957169418306148,
+          "mean_abs_centred_contribution": 0.21052766494722164,
+          "reference": -3.8611743450164795,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 6,
+          "mean_centred_contribution": 0.054060096493706626,
+          "mean_abs_centred_contribution": 0.20956686139737093,
+          "reference": -3.878277142842611,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 7,
+          "mean_centred_contribution": 0.25302441807282366,
+          "mean_abs_centred_contribution": 0.25302441807282366,
+          "reference": -3.9920948346455893,
+          "references_from": "r5.2 TRAIN only"
+        }
+      ],
+      "bootstrap": {
+        "malicious_k1": {
+          "skipped": true,
+          "n_valid_resamples": 0,
+          "note": "EDITOR-020 uses point-estimate directional faithfulness only"
+        },
+        "benign_k1": {
+          "skipped": true,
+          "n_valid_resamples": 0,
+          "note": "EDITOR-020 uses point-estimate directional faithfulness only"
+        },
+        "malicious_k2": {
+          "skipped": true,
+          "n_valid_resamples": 0,
+          "note": "EDITOR-020 uses point-estimate directional faithfulness only"
+        },
+        "benign_k2": {
+          "skipped": true,
+          "n_valid_resamples": 0,
+          "note": "EDITOR-020 uses point-estimate directional faithfulness only"
+        },
+        "malicious_k3": {
+          "skipped": true,
+          "n_valid_resamples": 0,
+          "note": "EDITOR-020 uses point-estimate directional faithfulness only"
+        },
+        "benign_k3": {
+          "skipped": true,
+          "n_valid_resamples": 0,
+          "note": "EDITOR-020 uses point-estimate directional faithfulness only"
+        }
+      },
+      "MALICIOUS_DIRECTIONAL_FAITHFULNESS": "SUPPORTED",
+      "BENIGN_DIRECTIONAL_FAITHFULNESS": "SUPPORTED",
+      "LOCAL_DIRECTIONAL_TREE_FAITHFULNESS": "SUPPORTED",
+      "HISTORICAL_GLOBAL_TOPK_FAITHFULNESS": "NOT_SUPPORTED",
+      "claim_scope": "local directional intervention faithfulness for class-supporting evidence",
+      "not_global_pr_auc_faithfulness": true,
+      "n_trees": 8,
+      "k": [
+        1,
+        2,
+        3
+      ],
+      "references_from": "r5.2 TRAIN only",
+      "same_sign_random_control": true,
+      "nested_user_cluster_bootstrap": false,
+      "seed": 42,
+      "condition": "TA2-CLEAN"
+    },
+    {
+      "rows": [
+        {
+          "k": 1,
+          "n_malicious_used": 728,
+          "n_benign_used": 62330,
+          "n_malicious_skipped_insufficient_same_sign": 0,
+          "n_benign_skipped_insufficient_same_sign": 942,
+          "malicious_top_k_logit_decrease": 1.0280990222389652,
+          "malicious_random_same_sign_logit_decrease": 0.8875061297191577,
+          "malicious_primary_stat": 0.14059289251980756,
+          "malicious_top_k_prob_decrease": 0.0439249813521655,
+          "benign_top_k_logit_increase": 0.01029417068300138,
+          "benign_random_same_sign_logit_increase": 0.00480529690682623,
+          "benign_primary_stat": 0.005488873776175149,
+          "benign_top_k_prob_increase": 0.00020429461415493485,
+          "random_control": "same-sign eligible trees only",
+          "n_trees": 8,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "k": 2,
+          "n_malicious_used": 728,
+          "n_benign_used": 61842,
+          "n_malicious_skipped_insufficient_same_sign": 0,
+          "n_benign_skipped_insufficient_same_sign": 1430,
+          "malicious_top_k_logit_decrease": 1.992912942141929,
+          "malicious_random_same_sign_logit_decrease": 1.7782137155231779,
+          "malicious_primary_stat": 0.21469922661875107,
+          "malicious_top_k_prob_decrease": 0.12613285540410363,
+          "benign_top_k_logit_increase": 0.016093086765297027,
+          "benign_random_same_sign_logit_increase": 0.009627206758537484,
+          "benign_primary_stat": 0.006465880006759543,
+          "benign_top_k_prob_increase": 0.00031968742554791383,
+          "random_control": "same-sign eligible trees only",
+          "n_trees": 8,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "k": 3,
+          "n_malicious_used": 728,
+          "n_benign_used": 61489,
+          "n_malicious_skipped_insufficient_same_sign": 0,
+          "n_benign_skipped_insufficient_same_sign": 1783,
+          "malicious_top_k_logit_decrease": 2.9278154442139694,
+          "malicious_random_same_sign_logit_decrease": 2.667925454961446,
+          "malicious_primary_stat": 0.25988998925252327,
+          "malicious_top_k_prob_decrease": 0.2747124070694334,
+          "benign_top_k_logit_increase": 0.018208033060936886,
+          "benign_random_same_sign_logit_increase": 0.014479077091523039,
+          "benign_primary_stat": 0.003728955969413847,
+          "benign_top_k_prob_increase": 0.0003617057362181925,
+          "random_control": "same-sign eligible trees only",
+          "n_trees": 8,
+          "references_from": "r5.2 TRAIN only"
+        }
+      ],
+      "contributions": [
+        {
+          "tree": 0,
+          "mean_centred_contribution": 0.1865576515854159,
+          "mean_abs_centred_contribution": 0.1865576515854159,
+          "reference": -3.8800957997639975,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 1,
+          "mean_centred_contribution": 0.21690545215627707,
+          "mean_abs_centred_contribution": 0.224561958448799,
+          "reference": -3.8799389203389487,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 2,
+          "mean_centred_contribution": 0.11705363053926929,
+          "mean_abs_centred_contribution": 0.144486824510983,
+          "reference": -3.8950912157694497,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 3,
+          "mean_centred_contribution": 0.15507863289583473,
+          "mean_abs_centred_contribution": 0.15507863289583473,
+          "reference": -3.9159603118896484,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 4,
+          "mean_centred_contribution": 0.030468164104657712,
+          "mean_abs_centred_contribution": 0.189499823439556,
+          "reference": -3.9072784582773843,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 5,
+          "mean_centred_contribution": 0.11265671660874796,
+          "mean_abs_centred_contribution": 0.13408623492841434,
+          "reference": -3.8611743450164795,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 6,
+          "mean_centred_contribution": 0.21830616332552882,
+          "mean_abs_centred_contribution": 0.21830616332552882,
+          "reference": -3.878277142842611,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 7,
+          "mean_centred_contribution": 0.0495523068749658,
+          "mean_abs_centred_contribution": 0.13951643545863515,
+          "reference": -3.9920948346455893,
+          "references_from": "r5.2 TRAIN only"
+        }
+      ],
+      "bootstrap": {
+        "malicious_k1": {
+          "skipped": true,
+          "n_valid_resamples": 0,
+          "note": "EDITOR-020 uses point-estimate directional faithfulness only"
+        },
+        "benign_k1": {
+          "skipped": true,
+          "n_valid_resamples": 0,
+          "note": "EDITOR-020 uses point-estimate directional faithfulness only"
+        },
+        "malicious_k2": {
+          "skipped": true,
+          "n_valid_resamples": 0,
+          "note": "EDITOR-020 uses point-estimate directional faithfulness only"
+        },
+        "benign_k2": {
+          "skipped": true,
+          "n_valid_resamples": 0,
+          "note": "EDITOR-020 uses point-estimate directional faithfulness only"
+        },
+        "malicious_k3": {
+          "skipped": true,
+          "n_valid_resamples": 0,
+          "note": "EDITOR-020 uses point-estimate directional faithfulness only"
+        },
+        "benign_k3": {
+          "skipped": true,
+          "n_valid_resamples": 0,
+          "note": "EDITOR-020 uses point-estimate directional faithfulness only"
+        }
+      },
+      "MALICIOUS_DIRECTIONAL_FAITHFULNESS": "SUPPORTED",
+      "BENIGN_DIRECTIONAL_FAITHFULNESS": "SUPPORTED",
+      "LOCAL_DIRECTIONAL_TREE_FAITHFULNESS": "SUPPORTED",
+      "HISTORICAL_GLOBAL_TOPK_FAITHFULNESS": "NOT_SUPPORTED",
+      "claim_scope": "local directional intervention faithfulness for class-supporting evidence",
+      "not_global_pr_auc_faithfulness": true,
+      "n_trees": 8,
+      "k": [
+        1,
+        2,
+        3
+      ],
+      "references_from": "r5.2 TRAIN only",
+      "same_sign_random_control": true,
+      "nested_user_cluster_bootstrap": false,
+      "seed": 52,
+      "condition": "TA2-CLEAN"
+    },
+    {
+      "rows": [
+        {
+          "k": 1,
+          "n_malicious_used": 728,
+          "n_benign_used": 62477,
+          "n_malicious_skipped_insufficient_same_sign": 0,
+          "n_benign_skipped_insufficient_same_sign": 795,
+          "malicious_top_k_logit_decrease": 1.007945030068829,
+          "malicious_random_same_sign_logit_decrease": 0.9027035042180659,
+          "malicious_primary_stat": 0.10524152585076318,
+          "malicious_top_k_prob_decrease": 0.045479465154692374,
+          "benign_top_k_logit_increase": 0.0074565681565174095,
+          "benign_random_same_sign_logit_increase": 0.005545301494517606,
+          "benign_primary_stat": 0.001911266661999803,
+          "benign_top_k_prob_increase": 0.00014820197060367953,
+          "random_control": "same-sign eligible trees only",
+          "n_trees": 8,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "k": 2,
+          "n_malicious_used": 728,
+          "n_benign_used": 60062,
+          "n_malicious_skipped_insufficient_same_sign": 0,
+          "n_benign_skipped_insufficient_same_sign": 3210,
+          "malicious_top_k_logit_decrease": 1.9845463763107971,
+          "malicious_random_same_sign_logit_decrease": 1.7877786378625815,
+          "malicious_primary_stat": 0.1967677384482156,
+          "malicious_top_k_prob_decrease": 0.12606357177758917,
+          "benign_top_k_logit_increase": 0.013029127224417897,
+          "benign_random_same_sign_logit_increase": 0.011234413290790378,
+          "benign_primary_stat": 0.001794713933627519,
+          "benign_top_k_prob_increase": 0.0002571659674138061,
+          "random_control": "same-sign eligible trees only",
+          "n_trees": 8,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "k": 3,
+          "n_malicious_used": 728,
+          "n_benign_used": 58055,
+          "n_malicious_skipped_insufficient_same_sign": 0,
+          "n_benign_skipped_insufficient_same_sign": 5217,
+          "malicious_top_k_logit_decrease": 2.9167018547452024,
+          "malicious_random_same_sign_logit_decrease": 2.6898835898493267,
+          "malicious_primary_stat": 0.22681826489587564,
+          "malicious_top_k_prob_decrease": 0.26576285845164727,
+          "benign_top_k_logit_increase": 0.018391482142779466,
+          "benign_random_same_sign_logit_increase": 0.017036449196000898,
+          "benign_primary_stat": 0.0013550329467785678,
+          "benign_top_k_prob_increase": 0.0003627755737424697,
+          "random_control": "same-sign eligible trees only",
+          "n_trees": 8,
+          "references_from": "r5.2 TRAIN only"
+        }
+      ],
+      "contributions": [
+        {
+          "tree": 0,
+          "mean_centred_contribution": 0.1940684864451264,
+          "mean_abs_centred_contribution": 0.1940684864451264,
+          "reference": -3.8800957997639975,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 1,
+          "mean_centred_contribution": 0.07457825036994975,
+          "mean_abs_centred_contribution": 0.14610368643107344,
+          "reference": -3.8799389203389487,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 2,
+          "mean_centred_contribution": 0.08217784563406304,
+          "mean_abs_centred_contribution": 0.1613214204455815,
+          "reference": -3.8950912157694497,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 3,
+          "mean_centred_contribution": 0.10656240036259987,
+          "mean_abs_centred_contribution": 0.17984138971488572,
+          "reference": -3.9159603118896484,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 4,
+          "mean_centred_contribution": 0.2039347457517092,
+          "mean_abs_centred_contribution": 0.2039347457517092,
+          "reference": -3.9072784582773843,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 5,
+          "mean_centred_contribution": 0.12962930999603123,
+          "mean_abs_centred_contribution": 0.12962930999603123,
+          "reference": -3.8611743450164795,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 6,
+          "mean_centred_contribution": 0.151507808251617,
+          "mean_abs_centred_contribution": 0.151507808251617,
+          "reference": -3.878277142842611,
+          "references_from": "r5.2 TRAIN only"
+        },
+        {
+          "tree": 7,
+          "mean_centred_contribution": 0.13305434889562961,
+          "mean_abs_centred_contribution": 0.24326534719733403,
+          "reference": -3.9920948346455893,
+          "references_from": "r5.2 TRAIN only"
+        }
+      ],
+      "bootstrap": {
+        "malicious_k1": {
+          "skipped": true,
+          "n_valid_resamples": 0,
+          "note": "EDITOR-020 uses point-estimate directional faithfulness only"
+        },
+        "benign_k1": {
+          "skipped": true,
+          "n_valid_resamples": 0,
+          "note": "EDITOR-020 uses point-estimate directional faithfulness only"
+        },
+        "malicious_k2": {
+          "skipped": true,
+          "n_valid_resamples": 0,
+          "note": "EDITOR-020 uses point-estimate directional faithfulness only"
+        },
+        "benign_k2": {
+          "skipped": true,
+          "n_valid_resamples": 0,
+          "note": "EDITOR-020 uses point-estimate directional faithfulness only"
+        },
+        "malicious_k3": {
+          "skipped": true,
+          "n_valid_resamples": 0,
+          "note": "EDITOR-020 uses point-estimate directional faithfulness only"
+        },
+        "benign_k3": {
+          "skipped": true,
+          "n_valid_resamples": 0,
+          "note": "EDITOR-020 uses point-estimate directional faithfulness only"
+        }
+      },
+      "MALICIOUS_DIRECTIONAL_FAITHFULNESS": "SUPPORTED",
+      "BENIGN_DIRECTIONAL_FAITHFULNESS": "SUPPORTED",
+      "LOCAL_DIRECTIONAL_TREE_FAITHFULNESS": "SUPPORTED",
+      "HISTORICAL_GLOBAL_TOPK_FAITHFULNESS": "NOT_SUPPORTED",
+      "claim_scope": "local directional intervention faithfulness for class-supporting evidence",
+      "not_global_pr_auc_faithfulness": true,
+      "n_trees": 8,
+      "k": [
+        1,
+        2,
+        3
+      ],
+      "references_from": "r5.2 TRAIN only",
+      "same_sign_random_control": true,
+      "nested_user_cluster_bootstrap": false,
+      "seed": 62,
+      "condition": "TA2-CLEAN"
+    }
+  ],
+  "references_from": "r5.2 TRAIN only",
+  "k": [
+    1,
+    2,
+    3
+  ],
+  "same_sign_random_control": true,
+  "robustness_training_explanation": "NOT_EVALUATED_NO_PROMOTION"
+}

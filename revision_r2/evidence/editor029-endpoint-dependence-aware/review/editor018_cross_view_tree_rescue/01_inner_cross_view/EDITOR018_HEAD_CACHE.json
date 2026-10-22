@@ -1,0 +1,23 @@
+{
+  "z": "not_required_for_head_screen_L1_logits_cached_from_frozen_L1",
+  "l1_train_sha256": "167944b80eecaab535f446bd33d6a2d736a68a0b602c90934ea5a12a2f2b25d7",
+  "l1_seed": 42,
+  "s40_train_sha256": "d0131a8241a14541ecdd49fd7b6b8b8dc557d30c54bc80994523893b319631a9",
+  "scaler": {
+    "class": "sklearn.preprocessing.StandardScaler",
+    "fitted_on": "INNER_TRAIN",
+    "n_features": 40,
+    "with_mean": true,
+    "with_std": true,
+    "mean_sha256": "6ac21c91b2c9347d3876a031943760c9fa1ca5ddbd4041de595ee04057b108dc",
+    "scale_sha256": "803f1e000f18354aa623939a2ebfd872048b2ae7bebeff9797aa7d4578290548",
+    "state_sha256": "ef7aa307aafe8a7ef357aa540ae62ffe59044d26f5b645d56cc47aa6bba3d7eb",
+    "n_fit_rows": 622000
+  },
+  "ensemble_train_ens_sha256": "1a5801264958e2210063607f1b4ccd35f31eeb70f74f777de1f6e3641b587119",
+  "inner_train_n": 622000,
+  "inner_select_n": 128000,
+  "labels_identical": true,
+  "metadata_in_features": false,
+  "same_transformed_40_for_all_branches": true
+}

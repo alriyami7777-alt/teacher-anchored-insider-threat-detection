@@ -1,0 +1,175 @@
+{
+  "task_id": "EDITOR-011",
+  "status": "PHASE0_FROZEN_BEFORE_TRAINING",
+  "hash_method": "SHA-256 of file bytes",
+  "read_only_inspection": true,
+  "EDITOR009_RESULTS_COMMIT": "0182685656ec99fe2edcda2d00179a7400db9d06",
+  "EDITOR010_RESULTS_COMMIT": "3c5ac01d6739df91f50dcc3ba0258a019dcb3119",
+  "EDITOR009_IMPLEMENTATION_COMMIT": "401119ae837e830242ac933eda25d1f66fe01881",
+  "EDITOR009_MAIN_IMPLEMENTATION_COMMIT": "cef817b1adf99d6b176157435736618d2af005c9",
+  "EDITOR010_IMPLEMENTATION_COMMIT": "21e8123f01d78c9cafdf3fa313ccbcdf97fcad96",
+  "EDITOR010_MAIN_IMPLEMENTATION_COMMIT": "5b6116d847303e9087dead2d9333d73b579cb691",
+  "BASE_COMMIT": "cde793de9135c8d4f6491d204f586ce8e00c3e0d",
+  "worktree": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011",
+  "branch": "editor011-matched-route-confirmation",
+  "historical_packets_readonly": true,
+  "sources": [
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor009_c2_c5_odst_rescue\\01_forensics\\EDITOR009_EXACT_LOSS_DEFINITION.json",
+      "git_commit": "0182685656ec99fe2edcda2d00179a7400db9d06",
+      "sha256": "fe9a7489972f760f5b52f9f604f88002b632cb31064de8526a28408389345120",
+      "evidence_role": "producing R2/C2/C5 loss identities",
+      "condition_identity": "R2 = task ON + lambda_route 0.5 + lambda_logit 0; C2 = task only; C5_original_paper = dual static 0.5/0.5"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor009_c2_c5_odst_rescue\\01_forensics\\EDITOR009_EXACT_LOSS_DEFINITION.md",
+      "git_commit": "0182685656ec99fe2edcda2d00179a7400db9d06",
+      "sha256": "89d973febd2633503730b2ee7a08e7bae6a9d06ede675fb4f751f309430b38a9",
+      "evidence_role": "producing route-divergence prose lock",
+      "condition_identity": "L_route = mean Bernoulli KL over (window, tree_index, depth); teacher detach YES"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\src\\editor009_rescue\\losses.py",
+      "git_commit": "0182685656ec99fe2edcda2d00179a7400db9d06",
+      "sha256": "2ae09f6349a5af0d19f5a3c1c84ca1282b5b4d84e8eff9a07a15128c28b66377",
+      "evidence_role": "implementation of route_consistency_loss / logit_consistency_loss",
+      "condition_identity": "R2 route-only producing equation"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor009_c2_c5_odst_rescue\\00_protocol\\EDITOR009_OVERNIGHT_PROTOCOL.json",
+      "git_commit": "0182685656ec99fe2edcda2d00179a7400db9d06",
+      "sha256": "750866b2de65b9549f3b9fb22059b8650fc0c1fa3bab0b67ceac7ff38e0c8723",
+      "evidence_role": "teacher/student training controls and R2 authorisation",
+      "condition_identity": "producing teacher/student optimiser, batch, epoch, class-weight lock"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor009_c2_c5_odst_rescue\\04_full_seed_rescue\\EDITOR009_FULL_SEED_COMPARISON.json",
+      "git_commit": "0182685656ec99fe2edcda2d00179a7400db9d06",
+      "sha256": "088fe74f589b8deb8f4782241a0135dd8ce89d0b835e52e90269f22e8d4a843c",
+      "evidence_role": "frozen Original Teacher / C2 / C5 / attention-linear / EDITOR009 R2 metrics",
+      "condition_identity": "historical references; R2 mean PR-AUC 0.9336159387038109; C2 mean 0.9290457851613539"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor009_c2_c5_odst_rescue\\02_instrumentation\\EDITOR009_GRADIENT_RULING.json",
+      "git_commit": "0182685656ec99fe2edcda2d00179a7400db9d06",
+      "sha256": "b4209adceaeb5a8b98941ed5f5f947fa31d3ef4dead611a1dcd6772dc23dbcd5",
+      "evidence_role": "frozen C5 gradient antagonism diagnosis",
+      "condition_identity": "C5_trained cos(task, logit) = -0.246223; cos(task, route) = +0.153918"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor010\\review\\editor010_capacity_objective_teacher_rescue\\03_odst_landscape\\EDITOR010_ODST_GRID.json",
+      "git_commit": "3c5ac01d6739df91f50dcc3ba0258a019dcb3119",
+      "sha256": "e11dc4a9f00cc760350d4b993e0b83d9067ca39d2ab67c2afed0ddbc543f7825",
+      "evidence_role": "exact ODST-046 grid entry",
+      "condition_identity": "ODST-046 n_trees=4 depth=4 temperature=0.5 lr=0.001 weight_decay=0"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor010\\review\\editor010_capacity_objective_teacher_rescue\\03_odst_landscape\\EDITOR010_ODST_LANDSCAPE_RULING.json",
+      "git_commit": "3c5ac01d6739df91f50dcc3ba0258a019dcb3119",
+      "sha256": "3a100acc054dcdf27b8435d3661c9d62fc2c812dac0c7f0600dc98d5659eceda",
+      "evidence_role": "ODST-046 selection ruling",
+      "condition_identity": "best_candidate_id = ODST-046"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor010\\review\\editor010_capacity_objective_teacher_rescue\\00_protocol\\EDITOR010_BASELINE_REGISTER.json",
+      "git_commit": "3c5ac01d6739df91f50dcc3ba0258a019dcb3119",
+      "sha256": "3debcaa8e33103fe0d6539b8432298cdcd1a069e0a161cdb0cf8c66191d0de90",
+      "evidence_role": "producing teacher training semantics",
+      "condition_identity": "T-OPT inherits frozen-encoder attention-linear init + ODST-head-only Adam; no student anchoring"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor010\\review\\editor010_capacity_objective_teacher_rescue\\06_promoted_full_r52\\EDITOR010_PROMOTION_FREEZE.json",
+      "git_commit": "3c5ac01d6739df91f50dcc3ba0258a019dcb3119",
+      "sha256": "6fe67adc5a7c804502e8fa51e96c24d7f373dfbc9a36b451356694b739a3b9ef",
+      "evidence_role": "P1 and P4_ET1 identities",
+      "condition_identity": "P1 = ODST-046 + O0; ET1 = ODST-046 + equal-weight ensemble logit distillation + route anchoring OFF"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor010\\review\\editor010_capacity_objective_teacher_rescue\\06_promoted_full_r52\\EDITOR010_FULL_RESULTS.csv",
+      "git_commit": "3c5ac01d6739df91f50dcc3ba0258a019dcb3119",
+      "sha256": "00947b73fb22a663459024829f24731e5181cc80e8a05ee1f1cdfa1a8a28eafd",
+      "evidence_role": "EDITOR010 P1 and ET1 validation metrics",
+      "condition_identity": "ET1 mean PR-AUC 0.939519755421061; P1 mean 0.9334244121760161"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor010\\review\\editor010_capacity_objective_teacher_rescue\\00_protocol\\EDITOR010_INPUT_CHECKSUMS.json",
+      "git_commit": "3c5ac01d6739df91f50dcc3ba0258a019dcb3119",
+      "sha256": "d7a3ac02d28d49de2d75719b1883ad37c1067060fa4d15cb69a626db32eb7645",
+      "evidence_role": "authorised tensor keys including user / sequence_id",
+      "condition_identity": "validation npz keys include user; provenance recovery authorised from frozen tensor"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_train.npz",
+      "git_commit": null,
+      "sha256": "b268328d3bf2e98f712d1145958dabe175ce2c07a7c390da4b84a663317ebc2e",
+      "evidence_role": "CERT r5.2 TRAIN tensor",
+      "condition_identity": "authorised training partition; shape [788000,20,13]; positives 3957"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_validation.npz",
+      "git_commit": null,
+      "sha256": "5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c",
+      "evidence_role": "CERT r5.2 VALIDATION tensor",
+      "condition_identity": "authorised development evaluation partition; shape [64000,20,13]; positives 728"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\prototype_v3_node\\architecture.py",
+      "git_commit": null,
+      "sha256": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+      "evidence_role": "producing AttentionNodeEnsemble constructor",
+      "condition_identity": "hash-gated model construction; paper-support copies forbidden"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\prototype_v3_node\\odst.py",
+      "git_commit": null,
+      "sha256": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+      "evidence_role": "producing NODE/ODST implementation",
+      "condition_identity": "feature selector, threshold init, leaf init, sparsemax_sigmoid, canonical_tree_average"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006a_preinference_freeze\\EDITOR006A_SCALER.json",
+      "git_commit": null,
+      "sha256": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+      "evidence_role": "train-only scaler freeze",
+      "condition_identity": "tensors prebaked; EDITOR-011 must not refit a scaler"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed42\\best.pt",
+      "git_commit": null,
+      "sha256": "b807a82343b432343b7e3cbc86ee76cba7011066827f3baa089aa78a02c02b53",
+      "evidence_role": "producing attention-linear encoder init seed 42",
+      "condition_identity": "T-OPT seed-42 encoder initialisation source"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed52\\best.pt",
+      "git_commit": null,
+      "sha256": "5e5e2a136bedba3d3477d05c5b1215331cb97339b74003bcb60f8cb4885ba86c",
+      "evidence_role": "producing attention-linear encoder init seed 52",
+      "condition_identity": "T-OPT seed-52 encoder initialisation source"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed62\\best.pt",
+      "git_commit": null,
+      "sha256": "4543c167fdab3b0376087731571f7b3bcecadd43f8ff05c6b5371f0073ba425a",
+      "evidence_role": "producing attention-linear encoder init seed 62",
+      "condition_identity": "T-OPT seed-62 encoder initialisation source"
+    }
+  ],
+  "condition_identities": {
+    "T-OPT": "Bi-LSTM + temporal attention + ODST-046; producing teacher semantics; encoder frozen from matching attention-linear seed; ODST head trained with L_task only; no student anchoring",
+    "C2-OPT": "student cloned from same-seed T-OPT; L = L_task; lambda_logit=0; lambda_route=0",
+    "R2-OPT": "student cloned from same-seed T-OPT; L = L_task + 0.5 * L_route; lambda_logit=0; lambda_route=0.5",
+    "Original_Teacher": "historical frozen producing ODST-000 teacher; reference only",
+    "Original_C2": "historical teacher-init task-only student on producing ODST; reference only",
+    "Original_C5": "historical dual-anchor C5_original_paper; antagonistic static logit anchor retained; reference only",
+    "Attention_linear": "historical attention-linear reference; reference only",
+    "EDITOR009_R2": "historical route-only R2 on producing ODST-000; reference only",
+    "EDITOR010_P1": "ODST-046 + O0 on cached full-TRAIN encoder embeddings; not a route-anchor condition; reference only",
+    "EDITOR010_P4_ET1": "ODST-046 + equal-weight ensemble logit distillation + route anchoring OFF; not a route-anchor condition; reference only"
+  },
+  "explicitly_not_opened": [
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_test.npz",
+    "any r5.1 tensor",
+    "any r6.2 tensor"
+  ]
+}

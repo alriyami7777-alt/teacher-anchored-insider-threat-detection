@@ -1,0 +1,132 @@
+{
+  "task": "PHASE3",
+  "created_utc": "2026-10-21T15:24:40.623921+00:00",
+  "training": false,
+  "test_data": false,
+  "holdout_scoring_executed": false,
+  "cohort": {
+    "release": "r5.2",
+    "partition": "original VALIDATION",
+    "n_sequences": 64000,
+    "n_users": 2000,
+    "malicious_windows": 728,
+    "benign_windows": 63272,
+    "malicious_users": 31,
+    "windows_per_user": 32,
+    "validation_npz_sha256": "5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c",
+    "user_order_sha256": "851385f9c926cf945b3c74b5c9442e3ccb94cf1d9dabb98106a29cbfea01c5c0",
+    "definition_file": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor023\\src\\editor017_robustness\\campaign.py",
+    "definition_function": "run_campaign: load_train_validation, recover_user_mapping, directional_table",
+    "constants_file": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor023\\src\\editor012_rescue\\constants.py",
+    "directional_definition_file": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor023\\src\\editor015_residual\\explain.py",
+    "editor017_commit": "c75321a627ecc7539d1a759764d7ce395895179a",
+    "editor023_commit": "a480fa2413cf0b70c398081ca5f8f52470a665a3",
+    "historical_eligibility": "per seed and k, malicious positive trees; benign negative trees; insufficient signs excluded",
+    "new_eligibility": "same frozen population, both signs in each class; inputs replace trees; insufficient signs excluded"
+  },
+  "manuscript_inconsistency": "484 windows / 151 users / 242 positives / 242 negatives belongs to r4.2 in objective3_missing_source_robustness.py, not the r5.2 EDITOR-017/023 cohort. Claude clarified use of actual r5.2 cohort on 2026-10-21.",
+  "ig": {
+    "steps": 50,
+    "quadrature": "composite trapezoid, 50 intervals / 51 endpoints",
+    "targets": "8 raw tree outputs and final logit",
+    "input": [
+      20,
+      13
+    ],
+    "baseline": "median over all original r5.2 TRAIN day rows per scaled feature, broadcast to all 20 days; paper intervention convention",
+    "completeness": "abs(sum(IG)-[f(x)-f(b)])/max(abs(f(x)-f(b)),1e-6); report per-target/class median, p95, absolute residual and near-zero counts"
+  },
+  "interventions": {
+    "feature_k": [
+      1,
+      3,
+      5
+    ],
+    "source_k": [
+      1,
+      2
+    ],
+    "random_draws": 200,
+    "TA2_feature_unit": "one of 13 raw features, summed signed IG over 20 days; replace all 20 days",
+    "XGBoost_feature_unit": "one of 40 locked window summaries; replace summary with TRAIN median",
+    "raw_feature_sensitivity": "XGBoost 40 summaries grouped to 13 raw features; replace all summaries in group",
+    "signs": "positive and negative, separately, for every label stratum",
+    "random_control": "200 independent uniform subsets without replacement within subset, from same-sign eligible units; duplicates retained with multiplicity and scored once",
+    "directional_accuracy": "strictly positive expected signed margin change; zero changes count as failures",
+    "normalization": "population standard deviation (ddof=0) of each original model/seed over all 64000 validation logits/margins",
+    "source_mapping": {
+      "logon": [
+        1,
+        7
+      ],
+      "device": [
+        2,
+        8
+      ],
+      "file": [
+        3,
+        9
+      ],
+      "email": [
+        4,
+        10
+      ],
+      "web": [
+        5,
+        11
+      ]
+    },
+    "shared_raw_features_excluded_from_source_analysis": [
+      "total_events",
+      "active_duration_minutes",
+      "is_active_day"
+    ],
+    "shared_summary_features_excluded": 10,
+    "source_analysis_summary_features_included": 30,
+    "physical_validity": "local model-input interventions; derived constraints not recomputed; not a physical sensor-removal simulation"
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "rng": 42,
+    "unit": "pseudonymised user",
+    "ci": "percentile 95%; sequence-weighted mean after resampling whole user clusters",
+    "pairing": "shared user resample across model contrast, random control, and all three fixed seeds; jointly eligible windows only"
+  },
+  "primary_exploratory": {
+    "contrast": "TA2 minus XGBoost directional accuracy at feature k=3",
+    "strata": [
+      "overall",
+      "malicious"
+    ],
+    "sign": "class-supporting: positive for malicious / negative for benign",
+    "secondary": "both signs separately and TA2-minus-XGBoost difference of random-control gaps",
+    "seed_aggregation": "equal-seed mean on windows eligible in both models in all 3 seeds; seedwise also reported",
+    "limitation": "primary feature resolution is 13 versus 40 inputs; raw-feature 13-versus-13 sensitivity also reported; exploratory, no superiority claim implied"
+  },
+  "source_removal_rank": [
+    "file",
+    "device",
+    "logon",
+    "web",
+    "email"
+  ],
+  "source_spearman": "sum mean |IG| over direct source count/presence channels; shared channels excluded",
+  "frozen_model_hashes": {
+    "TA2": {
+      "42": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8",
+      "52": "7613ba559bcf55827d04129066eb595b677994494609646f8b2463308ed5edb4",
+      "62": "904003dca219435464476cf36abedb11ee4e2f7a11ff09caa3791d685b8f644d"
+    },
+    "XGBoost_40": {
+      "42": "2109554164abdd002ce0a4377f957c5aa3bc26886a197749ea79fc04d9b94fae",
+      "52": "0f32857232341cb6a26d6cf55cb2375b8e256e0e0f89519d3059415cac8ad7e6",
+      "62": "3062488680b8bc05959ddcb0cab948378988564fc82a88213e346ca570b0c7ab"
+    }
+  },
+  "gpu_gate": {
+    "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\CHATGPT_PHASE2_REPORT.md",
+    "endswith": "PHASE2_COMPLETE_MODELS_FROZEN_NOT_SCORED",
+    "poll_seconds": 600
+  },
+  "identifier_rule": "U_ + first 10 hex characters of SHA-256(original user ID); raw sequence IDs omitted"
+}

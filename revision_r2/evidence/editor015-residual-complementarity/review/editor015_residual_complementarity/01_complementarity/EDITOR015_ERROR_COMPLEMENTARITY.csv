@@ -1,0 +1,5 @@
+partition,seed,all_L1_correct_TA2_wrong,all_TA2_correct_L1_wrong,all_both_correct,all_both_wrong,all_n,positive_L1_correct_TA2_wrong,positive_TA2_correct_L1_wrong,positive_both_correct,positive_both_wrong,positive_n,negative_L1_correct_TA2_wrong,negative_TA2_correct_L1_wrong,negative_both_correct,negative_both_wrong,negative_n
+INNER_SELECT,42,62,20,127696,222,128000,4,15,1106,89,1214,58,5,126590,133,126786
+VALIDATION,42,15,6,63882,97,64000,1,6,633,88,728,14,0,63249,9,63272
+VALIDATION,52,10,13,63873,104,64000,3,9,628,88,728,7,4,63245,16,63272
+VALIDATION,62,9,12,63878,101,64000,1,9,643,75,728,8,3,63235,26,63272

@@ -1,0 +1,451 @@
+{
+  "phase": "complete",
+  "utc": "2026-08-17T21:13:54Z",
+  "task_id": "EDITOR-023",
+  "EDITOR022_RESULTS_COMMIT": "ac50596ed8c3b480c887640911092e46b4631670",
+  "EDITOR023_PROTOCOL_FREEZE_COMMIT": "331b2a4a946f25cb6b9e81d662581c00fdf7afd5",
+  "device": "cuda",
+  "CHECKPOINT_GATE": "PASS",
+  "HISTORICAL_PARITY_GATE": "PASS",
+  "TRAINING_EXECUTED": "NO",
+  "SOURCE_GATE": "PASS",
+  "r52_test_accessed": false,
+  "r52_test_predictions_generated": false,
+  "r51_rerun": false,
+  "r62_rerun": false,
+  "model_parameters_updated": false,
+  "threshold_retuned": false,
+  "calibration_refit": false,
+  "mapping": {
+    "USER_MAPPING_RECOVERED": true,
+    "n_sequences": 64000,
+    "n_users": 2000,
+    "mapping_sha256": "851385f9c926cf945b3c74b5c9442e3ccb94cf1d9dabb98106a29cbfea01c5c0"
+  },
+  "fingerprints": [
+    {
+      "model": "T-OPT",
+      "seed": 42,
+      "sha256": "b007f48085ef42b146b22a0d5ace5bb9c8380874405622281a5903831599fb20",
+      "fingerprint": "b117d072d69da478baa81afdb8c1ee51e61c9ff629a8d0a8ad636f729af707e9"
+    },
+    {
+      "model": "T-OPT",
+      "seed": 52,
+      "sha256": "5b4c17e15a8f49ba8cf240c0092b893e6e665232967fafce8eb13e0650227f2a",
+      "fingerprint": "969fd24dae325cc86033b6d4b4a67fde4c363556f76c4e083319da5a6f41df4d"
+    },
+    {
+      "model": "T-OPT",
+      "seed": 62,
+      "sha256": "24bf2efa2343e4aaf5f32871c0a9bffb3d511f345375ce754e9f081f82eac02c",
+      "fingerprint": "b492bb585d2a868c8140fbe3e8f9de3300ff943b1dbdc593bb7fb7ee57583b03"
+    },
+    {
+      "model": "C2-OPT",
+      "seed": 42,
+      "sha256": "d64651d25e48b3bcd4cad7d107d3bc55a4c555a2827f3656a087624e94ac4baf",
+      "fingerprint": "db4f5bddfab25c16cdcc3ebe8f9ff09a38cb73fd7eeab1b423c9c75324842ca1"
+    },
+    {
+      "model": "C2-OPT",
+      "seed": 52,
+      "sha256": "f0eea90099ba7dd3e721efb930e367e868049c94f6542d5b2156d9fe469acb7e",
+      "fingerprint": "04c2e71e90094a6e395ce5273a0155341fea3bbd4b5e284c79f09434f7ca38ef"
+    },
+    {
+      "model": "C2-OPT",
+      "seed": 62,
+      "sha256": "50512aa5392ee7f4d93dc5f84471fc1074baeb757ae9fb5b96caed141ee586da",
+      "fingerprint": "8ef018065b83c16b35f0247e3a0466b6975b68d2a637cedc062e5d26a5df3374"
+    },
+    {
+      "model": "F10",
+      "seed": 42,
+      "sha256": "ea8cd41a1ae3f845719956fd7a49230fa82807ffac87841be5f5ab95c64ac0c2",
+      "fingerprint": "670a00327c611a7b9f8d47c4bda334c43899e9ddcf23647bf607025de52198a7"
+    },
+    {
+      "model": "F10",
+      "seed": 52,
+      "sha256": "829135230c5629f0b11161e11d76eba7a15e65bf9d03b5a55ffa297a93ddf959",
+      "fingerprint": "4609267b4e3d472f1663c406ed35ec2891ec21aaea5fdc2a48c975a9afb2503c"
+    },
+    {
+      "model": "F10",
+      "seed": 62,
+      "sha256": "06313d6f2602de51f8dd6e15e1d1292864fd8cbd158f33977fa42c8a47036aee",
+      "fingerprint": "0ac3079b91f367b0c00d1efe3556ea3fe9d1b4ff359008c62604c6416194b6c1"
+    },
+    {
+      "model": "TA2",
+      "seed": 42,
+      "sha256": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8",
+      "fingerprint": "6b4a74764747b31e111a884816b1103ae8ca055417ec4a950dae533a6412b900"
+    },
+    {
+      "model": "TA2",
+      "seed": 52,
+      "sha256": "7613ba559bcf55827d04129066eb595b677994494609646f8b2463308ed5edb4",
+      "fingerprint": "5abb11d4050580bcc1718bf6525e4674b44348a7121fb44aa1a497e0841ad4bd"
+    },
+    {
+      "model": "TA2",
+      "seed": 62,
+      "sha256": "904003dca219435464476cf36abedb11ee4e2f7a11ff09caa3791d685b8f644d",
+      "fingerprint": "6cff68105d44bc7c078e9795a20cd477891bec93f7a6eab80a128e8733541de7"
+    },
+    {
+      "model": "L1",
+      "seed": 42,
+      "sha256": "513e272063250aa209efa2c42b490cc44316c7979fa6b2be5dd8cce4592d1ab2",
+      "fingerprint": "cc8128a11d38c4b668ac531a0a2201ad9b474af8c0c669060a1125c670da6d07"
+    },
+    {
+      "model": "L1",
+      "seed": 52,
+      "sha256": "a503f6705955da221bdbd1921034e9102b90db6acb5187114276ccaeb474e1c4",
+      "fingerprint": "50f4a07ed2a4b8369c7795e7c1067f9b5cff015c7de7646f667afe55a3f9ef96"
+    },
+    {
+      "model": "L1",
+      "seed": 62,
+      "sha256": "60d5c43692a17ba6971c8d23f74048ac3c4fe0bd1b18889eeb21bbab7bf3d3e9",
+      "fingerprint": "f5022e2c7a4ce6ab9afd4817ee502642a4499265cca8e40f8da63ecb1f7bd5d3"
+    }
+  ],
+  "ruling": {
+    "TEACHER_GUIDANCE_CLEAN_VALUE": "SUPPORTED_STRONG",
+    "TEACHER_GUIDANCE_DEGRADED_INPUT_VALUE": "CONSISTENT",
+    "ROUTE_ANCHOR_STRUCTURAL_VALUE": "SUPPORTED",
+    "TA2_ODST_DEGRADED_INPUT_VALUE_OVER_LINEAR": "SUPPORTED",
+    "TA2_OVERALL_ARCHITECTURE_VALUE": "SUPPORTED_WITH_QUALIFICATION",
+    "TREE_EXPLANATION_DEGRADED_INPUT_STABILITY": "SUPPORTED",
+    "CURRENT_PAPER_MODEL": "TA2",
+    "CLEAN": {
+      "C2-OPT": 0.9353238885175368,
+      "F10": 0.9425948632340028,
+      "TA2": 0.9428421883320307,
+      "L1": 0.9388809579807144
+    },
+    "TA2_MINUS_C2_CLEAN": 0.007518299814493923,
+    "SOURCE_AURC": {
+      "C2-OPT": 0.8408885253126882,
+      "F10": 0.8478425320571182,
+      "TA2": 0.8553871535578862,
+      "L1": 0.8248321840877016
+    },
+    "NOISE_AURC": {
+      "C2-OPT": 0.9246090481972544,
+      "F10": 0.9337024796081291,
+      "TA2": 0.9385992060073315,
+      "L1": 0.9297215224991215
+    },
+    "contrasts": {
+      "F10_minus_C2_SOURCE_AURC": 0.00695400674443003,
+      "TA2_minus_C2_SOURCE_AURC": 0.014498628245197986,
+      "TA2_minus_F10_SOURCE_AURC": 0.007544621500767956,
+      "TA2_minus_L1_SOURCE_AURC": 0.030554969470184545,
+      "F10_minus_C2_NOISE_AURC": 0.009093431410874708,
+      "TA2_minus_C2_NOISE_AURC": 0.013990157810077064,
+      "TA2_minus_F10_NOISE_AURC": 0.004896726399202356,
+      "TA2_minus_L1_NOISE_AURC": 0.008877683508209944
+    },
+    "failure_profiles": {
+      "C2-OPT": {
+        "worst_source": "device",
+        "second_worst_source": "file",
+        "worst_source_mean_retention": 0.555968074954759,
+        "second_worst_source_mean_retention": 0.5624327098764839,
+        "source_retention_first_below_0.90": 0.75,
+        "source_retention_first_below_0.75": 0.75,
+        "noise_retention_first_below_0.90": null,
+        "noise_retention_first_below_0.75": null,
+        "thresholds_created_only_on_crossing": true,
+        "descriptive_only": true
+      },
+      "F10": {
+        "worst_source": "file",
+        "second_worst_source": "device",
+        "worst_source_mean_retention": 0.5586330204236082,
+        "second_worst_source_mean_retention": 0.563247239602162,
+        "source_retention_first_below_0.90": 0.75,
+        "source_retention_first_below_0.75": 0.75,
+        "noise_retention_first_below_0.90": null,
+        "noise_retention_first_below_0.75": null,
+        "thresholds_created_only_on_crossing": true,
+        "descriptive_only": true
+      },
+      "TA2": {
+        "worst_source": "file",
+        "second_worst_source": "device",
+        "worst_source_mean_retention": 0.5584680391886461,
+        "second_worst_source_mean_retention": 0.5971255495602124,
+        "source_retention_first_below_0.90": 0.75,
+        "source_retention_first_below_0.75": 0.75,
+        "noise_retention_first_below_0.90": null,
+        "noise_retention_first_below_0.75": null,
+        "thresholds_created_only_on_crossing": true,
+        "descriptive_only": true
+      },
+      "L1": {
+        "worst_source": "device",
+        "second_worst_source": "file",
+        "worst_source_mean_retention": 0.4469452404995188,
+        "second_worst_source_mean_retention": 0.5611177985284842,
+        "source_retention_first_below_0.90": 0.5,
+        "source_retention_first_below_0.75": 0.75,
+        "noise_retention_first_below_0.90": null,
+        "noise_retention_first_below_0.75": null,
+        "thresholds_created_only_on_crossing": true,
+        "descriptive_only": true
+      }
+    },
+    "claim_boundaries": "controlled degraded-input / data-quality resilience only",
+    "forbidden_terms_used": false,
+    "written_at": "2026-08-17T21:13:54Z"
+  },
+  "source_aurc": {
+    "definition": "trapezoidal AURC of retention vs d in {0.00,0.25,0.50,0.75,1.00}; SOURCE_AURC = equal mean of five source-channel AURCs; higher is better",
+    "models": {
+      "C2-OPT": {
+        "SOURCE_AURC": 0.8408885253126882,
+        "SOURCE_AURC_by_seed": {
+          "42": 0.8465647987815821,
+          "52": 0.8602796299615324,
+          "62": 0.8158211471949501
+        },
+        "AURC_by_channel": {
+          "logon": 0.9707794640011311,
+          "device": 0.6655022182064426,
+          "file": 0.6816483687538964,
+          "email": 0.9189461142519884,
+          "http": 0.9675664613499825
+        }
+      },
+      "F10": {
+        "SOURCE_AURC": 0.8478425320571182,
+        "SOURCE_AURC_by_seed": {
+          "42": 0.8429444886676969,
+          "52": 0.8674412609672444,
+          "62": 0.8331418465364134
+        },
+        "AURC_by_channel": {
+          "logon": 0.965946641309972,
+          "device": 0.6697083896727435,
+          "file": 0.6774007726246106,
+          "email": 0.9550603593670779,
+          "http": 0.9710964973111871
+        }
+      },
+      "TA2": {
+        "SOURCE_AURC": 0.8553871535578862,
+        "SOURCE_AURC_by_seed": {
+          "42": 0.8315270816316064,
+          "52": 0.8817480345429536,
+          "62": 0.8528863444990982
+        },
+        "AURC_by_channel": {
+          "logon": 0.9680610723669286,
+          "device": 0.7041647516831174,
+          "file": 0.6776510681585295,
+          "email": 0.9559472659957656,
+          "http": 0.971111609585089
+        }
+      },
+      "L1": {
+        "SOURCE_AURC": 0.8248321840877016,
+        "SOURCE_AURC_by_seed": {
+          "42": 0.8182370975827531,
+          "52": 0.8252710424095218,
+          "62": 0.8309884122708299
+        },
+        "AURC_by_channel": {
+          "logon": 0.9635636914283826,
+          "device": 0.5576180922695971,
+          "file": 0.6787266549869225,
+          "email": 0.9554538200607615,
+          "http": 0.968798661692844
+        }
+      }
+    },
+    "F10_minus_C2": 0.00695400674443003,
+    "TA2_minus_C2": 0.014498628245197986,
+    "TA2_minus_F10": 0.007544621500767956,
+    "TA2_minus_L1": 0.030554969470184545,
+    "per_seed_deltas": {
+      "F10_minus_C2": {
+        "42": -0.0036203101138851945,
+        "52": 0.007161631005711988,
+        "62": 0.017320699341463297
+      },
+      "TA2_minus_C2": {
+        "42": -0.015037717149975705,
+        "52": 0.021468404581421185,
+        "62": 0.037065197304148034
+      },
+      "TA2_minus_F10": {
+        "42": -0.01141740703609051,
+        "52": 0.014306773575709197,
+        "62": 0.019744497962684737
+      },
+      "TA2_minus_L1": {
+        "42": 0.013289984048853287,
+        "52": 0.056476992133431825,
+        "62": 0.021897932228268302
+      }
+    },
+    "failure_profiles": {
+      "C2-OPT": {
+        "worst_source": "device",
+        "second_worst_source": "file",
+        "worst_source_mean_retention": 0.555968074954759,
+        "second_worst_source_mean_retention": 0.5624327098764839,
+        "source_retention_first_below_0.90": 0.75,
+        "source_retention_first_below_0.75": 0.75,
+        "noise_retention_first_below_0.90": null,
+        "noise_retention_first_below_0.75": null,
+        "thresholds_created_only_on_crossing": true,
+        "descriptive_only": true
+      },
+      "F10": {
+        "worst_source": "file",
+        "second_worst_source": "device",
+        "worst_source_mean_retention": 0.5586330204236082,
+        "second_worst_source_mean_retention": 0.563247239602162,
+        "source_retention_first_below_0.90": 0.75,
+        "source_retention_first_below_0.75": 0.75,
+        "noise_retention_first_below_0.90": null,
+        "noise_retention_first_below_0.75": null,
+        "thresholds_created_only_on_crossing": true,
+        "descriptive_only": true
+      },
+      "TA2": {
+        "worst_source": "file",
+        "second_worst_source": "device",
+        "worst_source_mean_retention": 0.5584680391886461,
+        "second_worst_source_mean_retention": 0.5971255495602124,
+        "source_retention_first_below_0.90": 0.75,
+        "source_retention_first_below_0.75": 0.75,
+        "noise_retention_first_below_0.90": null,
+        "noise_retention_first_below_0.75": null,
+        "thresholds_created_only_on_crossing": true,
+        "descriptive_only": true
+      },
+      "L1": {
+        "worst_source": "device",
+        "second_worst_source": "file",
+        "worst_source_mean_retention": 0.4469452404995188,
+        "second_worst_source_mean_retention": 0.5611177985284842,
+        "source_retention_first_below_0.90": 0.5,
+        "source_retention_first_below_0.75": 0.75,
+        "noise_retention_first_below_0.90": null,
+        "noise_retention_first_below_0.75": null,
+        "thresholds_created_only_on_crossing": true,
+        "descriptive_only": true
+      }
+    }
+  },
+  "noise_aurc": {
+    "definition": "trapezoidal AURC of retention vs sigma in {0.00,0.025,0.05,0.075,0.10,0.15,0.20} normalised by interval width 0.20; higher is better",
+    "models": {
+      "C2-OPT": {
+        "NOISE_AURC": 0.9246090481972544,
+        "NOISE_AURC_by_seed": {
+          "42": 0.9377650763966183,
+          "52": 0.9245890477894197,
+          "62": 0.9114730204057249
+        }
+      },
+      "F10": {
+        "NOISE_AURC": 0.9337024796081291,
+        "NOISE_AURC_by_seed": {
+          "42": 0.932014606520368,
+          "52": 0.9299068713451898,
+          "62": 0.9391859609588296
+        }
+      },
+      "TA2": {
+        "NOISE_AURC": 0.9385992060073315,
+        "NOISE_AURC_by_seed": {
+          "42": 0.9367183577938953,
+          "52": 0.9344808591959648,
+          "62": 0.9445984010321342
+        }
+      },
+      "L1": {
+        "NOISE_AURC": 0.9297215224991215,
+        "NOISE_AURC_by_seed": {
+          "42": 0.9217869315553215,
+          "52": 0.9236933197895761,
+          "62": 0.9436843161524672
+        }
+      }
+    },
+    "F10_minus_C2": 0.009093431410874708,
+    "TA2_minus_C2": 0.013990157810077064,
+    "TA2_minus_F10": 0.004896726399202356,
+    "TA2_minus_L1": 0.008877683508209944,
+    "per_seed_deltas": {
+      "F10_minus_C2": {
+        "42": -0.005750469876250275,
+        "52": 0.00531782355577004,
+        "62": 0.027712940553104692
+      },
+      "TA2_minus_C2": {
+        "42": -0.0010467186027229847,
+        "52": 0.009891811406545048,
+        "62": 0.03312538062640935
+      },
+      "TA2_minus_F10": {
+        "42": 0.00470375127352729,
+        "52": 0.004573987850775008,
+        "62": 0.0054124400733046585
+      },
+      "TA2_minus_L1": {
+        "42": 0.014931426238573797,
+        "52": 0.010787539406388658,
+        "62": 0.0009140848796670431
+      }
+    }
+  },
+  "route_summary": {
+    "F10_CLEAN_ROUTE_MAE": 0.0075467338844202765,
+    "TA2_CLEAN_ROUTE_MAE": 0.0024146931577659057,
+    "F10_DEGRADED_ROUTE_MAE": 0.011343588323287973,
+    "TA2_DEGRADED_ROUTE_MAE": 0.005600903922956214,
+    "F10_source_teacher_relative_route_MAE": 0.0097433706539228,
+    "TA2_source_teacher_relative_route_MAE": 0.004315678833622054,
+    "F10_noise_teacher_relative_route_MAE": 0.012943805992653145,
+    "TA2_noise_teacher_relative_route_MAE": 0.006886129012290373,
+    "F10_CLEAN_ROUTE_KL": 0.02032738054665657,
+    "TA2_CLEAN_ROUTE_KL": 0.004147589798221331,
+    "F10_CLEAN_hard_route_agreement": 0.9965156249999999,
+    "TA2_CLEAN_hard_route_agreement": 0.9980305989583332,
+    "F10_CLEAN_dominant_leaf_agreement": 0.9885846354166666,
+    "TA2_CLEAN_dominant_leaf_agreement": 0.9931959635416666,
+    "note": "route identities compared only within the same model/seed; teacher-relative uses matched T-OPT",
+    "three_seeds_are_not_independent_experimental_units": true
+  },
+  "expl_summary": {
+    "TA2_aggregate_spearman": 0.47076917411103125,
+    "F10_aggregate_spearman": 0.4304292851212394,
+    "TA2_minus_F10": 0.04033988898979185,
+    "TA2_source_spearman": 0.5230131210754405,
+    "F10_source_spearman": 0.47555845674795355,
+    "TA2_noise_spearman": 0.29662268422966687,
+    "F10_noise_spearman": 0.2799987130321917,
+    "definition": "reference-centred signed tree-contribution vector; rank-stability = tree_contribution_spearman",
+    "tree_identities_compared_across_seeds": false,
+    "three_seeds_are_not_independent_experimental_units": true
+  },
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "pytorch": "2.11.0+cu128",
+  "written_at": "2026-08-17T21:13:54Z",
+  "cluster_ci": {
+    "TEACHER_GUIDANCE_SOURCE_CI95": "[-0.0032167846, 0.0179520099]",
+    "TEACHER_GUIDANCE_NOISE_CI95": "[-0.0063185679, 0.0318759312]",
+    "TA2_MINUS_L1_SOURCE_CI95": "[0.0170759913, 0.0445920721]",
+    "TA2_MINUS_L1_NOISE_CI95": "[0.0012322184, 0.0195212509]"
+  }
+}

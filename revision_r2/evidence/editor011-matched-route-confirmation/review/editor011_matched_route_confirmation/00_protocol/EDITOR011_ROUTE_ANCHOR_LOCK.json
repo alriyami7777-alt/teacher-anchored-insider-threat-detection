@@ -1,0 +1,70 @@
+{
+  "task_id": "EDITOR-011",
+  "status": "PHASE0_FROZEN_BEFORE_TRAINING",
+  "source_loss_json": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor009_c2_c5_odst_rescue\\01_forensics\\EDITOR009_EXACT_LOSS_DEFINITION.json",
+  "source_loss_json_sha256": "fe9a7489972f760f5b52f9f604f88002b632cb31064de8526a28408389345120",
+  "source_implementation": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\src\\editor009_rescue\\losses.py",
+  "source_implementation_sha256": "2ae09f6349a5af0d19f5a3c1c84ca1282b5b4d84e8eff9a07a15128c28b66377",
+  "source_commit": "0182685656ec99fe2edcda2d00179a7400db9d06",
+  "R2_identity": {
+    "task_loss": "ON",
+    "route_anchor": "ON",
+    "lambda_route": 0.5,
+    "logit_anchor": "OFF",
+    "lambda_logit": 0.0
+  },
+  "C2_identity": {
+    "task_loss": "ON",
+    "route_anchor": "OFF",
+    "lambda_route": 0.0,
+    "logit_anchor": "OFF",
+    "lambda_logit": 0.0
+  },
+  "C5_original_paper_identity": {
+    "task_loss": "ON",
+    "route_anchor": "ON",
+    "lambda_route": 0.5,
+    "logit_anchor": "ON",
+    "lambda_logit": 0.5,
+    "note": "historical dual-anchor condition; not trained in EDITOR-011; never renamed as R2-OPT"
+  },
+  "L_task": {
+    "function": "nn.BCEWithLogitsLoss",
+    "reduction": "mean over windows",
+    "class_weighting": "pos_weight=(n_neg/n_pos)*0.25 from TRAIN",
+    "teacher_detach": "n/a"
+  },
+  "L_route": {
+    "function": "route_consistency_loss",
+    "formula": "mean( p_t log((p_t+eps)/(p_s+eps)) + (1-p_t) log((1-p_t+eps)/(1-p_s+eps)) )",
+    "eps": 1e-6,
+    "teacher_detach": true,
+    "reduction": "mean over (window, tree_index, depth)",
+    "normalisation": "none beyond Bernoulli KL elementwise mean",
+    "tree_averaging": "implicit in concatenated tree-index dimension then global mean",
+    "batch_averaging": "included in the same global mean",
+    "route_tensor_shape": ["B", "n_layers * n_trees", "depth"],
+    "odst046_route_tensor_shape": ["B", 8, 4],
+    "teacher_student_route_correspondence": "raw concatenated tree index; identical architecture after teacher initialisation",
+    "class_weighting": "none",
+    "masking": "none",
+    "schedule": "static 0.5"
+  },
+  "L_logit": {
+    "function": "logit_consistency_loss",
+    "active_in_R2_OPT": false,
+    "active_in_C2_OPT": false,
+    "active_in_T_OPT": false,
+    "formula_recorded_only": "mean((s-stopgrad(t))^2) / (var_unbiasedFalse(stopgrad(t)) + 1e-6)"
+  },
+  "TEACHER_STUDENT_TREE_INDEX_CORRESPONDENCE": "STRUCTURALLY_VALID",
+  "correspondence_verification_required": [
+    "identical ODST-046 architecture for teacher and student",
+    "student state_dict cloned from the same-seed T-OPT checkpoint",
+    "n_trees teacher == n_trees student == 4 per layer",
+    "depth teacher == depth student == 4",
+    "route tensor dimensions identical",
+    "no Hungarian / permutation remapping"
+  ],
+  "when_route_disabled": "w_route=0 so L_route does not enter L_total; implementation must return a finite tensor and contribute exactly zero to the total loss"
+}

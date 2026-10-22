@@ -1,0 +1,257 @@
+{
+  "task_id": "EDITOR-009",
+  "campaign": "EDITOR-009 DEVELOPMENT RESCUE",
+  "title": "Overnight C2/C5/ODST Failure-Mechanism and Rescue Campaign",
+  "manuscript": "Teacher-Anchored Differentiable Sequence–Ensemble Learning for Explainable Insider Threat Detection",
+  "status": "PHASE0_FROZEN_BEFORE_RESCUE_EXECUTION",
+  "frozen_before_first_rescue_result": true,
+  "EDITOR008_NOT_EXECUTED": true,
+  "prohibited_programmes": [
+    "GroupDRO",
+    "CORAL",
+    "MMD",
+    "multi-release training",
+    "target-domain adaptation",
+    "new target scaler"
+  ],
+  "PRIMARY_METRIC": "PR_AUC",
+  "PRIMARY_PARTITION": "CERT r5.2 VALIDATION",
+  "SEEDS": [42, 52, 62],
+  "SCREENING_SEED": 42,
+  "TEST_ACCESS": "PROHIBITED",
+  "R51_EXECUTION": "PROHIBITED",
+  "R62_EXECUTION": "PROHIBITED",
+  "authorised_partitions": ["CERT r5.2 TRAIN", "CERT r5.2 VALIDATION"],
+  "matched_comparator": "C2",
+  "additional_comparators": ["C5_original_paper", "attention_linear", "teacher_frozen_odst"],
+  "C5_original_paper_is_not_ablation_C5": true,
+  "C5_ablation_retrained_DO_NOT_USE": [
+    "a5a08dc24a89014fd1bb92c6c6342ed50511b33804e95246e480e90c4692b214",
+    "3203455562ec6ff4018cc5cb3299bc2530bc8eff95aa523e6b7746f43731d971",
+    "54f879d6b163185073ea586fa50a68edf89b603c269c6208c8b48156dccd4e22"
+  ],
+  "do_not_rewrite": [
+    "review/editor006*",
+    "review/editor007*",
+    "review/editor008*"
+  ],
+  "historical_frozen_evidence_readonly": true,
+  "successful_rescue_requires_new_condition_identifier": true,
+  "promotion_rule": {
+    "primary_rank": "r5.2 validation PR-AUC",
+    "beat_c2_required_for_clear_rescue": true,
+    "max_promoted": 3,
+    "priority": [
+      "candidates beating C2 PR-AUC",
+      "among those, larger PR-AUC gain",
+      "avoid material F1/decision deterioration",
+      "prefer simpler formulation when performance is effectively tied"
+    ],
+    "if_none_beat_c2": "promote up to two closest mechanistically distinct candidates only if diagnostics suggest a plausible fix rather than noise",
+    "no_new_rescue_ideas_after_seed42": true
+  },
+  "clear_development_rescue_rule": {
+    "mean_PR_AUC_greater_than_C2": true,
+    "positive_C2_delta_on_at_least_two_seeds": true,
+    "single_favourable_point_estimate_is_not_superiority": true
+  },
+  "locked_controls": {
+    "sequence_length": 20,
+    "n_features": 13,
+    "train_shape": [788000, 20, 13],
+    "validation_shape": [64000, 20, 13],
+    "expected_train_pos": 3957,
+    "expected_val_pos": 728,
+    "batch_size": 1024,
+    "max_epochs": 15,
+    "patience": 4,
+    "early_stopping_metric": "validation_pr_auc",
+    "checkpoint_rule": "maximum_validation_pr_auc",
+    "threshold_rule": "maximum_validation_f1",
+    "optimiser": "Adam",
+    "weight_decay": 0.0,
+    "lr_encoder": 3e-05,
+    "lr_attention": 3e-05,
+    "lr_odst": 0.0003,
+    "grad_clip_norm": 1.0,
+    "pos_weight_mult": 0.25,
+    "producing_logit_anchor_weight": 0.5,
+    "producing_route_anchor_weight": 0.5,
+    "architecture": {
+      "input_dim": 13,
+      "hidden_size": 64,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "fusion_variant": "sparsemax_sigmoid_odst",
+      "node_num_layers": 2,
+      "node_n_trees": 8,
+      "node_depth": 4,
+      "node_tree_dim": 1,
+      "node_temperature": 1.0,
+      "node_dropout": 0.0,
+      "leaf_init_std": 0.05,
+      "gate_hidden_dim": 32
+    }
+  },
+  "annealed_schedule_formula": {
+    "id": "EDITOR009_LINEAR_EPOCH_DECAY_TO_ZERO",
+    "MAX_EPOCHS": 15,
+    "w0_logit": 0.5,
+    "w0_route": 0.5,
+    "formula": "w(e) = w0 * (MAX_EPOCHS - e) / (MAX_EPOCHS - 1)  for e in {1,...,MAX_EPOCHS}",
+    "epoch_1": 0.5,
+    "epoch_15": 0.0,
+    "monotonic": true,
+    "do_not_invent_stronger_absolute_weights": true
+  },
+  "class_balanced_anchor_formula": {
+    "id": "EDITOR009_POS_NEG_EQUAL_MEAN",
+    "description": "Keep producing per-window logit/route terms; replace reduction with equal average of positive-window mean and negative-window mean so benign count cannot dominate.",
+    "formula": "L_bal = 0.5 * mean(term | y=1) + 0.5 * mean(term | y=0) when both classes present in the batch; otherwise the producing mean over the present class.",
+    "does_not_alter_supervised_WBCE_unless_mechanically_required": true
+  },
+  "selective_anchoring_rule": {
+    "id": "EDITOR009_TEACHER_CORRECT_FROZEN_THRESHOLD",
+    "status": "EXECUTE_WITH_FROZEN_PRODUCING_DECISION_SEMANTICS",
+    "rule": "On TRAIN only, using frozen teacher logits and the frozen producing teacher validation-F1 threshold for that seed: teacher_pred = (sigmoid(teacher_logit) >= teacher_threshold); anchor_mask = (teacher_pred == y_train). Logit and route terms are averaged only over masked windows. Empty-mask batches skip the anchor terms.",
+    "uses_train_labels_only_for_selection": true,
+    "does_not_refit_threshold": true,
+    "not_an_invented_class_rule": "Reuses the producing inference threshold already frozen per teacher seed."
+  },
+  "residual_odst_definition": {
+    "id": "EDITOR009_R7_R8_R9_RESIDUAL",
+    "equation": "final_logit = attention_linear_logit + odst_residual_logit",
+    "initial_residual": "ODST leaf_responses initialised at zeros so odst_residual_logit starts at 0; initial prediction equals the frozen attention-linear logit.",
+    "r7": "Load frozen attention-linear encoder+attention+linear; freeze encoder+attention+linear; train ODST residual only.",
+    "r8": "Execute if R7 improves validation PR-AUC or shows clear training headroom without catastrophic overfit; unfreeze encoder+attention+linear under existing LR discipline; no teacher anchoring.",
+    "r9": "Execute only if (R7 or R8 shows predictive headroom) AND (R3/R4 indicates annealed anchoring preferable to constant C5 anchoring)."
+  },
+  "r10_route_matching_rule": {
+    "id": "EDITOR009_DETERMINISTIC_TREE_ASSIGNMENT",
+    "execute_only_if": [
+      "ROUTE_INDEX_IDENTITY_ASSUMED = YES",
+      "RAW_INDEX_CORRESPONDENCE_IS_STRUCTURALLY_INVALID_UNDER_RANDOM_INIT = SUPPORTED"
+    ],
+    "assignment": "Hungarian minimisation of mean-squared teacher-vs-student per-tree output difference on a frozen TRAIN diagnostic subset (seed=42, first 4096 TRAIN windows after the producing shuffle seed). Assignment computed once at initialisation and frozen for the run. Layer-wise independent (8 trees per Dense layer).",
+    "train_data_only": true,
+    "not_automatically_the_main_model": true
+  },
+  "historical_reuse_policy": {
+    "B0_C2": "Reuse frozen C2 checkpoints/metrics if SHA-256 matches EDITOR-006A allow-list; do not retrain unless identity mismatch.",
+    "B1_C5_original_paper": "Reuse frozen C5_original_paper checkpoints/metrics if SHA-256 matches EDITOR-006A allow-list. NEVER use ablation-retrained C5.",
+    "R1_logit_only": "Historical C3 is the exact authorised condition; reuse frozen C3 seed-42 (and full seeds if promoted) when checkpoint hashes are recorded.",
+    "R2_route_only": "Historical C4 is the exact authorised condition; reuse analogously.",
+    "random_init_anchoring": "Historical C6 is the authorised random-init + anchoring condition; reuse for collapse forensics; do not retrain unless saved evidence is insufficient for required diagnostics.",
+    "new_training_required": ["R3", "R4", "R5", "R6", "R7", "R8_conditional", "R9_conditional", "R10_conditional"]
+  },
+  "authorised_candidates": {
+    "B0": {
+      "name": "C2 reproduction",
+      "init": "teacher",
+      "task_loss": true,
+      "lambda_logit": 0.0,
+      "lambda_route": 0.0,
+      "purpose": "current comparator"
+    },
+    "B1": {
+      "name": "Current C5_original_paper reproduction",
+      "init": "teacher",
+      "task_loss": true,
+      "lambda_logit": 0.5,
+      "lambda_route": 0.5,
+      "purpose": "exact present method; identity is C5_original_paper not ablation C5"
+    },
+    "R1": {
+      "name": "Logit anchoring only",
+      "init": "teacher",
+      "task_loss": true,
+      "lambda_logit": 0.5,
+      "lambda_route": 0.0,
+      "purpose": "isolate whether route anchoring suppresses predictive improvement",
+      "historical_equivalent": "C3"
+    },
+    "R2": {
+      "name": "Route anchoring only",
+      "init": "teacher",
+      "task_loss": true,
+      "lambda_logit": 0.0,
+      "lambda_route": 0.5,
+      "purpose": "isolate route contribution",
+      "historical_equivalent": "C4"
+    },
+    "R3": {
+      "name": "Annealed anchoring",
+      "init": "teacher",
+      "task_loss": true,
+      "schedule": "EDITOR009_LINEAR_EPOCH_DECAY_TO_ZERO for both logit and route",
+      "purpose": "stabilise early; permit supervised departure late"
+    },
+    "R4": {
+      "name": "Annealed logit only",
+      "init": "teacher",
+      "task_loss": true,
+      "logit_schedule": "EDITOR009_LINEAR_EPOCH_DECAY_TO_ZERO",
+      "lambda_route": 0.0,
+      "purpose": "separate beneficial teacher stabilisation from route constraint"
+    },
+    "R5": {
+      "name": "Teacher-correct selective anchoring",
+      "init": "teacher",
+      "task_loss": true,
+      "lambda_logit": 0.5,
+      "lambda_route": 0.5,
+      "selection": "EDITOR009_TEACHER_CORRECT_FROZEN_THRESHOLD",
+      "purpose": "allow the student more freedom where the teacher is wrong"
+    },
+    "R6": {
+      "name": "Class-balanced anchoring",
+      "init": "teacher",
+      "task_loss": true,
+      "lambda_logit": 0.5,
+      "lambda_route": 0.5,
+      "reduction": "EDITOR009_POS_NEG_EQUAL_MEAN",
+      "purpose": "test whether severe imbalance makes anchoring a benign-preservation penalty"
+    },
+    "R7": {
+      "name": "Residual ODST head-only",
+      "init": "frozen attention-linear encoder+linear",
+      "encoder_trainable": false,
+      "odst_residual_trainable": true,
+      "teacher_anchoring": false,
+      "purpose": "is there nonlinear residual signal beyond the linear head?"
+    },
+    "R8": {
+      "name": "Residual ODST end-to-end",
+      "conditional": "R7 improves validation PR-AUC or exhibits clear training headroom without catastrophic overfit",
+      "teacher_anchoring": false
+    },
+    "R9": {
+      "name": "Residual ODST + annealed teacher anchoring",
+      "conditional": "(R7 or R8 headroom) AND (R3/R4 annealed preferable to constant C5)"
+    },
+    "R10": {
+      "name": "Correspondence-aware random-init anchoring",
+      "conditional": "ROUTE_INDEX_IDENTITY_ASSUMED=YES AND RAW_INDEX_CORRESPONDENCE_IS_STRUCTURALLY_INVALID_UNDER_RANDOM_INIT=SUPPORTED",
+      "init": "random",
+      "lambda_logit": 0.5,
+      "lambda_route": 0.5,
+      "route_assignment": "EDITOR009_DETERMINISTIC_TREE_ASSIGNMENT"
+    }
+  },
+  "hard_blocks": [
+    "r5.2 TEST access risk",
+    "historical frozen artefact modification",
+    "checkpoint identity ambiguity",
+    "input hash mismatch affecting scientific identity",
+    "training code cannot reproduce C2/C5 semantics",
+    "data corruption",
+    "branch/history corruption"
+  ],
+  "producing_source_pin": {
+    "architecture": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\prototype_v3_node\\architecture.py",
+    "architecture_sha256": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+    "odst": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\prototype_v3_node\\odst.py",
+    "odst_sha256": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+    "note": "Paper-support copies of architecture.py/odst.py do not match producing hashes and must not be used to construct models."
+  }
+}

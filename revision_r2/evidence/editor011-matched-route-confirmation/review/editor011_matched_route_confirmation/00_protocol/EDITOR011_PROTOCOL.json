@@ -1,0 +1,122 @@
+{
+  "task_id": "EDITOR-011",
+  "campaign": "EDITOR-011 MATCHED OPTIMISED ROUTE-ANCHORING CONFIRMATION",
+  "manuscript": "Teacher-Anchored Differentiable Sequence–Ensemble Learning for Explainable Insider Threat Detection",
+  "status": "PHASE0_FROZEN_BEFORE_TRAINING",
+  "frozen_before_first_training_result": true,
+  "scientific_question": "After correcting the ODST configuration, does route-only teacher anchoring provide reproducible predictive value beyond matched teacher initialisation alone?",
+  "primary_comparison": "R2-OPT versus C2-OPT",
+  "primary_metric": "PR_AUC",
+  "primary_partition": "CERT r5.2 VALIDATION",
+  "authorised_partitions": ["CERT r5.2 TRAIN", "CERT r5.2 VALIDATION"],
+  "TEST_ACCESS": "PROHIBITED",
+  "R51_EXECUTION": "PROHIBITED",
+  "R62_EXECUTION": "PROHIBITED",
+  "no_new_search": true,
+  "no_GroupDRO": true,
+  "no_CORAL": true,
+  "no_target_adaptation": true,
+  "SEEDS": [42, 52, 62],
+  "base_commit": "cde793de9135c8d4f6491d204f586ce8e00c3e0d",
+  "worktree": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011",
+  "branch": "editor011-matched-route-confirmation",
+  "parallel_isolation": {
+    "EDITOR009_WORKTREE_TOUCHED": false,
+    "EDITOR010_WORKTREE_TOUCHED": false,
+    "merge_tonight": false
+  },
+  "authorised_new_conditions": {
+    "T-OPT": {
+      "name": "optimised matched teacher",
+      "architecture": "Bi-LSTM -> temporal attention -> ODST-046",
+      "init": "matching-seed producing attention-linear encoder+attention+linear; ODST data-aware initialised",
+      "trainable": "ODST head only",
+      "loss": "L_task",
+      "lambda_logit": 0.0,
+      "lambda_route": 0.0,
+      "student_anchoring": false
+    },
+    "C2-OPT": {
+      "name": "matched teacher-initialisation-only student",
+      "init": "exact same-seed T-OPT checkpoint bytes",
+      "loss": "L_task",
+      "lambda_logit": 0.0,
+      "lambda_route": 0.0
+    },
+    "R2-OPT": {
+      "name": "matched repaired route-anchored student",
+      "init": "exact same-seed T-OPT checkpoint bytes as C2-OPT",
+      "loss": "L_task + 0.5 * L_route",
+      "lambda_logit": 0.0,
+      "lambda_route": 0.5,
+      "methodological_difference_vs_C2_OPT": "route-anchor term only"
+    }
+  },
+  "historical_references_readonly": [
+    "Original Teacher",
+    "Original C2",
+    "Original C5",
+    "Attention-linear",
+    "EDITOR009 R2",
+    "EDITOR010 P1",
+    "EDITOR010 P4_ET1"
+  ],
+  "ET1_identity": "ODST-046 + equal-weight ensemble logit distillation + no route anchoring",
+  "ET1_is_not_route_anchoring": true,
+  "R2_OPT_is_not_historical_C5": true,
+  "paired_start_rule": {
+    "C2_start_checkpoint_SHA256": "must equal T_OPT_checkpoint_SHA256",
+    "R2_start_checkpoint_SHA256": "must equal T_OPT_checkpoint_SHA256",
+    "shared": [
+      "architecture",
+      "initial parameters",
+      "scaler",
+      "data split",
+      "seed",
+      "optimizer hyperparameters",
+      "epoch / early-stop semantics",
+      "batch ordering where deterministic infrastructure permits"
+    ]
+  },
+  "bootstrap": {
+    "n_resamples": 2000,
+    "seed": 42,
+    "sampling_unit": "validation user",
+    "primary_statistic": "delta_PR_AUC R2-OPT minus C2-OPT",
+    "secondary_statistic": "delta_F1 R2-OPT minus C2-OPT",
+    "windows_not_independent": true,
+    "if_mapping_unproven": "USER_CLUSTER_BOOTSTRAP_STATUS = UNAVAILABLE_PROVENANCE_INSUFFICIENT"
+  },
+  "confirmation_gates": {
+    "STRONG_ROUTE_ANCHOR_CONFIRMATION": "mean PR-AUC(R2-OPT) > mean PR-AUC(C2-OPT) AND positive delta on 3/3 seeds AND paired user-cluster 95% CI lower bound > 0",
+    "CONSISTENT_ROUTE_ANCHOR_CONFIRMATION": "mean PR-AUC(R2-OPT) > mean PR-AUC(C2-OPT) AND positive delta on 3/3 seeds AND (CI includes 0 OR CI unavailable)",
+    "MIXED_ROUTE_ANCHOR_EFFECT": "mean delta > 0 but fewer than 3/3 seeds positive",
+    "NO_ROUTE_ANCHOR_GAIN": "mean delta <= 0 or materially inconsistent"
+  },
+  "paper_rescue_outcomes": [
+    "MATCHED_ROUTE_ANCHOR_RESCUE_CONFIRMED_STRONG",
+    "MATCHED_ROUTE_ANCHOR_RESCUE_CONFIRMED_CONSISTENT",
+    "MATCHED_ROUTE_ANCHOR_RESCUE_MIXED",
+    "MATCHED_ROUTE_ANCHOR_RESCUE_FAILED",
+    "MECHANICAL_COMPARISON_INVALID"
+  ],
+  "hard_blocks": [
+    "r5.2 TEST access risk",
+    "ODST-046 identity mismatch",
+    "R2 route-loss identity mismatch",
+    "teacher/student architecture mismatch",
+    "paired-start hashes differ",
+    "route tensor incompatibility",
+    "historical frozen artefact modification",
+    "data corruption",
+    "branch/worktree corruption"
+  ],
+  "poor_metric_is_not_a_hard_block": true,
+  "do_not_rewrite": [
+    "review/editor006*",
+    "review/editor007*",
+    "review/editor008*",
+    "review/editor009*",
+    "review/editor010*"
+  ]
+}

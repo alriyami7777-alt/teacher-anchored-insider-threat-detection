@@ -1,0 +1,18 @@
+{
+  "R2_OPT_route_MAE_lt_C2": true,
+  "R2_OPT_route_KL_lt_C2": true,
+  "R2_OPT_hard_route_agreement_gt_C2": true,
+  "R2_OPT_dominant_leaf_agreement_gt_C2": true,
+  "means": {
+    "R2_OPT_route_MAE": 0.001272262427071609,
+    "C2_OPT_route_MAE": 0.002504093636292667,
+    "R2_OPT_route_KL": 0.0019614517039047608,
+    "C2_OPT_route_KL": 0.012854169015451833,
+    "R2_OPT_hard_route_agreement": 0.9988551432291667,
+    "C2_OPT_hard_route_agreement": 0.9975997721354167,
+    "R2_OPT_dominant_leaf_agreement": 0.995826171875,
+    "C2_OPT_dominant_leaf_agreement": 0.9920084635416666
+  },
+  "intended_mechanism": "route fidelity without logit-rank over-constraint",
+  "lambda_logit": 0.0
+}

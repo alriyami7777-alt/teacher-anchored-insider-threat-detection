@@ -1,0 +1,41 @@
+{
+  "candidates": {
+    "SEQ0": {
+      "rho": 0.0,
+      "robustness": false,
+      "simplicity_rank": 0
+    },
+    "SRP025": {
+      "rho": 0.025,
+      "robustness": true,
+      "simplicity_rank": 1
+    },
+    "SRP050": {
+      "rho": 0.05,
+      "robustness": true,
+      "simplicity_rank": 2
+    },
+    "SRP100": {
+      "rho": 0.1,
+      "robustness": true,
+      "simplicity_rank": 3
+    }
+  },
+  "cfp0_inner_checkpoints": {
+    "42": {
+      "logical_path": "outputs/editor021_clean_function_representation_robustness/CFP0/seed42/best.pt",
+      "sha256": "af47cebd144c7f3c2aac2c71697f726242b7fbb17f9d6fc1126449096910a438"
+    },
+    "52": {
+      "logical_path": "outputs/editor021_clean_function_representation_robustness/CFP0/seed52/best.pt",
+      "sha256": "3a06349cdb872840a51b87711e5b49f57498e499780d4930738d3c4a6ad8fa25"
+    },
+    "62": {
+      "logical_path": "outputs/editor021_clean_function_representation_robustness/CFP0/seed62/best.pt",
+      "sha256": "ce153b2b379195b40aa96984cc0c3d9fb96bb86bbf3f5d6cbf0b9fa5b1218a5c"
+    }
+  },
+  "STAGE2_EPOCHS": 1,
+  "FRESH_STAGE2_OPTIMISER": true,
+  "OPTIMISER_STATE_CONTINUED_FROM_CFP0": false
+}

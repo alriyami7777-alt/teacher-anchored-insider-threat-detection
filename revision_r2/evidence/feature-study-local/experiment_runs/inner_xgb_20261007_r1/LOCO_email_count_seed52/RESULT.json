@@ -1,0 +1,22 @@
+{
+  "average_precision": 0.7550569216613965,
+  "roc_auc": 0.9601115440510208,
+  "prevalence": 0.009484375,
+  "ap_minus_prevalence": 0.7455725466613965,
+  "precision": 0.8059273422562141,
+  "recall": 0.6943986820428336,
+  "f1": 0.7460176991150442,
+  "tp": 843,
+  "fp": 203,
+  "tn": 126583,
+  "fn": 371,
+  "alerts_per_1000": 8.171875,
+  "threshold": 0.4846987724304199,
+  "windows": 128000,
+  "positives": 1214,
+  "schema": "LOCO_email_count",
+  "seed": 52,
+  "evidence_role": "NEW_INNER_SELECTION_EXPLORATORY_NOT_IEEE_ACCESS_OR_CONFIRMATION",
+  "threshold_role": "INNER_SELECT_CALIBRATED_DEVELOPMENT",
+  "identity_sha256": "db71a4881102c7ee832622be56d2aaef30fe2345abf7ae5b48641c8226fc16df"
+}

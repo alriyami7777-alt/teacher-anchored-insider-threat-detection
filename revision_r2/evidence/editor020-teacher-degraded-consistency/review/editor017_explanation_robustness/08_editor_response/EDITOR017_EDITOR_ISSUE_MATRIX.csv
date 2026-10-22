@@ -1,0 +1,9 @@
+issue,frozen_status,editor017_status,evidence
+teacher_guidance_vs_initialisation_clean,SUPPORTED_STRONG,PRESERVED,clean PR-AUC F10/TA2 > C2-OPT; no mechanical contradiction
+route_anchor_incremental_predictive_effect,NOT_SUPPORTED,PRESERVED,clean TA2 vs F10 remains a small non-promoted predictive increment
+teacher_guidance_degraded_input_value,UNTESTED_BEFORE_EDITOR017,CONSISTENT,source_effect=0.02289647531869976; noise_effect=0.00918397192866005
+route_anchor_structural_robustness,UNTESTED_BEFORE_EDITOR017,SUPPORTED,source_route_deg TA2=0.002488546958812719 F10=0.0028940400125003546; noise_route_deg TA2=0.0044746094137074885 F10=0.005401670057847702
+odst_degraded_input_advantage_over_linear,UNTESTED_BEFORE_EDITOR017,CONSISTENT,source_effect=0.012392230876775934; noise_effect=0.009766851264086274
+local_directional_tree_faithfulness,SUPPORTED_FROM_EDITOR015,SUPPORTED,TA2_positive_seeds=3/3 F10_positive_seeds=3/3
+global_topk_pr_auc_faithfulness,NOT_SUPPORTED,NOT_SUPPORTED,historical negative result preserved; not retested as a promotion claim
+tree_explanation_degraded_input_stability,UNTESTED_BEFORE_EDITOR017,SUPPORTED,TA2_vs_F10_effect=0.018135801925027145

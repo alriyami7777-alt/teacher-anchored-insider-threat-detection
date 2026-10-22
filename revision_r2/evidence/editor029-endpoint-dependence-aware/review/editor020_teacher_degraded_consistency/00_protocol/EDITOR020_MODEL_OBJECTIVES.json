@@ -1,0 +1,175 @@
+{
+  "architectures": {
+    "L1": {
+      "family": "linear",
+      "identity": "teacher-guided attention-linear architecture",
+      "teacher_guidance": true,
+      "route_anchor": false,
+      "route_clean": false,
+      "objectives": [
+        "R0",
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "checkpoints": {
+        "42": {
+          "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed42\\best.pt",
+          "sha256": "513e272063250aa209efa2c42b490cc44316c7979fa6b2be5dd8cce4592d1ab2",
+          "validation_PR_AUC": 0.9368690603400606,
+          "val_logits": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed42\\val_logits.npy"
+        },
+        "52": {
+          "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed52\\best.pt",
+          "sha256": "a503f6705955da221bdbd1921034e9102b90db6acb5187114276ccaeb474e1c4",
+          "validation_PR_AUC": 0.9360656904165168,
+          "val_logits": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed52\\val_logits.npy"
+        },
+        "62": {
+          "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed62\\best.pt",
+          "sha256": "60d5c43692a17ba6971c8d23f74048ac3c4fe0bd1b18889eeb21bbab7bf3d3e9",
+          "validation_PR_AUC": 0.9437081231855656,
+          "val_logits": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed62\\val_logits.npy"
+        }
+      }
+    },
+    "F10": {
+      "family": "odst",
+      "identity": "ODST-046 ensemble teacher guidance route anchor OFF",
+      "teacher_guidance": true,
+      "route_anchor": false,
+      "route_clean": false,
+      "objectives": [
+        "R0",
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "checkpoints": {
+        "42": {
+          "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F10_DOPT\\seed42\\best_student.pt",
+          "sha256": "ea8cd41a1ae3f845719956fd7a49230fa82807ffac87841be5f5ab95c64ac0c2",
+          "validation_PR_AUC": 0.9441007472746944,
+          "val_logits": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F10_DOPT\\seed42\\val_logits.npy"
+        },
+        "52": {
+          "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F10_DOPT\\seed52\\best_student.pt",
+          "sha256": "829135230c5629f0b11161e11d76eba7a15e65bf9d03b5a55ffa297a93ddf959",
+          "validation_PR_AUC": 0.9361330144482553,
+          "val_logits": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F10_DOPT\\seed52\\val_logits.npy"
+        },
+        "62": {
+          "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F10_DOPT\\seed62\\best_student.pt",
+          "sha256": "06313d6f2602de51f8dd6e15e1d1292864fd8cbd158f33977fa42c8a47036aee",
+          "validation_PR_AUC": 0.9475508279790588,
+          "val_logits": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F10_DOPT\\seed62\\val_logits.npy"
+        }
+      }
+    },
+    "TA2": {
+      "family": "odst",
+      "identity": "ODST-046 ensemble teacher guidance route anchor ON",
+      "teacher_guidance": true,
+      "route_anchor": true,
+      "route_clean": true,
+      "objectives": [
+        "R0",
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "checkpoints": {
+        "42": {
+          "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed42\\best_student.pt",
+          "sha256": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8",
+          "validation_PR_AUC": 0.9454098053584642,
+          "val_logits": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed42\\val_logits.npy"
+        },
+        "52": {
+          "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed52\\best_student.pt",
+          "sha256": "7613ba559bcf55827d04129066eb595b677994494609646f8b2463308ed5edb4",
+          "validation_PR_AUC": 0.9337067425514769,
+          "val_logits": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed52\\val_logits.npy"
+        },
+        "62": {
+          "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed62\\best_student.pt",
+          "sha256": "904003dca219435464476cf36abedb11ee4e2f7a11ff09caa3791d685b8f644d",
+          "validation_PR_AUC": 0.9494100170861509,
+          "val_logits": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed62\\val_logits.npy"
+        }
+      }
+    }
+  },
+  "objectives": {
+    "R0": {
+      "name": "CLEAN",
+      "task_clean": true,
+      "task_degraded": false,
+      "teacher_clean": true,
+      "teacher_degraded": false,
+      "route_robust": false,
+      "purpose": "existing clean training; no degraded training",
+      "simplicity_rank": 0
+    },
+    "R1": {
+      "name": "DEGRADED_SUPERVISED",
+      "task_clean": true,
+      "task_degraded": true,
+      "teacher_clean": false,
+      "teacher_degraded": false,
+      "route_robust": false,
+      "purpose": "ordinary robustness-oriented data augmentation",
+      "simplicity_rank": 1
+    },
+    "R2": {
+      "name": "CLEAN_TEACHER_CONSISTENCY",
+      "task_clean": true,
+      "task_degraded": false,
+      "teacher_clean": false,
+      "teacher_degraded": true,
+      "route_robust": false,
+      "purpose": "isolate clean-to-degraded teacher transfer",
+      "simplicity_rank": 2
+    },
+    "R3": {
+      "name": "COMBINED",
+      "task_clean": true,
+      "task_degraded": true,
+      "teacher_clean": false,
+      "teacher_degraded": true,
+      "route_robust": false,
+      "purpose": "principal robustness candidate",
+      "simplicity_rank": 3
+    },
+    "R4": {
+      "name": "COMBINED_ROBUST_ROUTE_ANCHOR",
+      "task_clean": true,
+      "task_degraded": true,
+      "teacher_clean": false,
+      "teacher_degraded": true,
+      "route_robust": true,
+      "purpose": "R3 plus robust route consistency; TA2 only",
+      "simplicity_rank": 4
+    }
+  },
+  "matched_fairness": {
+    "critical_comparison": "robust TA2 versus robust L1 under the matched robustness objective",
+    "pairs": [
+      "L1-R1 vs TA2-R1",
+      "L1-R2 vs F10-R2 / TA2-R2",
+      "L1-R3 vs F10-R3 / TA2-R3",
+      "TA2-R4 vs TA2-R3"
+    ],
+    "R1_and_R3_differ_only_by_teacher_consistency": true,
+    "R3_and_R4_differ_only_by_robust_route_consistency": true,
+    "matched_L1_and_TA2_use_same_corruption_sampler": true,
+    "TA2_clean_route_is_architecture_identity": true,
+    "R0_is_existing_clean_training": true
+  },
+  "lambda_teacher": 0.5,
+  "lambda_route": 0.5,
+  "SAMPLER_SEED": 42,
+  "P_source": 0.5,
+  "P_noise": 0.5
+}

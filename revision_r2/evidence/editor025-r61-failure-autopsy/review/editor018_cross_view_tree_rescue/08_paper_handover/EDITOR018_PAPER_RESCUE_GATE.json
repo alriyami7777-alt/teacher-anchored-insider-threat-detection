@@ -1,0 +1,9 @@
+{
+  "BEST_CURRENT_PAPER_MODEL": "TA2",
+  "CROSS_VIEW_ODST_VALUE": "NO_CROSS_VIEW_ODST_VALUE",
+  "CROSS_VIEW_TEACHER_GUIDANCE_EFFECT": "STRONG",
+  "WHY_ODST": "Do not claim ODST-specific value. Adding the 40-summary view can help (inner MLP40-D exceeded L1), but ODST40/IW-ODST40 did not beat the matched MLP40 branch supplied with the same behavioural-summary information under the frozen promotion gate.",
+  "WHY_TEACHER_GUIDANCE": "Teacher residual improved every 40-view family on INNER_SELECT, including ODST40 and IW-ODST40, but that is not ODST-specific value.",
+  "WHY_NOT_ATTENTION_LINEAR_ONLY": "A 40-summary MLP correction beat L1 on INNER_SELECT, but the tree did not beat that matched non-tree control, so the paper should not replace attention-linear/TA2 with a cross-view ODST.",
+  "NEXT_RECOMMENDED_ACTION": "Retain TA2 as BEST_CURRENT_PAPER_MODEL. Do not claim ODST value from adding the 40-summary representation. If a tabular correction is discussed, it is MLP40/Linear40, not ODST-specific."
+}

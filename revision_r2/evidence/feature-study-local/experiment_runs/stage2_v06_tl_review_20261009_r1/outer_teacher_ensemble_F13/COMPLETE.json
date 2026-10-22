@@ -1,0 +1,39 @@
+{
+  "binding": {
+    "data": {
+      "schema": "F13",
+      "partition": "outer",
+      "representation_sha256": "738e13205c9b3376dbb507e0b698838c2a0bd6c344f099e0802b59bca634fbe7",
+      "columns": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "preprocessor_sha256": "dd3c7b408f67facd72680790ec0338dc2db17b11154f92df6340994a03a0042d",
+      "train_labels_sha256": "ac52cdae8f762f303a726c57bf753fe4125dab12f87b3eb23d29eac7cf5678bb",
+      "eval_labels_sha256": "91f8c9065b53cc1835e9a10541e916d8c8ec4d0b0b98b71fa30f0e2748f2ba39"
+    },
+    "manifest_sha256": "55d25c09e52b70161fec902034776659eff2370219c76e07321cfea4ecdc32f9",
+    "teachers": [
+      "f5a225f2b44ac108a240cd26b3685161313ed3af6dfc798f210e45dd0800c416",
+      "92fa868c737c8ac71ff617caa0bc9088bd15c89cc768a3780f6496cf29de4c6a",
+      "3b3e8e0d1ed8741dd3ce98a93658038fb3b05d44172869f5814a1df5373e2a1d"
+    ]
+  },
+  "artifacts": {
+    "TRAIN_LOGITS.npy": "e1bf58dfa445a3d580045297ae5d482609215fe12ca0f0fe40e382565143b4a8",
+    "EVAL_LOGITS.npy": "d00da80d0918bb34a972ac46378b00ee2e47516710ce30268ec9154ea98fff32",
+    "RESULT.json": "2cb73d3ac65a1658ce532e8884af9ee0141c512e637ad2a361486ff74316e9ce"
+  },
+  "new_fits": 0
+}

@@ -1,0 +1,75 @@
+{
+  "split": "inner_select",
+  "results": {
+    "CFP0_START": {
+      "42": {
+        "clean_logit_mse_to_starting_ta2": 0.0,
+        "clean_logit_mae_to_starting_ta2": 0.0,
+        "clean_student_reference_repr_cosine": 1.0,
+        "teacher_logit_deviation": 0.17890487633894372,
+        "logit_pearson": 0.9797637785682956,
+        "route_MAE": 0.002765956204778573,
+        "route_KL": 0.0037443758707926635,
+        "hard_route_agreement": 0.997822509765625,
+        "dominant_leaf_agreement": 0.992365234375
+      },
+      "52": {
+        "clean_logit_mse_to_starting_ta2": 0.0,
+        "clean_logit_mae_to_starting_ta2": 0.0,
+        "clean_student_reference_repr_cosine": 1.0,
+        "teacher_logit_deviation": 0.48715988413350714,
+        "logit_pearson": 0.969501480735925,
+        "route_MAE": 0.003719237704765004,
+        "route_KL": 0.006707598725465486,
+        "hard_route_agreement": 0.99686767578125,
+        "dominant_leaf_agreement": 0.9898720703125
+      },
+      "62": {
+        "clean_logit_mse_to_starting_ta2": 0.0,
+        "clean_logit_mae_to_starting_ta2": 0.0,
+        "clean_student_reference_repr_cosine": 1.0,
+        "teacher_logit_deviation": 0.276550698309904,
+        "logit_pearson": 0.9733966434509737,
+        "route_MAE": 0.0026831400511016694,
+        "route_KL": 0.0038696513747019513,
+        "hard_route_agreement": 0.998290771484375,
+        "dominant_leaf_agreement": 0.9938173828125
+      }
+    },
+    "SEQ0": {
+      "42": {
+        "clean_logit_mse_to_starting_ta2": 0.0010311806108802557,
+        "clean_logit_mae_to_starting_ta2": 0.005592596251517534,
+        "clean_student_reference_repr_cosine": 0.9997981956150426,
+        "teacher_logit_deviation": 0.17887995903384582,
+        "logit_pearson": 0.9808681482880419,
+        "route_MAE": 0.0026873618003372076,
+        "route_KL": 0.003498476495689258,
+        "hard_route_agreement": 0.99793212890625,
+        "dominant_leaf_agreement": 0.992658203125
+      },
+      "52": {
+        "clean_logit_mse_to_starting_ta2": 0.00045483047142624855,
+        "clean_logit_mae_to_starting_ta2": 0.002989240689203143,
+        "clean_student_reference_repr_cosine": 0.9998935790208897,
+        "teacher_logit_deviation": 0.48907510688710315,
+        "logit_pearson": 0.9673143292068671,
+        "route_MAE": 0.003807231983515247,
+        "route_KL": 0.0069617846735841905,
+        "hard_route_agreement": 0.99677978515625,
+        "dominant_leaf_agreement": 0.9895966796875
+      },
+      "62": {
+        "clean_logit_mse_to_starting_ta2": 0.0003155142767354846,
+        "clean_logit_mae_to_starting_ta2": 0.0037353867664933205,
+        "clean_student_reference_repr_cosine": 0.9998566709516687,
+        "teacher_logit_deviation": 0.2766872268041479,
+        "logit_pearson": 0.972869355050911,
+        "route_MAE": 0.00269669120165915,
+        "route_KL": 0.0038785572319235476,
+        "hard_route_agreement": 0.998315673828125,
+        "dominant_leaf_agreement": 0.99391015625
+      }
+    }
+  }
+}

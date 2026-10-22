@@ -1,0 +1,68 @@
+{
+  "EDITOR012_RESULTS_COMMIT": "4bcf522a502ed98e5dd393a80bd9da7fffd51964",
+  "EDITOR013_RESULTS_COMMIT": "09c4bb97b143810147feef08f31a8d8d042a6726",
+  "EDITOR014_RESULTS_COMMIT": "c3343462dc3b35d20907da6ad017f5f853852f84",
+  "EDITOR015_RESULTS_COMMIT": "d8e1d04b8c199f56cab9956f62c16cd4301f0bac",
+  "EDITOR016_RESULTS_COMMIT": "07b90867dc83ac42a4f3dce538ee7eca0cedb230",
+  "EDITOR017_RESULTS_COMMIT": "c75321a627ecc7539d1a759764d7ce395895179a",
+  "BASE_COMMIT": "c75321a627ecc7539d1a759764d7ce395895179a",
+  "historical_packets": "READ_ONLY",
+  "L1": {
+    "42": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed42\\best.pt",
+      "sha256": "513e272063250aa209efa2c42b490cc44316c7979fa6b2be5dd8cce4592d1ab2"
+    },
+    "52": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed52\\best.pt",
+      "sha256": "a503f6705955da221bdbd1921034e9102b90db6acb5187114276ccaeb474e1c4"
+    },
+    "62": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed62\\best.pt",
+      "sha256": "60d5c43692a17ba6971c8d23f74048ac3c4fe0bd1b18889eeb21bbab7bf3d3e9"
+    }
+  },
+  "TA2": {
+    "42": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed42\\best_student.pt",
+      "sha256": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8"
+    },
+    "52": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed52\\best_student.pt",
+      "sha256": "7613ba559bcf55827d04129066eb595b677994494609646f8b2463308ed5edb4"
+    },
+    "62": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed62\\best_student.pt",
+      "sha256": "904003dca219435464476cf36abedb11ee4e2f7a11ff09caa3791d685b8f644d"
+    }
+  },
+  "TOPT": {
+    "42": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed42\\best_teacher.pt",
+      "sha256": "b007f48085ef42b146b22a0d5ace5bb9c8380874405622281a5903831599fb20"
+    },
+    "52": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed52\\best_teacher.pt",
+      "sha256": "5b4c17e15a8f49ba8cf240c0092b893e6e665232967fafce8eb13e0650227f2a"
+    },
+    "62": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed62\\best_teacher.pt",
+      "sha256": "24bf2efa2343e4aaf5f32871c0a9bffb3d511f345375ce754e9f081f82eac02c"
+    }
+  },
+  "ensemble_cache": {
+    "train_ens": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\train_ens_logit.npy",
+    "train_42": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\train_logit42.npy",
+    "train_52": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\train_logit52.npy",
+    "train_62": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\train_logit62.npy",
+    "val_ens": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\val_ens_logit.npy",
+    "val_42": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\val_logit42.npy",
+    "val_52": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\val_logit52.npy",
+    "val_62": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\val_logit62.npy"
+  },
+  "producing_pins": {
+    "architecture": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+    "odst": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+    "sequence_ensemble": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475"
+  },
+  "xgboost40_rf40": "diagnostic_context_only_not_selection_controls"
+}

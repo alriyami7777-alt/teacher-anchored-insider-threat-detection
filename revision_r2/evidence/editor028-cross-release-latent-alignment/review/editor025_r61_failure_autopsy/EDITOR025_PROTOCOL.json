@@ -1,0 +1,186 @@
+{
+  "task_id": "EDITOR-025",
+  "task_name": "CERT r6.1 CROSS-VERSION FAILURE AUTOPSY",
+  "experiment_type": "READ-ONLY DIAGNOSTIC / ROOT-CAUSE ANALYSIS",
+  "model_training": "PROHIBITED",
+  "model_parameter_update": "PROHIBITED",
+  "result_status_at_start": "NEW_DIAGNOSTICS_UNSEEN",
+  "EDITOR024_RESULTS_COMMIT": "23794a721a2215957da02d513f7e0af473fde4e6",
+  "EDITOR024_RESULT_REMAINS_IMMUTABLE": "YES",
+  "R61_UNTOUCHED_STATUS_HISTORICAL_FOR_EDITOR024": "PRESERVED",
+  "R61_ELIGIBLE_AS_FUTURE_UNTOUCHED_TARGET": "NO",
+  "R61_ROLE_BEFORE": "PROSPECTIVELY_RESERVED_FINAL_CONFIRMATION_TARGET",
+  "R61_ROLE_FROM_EDITOR025": "DIAGNOSTIC_DEVELOPMENT_RELEASE",
+  "R61_CAN_BE_USED_FOR_EDITOR026_DEVELOPMENT": "YES",
+  "R61_CAN_BE_USED_AS_FINAL_UNTOUCHED_CONFIRMATION_AFTER_EDITOR025": "NO",
+  "internal_model_labels": {
+    "C2-OPT": "teacher-initialised task-only control",
+    "F10": "ensemble-guided ODST student without route anchoring",
+    "TA2": "final ensemble-guided, route-anchored ODST student",
+    "L1": "matched attention-linear reference",
+    "ODST": "Oblivious Differentiable Sparsemax Tree",
+    "F10_is_internal_factorial_identifier": true,
+    "TA2_numeral_has_no_formal_expansion": true
+  },
+  "models": [
+    "C2-OPT",
+    "F10",
+    "TA2",
+    "L1"
+  ],
+  "seeds": [
+    42,
+    52,
+    62
+  ],
+  "feature_order": [
+    "total_events",
+    "logon_count",
+    "device_count",
+    "file_count",
+    "email_count",
+    "http_count",
+    "active_duration_minutes",
+    "has_logon_activity",
+    "has_device_activity",
+    "has_file_activity",
+    "has_email_activity",
+    "has_http_activity",
+    "is_active_day"
+  ],
+  "count_features": [
+    "total_events",
+    "logon_count",
+    "device_count",
+    "file_count",
+    "email_count",
+    "http_count",
+    "active_duration_minutes"
+  ],
+  "binary_features": [
+    "has_logon_activity",
+    "has_device_activity",
+    "has_file_activity",
+    "has_email_activity",
+    "has_http_activity",
+    "is_active_day"
+  ],
+  "frozen_editor024_facts": {
+    "R61_COMPLETED_N": 1988000,
+    "R61_COMPLETED_POSITIVES": 190,
+    "R61_PREVALENCE": 9.557344064386318e-05,
+    "mean_pr_auc": {
+      "C2-OPT": 9.58548433287757e-05,
+      "F10": 9.391288112518778e-05,
+      "TA2": 9.445740146879832e-05,
+      "L1": 9.99715314772706e-05
+    },
+    "F10_TEACHER_RELATIVE_ROUTE_MAE": 0.013852491027299319,
+    "TA2_TEACHER_RELATIVE_ROUTE_MAE": 0.009477296424532945,
+    "R61_FINAL_TA2_RANKING_TRANSFER": "NOT_SUPPORTED",
+    "do_not_alter": true
+  },
+  "reuse_first": {
+    "editor024_bundle": "outputs/editor024_r61_final_confirmation/bundle/",
+    "editor024_raw_predictions": "outputs/editor024_r61_final_confirmation/raw_predictions/",
+    "raw_r61_logs": "stream only if label provenance cannot be resolved from answers and frozen bundle"
+  },
+  "phase_e_frozen_capture": {
+    "topk_multipliers": [
+      1,
+      5,
+      10
+    ],
+    "topk_fractions": [
+      0.001,
+      0.01
+    ]
+  },
+  "phase_g": {
+    "FALSE_POSITIVE_COHORT": 10000,
+    "REFERENCE_NEGATIVE_COHORT": 10000,
+    "reference_selection": "lowest SHA256(sequence_id)"
+  },
+  "phase_h": {
+    "negatives": 20000,
+    "negative_selection": "ascending SHA256(sequence_id)",
+    "score_dependent_sampling": false,
+    "head_swapping": "PROHIBITED"
+  },
+  "phase_i": {
+    "view_name": "R52_SUPPORT_CLIP",
+    "low_quantile": 0.005,
+    "high_quantile": 0.995,
+    "n_clip_levels": 1,
+    "clip_levels": [
+      "R52_SUPPORT_CLIP"
+    ],
+    "bounds_source": "R52_TRAIN",
+    "clip_before_frozen_r52_scaling": true,
+    "binary_indicators_unchanged": true,
+    "trainable_parameters": 0
+  },
+  "psi": {
+    "bins": "deciles determined only from r5.2 TRAIN",
+    "conventional_limited_max": 0.1,
+    "conventional_severe_min": 0.25
+  },
+  "covariate_shift_conventional": {
+    "MEAN_SHIFT_Z_MODERATE": 0.25,
+    "MEAN_SHIFT_Z_SEVERE": 0.5,
+    "OOS_RATE_MODERATE": 0.01,
+    "OOS_RATE_SEVERE": 0.05,
+    "BINARY_RATE_DIFF_MODERATE": 0.05,
+    "BINARY_RATE_DIFF_SEVERE": 0.1,
+    "PSI_LIMITED_MAX": 0.1,
+    "PSI_SEVERE_MIN": 0.25,
+    "post_hoc_threshold_search": false
+  },
+  "representation_ruling": {
+    "SUPPORTED_if_at_least_3_of_4_models_transfer_ratio_le": 0.25,
+    "or_target_separation_reverses_sign": true,
+    "NOT_SUPPORTED_if_at_least_3_of_4_models_transfer_ratio_gt": 0.5,
+    "and_directionally_positive": true,
+    "otherwise": "MIXED"
+  },
+  "head_failure_ruling": {
+    "SUPPORTED_only_if_representation_separation_gt": 0.5,
+    "of_r52_for_at_least_3_of_4_models_AND_output_ranking_collapses_near_prevalence": true
+  },
+  "root_cause_priority": [
+    "LABEL_PIPELINE_OR_GROUND_TRUTH",
+    "MIXED_LABEL_AND_REPRESENTATION",
+    "RELEASE_LEVEL_REPRESENTATION_SHIFT",
+    "PREDICTION_HEAD_NONPORTABILITY",
+    "MIXED_REPRESENTATION_AND_HEAD",
+    "UNRESOLVED"
+  ],
+  "remedy_families": [
+    "GROUND_TRUTH_AND_LABEL_PIPELINE_REPAIR",
+    "USER_RELATIVE_RELEASE_INVARIANT_REPRESENTATION",
+    "MULTI_RELEASE_REPRESENTATION_LEARNING",
+    "HEAD_PORTABILITY_REDESIGN",
+    "LABEL_REPAIR_THEN_REPRESENTATION_REDESIGN",
+    "NO_REMEDY_YET_ROOT_CAUSE_UNRESOLVED"
+  ],
+  "prohibitions": {
+    "TRAINING_EXECUTED": "NO",
+    "MODEL_PARAMETERS_UPDATED": "NO",
+    "R51_RERUN": "NO",
+    "R62_RERUN": "NO",
+    "TARGET_MEAN_ALIGNMENT": "NO",
+    "TARGET_VARIANCE_ALIGNMENT": "NO",
+    "QUANTILE_MAPPING": "NO",
+    "CORAL": "NO",
+    "DOMAIN_ADAPTATION": "NO",
+    "TARGET_NORMALISATION": "NO",
+    "TARGET_CALIBRATION": "NO",
+    "ADDITIONAL_CLIPPING_LEVELS": "NO",
+    "HEAD_SWAPPING": "NO",
+    "EDITOR024_REWRITE": "NO"
+  },
+  "scaler_sha256": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+  "review_rel": "review\\editor025_r61_failure_autopsy",
+  "written_at": "2026-08-18T10:23:00Z",
+  "new_diagnostic_calculations_authorised": false
+}

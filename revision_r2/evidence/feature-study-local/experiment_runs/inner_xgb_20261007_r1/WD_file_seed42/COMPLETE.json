@@ -1,0 +1,11 @@
+{
+  "identity_sha256": "8897849781e596be54cbe9a2773bb65e07753bf285b4a8f99def37521cdb2986",
+  "artifacts": {
+    "COST.json": "39cc529de53357f12aaf1ebd9caeb5b6b85d2cb02a804d867bd31021a434f701",
+    "MODEL.ubj": "c20dd3493574bc1454c9af5640744d34cf8f787224f007aed0a7a091e15563aa",
+    "NATIVE_XGBOOST_CONFIG.json": "514f55a0c88b26ace20b96a90732baf8695af75934c83d3d5c7c6166d8f0e1f9",
+    "PREDICTIONS_LOCAL.npz": "7b912268437233fa8248e339be5b4b513b7dd33d2dc17a4e3dd7c188be8856b1",
+    "RESULT.json": "57bfa5fc8cbfe35445b8afb1c5acd490cdcaa2b26efe0e3c8fee553f861abad7",
+    "RUN_IDENTITY.json": "ec5b5d5d7042834bc1efd7ea7aa2c60379011c80a109dfa54c7ddc40b3c7d939"
+  }
+}

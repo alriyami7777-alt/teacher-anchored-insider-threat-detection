@@ -1,0 +1,8 @@
+{
+  "peak_process_rss_bytes": 1729179648,
+  "sampling_seconds": 0.2,
+  "fit_seconds_including_inner_stopping_evaluation": 24.96899999999914,
+  "inference_seconds": 0.25,
+  "peak_torch_cuda_allocated_bytes": 343845376,
+  "gpu_peak_memory_measured": false
+}

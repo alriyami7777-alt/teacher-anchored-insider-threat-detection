@@ -1,0 +1,2 @@
+condition,seed,q,n,prevalence,L1_PR_AUC,L1_F1,system_PR_AUC,system_F1,reason
+,,,,,,,,,no specialist promoted; official routed-subset diagnostics not executed

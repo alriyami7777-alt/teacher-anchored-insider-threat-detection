@@ -1,0 +1,31 @@
+{
+  "NONLINEAR_HEADROOM": "PARTIALLY_SUPPORTED",
+  "CURRENT_ODST_CAPTURES_NONLINEAR_HEADROOM": "PARTIALLY",
+  "H-LIN_pr_auc": 0.9109793200442964,
+  "H-ODST_pr_auc": 0.8804225840691786,
+  "H-MLP_pr_auc": 0.9016584160033765,
+  "pairwise": {
+    "H-MLP_vs_H-LIN": {
+      "logit_correlation": 0.9570143818855286,
+      "rank_correlation": 0.9614661742522694,
+      "prediction_disagreement": 0.0005390625,
+      "positive_case_disagreement": 0.018121911037891267,
+      "error_overlap": 0.0024921875
+    },
+    "H-ODST_vs_H-LIN": {
+      "logit_correlation": 0.8717537522315979,
+      "rank_correlation": 0.9499312594380576,
+      "prediction_disagreement": 0.001046875,
+      "positive_case_disagreement": 0.05601317957166392,
+      "error_overlap": 0.0021015625
+    },
+    "H-MLP_vs_H-ODST": {
+      "logit_correlation": 0.7861181497573853,
+      "rank_correlation": 0.8840460782196703,
+      "prediction_disagreement": 0.0013515625,
+      "positive_case_disagreement": 0.057660626029654036,
+      "error_overlap": 0.0020703125
+    }
+  },
+  "margin": 0.01
+}

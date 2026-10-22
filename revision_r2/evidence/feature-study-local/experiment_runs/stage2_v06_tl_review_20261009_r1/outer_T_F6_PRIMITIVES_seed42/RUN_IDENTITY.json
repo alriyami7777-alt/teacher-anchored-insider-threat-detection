@@ -1,0 +1,33 @@
+{
+  "id": "outer_T_F6_PRIMITIVES_seed42",
+  "partition": "outer",
+  "condition": "T",
+  "schema": "F6_PRIMITIVES",
+  "seed": 42,
+  "data": {
+    "schema": "F6_PRIMITIVES",
+    "partition": "outer",
+    "representation_sha256": "fa70a1c703093196a981233579e9b35e858e4bc40a9770de6ef0c727108c0ce8",
+    "columns": [
+      "logon_count",
+      "device_count",
+      "file_count",
+      "email_count",
+      "http_count",
+      "active_duration_minutes"
+    ],
+    "preprocessor_sha256": "e457ad41bde10439adf74fde75a618f6c20e3ba59217a1027d0648f408dda4c8",
+    "train_labels_sha256": "ac52cdae8f762f303a726c57bf753fe4125dab12f87b3eb23d29eac7cf5678bb",
+    "eval_labels_sha256": "91f8c9065b53cc1835e9a10541e916d8c8ec4d0b0b98b71fa30f0e2748f2ba39"
+  },
+  "manifest_sha256": "55d25c09e52b70161fec902034776659eff2370219c76e07321cfea4ecdc32f9",
+  "construction_state_sha256": "e69d31b542ed0484dca20249e03342e763fd99819c37aa0883d66c3f574a3eca",
+  "starting_state_sha256": "3bac3e9d37273423e57a3ec1d8f62e9ba59df12cfbbcb996bfdcc31b20d0399b",
+  "dependencies": {
+    "precursor": "d599166c58282bb18043483dc91eb7799c83195c6e1c6d2c8c3af255cf88da47",
+    "init_sample_sha256": "f04106026ab7d7580f3ce0a822a4b9acc3e95f07b791ab86b38101f4077b9aaa"
+  },
+  "outer_epochs": 4,
+  "threshold": 0.7726887830792057,
+  "training_rng_seed": 2945210484
+}

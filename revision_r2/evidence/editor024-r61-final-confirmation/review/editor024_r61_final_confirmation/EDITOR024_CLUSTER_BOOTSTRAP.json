@@ -1,0 +1,94 @@
+{
+  "cluster": "user",
+  "sampling_unit": "r6.1 user",
+  "n_users": 4000,
+  "n_positive_label_users": 9,
+  "n_attempted_draws": 2001,
+  "n_valid_resamples": 2000,
+  "seed": 42,
+  "windows_not_independent": true,
+  "matched_models_share_resampled_users": true,
+  "statistics": {
+    "TA2_PR_AUC": {
+      "mean": 0.00010034387221739304,
+      "ci95": [
+        2.3866558688929336e-05,
+        0.0002143630301398668
+      ],
+      "ci_lower_bound_gt_0": true,
+      "n_valid_resamples": 2000
+    },
+    "C2-OPT_PR_AUC": {
+      "mean": 0.00010342878153784979,
+      "ci95": [
+        2.4923556065554173e-05,
+        0.00021658853354770922
+      ],
+      "ci_lower_bound_gt_0": true,
+      "n_valid_resamples": 2000
+    },
+    "F10_PR_AUC": {
+      "mean": 9.896969128824343e-05,
+      "ci95": [
+        2.5109338992122323e-05,
+        0.00021007160446692607
+      ],
+      "ci_lower_bound_gt_0": true,
+      "n_valid_resamples": 2000
+    },
+    "L1_PR_AUC": {
+      "mean": 0.0001048017411866212,
+      "ci95": [
+        2.5784169276176707e-05,
+        0.00022214271786067687
+      ],
+      "ci_lower_bound_gt_0": true,
+      "n_valid_resamples": 2000
+    },
+    "TA2_RANKING_EXCESS": {
+      "mean": 4.7704315735298405e-06,
+      "ci95": [
+        -7.170688195493386e-05,
+        0.00011878958949600362
+      ],
+      "ci_lower_bound_gt_0": false,
+      "n_valid_resamples": 2000
+    },
+    "TA2_MINUS_C2": {
+      "mean": -3.0849093204567755e-06,
+      "ci95": [
+        -1.547765340805182e-05,
+        1.8024400744576354e-06
+      ],
+      "ci_lower_bound_gt_0": false,
+      "n_valid_resamples": 2000
+    },
+    "F10_MINUS_C2": {
+      "mean": -4.459090249606366e-06,
+      "ci95": [
+        -2.5946257530730284e-05,
+        3.87499539273816e-06
+      ],
+      "ci_lower_bound_gt_0": false,
+      "n_valid_resamples": 2000
+    },
+    "TA2_MINUS_F10": {
+      "mean": 1.3741809291495914e-06,
+      "ci95": [
+        -3.2564074066860576e-06,
+        1.0566068170250959e-05
+      ],
+      "ci_lower_bound_gt_0": false,
+      "n_valid_resamples": 2000
+    },
+    "TA2_MINUS_L1": {
+      "mean": -4.4578689692281785e-06,
+      "ci95": [
+        -1.2341509475959693e-05,
+        5.427446730043992e-06
+      ],
+      "ci_lower_bound_gt_0": false,
+      "n_valid_resamples": 2000
+    }
+  }
+}

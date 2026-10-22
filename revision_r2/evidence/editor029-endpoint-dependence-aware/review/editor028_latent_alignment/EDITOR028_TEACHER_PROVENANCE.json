@@ -1,0 +1,118 @@
+{
+  "recipe": "EDITOR-011 T-OPT on representation-matched centred attention-linear encoder",
+  "reproduction_gate": {
+    "EDITOR028_TEACHER_REPRODUCTION_GATE": "PASS",
+    "producing_attention_linear": "editor026_user_relative.train.train_attention_linear",
+    "producing_teacher": "editor026_user_relative.train.train_ur_teacher",
+    "producing_student": "editor012_rescue.train.train_student",
+    "recipe_markers_present": true,
+    "r61_used": false
+  },
+  "attention_linear": [
+    {
+      "condition": "CENTERED_ATTENTION_LINEAR",
+      "seed": 42,
+      "best_epoch": 3,
+      "validation_PR_AUC": 0.8992680602831298,
+      "best_checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\teachers\\CENTERED_ATTENTION_LINEAR\\seed42\\best.pt",
+      "best_checkpoint_sha256": "0d3acadc3db5370e632516955c6ccb9b0877b9023bb4560247325ad6def88d7c",
+      "pos_weight": 198.1407632044478,
+      "pos_weight_multiplier": 1.0,
+      "training_time": 75.15613842010498,
+      "r61_used": false
+    },
+    {
+      "condition": "CENTERED_ATTENTION_LINEAR",
+      "seed": 52,
+      "best_epoch": 9,
+      "validation_PR_AUC": 0.8822915299041284,
+      "best_checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\teachers\\CENTERED_ATTENTION_LINEAR\\seed52\\best.pt",
+      "best_checkpoint_sha256": "251a794e145de57e42b4c6e23e12a3ed032c79fba54baaae8314945307eeafc6",
+      "pos_weight": 198.1407632044478,
+      "pos_weight_multiplier": 1.0,
+      "training_time": 138.59590411186218,
+      "r61_used": false
+    },
+    {
+      "condition": "CENTERED_ATTENTION_LINEAR",
+      "seed": 62,
+      "best_epoch": 14,
+      "validation_PR_AUC": 0.9009268878086392,
+      "best_checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\teachers\\CENTERED_ATTENTION_LINEAR\\seed62\\best.pt",
+      "best_checkpoint_sha256": "b2c4bf66d4028a554537ebf8d01e24ca998d539a6e60ca7f0c5936c43114be9d",
+      "pos_weight": 198.1407632044478,
+      "pos_weight_multiplier": 1.0,
+      "training_time": 185.4782793521881,
+      "r61_used": false
+    }
+  ],
+  "teachers": [
+    {
+      "condition": "CENTERED_TEACHER_42",
+      "seed": 42,
+      "best_epoch": 2,
+      "validation_PR_AUC": 0.9009943415747212,
+      "best_checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\teachers\\CENTERED_TEACHER_42\\seed42\\best_teacher.pt",
+      "best_checkpoint_sha256": "177ff7d57755abb5d502983b0ef2fa43c4340cf707152fdca987a50e6b044f15",
+      "architecture": {
+        "n_trees": 4,
+        "depth": 4,
+        "temperature": 0.5,
+        "num_layers": 2,
+        "tree_dim": 1,
+        "choice_function": "sparsemax_sigmoid",
+        "readout": "canonical_tree_average",
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "n_trees_total": 8
+      },
+      "threshold": 0.7759158802478505,
+      "training_time": 80.04653573036194,
+      "r61_used": false
+    },
+    {
+      "condition": "CENTERED_TEACHER_52",
+      "seed": 52,
+      "best_epoch": 7,
+      "validation_PR_AUC": 0.8800686770237661,
+      "best_checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\teachers\\CENTERED_TEACHER_52\\seed52\\best_teacher.pt",
+      "best_checkpoint_sha256": "39691f681e1e18c712a208c25a8f0d5b23dcf00bbbe327d0c4ddc3c653a7017a",
+      "architecture": {
+        "n_trees": 4,
+        "depth": 4,
+        "temperature": 0.5,
+        "num_layers": 2,
+        "tree_dim": 1,
+        "choice_function": "sparsemax_sigmoid",
+        "readout": "canonical_tree_average",
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "n_trees_total": 8
+      },
+      "threshold": 0.9400000000000001,
+      "training_time": 167.53676295280457,
+      "r61_used": false
+    },
+    {
+      "condition": "CENTERED_TEACHER_62",
+      "seed": 62,
+      "best_epoch": 1,
+      "validation_PR_AUC": 0.8946941958234347,
+      "best_checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\teachers\\CENTERED_TEACHER_62\\seed62\\best_teacher.pt",
+      "best_checkpoint_sha256": "368eb951165b91a74838a9bd4529c15fee53724f2345e108c4daa21326f7e4d6",
+      "architecture": {
+        "n_trees": 4,
+        "depth": 4,
+        "temperature": 0.5,
+        "num_layers": 2,
+        "tree_dim": 1,
+        "choice_function": "sparsemax_sigmoid",
+        "readout": "canonical_tree_average",
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "n_trees_total": 8
+      },
+      "threshold": 0.32,
+      "training_time": 71.99616837501526,
+      "r61_used": false
+    }
+  ],
+  "r61_used": false
+}

@@ -1,0 +1,941 @@
+{
+  "scope": "CERT_STUDY",
+  "created_utc": "2026-10-09T04:11:45.383492+00:00",
+  "status": "IMPLEMENTATION_REVIEW_PREPARED_NO_TRAINING",
+  "sources": {
+    "analysis.py": "08feae7084b051fb503b94cde8a6ebc58af5f3829a0764bf011d6854141de4de",
+    "ap_statistics.py": "712bab3fd03cf8648cd1e5082da3989b27f3cce32fac00aed95b1c7b5f2116d8",
+    "cert_stage2_producing\\__init__.py": "c9a500165623faee5a08f11dfe83495d0b33cde5a3fb7451205b726475daa5fb",
+    "cert_stage2_producing\\architecture.py": "4249f6f414528d2d66762555e947dffacc8632771f38530940c1c4f35869ef4f",
+    "cert_stage2_producing\\odst.py": "3eb9563396601d8bd649d628a13c1d8e828de5eaaf113db289c8327c98563601",
+    "cert_stage2_producing\\sequence_ensemble.py": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475",
+    "contracts.py": "485ea021ef21b59c6efed6715cddcdd5aa37098ec487e66af54566dbd6166650",
+    "control.py": "9751766c8133207a8d1ebd9b7a00a023bde2a10b8350a7120b52128fb0d3647b",
+    "data.py": "def8d92990ff9d27147e537d3e7dd8bb2a8d707afb2ea68b19467150865b8c8e",
+    "metrics.py": "f4dda4ca4c1dd2727c16d0dedd80cc7d5bb6693c31fea574c5093b4fb8abe0b5",
+    "models.py": "ffbff185ea88b5c248e434915abded62a0cccb0bc25852204c3ee96c2c9b83a3",
+    "resume_probe.py": "4e91cf81b056b6598ac13cf33b8d2704452f866a3ddb231221f95bcddfba9a72",
+    "runner.py": "8f78d17e1f16aacf9bd371c1579ebc6d83b5d9516003d7b5ae22a4ce3f02cc0a",
+    "SOURCE_PINS.json": "cf37f9ab8294cf465d6508c1bf66282b30e3388ac2de3a070a5a61f7585e99c1",
+    "synthetic_campaign.py": "74794ac90959fb89d2f64c4611212977280776773b2c2cd8e7d854258537ff02",
+    "test_contracts.py": "277fbc56cbff67c6c5dc4e8c105d1d3c92f54cd11a462b236f64503a225b7114"
+  },
+  "protocol_sha256": "fccb2da6c266c6101cad73e6087654f112c014038abc00450f150b849c40bb02",
+  "evidence_sha256": "08252a5efc5a83d8831284df23729963629385d01607f950375381fcbc4994f6",
+  "test_record_sha256": "6930a7acebbc4a0cf11ec7d19e911aa22f9ada2b64768893160de80f47dd7a95",
+  "runtime": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "executable": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.4.6",
+    "sklearn": "1.9.0",
+    "cuda": "12.8",
+    "cudnn": 91900,
+    "gpu_driver": "GPU-ddcfc895-76ef-cb34-d249-2ca314b10ec8, NVIDIA GeForce RTX 5070 Laptop GPU, 610.71",
+    "platform": "win32",
+    "windows_version": "sys.getwindowsversion(major=10, minor=0, build=26200, platform=2, service_pack='')",
+    "package_freeze": [
+      "Flask-Login==0.6.3",
+      "Flask-Mail==0.10.0",
+      "Flask-SQLAlchemy==3.1.1",
+      "Flask==3.1.3",
+      "Jinja2==3.1.6",
+      "MarkupSafe==3.0.3",
+      "PySocks==1.7.1",
+      "PyYAML==6.0.3",
+      "Pygments==2.20.0",
+      "SQLAlchemy-Utils==0.42.1",
+      "SQLAlchemy==2.0.52",
+      "Werkzeug==3.1.8",
+      "altair==6.3.0",
+      "annotated-doc==0.0.5",
+      "annotated-types==0.8.0",
+      "anthropic==1.7.0",
+      "anyio==4.14.2",
+      "asreview==3.0.8",
+      "attrs==26.1.0",
+      "beautifulsoup4==4.15.0",
+      "blinker==1.9.0",
+      "cattrs==26.1.0",
+      "certifi==2026.7.22",
+      "cffi==2.1.1",
+      "charset-normalizer==3.4.9",
+      "click==8.4.2",
+      "colorama==0.4.6",
+      "contourpy==1.3.3",
+      "cycler==0.12.1",
+      "datahugger==0.13",
+      "docstring_parser==0.18.0",
+      "et_xmlfile==2.0.0",
+      "fastapi==0.141.1",
+      "filelock==3.32.2",
+      "flask-cors==6.0.5",
+      "fonttools==4.64.0",
+      "fsspec==2026.4.0",
+      "gdown==6.1.0",
+      "gevent==26.8.0",
+      "git-filter-repo==2.47.0",
+      "gitignorefile==1.1.2",
+      "greenlet==3.5.5",
+      "h11==0.16.0",
+      "hf-xet==1.6.0",
+      "httpcore2==2.13.0",
+      "httpcore==1.0.9",
+      "httptools==0.8.0",
+      "httpx2==2.13.0",
+      "httpx==0.28.1",
+      "huggingface_hub==1.27.0",
+      "idna==3.18",
+      "iniconfig==2.3.0",
+      "itsdangerous==2.2.0",
+      "jiter==0.17.0",
+      "joblib==1.5.3",
+      "jsonpath-ng==1.8.0",
+      "jsonschema-specifications==2025.9.1",
+      "jsonschema==4.26.0",
+      "kiwisolver==1.5.1",
+      "lxml==6.1.3",
+      "markdown-it-py==4.2.0",
+      "matplotlib==3.11.1",
+      "mdurl==0.1.2",
+      "mpmath==1.3.0",
+      "narwhals==2.24.0",
+      "natsort==8.4.0",
+      "networkx==3.6.1",
+      "numpy==2.4.6",
+      "openpyxl==3.1.5",
+      "packaging==26.3",
+      "pandas==2.2.3",
+      "pillow==12.3.0",
+      "pip==24.0",
+      "platformdirs==4.11.3",
+      "pluggy==1.6.0",
+      "protobuf==7.36.2",
+      "psutil==7.2.2",
+      "pyalex==0.21",
+      "pyarrow==25.0.1",
+      "pycparser==3.0",
+      "pydantic==2.13.5",
+      "pydantic_core==2.46.5",
+      "pydeck==0.9.3",
+      "pymupdf==1.28.2",
+      "pyparsing==3.3.2",
+      "pypdf==6.14.2",
+      "pytest==9.1.1",
+      "python-dateutil==2.9.0.post0",
+      "python-docx==1.2.0",
+      "python-multipart==0.0.32",
+      "pytz==2026.3.post1",
+      "pywin32==312",
+      "referencing==0.37.0",
+      "regex==2026.7.19",
+      "requests-cache==1.3.3",
+      "requests==2.34.2",
+      "rich==15.0.0",
+      "rispy==0.9.0",
+      "rpds-py==2026.6.3",
+      "safetensors==0.8.0",
+      "scikit-learn==1.9.0",
+      "scipy==1.17.1",
+      "scisort==0.5.3",
+      "scitree==0.5.3",
+      "seedir==0.5.1",
+      "setuptools==78.1.0",
+      "shellingham==1.5.4",
+      "six==1.17.0",
+      "sniffio==1.3.1",
+      "soupsieve==2.9.1",
+      "starlette==1.6.0",
+      "streamlit==1.64.0",
+      "sympy==1.14.0",
+      "synergy-dataset==1.2",
+      "tabulate==0.10.0",
+      "threadpoolctl==3.6.0",
+      "tokenizers==0.22.2",
+      "toml==0.10.2",
+      "torch==2.11.0+cu128",
+      "tqdm==4.70.0",
+      "transformers==5.15.0",
+      "truststore==0.10.4",
+      "typer==0.27.1",
+      "typing-inspection==0.4.4",
+      "typing_extensions==4.16.0",
+      "tzdata==2026.3",
+      "url-normalize==3.0.0",
+      "urllib3==2.7.0",
+      "uvicorn==0.53.0",
+      "waitress==3.0.2",
+      "watchdog==6.0.0",
+      "websockets==16.1.1",
+      "winocr==0.0.15",
+      "winrt-Windows.Foundation.Collections==3.2.1",
+      "winrt-Windows.Foundation==3.2.1",
+      "winrt-Windows.Globalization==3.2.1",
+      "winrt-Windows.Graphics.Imaging==3.2.1",
+      "winrt-Windows.Media.Ocr==3.2.1",
+      "winrt-Windows.Storage.Streams==3.2.1",
+      "winrt-runtime==3.2.1",
+      "xgboost==3.2.0",
+      "xlrd==2.0.1",
+      "zope.event==6.2",
+      "zope.interface==8.5"
+    ],
+    "package_freeze_sha256": "1a53fa1585cfb868a67b56eeadf0c0343447c1c1d5306d97e67913e6d5a5c9cb",
+    "stage1_stack_note": "Different system-Python stack from Stage 1 conda environment"
+  },
+  "inputs": [
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\full_train_preflight_20261007_r1\\OUTPUT_IDENTITY.json",
+      "sha256": "4caeac710cf92b15586b1c859ba4e1dd8e5352fb5977b48a2408ec39d2dc4607"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\full_train_preflight_20261007_r1\\train_daily_F29.npy",
+      "sha256": "c63b721b7c5e09adac93e537cd54aaf457dca205f33b65b778506774c440bc1a",
+      "bytes": 191632128
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\full_train_preflight_20261007_r1\\train_daily_label_event_counts.npy",
+      "sha256": "6a00ad3bf9af8dec5a941fc0a1abc584cc17b9f1b337cf8ad7e5115415f98bed",
+      "bytes": 33040128
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\full_train_preflight_20261007_r1\\COHORT_LOCAL.json",
+      "sha256": "c85736cfa43823ab77f6f306f662e3dbd21b5f216c75267eb6709a32dbc0e530",
+      "bytes": 30100
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\full_train_preflight_20261007_r1\\REALIZED_SCHEMAS.json",
+      "sha256": "9ac1623e56722fd3c517a9545fd0d6eb738e11c066d34364912321f8f1c3fd00",
+      "bytes": 27261
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\full_train_preflight_20261007_r1\\DAILY_PREPROCESSORS.json",
+      "sha256": "0e7149bc4fe88e6402cf4ed7ecf6fc181f4460635ce89f19be93eabd277be538",
+      "bytes": 74886
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\validation_preflight_20261007_r1\\OUTPUT_IDENTITY.json",
+      "sha256": "566ed8c3f7e426c45d2bdaf68b87cf1f44b4df3e6d892b9ff7c97517ef3a7cc9"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\validation_preflight_20261007_r1\\validation_daily_F29.npy",
+      "sha256": "1a706dd9b0e4b271282311d3616511bd62abdfe2a8fa534bdbdfa3f9bff4c6ba",
+      "bytes": 23664128
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\validation_preflight_20261007_r1\\validation_daily_label_event_counts.npy",
+      "sha256": "ad55bd15391b7206ea28dce7625eb8f095265b4129d33da22fbeb6f6d063ba13",
+      "bytes": 4080128
+    }
+  ],
+  "preflight": [
+    {
+      "schema": "F6_PRIMITIVES",
+      "partition": "inner",
+      "representation_sha256": "fa70a1c703093196a981233579e9b35e858e4bc40a9770de6ef0c727108c0ce8",
+      "columns": [
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes"
+      ],
+      "preprocessor_sha256": "70f4c30300a8e52963964c8319421b32ee7f2cb72a89a57e455e3a5154a73e4c",
+      "train_labels_sha256": "75e04a2a65590012ca73d5f09c52af4f42f57c8802d6989f237e7aafc417304c",
+      "eval_labels_sha256": "b28352b9adea538e3f15af1a7068b34cc900392c30f71e855bb0d0c414976328",
+      "windows": 622000,
+      "positives": 2457,
+      "eval_windows": 128000,
+      "eval_positives": 1214
+    },
+    {
+      "schema": "F13",
+      "partition": "inner",
+      "representation_sha256": "738e13205c9b3376dbb507e0b698838c2a0bd6c344f099e0802b59bca634fbe7",
+      "columns": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "preprocessor_sha256": "9eea662635feee1d0b9543506dec68160659623d5f37232100c98d04cb2b8d73",
+      "train_labels_sha256": "75e04a2a65590012ca73d5f09c52af4f42f57c8802d6989f237e7aafc417304c",
+      "eval_labels_sha256": "b28352b9adea538e3f15af1a7068b34cc900392c30f71e855bb0d0c414976328",
+      "windows": 622000,
+      "positives": 2457,
+      "eval_windows": 128000,
+      "eval_positives": 1214
+    },
+    {
+      "schema": "F29",
+      "partition": "inner",
+      "representation_sha256": "083c90400aaf6de2f8bf7cde26c82f7dd898be38bb72290398abe2287b9beb30",
+      "columns": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day",
+        "outside_0800_1800_event_count",
+        "outside_0800_1800_event_fraction",
+        "active_hour_bins",
+        "largest_hour_event_fraction",
+        "unique_pc_count",
+        "largest_pc_event_fraction",
+        "logon_start_count",
+        "device_connect_count",
+        "file_write_count",
+        "file_to_removable_count",
+        "email_sent_count",
+        "email_sent_unique_recipient_count",
+        "email_sent_size_sum",
+        "email_sent_attachment_count",
+        "http_unique_hostname_count",
+        "largest_http_hostname_fraction"
+      ],
+      "preprocessor_sha256": "bbc4b1aa6a6f9839c4dfa38ecee498215843470f1e89f15feedf250ef15be108",
+      "train_labels_sha256": "75e04a2a65590012ca73d5f09c52af4f42f57c8802d6989f237e7aafc417304c",
+      "eval_labels_sha256": "b28352b9adea538e3f15af1a7068b34cc900392c30f71e855bb0d0c414976328",
+      "windows": 622000,
+      "positives": 2457,
+      "eval_windows": 128000,
+      "eval_positives": 1214
+    },
+    {
+      "schema": "F6_PRIMITIVES",
+      "partition": "outer",
+      "representation_sha256": "fa70a1c703093196a981233579e9b35e858e4bc40a9770de6ef0c727108c0ce8",
+      "columns": [
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes"
+      ],
+      "preprocessor_sha256": "e457ad41bde10439adf74fde75a618f6c20e3ba59217a1027d0648f408dda4c8",
+      "train_labels_sha256": "ac52cdae8f762f303a726c57bf753fe4125dab12f87b3eb23d29eac7cf5678bb",
+      "eval_labels_sha256": "91f8c9065b53cc1835e9a10541e916d8c8ec4d0b0b98b71fa30f0e2748f2ba39",
+      "windows": 788000,
+      "positives": 3957,
+      "eval_windows": 64000,
+      "eval_positives": 728
+    },
+    {
+      "schema": "F13",
+      "partition": "outer",
+      "representation_sha256": "738e13205c9b3376dbb507e0b698838c2a0bd6c344f099e0802b59bca634fbe7",
+      "columns": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "preprocessor_sha256": "dd3c7b408f67facd72680790ec0338dc2db17b11154f92df6340994a03a0042d",
+      "train_labels_sha256": "ac52cdae8f762f303a726c57bf753fe4125dab12f87b3eb23d29eac7cf5678bb",
+      "eval_labels_sha256": "91f8c9065b53cc1835e9a10541e916d8c8ec4d0b0b98b71fa30f0e2748f2ba39",
+      "windows": 788000,
+      "positives": 3957,
+      "eval_windows": 64000,
+      "eval_positives": 728
+    },
+    {
+      "schema": "F29",
+      "partition": "outer",
+      "representation_sha256": "083c90400aaf6de2f8bf7cde26c82f7dd898be38bb72290398abe2287b9beb30",
+      "columns": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day",
+        "outside_0800_1800_event_count",
+        "outside_0800_1800_event_fraction",
+        "active_hour_bins",
+        "largest_hour_event_fraction",
+        "unique_pc_count",
+        "largest_pc_event_fraction",
+        "logon_start_count",
+        "device_connect_count",
+        "file_write_count",
+        "file_to_removable_count",
+        "email_sent_count",
+        "email_sent_unique_recipient_count",
+        "email_sent_size_sum",
+        "email_sent_attachment_count",
+        "http_unique_hostname_count",
+        "largest_http_hostname_fraction"
+      ],
+      "preprocessor_sha256": "8c6a0409ecd8d84c9ebdc800e45c2dfa88674207cde7a3fbf6fabed02b31af94",
+      "train_labels_sha256": "ac52cdae8f762f303a726c57bf753fe4125dab12f87b3eb23d29eac7cf5678bb",
+      "eval_labels_sha256": "91f8c9065b53cc1835e9a10541e916d8c8ec4d0b0b98b71fa30f0e2748f2ba39",
+      "windows": 788000,
+      "positives": 3957,
+      "eval_windows": 64000,
+      "eval_positives": 728
+    }
+  ],
+  "registered_fits": [
+    {
+      "id": "inner_L_F6_PRIMITIVES_seed42",
+      "partition": "inner",
+      "condition": "L",
+      "schema": "F6_PRIMITIVES",
+      "seed": 42
+    },
+    {
+      "id": "inner_L_F6_PRIMITIVES_seed52",
+      "partition": "inner",
+      "condition": "L",
+      "schema": "F6_PRIMITIVES",
+      "seed": 52
+    },
+    {
+      "id": "inner_L_F6_PRIMITIVES_seed62",
+      "partition": "inner",
+      "condition": "L",
+      "schema": "F6_PRIMITIVES",
+      "seed": 62
+    },
+    {
+      "id": "inner_T_F6_PRIMITIVES_seed42",
+      "partition": "inner",
+      "condition": "T",
+      "schema": "F6_PRIMITIVES",
+      "seed": 42
+    },
+    {
+      "id": "inner_T_F6_PRIMITIVES_seed52",
+      "partition": "inner",
+      "condition": "T",
+      "schema": "F6_PRIMITIVES",
+      "seed": 52
+    },
+    {
+      "id": "inner_T_F6_PRIMITIVES_seed62",
+      "partition": "inner",
+      "condition": "T",
+      "schema": "F6_PRIMITIVES",
+      "seed": 62
+    },
+    {
+      "id": "inner_C_F6_PRIMITIVES_seed42",
+      "partition": "inner",
+      "condition": "C",
+      "schema": "F6_PRIMITIVES",
+      "seed": 42
+    },
+    {
+      "id": "inner_C_F6_PRIMITIVES_seed52",
+      "partition": "inner",
+      "condition": "C",
+      "schema": "F6_PRIMITIVES",
+      "seed": 52
+    },
+    {
+      "id": "inner_C_F6_PRIMITIVES_seed62",
+      "partition": "inner",
+      "condition": "C",
+      "schema": "F6_PRIMITIVES",
+      "seed": 62
+    },
+    {
+      "id": "inner_G_F6_PRIMITIVES_seed42",
+      "partition": "inner",
+      "condition": "G",
+      "schema": "F6_PRIMITIVES",
+      "seed": 42
+    },
+    {
+      "id": "inner_G_F6_PRIMITIVES_seed52",
+      "partition": "inner",
+      "condition": "G",
+      "schema": "F6_PRIMITIVES",
+      "seed": 52
+    },
+    {
+      "id": "inner_G_F6_PRIMITIVES_seed62",
+      "partition": "inner",
+      "condition": "G",
+      "schema": "F6_PRIMITIVES",
+      "seed": 62
+    },
+    {
+      "id": "inner_L_F13_seed42",
+      "partition": "inner",
+      "condition": "L",
+      "schema": "F13",
+      "seed": 42
+    },
+    {
+      "id": "inner_L_F13_seed52",
+      "partition": "inner",
+      "condition": "L",
+      "schema": "F13",
+      "seed": 52
+    },
+    {
+      "id": "inner_L_F13_seed62",
+      "partition": "inner",
+      "condition": "L",
+      "schema": "F13",
+      "seed": 62
+    },
+    {
+      "id": "inner_T_F13_seed42",
+      "partition": "inner",
+      "condition": "T",
+      "schema": "F13",
+      "seed": 42
+    },
+    {
+      "id": "inner_T_F13_seed52",
+      "partition": "inner",
+      "condition": "T",
+      "schema": "F13",
+      "seed": 52
+    },
+    {
+      "id": "inner_T_F13_seed62",
+      "partition": "inner",
+      "condition": "T",
+      "schema": "F13",
+      "seed": 62
+    },
+    {
+      "id": "inner_C_F13_seed42",
+      "partition": "inner",
+      "condition": "C",
+      "schema": "F13",
+      "seed": 42
+    },
+    {
+      "id": "inner_C_F13_seed52",
+      "partition": "inner",
+      "condition": "C",
+      "schema": "F13",
+      "seed": 52
+    },
+    {
+      "id": "inner_C_F13_seed62",
+      "partition": "inner",
+      "condition": "C",
+      "schema": "F13",
+      "seed": 62
+    },
+    {
+      "id": "inner_G_F13_seed42",
+      "partition": "inner",
+      "condition": "G",
+      "schema": "F13",
+      "seed": 42
+    },
+    {
+      "id": "inner_G_F13_seed52",
+      "partition": "inner",
+      "condition": "G",
+      "schema": "F13",
+      "seed": 52
+    },
+    {
+      "id": "inner_G_F13_seed62",
+      "partition": "inner",
+      "condition": "G",
+      "schema": "F13",
+      "seed": 62
+    },
+    {
+      "id": "inner_L_F29_seed42",
+      "partition": "inner",
+      "condition": "L",
+      "schema": "F29",
+      "seed": 42
+    },
+    {
+      "id": "inner_L_F29_seed52",
+      "partition": "inner",
+      "condition": "L",
+      "schema": "F29",
+      "seed": 52
+    },
+    {
+      "id": "inner_L_F29_seed62",
+      "partition": "inner",
+      "condition": "L",
+      "schema": "F29",
+      "seed": 62
+    },
+    {
+      "id": "inner_T_F29_seed42",
+      "partition": "inner",
+      "condition": "T",
+      "schema": "F29",
+      "seed": 42
+    },
+    {
+      "id": "inner_T_F29_seed52",
+      "partition": "inner",
+      "condition": "T",
+      "schema": "F29",
+      "seed": 52
+    },
+    {
+      "id": "inner_T_F29_seed62",
+      "partition": "inner",
+      "condition": "T",
+      "schema": "F29",
+      "seed": 62
+    },
+    {
+      "id": "inner_C_F29_seed42",
+      "partition": "inner",
+      "condition": "C",
+      "schema": "F29",
+      "seed": 42
+    },
+    {
+      "id": "inner_C_F29_seed52",
+      "partition": "inner",
+      "condition": "C",
+      "schema": "F29",
+      "seed": 52
+    },
+    {
+      "id": "inner_C_F29_seed62",
+      "partition": "inner",
+      "condition": "C",
+      "schema": "F29",
+      "seed": 62
+    },
+    {
+      "id": "inner_G_F29_seed42",
+      "partition": "inner",
+      "condition": "G",
+      "schema": "F29",
+      "seed": 42
+    },
+    {
+      "id": "inner_G_F29_seed52",
+      "partition": "inner",
+      "condition": "G",
+      "schema": "F29",
+      "seed": 52
+    },
+    {
+      "id": "inner_G_F29_seed62",
+      "partition": "inner",
+      "condition": "G",
+      "schema": "F29",
+      "seed": 62
+    },
+    {
+      "id": "outer_L_F6_PRIMITIVES_seed42",
+      "partition": "outer",
+      "condition": "L",
+      "schema": "F6_PRIMITIVES",
+      "seed": 42
+    },
+    {
+      "id": "outer_L_F6_PRIMITIVES_seed52",
+      "partition": "outer",
+      "condition": "L",
+      "schema": "F6_PRIMITIVES",
+      "seed": 52
+    },
+    {
+      "id": "outer_L_F6_PRIMITIVES_seed62",
+      "partition": "outer",
+      "condition": "L",
+      "schema": "F6_PRIMITIVES",
+      "seed": 62
+    },
+    {
+      "id": "outer_T_F6_PRIMITIVES_seed42",
+      "partition": "outer",
+      "condition": "T",
+      "schema": "F6_PRIMITIVES",
+      "seed": 42
+    },
+    {
+      "id": "outer_T_F6_PRIMITIVES_seed52",
+      "partition": "outer",
+      "condition": "T",
+      "schema": "F6_PRIMITIVES",
+      "seed": 52
+    },
+    {
+      "id": "outer_T_F6_PRIMITIVES_seed62",
+      "partition": "outer",
+      "condition": "T",
+      "schema": "F6_PRIMITIVES",
+      "seed": 62
+    },
+    {
+      "id": "outer_C_F6_PRIMITIVES_seed42",
+      "partition": "outer",
+      "condition": "C",
+      "schema": "F6_PRIMITIVES",
+      "seed": 42
+    },
+    {
+      "id": "outer_C_F6_PRIMITIVES_seed52",
+      "partition": "outer",
+      "condition": "C",
+      "schema": "F6_PRIMITIVES",
+      "seed": 52
+    },
+    {
+      "id": "outer_C_F6_PRIMITIVES_seed62",
+      "partition": "outer",
+      "condition": "C",
+      "schema": "F6_PRIMITIVES",
+      "seed": 62
+    },
+    {
+      "id": "outer_G_F6_PRIMITIVES_seed42",
+      "partition": "outer",
+      "condition": "G",
+      "schema": "F6_PRIMITIVES",
+      "seed": 42
+    },
+    {
+      "id": "outer_G_F6_PRIMITIVES_seed52",
+      "partition": "outer",
+      "condition": "G",
+      "schema": "F6_PRIMITIVES",
+      "seed": 52
+    },
+    {
+      "id": "outer_G_F6_PRIMITIVES_seed62",
+      "partition": "outer",
+      "condition": "G",
+      "schema": "F6_PRIMITIVES",
+      "seed": 62
+    },
+    {
+      "id": "outer_L_F13_seed42",
+      "partition": "outer",
+      "condition": "L",
+      "schema": "F13",
+      "seed": 42
+    },
+    {
+      "id": "outer_L_F13_seed52",
+      "partition": "outer",
+      "condition": "L",
+      "schema": "F13",
+      "seed": 52
+    },
+    {
+      "id": "outer_L_F13_seed62",
+      "partition": "outer",
+      "condition": "L",
+      "schema": "F13",
+      "seed": 62
+    },
+    {
+      "id": "outer_T_F13_seed42",
+      "partition": "outer",
+      "condition": "T",
+      "schema": "F13",
+      "seed": 42
+    },
+    {
+      "id": "outer_T_F13_seed52",
+      "partition": "outer",
+      "condition": "T",
+      "schema": "F13",
+      "seed": 52
+    },
+    {
+      "id": "outer_T_F13_seed62",
+      "partition": "outer",
+      "condition": "T",
+      "schema": "F13",
+      "seed": 62
+    },
+    {
+      "id": "outer_C_F13_seed42",
+      "partition": "outer",
+      "condition": "C",
+      "schema": "F13",
+      "seed": 42
+    },
+    {
+      "id": "outer_C_F13_seed52",
+      "partition": "outer",
+      "condition": "C",
+      "schema": "F13",
+      "seed": 52
+    },
+    {
+      "id": "outer_C_F13_seed62",
+      "partition": "outer",
+      "condition": "C",
+      "schema": "F13",
+      "seed": 62
+    },
+    {
+      "id": "outer_G_F13_seed42",
+      "partition": "outer",
+      "condition": "G",
+      "schema": "F13",
+      "seed": 42
+    },
+    {
+      "id": "outer_G_F13_seed52",
+      "partition": "outer",
+      "condition": "G",
+      "schema": "F13",
+      "seed": 52
+    },
+    {
+      "id": "outer_G_F13_seed62",
+      "partition": "outer",
+      "condition": "G",
+      "schema": "F13",
+      "seed": 62
+    },
+    {
+      "id": "outer_L_F29_seed42",
+      "partition": "outer",
+      "condition": "L",
+      "schema": "F29",
+      "seed": 42
+    },
+    {
+      "id": "outer_L_F29_seed52",
+      "partition": "outer",
+      "condition": "L",
+      "schema": "F29",
+      "seed": 52
+    },
+    {
+      "id": "outer_L_F29_seed62",
+      "partition": "outer",
+      "condition": "L",
+      "schema": "F29",
+      "seed": 62
+    },
+    {
+      "id": "outer_T_F29_seed42",
+      "partition": "outer",
+      "condition": "T",
+      "schema": "F29",
+      "seed": 42
+    },
+    {
+      "id": "outer_T_F29_seed52",
+      "partition": "outer",
+      "condition": "T",
+      "schema": "F29",
+      "seed": 52
+    },
+    {
+      "id": "outer_T_F29_seed62",
+      "partition": "outer",
+      "condition": "T",
+      "schema": "F29",
+      "seed": 62
+    },
+    {
+      "id": "outer_C_F29_seed42",
+      "partition": "outer",
+      "condition": "C",
+      "schema": "F29",
+      "seed": 42
+    },
+    {
+      "id": "outer_C_F29_seed52",
+      "partition": "outer",
+      "condition": "C",
+      "schema": "F29",
+      "seed": 52
+    },
+    {
+      "id": "outer_C_F29_seed62",
+      "partition": "outer",
+      "condition": "C",
+      "schema": "F29",
+      "seed": 62
+    },
+    {
+      "id": "outer_G_F29_seed42",
+      "partition": "outer",
+      "condition": "G",
+      "schema": "F29",
+      "seed": 42
+    },
+    {
+      "id": "outer_G_F29_seed52",
+      "partition": "outer",
+      "condition": "G",
+      "schema": "F29",
+      "seed": 52
+    },
+    {
+      "id": "outer_G_F29_seed62",
+      "partition": "outer",
+      "condition": "G",
+      "schema": "F29",
+      "seed": 62
+    }
+  ],
+  "fit_budget": 72,
+  "schemas": [
+    "F6_PRIMITIVES",
+    "F13",
+    "F29"
+  ],
+  "seeds": [
+    42,
+    52,
+    62
+  ],
+  "max_epochs": 30,
+  "patience": 4,
+  "batch_size": 1024,
+  "checkpoint_every_updates": 25,
+  "checkpoint_retention": "last 3 step + last 2 epoch + last 3 phase/pause/final; at most 8 states",
+  "label_task": "ANY_DAY_COMPLETED_WINDOW_T20",
+  "test_access": false,
+  "student_stream": "student",
+  "epoch_policy": "T min4; shared outer C/G=max rounded medians",
+  "operations_ack_required": true,
+  "independent_implementation_review_required": true
+}

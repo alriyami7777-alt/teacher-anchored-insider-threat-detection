@@ -1,0 +1,35 @@
+{
+  "source": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\interval_level\\r52_user_day_intervals_dense.parquet",
+  "source_sha256": "ce1436b28c3ba5e1fbe83e307f5705189152253ab9ab634262e0c652d36414db",
+  "new_ground_truth": false,
+  "historical_any_day_agreement_train": 1.0,
+  "historical_any_day_agreement_validation": 1.0,
+  "endpoint_depends_only_on_day_d": true,
+  "NEW_SCALER_FIT": "NO",
+  "scaler_sha256": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+  "feature_order": [
+    "total_events",
+    "logon_count",
+    "device_count",
+    "file_count",
+    "email_count",
+    "http_count",
+    "active_duration_minutes",
+    "has_logon_activity",
+    "has_device_activity",
+    "has_file_activity",
+    "has_email_activity",
+    "has_http_activity",
+    "is_active_day"
+  ],
+  "boundary": {
+    "max_train_end": "2011-02-18",
+    "min_val_start": "2011-02-19",
+    "windows_crossing_boundary": 0,
+    "same_user_temporal_partitions": true,
+    "unseen_user_generalisation": false
+  },
+  "train_malicious_user_days_in_window_span": 1035,
+  "validation_malicious_user_days_in_window_span": 216,
+  "n_malicious_events_note": "event-level positives are frozen as is_malicious_interval user-days; event counts equal user-days under the daily OR rule"
+}

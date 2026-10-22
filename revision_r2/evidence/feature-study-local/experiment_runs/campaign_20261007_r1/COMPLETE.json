@@ -1,0 +1,43 @@
+{
+  "status": "AUTHORIZED_174_FIT_CAMPAIGN_COMPLETE",
+  "finished_utc": "2026-10-08T22:23:49.073976+00:00",
+  "fit_count": 174,
+  "per_stage_counts": [
+    84,
+    30,
+    30,
+    30
+  ],
+  "additional_recovery_attempts": 1,
+  "total_fitted_attempts": 175,
+  "bookkeeping_failure_retained": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\experiment_runs\\campaign_20261007_r1\\FAILED.json",
+  "reconciliation_sha256": "6df6dad65a769e88da5f57f79cdac4782e182b7c2df3774c6cefc17e742abef1",
+  "secondary_directory": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\experiment_runs\\secondary_20261007_r1_recovery_20261008_r1",
+  "test_access": false,
+  "evidence_role": "NEW_RETROSPECTIVE_VALIDATION_NOT_IEEE_ACCESS_OR_UNTOUCHED_CONFIRMATION",
+  "primary_result": {
+    "observed_mean_seed_ap_difference": 0.005000935947579259,
+    "attempted_draws": 2000,
+    "valid_draws": 2000,
+    "invalid_single_class_draws": 0,
+    "paired_95_percentile_interval": [
+      -0.006389315406012489,
+      0.02113846245300709
+    ],
+    "one_sided_95_lower_bound": -0.004632433136320978,
+    "interval_reliable": true,
+    "practical_gain_margin": 0.005,
+    "primary_improvement_rule_met": false,
+    "random_seed": 42,
+    "rng": "numpy.default_rng PCG64",
+    "percentile_method": "linear",
+    "scope": "Conditional on fitted models and observed calendar; no selection/time-shock/retraining uncertainty",
+    "contrast": "PRIMARY_F29_MINUS_F13"
+  },
+  "completion_hashes": {
+    "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\experiment_runs\\outer_xgb_20261007_r1\\COMPLETE.json": "996f935011b83b94ec0a1b5af053d5454460720b5a3f894f76698bc80effb916",
+    "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\experiment_runs\\secondary_20261007_r1_recovery_20261008_r1\\INNER_COMPLETE.json": "6570b3865e376f22d096399d5c470a472ca56450665a83ea445beb89d3606c66",
+    "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\experiment_runs\\secondary_20261007_r1_recovery_20261008_r1\\OUTER_COMPLETE.json": "8d4b93ed48647fcd5824978950666ef8d3c9187e8d74b7d6d557dc2b4a877195",
+    "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\experiment_runs\\secondary_20261007_r1_recovery_20261008_r1\\outer_analysis\\COMPLETE.json": "186c4e0f98be21c4b773fdf83d0baec39d2bc525b205f6b2226ed942696646af"
+  }
+}

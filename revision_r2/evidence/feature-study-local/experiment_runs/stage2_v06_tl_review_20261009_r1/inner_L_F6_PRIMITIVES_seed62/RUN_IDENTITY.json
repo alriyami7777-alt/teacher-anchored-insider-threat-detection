@@ -1,0 +1,30 @@
+{
+  "id": "inner_L_F6_PRIMITIVES_seed62",
+  "partition": "inner",
+  "condition": "L",
+  "schema": "F6_PRIMITIVES",
+  "seed": 62,
+  "data": {
+    "schema": "F6_PRIMITIVES",
+    "partition": "inner",
+    "representation_sha256": "fa70a1c703093196a981233579e9b35e858e4bc40a9770de6ef0c727108c0ce8",
+    "columns": [
+      "logon_count",
+      "device_count",
+      "file_count",
+      "email_count",
+      "http_count",
+      "active_duration_minutes"
+    ],
+    "preprocessor_sha256": "70f4c30300a8e52963964c8319421b32ee7f2cb72a89a57e455e3a5154a73e4c",
+    "train_labels_sha256": "75e04a2a65590012ca73d5f09c52af4f42f57c8802d6989f237e7aafc417304c",
+    "eval_labels_sha256": "b28352b9adea538e3f15af1a7068b34cc900392c30f71e855bb0d0c414976328"
+  },
+  "manifest_sha256": "55d25c09e52b70161fec902034776659eff2370219c76e07321cfea4ecdc32f9",
+  "construction_state_sha256": "3ed372dc2d5672d41d5c481ce1010cc48d8f602c5f0576477549e4cd30b41d0a",
+  "starting_state_sha256": "3ed372dc2d5672d41d5c481ce1010cc48d8f602c5f0576477549e4cd30b41d0a",
+  "dependencies": {},
+  "outer_epochs": null,
+  "threshold": null,
+  "training_rng_seed": 4085411418
+}

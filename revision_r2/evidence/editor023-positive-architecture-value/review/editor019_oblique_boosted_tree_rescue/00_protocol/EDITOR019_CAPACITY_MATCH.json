@@ -1,0 +1,26 @@
+{
+  "MLP40_architecture": {
+    "in_dim": 40,
+    "hidden": [
+      128,
+      64
+    ],
+    "dropout": 0.2
+  },
+  "MLP40_branch_parameter_count": 13569,
+  "capacity_ratio": 1.05,
+  "parameter_budget": 14247.45,
+  "SO_DTE40_depth": 4,
+  "internal_nodes_per_tree": 15,
+  "leaves_per_tree": 16,
+  "signed_channels": 80,
+  "parameters_per_tree": 1246,
+  "min_trees": 2,
+  "max_trees": 32,
+  "CAPACITY_MATCHED_TREE_COUNT": 11,
+  "tree_branch_parameter_count": 13706,
+  "ratio_used": 1.0100965435920113,
+  "next_count_exceeds_budget": true,
+  "frozen_before_results": true,
+  "no_later_tree_count_search": true
+}

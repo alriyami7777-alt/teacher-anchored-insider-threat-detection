@@ -1,0 +1,388 @@
+{
+  "attention_linear": [
+    {
+      "condition": "EP_ATTENTION_LINEAR",
+      "seed": 42,
+      "best_epoch": 3,
+      "validation_PR_AUC": 0.6498965817769162,
+      "best_checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor029\\outputs\\editor029_endpoint_dependence\\teachers\\EP_ATTENTION_LINEAR\\seed42\\best.pt",
+      "best_checkpoint_sha256": "632d469a0a69e6ec83471446074e919731615ccd48c39438204e63d010dcf778",
+      "pos_weight": 760.3526570048309,
+      "pos_weight_multiplier": 1.0,
+      "training_time": 92.94392466545105,
+      "epoch_rows": [
+        {
+          "epoch": 1,
+          "train_loss": 0.49412038193847324,
+          "validation_pr_auc": 0.38173579757222587
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.34117178039018276,
+          "validation_pr_auc": 0.5890293889136841
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.27460871505026285,
+          "validation_pr_auc": 0.6498965817769162
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.24935718985030494,
+          "validation_pr_auc": 0.5955346392531302
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.24303321920055423,
+          "validation_pr_auc": 0.6004549928257286
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.2059671079812921,
+          "validation_pr_auc": 0.6200152955039898
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.1555586422819474,
+          "validation_pr_auc": 0.6169698022792902
+        }
+      ],
+      "r52_test_used": false
+    },
+    {
+      "condition": "EP_ATTENTION_LINEAR",
+      "seed": 52,
+      "best_epoch": 6,
+      "validation_PR_AUC": 0.6542542857842731,
+      "best_checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor029\\outputs\\editor029_endpoint_dependence\\teachers\\EP_ATTENTION_LINEAR\\seed52\\best.pt",
+      "best_checkpoint_sha256": "d760c35bb1241f9a3ffe91f63929c2cd4a17d5e2c8dbb18099643bae1a888efe",
+      "pos_weight": 760.3526570048309,
+      "pos_weight_multiplier": 1.0,
+      "training_time": 129.32112216949463,
+      "epoch_rows": [
+        {
+          "epoch": 1,
+          "train_loss": 0.5724489165052847,
+          "validation_pr_auc": 0.368855736894213
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.382775921896327,
+          "validation_pr_auc": 0.5787982180688923
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.3502296563563916,
+          "validation_pr_auc": 0.6374098896969862
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.2987883248803428,
+          "validation_pr_auc": 0.629278071045879
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.27416970110499317,
+          "validation_pr_auc": 0.5932114349213067
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.22219186408121877,
+          "validation_pr_auc": 0.6542542857842731
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.21320759333602063,
+          "validation_pr_auc": 0.6166872694776723
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.21030155953220306,
+          "validation_pr_auc": 0.6049191823724613
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.19382474627531118,
+          "validation_pr_auc": 0.566003471606489
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.18074956806465453,
+          "validation_pr_auc": 0.605102966905536
+        }
+      ],
+      "r52_test_used": false
+    },
+    {
+      "condition": "EP_ATTENTION_LINEAR",
+      "seed": 62,
+      "best_epoch": 5,
+      "validation_PR_AUC": 0.6346018557163794,
+      "best_checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor029\\outputs\\editor029_endpoint_dependence\\teachers\\EP_ATTENTION_LINEAR\\seed62\\best.pt",
+      "best_checkpoint_sha256": "e7f4942f4a67054365b928dab96ca96d5cd4375061ca76869aeea99fcf6308ad",
+      "pos_weight": 760.3526570048309,
+      "pos_weight_multiplier": 1.0,
+      "training_time": 104.97700619697571,
+      "epoch_rows": [
+        {
+          "epoch": 1,
+          "train_loss": 0.5704075480596669,
+          "validation_pr_auc": 0.4919694466630602
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.3946243111224949,
+          "validation_pr_auc": 0.6050770338420974
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.3555433857704177,
+          "validation_pr_auc": 0.4494702386424401
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.2867845317002783,
+          "validation_pr_auc": 0.6090667661028026
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.2463937948078371,
+          "validation_pr_auc": 0.6346018557163794
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.2147510906181057,
+          "validation_pr_auc": 0.5769539098183827
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.2190431707859947,
+          "validation_pr_auc": 0.6105003384673787
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.2262869631834139,
+          "validation_pr_auc": 0.5441126018028453
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.15489934859315152,
+          "validation_pr_auc": 0.6002025886829382
+        }
+      ],
+      "r52_test_used": false
+    }
+  ],
+  "teachers": [
+    {
+      "condition": "EP_TEACHER_42",
+      "seed": 42,
+      "best_epoch": 3,
+      "validation_PR_AUC": 0.6472881183192111,
+      "best_checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor029\\outputs\\editor029_endpoint_dependence\\teachers\\EP_TEACHER_42\\seed42\\best_teacher.pt",
+      "best_checkpoint_sha256": "f25f799dce75bce785c1e25b8eb729509271a98c406ec50be460ed7d224ee16c",
+      "architecture": {
+        "n_trees": 4,
+        "depth": 4,
+        "temperature": 0.5,
+        "num_layers": 2,
+        "tree_dim": 1,
+        "choice_function": "sparsemax_sigmoid",
+        "readout": "canonical_tree_average",
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "n_trees_total": 8
+      },
+      "threshold": 0.81,
+      "pos_weight": 190.08816425120773,
+      "training_time": 101.42464852333069,
+      "epoch_rows": [
+        {
+          "epoch": 1,
+          "train_task_loss": 0.6388636708586349,
+          "validation_pr_auc": 0.5995060651637463
+        },
+        {
+          "epoch": 2,
+          "train_task_loss": 0.4010106440437627,
+          "validation_pr_auc": 0.6124515788250079
+        },
+        {
+          "epoch": 3,
+          "train_task_loss": 0.2746261732995813,
+          "validation_pr_auc": 0.6472881183192111
+        },
+        {
+          "epoch": 4,
+          "train_task_loss": 0.20195143444283964,
+          "validation_pr_auc": 0.6405764550437072
+        },
+        {
+          "epoch": 5,
+          "train_task_loss": 0.15742101077985038,
+          "validation_pr_auc": 0.6135695692154122
+        },
+        {
+          "epoch": 6,
+          "train_task_loss": 0.12933996282434707,
+          "validation_pr_auc": 0.6449582497370505
+        },
+        {
+          "epoch": 7,
+          "train_task_loss": 0.1110138260180575,
+          "validation_pr_auc": 0.632264332881434
+        }
+      ],
+      "r52_test_used": false
+    },
+    {
+      "condition": "EP_TEACHER_52",
+      "seed": 52,
+      "best_epoch": 1,
+      "validation_PR_AUC": 0.6246280540718807,
+      "best_checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor029\\outputs\\editor029_endpoint_dependence\\teachers\\EP_TEACHER_52\\seed52\\best_teacher.pt",
+      "best_checkpoint_sha256": "f5bdb58c48d176e80aaa99bd28c9968515b04dcaf0726f44015f852ab702d852",
+      "architecture": {
+        "n_trees": 4,
+        "depth": 4,
+        "temperature": 0.5,
+        "num_layers": 2,
+        "tree_dim": 1,
+        "choice_function": "sparsemax_sigmoid",
+        "readout": "canonical_tree_average",
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "n_trees_total": 8
+      },
+      "threshold": 0.65,
+      "pos_weight": 190.08816425120773,
+      "training_time": 77.01351189613342,
+      "epoch_rows": [
+        {
+          "epoch": 1,
+          "train_task_loss": 0.6381269209566455,
+          "validation_pr_auc": 0.6246280540718807
+        },
+        {
+          "epoch": 2,
+          "train_task_loss": 0.39506518766299115,
+          "validation_pr_auc": 0.5464039386591656
+        },
+        {
+          "epoch": 3,
+          "train_task_loss": 0.2632681441942447,
+          "validation_pr_auc": 0.5579032143793431
+        },
+        {
+          "epoch": 4,
+          "train_task_loss": 0.18688589810114828,
+          "validation_pr_auc": 0.6131617717659449
+        },
+        {
+          "epoch": 5,
+          "train_task_loss": 0.13995968162075517,
+          "validation_pr_auc": 0.6203513922451694
+        }
+      ],
+      "r52_test_used": false
+    },
+    {
+      "condition": "EP_TEACHER_62",
+      "seed": 62,
+      "best_epoch": 14,
+      "validation_PR_AUC": 0.6057069410081722,
+      "best_checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor029\\outputs\\editor029_endpoint_dependence\\teachers\\EP_TEACHER_62\\seed62\\best_teacher.pt",
+      "best_checkpoint_sha256": "faf7f7ce2a8505e2b701ad7980e0cfd00822f8b414b8e3333e776ffc773f97ea",
+      "architecture": {
+        "n_trees": 4,
+        "depth": 4,
+        "temperature": 0.5,
+        "num_layers": 2,
+        "tree_dim": 1,
+        "choice_function": "sparsemax_sigmoid",
+        "readout": "canonical_tree_average",
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "n_trees_total": 8
+      },
+      "threshold": 0.9500000000000001,
+      "pos_weight": 190.08816425120773,
+      "training_time": 214.6679105758667,
+      "epoch_rows": [
+        {
+          "epoch": 1,
+          "train_task_loss": 0.6286017183265105,
+          "validation_pr_auc": 0.38825991636645374
+        },
+        {
+          "epoch": 2,
+          "train_task_loss": 0.39169846187267204,
+          "validation_pr_auc": 0.41172879344640617
+        },
+        {
+          "epoch": 3,
+          "train_task_loss": 0.2647961280448788,
+          "validation_pr_auc": 0.41463996563206384
+        },
+        {
+          "epoch": 4,
+          "train_task_loss": 0.19160088844347725,
+          "validation_pr_auc": 0.43651847339376065
+        },
+        {
+          "epoch": 5,
+          "train_task_loss": 0.14663244551510982,
+          "validation_pr_auc": 0.45088497523194937
+        },
+        {
+          "epoch": 6,
+          "train_task_loss": 0.11779114499763789,
+          "validation_pr_auc": 0.45898710824517475
+        },
+        {
+          "epoch": 7,
+          "train_task_loss": 0.09949348517601865,
+          "validation_pr_auc": 0.49884705551399633
+        },
+        {
+          "epoch": 8,
+          "train_task_loss": 0.08617394206926303,
+          "validation_pr_auc": 0.5097972946402076
+        },
+        {
+          "epoch": 9,
+          "train_task_loss": 0.078787678671216,
+          "validation_pr_auc": 0.5212548748241194
+        },
+        {
+          "epoch": 10,
+          "train_task_loss": 0.0727218431575498,
+          "validation_pr_auc": 0.5388439563475008
+        },
+        {
+          "epoch": 11,
+          "train_task_loss": 0.06892697609045784,
+          "validation_pr_auc": 0.5097622022825735
+        },
+        {
+          "epoch": 12,
+          "train_task_loss": 0.06557262437779286,
+          "validation_pr_auc": 0.5343647143876601
+        },
+        {
+          "epoch": 13,
+          "train_task_loss": 0.06277974033900324,
+          "validation_pr_auc": 0.5696521430714229
+        },
+        {
+          "epoch": 14,
+          "train_task_loss": 0.06260900859557432,
+          "validation_pr_auc": 0.6057069410081722
+        },
+        {
+          "epoch": 15,
+          "train_task_loss": 0.0609934062978943,
+          "validation_pr_auc": 0.5962610817564333
+        }
+      ],
+      "r52_test_used": false
+    }
+  ]
+}

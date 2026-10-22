@@ -1,0 +1,89 @@
+{
+  "task_id": "EDITOR-016",
+  "title": "Uncertainty-routed teacher-anchored ODST specialist",
+  "hard_boundary": {
+    "train": "CERT r5.2 TRAIN",
+    "selection": "INNER_TRAIN / INNER_SELECT",
+    "confirmation": "CERT r5.2 VALIDATION",
+    "forbidden": [
+      "r5.2 TEST",
+      "r5.1",
+      "r6.2",
+      "T change",
+      "F change",
+      "tree/depth/temperature search",
+      "focal/pairwise/GroupDRO/CORAL",
+      "global ODST fusion search"
+    ]
+  },
+  "architecture": {
+    "L1": "teacher-guided attention-linear base",
+    "ODST": "ODST-046",
+    "n_trees_per_layer": 4,
+    "layers": 2,
+    "depth": 4,
+    "temperature": 0.5,
+    "lambda_teacher": 0.5,
+    "lambda_route": 0.5,
+    "historical_single_teacher_static_logit_anchor": "RETIRED"
+  },
+  "inner_counts": {
+    "INNER_TRAIN": 622000,
+    "INNER_SELECT": 128000,
+    "INNER_TRAIN_POS": 2457,
+    "INNER_SELECT_POS": 1214
+  },
+  "validation_users": {
+    "n_users": 2000,
+    "windows_per_user": 32,
+    "malicious_users": 31,
+    "mapping_sha256": "851385f9c926cf945b3c74b5c9442e3ccb94cf1d9dabb98106a29cbfea01c5c0"
+  },
+  "promotion_margin": 0.001,
+  "bootstrap": "user-cluster, 2000 resamples, seed 42; windows are not independent",
+  "directional_k": [
+    1,
+    2,
+    3
+  ],
+  "encoder": {
+    "input_dim": 13,
+    "hidden_size": 64,
+    "dropout": 0.2,
+    "attention_dim": 64,
+    "fusion_variant": "sparsemax_sigmoid_odst",
+    "node_num_layers": 2,
+    "node_n_trees": 4,
+    "node_depth": 4,
+    "node_tree_dim": 1,
+    "node_temperature": 0.5,
+    "node_dropout": 0.0,
+    "leaf_init_std": 0.05,
+    "gate_hidden_dim": 32
+  },
+  "odst046": {
+    "n_trees": 4,
+    "depth": 4,
+    "temperature": 0.5,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "num_layers": 2,
+    "dropout": 0.0,
+    "leaf_init_std": 0.05,
+    "choice_function": "sparsemax_sigmoid",
+    "readout": "canonical_tree_average",
+    "candidate_id": "ODST-046",
+    "tree_dim": 1,
+    "fusion_variant": "sparsemax_sigmoid_odst"
+  },
+  "frozen_L1_mean_PR_AUC": 0.9388809579807144,
+  "frozen_TA2_mean_PR_AUC": 0.9428421883320307,
+  "frozen_TA2_L1_CI": [
+    -0.0013708139376007687,
+    0.011356265117941461
+  ],
+  "T": 20,
+  "F": 13,
+  "n_trees_total": 8,
+  "created_utc": "2026-08-16T05:43:16Z"
+}

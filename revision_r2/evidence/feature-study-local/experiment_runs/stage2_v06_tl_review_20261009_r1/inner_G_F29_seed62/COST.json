@@ -1,0 +1,7 @@
+{
+  "optimizer_update_seconds": 235.95599999997648,
+  "sampled_process_rss_bytes": 821706752,
+  "peak_torch_cuda_allocated_bytes": 355892736,
+  "resource_scope": "Last process segment only",
+  "cost_limit": "Resume initialization and checkpoint/evaluation costs not included in optimizer-update time; process segments retained"
+}

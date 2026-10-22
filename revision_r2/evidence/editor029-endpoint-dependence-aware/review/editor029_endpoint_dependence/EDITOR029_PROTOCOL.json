@@ -1,0 +1,350 @@
+{
+  "task_id": "EDITOR-029",
+  "task_name": "ENDPOINT-DEFINED AND DEPENDENCE-AWARE EVALUATION",
+  "experiment_type": "EDITOR-CLOSURE SENSITIVITY AND ENDPOINT-TASK EVALUATION",
+  "result_status_at_start": "UNSEEN_FOR_NEW_EDITOR029_ANALYSES",
+  "parent_sha": "8d139c67e71cd2d2fca28e98f6214d059a0abc92",
+  "EDITOR028_RESULTS_COMMIT": "8d139c67e71cd2d2fca28e98f6214d059a0abc92",
+  "MODEL_RESCUE": "NO",
+  "MODEL_RESCUE_PROGRAMME": "CLOSED",
+  "ARCHITECTURE_SEARCH": "NO",
+  "CURRENT_PAPER_MODEL": "TA2",
+  "EDITOR024_R61_GENERALISATION_RESULT_CHANGED": "NO",
+  "reader_facing": {
+    "C2-OPT": "teacher-initialised task-only control",
+    "F10": "ensemble-guided ODST student without route anchoring",
+    "TA2": "final ensemble-guided, route-anchored student",
+    "L1": "matched attention-linear reference",
+    "EP_C2": "endpoint-defined teacher-initialised task-only control",
+    "EP_F10": "endpoint-defined ensemble-guided ODST student without route anchoring",
+    "EP_FINAL": "endpoint-defined final ensemble-guided, route-anchored ODST student",
+    "EP_LINEAR": "endpoint-defined matched attention-linear reference",
+    "ODST": "Oblivious Differentiable Sparsemax Tree"
+  },
+  "historical_validation_parity_values": {
+    "C2-OPT": 0.9353238885175368,
+    "F10": 0.9425948632340028,
+    "TA2": 0.9428421883320307,
+    "L1": 0.9388809579807144
+  },
+  "parity_tolerance": 0.0005,
+  "checkpoint_identities": {
+    "C2-OPT": {
+      "42": {
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed42\\best_student.pt",
+        "sha256": "d64651d25e48b3bcd4cad7d107d3bc55a4c555a2827f3656a087624e94ac4baf"
+      },
+      "52": {
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed52\\best_student.pt",
+        "sha256": "f0eea90099ba7dd3e721efb930e367e868049c94f6542d5b2156d9fe469acb7e"
+      },
+      "62": {
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed62\\best_student.pt",
+        "sha256": "50512aa5392ee7f4d93dc5f84471fc1074baeb757ae9fb5b96caed141ee586da"
+      }
+    },
+    "F10": {
+      "42": {
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F10_DOPT\\seed42\\best_student.pt",
+        "sha256": "ea8cd41a1ae3f845719956fd7a49230fa82807ffac87841be5f5ab95c64ac0c2"
+      },
+      "52": {
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F10_DOPT\\seed52\\best_student.pt",
+        "sha256": "829135230c5629f0b11161e11d76eba7a15e65bf9d03b5a55ffa297a93ddf959"
+      },
+      "62": {
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F10_DOPT\\seed62\\best_student.pt",
+        "sha256": "06313d6f2602de51f8dd6e15e1d1292864fd8cbd158f33977fa42c8a47036aee"
+      }
+    },
+    "TA2": {
+      "42": {
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed42\\best_student.pt",
+        "sha256": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8"
+      },
+      "52": {
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed52\\best_student.pt",
+        "sha256": "7613ba559bcf55827d04129066eb595b677994494609646f8b2463308ed5edb4"
+      },
+      "62": {
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed62\\best_student.pt",
+        "sha256": "904003dca219435464476cf36abedb11ee4e2f7a11ff09caa3791d685b8f644d"
+      }
+    },
+    "L1": {
+      "42": {
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed42\\best.pt",
+        "sha256": "513e272063250aa209efa2c42b490cc44316c7979fa6b2be5dd8cce4592d1ab2"
+      },
+      "52": {
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed52\\best.pt",
+        "sha256": "a503f6705955da221bdbd1921034e9102b90db6acb5187114276ccaeb474e1c4"
+      },
+      "62": {
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed62\\best.pt",
+        "sha256": "60d5c43692a17ba6971c8d23f74048ac3c4fe0bd1b18889eeb21bbab7bf3d3e9"
+      }
+    },
+    "T-OPT_historical": {
+      "42": {
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed42\\best_teacher.pt",
+        "sha256": "b007f48085ef42b146b22a0d5ace5bb9c8380874405622281a5903831599fb20"
+      },
+      "52": {
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed52\\best_teacher.pt",
+        "sha256": "5b4c17e15a8f49ba8cf240c0092b893e6e665232967fafce8eb13e0650227f2a"
+      },
+      "62": {
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed62\\best_teacher.pt",
+        "sha256": "24bf2efa2343e4aaf5f32871c0a9bffb3d511f345375ce754e9f081f82eac02c"
+      }
+    }
+  },
+  "deoverlap": {
+    "n_offsets": 20,
+    "step": 20,
+    "primary_offset": 0,
+    "rule": "within each user, sort windows chronologically; select positions k, k+20, k+40, ...",
+    "mask_depends_on": [
+      "user identity",
+      "chronological sequence position",
+      "window dates"
+    ],
+    "mask_forbidden": [
+      "label",
+      "score",
+      "prediction",
+      "malicious scenario"
+    ],
+    "offsets_are_sensitivity_views": true,
+    "do_not_pool_offsets_as_independent_observations": true
+  },
+  "endpoint_label": {
+    "definition": "y_d=1 iff verified malicious activity occurs on endpoint calendar day d",
+    "prior_days_do_not_make_positive": true,
+    "input": "20 calendar days ending at d; no day after d",
+    "task": "end-of-day behavioural detection/assessment",
+    "not": [
+      "forecasting malicious activity before day d",
+      "real-time intra-day prediction",
+      "pre-event warning",
+      "causal intervention",
+      "unseen-user generalisation"
+    ]
+  },
+  "splits": {
+    "TRAIN": "historical r5.2 TRAIN chronological partition",
+    "VALIDATION": "historical r5.2 VALIDATION chronological partition",
+    "no_user_moved": true,
+    "no_window_crosses_boundary": true,
+    "same_user_temporal_development_validation": true,
+    "unseen_user_generalisation": false
+  },
+  "representation": {
+    "features": [
+      "total_events",
+      "logon_count",
+      "device_count",
+      "file_count",
+      "email_count",
+      "http_count",
+      "active_duration_minutes",
+      "has_logon_activity",
+      "has_device_activity",
+      "has_file_activity",
+      "has_email_activity",
+      "has_http_activity",
+      "is_active_day"
+    ],
+    "sequence_length": 20,
+    "scaler": "historical r5.2 TRAIN scaler",
+    "NEW_SCALER_FIT": "NO",
+    "not_editor026_027_028_experimental_representations": true
+  },
+  "architecture": {
+    "odst": "20-day x 13-feature -> Bi-LSTM -> temporal attention -> attention-pooled representation -> ODST -> binary logit",
+    "linear": "20-day x 13-feature -> Bi-LSTM -> temporal attention -> linear prediction head",
+    "odst046": {
+      "n_trees": 4,
+      "depth": 4,
+      "temperature": 0.5,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "num_layers": 2,
+      "dropout": 0.0,
+      "leaf_init_std": 0.05,
+      "choice_function": "sparsemax_sigmoid",
+      "readout": "canonical_tree_average",
+      "candidate_id": "ODST-046",
+      "tree_dim": 1,
+      "fusion_variant": "sparsemax_sigmoid_odst"
+    },
+    "encoder": {
+      "input_dim": 13,
+      "hidden_size": 64,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "fusion_variant": "sparsemax_sigmoid_odst",
+      "node_num_layers": 2,
+      "node_n_trees": 4,
+      "node_depth": 4,
+      "node_tree_dim": 1,
+      "node_temperature": 0.5,
+      "node_dropout": 0.0,
+      "leaf_init_std": 0.05,
+      "gate_hidden_dim": 32
+    }
+  },
+  "training_recipe": {
+    "optimizer": "Adam",
+    "lr_encoder": 3e-05,
+    "lr_attention": 3e-05,
+    "lr_odst": 0.001,
+    "lr_linear": 0.001,
+    "weight_decay": 0.0,
+    "batch_size": 1024,
+    "max_epochs": 15,
+    "patience": 4,
+    "grad_clip_norm": 1.0,
+    "pos_weight_multiplier_odst_teacher_student": 0.25,
+    "attention_linear_producing": {
+      "source": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed42\\config.json",
+      "architecture": "SequenceEnsembleModel",
+      "classification_head": "linear",
+      "temporal_aggregation": "attention",
+      "hidden_size": 64,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0,
+      "batch_size": 1024,
+      "max_epochs": 15,
+      "patience": 4,
+      "grad_clip_norm": 1.0,
+      "pos_weight_multiplier": 1.0,
+      "optimizer": "Adam",
+      "scheduler": {
+        "name": "ReduceLROnPlateau",
+        "mode": "max",
+        "factor": 0.5,
+        "patience": 2,
+        "min_lr": 1e-05
+      },
+      "early_stopping_metric": "validation_pr_auc",
+      "checkpoint_selection_metric": "validation_pr_auc"
+    },
+    "lambda_teacher": 0.5,
+    "lambda_route": 0.5,
+    "checkpoint_selection": "r5.2 ENDPOINT VALIDATION PR-AUC",
+    "no_endpoint_hyperparameter_search": true
+  },
+  "teacher_reproduction": {
+    "attention_linear": "editor026_user_relative.train.train_attention_linear / ATTENTION_LINEAR_PRODUCING",
+    "topt": "editor011 train_teacher: frozen encoder, data-aware ODST init, ODST-head only",
+    "ensemble": "equal-weight mean of endpoint-matched teacher logits",
+    "route": "seed-specific endpoint-matched teacher route consistency",
+    "do_not_reuse_historical_window_label_teacher_targets": true
+  },
+  "model_variants": {
+    "EP_C2": {
+      "reader": "endpoint-defined teacher-initialised task-only control",
+      "family": "odst",
+      "teacher_guidance": false,
+      "route_anchor": false,
+      "lambda_et1": 0.0,
+      "lambda_route": 0.0,
+      "historical_counterpart": "C2-OPT"
+    },
+    "EP_F10": {
+      "reader": "endpoint-defined ensemble-guided ODST student without route anchoring",
+      "family": "odst",
+      "teacher_guidance": true,
+      "route_anchor": false,
+      "lambda_et1": 0.5,
+      "lambda_route": 0.0,
+      "historical_counterpart": "F10"
+    },
+    "EP_FINAL": {
+      "reader": "endpoint-defined final ensemble-guided, route-anchored ODST student",
+      "family": "odst",
+      "teacher_guidance": true,
+      "route_anchor": true,
+      "lambda_et1": 0.5,
+      "lambda_route": 0.5,
+      "historical_counterpart": "TA2"
+    },
+    "EP_LINEAR": {
+      "reader": "endpoint-defined matched attention-linear reference",
+      "family": "linear",
+      "teacher_guidance": true,
+      "route_anchor": false,
+      "lambda_et1": 0.5,
+      "lambda_route": 0.0,
+      "historical_counterpart": "L1"
+    }
+  },
+  "seeds": [
+    42,
+    52,
+    62
+  ],
+  "bootstrap": {
+    "sampling_unit": "user",
+    "n_valid": 2000,
+    "seed": 42,
+    "windows_not_independent": true,
+    "paired_contrasts_identical_resampled_users": true
+  },
+  "rulings": {
+    "R52_DEOVERLAP_RANKING_SIGNAL": {
+      "SUPPORTED": "A1 TA2 offset-0 mean PR-AUC > prevalence AND A2 user-cluster CI lower bound of ranking excess > 0 AND A3 TA2 PR-AUC > prevalence in >=15/20 offsets",
+      "CONSISTENT": "mean/median ranking remains above prevalence but A2 or A3 fails",
+      "NOT_SUPPORTED": "median TA2 PR-AUC <= median prevalence across offsets"
+    },
+    "component_contrasts": {
+      "SUPPORTED": "offset-0 CI lower bound > 0 AND favourable in >=15/20 offsets",
+      "CONSISTENT": "median contrast > 0 AND favourable in >=11/20 but strong criterion fails",
+      "NOT_SUPPORTED": "median contrast <= 0 or favourable in <=10/20 offsets"
+    },
+    "ENDPOINT_RANKING_SIGNAL": {
+      "SUPPORTED": "B1 EP_FINAL mean PR-AUC > prevalence AND B2 CI lower bound of ranking excess > 0",
+      "CONSISTENT": "mean ranking excess > 0 but CI includes zero",
+      "NOT_SUPPORTED": "mean EP_FINAL PR-AUC <= prevalence"
+    },
+    "ENDPOINT_DEOVERLAP_SIGNAL": {
+      "SUPPORTED": "B3 offset-0 EP_FINAL PR-AUC > prevalence AND B4 offset-0 CI lower bound > 0 AND B5 >=15/20 offsets above prevalence",
+      "CONSISTENT": "directionally positive but B4/B5 do not both pass",
+      "NOT_SUPPORTED": "median non-overlap PR-AUC <= median prevalence"
+    },
+    "strong_offset_count": 15,
+    "consistent_offset_count": 11
+  },
+  "claim_boundaries": {
+    "same_user_temporal_partitions": true,
+    "unseen_user_generalisation_tested": false,
+    "real_time_intraday_prediction_tested": false,
+    "pre_event_forecasting_tested": false,
+    "do_not_compare_absolute_any_day_minus_endpoint_pr_auc_as_model_effect": true,
+    "do_not_start_editor030_automatically": true,
+    "do_not_access_r52_test": true,
+    "do_not_reopen_model_rescue": true,
+    "EDITOR024_R61_GENERALISATION_RESULT_CHANGED": "NO"
+  },
+  "parts": [
+    "PART_A_DEOVERLAPPED_SENSITIVITY",
+    "PART_B_ENDPOINT_DEFINED_TASK"
+  ],
+  "historical_models": [
+    "C2-OPT",
+    "F10",
+    "TA2",
+    "L1"
+  ],
+  "endpoint_models": [
+    "EP_C2",
+    "EP_F10",
+    "EP_FINAL",
+    "EP_LINEAR"
+  ],
+  "written_at": "2026-08-24T14:37:47Z"
+}

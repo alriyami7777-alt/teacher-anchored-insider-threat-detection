@@ -1,0 +1,187 @@
+{
+  "task_id": "EDITOR-010",
+  "campaign": "EDITOR-010 PARALLEL ODST CAPACITY, RARE-EVENT OBJECTIVE, AND TEACHER-QUALITY RESCUE",
+  "status": "PHASE0_FROZEN_BEFORE_RESCUE_EXECUTION",
+  "frozen_at_utc": "2026-08-14T18:43:09Z",
+  "base_commit": "cde793de9135c8d4f6491d204f586ce8e00c3e0d",
+  "worktree": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor010",
+  "branch": "editor010-capacity-objective-rescue",
+  "parallel_isolation": {
+    "EDITOR009_WORKTREE_TOUCHED": false,
+    "shared_writable_tree": false,
+    "merge_tonight": false
+  },
+  "partition_scope": [
+    "CERT r5.2 TRAIN",
+    "CERT r5.2 VALIDATION"
+  ],
+  "DEVELOPMENT_ONLY": true,
+  "r52_test_accessed": false,
+  "r51_accessed_for_new_execution": false,
+  "r62_accessed_for_new_execution": false,
+  "PRIMARY_METRIC": "PR_AUC",
+  "SECONDARY_METRICS": [
+    "F1",
+    "precision",
+    "recall",
+    "FP",
+    "FN",
+    "Brier",
+    "log_loss"
+  ],
+  "SCREENING_SEED": 42,
+  "FULL_CONFIRMATION_SEEDS": [
+    42,
+    52,
+    62
+  ],
+  "experiment_families": {
+    "FAMILY_A": {
+      "name": "representation/headroom diagnostic",
+      "heads": [
+        "H-LIN",
+        "H-ODST",
+        "H-MLP"
+      ],
+      "H_MLP_role": "diagnostic_only_not_automatically_a_paper_model",
+      "H_MLP_architecture": "128 -> Linear(64) -> ReLU -> Linear(1)"
+    },
+    "FAMILY_B": {
+      "name": "ODST capacity/optimisation landscape",
+      "max_seed42_configurations": 48,
+      "n_frozen_candidates": 48,
+      "producing_anchor": "ODST-000",
+      "varied_dimensions": [
+        "n_trees",
+        "depth",
+        "temperature",
+        "lr",
+        "weight_decay",
+        "dropout"
+      ],
+      "frozen_dimensions": [
+        "num_layers=2",
+        "leaf_init_std=0.05",
+        "choice_function=sparsemax_sigmoid",
+        "readout=canonical_tree_average",
+        "batch_size=1024",
+        "max_epochs=15",
+        "patience=4",
+        "grad_clip_norm=1.0"
+      ],
+      "design": "producing + one-at-a-time + structured pairwise/corner subset; Cartesian product not used because 3^5>48",
+      "candidate_ids": [
+        "ODST-000",
+        "ODST-001",
+        "ODST-002",
+        "ODST-003",
+        "ODST-004",
+        "ODST-005",
+        "ODST-006",
+        "ODST-007",
+        "ODST-008",
+        "ODST-009",
+        "ODST-010",
+        "ODST-011",
+        "ODST-012",
+        "ODST-013",
+        "ODST-014",
+        "ODST-015",
+        "ODST-016",
+        "ODST-017",
+        "ODST-018",
+        "ODST-019",
+        "ODST-020",
+        "ODST-021",
+        "ODST-022",
+        "ODST-023",
+        "ODST-024",
+        "ODST-025",
+        "ODST-026",
+        "ODST-027",
+        "ODST-028",
+        "ODST-029",
+        "ODST-030",
+        "ODST-031",
+        "ODST-032",
+        "ODST-033",
+        "ODST-034",
+        "ODST-035",
+        "ODST-036",
+        "ODST-037",
+        "ODST-038",
+        "ODST-039",
+        "ODST-040",
+        "ODST-041",
+        "ODST-042",
+        "ODST-043",
+        "ODST-044",
+        "ODST-045",
+        "ODST-046",
+        "ODST-047"
+      ]
+    },
+    "FAMILY_C": {
+      "name": "rare-event supervised-objective landscape",
+      "heads": "best_three_FAMILY_B_ODST_plus_current_ODST_000",
+      "objectives": {
+        "O0": "current producing WBCE pos_weight=(n_neg/n_pos)*0.25 from INNER_TRAIN only",
+        "O1": "class-balanced WBCE pos_weight=(n_neg/n_pos)*1.0 from INNER_TRAIN only; not a rename of O0",
+        "O2": "focal gamma in {1,2} with O0 pos_weight from INNER_TRAIN",
+        "O3": "O0 task loss + pairwise logistic ranking lambda_rank in {0.1,0.5,1.0}",
+        "O4": "O1 class-balanced task loss + pairwise ranking; best two O3 configs only"
+      },
+      "no_direct_differentiable_AP_loss": true,
+      "pairwise_pair_construction": {
+        "scope": "within_batch",
+        "deterministic": true,
+        "max_pairs_per_batch": 512,
+        "negatives_per_positive_cap": 8,
+        "formula": "L_rank = log(1 + exp(-(s_pos - s_neg)))"
+      }
+    },
+    "FAMILY_D": {
+      "name": "teacher-quality / teacher-ceiling diagnostic",
+      "seeds": [
+        42,
+        52,
+        62
+      ],
+      "models": [
+        "teacher",
+        "C2",
+        "C5_original_paper",
+        "attention-linear"
+      ],
+      "ensemble": "equal-weight mean of teacher42/52/62 scores; no learned weights; no validation tuning",
+      "ET1_condition": "execute only if teacher_ensemble PR-AUC > best individual teacher PR-AUC on frozen r5.2 VALIDATION",
+      "ENSEMBLE_ROUTE_ANCHORING": "OFF unless mathematically valid correspondence exists"
+    },
+    "FAMILY_E": {
+      "name": "promoted full r5.2 confirmation",
+      "max_promoted_candidates": 4,
+      "promotion_source": "INNER_SELECT only",
+      "official_validation_opened_only_after_promotion_freeze": true,
+      "retrain_partition": "full frozen r5.2 TRAIN",
+      "eval_partition": "r5.2 VALIDATION once",
+      "seeds": [
+        42,
+        52,
+        62
+      ]
+    }
+  },
+  "no_experiment_family_may_be_invented_after_results": true,
+  "forbidden": [
+    "r5.2 TEST",
+    "CERT r5.1",
+    "CERT r6.2",
+    "CERT r4.1",
+    "CERT r6.1",
+    "target adaptation",
+    "fit target scalers",
+    "download new CERT versions",
+    "modify frozen historical result packets",
+    "read unfinished EDITOR-009 results during candidate selection"
+  ]
+}

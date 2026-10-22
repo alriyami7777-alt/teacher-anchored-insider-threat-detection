@@ -1,0 +1,48 @@
+{
+  "CROSS_VIEW_ODST_VALUE": "NO_CROSS_VIEW_ODST_VALUE",
+  "EDITOR_ISSUE_ODST_VALUE": "NOT_RESOLVED",
+  "information_fairness": "ODST-specific only if tree beats matched Linear40/MLP40",
+  "comparisons": {
+    "L1_MEAN_PR_AUC": 0.9388809579807144,
+    "TA2_MEAN_PR_AUC": 0.9428421883320307,
+    "BEST_CROSS_VIEW_TREE_MODEL": null,
+    "BEST_CROSS_VIEW_TREE_MEAN_PR_AUC": null,
+    "MATCHED_LINEAR40_MEAN_PR_AUC": "NOT_TRAINED_NO_PROMOTED_TREE",
+    "MATCHED_MLP40_MEAN_PR_AUC": "NOT_TRAINED_NO_PROMOTED_TREE",
+    "inner_LIN40_D": 0.9358751875507038,
+    "inner_MLP40_D": 0.9401117154719215,
+    "inner_ODST40_D": 0.9382243122714573,
+    "inner_IWODST40_D": 0.9374952794840229,
+    "DELTA_TREE_VS_L1": null,
+    "DELTA_TREE_VS_LINEAR40": null,
+    "DELTA_TREE_VS_MLP40": null,
+    "POSITIVE_SEEDS_TREE_VS_L1": "0/3",
+    "POSITIVE_SEEDS_TREE_VS_LINEAR40": "0/3",
+    "USER_CLUSTER_CI_TREE_MINUS_L1": null,
+    "USER_CLUSTER_CI_TREE_MINUS_LINEAR40": null,
+    "CROSS_VIEW_ODST_VALUE": "NO_CROSS_VIEW_ODST_VALUE",
+    "promotion": "NONE",
+    "reason": "no tree branch met L1+0.001 and best-non-tree+0.001 with teacher>task"
+  },
+  "inner_effects": {
+    "A_second_view_helps": {
+      "best_branch_minus_L1": 0.0019329986521733344
+    },
+    "B_tree_structure": {
+      "ODST40-D_minus_LIN40-D": 0.002349124720753548,
+      "ODST40-D_minus_MLP40-D": -0.0018874032004642105,
+      "IWODST40-D_minus_LIN40-D": 0.0016200919333191344,
+      "IWODST40-D_minus_MLP40-D": -0.0026164359878986243
+    },
+    "C_teacher_within_tree": {
+      "ODST40-D_minus_ODST40-T": 0.002816607928766257,
+      "IWODST40-D_minus_IWODST40-T": 0.005055349198085146
+    },
+    "non_tree_available": [
+      "LIN40-D",
+      "MLP40-D"
+    ],
+    "best_non_tree": "MLP40-D",
+    "best_non_tree_PR_AUC": 0.9401117154719215
+  }
+}

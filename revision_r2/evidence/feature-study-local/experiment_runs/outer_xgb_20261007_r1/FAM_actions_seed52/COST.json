@@ -1,0 +1,7 @@
+{
+  "peak_process_rss_bytes": 1096609792,
+  "sampling_seconds": 0.2,
+  "fit_seconds": 3.7810000000008586,
+  "inference_seconds": 0.01599999999962165,
+  "gpu_peak_memory_measured": false
+}

@@ -1,0 +1,184 @@
+{
+  "promoted": [],
+  "promoted_names": [],
+  "L1_PR_AUC": 0.9381738173639047,
+  "L1_select_metrics": {
+    "threshold": 0.8400000000000001,
+    "precision": 0.8894230769230769,
+    "recall": 0.914332784184514,
+    "f1": 0.9017059301380991,
+    "pr_auc": 0.9381738173639047,
+    "roc_auc": 0.9991206953012524,
+    "tn": 126648,
+    "fp": 138,
+    "fn": 104,
+    "tp": 1110,
+    "Brier": 0.0036336208356793393,
+    "log_loss": 0.031101752154746316,
+    "predicted_positive_fraction": 0.00975,
+    "n": 128000,
+    "n_pos": 1214
+  },
+  "inner_rows": [
+    {
+      "condition": "L1",
+      "family": "L1",
+      "teacher": false,
+      "seed": 42,
+      "select_PR_AUC": 0.9381738173639047,
+      "select_F1": 0.9017059301380991,
+      "select_Brier": 0.0036336208356793393,
+      "select_log_loss": 0.031101752154746316,
+      "best_epoch": 0,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed42\\best.pt"
+    },
+    {
+      "condition": "MLP40-D",
+      "family": "MLP40",
+      "teacher": true,
+      "seed": 42,
+      "select_PR_AUC": 0.9410302014857033,
+      "select_F1": 0.9023789991796555,
+      "select_Brier": 0.0032669264770576693,
+      "select_log_loss": 0.029732682522237906,
+      "best_epoch": 2,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor019\\outputs\\editor019_oblique_boosted_tree_rescue\\MLP40-D\\seed42\\best.pt"
+    },
+    {
+      "condition": "ODST40-D",
+      "family": "ODST40",
+      "teacher": true,
+      "seed": 42,
+      "select_PR_AUC": 0.9382028891655122,
+      "select_F1": 0.9017857142857143,
+      "select_Brier": 0.0034202256939653342,
+      "select_log_loss": 0.030254103522940452,
+      "best_epoch": 2,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor019\\outputs\\editor019_oblique_boosted_tree_rescue\\ODST40-D\\seed42\\best.pt"
+    },
+    {
+      "condition": "SO-ODST40-T",
+      "family": "SO-ODST40",
+      "teacher": false,
+      "seed": 42,
+      "select_PR_AUC": 0.9344311784193362,
+      "select_F1": 0.9005278116118555,
+      "select_Brier": 0.003420766582063947,
+      "select_log_loss": 0.023718660892255095,
+      "best_epoch": 1,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor019\\outputs\\editor019_oblique_boosted_tree_rescue\\SO-ODST40-T\\seed42\\best.pt"
+    },
+    {
+      "condition": "SO-ODST40-D",
+      "family": "SO-ODST40",
+      "teacher": true,
+      "seed": 42,
+      "select_PR_AUC": 0.9379018998535619,
+      "select_F1": 0.9022801302931596,
+      "select_Brier": 0.0033440852687276045,
+      "select_log_loss": 0.030055683098795923,
+      "best_epoch": 2,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor019\\outputs\\editor019_oblique_boosted_tree_rescue\\SO-ODST40-D\\seed42\\best.pt"
+    },
+    {
+      "condition": "SO-DTE40-T",
+      "family": "SO-DTE40",
+      "teacher": false,
+      "seed": 42,
+      "select_PR_AUC": 0.9332904958289272,
+      "select_F1": 0.9008196721311476,
+      "select_Brier": 0.003405237567623491,
+      "select_log_loss": 0.023130330497020412,
+      "best_epoch": 1,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor019\\outputs\\editor019_oblique_boosted_tree_rescue\\SO-DTE40-T\\seed42\\best.pt"
+    },
+    {
+      "condition": "SO-DTE40-D",
+      "family": "SO-DTE40",
+      "teacher": true,
+      "seed": 42,
+      "select_PR_AUC": 0.9374861904506611,
+      "select_F1": 0.9025974025974026,
+      "select_Brier": 0.003390417190028977,
+      "select_log_loss": 0.030167124549053796,
+      "best_epoch": 1,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor019\\outputs\\editor019_oblique_boosted_tree_rescue\\SO-DTE40-D\\seed42\\best.pt"
+    },
+    {
+      "condition": "BSO-DTE40-T",
+      "family": "BSO-DTE40",
+      "teacher": false,
+      "seed": 42,
+      "select_PR_AUC": 0.901424505959159,
+      "select_F1": 0.8482844150475403,
+      "select_Brier": 0.00400263488654986,
+      "select_log_loss": 0.016642458165473398,
+      "best_epoch": 5,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor019\\outputs\\editor019_oblique_boosted_tree_rescue\\BSO-DTE40-T\\seed42\\best.pt"
+    },
+    {
+      "condition": "BSO-DTE40-D",
+      "family": "BSO-DTE40",
+      "teacher": true,
+      "seed": 42,
+      "select_PR_AUC": 0.9393893821062028,
+      "select_F1": 0.8987034035656402,
+      "select_Brier": 0.0034504640539278555,
+      "select_log_loss": 0.030193854483924292,
+      "best_epoch": 1,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor019\\outputs\\editor019_oblique_boosted_tree_rescue\\BSO-DTE40-D\\seed42\\best.pt"
+    }
+  ],
+  "effects": {
+    "SIGNED_SPLIT_EFFECT": -0.0003009893119503282,
+    "NON_OBLIVIOUS_EFFECT": -0.00041570940290081015,
+    "BOOSTING_EFFECT": 0.0019031916555417583,
+    "TEACHER_EFFECT": {
+      "SO-ODST40": 0.0034707214342256654,
+      "SO-DTE40": 0.004195694621733859,
+      "BSO-DTE40": 0.0379648761470438
+    },
+    "BEST_TREE": "BSO-DTE40-D",
+    "BEST_TREE_PR_AUC": 0.9393893821062028,
+    "BEST_TREE_MINUS_L1": 0.0012155647422981142,
+    "BEST_TREE_MINUS_MLP40": -0.0016408193795004467,
+    "tree_D": {
+      "SO-ODST40": 0.9379018998535619,
+      "SO-DTE40": 0.9374861904506611,
+      "BSO-DTE40": 0.9393893821062028
+    }
+  },
+  "XGB_TEACHER_BRANCH": "TRIGGERED",
+  "xgb_trigger_detail": {
+    "no_tree_passed_section_16": true,
+    "best_so_dte_or_bso": "BSO-DTE40-D",
+    "best_dte_PR_AUC": 0.9393893821062028,
+    "delta_vs_ODST40_D": 0.00118649294069062,
+    "abs_delta_vs_MLP40_D": 0.0016408193795004467,
+    "odst_margin": 0.001,
+    "mlp_band": 0.002
+  },
+  "xgb_promotion": {
+    "eligible": false,
+    "promoted": [],
+    "promoted_names": [],
+    "MLP40_XD": 0.9381860166837507,
+    "BEST_TREE_XD": 0.9239670425144786,
+    "TREE_MINUS_MLP_XGB_TEACHER": -0.014218974169272092,
+    "margin_frozen": 0.001
+  },
+  "n_trees": 11,
+  "scaler": {
+    "class": "sklearn.preprocessing.StandardScaler",
+    "fitted_on": "INNER_TRAIN",
+    "n_features": 40,
+    "with_mean": true,
+    "with_std": true,
+    "mean_sha256": "6ac21c91b2c9347d3876a031943760c9fa1ca5ddbd4041de595ee04057b108dc",
+    "scale_sha256": "803f1e000f18354aa623939a2ebfd872048b2ae7bebeff9797aa7d4578290548",
+    "state_sha256": "ef7aa307aafe8a7ef357aa540ae62ffe59044d26f5b645d56cc47aa6bba3d7eb",
+    "n_fit_rows": 622000
+  },
+  "no_architecture_may_be_added_after_this_commit": true,
+  "utc": "2026-08-17T05:39:25Z"
+}

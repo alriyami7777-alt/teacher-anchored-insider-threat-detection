@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-21T15:07:33.590153+00:00",
+  "rng": "one numpy.random.default_rng(20261022), insider then non_insider; sorted before each shuffle",
+  "rounding_adjustment_larger_stratum": 0,
+  "answer_file_index_count": 99,
+  "groups": {
+    "HOLDOUT": {
+      "users": 500,
+      "insider": 25,
+      "non_insider": 475,
+      "list_sha256": "9aa35a84e0ddb723bf11b1f332bdaad224b2db50bde01c06579e8930356dd001",
+      "periods": {
+        "train": {
+          "windows": 197000,
+          "positive_windows": 917
+        },
+        "validation": {
+          "windows": 16000,
+          "positive_windows": 255
+        }
+      }
+    },
+    "DEVELOPMENT": {
+      "users": 1500,
+      "insider": 74,
+      "non_insider": 1426,
+      "list_sha256": "7559b7357eb1b4c7fbb11a23bbee9da6bc2262e8af53163f263e9f91fdc48aad",
+      "periods": {
+        "train": {
+          "windows": 591000,
+          "positive_windows": 3040
+        },
+        "validation": {
+          "windows": 48000,
+          "positive_windows": 473
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "task_id": "EDITOR-011",
+  "status": "COMPLETE",
+  "finished_utc": "2026-08-15T02:47:06Z",
+  "r52_test_accessed": false,
+  "r51_rerun": false,
+  "r62_rerun": false,
+  "T_OPT_VIABLE": "YES",
+  "PRIMARY_ROUTE_ANCHOR_CONFIRMATION": "MIXED_ROUTE_ANCHOR_EFFECT",
+  "EDITOR011_PAPER_RESCUE_GATE": "MATCHED_ROUTE_ANCHOR_RESCUE_MIXED",
+  "paired_start_verified": true,
+  "user_mapping_recovered": true,
+  "USER_CLUSTER_BOOTSTRAP_STATUS": "AVAILABLE"
+}

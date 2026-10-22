@@ -1,0 +1,16 @@
+{
+  "compatible": true,
+  "F10": {
+    "teacher_relative_route_MAE": 0.013852491027299319,
+    "teacher_relative_route_KL": 0.0482107648820738,
+    "hard_route_agreement": 0.9886372401073106,
+    "dominant_leaf_agreement": 0.9601502137826962
+  },
+  "TA2": {
+    "teacher_relative_route_MAE": 0.009477296424532945,
+    "teacher_relative_route_KL": 0.016242056279121068,
+    "hard_route_agreement": 0.9920958878269618,
+    "dominant_leaf_agreement": 0.9712782947686117
+  },
+  "R61_ROUTE_STRUCTURAL_VALUE": "SUPPORTED"
+}

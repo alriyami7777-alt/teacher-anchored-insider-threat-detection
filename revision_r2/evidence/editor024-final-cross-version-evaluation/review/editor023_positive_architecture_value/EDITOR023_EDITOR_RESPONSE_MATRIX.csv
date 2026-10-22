@@ -1,0 +1,9 @@
+question,ruling,evidence
+teacher_guidance_clean_value,SUPPORTED_STRONG,TA2-C2 clean=0.007518299814493923; seeds=3/3
+teacher_guidance_degraded_input_value,CONSISTENT,F10-C2 SOURCE_AURC=0.00695400674443003; NOISE_AURC=0.009093431410874708
+complete_TA2_formulation_vs_C2,point_both_positive,TA2-C2 SOURCE=0.014498628245197986 NOISE=0.013990157810077064
+route_anchor_structural_value,SUPPORTED,clean MAE TA2=0.0024146931577659057 F10=0.0075467338844202765
+odst_degraded_input_value_over_linear,SUPPORTED,TA2-L1 SOURCE=0.030554969470184545 NOISE=0.008877683508209944
+explanation_stability,SUPPORTED,TA2-F10 spearman=0.04033988898979185
+clean_ODST_superiority_over_attention_linear,NOT_CLAIMED,outside EDITOR-023 claim boundaries unless separately supported
+overall_architecture_value,SUPPORTED_WITH_QUALIFICATION,claim separation mandatory; not every metric required

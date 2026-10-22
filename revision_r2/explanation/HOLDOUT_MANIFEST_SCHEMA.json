@@ -1,0 +1,74 @@
+{
+  "description": "Complete and hash this manifest at authorised Phase 2 scoring time. This is a schema, not a runnable data manifest.",
+  "release": "r5.2",
+  "partition": "HOLDOUT",
+  "scoring_authorised": true,
+  "cohort": {
+    "path": "explicit HOLDOUT NPZ with X (N,20,13), y, user; no TEST data",
+    "sha256": "required",
+    "scaler_sha256": "required"
+  },
+  "references": {
+    "path": "explicit JSON derived solely from Phase 2 non-HOLDOUT TRAIN/VALIDATION",
+    "sha256": "required",
+    "required_fields": {
+      "reference_population": "phase2_non_holdout_train",
+      "spread_population": "phase2_validation_non_holdout",
+      "shared_scaled_coordinates_across_seeds": true,
+      "holdout_X_uses_this_scaler_sha256": "required",
+      "TA2_baseline_sequence": "20x13 scaled TRAIN median sequence",
+      "XGBoost_summary_medians": "40 TRAIN summary medians, locked order",
+      "validation_logit_sd": {
+        "TA2": {
+          "42": "non-HOLDOUT validation margin SD (ddof=0)",
+          "52": "non-HOLDOUT validation margin SD (ddof=0)",
+          "62": "non-HOLDOUT validation margin SD (ddof=0)"
+        },
+        "XGBoost_40": {
+          "42": "non-HOLDOUT validation margin SD (ddof=0)",
+          "52": "non-HOLDOUT validation margin SD (ddof=0)",
+          "62": "non-HOLDOUT validation margin SD (ddof=0)"
+        }
+      }
+    }
+  },
+  "models": {
+    "TA2": {
+      "42": {
+        "path": "retrained checkpoint path",
+        "sha256": "required",
+        "training_population": "phase2_non_holdout_train"
+      },
+      "52": {
+        "path": "retrained checkpoint path",
+        "sha256": "required",
+        "training_population": "phase2_non_holdout_train"
+      },
+      "62": {
+        "path": "retrained checkpoint path",
+        "sha256": "required",
+        "training_population": "phase2_non_holdout_train"
+      }
+    },
+    "XGBoost_40": {
+      "42": {
+        "path": "retrained checkpoint path",
+        "sha256": "required",
+        "training_population": "phase2_non_holdout_train"
+      },
+      "52": {
+        "path": "retrained checkpoint path",
+        "sha256": "required",
+        "training_population": "phase2_non_holdout_train"
+      },
+      "62": {
+        "path": "retrained checkpoint path",
+        "sha256": "required",
+        "training_population": "phase2_non_holdout_train"
+      }
+    }
+  },
+  "sampling": "all malicious windows plus equal-sized random benign sample; rng=20261022",
+  "execution": "explicit --manifest, --manifest-sha256, --execute-authorised-holdout-scoring, --output (new directory) required",
+  "never_run_in_phase3": true
+}

@@ -1,0 +1,15 @@
+view,contrast,role,status,delta_AP,ci95_low,ci95_high,decision,valid_bootstrap_replicates
+pooled_completed,TA2 - XGBoost_40,primary,ok,-0.1118024728974328,-0.2969604244392398,0.0587761873435058,comparable / not distinguishable,2000
+pooled_completed,TA2 - F00,primary,ok,0.019709835260994,0.008270826368433,0.039828290788385,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_completed,TA2 - L1,secondary,ok,0.0377042556308643,0.0074756969514178,0.0730756850439008,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_completed,TA2 - RF_40,secondary,ok,0.0890003854355452,-0.0504206257122136,0.2312628941844991,comparable / not distinguishable,2000
+pooled_completed,F10 - F00,secondary,ok,0.0225312626316714,0.0092176209093709,0.0411496081355605,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_completed,TA2 - uniTA2,secondary,ok,0.0194805708210483,-0.0194037116106728,0.063652961210878,comparable / not distinguishable,2000
+pooled_completed,TA2 - BiLSTM_noAttn,secondary_exploratory,ok,0.018583380393797,-0.0166507370637508,0.0635490446543782,comparable / not distinguishable,2000
+pooled_completed,TA2 - BiGRU_Attn,secondary_exploratory,ok,0.0679412923310517,0.0212971545267735,0.1237371808015526,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_completed,TA2 - TCN,secondary_exploratory,ok,0.0011554451978396,-0.0348306590175939,0.0406221378860039,comparable / not distinguishable,2000
+pooled_completed,TA2 - Transformer,secondary_exploratory,ok,-0.0179460006626409,-0.0917775367656925,0.07243361743543,comparable / not distinguishable,2000
+pooled_completed,TA2 - MLP,secondary_exploratory,ok,0.0863271941940341,0.017508677563804,0.1886771414581539,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_completed,TA2 - LSTM_AE,secondary_exploratory,ok,0.6933241402561987,0.5134286967310928,0.8297965706784622,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_completed,TA2 - IsolationForest,secondary_exploratory,ok,0.7010509502032631,0.5203064988401844,0.8379434661980091,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_completed,TA2 - LightGBM_40,secondary_exploratory,ok,-0.0844867198402532,-0.2641719423687852,0.0932705344693761,comparable / not distinguishable,2000

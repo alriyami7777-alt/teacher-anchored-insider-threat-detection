@@ -1,0 +1,114 @@
+{
+  "P1_best_current_objective": {
+    "vs_C2": {
+      "cluster": "user_id",
+      "n_users": 2000,
+      "n_valid_resamples": 2000,
+      "n_attempted_draws": 2000,
+      "seed": 42,
+      "mean_delta": 0.012111864647755894,
+      "ci95": [
+        -0.018081731661267697,
+        0.06315572726694532
+      ],
+      "note": "user-cluster bootstrap; windows not independent; incident clusters not invented"
+    },
+    "vs_attention_linear": {
+      "cluster": "user_id",
+      "n_users": 2000,
+      "n_valid_resamples": 2000,
+      "n_attempted_draws": 2000,
+      "seed": 42,
+      "mean_delta": 0.005982205392465378,
+      "ci95": [
+        -0.026465254441566492,
+        0.055916774197536934
+      ],
+      "note": "user-cluster bootstrap; windows not independent; incident clusters not invented"
+    }
+  },
+  "P2_best_ranking_aware": {
+    "vs_C2": {
+      "cluster": "user_id",
+      "n_users": 2000,
+      "n_valid_resamples": 2000,
+      "n_attempted_draws": 2000,
+      "seed": 42,
+      "mean_delta": 0.01111964656728094,
+      "ci95": [
+        -0.026735599427669048,
+        0.06922172986359526
+      ],
+      "note": "user-cluster bootstrap; windows not independent; incident clusters not invented"
+    },
+    "vs_attention_linear": {
+      "cluster": "user_id",
+      "n_users": 2000,
+      "n_valid_resamples": 2000,
+      "n_attempted_draws": 2000,
+      "seed": 42,
+      "mean_delta": 0.004989987311990422,
+      "ci95": [
+        -0.03279840047422207,
+        0.06081484852493685
+      ],
+      "note": "user-cluster bootstrap; windows not independent; incident clusters not invented"
+    }
+  },
+  "P3_best_focal_or_balanced": {
+    "vs_C2": {
+      "cluster": "user_id",
+      "n_users": 2000,
+      "n_valid_resamples": 2000,
+      "n_attempted_draws": 2000,
+      "seed": 42,
+      "mean_delta": 0.009239945472006485,
+      "ci95": [
+        -0.02531889858121636,
+        0.06165704198538915
+      ],
+      "note": "user-cluster bootstrap; windows not independent; incident clusters not invented"
+    },
+    "vs_attention_linear": {
+      "cluster": "user_id",
+      "n_users": 2000,
+      "n_valid_resamples": 2000,
+      "n_attempted_draws": 2000,
+      "seed": 42,
+      "mean_delta": 0.0031102862167159693,
+      "ci95": [
+        -0.03363516668428482,
+        0.055174444874796315
+      ],
+      "note": "user-cluster bootstrap; windows not independent; incident clusters not invented"
+    }
+  },
+  "P4_ET1": {
+    "vs_C2": {
+      "cluster": "user_id",
+      "n_users": 2000,
+      "n_valid_resamples": 2000,
+      "n_attempted_draws": 2000,
+      "seed": 42,
+      "mean_delta": 0.011267969760000607,
+      "ci95": [
+        -0.022752957464025912,
+        0.06577146669419434
+      ],
+      "note": "user-cluster bootstrap; windows not independent; incident clusters not invented"
+    },
+    "vs_attention_linear": {
+      "cluster": "user_id",
+      "n_users": 2000,
+      "n_valid_resamples": 2000,
+      "n_attempted_draws": 2000,
+      "seed": 42,
+      "mean_delta": 0.0051383105047100915,
+      "ci95": [
+        -0.030330390647720206,
+        0.05896852535319985
+      ],
+      "note": "user-cluster bootstrap; windows not independent; incident clusters not invented"
+    }
+  }
+}

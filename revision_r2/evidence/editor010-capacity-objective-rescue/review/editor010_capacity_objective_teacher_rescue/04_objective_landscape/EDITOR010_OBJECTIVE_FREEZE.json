@@ -1,0 +1,23 @@
+{
+  "heads": [
+    "ODST-046",
+    "ODST-039",
+    "ODST-029",
+    "ODST-000"
+  ],
+  "O0": "producing WBCE pos_weight_mult=0.25 INNER_TRAIN",
+  "O1": "class-balanced WBCE pos_weight_mult=1.0 INNER_TRAIN; not a rename of O0",
+  "O2": "focal gamma={1,2} with O0 pos_weight",
+  "O3": "O0 + pairwise ranking lambda_rank={0.1,0.5,1.0}",
+  "O4": "best two O3 + O1 class-balanced task loss",
+  "pair_construction": {
+    "max_pairs_per_batch": 512,
+    "neg_per_pos": 8,
+    "formula": "log(1+exp(-(s+-s-)))"
+  },
+  "no_differentiable_AP_package": true,
+  "inner_train_n_pos": 2457,
+  "inner_train_n_neg": 619543,
+  "pos_weight_O0": 63.03856328856329,
+  "pos_weight_O1": 252.15425315425315
+}

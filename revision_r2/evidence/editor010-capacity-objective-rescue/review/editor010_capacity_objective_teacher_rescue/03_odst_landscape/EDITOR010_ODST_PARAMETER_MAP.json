@@ -1,0 +1,22 @@
+{
+  "implementation": "src/prototype_v3_node/odst.py",
+  "supported_parameters": {
+    "n_trees": "ODST/NODE n_trees per Dense layer; producing=8",
+    "depth": "oblivious depth; producing=4",
+    "temperature": "initial split temperature; learnable via softplus(log_temperatures)",
+    "feature_selection_temperature": "NOT a separate parameter; entmax/sparsemax on feature_logits",
+    "threshold_initialisation": "zeros; optional data_aware_initialize not used (match producing)",
+    "leaf_initialisation": "Normal(0, leaf_init_std=0.05)",
+    "dropout": "NODE between-layer dropout; producing=0.0",
+    "tree/output regularisation": "no explicit ODST L2 in producing Adam; EDITOR-010 varies Adam weight_decay",
+    "learning_rate": "head Adam lr; producing=3e-4",
+    "weight_decay": "Adam weight_decay; producing=0.0",
+    "batch_size": "1024 frozen",
+    "gradient_clipping": "1.0 frozen",
+    "num_layers": "2 frozen this campaign",
+    "choice_function": "sparsemax_sigmoid frozen (producing)",
+    "readout": "canonical_tree_average frozen"
+  },
+  "n_grid": 48,
+  "max_grid": 48
+}

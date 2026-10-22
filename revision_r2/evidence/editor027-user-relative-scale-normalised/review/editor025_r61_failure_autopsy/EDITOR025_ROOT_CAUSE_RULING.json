@@ -1,0 +1,90 @@
+{
+  "packet": {
+    "scenario4_available": false,
+    "n_official_scenarios": 5,
+    "n_scenarios_with_answers": 4,
+    "semantic_mismatch": false,
+    "representation_transfer_ratios": {
+      "C2-OPT": 0.15626504499761829,
+      "F10": 0.15855185810847014,
+      "TA2": 0.15950650800769253,
+      "L1": 0.18111742091721014
+    },
+    "original_pr_auc": {
+      "C2-OPT": 9.58548433287757e-05,
+      "F10": 9.391288112518778e-05,
+      "TA2": 9.445740146879832e-05,
+      "L1": 9.99715314772706e-05
+    },
+    "prevalence": 9.557344064386318e-05,
+    "diagnostic_pr_auc": {
+      "C2-OPT": 7.678337147457205e-05,
+      "F10": 7.334556986803534e-05,
+      "TA2": 7.471499955922729e-05,
+      "L1": 7.87467568808086e-05
+    },
+    "diagnostic_prevalence": 6.99195171026157e-05,
+    "psi_values": [
+      0.5260258524393907,
+      0.0028811208630801386,
+      5.345155994590028e-05,
+      0.0,
+      3.317436383694681,
+      0.07770887179973726,
+      0.04053469653450822,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_shift_z": [
+      -0.1587618550296383,
+      -0.04096792641043758,
+      0.005226937994736664,
+      0.03784128581107536,
+      -0.6442391695392732,
+      -0.018428916497261597,
+      -0.06105442131594883,
+      -0.009228204223875857,
+      -0.004882516154525145,
+      0.22486704669288815,
+      -0.021479549668506782,
+      -0.00844613848798373,
+      -0.011362341413065238
+    ],
+    "oos_rates": [
+      0.00018362403100775194,
+      0.0010329457364341085,
+      0.000312984496124031,
+      0.0014641472868217053,
+      0.0,
+      0.00017248062015503876,
+      0.003052325581395349,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "binary_rate_diffs": [
+      0.004300783063786229,
+      0.0014895880061385897,
+      0.06277202907960493,
+      0.01001231161216698,
+      0.0039414153189312184,
+      0.005291011490182185
+    ],
+    "count_activity_levels_primary_shift": true,
+    "broad_generation_shift_remains": true
+  },
+  "R61_LABEL_INTEGRITY": "PARTIAL_GROUND_TRUTH_COVERAGE",
+  "REPRESENTATION_NONPORTABILITY": "SUPPORTED",
+  "HEAD_SPECIFIC_FAILURE": "NOT_SUPPORTED",
+  "R61_COVARIATE_SHIFT": "SEVERE",
+  "EDITOR025_PRIMARY_ROOT_CAUSE": "RELEASE_LEVEL_REPRESENTATION_SHIFT",
+  "EDITOR025_RECOMMENDED_NEXT_REMEDY": "USER_RELATIVE_RELEASE_INVARIANT_REPRESENTATION",
+  "diagnostic_rescore_materially_changes_collapse": false
+}

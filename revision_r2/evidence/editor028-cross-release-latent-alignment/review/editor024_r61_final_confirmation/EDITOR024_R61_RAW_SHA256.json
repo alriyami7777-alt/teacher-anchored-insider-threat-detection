@@ -1,0 +1,35 @@
+{
+  "files": [
+    {
+      "relative_path": "logon.csv",
+      "path": "C:\\PhD\\06_Datasets\\r6.1\\r6.1\\logon.csv",
+      "byte_size": 238347368,
+      "sha256": "22b2671d1d8229c287837a958a3d2e26529ce3e2e6bbb8be06226d1e16064700"
+    },
+    {
+      "relative_path": "device.csv",
+      "path": "C:\\PhD\\06_Datasets\\r6.1\\r6.1\\device.csv",
+      "byte_size": 154084223,
+      "sha256": "4d95a992730325e0704869f2e03014132ee9f98e681d8bd9c47dbbbabb36d0ac"
+    },
+    {
+      "relative_path": "file.csv",
+      "path": "C:\\PhD\\06_Datasets\\r6.1\\r6.1\\file.csv",
+      "byte_size": 1263794447,
+      "sha256": "25050ecf9f40d9cf599dd594b43a79790e4bce29095f5bd3cfb189a0f74bd2c7"
+    },
+    {
+      "relative_path": "email.csv",
+      "path": "C:\\PhD\\06_Datasets\\r6.1\\r6.1\\email.csv",
+      "byte_size": 7731413960,
+      "sha256": "348e3426069552940f74db99fac52f0f2d2e9dab93c8bfe13dda554e6d939342"
+    },
+    {
+      "relative_path": "http.csv",
+      "path": "C:\\PhD\\06_Datasets\\r6.1\\r6.1\\http.csv",
+      "byte_size": 78481742157,
+      "sha256": "6d1a77a00b909cbfa3ad84d8108edefbb7304ff1762a86e308400f1ca4f6d609"
+    }
+  ],
+  "written_at": "2026-08-18T05:26:32Z"
+}

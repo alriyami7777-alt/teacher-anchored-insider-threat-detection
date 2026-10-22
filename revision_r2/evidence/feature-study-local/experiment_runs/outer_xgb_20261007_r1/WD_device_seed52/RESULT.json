@@ -1,0 +1,21 @@
+{
+  "average_precision": 0.716458776174021,
+  "roc_auc": 0.9800301402352863,
+  "prevalence": 0.011375,
+  "ap_minus_prevalence": 0.705083776174021,
+  "precision": 0.6492220650636492,
+  "recall": 0.6304945054945055,
+  "f1": 0.6397212543554007,
+  "tp": 459,
+  "fp": 248,
+  "tn": 63024,
+  "fn": 269,
+  "alerts_per_1000": 11.046875,
+  "threshold": 0.591856062412262,
+  "windows": 64000,
+  "positives": 728,
+  "schema": "WD_device",
+  "seed": 52,
+  "threshold_role": "TRANSPORTED_THRESHOLD",
+  "evidence_role": "NEW_RETROSPECTIVE_VALIDATION_NOT_UNTOUCHED_CONFIRMATION"
+}

@@ -1,0 +1,21 @@
+{
+  "cluster": "user",
+  "n_users": 2000,
+  "n_valid_resamples": 2000,
+  "n_attempted_draws": 2000,
+  "seed": 42,
+  "sampling_unit": "validation user",
+  "windows_not_resampled_independently": true,
+  "contrast": "TA2_minus_L1",
+  "negative_delta_is_TA2_improvement": true,
+  "mean_delta_brier": -0.0001349046366066434,
+  "ci95_brier": [
+    -0.00029656082645449725,
+    3.143900557142076e-06
+  ],
+  "mean_delta_log_loss": -0.0002563571842838417,
+  "ci95_log_loss": [
+    -0.0007461766792867345,
+    0.00023550877213722254
+  ]
+}

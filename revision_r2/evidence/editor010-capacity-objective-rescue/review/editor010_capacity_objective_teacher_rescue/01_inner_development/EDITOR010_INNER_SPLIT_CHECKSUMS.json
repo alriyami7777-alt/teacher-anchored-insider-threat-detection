@@ -1,0 +1,8 @@
+{
+  "train_sha256": "b268328d3bf2e98f712d1145958dabe175ce2c07a7c390da4b84a663317ebc2e",
+  "inner_train_n": 622000,
+  "inner_select_n": 128000,
+  "inner_train_pos": 2457,
+  "inner_select_pos": 1214,
+  "sequence_overlap": 0
+}

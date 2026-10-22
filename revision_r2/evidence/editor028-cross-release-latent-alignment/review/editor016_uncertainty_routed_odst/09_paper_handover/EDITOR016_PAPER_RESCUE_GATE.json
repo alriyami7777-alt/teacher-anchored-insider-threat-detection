@@ -1,0 +1,8 @@
+{
+  "paper_rescue_ready": false,
+  "BEST_CURRENT_PAPER_MODEL": "TA2",
+  "FULL_SYSTEM_SUPERIORITY": "NOT_SUPPORTED",
+  "ODST_SPECIALIST_INCREMENTAL_VALUE": "NOT_SUPPORTED",
+  "EDITOR_ISSUE_ODST_VALUE": "NOT_RESOLVED",
+  "do_not_overwrite_global_topk_faithfulness": true
+}

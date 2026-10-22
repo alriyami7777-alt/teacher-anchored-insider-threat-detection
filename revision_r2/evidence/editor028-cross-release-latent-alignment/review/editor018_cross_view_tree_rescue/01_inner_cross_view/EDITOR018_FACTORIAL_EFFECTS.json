@@ -1,0 +1,21 @@
+{
+  "A_second_view_helps": {
+    "best_branch_minus_L1": 0.0019329986521733344
+  },
+  "B_tree_structure": {
+    "ODST40-D_minus_LIN40-D": 0.002349124720753548,
+    "ODST40-D_minus_MLP40-D": -0.0018874032004642105,
+    "IWODST40-D_minus_LIN40-D": 0.0016200919333191344,
+    "IWODST40-D_minus_MLP40-D": -0.0026164359878986243
+  },
+  "C_teacher_within_tree": {
+    "ODST40-D_minus_ODST40-T": 0.002816607928766257,
+    "IWODST40-D_minus_IWODST40-T": 0.005055349198085146
+  },
+  "non_tree_available": [
+    "LIN40-D",
+    "MLP40-D"
+  ],
+  "best_non_tree": "MLP40-D",
+  "best_non_tree_PR_AUC": 0.9401117154719215
+}

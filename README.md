@@ -15,6 +15,23 @@ explanation and robustness procedures, and documented limitations.
 It does **not** distribute CERT datasets, answer files, raw user identifiers (exported evidence uses pseudonyms), model
 checkpoints, large prediction arrays, or private organisational material.
 
+## Revision R2 (IEEE Access, Access-2026-42960): where to find each result
+
+The final model is called **TRACE** in the revised manuscript (internal label TA2/F11 in the evidence files).
+
+| Paper item | Repository location |
+|---|---|
+| Pre-registered user-disjoint holdout protocol, with Amendment 1 (TRAIN + VALIDATION periods; r5.2 TEST sealed) and Amendment 2 (eight additional baselines), each SHA-256 receipted | `revision_r2/holdout/PREREGISTRATION_R2_HOLDOUT.md` |
+| Split receipt (counts and list hashes only) | `revision_r2/holdout/SPLIT_RECEIPT.json` |
+| Training logs and frozen-model hashes | `revision_r2/holdout/TRAINING_LOG.csv`, `revision_r2/holdout/phase4/TRAINING_LOG_PHASE4.csv`, `MODELS_FROZEN_PHASE4.json` |
+| Table 10 / Fig. 10 (unseen users, 17 models, all views) | `revision_r2/holdout/phase4/HOLDOUT_RESULTS.csv`, `HOLDOUT_CONTRASTS.csv`, `CHATGPT_PHASE4_REPORT.md`; plotting script `revision_r2/holdout/figures/plot_holdout.py` |
+| Integrated Gradients and TreeSHAP faithfulness (Section IV-E) | `revision_r2/explanation/` (validation cohort) and `revision_r2/explanation_holdout/` (unseen users) |
+| Frozen evidence behind every other table and figure (redacted: user IDs replaced by `U_` + first 10 hex digits of SHA-256) | `revision_r2/evidence/` with `EXPORT_MANIFEST.csv` and `FINAL_SCAN.json` |
+| Supplementary material source | `revision_r2/Supplementary_Material.tex` |
+| Disclosures (model-selection history, AI use, exclusions) | `revision_r2/DISCLOSURES.md`, `revision_r2/EXCLUDED_FROM_PUBLIC_COPY.md` |
+
+CERT data, answer files, raw user identifiers and model checkpoints are not distributed. Some run logs contain local Windows paths of the authors' workstation; they carry no data.
+
 ## Current architecture
 
 Input sequences are 20 days × 13 daily behavioural features.

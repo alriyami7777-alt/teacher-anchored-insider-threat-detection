@@ -1,0 +1,23 @@
+{
+  "task_id": "EDITOR-011",
+  "status": "PHASE0_FROZEN_BEFORE_TRAINING",
+  "frozen_at_utc": "2026-08-15T01:15:00Z",
+  "base_commit": "cde793de9135c8d4f6491d204f586ce8e00c3e0d",
+  "worktree": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011",
+  "branch": "editor011-matched-route-confirmation",
+  "EDITOR009_RESULTS_COMMIT": "0182685656ec99fe2edcda2d00179a7400db9d06",
+  "EDITOR010_RESULTS_COMMIT": "3c5ac01d6739df91f50dcc3ba0258a019dcb3119",
+  "implementation_strategy": "reconstruct minimal EDITOR-011 delta; do not cherry-pick EDITOR-009/010 result packets or GroupDRO/CORAL/EDITOR-008 execution code",
+  "authorised_conditions": ["T-OPT", "C2-OPT", "R2-OPT"],
+  "seeds": [42, 52, 62],
+  "odst_configuration": "ODST-046",
+  "lambda_route_R2": 0.5,
+  "lambda_logit_R2": 0.0,
+  "lambda_route_C2": 0.0,
+  "lambda_logit_C2": 0.0,
+  "partitions": ["CERT r5.2 TRAIN", "CERT r5.2 VALIDATION"],
+  "r52_test_accessed": false,
+  "r51_rerun": false,
+  "r62_rerun": false,
+  "training_started": false
+}

@@ -1,0 +1,317 @@
+{
+  "task_id": "EDITOR-028",
+  "task_name": "UNSUPERVISED CROSS-RELEASE LATENT ALIGNMENT",
+  "experiment_type": "ROOT-CAUSE-TARGETED CROSS-RELEASE REPRESENTATION LEARNING",
+  "result_status_at_start": "UNSEEN",
+  "model_family": "UNCHANGED",
+  "primary_intervention": "TRAINING-TIME LATENT COVARIANCE ALIGNMENT",
+  "architecture_change": "NO",
+  "parent_sha": "c491b79c2f552318ff3993e585a7abd3d2d7857b",
+  "EDITOR027_RESULTS_COMMIT": "c491b79c2f552318ff3993e585a7abd3d2d7857b",
+  "reader_facing": {
+    "TA2": "final ensemble-guided, route-anchored student",
+    "ODST": "Oblivious Differentiable Sparsemax Tree",
+    "CORAL": "CORrelation ALignment"
+  },
+  "frozen_diagnostic_chain": {
+    "EDITOR025_PRIMARY_ROOT_CAUSE": "RELEASE_LEVEL_REPRESENTATION_SHIFT",
+    "REPRESENTATION_NONPORTABILITY": "SUPPORTED",
+    "HEAD_SPECIFIC_FAILURE": "NOT_SUPPORTED",
+    "historical_attention_transfer": {
+      "C2": 0.1563,
+      "F10": 0.1586,
+      "TA2": 0.1595,
+      "L1": 0.1811
+    },
+    "EDITOR026_MEAN_ABS_SHIFT_REDUCTION": 0.7865,
+    "EDITOR026_INPUT_TRANSFER_RATIOS": [
+      0.6612,
+      0.8509
+    ],
+    "EDITOR027_MEAN_ABS_SHIFT_REDUCTION": 0.6654,
+    "EDITOR027_PSI_REDUCTION_VS_EDITOR026": 0.5416,
+    "EDITOR027_INPUT_TRANSFER_RATIOS": [
+      0.5175,
+      0.7526
+    ],
+    "base_input_representation": "EDITOR-026 centred user-relative",
+    "do_not_use_editor027_scale_normalisation": true
+  },
+  "architecture_unchanged": {
+    "sequence": "20-day x 13-feature",
+    "encoder": "Bi-LSTM",
+    "attention": "temporal attention, attention-pooled representation",
+    "head": "ODST-046",
+    "n_trees": 4,
+    "depth": 4,
+    "hidden_size": 64,
+    "sequence_length": 20,
+    "stride": 1,
+    "forbidden": [
+      "Transformer",
+      "CNN",
+      "new MLP head",
+      "new tree family",
+      "adapter layer",
+      "domain classifier",
+      "release indicator",
+      "dataset-ID feature"
+    ]
+  },
+  "user_relative": {
+    "name": "causal_user_relative_log_deviations",
+    "lookback_calendar_days": 20,
+    "volume_rule": "log1p(current) - median(log1p(past same-user calendar days))",
+    "binary_rule": "current - mean(past same-user calendar days)",
+    "cold_start": 0.0,
+    "future_days": "PROHIBITED",
+    "other_users": "PROHIBITED",
+    "labels": "PROHIBITED",
+    "release_level_target_statistic": "PROHIBITED",
+    "output_dim": 13,
+    "no_appended_baseline_statistics": true,
+    "volume_features": [
+      "total_events",
+      "logon_count",
+      "device_count",
+      "file_count",
+      "email_count",
+      "http_count",
+      "active_duration_minutes"
+    ],
+    "binary_features": [
+      "has_logon_activity",
+      "has_device_activity",
+      "has_file_activity",
+      "has_email_activity",
+      "has_http_activity",
+      "is_active_day"
+    ],
+    "feature_order": [
+      "total_events",
+      "logon_count",
+      "device_count",
+      "file_count",
+      "email_count",
+      "http_count",
+      "active_duration_minutes",
+      "has_logon_activity",
+      "has_device_activity",
+      "has_file_activity",
+      "has_email_activity",
+      "has_http_activity",
+      "is_active_day"
+    ],
+    "inactive_days_in_calendar_history": true
+  },
+  "lookback_days": 20,
+  "r52_scaler_rule": {
+    "fit": "R52 TRAIN ONLY after EDITOR-026 centred transform",
+    "R61_SCALER_FIT": "NO",
+    "R61_TARGET_NORMALISATION_FIT": "NO"
+  },
+  "training_data_roles": {
+    "labelled_source": "CERT r5.2 TRAIN",
+    "checkpoint_selection": "CERT r5.2 VALIDATION PR-AUC",
+    "unlabelled_alignment_target": "CERT r6.1 input sequences only",
+    "r61_labels_prohibited_until_model_freeze": true
+  },
+  "r61": {
+    "R61_ROLE": "DIAGNOSTIC_DEVELOPMENT_RELEASE",
+    "EDITOR024_RESULT_CHANGED": "NO",
+    "R61_CAN_SERVE_AS_FUTURE_UNTOUCHED_TARGET": "NO",
+    "label_views": [
+      "R61_EDITOR024_LABEL_VIEW",
+      "R61_INSIDER_CONSISTENT_VIEW"
+    ],
+    "scenario_4": "NOT_EVALUABLE"
+  },
+  "teacher_producing_procedure": {
+    "identified_from": "authoritative producing code, not manuscript wording",
+    "encoder": {
+      "file": "src/editor026_user_relative/train.py::train_attention_linear",
+      "hyperparameters": {
+        "source": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed42\\config.json",
+        "architecture": "SequenceEnsembleModel",
+        "classification_head": "linear",
+        "temporal_aggregation": "attention",
+        "hidden_size": 64,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 1024,
+        "max_epochs": 15,
+        "patience": 4,
+        "grad_clip_norm": 1.0,
+        "pos_weight_multiplier": 1.0,
+        "optimizer": "Adam",
+        "scheduler": {
+          "name": "ReduceLROnPlateau",
+          "mode": "max",
+          "factor": 0.5,
+          "patience": 2,
+          "min_lr": 1e-05
+        },
+        "early_stopping_metric": "validation_pr_auc",
+        "checkpoint_selection_metric": "validation_pr_auc"
+      }
+    },
+    "topt": {
+      "file": "src/editor026_user_relative/train.py::train_ur_teacher",
+      "parent": "src/editor011_confirmation/train.py::train_teacher",
+      "optimiser": "Adam lr=0.001 weight_decay=0.0 on node_head",
+      "schedule": "max_epochs=15 patience=4 grad_clip=1.0",
+      "pos_weight_mult": 0.25,
+      "selection": "r5.2 VALIDATION PR-AUC",
+      "seeds": [
+        42,
+        52,
+        62
+      ],
+      "no_r61": true,
+      "internal_ids": {
+        "42": "CENTERED_TEACHER_42",
+        "52": "CENTERED_TEACHER_52",
+        "62": "CENTERED_TEACHER_62"
+      }
+    },
+    "if_ambiguous": "EDITOR028_TEACHER_REPRODUCTION_GATE = FAIL; stop before student training"
+  },
+  "base_student_objective": {
+    "L_base": "L_task + 0.5 L_teacher + 0.5 L_route",
+    "lambda_et1": 0.5,
+    "lambda_route": 0.5,
+    "producing_file": "src/editor012_rescue/train.py::train_student",
+    "encoder_lr": 3e-05,
+    "attention_lr": 3e-05,
+    "odst_lr": 0.001,
+    "weight_decay": 0.0,
+    "batch_size": 1024,
+    "max_epochs": 15,
+    "patience": 4,
+    "pos_weight_mult": 0.25,
+    "checkpoint": "r5.2 VALIDATION PR-AUC"
+  },
+  "coral": {
+    "location": "attention-pooled representation directly before ODST",
+    "equation": "||C_s - C_t||_F^2 / (4 d^2)",
+    "centering": "per-batch mean subtraction",
+    "covariance_denominator": "n-1",
+    "min_batch": 2,
+    "zero_if_batch_smaller_than_2": true,
+    "do_not_align": [
+      "raw inputs",
+      "Bi-LSTM cell states individually",
+      "ODST route probabilities",
+      "final logits"
+    ]
+  },
+  "candidates": {
+    "ALIGN0": {
+      "lambda_CORAL": 0.0,
+      "reader": "matched user-relative centred final model without latent alignment"
+    },
+    "ALIGN01": {
+      "lambda_CORAL": 0.01,
+      "reader": "centred final model with latent CORAL weight 0.01"
+    },
+    "ALIGN05": {
+      "lambda_CORAL": 0.05,
+      "reader": "centred final model with latent CORAL weight 0.05"
+    },
+    "ALIGN10": {
+      "lambda_CORAL": 0.1,
+      "reader": "centred final model with latent CORAL weight 0.10"
+    }
+  },
+  "candidate_set_frozen": [
+    "ALIGN0",
+    "ALIGN01",
+    "ALIGN05",
+    "ALIGN10"
+  ],
+  "no_adaptive_lambda": true,
+  "no_seed_specific_lambda": true,
+  "no_post_result_search": true,
+  "seeds_exactly": [
+    42,
+    52,
+    62
+  ],
+  "matched_target_sampling": {
+    "source_batch_size": 1024,
+    "target_batch_size": "same number of sequences as the source batch",
+    "unit": "uniform over complete eligible r6.1 completed-window population",
+    "outcome_independent": true,
+    "source_order_matched_across_candidates": true,
+    "target_order_matched_across_aligned_candidates": true,
+    "ALIGN0_constructs_stream_without_CORAL_gradients": true
+  },
+  "label_blind_diagnostic": {
+    "sample_n": 20000,
+    "order": "ascending SHA256(sequence_id)",
+    "no_class_stratification": true,
+    "metric": "LATENT_CORAL_DISCREPANCY using the same CORAL equation"
+  },
+  "clean_and_alignment_gates": {
+    "S1": "mean r5.2 validation PR-AUC >= 0.9353238885175368",
+    "S2": "at least 2/3 seeds >= 0.93",
+    "S3": "candidate mean - ALIGN0 mean >= -0.002",
+    "S4": "A = 1 - D_cand/D_ALIGN0 >= 0.3",
+    "S5": "at least 2/3 seeds lower discrepancy than ALIGN0",
+    "S6": "mean R52_LATENT_SEPARATION_RETENTION >= 0.9",
+    "historical_teacher_initialised_control": 0.9353238885175368,
+    "tie_break": "largest mean CORAL reduction; if |A_i-A_j| <= 0.02 choose smaller lambda",
+    "no_manual_override": true
+  },
+  "r61_gates": {
+    "MINIMUM_AP_PREVALENCE_LIFT": 10.0,
+    "bootstrap": {
+      "unit": "r6.1 user",
+      "n_valid": 2000,
+      "seed": 42
+    },
+    "R1_R9": true,
+    "both_label_views": true
+  },
+  "promotion_rules": {
+    "full": "S1-S6 and R1-R9 -> SUPPORTED_FOR_FINAL_CONFIRMATION",
+    "alignment_clean_tradeoff": "label-blind alignment passes and clean gates fail -> NO",
+    "label_blind_only": "S1-S6 pass and any R1-R9 fail -> NO",
+    "no_candidate": "LATENT_ALIGNMENT_NOT_SUPPORTED; r6.1 labels not opened",
+    "hard_programme_stop_if_no_promotion": true
+  },
+  "stopping_rules": {
+    "no_new_untouched_target": true,
+    "no_editor029_automatic": true,
+    "no_r51_r62_inference": true,
+    "no_post_result_tuning": true,
+    "no_patch_and_rerun": true
+  },
+  "finalisation_order": [
+    "final scientific outputs",
+    "completed RUN_MANIFEST",
+    "RESULT_FREEZE",
+    "TERMINAL_BLOCK",
+    "hash stable artefacts",
+    "SHA256_MANIFEST last"
+  ],
+  "feature_order": [
+    "total_events",
+    "logon_count",
+    "device_count",
+    "file_count",
+    "email_count",
+    "http_count",
+    "active_duration_minutes",
+    "has_logon_activity",
+    "has_device_activity",
+    "has_file_activity",
+    "has_email_activity",
+    "has_http_activity",
+    "is_active_day"
+  ],
+  "written_at": "2026-08-24T05:14:27Z",
+  "new_predictive_calculations_authorised": false
+}

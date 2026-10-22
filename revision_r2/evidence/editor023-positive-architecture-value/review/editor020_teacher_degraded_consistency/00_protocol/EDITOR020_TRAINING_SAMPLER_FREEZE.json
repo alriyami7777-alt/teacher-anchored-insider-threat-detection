@@ -1,0 +1,27 @@
+{
+  "SAMPLER_SEED": 42,
+  "family_first": true,
+  "P_source": 0.5,
+  "P_noise": 0.5,
+  "source_channels": [
+    "logon",
+    "device",
+    "file",
+    "email",
+    "http"
+  ],
+  "source_uniform": true,
+  "noise_levels": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "noise_uniform": true,
+  "at_most_one_degraded_partner_per_example_per_step": true,
+  "clean_example_always_retained": true,
+  "labels_unchanged_by_corruption": true,
+  "validation_derived_corruption_parameters": false,
+  "overweighting_source_ablation_avoided": "family_first_0.5_0.5_then_uniform_within_family",
+  "rng": "numpy SeedSequence([SAMPLER_SEED, epoch, example_index])",
+  "distribution_frozen_before_results": true
+}

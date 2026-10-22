@@ -1,0 +1,8 @@
+{
+  "definition": "TA2-R4 minus TA2-R3; difference is robust route consistency only",
+  "inner_seed42": {
+    "clean_PR_AUC": -0.020710818110445617,
+    "source": -0.0015493648505431334,
+    "noise": 0.0048254259887243744
+  }
+}

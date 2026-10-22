@@ -1,0 +1,70 @@
+{
+  "rows": [
+    {
+      "condition": "CENTERED_TEACHER_42",
+      "seed": 42,
+      "best_epoch": 2,
+      "validation_PR_AUC": 0.9009943415747212,
+      "best_checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\teachers\\CENTERED_TEACHER_42\\seed42\\best_teacher.pt",
+      "best_checkpoint_sha256": "177ff7d57755abb5d502983b0ef2fa43c4340cf707152fdca987a50e6b044f15",
+      "architecture": {
+        "n_trees": 4,
+        "depth": 4,
+        "temperature": 0.5,
+        "num_layers": 2,
+        "tree_dim": 1,
+        "choice_function": "sparsemax_sigmoid",
+        "readout": "canonical_tree_average",
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "n_trees_total": 8
+      },
+      "threshold": 0.7759158802478505,
+      "training_time": 80.04653573036194,
+      "r61_used": false
+    },
+    {
+      "condition": "CENTERED_TEACHER_52",
+      "seed": 52,
+      "best_epoch": 7,
+      "validation_PR_AUC": 0.8800686770237661,
+      "best_checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\teachers\\CENTERED_TEACHER_52\\seed52\\best_teacher.pt",
+      "best_checkpoint_sha256": "39691f681e1e18c712a208c25a8f0d5b23dcf00bbbe327d0c4ddc3c653a7017a",
+      "architecture": {
+        "n_trees": 4,
+        "depth": 4,
+        "temperature": 0.5,
+        "num_layers": 2,
+        "tree_dim": 1,
+        "choice_function": "sparsemax_sigmoid",
+        "readout": "canonical_tree_average",
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "n_trees_total": 8
+      },
+      "threshold": 0.9400000000000001,
+      "training_time": 167.53676295280457,
+      "r61_used": false
+    },
+    {
+      "condition": "CENTERED_TEACHER_62",
+      "seed": 62,
+      "best_epoch": 1,
+      "validation_PR_AUC": 0.8946941958234347,
+      "best_checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor028\\outputs\\editor028_latent_alignment\\teachers\\CENTERED_TEACHER_62\\seed62\\best_teacher.pt",
+      "best_checkpoint_sha256": "368eb951165b91a74838a9bd4529c15fee53724f2345e108c4daa21326f7e4d6",
+      "architecture": {
+        "n_trees": 4,
+        "depth": 4,
+        "temperature": 0.5,
+        "num_layers": 2,
+        "tree_dim": 1,
+        "choice_function": "sparsemax_sigmoid",
+        "readout": "canonical_tree_average",
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "n_trees_total": 8
+      },
+      "threshold": 0.32,
+      "training_time": 71.99616837501526,
+      "r61_used": false
+    }
+  ]
+}

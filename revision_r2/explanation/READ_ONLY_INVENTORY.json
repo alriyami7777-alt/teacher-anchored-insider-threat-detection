@@ -1,0 +1,52 @@
+{
+  "editor017_robustness_cohort_files": [],
+  "editor023_architecture_value_cohort_files": [],
+  "f11_constants_source": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor023\\src\\editor013_odst_value\\constants.py",
+  "TA2": {
+    "42": {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed42\\best_student.pt",
+      "expected_sha256": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8",
+      "exists": true
+    },
+    "52": {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed52\\best_student.pt",
+      "expected_sha256": "7613ba559bcf55827d04129066eb595b677994494609646f8b2463308ed5edb4",
+      "exists": true
+    },
+    "62": {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed62\\best_student.pt",
+      "expected_sha256": "904003dca219435464476cf36abedb11ee4e2f7a11ff09caa3791d685b8f644d",
+      "exists": true
+    }
+  },
+  "locked_baseline_files": [
+    "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\r5.2\\dataset_preparation\\pipeline_manifest.json"
+  ],
+  "r42_matching_cohort_definition": {
+    "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor023\\src\\objective3_missing_source_robustness.py",
+    "release": "r4.2",
+    "n": 484,
+    "users": 151,
+    "positives": 242,
+    "negatives": 242,
+    "manifest_sha256": "a0fed0b123f01792d216c49231e64166dab6f4e8dc98a9dcda78b422a8f6d69a"
+  },
+  "r52_validation_definition": {
+    "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor023\\src\\editor012_rescue\\constants.py",
+    "shape": [
+      64000,
+      20,
+      13
+    ],
+    "users": 2000,
+    "positives": 728
+  },
+  "r52_medians_file": "C:\\PhD\\07_Projects\\cert-r52-objective3-portability-confirmation\\scripts\\objective3_r52_explanation_robustness_portability\\recorded_results\\r52_train_median_metadata.csv",
+  "source_hashes": {
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor023\\src\\editor012_rescue\\constants.py": "fa41ad27132d6b56ba5fea9216a8cfc8ecc875f2cd38b082f5d9fbbe1c197dc0",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor023\\src\\editor013_odst_value\\constants.py": "ad6d7869d96a8a9cda07e2b4edcf0e5d6cd7138c084cd944535d2bdc183470f5",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor023\\src\\editor017_robustness\\campaign.py": "ccf848d736280ec1de32d4a3ccd763c3b574cc6c70af081bc9722c2b0e3d656b",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor023\\src\\editor023_architecture_value\\campaign.py": "ba82f4a7838c0fd0f39a0b03935fd6b8da3c2fcffd6a245a5b5f92d88a5be6f2",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor023\\src\\objective3_missing_source_robustness.py": "dc83b14cbf27822f86b1626032c5947ac79aa55c264b0a2c524ca44c9e1b07c2"
+  }
+}

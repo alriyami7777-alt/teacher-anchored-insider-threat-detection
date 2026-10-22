@@ -1,0 +1,42 @@
+{
+  "producing_module": "prototype_v3_node.odst.ODST",
+  "producing_choice_function": "sparsemax_sigmoid",
+  "feature_selection_activation": "sparsemax",
+  "feature_selection_equation": "pi = sparsemax(F); sparsemax(z)_i = max(0, z_i - tau(z))",
+  "weights_constrained_non_negative": true,
+  "weights_sum_to_one": true,
+  "observed_min_prob": 0.0,
+  "observed_max_prob": 0.14048349857330322,
+  "observed_row_sum_min": 0.9999998807907104,
+  "observed_row_sum_max": 1.0000001192092896,
+  "n_nonzero_after_sparsemax_this_init": 269,
+  "support_size_per_tree_depth": "variable; sparsemax support k_z is logit-dependent, not a fixed cardinality",
+  "observed_support_size_min": 14,
+  "observed_support_size_max": 21,
+  "one_split_vector_shared_across_nodes_at_a_depth": true,
+  "each_tree_has_own_depth_wise_vector": true,
+  "feature_logits_shape": [
+    4,
+    4,
+    40
+  ],
+  "negative_feature_coefficients_impossible": true,
+  "CURRENT_SPLIT_SIGNED": "NO",
+  "CURRENT_SPLIT_OBLIVIOUS": "YES",
+  "CURRENT_SPLIT_NODE_SPECIFIC": "NO",
+  "signed_oblique_branch_redundant": false,
+  "signed_possible_projection_is_convex_combination": false,
+  "odst40_spec": {
+    "in_dim": 40,
+    "num_layers": 2,
+    "n_trees": 4,
+    "depth": 4,
+    "temperature": 0.5,
+    "tree_dim": 1,
+    "choice_function": "sparsemax_sigmoid",
+    "readout": "canonical_tree_average",
+    "leaf_init_std": 0.05,
+    "dropout": 0.0
+  },
+  "inspection_method": "source_inspection_plus_live_parameter_shapes_not_name_inference"
+}

@@ -1,0 +1,39 @@
+{
+  "verified": true,
+  "rule": "C2_start_checkpoint_SHA256 == R2_start_checkpoint_SHA256 == T_OPT_checkpoint_SHA256",
+  "seeds": {
+    "42": {
+      "seed": 42,
+      "T_OPT_checkpoint_SHA256": "b007f48085ef42b146b22a0d5ace5bb9c8380874405622281a5903831599fb20",
+      "C2_start_checkpoint_SHA256": "b007f48085ef42b146b22a0d5ace5bb9c8380874405622281a5903831599fb20",
+      "architecture_hash": "06c6e181df28997bdf9463970a5778d731dd5f3585d580b71b170ce8b513e956",
+      "initial_parameter_hash": "b6a8bce82678fd3fa0e0d400d85d313fbd66cc8faf0ca9474cd66cce3b585850",
+      "scaler_hash": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+      "data_split_hash": "671db5ed966c68caa64b63c8a3de26bbc90c74eb4cedd6b01ca235a68043b8ad",
+      "optimizer_config_hash": "0bc98985b89c0f9d556f0dba013393da277c6cf3a8d858334269d60e51bea23f",
+      "R2_start_checkpoint_SHA256": "b007f48085ef42b146b22a0d5ace5bb9c8380874405622281a5903831599fb20"
+    },
+    "52": {
+      "seed": 52,
+      "T_OPT_checkpoint_SHA256": "5b4c17e15a8f49ba8cf240c0092b893e6e665232967fafce8eb13e0650227f2a",
+      "C2_start_checkpoint_SHA256": "5b4c17e15a8f49ba8cf240c0092b893e6e665232967fafce8eb13e0650227f2a",
+      "architecture_hash": "06c6e181df28997bdf9463970a5778d731dd5f3585d580b71b170ce8b513e956",
+      "initial_parameter_hash": "2070d2e55e472c14fc9d43effaee3a1e41674d47e58e6192a159dd38c4856e61",
+      "scaler_hash": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+      "data_split_hash": "671db5ed966c68caa64b63c8a3de26bbc90c74eb4cedd6b01ca235a68043b8ad",
+      "optimizer_config_hash": "0bc98985b89c0f9d556f0dba013393da277c6cf3a8d858334269d60e51bea23f",
+      "R2_start_checkpoint_SHA256": "5b4c17e15a8f49ba8cf240c0092b893e6e665232967fafce8eb13e0650227f2a"
+    },
+    "62": {
+      "seed": 62,
+      "T_OPT_checkpoint_SHA256": "24bf2efa2343e4aaf5f32871c0a9bffb3d511f345375ce754e9f081f82eac02c",
+      "C2_start_checkpoint_SHA256": "24bf2efa2343e4aaf5f32871c0a9bffb3d511f345375ce754e9f081f82eac02c",
+      "architecture_hash": "06c6e181df28997bdf9463970a5778d731dd5f3585d580b71b170ce8b513e956",
+      "initial_parameter_hash": "4830ea09c13646ba92917e366453208ba5e0fe10dd60ad390e07a0dc5486dd04",
+      "scaler_hash": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+      "data_split_hash": "671db5ed966c68caa64b63c8a3de26bbc90c74eb4cedd6b01ca235a68043b8ad",
+      "optimizer_config_hash": "0bc98985b89c0f9d556f0dba013393da277c6cf3a8d858334269d60e51bea23f",
+      "R2_start_checkpoint_SHA256": "24bf2efa2343e4aaf5f32871c0a9bffb3d511f345375ce754e9f081f82eac02c"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "train_npz": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_train.npz",
+  "train_sha256": "b268328d3bf2e98f712d1145958dabe175ce2c07a7c390da4b84a663317ebc2e",
+  "validation_npz": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_validation.npz",
+  "validation_sha256": "5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c",
+  "train_file_sha256": "b268328d3bf2e98f712d1145958dabe175ce2c07a7c390da4b84a663317ebc2e",
+  "validation_file_sha256": "5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c",
+  "aggregate40_sha256": "0e9ad707221f6278f99b9fe143383386d0b01e3617151a0c3ef27d7ee776dfcf",
+  "producing_pins": {
+    "architecture": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+    "odst": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+    "sequence_ensemble": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475"
+  },
+  "r52_test_accessed": false
+}

@@ -1,0 +1,210 @@
+{
+  "task_id": "EDITOR-009",
+  "campaign": "EDITOR-009 DEVELOPMENT RESCUE",
+  "status": "PHASE0_FROZEN_BEFORE_RESCUE_EXECUTION",
+  "identity_rule": "C5_original_paper is the paper C5. Ablation-retrained C5 is deny-listed and is not B1.",
+  "C5_DENYLIST": {
+    "family": "C5_ablation_retrained_DO_NOT_USE",
+    "hashes": {
+      "42": "a5a08dc24a89014fd1bb92c6c6342ed50511b33804e95246e480e90c4692b214",
+      "52": "3203455562ec6ff4018cc5cb3299bc2530bc8eff95aa523e6b7746f43731d971",
+      "62": "54f879d6b163185073ea586fa50a68edf89b603c269c6208c8b48156dccd4e22"
+    },
+    "paths": {
+      "42": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C5\\seed42\\best_student.pt",
+      "52": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C5\\seed52\\best_student.pt",
+      "62": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C5\\seed62\\best_student.pt"
+    }
+  },
+  "shared_trainability_odst_student": {
+    "Bi-LSTM": "trainable",
+    "attention": "trainable",
+    "linear_head": "frozen (unused under sparsemax_sigmoid_odst)",
+    "ODST_feature_selectors": "trainable (feature_logits)",
+    "ODST_thresholds": "trainable",
+    "ODST_temperatures": "trainable (log_temperatures via softplus)",
+    "ODST_leaf_responses": "trainable",
+    "residual_scale_logit": "frozen",
+    "sample_gate": "frozen",
+    "teacher": "frozen; not in optimiser; teacher_forward uses torch.no_grad"
+  },
+  "families": {
+    "teacher_frozen_odst": {
+      "role": "frozen teacher",
+      "training_script": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\prototype_v3_node\\run_validation.py",
+      "training_script_sha256": "8484ce699d4badf6fdf18f3c7c89751c5b2e111eaa5eef207b7f98973db82760",
+      "configuration_path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\r52_teacher_anchored_config.json",
+      "configuration_sha256_note": "architecture block is the locked sparsemax_sigmoid_odst 8-tree 2-layer 4-depth head; teacher trained as frozen-encoder ODST confirmation then used as init/anchor.",
+      "encoder_state": "trained then frozen for student runs",
+      "head_state": "ODST node_head trained; linear_head unused at inference for this family",
+      "teacher_state": "self",
+      "threshold_source": "producing validation maximum-F1; frozen in EDITOR006A_THRESHOLDS / r52_test_freeze_manifest_v2.json",
+      "scaler_source": "r52_T20_s1_trainonly_standardscaler_v1; tensors are prebaked train-only scaled; SHA-256 6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+      "seeds": {
+        "42": {
+          "checkpoint_path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed42\\best.pt",
+          "checkpoint_sha256": "783d0913f85d492ddacec83a274ba2d4f13ad25eaf1a34ebcc64a960bda8ff86",
+          "threshold": 0.56,
+          "producing_val_pr_auc": 0.9334002969575846
+        },
+        "52": {
+          "checkpoint_path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed52\\best.pt",
+          "checkpoint_sha256": "7273327495bbe463cfb3d50fa94c81c82de7b304370a816343046f559fc3d191",
+          "threshold": 0.8400000000000001,
+          "producing_val_pr_auc": 0.9244539797126647
+        },
+        "62": {
+          "checkpoint_path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\odst_seed62\\best.pt",
+          "checkpoint_sha256": "247d6e71353b49ea0a77a073a8606fbf35b88106faae7dae6ec53361621e9d92",
+          "threshold": 0.55,
+          "producing_val_pr_auc": 0.9347250477760537
+        }
+      }
+    },
+    "attention_linear": {
+      "role": "attention-linear reference",
+      "training_script": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\prototype_v3_node\\run_validation.py",
+      "training_script_sha256": "8484ce699d4badf6fdf18f3c7c89751c5b2e111eaa5eef207b7f98973db82760",
+      "configuration_path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\models\\sequence_ensemble.py",
+      "configuration_sha256": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475",
+      "class": "SequenceEnsembleModel",
+      "encoder_state": "trainable Bi-LSTM",
+      "head_state": "trainable linear head; no ODST",
+      "teacher_state": "not applicable",
+      "threshold_source": "producing validation maximum-F1; frozen in EDITOR006A_THRESHOLDS / r52_test_freeze_manifest_v2.json",
+      "scaler_source": "r52_T20_s1_trainonly_standardscaler_v1; SHA-256 6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+      "seeds": {
+        "42": {
+          "checkpoint_path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed42\\best.pt",
+          "checkpoint_sha256": "b807a82343b432343b7e3cbc86ee76cba7011066827f3baa089aa78a02c02b53",
+          "threshold": 0.9500000000000001,
+          "replay_val_pr_auc_editor007a": 0.9378816467540203
+        },
+        "52": {
+          "checkpoint_path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed52\\best.pt",
+          "checkpoint_sha256": "5e5e2a136bedba3d3477d05c5b1215331cb97339b74003bcb60f8cb4885ba86c",
+          "threshold": 0.9600000000000001,
+          "replay_val_pr_auc_editor007a": 0.9096510434894257
+        },
+        "62": {
+          "checkpoint_path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_odst_confirmation\\attention_linear_seed62\\best.pt",
+          "checkpoint_sha256": "4543c167fdab3b0376087731571f7b3bcecadd43f8ff05c6b5371f0073ba425a",
+          "threshold": 0.9400000000000001,
+          "replay_val_pr_auc_editor007a": 0.9458481407834319
+        }
+      }
+    },
+    "C2": {
+      "role": "teacher initialisation only; task loss only; B0 comparator",
+      "init": "teacher",
+      "lambda_logit": 0.0,
+      "lambda_route": 0.0,
+      "training_script": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\run_objective2_r52_teacher_anchoring_ablation.py",
+      "training_script_sha256": "1e045881ea249ff40fa33ee694065e24c5e1383090f08ef732cbb068fa09b210",
+      "loss_implementation": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\objective2_teacher_anchored_odst\\train.py",
+      "loss_implementation_sha256": "2160f2ab85dd120883aa37c82c630c3c77653f369a551f70b99ca4ed1eca0a26",
+      "models_implementation": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\objective2_teacher_anchored_odst\\models.py",
+      "models_implementation_sha256": "2555853dfcf369840fb458bfaa1b734c1b94483173bff87fe7d12ee13862058b",
+      "configuration_path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\ablation_protocol.json",
+      "encoder_state": "trainable; updated (seed_summary encoder_updated=true)",
+      "head_state": "ODST trainable; linear_head frozen unused",
+      "teacher_state": "frozen copy of teacher_frozen_odst same seed",
+      "threshold_source": "C2 seed_summary.json best_threshold (validation F1-max)",
+      "scaler_source": "r52_T20_s1_trainonly_standardscaler_v1; prebaked tensors",
+      "seeds": {
+        "42": {
+          "checkpoint_path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed42\\best_student.pt",
+          "checkpoint_sha256": "c5b8ab96a6f347afb85708857cef56b4a632f6092dfda9339ab9a3558daf863e",
+          "threshold": 0.6,
+          "producing_val_pr_auc": 0.9318417313473917
+        },
+        "52": {
+          "checkpoint_path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed52\\best_student.pt",
+          "checkpoint_sha256": "2215b36edd015f783de86ecb1b40cdd535fb6f082adc16a377574a24a8d0c22b",
+          "threshold": 0.8300000000000001,
+          "producing_val_pr_auc": 0.9241053967437384
+        },
+        "62": {
+          "checkpoint_path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C2\\seed62\\best_student.pt",
+          "checkpoint_sha256": "595a5e57ec78d6d34e2811609dc97514b0703cab807b7dffe873128a92ecc5c2",
+          "threshold": 0.6544522184133537,
+          "producing_val_pr_auc": 0.9311900972327212
+        }
+      }
+    },
+    "C5_original_paper": {
+      "role": "teacher initialisation + logit anchoring + route anchoring; B1 current method",
+      "init": "teacher",
+      "lambda_logit": 0.5,
+      "lambda_route": 0.5,
+      "training_script": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\scripts\\run_objective2_r52_teacher_anchored_reproducibility.py",
+      "training_script_sha256": "445b2221fc358ac0fee154f428f1f635c192c4f5bae6aea3fcb4d4273f967119",
+      "loss_implementation": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\scripts\\objective2_teacher_anchored_odst\\train.py",
+      "loss_implementation_sha256": "d849f6c9c81376f77b60f7fe062212dbd3dbbb0edcfdcda64e43726b5e775f4d",
+      "models_implementation": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\scripts\\objective2_teacher_anchored_odst\\models.py",
+      "models_implementation_sha256": "649d3aedf1ad65222e7dc6d2024ac709fb44bd1502e305f8f8c13a840e918907",
+      "configuration_path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\r52_teacher_anchored_config.json",
+      "configuration_sha256": "recorded in producing artefact; logit_consistency_weight=0.5 route_consistency_weight=0.5",
+      "encoder_state": "trainable; updated",
+      "head_state": "ODST trainable; linear_head frozen unused",
+      "teacher_state": "frozen copy of teacher_frozen_odst same seed",
+      "threshold_source": "original C5 seed_summary.json best_threshold (validation F1-max)",
+      "scaler_source": "r52_T20_s1_trainonly_standardscaler_v1; prebaked tensors",
+      "not_ablation_C5": true,
+      "seeds": {
+        "42": {
+          "checkpoint_path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed42\\best_student.pt",
+          "checkpoint_sha256": "2b6452698dd0da53f0229bc43040a877017ac9299b277f2f98c1d7ca64c1cc42",
+          "threshold": 0.56,
+          "producing_val_pr_auc": 0.9335775615746195
+        },
+        "52": {
+          "checkpoint_path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed52\\best_student.pt",
+          "checkpoint_sha256": "9c9d035fe81f54898dee4ecf4d2ecaf8423a21ecc3551793dc16d1980af1eb0d",
+          "threshold": 0.85,
+          "producing_val_pr_auc": 0.9246065839750892
+        },
+        "62": {
+          "checkpoint_path": "C:\\PhD\\07_Projects\\cert-r52-teacher-anchored-reproducibility\\outputs\\objective2\\r52_teacher_anchored_reproducibility_v1\\seed62\\best_student.pt",
+          "checkpoint_sha256": "f5e8eb5260113a0aeabfb95ef198e1aa80022a26dfe91f3bf9262acbf5453ec9",
+          "threshold": 0.55,
+          "producing_val_pr_auc": 0.9356969431665507
+        }
+      }
+    },
+    "Random-init_plus_anchoring": {
+      "role": "C6 historical; anchoring without teacher init",
+      "init": "random",
+      "lambda_logit": 0.5,
+      "lambda_route": 0.5,
+      "training_script": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\run_objective2_r52_teacher_anchoring_ablation.py",
+      "training_script_sha256": "1e045881ea249ff40fa33ee694065e24c5e1383090f08ef732cbb068fa09b210",
+      "loss_implementation": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\objective2_teacher_anchored_odst\\train.py",
+      "loss_implementation_sha256": "2160f2ab85dd120883aa37c82c630c3c77653f369a551f70b99ca4ed1eca0a26",
+      "configuration_path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\ablation_protocol.json",
+      "encoder_state": "trainable from random init",
+      "head_state": "ODST trainable from random init; linear_head frozen unused",
+      "teacher_state": "frozen teacher_frozen_odst same seed used only as anchor target",
+      "threshold_source": "C6 seed_summary.json best_threshold (validation F1-max)",
+      "scaler_source": "r52_T20_s1_trainonly_standardscaler_v1; prebaked tensors",
+      "historical_equivalent": "C6",
+      "seeds": {
+        "42": {
+          "checkpoint_path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C6\\seed42\\best_student.pt",
+          "checkpoint_sha256": "33d0f56cae5085979ea8f7c8dad969a2ad3327fc78ca01fb666707b46f2391b1",
+          "producing_val_pr_auc": 0.06802161793215568
+        },
+        "52": {
+          "checkpoint_path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C6\\seed52\\best_student.pt",
+          "checkpoint_sha256": "c9867e9fd390ab04891b3c235731db23360cb21843a3729a298e3b662fb138e9",
+          "producing_val_pr_auc": 0.05524669966293151
+        },
+        "62": {
+          "checkpoint_path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\outputs\\objective2\\r52_teacher_anchoring_ablation_v1\\C6\\seed62\\best_student.pt",
+          "checkpoint_sha256": "10415fab32022b67e68531ee6c7ab092c383aaa3b8a4385c99a9b0662eebbf44",
+          "producing_val_pr_auc": 0.06251153237178583
+        }
+      }
+    }
+  }
+}

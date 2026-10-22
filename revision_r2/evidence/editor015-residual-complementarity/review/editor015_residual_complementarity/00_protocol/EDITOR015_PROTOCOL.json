@@ -1,0 +1,31 @@
+{
+  "task_id": "EDITOR-015",
+  "title": "Function-preserving residual ODST and complementarity rescue",
+  "hard_boundary": {
+    "train": "CERT r5.2 TRAIN",
+    "selection": "INNER_TRAIN / INNER_SELECT",
+    "confirmation": "CERT r5.2 VALIDATION",
+    "forbidden": [
+      "r5.2 TEST",
+      "r5.1",
+      "r6.2",
+      "T change",
+      "F change",
+      "tree/depth/temperature search"
+    ]
+  },
+  "inner_counts": {
+    "INNER_TRAIN": 622000,
+    "INNER_SELECT": 128000,
+    "INNER_TRAIN_POS": 2457,
+    "INNER_SELECT_POS": 1214
+  },
+  "validation_users": {
+    "n_users": 2000,
+    "windows_per_user": 32,
+    "malicious_users": 31,
+    "mapping_sha256": "851385f9c926cf945b3c74b5c9442e3ccb94cf1d9dabb98106a29cbfea01c5c0"
+  },
+  "bootstrap": "user-cluster, 2000 resamples, seed 42; windows are not independent",
+  "created_utc": "2026-08-15T23:58:17Z"
+}

@@ -1,0 +1,32 @@
+{
+  "inner_train_attention_embeddings.npy": {
+    "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor010\\outputs\\editor010_capacity_objective_teacher_rescue\\embeddings\\inner_train_attention_embeddings.npy",
+    "sha256": "f88a2846cd3343e3241961844f684864a44bea18dfac81736b89803a73375175",
+    "shape": [
+      622000,
+      128
+    ]
+  },
+  "inner_train_labels.npy": {
+    "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor010\\outputs\\editor010_capacity_objective_teacher_rescue\\embeddings\\inner_train_labels.npy",
+    "sha256": "24c75b51508dc246d2542771807e630f6aee2874fc30fa0652831e84d7af6890",
+    "shape": [
+      622000
+    ]
+  },
+  "inner_select_attention_embeddings.npy": {
+    "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor010\\outputs\\editor010_capacity_objective_teacher_rescue\\embeddings\\inner_select_attention_embeddings.npy",
+    "sha256": "351be4d238ac7ab700c6bbd8df9cf1f780dc3fbabdb7ebab7e8eb24fc1044e5e",
+    "shape": [
+      128000,
+      128
+    ]
+  },
+  "inner_select_labels.npy": {
+    "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor010\\outputs\\editor010_capacity_objective_teacher_rescue\\embeddings\\inner_select_labels.npy",
+    "sha256": "965e3f84388dca2b2b7bcd71bdf7099b815c53441510272c67bde2ca75e905d1",
+    "shape": [
+      128000
+    ]
+  }
+}

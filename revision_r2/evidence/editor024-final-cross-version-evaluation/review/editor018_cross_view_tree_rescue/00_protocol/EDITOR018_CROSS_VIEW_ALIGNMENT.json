@@ -1,0 +1,27 @@
+{
+  "status": "ALIGNED",
+  "train": {
+    "split": "train",
+    "n": 788000,
+    "n_pos": 3957,
+    "same_number_of_windows": true,
+    "same_labels": true,
+    "same_window_boundaries": true,
+    "alignment_sha256": "e0f1396d7395efe62df4ae6c980071801a16a1cfaf86929b50e632aaac4df956",
+    "raw_sha256": "d0131a8241a14541ecdd49fd7b6b8b8dc557d30c54bc80994523893b319631a9",
+    "status": "ALIGNED"
+  },
+  "validation": {
+    "split": "validation",
+    "n": 64000,
+    "n_pos": 728,
+    "same_number_of_windows": true,
+    "same_labels": true,
+    "same_window_boundaries": true,
+    "alignment_sha256": "8042b7a1781439ad19c3332b7ff9208d6403d4618154de202cd835247413a159",
+    "raw_sha256": "fc759d112d6b261f4c8e6d2b09789e161af583c3f217bbbbab8e6a9ee4a49615",
+    "status": "ALIGNED"
+  },
+  "same_chronological_partition": true,
+  "blocked": false
+}

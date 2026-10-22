@@ -1,0 +1,41 @@
+{
+  "task_id": "EDITOR-013",
+  "source": "live_odst_forward + NODE.forward canonical_tree_average",
+  "tree_outputs": "concatenated per-tree outputs, shape (B, 8)",
+  "current_ODST_final_logit": "mean(tree_outputs) over dim=-1",
+  "ODST_CURRENT_READOUT": "UNIFORM_MEAN",
+  "number_of_tree_outputs": 8,
+  "n_layers": 2,
+  "n_trees_per_layer": 4,
+  "tree_output_dimensionality": 1,
+  "tree_ordering": [
+    "layer0_tree0",
+    "layer0_tree1",
+    "layer0_tree2",
+    "layer0_tree3",
+    "layer1_tree0",
+    "layer1_tree1",
+    "layer1_tree2",
+    "layer1_tree3"
+  ],
+  "layer_ordering": [
+    "layer0_then_layer1_dense_concat"
+  ],
+  "readout_parameter_count": 0,
+  "trainable_readout_weights": "NONE",
+  "node_head.output_head": "present for state_dict stability; frozen; unused under canonical_tree_average",
+  "editor013_weighted_readout": {
+    "w": "R^8, init 0",
+    "a": "softmax(w), init uniform 1/8",
+    "z_tree": "sum_j a_j t_j",
+    "sample_dependent_weights": false
+  },
+  "readout_does_not_change": [
+    "tree split decisions",
+    "route probabilities",
+    "leaf probabilities",
+    "feature selection",
+    "tree identity",
+    "route identity"
+  ]
+}

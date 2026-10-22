@@ -1,0 +1,72 @@
+{
+  "task_id": "EDITOR-009",
+  "campaign": "EDITOR-009 DEVELOPMENT RESCUE",
+  "status": "PHASE0_FROZEN_BEFORE_RESCUE_EXECUTION",
+  "TEST_ACCESS": "PROHIBITED",
+  "R51_EXECUTION": "PROHIBITED",
+  "R62_EXECUTION": "PROHIBITED",
+  "inputs": [
+    {
+      "role": "r52_train_npz",
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_train.npz",
+      "sha256": "b268328d3bf2e98f712d1145958dabe175ce2c07a7c390da4b84a663317ebc2e",
+      "expected_sha256": "b268328d3bf2e98f712d1145958dabe175ce2c07a7c390da4b84a663317ebc2e",
+      "status": "MATCH"
+    },
+    {
+      "role": "r52_validation_npz",
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_validation.npz",
+      "sha256": "5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c",
+      "expected_sha256": "5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c",
+      "status": "MATCH"
+    },
+    {
+      "role": "r52_trainonly_scaler_freeze_json",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\review\\editor006a_preinference_freeze\\EDITOR006A_SCALER.json",
+      "sha256": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+      "expected_sha256": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+      "status": "MATCH",
+      "note": "Tensors are prebaked with this train-only scaler. EDITOR-009 must not fit a new scaler."
+    },
+    {
+      "role": "producing_architecture",
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\prototype_v3_node\\architecture.py",
+      "sha256": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+      "expected_sha256": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+      "status": "MATCH"
+    },
+    {
+      "role": "producing_odst",
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\prototype_v3_node\\odst.py",
+      "sha256": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+      "expected_sha256": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+      "status": "MATCH"
+    },
+    {
+      "role": "producing_attention_linear_source",
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\models\\sequence_ensemble.py",
+      "sha256": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475",
+      "expected_sha256": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475",
+      "status": "MATCH"
+    },
+    {
+      "role": "paper_support_architecture_copy_NOT_FOR_CONSTRUCTION",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\src\\prototype_v3_node\\architecture.py",
+      "sha256": "d9bdef39ce9d2afaa6cfcce210b59b61a68178b6895c4687d10459f088fa9221",
+      "expected_producing_sha256": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+      "status": "MISMATCH_VS_PRODUCING_DO_NOT_CONSTRUCT_FROM_THIS_COPY"
+    },
+    {
+      "role": "paper_support_odst_copy_NOT_FOR_CONSTRUCTION",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection\\src\\prototype_v3_node\\odst.py",
+      "sha256": "3eb9563396601d8bd649d628a13c1d8e828de5eaaf113db289c8327c98563601",
+      "expected_producing_sha256": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+      "status": "MISMATCH_VS_PRODUCING_DO_NOT_CONSTRUCT_FROM_THIS_COPY"
+    }
+  ],
+  "explicitly_not_opened": [
+    "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_test.npz",
+    "any r5.1 tensor",
+    "any r6.2 tensor"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "official_r52_validation_not_used_for_selection": true,
+  "INNER_SELECT_only": true,
+  "H1_LIN_D_pr_auc": 0.9317652700255719,
+  "promotion_margin": 0.001,
+  "ODST_INCREMENTAL_HEADROOM_INNER": "NOT_SUPPORTED",
+  "promoted": [],
+  "best_teacher_guided_odst_inner": "H7-HYB-U-D",
+  "best_inner_odst_delta_vs_H1": -0.0014683039812477539,
+  "n_promoted": 0,
+  "frozen_before_official_validation_evaluation_of_candidates": true,
+  "TREE_DIVERSITY_BRANCH": "NOT_TRIGGERED",
+  "best_diversity_result": null
+}

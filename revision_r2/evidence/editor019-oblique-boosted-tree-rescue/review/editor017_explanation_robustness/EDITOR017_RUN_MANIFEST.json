@@ -1,0 +1,111 @@
+{
+  "task_id": "EDITOR-017",
+  "written_at": "2026-08-16T12:10:11Z",
+  "device": "cpu",
+  "r52_test_opened": false,
+  "r51_rerun": false,
+  "r62_rerun": false,
+  "parameter_update": false,
+  "threshold_retuned": false,
+  "labels_changed": false,
+  "fingerprints": [
+    {
+      "model": "C2-OPT",
+      "seed": 42,
+      "sha256": "d64651d25e48b3bcd4cad7d107d3bc55a4c555a2827f3656a087624e94ac4baf",
+      "fingerprint": "db4f5bddfab25c16cdcc3ebe8f9ff09a38cb73fd7eeab1b423c9c75324842ca1"
+    },
+    {
+      "model": "C2-OPT",
+      "seed": 52,
+      "sha256": "f0eea90099ba7dd3e721efb930e367e868049c94f6542d5b2156d9fe469acb7e",
+      "fingerprint": "04c2e71e90094a6e395ce5273a0155341fea3bbd4b5e284c79f09434f7ca38ef"
+    },
+    {
+      "model": "C2-OPT",
+      "seed": 62,
+      "sha256": "50512aa5392ee7f4d93dc5f84471fc1074baeb757ae9fb5b96caed141ee586da",
+      "fingerprint": "8ef018065b83c16b35f0247e3a0466b6975b68d2a637cedc062e5d26a5df3374"
+    },
+    {
+      "model": "F10",
+      "seed": 42,
+      "sha256": "ea8cd41a1ae3f845719956fd7a49230fa82807ffac87841be5f5ab95c64ac0c2",
+      "fingerprint": "670a00327c611a7b9f8d47c4bda334c43899e9ddcf23647bf607025de52198a7"
+    },
+    {
+      "model": "F10",
+      "seed": 52,
+      "sha256": "829135230c5629f0b11161e11d76eba7a15e65bf9d03b5a55ffa297a93ddf959",
+      "fingerprint": "4609267b4e3d472f1663c406ed35ec2891ec21aaea5fdc2a48c975a9afb2503c"
+    },
+    {
+      "model": "F10",
+      "seed": 62,
+      "sha256": "06313d6f2602de51f8dd6e15e1d1292864fd8cbd158f33977fa42c8a47036aee",
+      "fingerprint": "0ac3079b91f367b0c00d1efe3556ea3fe9d1b4ff359008c62604c6416194b6c1"
+    },
+    {
+      "model": "TA2",
+      "seed": 42,
+      "sha256": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8",
+      "fingerprint": "6b4a74764747b31e111a884816b1103ae8ca055417ec4a950dae533a6412b900"
+    },
+    {
+      "model": "TA2",
+      "seed": 52,
+      "sha256": "7613ba559bcf55827d04129066eb595b677994494609646f8b2463308ed5edb4",
+      "fingerprint": "5abb11d4050580bcc1718bf6525e4674b44348a7121fb44aa1a497e0841ad4bd"
+    },
+    {
+      "model": "TA2",
+      "seed": 62,
+      "sha256": "904003dca219435464476cf36abedb11ee4e2f7a11ff09caa3791d685b8f644d",
+      "fingerprint": "6cff68105d44bc7c078e9795a20cd477891bec93f7a6eab80a128e8733541de7"
+    },
+    {
+      "model": "L1",
+      "seed": 42,
+      "sha256": "513e272063250aa209efa2c42b490cc44316c7979fa6b2be5dd8cce4592d1ab2",
+      "fingerprint": "cc8128a11d38c4b668ac531a0a2201ad9b474af8c0c669060a1125c670da6d07"
+    },
+    {
+      "model": "L1",
+      "seed": 52,
+      "sha256": "a503f6705955da221bdbd1921034e9102b90db6acb5187114276ccaeb474e1c4",
+      "fingerprint": "50f4a07ed2a4b8369c7795e7c1067f9b5cff015c7de7646f667afe55a3f9ef96"
+    },
+    {
+      "model": "L1",
+      "seed": 62,
+      "sha256": "60d5c43692a17ba6971c8d23f74048ac3c4fe0bd1b18889eeb21bbab7bf3d3e9",
+      "fingerprint": "f5022e2c7a4ce6ab9afd4817ee502642a4499265cca8e40f8da63ecb1f7bd5d3"
+    },
+    {
+      "model": "T-OPT",
+      "seed": 42,
+      "sha256": "b007f48085ef42b146b22a0d5ace5bb9c8380874405622281a5903831599fb20",
+      "fingerprint": "b117d072d69da478baa81afdb8c1ee51e61c9ff629a8d0a8ad636f729af707e9"
+    },
+    {
+      "model": "T-OPT",
+      "seed": 52,
+      "sha256": "5b4c17e15a8f49ba8cf240c0092b893e6e665232967fafce8eb13e0650227f2a",
+      "fingerprint": "969fd24dae325cc86033b6d4b4a67fde4c363556f76c4e083319da5a6f41df4d"
+    },
+    {
+      "model": "T-OPT",
+      "seed": 62,
+      "sha256": "24bf2efa2343e4aaf5f32871c0a9bffb3d511f345375ce754e9f081f82eac02c",
+      "fingerprint": "b492bb585d2a868c8140fbe3e8f9de3300ff943b1dbdc593bb7fb7ee57583b03"
+    }
+  ],
+  "PERTURBATION_PROTOCOL_RECOVERED": true,
+  "ROBUSTNESS_BRANCH": "AUTHORISED",
+  "EDITOR017_PROTOCOL_COMMIT": "86e6b51f6e76f83b37bdc6639d7b5fec715aea02",
+  "TEACHER_GUIDANCE_DEGRADED_INPUT_VALUE": "CONSISTENT",
+  "ODST_DEGRADED_INPUT_ADVANTAGE_OVER_LINEAR": "CONSISTENT",
+  "ROUTE_ANCHOR_STRUCTURAL_ROBUSTNESS": "SUPPORTED",
+  "LOCAL_DIRECTIONAL_TREE_FAITHFULNESS": "SUPPORTED",
+  "GLOBAL_TOPK_PR_AUC_FAITHFULNESS": "NOT_SUPPORTED"
+}

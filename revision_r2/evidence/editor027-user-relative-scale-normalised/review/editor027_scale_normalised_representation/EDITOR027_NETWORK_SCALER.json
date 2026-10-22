@@ -1,0 +1,53 @@
+{
+  "features": [
+    "total_events",
+    "logon_count",
+    "device_count",
+    "file_count",
+    "email_count",
+    "http_count",
+    "active_duration_minutes",
+    "has_logon_activity",
+    "has_device_activity",
+    "has_file_activity",
+    "has_email_activity",
+    "has_http_activity",
+    "is_active_day"
+  ],
+  "mean": [
+    -16.644099254089024,
+    -1.3268071613167898,
+    -0.06431147744292862,
+    0.07186921558297836,
+    -2.557164050913766,
+    -9.799930798697607,
+    -38.80041842421813,
+    0.007274596880978857,
+    -0.12691881399460855,
+    -0.1269931842578224,
+    0.007237665909210654,
+    0.007283200266192881,
+    0.007252222670908228
+  ],
+  "scale": [
+    33.17070794956252,
+    2.4586049954618243,
+    1.5493685144499685,
+    1.2750869631998858,
+    5.376171054992111,
+    16.96194865312063,
+    72.29650633118199,
+    1.0427736941923536,
+    0.48254348201771696,
+    0.48772530831059735,
+    1.0426103831244513,
+    1.0424198883970026,
+    1.0429045208172045
+  ],
+  "fitted_on": "CERT r5.2 TRAIN ONLY",
+  "SCALE_NETWORK_SCALER_FIT_DATA": "CERT r5.2 TRAIN ONLY",
+  "R61_SCALER_FIT": "NO",
+  "R61_TARGET_NORMALISATION_FIT": "NO",
+  "n_fit_rows": 826000,
+  "note": "Per-user causal history is part of the input representation and is not target-wide scaler fitting. This scaler is fit only on r5.2 TRAIN SCALE daily values after the causal scale-normalised transform."
+}

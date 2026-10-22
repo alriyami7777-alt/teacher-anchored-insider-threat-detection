@@ -1,0 +1,7 @@
+{
+  "task_id": "EDITOR-012",
+  "status": "PRETRAINING",
+  "frozen_utc": "2026-08-15T05:10:41Z",
+  "review_rel": "review\\editor012_teacher_anchor_rescue",
+  "no_training_result_viewed": true
+}

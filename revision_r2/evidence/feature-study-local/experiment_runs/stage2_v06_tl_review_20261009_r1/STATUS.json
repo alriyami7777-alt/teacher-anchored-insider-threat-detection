@@ -1,0 +1,8 @@
+{
+  "status": "COMPLETE",
+  "observed_utc": "2026-10-09T08:00:20.373852+00:00",
+  "pid": 40196,
+  "binding": "4552153128faafc6059660c59d29ff16cfce624cdf62513800040008d815ed4e",
+  "writer": "control.py",
+  "completed_logical_fits": 72
+}

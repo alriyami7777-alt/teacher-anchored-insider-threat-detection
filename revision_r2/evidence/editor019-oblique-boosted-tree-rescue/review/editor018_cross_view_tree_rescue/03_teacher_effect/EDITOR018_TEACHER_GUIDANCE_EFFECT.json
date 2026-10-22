@@ -1,0 +1,10 @@
+{
+  "CROSS_VIEW_TEACHER_GUIDANCE_EFFECT": "STRONG",
+  "effects": {
+    "ODST40_D_minus_T": 0.002816607928766257,
+    "IWODST40_D_minus_T": 0.005055349198085146
+  },
+  "TEACHER_GUIDANCE_VS_INITIALISATION": "SUPPORTED_STRONG",
+  "lambda": 0.5,
+  "note": "classified on inner teacher-vs-task tree contrast; no official tree promotion"
+}

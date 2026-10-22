@@ -1,0 +1,55 @@
+{
+  "binding": {
+    "data": {
+      "schema": "F29",
+      "partition": "inner",
+      "representation_sha256": "083c90400aaf6de2f8bf7cde26c82f7dd898be38bb72290398abe2287b9beb30",
+      "columns": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day",
+        "outside_0800_1800_event_count",
+        "outside_0800_1800_event_fraction",
+        "active_hour_bins",
+        "largest_hour_event_fraction",
+        "unique_pc_count",
+        "largest_pc_event_fraction",
+        "logon_start_count",
+        "device_connect_count",
+        "file_write_count",
+        "file_to_removable_count",
+        "email_sent_count",
+        "email_sent_unique_recipient_count",
+        "email_sent_size_sum",
+        "email_sent_attachment_count",
+        "http_unique_hostname_count",
+        "largest_http_hostname_fraction"
+      ],
+      "preprocessor_sha256": "bbc4b1aa6a6f9839c4dfa38ecee498215843470f1e89f15feedf250ef15be108",
+      "train_labels_sha256": "75e04a2a65590012ca73d5f09c52af4f42f57c8802d6989f237e7aafc417304c",
+      "eval_labels_sha256": "b28352b9adea538e3f15af1a7068b34cc900392c30f71e855bb0d0c414976328"
+    },
+    "manifest_sha256": "55d25c09e52b70161fec902034776659eff2370219c76e07321cfea4ecdc32f9",
+    "teachers": [
+      "a82be8065fe37888717ffbc2727edf8847d7ae4d2789a160199aacd1d62f7078",
+      "ac80ce046fa4eed9627fa8e95651a7d56b053507854e999d3fcb8cbe3ab3ad09",
+      "8bc5c34e52f8bbf6038ff52ddd6c99c778b48fd5a6e4dfa848d5d04566e76932"
+    ]
+  },
+  "artifacts": {
+    "TRAIN_LOGITS.npy": "bcd355c40b79e6452e9c2e35911ac293de9d9372c596d1ab80ac52d32f60ea99",
+    "EVAL_LOGITS.npy": "04c3cef883bc325ce90ce252ea529f42f53730e1dd8d02853f9c5ce81be5b240",
+    "RESULT.json": "5c194edfeb45e271d87858f4a896cd298303f6c4643774a2f3dcc95265ede00c"
+  },
+  "new_fits": 0
+}

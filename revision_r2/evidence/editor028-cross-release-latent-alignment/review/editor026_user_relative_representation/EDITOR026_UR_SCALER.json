@@ -1,0 +1,53 @@
+{
+  "features": [
+    "total_events",
+    "logon_count",
+    "device_count",
+    "file_count",
+    "email_count",
+    "http_count",
+    "active_duration_minutes",
+    "has_logon_activity",
+    "has_device_activity",
+    "has_file_activity",
+    "has_email_activity",
+    "has_http_activity",
+    "is_active_day"
+  ],
+  "mean": [
+    -1.1795772883869549,
+    -0.3038534553652447,
+    -0.028047534206234948,
+    0.01820173136400282,
+    -0.7184798307749394,
+    -1.1159321466296324,
+    -1.6975515441775155,
+    0.006637132878497835,
+    0.0008176371973018117,
+    0.0007211601331372679,
+    0.006622924686492512,
+    0.006644692982611801,
+    0.006622490925078602
+  ],
+  "scale": [
+    2.0899138816221186,
+    0.5874579787402942,
+    0.45125279457662865,
+    0.5191826416034372,
+    1.4547740616613574,
+    1.9441335010180412,
+    2.9112656547010634,
+    0.46440720193409546,
+    0.20920342077695953,
+    0.2087790421692718,
+    0.46463103927763616,
+    0.4653084118322983,
+    0.4638887016440461
+  ],
+  "fitted_on": "R52 TRAIN ONLY",
+  "UR_SCALER_FIT_DATA": "R52 TRAIN ONLY",
+  "R61_SCALER_FIT": "NO",
+  "R61_TARGET_NORMALISATION_FIT": "NO",
+  "n_fit_rows": 826000,
+  "note": "Per-user causal history is part of the input representation and is not target-wide scaler fitting. This scaler is fit only on r5.2 TRAIN user-relative daily values after the causal transform."
+}

@@ -1,0 +1,214 @@
+{
+  "checks": {
+    "report_complete": true,
+    "stderr_empty": true,
+    "run_complete": true,
+    "holdout_script_not_executed": true,
+    "code_output_copies_and_hashes_match": true,
+    "holdout_script_hash_matches": true,
+    "protocol_hash_matches": true,
+    "original_source_hashes_unchanged": true,
+    "all_six_checkpoint_hashes_unchanged": true,
+    "cohort_counts": true,
+    "all_exported_users_pseudonyms": true,
+    "32_windows_each_user": true,
+    "malicious_users_31": true,
+    "all_models_seeds_levels_present": true,
+    "eligibility_accounting": true,
+    "all_ci_bootstrap_replicates_2000": true,
+    "ci_order_valid": true,
+    "metric_estimates_finite_when_eligible": true,
+    "ig_42_shape_finite": true,
+    "ig_42_completeness_reproduces": true,
+    "TreeSHAP_42_shape_additive": true,
+    "TA2_42_feature_complete_arrays": true,
+    "TA2_42_source_complete_arrays": true,
+    "XGBoost_40_42_feature_complete_arrays": true,
+    "XGBoost_40_42_source_complete_arrays": true,
+    "XGBoost_40_42_raw_feature_complete_arrays": true,
+    "ig_52_shape_finite": true,
+    "ig_52_completeness_reproduces": true,
+    "TreeSHAP_52_shape_additive": true,
+    "TA2_52_feature_complete_arrays": true,
+    "TA2_52_source_complete_arrays": true,
+    "XGBoost_40_52_feature_complete_arrays": true,
+    "XGBoost_40_52_source_complete_arrays": true,
+    "XGBoost_40_52_raw_feature_complete_arrays": true,
+    "ig_62_shape_finite": true,
+    "ig_62_completeness_reproduces": true,
+    "TreeSHAP_62_shape_additive": true,
+    "TA2_62_feature_complete_arrays": true,
+    "TA2_62_source_complete_arrays": true,
+    "XGBoost_40_62_feature_complete_arrays": true,
+    "XGBoost_40_62_source_complete_arrays": true,
+    "XGBoost_40_62_raw_feature_complete_arrays": true,
+    "integrated_gradients.png_300_dpi": true,
+    "faithfulness.png_300_dpi": true,
+    "no_CERT_ID_patterns_in_text_outputs": true
+  },
+  "all_pass": true,
+  "completeness": {
+    "ig_42_final_median_relative_error": 0.00046402521548925645,
+    "ig_52_final_median_relative_error": 0.0005089341358366735,
+    "ig_62_final_median_relative_error": 0.0009241052798230054
+  },
+  "primary": [
+    {
+      "seed": "mean_of_seeds",
+      "sign": "class_supporting",
+      "stratum": "overall",
+      "k": 3,
+      "metric": "TA2_minus_XGBoost_directional_accuracy",
+      "estimate": 0.35960446188847367,
+      "ci_low": 0.34102557942490397,
+      "ci_high": 0.3799806078361205,
+      "n_paired": 63441,
+      "bootstrap_valid": 2000
+    },
+    {
+      "seed": "mean_of_seeds",
+      "sign": "class_supporting",
+      "stratum": "overall",
+      "k": 3,
+      "metric": "TA2_minus_XGBoost_accuracy_gap_from_random",
+      "estimate": 0.031959116869742475,
+      "ci_low": 0.014657166744652948,
+      "ci_high": 0.05056822605628757,
+      "n_paired": 63441,
+      "bootstrap_valid": 2000
+    },
+    {
+      "seed": "mean_of_seeds",
+      "sign": "class_supporting",
+      "stratum": "malicious",
+      "k": 3,
+      "metric": "TA2_minus_XGBoost_directional_accuracy",
+      "estimate": 0.06464924346629985,
+      "ci_low": 0.02609413523646514,
+      "ci_high": 0.10871630598080471,
+      "n_paired": 727,
+      "bootstrap_valid": 2000
+    },
+    {
+      "seed": "mean_of_seeds",
+      "sign": "class_supporting",
+      "stratum": "malicious",
+      "k": 3,
+      "metric": "TA2_minus_XGBoost_accuracy_gap_from_random",
+      "estimate": -0.0020586886749197632,
+      "ci_low": -0.04765499329729541,
+      "ci_high": 0.04940589826839827,
+      "n_paired": 727,
+      "bootstrap_valid": 2000
+    }
+  ],
+  "raw_feature_sensitivity": [
+    {
+      "seed": "mean_of_seeds",
+      "sign": "class_supporting",
+      "stratum": "overall",
+      "k": 3,
+      "metric": "TA2_minus_XGBoost_directional_accuracy",
+      "estimate": 0.17959550420101816,
+      "ci_low": 0.16714565770023468,
+      "ci_high": 0.19194705361510447,
+      "n_paired": 63437,
+      "bootstrap_valid": 2000
+    },
+    {
+      "seed": "mean_of_seeds",
+      "sign": "class_supporting",
+      "stratum": "overall",
+      "k": 3,
+      "metric": "TA2_minus_XGBoost_accuracy_gap_from_random",
+      "estimate": -0.0922035247568454,
+      "ci_low": -0.1019841446111898,
+      "ci_high": -0.08192876815677945,
+      "n_paired": 63437,
+      "bootstrap_valid": 2000
+    },
+    {
+      "seed": "mean_of_seeds",
+      "sign": "class_supporting",
+      "stratum": "malicious",
+      "k": 3,
+      "metric": "TA2_minus_XGBoost_directional_accuracy",
+      "estimate": -0.0036883356385431073,
+      "ci_low": -0.009833731175283342,
+      "ci_high": 0.0,
+      "n_paired": 723,
+      "bootstrap_valid": 2000
+    },
+    {
+      "seed": "mean_of_seeds",
+      "sign": "class_supporting",
+      "stratum": "malicious",
+      "k": 3,
+      "metric": "TA2_minus_XGBoost_accuracy_gap_from_random",
+      "estimate": -0.028296449976947895,
+      "ci_low": -0.057969476079090115,
+      "ci_high": 0.003920100130771342,
+      "n_paired": 723,
+      "bootstrap_valid": 2000
+    }
+  ],
+  "parity": [
+    {
+      "model": "TA2",
+      "seed": 42,
+      "max_abs_logit_error": 4.76837158203125e-07
+    },
+    {
+      "model": "XGBoost_40",
+      "seed": 42,
+      "TreeSHAP_completeness_max_abs_error": 1.3596261851489544e-05,
+      "validation_probability_parity_max_abs_error": 8.552159369568102e-08
+    },
+    {
+      "model": "TA2",
+      "seed": 52,
+      "max_abs_logit_error": 4.76837158203125e-07
+    },
+    {
+      "model": "XGBoost_40",
+      "seed": 52,
+      "TreeSHAP_completeness_max_abs_error": 1.8197635654360056e-05,
+      "validation_probability_parity_max_abs_error": 8.158360109700169e-08
+    },
+    {
+      "model": "TA2",
+      "seed": 62,
+      "max_abs_logit_error": 4.76837158203125e-07
+    },
+    {
+      "model": "XGBoost_40",
+      "seed": 62,
+      "TreeSHAP_completeness_max_abs_error": 1.785438507795334e-05,
+      "validation_probability_parity_max_abs_error": 8.097776715842997e-08
+    }
+  ],
+  "figures": {
+    "integrated_gradients.png": {
+      "pixels": [
+        4500,
+        3300
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "faithfulness.png": {
+      "pixels": [
+        4200,
+        2400
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    }
+  },
+  "metric_rows": 1404,
+  "skipped_metric_rows": 0
+}

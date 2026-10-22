@@ -1,0 +1,91 @@
+{
+  "TEACHER_GUIDANCE_CLEAN_VALUE": "SUPPORTED_STRONG",
+  "TEACHER_GUIDANCE_DEGRADED_INPUT_VALUE": "CONSISTENT",
+  "ROUTE_ANCHOR_STRUCTURAL_VALUE": "SUPPORTED",
+  "TA2_ODST_DEGRADED_INPUT_VALUE_OVER_LINEAR": "SUPPORTED",
+  "TA2_OVERALL_ARCHITECTURE_VALUE": "SUPPORTED_WITH_QUALIFICATION",
+  "TREE_EXPLANATION_DEGRADED_INPUT_STABILITY": "SUPPORTED",
+  "CURRENT_PAPER_MODEL": "TA2",
+  "CLEAN": {
+    "C2-OPT": 0.9353238885175368,
+    "F10": 0.9425948632340028,
+    "TA2": 0.9428421883320307,
+    "L1": 0.9388809579807144
+  },
+  "TA2_MINUS_C2_CLEAN": 0.007518299814493923,
+  "SOURCE_AURC": {
+    "C2-OPT": 0.8408885253126882,
+    "F10": 0.8478425320571182,
+    "TA2": 0.8553871535578862,
+    "L1": 0.8248321840877016
+  },
+  "NOISE_AURC": {
+    "C2-OPT": 0.9246090481972544,
+    "F10": 0.9337024796081291,
+    "TA2": 0.9385992060073315,
+    "L1": 0.9297215224991215
+  },
+  "contrasts": {
+    "F10_minus_C2_SOURCE_AURC": 0.00695400674443003,
+    "TA2_minus_C2_SOURCE_AURC": 0.014498628245197986,
+    "TA2_minus_F10_SOURCE_AURC": 0.007544621500767956,
+    "TA2_minus_L1_SOURCE_AURC": 0.030554969470184545,
+    "F10_minus_C2_NOISE_AURC": 0.009093431410874708,
+    "TA2_minus_C2_NOISE_AURC": 0.013990157810077064,
+    "TA2_minus_F10_NOISE_AURC": 0.004896726399202356,
+    "TA2_minus_L1_NOISE_AURC": 0.008877683508209944
+  },
+  "failure_profiles": {
+    "C2-OPT": {
+      "worst_source": "device",
+      "second_worst_source": "file",
+      "worst_source_mean_retention": 0.555968074954759,
+      "second_worst_source_mean_retention": 0.5624327098764839,
+      "source_retention_first_below_0.90": 0.75,
+      "source_retention_first_below_0.75": 0.75,
+      "noise_retention_first_below_0.90": null,
+      "noise_retention_first_below_0.75": null,
+      "thresholds_created_only_on_crossing": true,
+      "descriptive_only": true
+    },
+    "F10": {
+      "worst_source": "file",
+      "second_worst_source": "device",
+      "worst_source_mean_retention": 0.5586330204236082,
+      "second_worst_source_mean_retention": 0.563247239602162,
+      "source_retention_first_below_0.90": 0.75,
+      "source_retention_first_below_0.75": 0.75,
+      "noise_retention_first_below_0.90": null,
+      "noise_retention_first_below_0.75": null,
+      "thresholds_created_only_on_crossing": true,
+      "descriptive_only": true
+    },
+    "TA2": {
+      "worst_source": "file",
+      "second_worst_source": "device",
+      "worst_source_mean_retention": 0.5584680391886461,
+      "second_worst_source_mean_retention": 0.5971255495602124,
+      "source_retention_first_below_0.90": 0.75,
+      "source_retention_first_below_0.75": 0.75,
+      "noise_retention_first_below_0.90": null,
+      "noise_retention_first_below_0.75": null,
+      "thresholds_created_only_on_crossing": true,
+      "descriptive_only": true
+    },
+    "L1": {
+      "worst_source": "device",
+      "second_worst_source": "file",
+      "worst_source_mean_retention": 0.4469452404995188,
+      "second_worst_source_mean_retention": 0.5611177985284842,
+      "source_retention_first_below_0.90": 0.5,
+      "source_retention_first_below_0.75": 0.75,
+      "noise_retention_first_below_0.90": null,
+      "noise_retention_first_below_0.75": null,
+      "thresholds_created_only_on_crossing": true,
+      "descriptive_only": true
+    }
+  },
+  "claim_boundaries": "controlled degraded-input / data-quality resilience only",
+  "forbidden_terms_used": false,
+  "written_at": "2026-08-17T21:13:54Z"
+}

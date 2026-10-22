@@ -1,0 +1,6 @@
+{
+  "average_precision": 0.8186350747519077,
+  "reference": "sigmoid of mean canonical teacher logits",
+  "threshold": null,
+  "fit_count": 0
+}

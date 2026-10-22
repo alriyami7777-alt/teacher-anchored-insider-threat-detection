@@ -1,0 +1,914 @@
+{
+  "F10/42": {
+    "LOCAL_DIRECTIONAL_TREE_FAITHFULNESS": "SUPPORTED",
+    "MALICIOUS_DIRECTIONAL_FAITHFULNESS": "SUPPORTED",
+    "BENIGN_DIRECTIONAL_FAITHFULNESS": "SUPPORTED",
+    "HISTORICAL_GLOBAL_TOPK_FAITHFULNESS": "NOT_SUPPORTED",
+    "bootstrap": {
+      "malicious_k1": {
+        "cluster": "user",
+        "n_users": 31,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_malicious_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "benign_k1": {
+        "cluster": "user",
+        "n_users": 1987,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_benign_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "malicious_k2": {
+        "cluster": "user",
+        "n_users": 31,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_malicious_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "benign_k2": {
+        "cluster": "user",
+        "n_users": 1780,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_benign_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "malicious_k3": {
+        "cluster": "user",
+        "n_users": 31,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_malicious_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "benign_k3": {
+        "cluster": "user",
+        "n_users": 1740,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_benign_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      }
+    }
+  },
+  "F10/52": {
+    "LOCAL_DIRECTIONAL_TREE_FAITHFULNESS": "SUPPORTED",
+    "MALICIOUS_DIRECTIONAL_FAITHFULNESS": "SUPPORTED",
+    "BENIGN_DIRECTIONAL_FAITHFULNESS": "SUPPORTED",
+    "HISTORICAL_GLOBAL_TOPK_FAITHFULNESS": "NOT_SUPPORTED",
+    "bootstrap": {
+      "malicious_k1": {
+        "cluster": "user",
+        "n_users": 31,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_malicious_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "benign_k1": {
+        "cluster": "user",
+        "n_users": 1789,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_benign_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "malicious_k2": {
+        "cluster": "user",
+        "n_users": 31,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_malicious_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "benign_k2": {
+        "cluster": "user",
+        "n_users": 1768,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_benign_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "malicious_k3": {
+        "cluster": "user",
+        "n_users": 31,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_malicious_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "benign_k3": {
+        "cluster": "user",
+        "n_users": 1754,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_benign_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      }
+    }
+  },
+  "F10/62": {
+    "LOCAL_DIRECTIONAL_TREE_FAITHFULNESS": "SUPPORTED",
+    "MALICIOUS_DIRECTIONAL_FAITHFULNESS": "SUPPORTED",
+    "BENIGN_DIRECTIONAL_FAITHFULNESS": "SUPPORTED",
+    "HISTORICAL_GLOBAL_TOPK_FAITHFULNESS": "NOT_SUPPORTED",
+    "bootstrap": {
+      "malicious_k1": {
+        "cluster": "user",
+        "n_users": 31,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_malicious_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "benign_k1": {
+        "cluster": "user",
+        "n_users": 1982,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_benign_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "malicious_k2": {
+        "cluster": "user",
+        "n_users": 31,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_malicious_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "benign_k2": {
+        "cluster": "user",
+        "n_users": 1827,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_benign_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "malicious_k3": {
+        "cluster": "user",
+        "n_users": 31,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_malicious_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "benign_k3": {
+        "cluster": "user",
+        "n_users": 1506,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_benign_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      }
+    }
+  },
+  "TA2/42": {
+    "LOCAL_DIRECTIONAL_TREE_FAITHFULNESS": "SUPPORTED",
+    "MALICIOUS_DIRECTIONAL_FAITHFULNESS": "SUPPORTED",
+    "BENIGN_DIRECTIONAL_FAITHFULNESS": "SUPPORTED",
+    "HISTORICAL_GLOBAL_TOPK_FAITHFULNESS": "NOT_SUPPORTED",
+    "bootstrap": {
+      "malicious_k1": {
+        "cluster": "user",
+        "n_users": 31,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_malicious_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "benign_k1": {
+        "cluster": "user",
+        "n_users": 1977,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_benign_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "malicious_k2": {
+        "cluster": "user",
+        "n_users": 31,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_malicious_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "benign_k2": {
+        "cluster": "user",
+        "n_users": 1758,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_benign_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "malicious_k3": {
+        "cluster": "user",
+        "n_users": 31,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_malicious_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "benign_k3": {
+        "cluster": "user",
+        "n_users": 1608,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_benign_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      }
+    }
+  },
+  "TA2/52": {
+    "LOCAL_DIRECTIONAL_TREE_FAITHFULNESS": "SUPPORTED",
+    "MALICIOUS_DIRECTIONAL_FAITHFULNESS": "SUPPORTED",
+    "BENIGN_DIRECTIONAL_FAITHFULNESS": "SUPPORTED",
+    "HISTORICAL_GLOBAL_TOPK_FAITHFULNESS": "NOT_SUPPORTED",
+    "bootstrap": {
+      "malicious_k1": {
+        "cluster": "user",
+        "n_users": 31,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_malicious_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "benign_k1": {
+        "cluster": "user",
+        "n_users": 1768,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_benign_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "malicious_k2": {
+        "cluster": "user",
+        "n_users": 31,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_malicious_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "benign_k2": {
+        "cluster": "user",
+        "n_users": 1728,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_benign_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "malicious_k3": {
+        "cluster": "user",
+        "n_users": 31,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_malicious_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "benign_k3": {
+        "cluster": "user",
+        "n_users": 1515,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_benign_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      }
+    }
+  },
+  "TA2/62": {
+    "LOCAL_DIRECTIONAL_TREE_FAITHFULNESS": "SUPPORTED",
+    "MALICIOUS_DIRECTIONAL_FAITHFULNESS": "SUPPORTED",
+    "BENIGN_DIRECTIONAL_FAITHFULNESS": "SUPPORTED",
+    "HISTORICAL_GLOBAL_TOPK_FAITHFULNESS": "NOT_SUPPORTED",
+    "bootstrap": {
+      "malicious_k1": {
+        "cluster": "user",
+        "n_users": 31,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_malicious_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "benign_k1": {
+        "cluster": "user",
+        "n_users": 1804,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_benign_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "malicious_k2": {
+        "cluster": "user",
+        "n_users": 31,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_malicious_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "benign_k2": {
+        "cluster": "user",
+        "n_users": 1513,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_benign_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "malicious_k3": {
+        "cluster": "user",
+        "n_users": 31,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_malicious_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      },
+      "benign_k3": {
+        "cluster": "user",
+        "n_users": 1438,
+        "n_valid_resamples": 0,
+        "n_attempted_draws": 100001,
+        "seed": 42,
+        "sampling_unit": "validation user",
+        "statistic": "mean_across_seeds_delta_PR_AUC_top_minus_random_benign_logit_proxy",
+        "mean_delta_pr_auc": NaN,
+        "ci95_pr_auc": [
+          NaN,
+          NaN
+        ],
+        "mean_delta_f1": NaN,
+        "ci95_f1": [
+          NaN,
+          NaN
+        ],
+        "f1_thresholds_frozen": true,
+        "f1_retuned_inside_bootstrap": false,
+        "windows_not_independent": true,
+        "three_seeds_are_not_independent_experimental_units": true,
+        "note": "user-cluster bootstrap; windows not independent; seeds are repeated realisations"
+      }
+    }
+  }
+}

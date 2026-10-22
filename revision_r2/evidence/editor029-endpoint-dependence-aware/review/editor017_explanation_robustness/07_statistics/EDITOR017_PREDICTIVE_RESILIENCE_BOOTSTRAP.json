@@ -1,0 +1,113 @@
+{
+  "teacher_guidance_source_F10_minus_C2": {
+    "cluster": "user",
+    "n_users": 2000,
+    "n_valid_resamples": 2000,
+    "n_attempted_draws": 2000,
+    "seed": 42,
+    "sampling_unit": "validation user",
+    "statistic": "MEAN_SOURCE_DELTA_F10_minus_C2",
+    "mean": 0.022875139581516876,
+    "ci95": [
+      0.007736960006339533,
+      0.03841980171964618
+    ],
+    "ci_excludes_zero": true,
+    "windows_not_independent": true,
+    "three_seeds_are_not_independent_experimental_units": true,
+    "direction_favours_B": true
+  },
+  "route_anchor_source_TA2_minus_F10": {
+    "cluster": "user",
+    "n_users": 2000,
+    "n_valid_resamples": 2000,
+    "n_attempted_draws": 2000,
+    "seed": 42,
+    "sampling_unit": "validation user",
+    "statistic": "MEAN_SOURCE_DELTA_TA2_minus_F10",
+    "mean": 0.002011387902169222,
+    "ci95": [
+      -0.005292931823653214,
+      0.010350210338845589
+    ],
+    "ci_excludes_zero": false,
+    "windows_not_independent": true,
+    "three_seeds_are_not_independent_experimental_units": true,
+    "direction_favours_B": true
+  },
+  "ta2_vs_l1_source": {
+    "cluster": "user",
+    "n_users": 2000,
+    "n_valid_resamples": 2000,
+    "n_attempted_draws": 2000,
+    "seed": 42,
+    "sampling_unit": "validation user",
+    "statistic": "MEAN_SOURCE_DELTA_TA2_minus_L1",
+    "mean": 0.012447826605980448,
+    "ci95": [
+      -0.004396081801144759,
+      0.02713402835358262
+    ],
+    "ci_excludes_zero": false,
+    "windows_not_independent": true,
+    "three_seeds_are_not_independent_experimental_units": true,
+    "direction_favours_B": true
+  },
+  "teacher_guidance_noise_F10_minus_C2": {
+    "cluster": "user",
+    "n_users": 2000,
+    "n_valid_resamples": 2000,
+    "n_attempted_draws": 2000,
+    "seed": 42,
+    "sampling_unit": "validation user",
+    "statistic": "MEAN_NOISE_RETENTION_F10_minus_C2",
+    "mean": 0.00920489468283081,
+    "ci95": [
+      -0.007219117024158143,
+      0.03347717477506217
+    ],
+    "ci_excludes_zero": false,
+    "windows_not_independent": true,
+    "three_seeds_are_not_independent_experimental_units": true,
+    "direction_favours_B": true
+  },
+  "route_anchor_noise_TA2_minus_F10": {
+    "cluster": "user",
+    "n_users": 2000,
+    "n_valid_resamples": 2000,
+    "n_attempted_draws": 2000,
+    "seed": 42,
+    "sampling_unit": "validation user",
+    "statistic": "MEAN_NOISE_RETENTION_TA2_minus_F10",
+    "mean": 0.005539901818074072,
+    "ci95": [
+      0.0013027157551422687,
+      0.011564725929561205
+    ],
+    "ci_excludes_zero": true,
+    "windows_not_independent": true,
+    "three_seeds_are_not_independent_experimental_units": true,
+    "direction_favours_B": true
+  },
+  "ta2_vs_l1_noise": {
+    "cluster": "user",
+    "n_users": 2000,
+    "n_valid_resamples": 2000,
+    "n_attempted_draws": 2000,
+    "seed": 42,
+    "sampling_unit": "validation user",
+    "statistic": "MEAN_NOISE_RETENTION_TA2_minus_L1",
+    "mean": 0.00998914395256573,
+    "ci95": [
+      0.0013943866180307085,
+      0.021617719108036886
+    ],
+    "ci_excludes_zero": true,
+    "windows_not_independent": true,
+    "three_seeds_are_not_independent_experimental_units": true,
+    "direction_favours_B": true
+  },
+  "sampling_unit": "validation user",
+  "n_resamples": 2000,
+  "seed": 42
+}

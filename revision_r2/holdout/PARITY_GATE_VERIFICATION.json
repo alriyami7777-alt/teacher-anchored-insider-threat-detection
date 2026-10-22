@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-21T22:30:11.902286+00:00",
+  "status": "PARITY_GATE_FIXED",
+  "source_environment_for_this_check": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "numpy": "2.4.6"
+  },
+  "canonical_feature_max_abs_difference_in_neural_runtime_environment": {
+    "train": 0.0,
+    "validation": 0.0
+  },
+  "corrected_tabular_models": 6,
+  "superseded_rows": 6,
+  "unchanged_neural_and_prerequisite_checkpoint_hashes": 27,
+  "all_checkpoint_and_tensor_hashes_verified": true,
+  "v1_freeze_preserved_exactly": true,
+  "mandatory_scoring_guard_verified_statically": true,
+  "scoring_script_executed": false,
+  "holdout_scored": false,
+  "test_read": false,
+  "public_user_id_scan_pass": true
+}

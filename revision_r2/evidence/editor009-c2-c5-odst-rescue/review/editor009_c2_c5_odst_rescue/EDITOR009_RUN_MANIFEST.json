@@ -1,0 +1,18 @@
+{
+  "campaign": "EDITOR-009 DEVELOPMENT RESCUE",
+  "utc": "2026-08-14T19:22:30Z",
+  "protocol_commit_phase0": "e5cc57c1318afff8adf7f747d2941e120d6d2e30",
+  "EDITOR009_IMPLEMENTATION_COMMIT": "401119ae837e830242ac933eda25d1f66fe01881",
+  "device": "cuda",
+  "R52_TEST_ACCESSED": false,
+  "R51_RERUN": false,
+  "R62_RERUN": false,
+  "promoted": [
+    "R8",
+    "R7",
+    "R2"
+  ],
+  "gate": "RESCUE_SUCCESS_CANDIDATE_FOUND",
+  "best": "R2",
+  "C5_DENY_HASHES_RESPECTED": true
+}

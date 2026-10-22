@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-22T02:12:52.125206+00:00",
+  "seeds": [
+    42,
+    52,
+    62
+  ],
+  "recipe_source": "PREREGISTRATION_R2_HOLDOUT.md Amendment 2",
+  "implementation_choices": {
+    "TCN": "two causal Conv1d layers per residual block, left zero padding; 1x1 residual projection where dimensions differ",
+    "Transformer": "PyTorch default post-norm encoder with ReLU; positional parameters initialized N(0,0.02)",
+    "LSTM_AE": "encoder final hidden vector repeated 20 steps; decoder initial hidden and cell are zero",
+    "threshold": "exact maximum DEVELOPMENT VALIDATION F1 over distinct observed scores; lowest threshold on ties",
+    "resources": "one seed at a time, two CPU threads and 45% GPU allocation cap"
+  },
+  "preregistration_sha256": "1f4e8ad4c759ddf90221a741314749d390fc6c4db2bf7ca71aa97e79ed00e37f",
+  "files": {
+    "common.py": "704527ed686c525c6d02077cc2e19e50ace35865777f4d2447482cc2a08270b8",
+    "train.py": "a4747185af0bc13b4e3f5e72d5621d64d8a38b87b13dec54fbd486c45ea06c48"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "bins_fitted_from": "R52_TRAIN",
+  "oos_bounds_fitted_from": "R52_TRAIN",
+  "r52_train_npz_sha256": "b268328d3bf2e98f712d1145958dabe175ce2c07a7c390da4b84a663317ebc2e",
+  "r52_train_x_sha256": "f3eb0ccec75eea247713473bc9e31c5ea6753a1e3fedb126d3651fd3439373b3",
+  "ranked_features_all_user_days": [
+    "email_count",
+    "total_events",
+    "has_file_activity",
+    "http_count",
+    "active_duration_minutes",
+    "logon_count",
+    "file_count",
+    "has_email_activity",
+    "is_active_day",
+    "has_logon_activity",
+    "has_http_activity",
+    "device_count",
+    "has_device_activity"
+  ],
+  "top_5_shifted_features": [
+    "email_count",
+    "total_events",
+    "has_file_activity",
+    "http_count",
+    "active_duration_minutes"
+  ],
+  "psi": {
+    "total_events": 0.5260258524393907,
+    "logon_count": 0.0028811208630801386,
+    "device_count": 5.345155994590028e-05,
+    "file_count": 0.0,
+    "email_count": 3.317436383694681,
+    "http_count": 0.07770887179973726,
+    "active_duration_minutes": 0.04053469653450822,
+    "has_logon_activity": 0.0,
+    "has_device_activity": 0.0,
+    "has_file_activity": 0.0,
+    "has_email_activity": 0.0,
+    "has_http_activity": 0.0,
+    "is_active_day": 0.0
+  },
+  "mean_shift_z": {
+    "total_events": -0.1587618550296383,
+    "logon_count": -0.04096792641043758,
+    "device_count": 0.005226937994736664,
+    "file_count": 0.03784128581107536,
+    "email_count": -0.6442391695392732,
+    "http_count": -0.018428916497261597,
+    "active_duration_minutes": -0.06105442131594883,
+    "has_logon_activity": -0.009228204223875857,
+    "has_device_activity": -0.004882516154525145,
+    "has_file_activity": 0.22486704669288815,
+    "has_email_activity": -0.021479549668506782,
+    "has_http_activity": -0.00844613848798373,
+    "is_active_day": -0.011362341413065238
+  },
+  "oos": {
+    "total_events": 0.00018362403100775194,
+    "logon_count": 0.0010329457364341085,
+    "device_count": 0.000312984496124031,
+    "file_count": 0.0014641472868217053,
+    "email_count": 0.0,
+    "http_count": 0.00017248062015503876,
+    "active_duration_minutes": 0.003052325581395349,
+    "has_logon_activity": 0.0,
+    "has_device_activity": 0.0,
+    "has_file_activity": 0.0,
+    "has_email_activity": 0.0,
+    "has_http_activity": 0.0,
+    "is_active_day": 0.0
+  },
+  "binary_rate_abs_diff": {
+    "has_logon_activity": 0.004300783063786229,
+    "has_device_activity": 0.0014895880061385897,
+    "has_file_activity": 0.06277202907960493,
+    "has_email_activity": 0.01001231161216698,
+    "has_http_activity": 0.0039414153189312184,
+    "is_active_day": 0.005291011490182185
+  },
+  "count_activity_levels_primary_shift": true
+}

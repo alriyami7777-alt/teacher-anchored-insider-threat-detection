@@ -1,0 +1,82 @@
+\documentclass[10pt]{article}
+\usepackage[margin=2cm]{geometry}\usepackage{booktabs}\usepackage{amsmath}\usepackage{caption}\usepackage[T1]{fontenc}\usepackage{mathptmx}
+\title{Supplementary Material\\[4pt]\large TRACE: Teacher-Guided Differentiable Sequence--Ensemble Learning for Explainable Insider Threat Detection}
+\author{Qasim Mohamed Muhanna Alriyami and Mohd Murtadha bin Mohamad}
+\date{}
+\begin{document}\maketitle
+% Supplementary material (R3-8): calibration and alert-workload evidence.
+% NOTE: belongs to an EARLIER frozen seed-42 ODST configuration (16-tree
+% July 2026 checkpoint), NOT to the final TRACE model. Moved out of the main
+% manuscript in revision R2.
+\section*{S1. Calibration and Alert Evidence (Earlier ODST Configuration)}
+
+\textit{Method.} Secondary calibration and alert analyses belong to an earlier frozen ODST
+configuration rather than the final TRACE checkpoint. Probability calibration
+uses five-fold user-grouped out-of-fold temperature scaling. Alert outputs
+are consolidated within users, grouping alerts on the same or consecutive
+calendar days into one analytical episode. These episodes are workload
+summaries rather than verified incidents.
+
+\textit{Results.}
+
+A frozen earlier seed-42 ODST configuration provides secondary calibration
+and alert-workload evidence. User-grouped out-of-fold temperature scaling
+reduced Brier score from 0.175 to 0.004 and expected calibration error from
+0.413 to 0.005. At its frozen operating point, 661 sequence alerts involved
+36 users and collapsed into 42 one-day-gap analytical episodes.
+
+\smallskip
+These results are not reassigned to TRACE because they were produced by an
+earlier frozen configuration. Likewise, historical latency profiling is
+retained only as development evidence because it used a superseded ODST
+configuration. Exact final-model deployment latency is therefore not
+claimed.
+
+
+
+\section*{S2. Unseen-User Evaluation: All Views}
+All models were trained on 1,500 development users and scored once on 500 held-out CERT r5.2 users over their training and validation periods (pre-registered protocol with Amendments 1 and 2). Values are three-seed mean PR-AUC. View sizes: Pooled 213,000 windows, 1,172 positive (prevalence 0.0055); Train period 197,000 windows, 917 positive (prevalence 0.0047); Validation period 16,000 windows, 255 positive (prevalence 0.0159); Offset-0 11,000 windows, 62 positive (prevalence 0.0056); Endpoint 213,000 windows, 302 positive (prevalence 0.0014).
+
+\begin{table}[h]\centering\small
+\caption*{Table S1. PR-AUC by evaluation view (three-seed means).}
+\begin{tabular}{lccccc}\toprule
+Model & Pooled & Train period & Validation period & Offset-0 & Endpoint \\\midrule
+XGBoost-40 & 0.824 & 0.803 & 0.896 & 0.830 & 0.209 \\
+LightGBM-40 & 0.797 & 0.784 & 0.852 & 0.788 & 0.202 \\
+Transformer encoder & 0.730 & 0.667 & 0.913 & 0.741 & 0.100 \\
+TRACE w/o route term (F10) & 0.715 & 0.650 & 0.891 & 0.732 & 0.105 \\
+TRACE & 0.712 & 0.647 & 0.887 & 0.723 & 0.105 \\
+TCN & 0.711 & 0.637 & 0.886 & 0.722 & 0.092 \\
+Bi-LSTM, no attention & 0.694 & 0.621 & 0.894 & 0.704 & 0.095 \\
+Unidirectional TRACE & 0.693 & 0.617 & 0.908 & 0.695 & 0.087 \\
+Task-only control (F00) & 0.692 & 0.621 & 0.879 & 0.714 & 0.103 \\
+Attention--linear & 0.674 & 0.612 & 0.879 & 0.686 & 0.102 \\
+Optimised teacher & 0.656 & 0.580 & 0.881 & 0.664 & 0.100 \\
+Bi-GRU + attention & 0.644 & 0.544 & 0.923 & 0.658 & 0.096 \\
+Unidirectional teacher & 0.635 & 0.551 & 0.894 & 0.665 & 0.082 \\
+MLP, 260 inputs & 0.626 & 0.557 & 0.847 & 0.644 & 0.100 \\
+RF-40 & 0.623 & 0.566 & 0.892 & 0.601 & 0.115 \\
+LSTM autoencoder & 0.019 & 0.017 & 0.049 & 0.019 & 0.004 \\
+Isolation Forest & 0.011 & 0.011 & 0.022 & 0.012 & 0.003 \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[h]\centering\small
+\caption*{Table S2. Paired PR-AUC contrasts by view, with the pre-registered decision label (above / comparable / below; paired user-cluster bootstrap, 2,000 replicates, 95\% percentile intervals). Full intervals are in the repository (\texttt{HOLDOUT\_CONTRASTS.csv}).}
+\begin{tabular}{lccccc}\toprule
+Contrast & Pooled & Train period & Validation period & Offset-0 & Endpoint \\\midrule
+TRACE $-$ XGBoost-40 & $-0.112$ (comp.) & $-0.156$ (comp.) & $-0.009$ (comp.) & $-0.107$ (comp.) & $-0.104$ (below) \\
+TRACE $-$ F00 & $+0.020$ (above) & $+0.026$ (above) & $+0.008$ (above) & $+0.009$ (comp.) & $+0.003$ (comp.) \\
+TRACE $-$ L1 & $+0.038$ (above) & $+0.036$ (comp.) & $+0.009$ (comp.) & $+0.037$ (comp.) & $+0.003$ (comp.) \\
+TRACE $-$ RF-40 & $+0.089$ (comp.) & $+0.082$ (comp.) & $-0.005$ (comp.) & $+0.121$ (comp.) & $-0.009$ (comp.) \\
+F10 $-$ F00 & $+0.023$ (above) & $+0.029$ (above) & $+0.012$ (comp.) & $+0.018$ (above) & $+0.002$ (comp.) \\
+TRACE $-$ Unidirectional TRACE & $+0.019$ (comp.) & $+0.031$ (comp.) & $-0.021$ (comp.) & $+0.028$ (comp.) & $+0.018$ (above) \\
+TRACE $-$ BiLSTM-noAttn & $+0.019$ (comp.) & $+0.027$ (comp.) & $-0.007$ (comp.) & $+0.019$ (comp.) & $+0.011$ (comp.) \\
+TRACE $-$ BiGRU-Attn & $+0.068$ (above) & $+0.103$ (above) & $-0.036$ (comp.) & $+0.064$ (comp.) & $+0.010$ (comp.) \\
+TRACE $-$ TCN & $+0.001$ (comp.) & $+0.011$ (comp.) & $+0.002$ (comp.) & $+0.001$ (comp.) & $+0.013$ (above) \\
+TRACE $-$ Transformer & $-0.018$ (comp.) & $-0.019$ (comp.) & $-0.026$ (comp.) & $-0.018$ (comp.) & $+0.005$ (comp.) \\
+TRACE $-$ MLP & $+0.086$ (above) & $+0.090$ (above) & $+0.041$ (comp.) & $+0.079$ (comp.) & $+0.005$ (comp.) \\
+TRACE $-$ LSTM-AE & $+0.693$ (above) & $+0.630$ (above) & $+0.839$ (above) & $+0.704$ (above) & $+0.102$ (above) \\
+TRACE $-$ IsolationForest & $+0.701$ (above) & $+0.637$ (above) & $+0.866$ (above) & $+0.711$ (above) & $+0.102$ (above) \\
+TRACE $-$ LightGBM-40 & $-0.084$ (comp.) & $-0.136$ (comp.) & $+0.036$ (comp.) & $-0.065$ (comp.) & $-0.097$ (below) \\
+\bottomrule\end{tabular}\end{table}
+\end{document}

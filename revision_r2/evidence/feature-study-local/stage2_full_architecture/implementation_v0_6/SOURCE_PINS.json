@@ -1,0 +1,23 @@
+[
+  {
+    "original_path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\prototype_v3_node\\architecture.py",
+    "original_sha256": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+    "vendored_file": "cert_stage2_producing/architecture.py",
+    "vendored_sha256": "4249f6f414528d2d66762555e947dffacc8632771f38530940c1c4f35869ef4f",
+    "change": "Exact original text normalized to LF; architecture attention import made package-relative only"
+  },
+  {
+    "original_path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\prototype_v3_node\\odst.py",
+    "original_sha256": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+    "vendored_file": "cert_stage2_producing/odst.py",
+    "vendored_sha256": "3eb9563396601d8bd649d628a13c1d8e828de5eaaf113db289c8327c98563601",
+    "change": "Exact original text normalized to LF only"
+  },
+  {
+    "original_path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\models\\sequence_ensemble.py",
+    "original_sha256": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475",
+    "vendored_file": "cert_stage2_producing/sequence_ensemble.py",
+    "vendored_sha256": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475",
+    "change": "Exact original text normalized to LF only"
+  }
+]

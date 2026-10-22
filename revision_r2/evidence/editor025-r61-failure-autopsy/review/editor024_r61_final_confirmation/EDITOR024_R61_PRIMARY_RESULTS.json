@@ -1,0 +1,72 @@
+{
+  "view": "COMPLETED_WINDOW",
+  "n": 1988000,
+  "n_pos": 190,
+  "prevalence": 9.557344064386318e-05,
+  "seed_pr_auc": {
+    "C2-OPT": {
+      "42": 9.20690678939724e-05,
+      "52": 9.404554258255171e-05,
+      "62": 0.00010144991950980299
+    },
+    "F10": {
+      "42": 9.779853364743306e-05,
+      "52": 8.921602313401705e-05,
+      "62": 9.472408659411328e-05
+    },
+    "TA2": {
+      "42": 9.278752218492676e-05,
+      "52": 9.160882334119453e-05,
+      "62": 9.897585888027363e-05
+    },
+    "L1": {
+      "42": 0.00010237877201479289,
+      "52": 8.890601847647078e-05,
+      "62": 0.00010862980394054812
+    }
+  },
+  "mean_pr_auc": {
+    "C2-OPT": 9.58548433287757e-05,
+    "F10": 9.391288112518778e-05,
+    "TA2": 9.445740146879832e-05,
+    "L1": 9.99715314772706e-05
+  },
+  "contrasts": {
+    "TA2_RANKING_EXCESS": -1.1160391750648653e-06,
+    "TA2_MINUS_C2": -1.397441859977386e-06,
+    "F10_MINUS_C2": -1.941962203587925e-06,
+    "TA2_MINUS_F10": 5.445203436105391e-07,
+    "TA2_MINUS_L1": -5.514130008472278e-06
+  },
+  "retention_ta2_mean": 0.00010016940257667009,
+  "ap_prevalence_lift_ta2": 0.9883227058945845,
+  "raw_prediction_paths": [
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\C2-OPT_seed42_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\C2-OPT_seed42_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\F10_seed42_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\F10_seed42_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\TA2_seed42_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\TA2_seed42_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\L1_seed42_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\L1_seed42_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\C2-OPT_seed52_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\C2-OPT_seed52_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\F10_seed52_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\F10_seed52_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\TA2_seed52_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\TA2_seed52_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\L1_seed52_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\L1_seed52_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\C2-OPT_seed62_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\C2-OPT_seed62_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\F10_seed62_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\F10_seed62_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\TA2_seed62_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\TA2_seed62_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\L1_seed62_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\L1_seed62_DEOVERLAP_OFFSET0.npz"
+  ],
+  "TRAINING_EXECUTED": "NO",
+  "MODEL_PARAMETERS_UPDATED": "NO",
+  "written_at": "2026-08-18T08:29:32Z"
+}

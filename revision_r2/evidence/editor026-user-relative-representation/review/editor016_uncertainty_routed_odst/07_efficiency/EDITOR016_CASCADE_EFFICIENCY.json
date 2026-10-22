@@ -1,0 +1,56 @@
+{
+  "L1": {
+    "rounds": [
+      {
+        "round": 1,
+        "n_timed": 200,
+        "median_s": 0.0020738499879371375,
+        "iqr_s": 0.000743924974813126,
+        "mean_s": 0.002255816998076625
+      },
+      {
+        "round": 2,
+        "n_timed": 200,
+        "median_s": 0.002392950002104044,
+        "iqr_s": 0.0007925249665277079,
+        "mean_s": 0.002382003501697909
+      },
+      {
+        "round": 3,
+        "n_timed": 200,
+        "median_s": 0.002344800013815984,
+        "iqr_s": 0.0006874499813420698,
+        "mean_s": 0.0024650445007137023
+      },
+      {
+        "round": 4,
+        "n_timed": 200,
+        "median_s": 0.0021669499983545393,
+        "iqr_s": 0.000776550019509159,
+        "mean_s": 0.002356465001066681
+      },
+      {
+        "round": 5,
+        "n_timed": 200,
+        "median_s": 0.002260599983856082,
+        "iqr_s": 0.0007457500032614917,
+        "mean_s": 0.002342955498606898
+      }
+    ],
+    "median_latency_s": 0.002260599983856082,
+    "iqr_latency_s": 0.0007457500032614917,
+    "throughput_sequences_per_s": 452977.0889643568,
+    "warmup_batches": 50,
+    "timed_batches": 200,
+    "independent_rounds": 5,
+    "batch_size": 1024,
+    "cuda_synchronize": true,
+    "validation_tensor": true,
+    "descriptive_only": true
+  },
+  "specialist_coverage": 0.0,
+  "protocol": "EDITOR-014 identical GPU/batch/warm-up/timed-batch/synchronisation",
+  "specialist": null,
+  "cascade": null,
+  "expected_cascade_latency_s": 0.002260599983856082
+}

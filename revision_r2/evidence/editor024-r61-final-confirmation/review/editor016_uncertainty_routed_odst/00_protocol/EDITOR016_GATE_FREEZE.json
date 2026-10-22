@@ -1,0 +1,18 @@
+{
+  "task_id": "EDITOR-016",
+  "margin": "abs(L1_logit)",
+  "labels_used": false,
+  "q_values": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "no_other_thresholds": true,
+  "tau_source_inner": "INNER_TRAIN L1 margins only",
+  "tau_source_official": "full TRAIN L1 margins of that seed only",
+  "validation_never_determines_tau": true,
+  "gate": "1 if abs(L1_logit) <= tau_q else 0",
+  "source_frozen": true
+}

@@ -1,0 +1,6 @@
+concern,question,ruling,editor_closure
+window_dependence,Do r5.2 conclusions remain under non-overlapping windows?,SUPPORTED,RESOLVED_WITH_QUALIFICATION
+endpoint_semantics,Does ranking remain under an endpoint-defined past-and-current-day task?,SUPPORTED,RESOLVED_FOR_END_OF_DAY_DETECTION
+teacher_guidance,Does ensemble-teacher predictive guidance retain value at the endpoint?,NOT_SUPPORTED,NOT_SUPPORTED
+same_user_partitions,Did EDITOR-029 test unseen-user generalisation?,NO,UNSEEN_USER_GENERALISATION_TESTED=NO
+cross_release,Did EDITOR-029 change the frozen r6.1 conclusion?,NO,EDITOR024_R61_GENERALISATION_RESULT_CHANGED=NO

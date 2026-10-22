@@ -1,0 +1,66 @@
+{
+  "scope": "CERT_STUDY",
+  "status": "PASSED",
+  "manifest_sha256": "55d25c09e52b70161fec902034776659eff2370219c76e07321cfea4ecdc32f9",
+  "checks": {
+    "orchestration_cpu": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\audit\\stage2_v06_response_20261009\\tl_final_round_20261009\\orchestration_cpu.json",
+      "sha256": "dbef4a383f784684a577fdf397693730bccf13b618de46ac04f27e4293136210"
+    },
+    "orchestration_cuda": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\audit\\stage2_v06_response_20261009\\tl_final_round_20261009\\orchestration_cuda_0.json",
+      "sha256": "167b4182dfc6c831c63c394a2463d8648cb80b2749edf700069ad94e5498496f"
+    },
+    "cg_pairing": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\audit\\stage2_v06_response_20261009\\tl_final_round_20261009\\cg_pairing.json",
+      "sha256": "5edd26a9eb978a22d07859e6de37676792cdcd3804eae32cb9448bc2eb848f48"
+    },
+    "hard_kill_20": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\audit\\stage2_v06_response_20261009\\tl_final_round_20261009\\hard_kill_20.json",
+      "sha256": "4b896128cb4e19ea4c2521ffccc52f20263f445d8aa46a0cbd3e540a0b646b21"
+    },
+    "full_shape_cost": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\audit\\stage2_v06_response_20261009\\tl_final_round_20261009\\full_shape_cost.json",
+      "sha256": "6e59f560736416c5828a5123e2bae3f00c513226ffe9a6d5a29b5e1923468628"
+    },
+    "failure_paths": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\audit\\stage2_v06_response_20261009\\tl_final_round_20261009\\failure_paths.json",
+      "sha256": "3927a8642b304b35368c8cdb7496ada16a4c9874818824cacd1575d533f853bc"
+    }
+  },
+  "supplementary_execution_evidence": {
+    "save_boundaries.json": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\audit\\stage2_v06_response_20261009\\tl_final_round_20261009\\save_boundaries.json",
+      "sha256": "5c8f26ecf28ff2acbc9845ad2eef227d46da1c27b070bbb2f95bf40494a00d3c"
+    },
+    "PRODUCTION_LENGTH_COST.json": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\audit\\stage2_v06_response_20261009\\tl_final_round_20261009\\PRODUCTION_LENGTH_COST.json",
+      "sha256": "3d3e1c11af7a162f4d9d441d0b555e62ba2f6c69af6d2a330568158176120817"
+    },
+    "UPDATED_RUNTIME_ESTIMATE.json": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\audit\\stage2_v06_response_20261009\\tl_final_round_20261009\\UPDATED_RUNTIME_ESTIMATE.json",
+      "sha256": "1f38138d01788324a789769829bf78fb05619df0211b2528a45139709b576932"
+    },
+    "early_stopping.json": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\audit\\stage2_v06_response_20261009\\tl_final_round_20261009\\early_stopping.json",
+      "sha256": "58821fe117422ad27fa84504d46859e060f7698eb59ebe49afee88d4ddf22d21"
+    },
+    "TERMINAL_STATE_PARITY.json": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\audit\\stage2_v06_response_20261009\\tl_final_round_20261009\\TERMINAL_STATE_PARITY.json",
+      "sha256": "590a1ec10cd1030f085ccd073c6833b3cf48d184caf3dd7351c7ab89620aae5e"
+    },
+    "REPLAY_ACCOUNTING.json": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\audit\\stage2_v06_response_20261009\\tl_final_round_20261009\\REPLAY_ACCOUNTING.json",
+      "sha256": "a05fbbbe199b6f73008ca51fd2c7e7b744e3662a34d57a16e4d42ead5a10f70d"
+    },
+    "startup_request.json": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\audit\\stage2_v06_response_20261009\\tl_final_round_20261009\\startup_request.json",
+      "sha256": "13d9b4bb21a2e4a43b697aa7035801ecaa61a5cc575404c0eb78711f2445b649"
+    },
+    "T_L_VERIFICATION.json": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\audit\\stage2_v06_response_20261009\\tl_final_round_20261009\\T_L_VERIFICATION.json",
+      "sha256": "5a02c69ebd1157ec4a88a308e0a324f093f75d69de79f7264eca074cce906ee8"
+    }
+  },
+  "note": "Producer evidence only. No independent review, execution approval or operations acknowledgement issued; archived v0.6 READY is void for this manifest."
+}

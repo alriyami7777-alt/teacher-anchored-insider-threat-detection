@@ -1,0 +1,71 @@
+view,contrast,role,status,delta_AP,ci95_low,ci95_high,decision,valid_bootstrap_replicates
+pooled_completed,TA2 - XGBoost_40,primary,ok,-0.11180247289743284,-0.29696042443923987,0.05877618734350585,comparable / not distinguishable,2000
+pooled_completed,TA2 - F00,primary,ok,0.019709835260994013,0.008270826368433024,0.039828290788385075,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_completed,TA2 - L1,secondary,ok,0.037704255630864325,0.0074756969514178625,0.07307568504390087,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_completed,TA2 - RF_40,secondary,ok,0.08900038543554523,-0.0504206257122136,0.23126289418449913,comparable / not distinguishable,2000
+pooled_completed,F10 - F00,secondary,ok,0.02253126263167149,0.009217620909370994,0.041149608135560505,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_completed,TA2 - uniTA2,secondary,ok,0.01948057082104837,-0.019403711610672867,0.06365296121087805,comparable / not distinguishable,2000
+pooled_completed,TA2 - BiLSTM_noAttn,secondary_exploratory,ok,0.018583380393797033,-0.016650737063750816,0.06354904465437823,comparable / not distinguishable,2000
+pooled_completed,TA2 - BiGRU_Attn,secondary_exploratory,ok,0.06794129233105173,0.02129715452677359,0.12373718080155269,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_completed,TA2 - TCN,secondary_exploratory,ok,0.0011554451978396107,-0.03483065901759395,0.04062213788600396,comparable / not distinguishable,2000
+pooled_completed,TA2 - Transformer,secondary_exploratory,ok,-0.01794600066264096,-0.09177753676569254,0.07243361743543004,comparable / not distinguishable,2000
+pooled_completed,TA2 - MLP,secondary_exploratory,ok,0.08632719419403412,0.017508677563804042,0.18867714145815398,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_completed,TA2 - LSTM_AE,secondary_exploratory,ok,0.6933241402561987,0.5134286967310928,0.8297965706784622,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_completed,TA2 - IsolationForest,secondary_exploratory,ok,0.7010509502032631,0.5203064988401844,0.8379434661980091,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_completed,TA2 - LightGBM_40,secondary_exploratory,ok,-0.08448671984025324,-0.2641719423687852,0.09327053446937611,comparable / not distinguishable,2000
+train_completed,TA2 - XGBoost_40,primary,ok,-0.15563332868046753,-0.36996929245081217,0.06316781071175656,comparable / not distinguishable,2000
+train_completed,TA2 - F00,primary,ok,0.0261902028115093,0.01008527558001839,0.052411150378934845,ranks above (bounded to unseen CERT r5.2 users),2000
+train_completed,TA2 - L1,secondary,ok,0.03584703494419772,-0.007227804375478819,0.08107342410440813,comparable / not distinguishable,2000
+train_completed,TA2 - RF_40,secondary,ok,0.08161051378778483,-0.0886679568750188,0.24839564735968359,comparable / not distinguishable,2000
+train_completed,F10 - F00,secondary,ok,0.02873868484465969,0.01061175572381629,0.05226431023410146,ranks above (bounded to unseen CERT r5.2 users),2000
+train_completed,TA2 - uniTA2,secondary,ok,0.030939260710774574,-0.017071841814546674,0.0870205169258057,comparable / not distinguishable,2000
+train_completed,TA2 - BiLSTM_noAttn,secondary_exploratory,ok,0.02682720716335807,-0.01736936260367458,0.08571502709699969,comparable / not distinguishable,2000
+train_completed,TA2 - BiGRU_Attn,secondary_exploratory,ok,0.10299213165441368,0.049415763998537476,0.16734785567466595,ranks above (bounded to unseen CERT r5.2 users),2000
+train_completed,TA2 - TCN,secondary_exploratory,ok,0.010586595091865103,-0.032268495568776805,0.0653759363002974,comparable / not distinguishable,2000
+train_completed,TA2 - Transformer,secondary_exploratory,ok,-0.019046540515067267,-0.12403815015880426,0.10028774234386027,comparable / not distinguishable,2000
+train_completed,TA2 - MLP,secondary_exploratory,ok,0.09009693634066895,0.004940763826007338,0.22014722947323237,ranks above (bounded to unseen CERT r5.2 users),2000
+train_completed,TA2 - LSTM_AE,secondary_exploratory,ok,0.6301587815985886,0.42246562537148186,0.7956771585581581,ranks above (bounded to unseen CERT r5.2 users),2000
+train_completed,TA2 - IsolationForest,secondary_exploratory,ok,0.6366466025107284,0.4303645765541176,0.8042890793887285,ranks above (bounded to unseen CERT r5.2 users),2000
+train_completed,TA2 - LightGBM_40,secondary_exploratory,ok,-0.13648454949886335,-0.3542634060365307,0.08205194291498649,comparable / not distinguishable,2000
+validation_completed,TA2 - XGBoost_40,primary,ok,-0.00889309321625098,-0.2946637067502152,0.2756838357884277,comparable / not distinguishable,2000
+validation_completed,TA2 - F00,primary,ok,0.00802400976210238,0.0004090535485666541,0.026851411941101376,ranks above (bounded to unseen CERT r5.2 users),2000
+validation_completed,TA2 - L1,secondary,ok,0.008650986859274012,0.0,0.04169228289011954,comparable / not distinguishable,2000
+validation_completed,TA2 - RF_40,secondary,ok,-0.00487658028348481,-0.246916799834798,0.2484727507938636,comparable / not distinguishable,2000
+validation_completed,F10 - F00,secondary,ok,0.011655962435677458,0.0,0.031433568335954336,comparable / not distinguishable,2000
+validation_completed,TA2 - uniTA2,secondary,ok,-0.020762107730236345,-0.09203259380348094,0.03415627536929221,comparable / not distinguishable,2000
+validation_completed,TA2 - BiLSTM_noAttn,secondary_exploratory,ok,-0.006773937697613253,-0.04756329881823578,0.03456572161787154,comparable / not distinguishable,2000
+validation_completed,TA2 - BiGRU_Attn,secondary_exploratory,ok,-0.035822805050652606,-0.1008988755943068,0.002865024437140491,comparable / not distinguishable,2000
+validation_completed,TA2 - TCN,secondary_exploratory,ok,0.00172254371890046,-0.043517107167205256,0.03702601454803268,comparable / not distinguishable,2000
+validation_completed,TA2 - Transformer,secondary_exploratory,ok,-0.02559202732352417,-0.08785106927722826,0.020326210121264933,comparable / not distinguishable,2000
+validation_completed,TA2 - MLP,secondary_exploratory,ok,0.04092180300565729,-0.07253258406385951,0.22191731228684675,comparable / not distinguishable,2000
+validation_completed,TA2 - LSTM_AE,secondary_exploratory,ok,0.8385128151092227,0.6102311942865375,0.9713815531927894,ranks above (bounded to unseen CERT r5.2 users),2000
+validation_completed,TA2 - IsolationForest,secondary_exploratory,ok,0.8658313194547868,0.632219086821391,0.9843430886834281,ranks above (bounded to unseen CERT r5.2 users),2000
+validation_completed,TA2 - LightGBM_40,secondary_exploratory,ok,0.03587198841686412,-0.22397520971233298,0.3373722541640251,comparable / not distinguishable,2000
+pooled_offset0,TA2 - XGBoost_40,primary,ok,-0.10745457100035605,-0.29683493177048303,0.06917746637946041,comparable / not distinguishable,2000
+pooled_offset0,TA2 - F00,primary,ok,0.009064683428835707,-0.0080852140344913,0.0306286411721536,comparable / not distinguishable,2000
+pooled_offset0,TA2 - L1,secondary,ok,0.03702301039414169,-0.004296172372375151,0.06956362874406548,comparable / not distinguishable,2000
+pooled_offset0,TA2 - RF_40,secondary,ok,0.12135266196128713,-0.03650291843614203,0.28213669417604903,comparable / not distinguishable,2000
+pooled_offset0,F10 - F00,secondary,ok,0.018447381087415615,0.0008621716443501404,0.03957231132733003,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_offset0,TA2 - uniTA2,secondary,ok,0.028286911533031867,-0.023674374225413554,0.08905525599135918,comparable / not distinguishable,2000
+pooled_offset0,TA2 - BiLSTM_noAttn,secondary_exploratory,ok,0.019142349835307826,-0.04332775551223563,0.08560870208946794,comparable / not distinguishable,2000
+pooled_offset0,TA2 - BiGRU_Attn,secondary_exploratory,ok,0.0643066412385328,-0.0036338995205685213,0.13751906272884287,comparable / not distinguishable,2000
+pooled_offset0,TA2 - TCN,secondary_exploratory,ok,0.0010453619417698512,-0.05217576658964053,0.05074668014499071,comparable / not distinguishable,2000
+pooled_offset0,TA2 - Transformer,secondary_exploratory,ok,-0.01771613977375741,-0.09911524962198959,0.08006697627629213,comparable / not distinguishable,2000
+pooled_offset0,TA2 - MLP,secondary_exploratory,ok,0.07911201833949089,-0.020834328687623884,0.21209334305138358,comparable / not distinguishable,2000
+pooled_offset0,TA2 - LSTM_AE,secondary_exploratory,ok,0.7035044932666203,0.5304399247148699,0.8380427957875566,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_offset0,TA2 - IsolationForest,secondary_exploratory,ok,0.711159646912376,0.5415159577891551,0.8480803761455653,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_offset0,TA2 - LightGBM_40,secondary_exploratory,ok,-0.06522484088066938,-0.23987797988641826,0.11268975084058365,comparable / not distinguishable,2000
+pooled_endpoint,TA2 - XGBoost_40,primary,ok,-0.10360047421832977,-0.19079378064912986,-0.009558690027550797,ranks below,2000
+pooled_endpoint,TA2 - F00,primary,ok,0.002523429599504315,-0.0003352378950541718,0.009506717811771283,comparable / not distinguishable,2000
+pooled_endpoint,TA2 - L1,secondary,ok,0.003386652086079203,-0.006225755368035975,0.01651352927720845,comparable / not distinguishable,2000
+pooled_endpoint,TA2 - RF_40,secondary,ok,-0.009239886194598299,-0.04599578036263592,0.024946173627502434,comparable / not distinguishable,2000
+pooled_endpoint,F10 - F00,secondary,ok,0.0016978107156645633,-0.002432359933076944,0.008993238286554225,comparable / not distinguishable,2000
+pooled_endpoint,TA2 - uniTA2,secondary,ok,0.018226287043796863,0.0029413986146938765,0.041427245720912415,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_endpoint,TA2 - BiLSTM_noAttn,secondary_exploratory,ok,0.010519726345857017,-0.000872476498951253,0.025848757444818966,comparable / not distinguishable,2000
+pooled_endpoint,TA2 - BiGRU_Attn,secondary_exploratory,ok,0.00994648402537486,-0.001735907068976336,0.024148120760557435,comparable / not distinguishable,2000
+pooled_endpoint,TA2 - TCN,secondary_exploratory,ok,0.013479450528559436,0.0038796835711854397,0.028389888505117204,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_endpoint,TA2 - Transformer,secondary_exploratory,ok,0.005199343575667162,-0.009477751362641097,0.021818054638703288,comparable / not distinguishable,2000
+pooled_endpoint,TA2 - MLP,secondary_exploratory,ok,0.005020629298094215,-0.01613651970839635,0.028493723574681593,comparable / not distinguishable,2000
+pooled_endpoint,TA2 - LSTM_AE,secondary_exploratory,ok,0.10150443028996735,0.06982945896372064,0.14051928902915942,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_endpoint,TA2 - IsolationForest,secondary_exploratory,ok,0.10245381085774137,0.07077969065314997,0.14173298046883787,ranks above (bounded to unseen CERT r5.2 users),2000
+pooled_endpoint,TA2 - LightGBM_40,secondary_exploratory,ok,-0.09679628520201874,-0.178055245872028,-0.006722870385804074,ranks below,2000

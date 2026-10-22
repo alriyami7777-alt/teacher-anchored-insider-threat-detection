@@ -1,0 +1,12 @@
+{
+  "EDITOR029_ENDPOINT_TEACHER_GATE": "PASS",
+  "producing_attention_linear": "editor026_user_relative.train.train_attention_linear",
+  "producing_teacher": "editor011 train_teacher recipe via editor026.train_ur_teacher",
+  "producing_student": "editor012_rescue.train.train_student",
+  "producing_linear": "editor013 L1 / editor026.train_ur_linear_student",
+  "recipe_markers_present": true,
+  "ensemble": "equal-weight predictive consensus of endpoint-matched teachers",
+  "route": "matched-teacher route consistency, seed-specific teacher",
+  "r52_test_used": false,
+  "new_scaler_fit": false
+}

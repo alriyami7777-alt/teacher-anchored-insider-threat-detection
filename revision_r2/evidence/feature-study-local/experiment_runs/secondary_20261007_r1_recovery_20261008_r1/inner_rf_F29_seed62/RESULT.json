@@ -1,0 +1,23 @@
+{
+  "average_precision": 0.7351903094122473,
+  "roc_auc": 0.9871972128780815,
+  "prevalence": 0.009484375,
+  "ap_minus_prevalence": 0.7257059344122473,
+  "precision": 0.749793559042114,
+  "recall": 0.7479406919275123,
+  "f1": 0.7488659793814433,
+  "tp": 908,
+  "fp": 303,
+  "tn": 126483,
+  "fn": 306,
+  "alerts_per_1000": 9.4609375,
+  "threshold": 0.35425277415264894,
+  "windows": 128000,
+  "positives": 1214,
+  "learner": "rf",
+  "schema": "F29",
+  "seed": 62,
+  "best_epoch": null,
+  "threshold_role": "INNER_SELECT_CALIBRATED_DEVELOPMENT",
+  "evidence_role": "NEW_INNER_SELECTION"
+}

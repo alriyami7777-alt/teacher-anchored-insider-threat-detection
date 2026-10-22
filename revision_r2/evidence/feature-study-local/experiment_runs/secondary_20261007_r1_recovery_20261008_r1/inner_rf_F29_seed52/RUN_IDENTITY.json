@@ -1,0 +1,9 @@
+{
+  "stage": "inner",
+  "learner": "rf",
+  "schema": "F29",
+  "seed": 52,
+  "manifest_sha256": "73217bb99ae49c7dd329b6529e014d91b934ffab725d193c949af216ae0c3889",
+  "representation_sha256": "083c90400aaf6de2f8bf7cde26c82f7dd898be38bb72290398abe2287b9beb30",
+  "preprocessor_sha256": "bbc4b1aa6a6f9839c4dfa38ecee498215843470f1e89f15feedf250ef15be108"
+}

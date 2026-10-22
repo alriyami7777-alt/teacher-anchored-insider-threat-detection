@@ -1,0 +1,94 @@
+{
+  "frozen_before_official_validation_evaluation_of_candidates": true,
+  "promotion_source": "INNER_SELECT",
+  "official_r52_validation_not_used_for_selection": true,
+  "promoted": [
+    {
+      "candidate_id": "P1_best_current_objective",
+      "kind": "best_current_objective_ODST",
+      "head_configuration": "ODST-046",
+      "objective": "O0",
+      "inner_select_pr_auc": 0.8989166952862687,
+      "odst": {
+        "n_trees": 4,
+        "depth": 4,
+        "temperature": 0.5,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "num_layers": 2,
+        "dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "choice_function": "sparsemax_sigmoid",
+        "readout": "canonical_tree_average",
+        "candidate_id": "ODST-046",
+        "is_producing_current": false
+      }
+    },
+    {
+      "candidate_id": "P2_best_ranking_aware",
+      "kind": "best_ranking_aware_ODST",
+      "head_configuration": "ODST-046",
+      "objective": "O3_l1.0",
+      "inner_select_pr_auc": 0.905246795116956,
+      "odst": {
+        "n_trees": 4,
+        "depth": 4,
+        "temperature": 0.5,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "num_layers": 2,
+        "dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "choice_function": "sparsemax_sigmoid",
+        "readout": "canonical_tree_average",
+        "candidate_id": "ODST-046",
+        "is_producing_current": false
+      }
+    },
+    {
+      "candidate_id": "P3_best_focal_or_balanced",
+      "kind": "best_focal_or_class_balanced_ODST",
+      "head_configuration": "ODST-039",
+      "objective": "O2_g1",
+      "inner_select_pr_auc": 0.9018442353260432,
+      "odst": {
+        "n_trees": 16,
+        "depth": 4,
+        "temperature": 2.0,
+        "lr": 0.001,
+        "weight_decay": 1e-05,
+        "num_layers": 2,
+        "dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "choice_function": "sparsemax_sigmoid",
+        "readout": "canonical_tree_average",
+        "candidate_id": "ODST-039",
+        "is_producing_current": false
+      }
+    },
+    {
+      "candidate_id": "P4_ET1",
+      "kind": "ET1_ensemble_teacher_student",
+      "head_configuration": "ODST-046",
+      "objective": "O0_plus_equal_weight_ensemble_logit_distill",
+      "inner_select_pr_auc": 0.9082950242634033,
+      "odst": {
+        "n_trees": 4,
+        "depth": 4,
+        "temperature": 0.5,
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "num_layers": 2,
+        "dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "choice_function": "sparsemax_sigmoid",
+        "readout": "canonical_tree_average",
+        "candidate_id": "ODST-046",
+        "is_producing_current": false
+      },
+      "ENSEMBLE_ROUTE_ANCHORING": "OFF"
+    }
+  ],
+  "et1_executed": true,
+  "et1_condition": "teacher_ensemble_pr_auc > best_single_teacher_pr_auc"
+}

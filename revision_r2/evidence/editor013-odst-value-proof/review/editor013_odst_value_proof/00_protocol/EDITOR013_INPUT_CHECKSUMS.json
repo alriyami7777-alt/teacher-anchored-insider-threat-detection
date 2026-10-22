@@ -1,0 +1,49 @@
+{
+  "task_id": "EDITOR-013",
+  "r52_test_opened": false,
+  "r52_test_hashed": false,
+  "inputs": [
+    {
+      "role": "r52_train_npz",
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_train.npz",
+      "sha256": "b268328d3bf2e98f712d1145958dabe175ce2c07a7c390da4b84a663317ebc2e",
+      "status": "MATCH"
+    },
+    {
+      "role": "r52_validation_npz",
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_validation.npz",
+      "sha256": "5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c",
+      "status": "MATCH"
+    },
+    {
+      "role": "producing_architecture",
+      "sha256": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+      "status": "MATCH"
+    },
+    {
+      "role": "producing_odst",
+      "sha256": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+      "status": "MATCH"
+    },
+    {
+      "role": "trainonly_scaler",
+      "sha256": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+      "status": "MATCH"
+    }
+  ],
+  "denied_tensors": {
+    "r52_test": {
+      "canonical_relative_path": "data/processed/r5.2/tensors/r52_T20_s1_test.npz",
+      "status": "HARD_DENY",
+      "not_opened": true,
+      "not_hashed": true
+    }
+  },
+  "topt_hashes": {
+    "42": "b007f48085ef42b146b22a0d5ace5bb9c8380874405622281a5903831599fb20",
+    "52": "5b4c17e15a8f49ba8cf240c0092b893e6e665232967fafce8eb13e0650227f2a",
+    "62": "24bf2efa2343e4aaf5f32871c0a9bffb3d511f345375ce754e9f081f82eac02c"
+  },
+  "EDITOR012_RESULTS_FULL_COMMIT": "4bcf522a502ed98e5dd393a80bd9da7fffd51964",
+  "frozen_utc": "2026-08-15T11:51:05Z"
+}

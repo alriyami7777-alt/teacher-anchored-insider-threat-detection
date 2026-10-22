@@ -1,0 +1,11 @@
+{
+  "EDITOR028_RESULTS_COMMIT": "8d139c67e71cd2d2fca28e98f6214d059a0abc92",
+  "git_head": "45f53d8ad51be94e287cf9e56471cc470697c20e",
+  "train_npz": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_train.npz",
+  "val_npz": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_validation.npz",
+  "train_sha256": "b268328d3bf2e98f712d1145958dabe175ce2c07a7c390da4b84a663317ebc2e",
+  "val_sha256": "5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c",
+  "scaler_sha256": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488",
+  "NEW_SCALER_FIT": "NO",
+  "r52_test_accessed": false
+}

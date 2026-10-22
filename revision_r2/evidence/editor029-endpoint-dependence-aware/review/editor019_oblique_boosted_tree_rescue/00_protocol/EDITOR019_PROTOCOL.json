@@ -1,0 +1,397 @@
+{
+  "task_id": "EDITOR-019",
+  "campaign": "SPARSE SIGNED-OBLIQUE BOOSTED DIFFERENTIABLE TREE RESCUE",
+  "status": "PHASE_A_FROZEN_BEFORE_RESULTS",
+  "authorised_partitions": [
+    "CERT r5.2 TRAIN",
+    "CERT r5.2 VALIDATION"
+  ],
+  "TEST_ACCESS": "PROHIBITED",
+  "R51_EXECUTION": "PROHIBITED",
+  "R62_EXECUTION": "PROHIBITED",
+  "inner_search_uses": "INNER_TRAIN / INNER_SELECT only",
+  "official_validation_never_used_to_promote": true,
+  "T": 20,
+  "F": 13,
+  "summary_dim": 40,
+  "feature_names_40": [
+    "total_events_sum",
+    "total_events_mean",
+    "total_events_max",
+    "total_events_std",
+    "logon_count_sum",
+    "logon_count_mean",
+    "logon_count_max",
+    "logon_count_std",
+    "device_count_sum",
+    "device_count_mean",
+    "device_count_max",
+    "device_count_std",
+    "file_count_sum",
+    "file_count_mean",
+    "file_count_max",
+    "file_count_std",
+    "email_count_sum",
+    "email_count_mean",
+    "email_count_max",
+    "email_count_std",
+    "http_count_sum",
+    "http_count_mean",
+    "http_count_max",
+    "http_count_std",
+    "active_duration_minutes_sum",
+    "active_duration_minutes_mean",
+    "active_duration_minutes_max",
+    "active_duration_minutes_std",
+    "has_logon_activity_active_days",
+    "has_logon_activity_active_proportion",
+    "has_device_activity_active_days",
+    "has_device_activity_active_proportion",
+    "has_file_activity_active_days",
+    "has_file_activity_active_proportion",
+    "has_email_activity_active_days",
+    "has_email_activity_active_proportion",
+    "has_http_activity_active_days",
+    "has_http_activity_active_proportion",
+    "is_active_day_active_days",
+    "is_active_day_active_proportion"
+  ],
+  "teacher_weight": 0.5,
+  "no_instance_wise_weighting_search": true,
+  "no_attention_placement_search": true,
+  "no_latent_odst_search": true,
+  "no_uncertainty_gating_search": true,
+  "no_tree_temperature_grid": true,
+  "no_generic_loss_search": true,
+  "no_sparsity_hyperparameter": true,
+  "no_l1_regularisation_search": true,
+  "no_projection_temperature_search": true,
+  "no_shrinkage_grid": true,
+  "no_boosting_round_search": true,
+  "no_later_tree_count_search": true,
+  "joint_finetune_predeclared": true,
+  "EDITOR017_RESULTS_COMMIT": "c75321a627ecc7539d1a759764d7ce395895179a",
+  "EDITOR018_RESULTS_COMMIT": "9dafa51b7dd81d97cead84b4b7e10b2c230b08b4",
+  "BASE_COMMIT": "9dafa51b7dd81d97cead84b4b7e10b2c230b08b4",
+  "historical_packets": "READ_ONLY",
+  "CURRENT_ODST_SPLIT_GEOMETRY": {
+    "SIGNED": "NO",
+    "OBLIVIOUS": "YES",
+    "NODE_SPECIFIC": "NO"
+  },
+  "capacity": {
+    "MLP40_architecture": {
+      "in_dim": 40,
+      "hidden": [
+        128,
+        64
+      ],
+      "dropout": 0.2
+    },
+    "MLP40_branch_parameter_count": 13569,
+    "capacity_ratio": 1.05,
+    "parameter_budget": 14247.45,
+    "SO_DTE40_depth": 4,
+    "internal_nodes_per_tree": 15,
+    "leaves_per_tree": 16,
+    "signed_channels": 80,
+    "parameters_per_tree": 1246,
+    "min_trees": 2,
+    "max_trees": 32,
+    "CAPACITY_MATCHED_TREE_COUNT": 11,
+    "tree_branch_parameter_count": 13706,
+    "ratio_used": 1.0100965435920113,
+    "next_count_exceeds_budget": true,
+    "frozen_before_results": true,
+    "no_later_tree_count_search": true
+  },
+  "factorial": {
+    "ODST40": "oblivious soft tree ensemble, jointly trained",
+    "SO-ODST40": "same oblivious topology, signed sparse split directions",
+    "SO-DTE40": "signed sparse split directions + node-specific non-oblivious splits",
+    "BSO-DTE40": "SO-DTE40 + stagewise residual fitting"
+  },
+  "so_odst40": {
+    "in_dim": 80,
+    "num_layers": 2,
+    "n_trees": 4,
+    "depth": 4,
+    "temperature": 0.5,
+    "tree_dim": 1,
+    "choice_function": "sparsemax_sigmoid",
+    "readout": "canonical_tree_average",
+    "leaf_init_std": 0.05,
+    "dropout": 0.0,
+    "identity": "oblivious ODST40 with signed 80-channel sparse splits only"
+  },
+  "odst40": {
+    "in_dim": 40,
+    "num_layers": 2,
+    "n_trees": 4,
+    "depth": 4,
+    "temperature": 0.5,
+    "tree_dim": 1,
+    "choice_function": "sparsemax_sigmoid",
+    "readout": "canonical_tree_average",
+    "leaf_init_std": 0.05,
+    "dropout": 0.0
+  },
+  "inner_conditions": [
+    "SO-ODST40-T",
+    "SO-ODST40-D",
+    "SO-DTE40-T",
+    "SO-DTE40-D",
+    "BSO-DTE40-T",
+    "BSO-DTE40-D"
+  ],
+  "condition_specs": {
+    "MLP40-D": {
+      "family": "MLP40",
+      "teacher": true,
+      "identity": "recovered EDITOR-018 mlp40 teacher-residual"
+    },
+    "ODST40-D": {
+      "family": "ODST40",
+      "teacher": true,
+      "identity": "recovered EDITOR-018 odst40 teacher-residual"
+    },
+    "SO-ODST40-T": {
+      "family": "SO-ODST40",
+      "teacher": false,
+      "identity": "signed-oblique ODST40 task-only"
+    },
+    "SO-ODST40-D": {
+      "family": "SO-ODST40",
+      "teacher": true,
+      "identity": "signed-oblique ODST40 teacher-residual"
+    },
+    "SO-DTE40-T": {
+      "family": "SO-DTE40",
+      "teacher": false,
+      "identity": "node-specific signed oblique DTE task-only"
+    },
+    "SO-DTE40-D": {
+      "family": "SO-DTE40",
+      "teacher": true,
+      "identity": "node-specific signed oblique DTE teacher-residual"
+    },
+    "BSO-DTE40-T": {
+      "family": "BSO-DTE40",
+      "teacher": false,
+      "identity": "stagewise boosted SO-DTE40 task-only"
+    },
+    "BSO-DTE40-D": {
+      "family": "BSO-DTE40",
+      "teacher": true,
+      "identity": "stagewise boosted SO-DTE40 teacher-residual"
+    }
+  },
+  "screening_seed": 42,
+  "primary_seeds": [
+    42,
+    52,
+    62
+  ],
+  "batch_size": 1024,
+  "max_epochs": 15,
+  "patience": 4,
+  "lr_branch": 0.001,
+  "lambda_teacher": 0.5,
+  "promotion_margin": 0.001,
+  "promotion_margin_may_be_lowered_after_results": false,
+  "xgb_trigger": {
+    "only_if_no_section_16_promotion": true,
+    "best_so_dte_or_bso_minus_odst40_d": 0.001,
+    "within_mlp40_d": 0.002,
+    "artefact": "C:\\PhD\\07_Projects\\cert-r52-locked-baselines\\outputs\\objective2\\r52_locked_baselines\\xgboost_seed42\\model.json",
+    "expected_sha256": "2109554164abdd002ce0a4377f957c5aa3bc26886a197749ea79fc04d9b94fae",
+    "never_retrain": true
+  },
+  "user_mapping": {
+    "n_users": 2000,
+    "windows_per_user": 32,
+    "malicious_users": 31,
+    "expected_sha256": "851385f9c926cf945b3c74b5c9442e3ccb94cf1d9dabb98106a29cbfea01c5c0"
+  },
+  "inner_split_expected": {
+    "n_inner_train": 622000,
+    "n_inner_select": 128000,
+    "n_inner_train_pos": 2457,
+    "n_inner_select_pos": 1214
+  },
+  "function_preserving": {
+    "MLP40": {
+      "family": "MLP40",
+      "initial_final_equals_l1": true,
+      "initial_correction_zero": true,
+      "live_grad_norm": 167.59981727600098,
+      "reference_grad_norm": 0.0,
+      "lambda_teacher": 0.5,
+      "n_trees": 0
+    },
+    "ODST40": {
+      "family": "ODST40",
+      "initial_final_equals_l1": true,
+      "initial_correction_zero": true,
+      "live_grad_norm": 5.9765013521537185,
+      "reference_grad_norm": 0.0,
+      "lambda_teacher": 0.5,
+      "n_trees": 8
+    },
+    "SO-ODST40": {
+      "family": "SO-ODST40",
+      "initial_final_equals_l1": true,
+      "initial_correction_zero": true,
+      "live_grad_norm": 6.1318285604938865,
+      "reference_grad_norm": 0.0,
+      "lambda_teacher": 0.5,
+      "n_trees": 8
+    },
+    "SO-DTE40": {
+      "family": "SO-DTE40",
+      "initial_final_equals_l1": true,
+      "initial_correction_zero": true,
+      "live_grad_norm": 12.357057847548276,
+      "reference_grad_norm": 0.0,
+      "lambda_teacher": 0.5,
+      "n_trees": 11
+    },
+    "BSO-DTE40": {
+      "family": "BSO-DTE40",
+      "initial_final_equals_l1": true,
+      "initial_correction_zero": true,
+      "live_grad_norm": 135.92763383686543,
+      "reference_grad_norm": 0.0,
+      "lambda_teacher": 0.5,
+      "n_trees": 11
+    },
+    "BSO_STAGEWISE": {
+      "initial_correction_zero": true,
+      "earlier_stage_frozen": true,
+      "new_stage_trainable": true,
+      "joint_finetune_predeclared": true
+    }
+  },
+  "TEACHER_GUIDANCE_VS_INITIALISATION": "SUPPORTED_STRONG",
+  "GLOBAL_TOPK_PR_AUC_FAITHFULNESS": "NOT_SUPPORTED",
+  "frozen_L1_mean_PR_AUC": 0.9388809579807144,
+  "frozen_TA2_mean_PR_AUC": 0.9428421883320307,
+  "directional_ks": [
+    1,
+    2,
+    3
+  ],
+  "source_channels": [
+    "logon",
+    "device",
+    "file",
+    "email",
+    "http"
+  ],
+  "noise_levels": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "source_ablation": {
+    "implementation_id": "objective3_missing_source_robustness.apply_missing_source_condition",
+    "module": "src/objective3_missing_source_robustness.py",
+    "function": "apply_missing_source_condition",
+    "feature_treatment": "inverse_scale_raw_zero_then_forward_scale",
+    "reference_value": "raw_0.0_maps_to_scaled_minus_mean_over_scale",
+    "scaler": "r52_T20_s1_trainonly_standardscaler_v1",
+    "total_events_recomputed": true,
+    "is_active_day_recomputed": true,
+    "active_duration_rule": "zero_if_day_inactive_else_retain_residual_multi_source_span",
+    "labels_change": false,
+    "intervention_class": "CONTROLLED_SOURCE_CHANNEL_ABLATION",
+    "not_physical_source_absence": true,
+    "source_list": [
+      "logon",
+      "device",
+      "file",
+      "email",
+      "http"
+    ],
+    "source_selection": "predeclared_five_channels_no_result_driven_choice"
+  },
+  "gaussian_noise": {
+    "implementation_id": "objective3_perturbations.gaussian_noise_continuous",
+    "module": "src/objective3_perturbations.py",
+    "function": "apply_paired_perturbation",
+    "inner_function": "gaussian_noise_continuous",
+    "distribution": "bounded_gaussian_elementwise",
+    "scale_definition": "std_equals_level_times_max_abs_x_1e-3_clip_pm_level_times_scale_floor_at_0",
+    "binary_features": "untouched_indices_7_to_12",
+    "continuous_features": "indices_0_to_6_only",
+    "levels": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "perturbation_seed": 101,
+    "rng": "apply_paired_perturbation_sha256_derived_per_level",
+    "labels_change": false,
+    "total_events_recomputed": false,
+    "active_duration_changed_by_rule": false,
+    "validation_derived_parameter": false
+  },
+  "L1": {
+    "42": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed42\\best.pt",
+      "sha256": "513e272063250aa209efa2c42b490cc44316c7979fa6b2be5dd8cce4592d1ab2"
+    },
+    "52": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed52\\best.pt",
+      "sha256": "a503f6705955da221bdbd1921034e9102b90db6acb5187114276ccaeb474e1c4"
+    },
+    "62": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed62\\best.pt",
+      "sha256": "60d5c43692a17ba6971c8d23f74048ac3c4fe0bd1b18889eeb21bbab7bf3d3e9"
+    }
+  },
+  "TA2": {
+    "42": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed42\\best_student.pt",
+      "sha256": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8"
+    },
+    "52": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed52\\best_student.pt",
+      "sha256": "7613ba559bcf55827d04129066eb595b677994494609646f8b2463308ed5edb4"
+    },
+    "62": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed62\\best_student.pt",
+      "sha256": "904003dca219435464476cf36abedb11ee4e2f7a11ff09caa3791d685b8f644d"
+    }
+  },
+  "TOPT": {
+    "42": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed42\\best_teacher.pt",
+      "sha256": "b007f48085ef42b146b22a0d5ace5bb9c8380874405622281a5903831599fb20"
+    },
+    "52": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed52\\best_teacher.pt",
+      "sha256": "5b4c17e15a8f49ba8cf240c0092b893e6e665232967fafce8eb13e0650227f2a"
+    },
+    "62": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed62\\best_teacher.pt",
+      "sha256": "24bf2efa2343e4aaf5f32871c0a9bffb3d511f345375ce754e9f081f82eac02c"
+    }
+  },
+  "ensemble_cache": {
+    "train_ens": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\train_ens_logit.npy",
+    "train_42": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\train_logit42.npy",
+    "train_52": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\train_logit52.npy",
+    "train_62": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\train_logit62.npy",
+    "val_ens": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\val_ens_logit.npy",
+    "val_42": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\val_logit42.npy",
+    "val_52": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\val_logit52.npy",
+    "val_62": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\val_logit62.npy"
+  },
+  "producing_pins": {
+    "architecture": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+    "odst": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+    "sequence_ensemble": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475"
+  },
+  "utc": "2026-08-17T04:26:05Z"
+}

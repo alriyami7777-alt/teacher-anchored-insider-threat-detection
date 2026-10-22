@@ -1,0 +1,12 @@
+{
+  "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor010\\outputs\\editor010_capacity_objective_teacher_rescue\\inner_reference\\inner_reference_seed42.pt",
+  "checkpoint_sha256": "f6ea922cbcd11ef88a256498ee3ba6e74294d75d91f32769c9b9796ae9028db2",
+  "seed": 42,
+  "architecture": "SequenceEnsembleModel attention-linear",
+  "trained_on": "INNER_TRAIN",
+  "early_stopping": "INNER_SELECT PR-AUC",
+  "best_epoch": 11,
+  "inner_select_pr_auc": 0.9132575693042116,
+  "seconds": 451.60052824020386,
+  "official_validation_used": false
+}

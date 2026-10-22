@@ -1,0 +1,204 @@
+{
+  "task_id": "EDITOR-018",
+  "campaign": "CROSS-VIEW TEACHER-ANCHORED DIFFERENTIABLE TREE RESCUE",
+  "status": "PHASE_A_FROZEN_BEFORE_RESULTS",
+  "authorised_partitions": [
+    "CERT r5.2 TRAIN",
+    "CERT r5.2 VALIDATION"
+  ],
+  "TEST_ACCESS": "PROHIBITED",
+  "R51_EXECUTION": "PROHIBITED",
+  "R62_EXECUTION": "PROHIBITED",
+  "inner_search_uses": "INNER_TRAIN / INNER_SELECT only",
+  "official_validation_never_used_to_promote": true,
+  "T": 20,
+  "F": 13,
+  "summary_dim": 40,
+  "feature_names_40": [
+    "total_events_sum",
+    "total_events_mean",
+    "total_events_max",
+    "total_events_std",
+    "logon_count_sum",
+    "logon_count_mean",
+    "logon_count_max",
+    "logon_count_std",
+    "device_count_sum",
+    "device_count_mean",
+    "device_count_max",
+    "device_count_std",
+    "file_count_sum",
+    "file_count_mean",
+    "file_count_max",
+    "file_count_std",
+    "email_count_sum",
+    "email_count_mean",
+    "email_count_max",
+    "email_count_std",
+    "http_count_sum",
+    "http_count_mean",
+    "http_count_max",
+    "http_count_std",
+    "active_duration_minutes_sum",
+    "active_duration_minutes_mean",
+    "active_duration_minutes_max",
+    "active_duration_minutes_std",
+    "has_logon_activity_active_days",
+    "has_logon_activity_active_proportion",
+    "has_device_activity_active_days",
+    "has_device_activity_active_proportion",
+    "has_file_activity_active_days",
+    "has_file_activity_active_proportion",
+    "has_email_activity_active_days",
+    "has_email_activity_active_proportion",
+    "has_http_activity_active_days",
+    "has_http_activity_active_proportion",
+    "is_active_day_active_days",
+    "is_active_day_active_proportion"
+  ],
+  "inner_split_expected": {
+    "n_inner_train": 622000,
+    "n_inner_select": 128000,
+    "n_inner_train_pos": 2457,
+    "n_inner_select_pos": 1214
+  },
+  "user_mapping": {
+    "n_users": 2000,
+    "windows_per_user": 32,
+    "malicious_users": 31,
+    "expected_sha256": "851385f9c926cf945b3c74b5c9442e3ccb94cf1d9dabb98106a29cbfea01c5c0"
+  },
+  "inner_conditions": [
+    "LIN40-T",
+    "LIN40-D",
+    "MLP40-T",
+    "MLP40-D",
+    "ODST40-T",
+    "ODST40-D",
+    "IWODST40-T",
+    "IWODST40-D"
+  ],
+  "condition_specs": {
+    "LIN40-T": {
+      "family": "LIN40",
+      "teacher": false,
+      "identity": "linear40 task-only"
+    },
+    "LIN40-D": {
+      "family": "LIN40",
+      "teacher": true,
+      "identity": "linear40 teacher-residual"
+    },
+    "MLP40-T": {
+      "family": "MLP40",
+      "teacher": false,
+      "identity": "mlp40 task-only"
+    },
+    "MLP40-D": {
+      "family": "MLP40",
+      "teacher": true,
+      "identity": "mlp40 teacher-residual"
+    },
+    "ODST40-T": {
+      "family": "ODST40",
+      "teacher": false,
+      "identity": "odst40 task-only"
+    },
+    "ODST40-D": {
+      "family": "ODST40",
+      "teacher": true,
+      "identity": "odst40 teacher-residual"
+    },
+    "IWODST40-T": {
+      "family": "IWODST40",
+      "teacher": false,
+      "identity": "iw-odst40 task-only"
+    },
+    "IWODST40-D": {
+      "family": "IWODST40",
+      "teacher": true,
+      "identity": "iw-odst40 teacher-residual"
+    }
+  },
+  "screening_seed": 42,
+  "primary_seeds": [
+    42,
+    52,
+    62
+  ],
+  "batch_size": 1024,
+  "max_epochs": 15,
+  "patience": 4,
+  "lr_encoder": 3e-05,
+  "lr_attention": 3e-05,
+  "lr_branch": 0.001,
+  "lambda_teacher": 0.5,
+  "promotion_margin": 0.001,
+  "promotion_margin_may_be_lowered_after_results": false,
+  "TEACHER_GUIDANCE_VS_INITIALISATION": "SUPPORTED_STRONG",
+  "GLOBAL_TOPK_PR_AUC_FAITHFULNESS": "NOT_SUPPORTED",
+  "frozen_L1_mean_PR_AUC": 0.9388809579807144,
+  "frozen_TA2_mean_PR_AUC": 0.9428421883320307,
+  "directional_ks": [
+    1,
+    2,
+    3
+  ],
+  "source_channels": [
+    "logon",
+    "device",
+    "file",
+    "email",
+    "http"
+  ],
+  "noise_levels": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "source_ablation": {
+    "implementation_id": "objective3_missing_source_robustness.apply_missing_source_condition",
+    "module": "src/objective3_missing_source_robustness.py",
+    "function": "apply_missing_source_condition",
+    "feature_treatment": "inverse_scale_raw_zero_then_forward_scale",
+    "reference_value": "raw_0.0_maps_to_scaled_minus_mean_over_scale",
+    "scaler": "r52_T20_s1_trainonly_standardscaler_v1",
+    "total_events_recomputed": true,
+    "is_active_day_recomputed": true,
+    "active_duration_rule": "zero_if_day_inactive_else_retain_residual_multi_source_span",
+    "labels_change": false,
+    "intervention_class": "CONTROLLED_SOURCE_CHANNEL_ABLATION",
+    "not_physical_source_absence": true,
+    "source_list": [
+      "logon",
+      "device",
+      "file",
+      "email",
+      "http"
+    ],
+    "source_selection": "predeclared_five_channels_no_result_driven_choice"
+  },
+  "gaussian_noise": {
+    "implementation_id": "objective3_perturbations.gaussian_noise_continuous",
+    "module": "src/objective3_perturbations.py",
+    "function": "apply_paired_perturbation",
+    "inner_function": "gaussian_noise_continuous",
+    "distribution": "bounded_gaussian_elementwise",
+    "scale_definition": "std_equals_level_times_max_abs_x_1e-3_clip_pm_level_times_scale_floor_at_0",
+    "binary_features": "untouched_indices_7_to_12",
+    "continuous_features": "indices_0_to_6_only",
+    "levels": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "perturbation_seed": 101,
+    "rng": "apply_paired_perturbation_sha256_derived_per_level",
+    "labels_change": false,
+    "total_events_recomputed": false,
+    "active_duration_changed_by_rule": false,
+    "validation_derived_parameter": false
+  },
+  "robustness_recompute_40_from_perturbed_sequence": true,
+  "utc": "2026-08-16T13:13:44Z"
+}

@@ -1,0 +1,4 @@
+{
+  "triggered": false,
+  "reason": "mean \u0394<=0 or positive primary seeds < 2/3 or reused-only best"
+}

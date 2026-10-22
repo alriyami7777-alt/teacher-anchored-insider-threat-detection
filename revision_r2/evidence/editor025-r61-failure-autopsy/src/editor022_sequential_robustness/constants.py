@@ -1,0 +1,177 @@
+"""Frozen EDITOR-022 identities. No architecture search. No new corruptions."""
+
+from __future__ import annotations
+
+from pathlib import Path
+from typing import Any
+
+from editor012_rescue.constants import (
+    BATCH_SIZE,
+    ENCODER_ARCH,
+    EXPECTED_INNER_DROPPED,
+    EXPECTED_INNER_SELECT_N,
+    EXPECTED_INNER_SELECT_POS,
+    EXPECTED_INNER_TRAIN_N,
+    EXPECTED_INNER_TRAIN_POS,
+    EXPECTED_TRAIN_POS,
+    EXPECTED_TRAIN_SHA256,
+    EXPECTED_TRAIN_SHAPE,
+    EXPECTED_USER_MAPPING_SHA256,
+    EXPECTED_VAL_MALICIOUS_USERS,
+    EXPECTED_VAL_POS,
+    EXPECTED_VAL_SHA256,
+    EXPECTED_VAL_SHAPE,
+    EXPECTED_VAL_USERS,
+    EXPECTED_VAL_WINDOWS_PER_USER,
+    FEATURE_DIM,
+    GRAD_CLIP_NORM,
+    LAMBDA_HISTORICAL_SINGLE_TEACHER_LOGIT,
+    LR_ATTENTION,
+    LR_ENCODER,
+    LR_ODST,
+    MAX_EPOCHS,
+    ODST046,
+    PATIENCE,
+    POS_WEIGHT_MULT,
+    PRIMARY_SEEDS,
+    SEQUENCE_LENGTH,
+    TOPT_CHECKPOINTS,
+    WEIGHT_DECAY,
+)
+from editor013_odst_value.constants import F11_CHECKPOINTS, N_TREES_TOTAL, TEACHER_GUIDANCE_VS_INITIALISATION
+from editor017_robustness.constants import (
+    EXPECTED_SCALER_JSON_SHA256,
+    GLOBAL_TOPK_PR_AUC_FAITHFULNESS,
+    NOISE_LEVELS,
+    NOISE_PERTURBATION_SEED,
+    SCALER_JSON,
+    SOURCE_CHANNELS,
+)
+from editor020_robustness.constants import (
+    EXPECTED_GAUSSIAN_SHA256,
+    EXPECTED_SOURCE_ABLATION_SHA256,
+    FAMILY_P_NOISE,
+    FAMILY_P_SOURCE,
+    LAMBDA_ROUTE,
+    LAMBDA_TEACHER,
+    SAMPLER_SEED,
+)
+from editor021_cfpr.constants import (
+    COSINE_EPS,
+    EPS_GRAD,
+    LAMBDA_FP,
+    TA2_CHECKPOINTS,
+)
+
+TASK_ID = "EDITOR-022"
+TASK_NAME = "SEQUENTIAL CLEAN-OPTIMUM-ANCHORED ROBUSTNESS REFINEMENT"
+PRIMARY_METRIC = "PR_AUC"
+REVIEW_REL = Path("review/editor022_sequential_clean_optimum_robustness")
+OUTPUT_REL = Path("outputs/editor022_sequential_clean_optimum_robustness")
+
+EDITOR022_PARENT_COMMIT = "b41944b3b67518eb1afc69b17450eeef29f5b8f7"
+EDITOR021_RESULTS_COMMIT = "b3d5ef1e57299bd019fdd482e95ccdc44dfc165e"
+EDITOR021P1_CORRECTION_COMMIT = "b41944b3b67518eb1afc69b17450eeef29f5b8f7"
+EDITOR021_PROTOCOL_COMMIT = "a1e7825c1f11bfe36595ef28c197c7a105685aaf"
+
+EDITOR021_WORKTREE = Path(r"C:\PhD\07_Projects\teacher-anchored-insider-threat-detection-editor021")
+EDITOR021_REVIEW_REL = Path("review/editor021_clean_function_representation_robustness")
+EDITOR021_OUTPUT_REL = Path("outputs/editor021_clean_function_representation_robustness")
+
+STAGE2_EPOCHS = 1
+SAMPLER_EPOCH_INDEX = 1
+FRESH_STAGE2_OPTIMISER = True
+OPTIMISER_STATE_CONTINUED_FROM_CFP0 = False
+
+CLEAN_MEAN_MARGIN = 0.001
+CLEAN_SEED_MARGIN = 0.003
+ROBUSTNESS_GAIN = 0.005
+PARITY_TOLERANCE = 1e-10
+BOOTSTRAP_SEED = 42
+BOOTSTRAP_RESAMPLES = 2000
+
+CANDIDATES: dict[str, dict[str, Any]] = {
+    "SEQ0": {"rho": 0.0, "robustness": False, "simplicity_rank": 0},
+    "SRP025": {"rho": 0.025, "robustness": True, "simplicity_rank": 1},
+    "SRP050": {"rho": 0.050, "robustness": True, "simplicity_rank": 2},
+    "SRP100": {"rho": 0.100, "robustness": True, "simplicity_rank": 3},
+}
+ROBUSTNESS_CANDIDATES = ("SRP025", "SRP050", "SRP100")
+
+CFP0_INNER_SHA256 = {
+    42: "af47cebd144c7f3c2aac2c71697f726242b7fbb17f9d6fc1126449096910a438",
+    52: "3a06349cdb872840a51b87711e5b49f57498e499780d4930738d3c4a6ad8fa25",
+    62: "ce153b2b379195b40aa96984cc0c3d9fb96bb86bbf3f5d6cbf0b9fa5b1218a5c",
+}
+CFP0_INNER_LOGICAL = {
+    seed: EDITOR021_OUTPUT_REL / "CFP0" / f"seed{seed}" / "best.pt" for seed in PRIMARY_SEEDS
+}
+
+CFP0_START_METRICS = {
+    42: {
+        "clean_PR_AUC": 0.9382861278958137,
+        "S_source": -0.3867749194591936,
+        "S_noise": -0.07953517074962013,
+        "S_composite": -0.23315504510440688,
+    },
+    52: {
+        "clean_PR_AUC": 0.9535309876885425,
+        "S_source": -0.37026781889999344,
+        "S_noise": -0.14271725774776214,
+        "S_composite": -0.2564925383238778,
+    },
+    62: {
+        "clean_PR_AUC": 0.9809537245830638,
+        "S_source": -0.43269462118609764,
+        "S_noise": -0.09756600180812729,
+        "S_composite": -0.26513031149711247,
+    },
+}
+CFP0_START_MEAN_CLEAN_PR_AUC = 0.9575902800558067
+CFP0_START_MEAN_S_SOURCE = -0.39657911984842825
+CFP0_START_MEAN_S_NOISE = -0.10660614343516985
+CFP0_START_MEAN_S_COMPOSITE = -0.25159263164179907
+
+FROZEN_INNER_CFP0_THRESHOLDS = {
+    42: 0.89,
+    52: 0.85,
+    62: 0.85,
+}
+
+PROJECTION_EQUATION = "g_r_perp = g_r - ((g_c · g_r) / (|g_c|_2^2 + eps)) g_c  if (g_c · g_r) < 0 else g_r"
+BUDGET_EQUATION = "alpha = min(1, rho |g_c|_2 / (|g_r_perp|_2 + eps)); g_enc = g_c + alpha g_r_perp; g_odst = g_c"
+
+FORBIDDEN_THREAT_TERMS = (
+    "ADVERSARIAL_ROBUSTNESS",
+    "EVASION_ROBUSTNESS",
+    "POISONING_ROBUSTNESS",
+    "ADVERSARIAL ROBUSTNESS",
+    "EVASION RESISTANCE",
+    "POISONING RESISTANCE",
+)
+ALLOWED_TERMS = (
+    "CONTROLLED DEGRADED-INPUT ROBUSTNESS",
+    "DATA-QUALITY RESILIENCE",
+    "SEQUENTIAL ROBUSTNESS REFINEMENT",
+    "CLEAN-OPTIMUM-ANCHORED ROBUSTNESS REFINEMENT",
+    "SOURCE-CHANNEL DEGRADATION",
+)
+
+CURRENT_PAPER_MODEL_AT_START = "TA2"
+EDITOR021_PROMOTION = "NO"
+EDITOR021_CLEAN_FUNCTION_PRESERVATION = "SUPPORTED"
+EDITOR021_TRAINING_TIME_ROBUSTNESS_HARDENING = "NOT_SUPPORTED"
+
+__all__ = [
+    "TASK_ID",
+    "CANDIDATES",
+    "ROBUSTNESS_CANDIDATES",
+    "STAGE2_EPOCHS",
+    "LAMBDA_FP",
+    "LAMBDA_TEACHER",
+    "LAMBDA_ROUTE",
+    "PRIMARY_SEEDS",
+    "SOURCE_CHANNELS",
+    "NOISE_LEVELS",
+    "EDITOR022_PARENT_COMMIT",
+]

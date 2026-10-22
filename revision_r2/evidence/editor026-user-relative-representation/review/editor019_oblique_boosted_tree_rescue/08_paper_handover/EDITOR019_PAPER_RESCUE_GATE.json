@@ -1,0 +1,43 @@
+{
+  "BEST_CURRENT_PAPER_MODEL": "TA2",
+  "TREE_VALUE": "NOT_SUPPORTED",
+  "TEACHER_GUIDANCE_WITHIN_TREE": "STRONG",
+  "WHY_TEACHER_GUIDANCE": "Teacher residual remains the successful neural-ensemble target; it did not create a tree that beat MLP40-D.",
+  "WHY_DIFFERENTIABLE_TREE": "The 40-summary view can carry complementary information, but none of the signed-oblique, node-specific, or boosted differentiable trees beat both L1 and matched MLP40-D under the frozen gate.",
+  "WHY_NOT_ATTENTION_LINEAR_ONLY": "A tree replacement is not justified; retain TA2 / attention-linear as the paper model.",
+  "LOCAL_DIRECTIONAL_FAITHFULNESS": "NOT_EVALUATED_NO_PROMOTED_TREE",
+  "DEGRADED_INPUT_CONFIRMATION": "NOT_TRIGGERED",
+  "comparisons": {
+    "BEST_TREE_MEAN_PR_AUC": null,
+    "L1_MEAN_PR_AUC": 0.9388809579807144,
+    "MATCHED_MLP_MEAN_PR_AUC": "NOT_TRAINED_NO_PROMOTED_TREE",
+    "TA2_MEAN_PR_AUC": 0.9428421883320307,
+    "DELTA_TREE_VS_L1": null,
+    "DELTA_TREE_VS_MLP": null,
+    "POSITIVE_SEEDS_TREE_VS_L1": "0/3",
+    "POSITIVE_SEEDS_TREE_VS_MLP": "0/3",
+    "CI_TREE_MINUS_L1": null,
+    "CI_TREE_MINUS_MLP": null,
+    "TREE_VALUE": "NOT_SUPPORTED",
+    "promotion": "NONE"
+  },
+  "inner_effects": {
+    "SIGNED_SPLIT_EFFECT": -0.0003009893119503282,
+    "NON_OBLIVIOUS_EFFECT": -0.00041570940290081015,
+    "BOOSTING_EFFECT": 0.0019031916555417583,
+    "TEACHER_EFFECT": {
+      "SO-ODST40": 0.0034707214342256654,
+      "SO-DTE40": 0.004195694621733859,
+      "BSO-DTE40": 0.0379648761470438
+    },
+    "BEST_TREE": "BSO-DTE40-D",
+    "BEST_TREE_PR_AUC": 0.9393893821062028,
+    "BEST_TREE_MINUS_L1": 0.0012155647422981142,
+    "BEST_TREE_MINUS_MLP40": -0.0016408193795004467,
+    "tree_D": {
+      "SO-ODST40": 0.9379018998535619,
+      "SO-DTE40": 0.9374861904506611,
+      "BSO-DTE40": 0.9393893821062028
+    }
+  }
+}

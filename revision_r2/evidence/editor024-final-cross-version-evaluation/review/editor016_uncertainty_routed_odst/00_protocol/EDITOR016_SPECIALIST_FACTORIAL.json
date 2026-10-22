@@ -1,0 +1,47 @@
+{
+  "task_id": "EDITOR-016",
+  "conditions": {
+    "S0": {
+      "head": "linear",
+      "teacher_residual": false,
+      "route": false,
+      "identity": "LINEAR-TASK residual specialist"
+    },
+    "S1": {
+      "head": "linear",
+      "teacher_residual": true,
+      "route": false,
+      "identity": "LINEAR-TEACHER residual specialist"
+    },
+    "S2": {
+      "head": "odst",
+      "teacher_residual": false,
+      "route": false,
+      "identity": "ODST-TASK residual specialist"
+    },
+    "S3": {
+      "head": "odst",
+      "teacher_residual": true,
+      "route": false,
+      "identity": "ODST-TEACHER residual specialist"
+    },
+    "S4": {
+      "head": "odst",
+      "teacher_residual": true,
+      "route": true,
+      "identity": "ODST-TEACHER-ROUTE residual specialist"
+    }
+  },
+  "matching": {
+    "S0_vs_S2": "ODST versus linear specialist under task-only training",
+    "S1_vs_S3": "ODST versus linear specialist under identical teacher guidance",
+    "S3_vs_S2": "teacher guidance effect inside the ODST specialist",
+    "S4_vs_S3": "route regularisation effect inside teacher-guided ODST specialist"
+  },
+  "lambda_teacher": 0.5,
+  "lambda_route": 0.5,
+  "teacher_residual_target": "ensemble_teacher_logit - L1_logit",
+  "historical_C5_single_teacher_anchor": "RETIRED",
+  "route_teacher": "matched T-OPT(seed)",
+  "no_architecture_search": true
+}

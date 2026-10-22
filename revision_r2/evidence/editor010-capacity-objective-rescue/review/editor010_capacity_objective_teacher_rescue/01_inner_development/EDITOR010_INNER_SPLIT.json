@@ -1,0 +1,14 @@
+{
+  "source_tensor": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_train.npz",
+  "source_sha256": "b268328d3bf2e98f712d1145958dabe175ce2c07a7c390da4b84a663317ebc2e",
+  "fraction": 0.8,
+  "n_users": 2000,
+  "n_inner_train": 622000,
+  "n_inner_select": 128000,
+  "n_dropped_boundary": 38000,
+  "n_inner_train_pos": 2457,
+  "n_inner_select_pos": 1214,
+  "disjoint": true,
+  "official_validation_used": false,
+  "r52_test_accessed": false
+}

@@ -1,0 +1,9 @@
+{
+  "stage": "inner",
+  "learner": "attention",
+  "schema": "F6_PRIMITIVES",
+  "seed": 42,
+  "manifest_sha256": "73217bb99ae49c7dd329b6529e014d91b934ffab725d193c949af216ae0c3889",
+  "representation_sha256": "fa70a1c703093196a981233579e9b35e858e4bc40a9770de6ef0c727108c0ce8",
+  "preprocessor_sha256": "70f4c30300a8e52963964c8319421b32ee7f2cb72a89a57e455e3a5154a73e4c"
+}

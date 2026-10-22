@@ -1,0 +1,214 @@
+{
+  "C2-OPT": {
+    "42": {
+      "r52": {
+        "attention_entropy_mean": 1.613749430478128,
+        "max_attention_weight_mean": 0.4040869956922278,
+        "attention_centre_of_mass_mean": 8.897352440503278
+      },
+      "r61": {
+        "attention_entropy_mean": 1.353531606448841,
+        "max_attention_weight_mean": 0.5052257891606879,
+        "attention_centre_of_mass_mean": 8.776408618006872
+      },
+      "delta": {
+        "attention_entropy_mean": -0.26021782402928695,
+        "max_attention_weight_mean": 0.10113879346846016,
+        "attention_centre_of_mass_mean": -0.12094382249640567
+      }
+    },
+    "52": {
+      "r52": {
+        "attention_entropy_mean": 1.517567215754499,
+        "max_attention_weight_mean": 0.43503409411685645,
+        "attention_centre_of_mass_mean": 11.737486487921313
+      },
+      "r61": {
+        "attention_entropy_mean": 1.1388310223049112,
+        "max_attention_weight_mean": 0.5566013279519949,
+        "attention_centre_of_mass_mean": 10.579072809148832
+      },
+      "delta": {
+        "attention_entropy_mean": -0.37873619344958787,
+        "max_attention_weight_mean": 0.12156723383513846,
+        "attention_centre_of_mass_mean": -1.1584136787724812
+      }
+    },
+    "62": {
+      "r52": {
+        "attention_entropy_mean": 1.520955563171975,
+        "max_attention_weight_mean": 0.44836431988272946,
+        "attention_centre_of_mass_mean": 12.354772780570988
+      },
+      "r61": {
+        "attention_entropy_mean": 1.217600428047513,
+        "max_attention_weight_mean": 0.5275062669935339,
+        "attention_centre_of_mass_mean": 10.809456169706241
+      },
+      "delta": {
+        "attention_entropy_mean": -0.3033551351244619,
+        "max_attention_weight_mean": 0.07914194711080441,
+        "attention_centre_of_mass_mean": -1.545316610864747
+      }
+    }
+  },
+  "F10": {
+    "42": {
+      "r52": {
+        "attention_entropy_mean": 1.654636168669229,
+        "max_attention_weight_mean": 0.3906533160194593,
+        "attention_centre_of_mass_mean": 9.129054704690592
+      },
+      "r61": {
+        "attention_entropy_mean": 1.3890854244699746,
+        "max_attention_weight_mean": 0.490372379585894,
+        "attention_centre_of_mass_mean": 8.90977164605823
+      },
+      "delta": {
+        "attention_entropy_mean": -0.2655507441992544,
+        "max_attention_weight_mean": 0.09971906356643473,
+        "attention_centre_of_mass_mean": -0.21928305863236197
+      }
+    },
+    "52": {
+      "r52": {
+        "attention_entropy_mean": 1.7867307785516773,
+        "max_attention_weight_mean": 0.34028724628691076,
+        "attention_centre_of_mass_mean": 11.501685699746076
+      },
+      "r61": {
+        "attention_entropy_mean": 1.3469190735429468,
+        "max_attention_weight_mean": 0.48700415043330375,
+        "attention_centre_of_mass_mean": 10.43780542850276
+      },
+      "delta": {
+        "attention_entropy_mean": -0.43981170500873046,
+        "max_attention_weight_mean": 0.146716904146393,
+        "attention_centre_of_mass_mean": -1.0638802712433169
+      }
+    },
+    "62": {
+      "r52": {
+        "attention_entropy_mean": 1.6228088814353996,
+        "max_attention_weight_mean": 0.40103230518597294,
+        "attention_centre_of_mass_mean": 12.394657048647103
+      },
+      "r61": {
+        "attention_entropy_mean": 1.276130413572758,
+        "max_attention_weight_mean": 0.5010836588311416,
+        "attention_centre_of_mass_mean": 10.860881972338186
+      },
+      "delta": {
+        "attention_entropy_mean": -0.34667846786264156,
+        "max_attention_weight_mean": 0.10005135364516865,
+        "attention_centre_of_mass_mean": -1.5337750763089169
+      }
+    }
+  },
+  "TA2": {
+    "42": {
+      "r52": {
+        "attention_entropy_mean": 1.6568619491802756,
+        "max_attention_weight_mean": 0.3904880857801993,
+        "attention_centre_of_mass_mean": 9.03995554845606
+      },
+      "r61": {
+        "attention_entropy_mean": 1.3926281672798166,
+        "max_attention_weight_mean": 0.48950402521060626,
+        "attention_centre_of_mass_mean": 8.877851756340844
+      },
+      "delta": {
+        "attention_entropy_mean": -0.264233781900459,
+        "max_attention_weight_mean": 0.09901593943040699,
+        "attention_centre_of_mass_mean": -0.1621037921152162
+      }
+    },
+    "52": {
+      "r52": {
+        "attention_entropy_mean": 1.858464793254043,
+        "max_attention_weight_mean": 0.31494611040754283,
+        "attention_centre_of_mass_mean": 11.410306985480375
+      },
+      "r61": {
+        "attention_entropy_mean": 1.407737349011758,
+        "max_attention_weight_mean": 0.4649343805003102,
+        "attention_centre_of_mass_mean": 10.352875205669548
+      },
+      "delta": {
+        "attention_entropy_mean": -0.45072744424228506,
+        "max_attention_weight_mean": 0.14998827009276738,
+        "attention_centre_of_mass_mean": -1.0574317798108268
+      }
+    },
+    "62": {
+      "r52": {
+        "attention_entropy_mean": 1.6725396479878014,
+        "max_attention_weight_mean": 0.3858098805272367,
+        "attention_centre_of_mass_mean": 12.250504317628469
+      },
+      "r61": {
+        "attention_entropy_mean": 1.3147574982215395,
+        "max_attention_weight_mean": 0.48646295920206395,
+        "attention_centre_of_mass_mean": 10.790965088848694
+      },
+      "delta": {
+        "attention_entropy_mean": -0.3577821497662619,
+        "max_attention_weight_mean": 0.10065307867482726,
+        "attention_centre_of_mass_mean": -1.459539228779775
+      }
+    }
+  },
+  "L1": {
+    "42": {
+      "r52": {
+        "attention_entropy_mean": 2.1394493268212216,
+        "max_attention_weight_mean": 0.2295285410063274,
+        "attention_centre_of_mass_mean": 8.305300443097597
+      },
+      "r61": {
+        "attention_entropy_mean": 1.6965460240672054,
+        "max_attention_weight_mean": 0.390899972729773,
+        "attention_centre_of_mass_mean": 8.557085144572055
+      },
+      "delta": {
+        "attention_entropy_mean": -0.4429033027540161,
+        "max_attention_weight_mean": 0.1613714317234456,
+        "attention_centre_of_mass_mean": 0.25178470147445786
+      }
+    },
+    "52": {
+      "r52": {
+        "attention_entropy_mean": 2.501450803884843,
+        "max_attention_weight_mean": 0.17067672152022642,
+        "attention_centre_of_mass_mean": 10.59487232861253
+      },
+      "r61": {
+        "attention_entropy_mean": 1.747193505402112,
+        "max_attention_weight_mean": 0.38981898309233326,
+        "attention_centre_of_mass_mean": 9.741647474190135
+      },
+      "delta": {
+        "attention_entropy_mean": -0.7542572984827309,
+        "max_attention_weight_mean": 0.21914226157210684,
+        "attention_centre_of_mass_mean": -0.853224854422395
+      }
+    },
+    "62": {
+      "r52": {
+        "attention_entropy_mean": 2.547039978344033,
+        "max_attention_weight_mean": 0.1562429766875337,
+        "attention_centre_of_mass_mean": 12.066934422954454
+      },
+      "r61": {
+        "attention_entropy_mean": 1.7752334397240914,
+        "max_attention_weight_mean": 0.37397700144760315,
+        "attention_centre_of_mass_mean": 10.480181592437587
+      },
+      "delta": {
+        "attention_entropy_mean": -0.7718065386199418,
+        "max_attention_weight_mean": 0.21773402476006945,
+        "attention_centre_of_mass_mean": -1.5867528305168666
+      }
+    }
+  }
+}

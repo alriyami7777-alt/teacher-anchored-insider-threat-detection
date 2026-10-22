@@ -1,0 +1,27 @@
+{
+  "lookback_days": 20,
+  "train_calendar_start": "2010-01-02",
+  "train_calendar_end": "2011-02-18",
+  "scaler_fit": "R52 TRAIN ONLY",
+  "n_r52_users": 2000,
+  "feature_order": [
+    "total_events",
+    "logon_count",
+    "device_count",
+    "file_count",
+    "email_count",
+    "http_count",
+    "active_duration_minutes",
+    "has_logon_activity",
+    "has_device_activity",
+    "has_file_activity",
+    "has_email_activity",
+    "has_http_activity",
+    "is_active_day"
+  ],
+  "split_notes": {
+    "validation_may_use_earlier_same_user_history": true,
+    "windows_retain_frozen_split": true,
+    "labels_never_enter_baseline": true
+  }
+}

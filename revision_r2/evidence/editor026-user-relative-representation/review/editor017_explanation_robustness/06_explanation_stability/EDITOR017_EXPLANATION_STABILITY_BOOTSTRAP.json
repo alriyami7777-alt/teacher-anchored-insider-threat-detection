@@ -1,0 +1,15 @@
+{
+  "TA2_source_spearman": 0.3349181664862521,
+  "F10_source_spearman": 0.31501464798586515,
+  "TA2_noise_spearman": 0.2967473460744269,
+  "F10_noise_spearman": 0.28037926072475955,
+  "TA2_source_top1_sign": 0.7355427083333334,
+  "F10_source_top1_sign": 0.685309375,
+  "TA2_noise_top1_sign": 0.6991319444444445,
+  "F10_noise_top1_sign": 0.6723541666666667,
+  "TA2_minus_F10_source_spearman": 0.019903518500386963,
+  "TA2_minus_F10_noise_spearman": 0.016368085349667327,
+  "fixed_feature_explanation_stability": "NOT_AVAILABLE",
+  "tree_identities_compared_across_seeds": false,
+  "three_seeds_are_not_independent_experimental_units": true
+}

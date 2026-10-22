@@ -1,0 +1,15 @@
+{
+  "task_id": "EDITOR-016",
+  "LINEAR_RESIDUAL_INITIAL_OUTPUT": "ZERO",
+  "LINEAR_RESIDUAL_INITIAL_GRADIENT": "NONZERO",
+  "linear_grad_l2": 0.2855081738130322,
+  "ODST_RESIDUAL_INITIAL_OUTPUT": "ZERO",
+  "ODST_RESIDUAL_INITIAL_EQUALS_L1": true,
+  "ODST_RESIDUAL_INITIAL_GRADIENT": "NONZERO",
+  "odst_grad_l2": 0.022273978873534547,
+  "reference_odst_grad_l1": 0.0,
+  "reference_requires_grad": false,
+  "formula_linear": "delta_linear = w_r^T z + b_r with w_r=0, b_r=0",
+  "formula_odst": "delta_ODST = g_theta(z) - stop_gradient(g_theta0(z))",
+  "final_logit": "L1_logit + gate_q * delta"
+}

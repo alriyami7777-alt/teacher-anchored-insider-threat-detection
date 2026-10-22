@@ -1,0 +1,21 @@
+{
+  "outputs/editor026_user_relative_representation/tensors/r52_train_ur.npz": "c9f017ec2ac0be28566bfc4c878b07fdc6278445297a14817bc2b645215b318b",
+  "outputs/editor026_user_relative_representation/tensors/r52_val_ur.npz": "7fdf1e3160f23a1697ce078a4447ff8aa07603ebdda8316ce602bc2c293bc6bd",
+  "outputs/editor026_user_relative_representation/tensors/r61_ur_scaled_daily.npy": "263199c7dfd1ce6437d6e1cb6a8cb65634d3a69f4e27de031b7a896690f46f74",
+  "outputs/editor026_user_relative_representation/tensors/r61_ur_windows.npy": "2ae77e867f68a80dcf4d32e0f7af02f3879d17c661dcb8170ef9a06cbdaa2df9",
+  "outputs/editor026_user_relative_representation/tensors/r61_y_editor024.npy": "2822f74593ee16cad16dd42f217ad47f74fce940924bf50adf0f2272a8b084e9",
+  "outputs/editor026_user_relative_representation/tensors/r61_y_insider.npy": "c65788dcaa75fa79b0d7fb16edafdad2805bbac0e3867e028bca06a2967bbf16",
+  "review/editor026_user_relative_representation/EDITOR026_PROMOTION_DECISION.json": "79d8b55cb76b5b78aff3add179548cc23a489ec03b1edb8f0203188bff036f54",
+  "review/editor026_user_relative_representation/EDITOR026_PROTOCOL.json": "65d27bc9e48fb861567251cb96b82dd498e357f51586581efa43b36fc52d39e0",
+  "review/editor026_user_relative_representation/EDITOR026_PROTOCOL.md": "8f6a9c8f5752537cf5069fd73f609d0d096f7384b2dbef2f775b1ec078cbe0eb",
+  "review/editor026_user_relative_representation/EDITOR026_PROVENANCE.json": "b52c3da104e1eb1f647e086ebd7f33cfe01aa2759b9abbd10be9f823cdf25040",
+  "review/editor026_user_relative_representation/EDITOR026_REPRESENTATION_DEFINITION.json": "9278936d93bb9701476e8fe9bac79f3d1ecafa09f23aac487114ca7a149eabf5",
+  "review/editor026_user_relative_representation/EDITOR026_RESULT_FREEZE.md": "e4d26003cde7cdc9465d218b635148aa56efa89b2641eb247f78e0b13189e213",
+  "review/editor026_user_relative_representation/EDITOR026_RUN_MANIFEST.json": "b6f58806eb564fa6e8f86bc65a2e59f771b518e76fb68431ca4622f775e0e136",
+  "review/editor026_user_relative_representation/EDITOR026_STAGE0_GATE.json": "39bde2fa3bfc9ea5bc604463c30fc2947e481309b21647d7fea179279d735696",
+  "review/editor026_user_relative_representation/EDITOR026_STAGE0_INPUT_SIGNAL.json": "84e9fe9bb212407e34d52bc8ec743e3e82c47a6107bcc57d531080ffc33dacff",
+  "review/editor026_user_relative_representation/EDITOR026_STAGE0_SHIFT_FEATURES.csv": "5b8460981a67542db4f0ed791c327ed00273982c069a0c8a8396be44094fd501",
+  "review/editor026_user_relative_representation/EDITOR026_STAGE0_SHIFT_RESULTS.json": "b90f341007d567995994b648cb8e2d780f49d85c22a873d672195be1382b208a",
+  "review/editor026_user_relative_representation/EDITOR026_TERMINAL_BLOCK.txt": "8997eb264b4272c567d3b441f3dbfa0e5a74516922e7e32318d91054f603e5a2",
+  "review/editor026_user_relative_representation/EDITOR026_UR_SCALER.json": "2388693dfde94fba154a87379f796fc267575f7bb397de2e24ec1c6af5253581"
+}

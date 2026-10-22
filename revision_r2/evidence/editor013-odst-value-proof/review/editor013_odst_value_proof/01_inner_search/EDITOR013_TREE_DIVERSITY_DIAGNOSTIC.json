@@ -1,0 +1,7 @@
+{
+  "best_teacher_guided_odst": "H7-HYB-U-D",
+  "mean_absolute_pairwise_correlation": 0.8437259751650039,
+  "threshold": 0.9,
+  "TREE_DIVERSITY_BRANCH": "NOT_TRIGGERED",
+  "official_validation_used": false
+}

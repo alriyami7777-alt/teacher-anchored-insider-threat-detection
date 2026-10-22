@@ -1,0 +1,227 @@
+{
+  "task_id": "EDITOR-016",
+  "EDITOR015_PROTOCOL_COMMIT": "ba6fd93d8a2e1260ccb2e953e326885fe4e26afd",
+  "EDITOR015_PROMOTION_COMMIT": "335dac8622c793c0468db14eca06d42cb405fed1",
+  "EDITOR015_RESULTS_FULL_COMMIT": "d8e1d04b8c199f56cab9956f62c16cd4301f0bac",
+  "EDITOR012_PROTOCOL_COMMIT": "065d8080ec06148e12a46f0a5710b0225c9b66c7",
+  "EDITOR012_IMPLEMENTATION_COMMIT": "7007fa7927a46951129aa428970dd9cc567eb4d1",
+  "EDITOR012_PROMOTION_COMMIT": "6c9fa3fca92e3820d236d1d001c5c709245c00f9",
+  "EDITOR012_RESULTS_COMMIT": "4bcf522a502ed98e5dd393a80bd9da7fffd51964",
+  "EDITOR013_RESULTS_COMMIT": "09c4bb97b143810147feef08f31a8d8d042a6726",
+  "EDITOR014_RESULTS_COMMIT": "c3343462dc3b35d20907da6ad017f5f853852f84",
+  "historical_packets_readonly": true,
+  "TEACHER_GUIDANCE_VS_INITIALISATION": "SUPPORTED_STRONG",
+  "BEST_CURRENT_PAPER_MODEL": "TA2",
+  "POST_ATTENTION_ODST_INCREMENTAL_VALUE": "NOT_SUPPORTED",
+  "TEMPORAL_ODST_INCREMENTAL_VALUE": "NOT_SUPPORTED",
+  "RESIDUAL_ODST_VALUE": "NO_RESIDUAL_ODST_VALUE",
+  "FIXED_LINEAR_ODST_COMPLEMENTARITY": "MIXED",
+  "LOCAL_DIRECTIONAL_TREE_FAITHFULNESS": "SUPPORTED",
+  "HISTORICAL_GLOBAL_TOPK_FAITHFULNESS": "NOT_SUPPORTED",
+  "producing_pins": {
+    "architecture": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+    "odst": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+    "sequence_ensemble": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475"
+  },
+  "artefacts": [
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed42\\best_teacher.pt",
+      "commit": "65214bdeb51f9a04925be41d3b4c778de75cf088",
+      "SHA256": "b007f48085ef42b146b22a0d5ace5bb9c8380874405622281a5903831599fb20",
+      "role": "T-OPT/42",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed52\\best_teacher.pt",
+      "commit": "65214bdeb51f9a04925be41d3b4c778de75cf088",
+      "SHA256": "5b4c17e15a8f49ba8cf240c0092b893e6e665232967fafce8eb13e0650227f2a",
+      "role": "T-OPT/52",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed62\\best_teacher.pt",
+      "commit": "65214bdeb51f9a04925be41d3b4c778de75cf088",
+      "SHA256": "24bf2efa2343e4aaf5f32871c0a9bffb3d511f345375ce754e9f081f82eac02c",
+      "role": "T-OPT/62",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed42\\best_student.pt",
+      "commit": "65214bdeb51f9a04925be41d3b4c778de75cf088",
+      "SHA256": "d64651d25e48b3bcd4cad7d107d3bc55a4c555a2827f3656a087624e94ac4baf",
+      "role": "C2-OPT/42",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed52\\best_student.pt",
+      "commit": "65214bdeb51f9a04925be41d3b4c778de75cf088",
+      "SHA256": "f0eea90099ba7dd3e721efb930e367e868049c94f6542d5b2156d9fe469acb7e",
+      "role": "C2-OPT/52",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed62\\best_student.pt",
+      "commit": "65214bdeb51f9a04925be41d3b4c778de75cf088",
+      "SHA256": "50512aa5392ee7f4d93dc5f84471fc1074baeb757ae9fb5b96caed141ee586da",
+      "role": "C2-OPT/62",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed42\\best_student.pt",
+      "commit": "4bcf522a502ed98e5dd393a80bd9da7fffd51964",
+      "SHA256": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8",
+      "role": "TA2/42",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed42\\val_logits.npy",
+      "commit": "4bcf522a502ed98e5dd393a80bd9da7fffd51964",
+      "SHA256": "78ad45e4e13a8d802062aa54599a9c4a82c086e504efecae3b2d34b57ebfdb5c",
+      "role": "TA2_val_logits/42",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed52\\best_student.pt",
+      "commit": "4bcf522a502ed98e5dd393a80bd9da7fffd51964",
+      "SHA256": "7613ba559bcf55827d04129066eb595b677994494609646f8b2463308ed5edb4",
+      "role": "TA2/52",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed52\\val_logits.npy",
+      "commit": "4bcf522a502ed98e5dd393a80bd9da7fffd51964",
+      "SHA256": "a8f8452a64243da6e0107b5e12ffd5d762b2f8e18b8c7e3db2c039979974b592",
+      "role": "TA2_val_logits/52",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed62\\best_student.pt",
+      "commit": "4bcf522a502ed98e5dd393a80bd9da7fffd51964",
+      "SHA256": "904003dca219435464476cf36abedb11ee4e2f7a11ff09caa3791d685b8f644d",
+      "role": "TA2/62",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed62\\val_logits.npy",
+      "commit": "4bcf522a502ed98e5dd393a80bd9da7fffd51964",
+      "SHA256": "b36030b4d52e04bdde6f93eba67da7e8a0c27831685e79b0a9d164a90d0bfa62",
+      "role": "TA2_val_logits/62",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed42\\best.pt",
+      "commit": "09c4bb97b143810147feef08f31a8d8d042a6726",
+      "SHA256": "513e272063250aa209efa2c42b490cc44316c7979fa6b2be5dd8cce4592d1ab2",
+      "role": "L1/42",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed42\\val_logits.npy",
+      "commit": "09c4bb97b143810147feef08f31a8d8d042a6726",
+      "SHA256": "fbb2354b492e31193fbe6ea545e3eabd23dd161ec85997aab12c3e5da14b0e85",
+      "role": "L1_val_logits/42",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed52\\best.pt",
+      "commit": "09c4bb97b143810147feef08f31a8d8d042a6726",
+      "SHA256": "a503f6705955da221bdbd1921034e9102b90db6acb5187114276ccaeb474e1c4",
+      "role": "L1/52",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed52\\val_logits.npy",
+      "commit": "09c4bb97b143810147feef08f31a8d8d042a6726",
+      "SHA256": "aa3f0f8b59b9a25225a556949abc2fab4ca6e651939cdacee3feeadd636efe9a",
+      "role": "L1_val_logits/52",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed62\\best.pt",
+      "commit": "09c4bb97b143810147feef08f31a8d8d042a6726",
+      "SHA256": "60d5c43692a17ba6971c8d23f74048ac3c4fe0bd1b18889eeb21bbab7bf3d3e9",
+      "role": "L1/62",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed62\\val_logits.npy",
+      "commit": "09c4bb97b143810147feef08f31a8d8d042a6726",
+      "SHA256": "9d0036bc70df142a4c3ec5a8f43c7c049220ada5c1d2a09d5eefdeec5c634515",
+      "role": "L1_val_logits/62",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\train_ens_logit.npy",
+      "commit": "09c4bb97b143810147feef08f31a8d8d042a6726",
+      "SHA256": "1a5801264958e2210063607f1b4ccd35f31eeb70f74f777de1f6e3641b587119",
+      "role": "ensemble_teacher/train_ens",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\train_logit42.npy",
+      "commit": "09c4bb97b143810147feef08f31a8d8d042a6726",
+      "SHA256": "07da6a7fe0c5b99030e1ffbb11b588d0bed86a149c4a822ce4db8b92a8384ba5",
+      "role": "ensemble_teacher/train_42",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\train_logit52.npy",
+      "commit": "09c4bb97b143810147feef08f31a8d8d042a6726",
+      "SHA256": "e88c647e2b73203c02e612b9b2ca1e585620f42e6ab52e7b283e7b9e7b0c6033",
+      "role": "ensemble_teacher/train_52",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\train_logit62.npy",
+      "commit": "09c4bb97b143810147feef08f31a8d8d042a6726",
+      "SHA256": "25aeeb77e86ad0019249c81b805ce7bbd66d9c6c20c9e6e68e8cfc0d31a8ff51",
+      "role": "ensemble_teacher/train_62",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\val_ens_logit.npy",
+      "commit": "09c4bb97b143810147feef08f31a8d8d042a6726",
+      "SHA256": "8407b4c02c33415c52b6106af254b43f7fae197fbbcd1d81a1ffb9d579f58d75",
+      "role": "ensemble_teacher/val_ens",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\val_logit42.npy",
+      "commit": "09c4bb97b143810147feef08f31a8d8d042a6726",
+      "SHA256": "8bbabb63d7a143f977cdb35c53fd0d3b779c56817450a1959875a26b4514c197",
+      "role": "ensemble_teacher/val_42",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\val_logit52.npy",
+      "commit": "09c4bb97b143810147feef08f31a8d8d042a6726",
+      "SHA256": "b3c19889f61ec0aec2d36929b97a487fc96f40ee9718167e3acacf47ad0e39ce",
+      "role": "ensemble_teacher/val_52",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\ensemble_cache\\val_logit62.npy",
+      "commit": "09c4bb97b143810147feef08f31a8d8d042a6726",
+      "SHA256": "419aea311185106fddae8dc76399abb3f01ebde2d8fd0289b5f727f2e98b776e",
+      "role": "ensemble_teacher/val_62",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_train.npz",
+      "commit": "locked-r52-tensors",
+      "SHA256": "b268328d3bf2e98f712d1145958dabe175ce2c07a7c390da4b84a663317ebc2e",
+      "role": "r52_TRAIN",
+      "exists": true
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_validation.npz",
+      "commit": "locked-r52-tensors",
+      "SHA256": "5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c",
+      "role": "r52_VALIDATION",
+      "exists": true
+    }
+  ],
+  "r52_test_opened": false,
+  "r51_rerun": false,
+  "r62_rerun": false
+}

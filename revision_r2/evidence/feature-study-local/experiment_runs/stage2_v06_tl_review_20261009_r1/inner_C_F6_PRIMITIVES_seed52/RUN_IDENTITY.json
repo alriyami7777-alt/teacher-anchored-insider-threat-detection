@@ -1,0 +1,33 @@
+{
+  "id": "inner_C_F6_PRIMITIVES_seed52",
+  "partition": "inner",
+  "condition": "C",
+  "schema": "F6_PRIMITIVES",
+  "seed": 52,
+  "data": {
+    "schema": "F6_PRIMITIVES",
+    "partition": "inner",
+    "representation_sha256": "fa70a1c703093196a981233579e9b35e858e4bc40a9770de6ef0c727108c0ce8",
+    "columns": [
+      "logon_count",
+      "device_count",
+      "file_count",
+      "email_count",
+      "http_count",
+      "active_duration_minutes"
+    ],
+    "preprocessor_sha256": "70f4c30300a8e52963964c8319421b32ee7f2cb72a89a57e455e3a5154a73e4c",
+    "train_labels_sha256": "75e04a2a65590012ca73d5f09c52af4f42f57c8802d6989f237e7aafc417304c",
+    "eval_labels_sha256": "b28352b9adea538e3f15af1a7068b34cc900392c30f71e855bb0d0c414976328"
+  },
+  "manifest_sha256": "55d25c09e52b70161fec902034776659eff2370219c76e07321cfea4ecdc32f9",
+  "construction_state_sha256": "23bc8e8442b799a1c67b7649a71a60250037eb156bda3aadf4a00036779209b9",
+  "starting_state_sha256": "227104e93dc81efb037c8a39614dbe77ff3486a8a99ffe43528e82f059dfe383",
+  "dependencies": {
+    "teacher": "8e14bec05aac6e36814d4381f25ebad6faf1974f1c4e37e9914e96741d0aed54",
+    "ensemble": "8a6ba19a625d2ecd3ce5620572f91a9386b07751295abbb9339ae06a2b8ed299"
+  },
+  "outer_epochs": null,
+  "threshold": null,
+  "training_rng_seed": 720185317
+}

@@ -1,0 +1,13 @@
+{
+  "official_r52_validation_not_used_for_selection": true,
+  "INNER_SELECT_only": true,
+  "L1_PR_AUC": 0.9381738173639047,
+  "TA2_PR_AUC": 0.931890211974079,
+  "promotion_margin": 0.001,
+  "promoted": [],
+  "n_promoted": 0,
+  "eligible_before_cap": [],
+  "R3": "REDUNDANT_NOT_EXECUTED",
+  "frozen_before_official_validation_evaluation_of_candidates": true,
+  "no_candidate_invented_after_results": true
+}

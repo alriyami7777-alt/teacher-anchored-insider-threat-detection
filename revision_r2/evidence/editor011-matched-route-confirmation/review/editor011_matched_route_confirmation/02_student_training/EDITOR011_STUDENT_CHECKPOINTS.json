@@ -1,0 +1,60 @@
+{
+  "C2-OPT": {
+    "42": {
+      "seed": 42,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed42\\best_student.pt",
+      "sha256": "d64651d25e48b3bcd4cad7d107d3bc55a4c555a2827f3656a087624e94ac4baf",
+      "best_epoch": 1,
+      "w_logit": 0.0,
+      "w_route": 0.0,
+      "start_checkpoint_sha256": "b007f48085ef42b146b22a0d5ace5bb9c8380874405622281a5903831599fb20"
+    },
+    "52": {
+      "seed": 52,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed52\\best_student.pt",
+      "sha256": "f0eea90099ba7dd3e721efb930e367e868049c94f6542d5b2156d9fe469acb7e",
+      "best_epoch": 3,
+      "w_logit": 0.0,
+      "w_route": 0.0,
+      "start_checkpoint_sha256": "5b4c17e15a8f49ba8cf240c0092b893e6e665232967fafce8eb13e0650227f2a"
+    },
+    "62": {
+      "seed": 62,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed62\\best_student.pt",
+      "sha256": "50512aa5392ee7f4d93dc5f84471fc1074baeb757ae9fb5b96caed141ee586da",
+      "best_epoch": 5,
+      "w_logit": 0.0,
+      "w_route": 0.0,
+      "start_checkpoint_sha256": "24bf2efa2343e4aaf5f32871c0a9bffb3d511f345375ce754e9f081f82eac02c"
+    }
+  },
+  "R2-OPT": {
+    "42": {
+      "seed": 42,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\R2-OPT\\seed42\\best_student.pt",
+      "sha256": "ecc7ec7c3b1628ffc2bbec62efbb006d867fcbefe577f556d058de79d161ba63",
+      "best_epoch": 1,
+      "w_logit": 0.0,
+      "w_route": 0.5,
+      "start_checkpoint_sha256": "b007f48085ef42b146b22a0d5ace5bb9c8380874405622281a5903831599fb20"
+    },
+    "52": {
+      "seed": 52,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\R2-OPT\\seed52\\best_student.pt",
+      "sha256": "917bce3a2c9e783791f01f3b642c1bdaa79ed0a2e7c402c04d3c0151e76915b1",
+      "best_epoch": 3,
+      "w_logit": 0.0,
+      "w_route": 0.5,
+      "start_checkpoint_sha256": "5b4c17e15a8f49ba8cf240c0092b893e6e665232967fafce8eb13e0650227f2a"
+    },
+    "62": {
+      "seed": 62,
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\R2-OPT\\seed62\\best_student.pt",
+      "sha256": "9e3e7d92de7ac30a48229127a0784ac7514f620359499a3c84b8e00e1a7670bc",
+      "best_epoch": 1,
+      "w_logit": 0.0,
+      "w_route": 0.5,
+      "start_checkpoint_sha256": "24bf2efa2343e4aaf5f32871c0a9bffb3d511f345375ce754e9f081f82eac02c"
+    }
+  }
+}

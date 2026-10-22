@@ -1,0 +1,255 @@
+{
+  "task": "EDITOR-021",
+  "title": "CLEAN-FUNCTION-PRESERVING REPRESENTATION ROBUSTNESS",
+  "utc": "2026-08-17T13:25:33Z",
+  "parent_commit": "c26e7291c077dd2626544701217201016c27194d",
+  "EDITOR017_RESULTS_COMMIT": "c75321a627ecc7539d1a759764d7ce395895179a",
+  "EDITOR018_RESULTS_COMMIT": "9dafa51b7dd81d97cead84b4b7e10b2c230b08b4",
+  "EDITOR019_RESULTS_COMMIT": "26614089fe4ee8695f1a15d902ebf2f5fdf1f45a",
+  "EDITOR020C_PARENT_COMMIT": "c26e7291c077dd2626544701217201016c27194d",
+  "data_boundary": {
+    "train": "CERT r5.2 TRAIN",
+    "validation": "CERT r5.2 VALIDATION confirmation only",
+    "model_selection": "INNER_TRAIN / INNER_SELECT",
+    "R52_TEST": "HARD_DENY",
+    "r51": "NO",
+    "r62": "NO",
+    "new_architecture_search": false,
+    "TARGET_SCALER_FIT": "NO",
+    "TARGET_CALIBRATION_FIT": "NO",
+    "TARGET_THRESHOLD_SEARCH": "NO"
+  },
+  "architecture": {
+    "identity": "TA2 = Bi-LSTM + attention + ODST-046",
+    "start_checkpoints": {
+      "42": {
+        "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed42\\best_student.pt",
+        "sha256": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8",
+        "validation_PR_AUC": 0.9454098053584642
+      },
+      "52": {
+        "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed52\\best_student.pt",
+        "sha256": "7613ba559bcf55827d04129066eb595b677994494609646f8b2463308ed5edb4",
+        "validation_PR_AUC": 0.9337067425514769
+      },
+      "62": {
+        "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed62\\best_student.pt",
+        "sha256": "904003dca219435464476cf36abedb11ee4e2f7a11ff09caa3791d685b8f644d",
+        "validation_PR_AUC": 0.9494100170861509
+      }
+    },
+    "no_new_features": true,
+    "no_adapters": true,
+    "no_residual_branches": true
+  },
+  "candidates": {
+    "CFP0": {
+      "rho": 0.0,
+      "robustness": false,
+      "simplicity_rank": 0
+    },
+    "CFPR10": {
+      "rho": 0.1,
+      "robustness": true,
+      "simplicity_rank": 1
+    },
+    "CFPR25": {
+      "rho": 0.25,
+      "robustness": true,
+      "simplicity_rank": 2
+    },
+    "CFPR50": {
+      "rho": 0.5,
+      "robustness": true,
+      "simplicity_rank": 3
+    }
+  },
+  "robustness_candidates": [
+    "CFPR10",
+    "CFPR25",
+    "CFPR50"
+  ],
+  "rho_values": {
+    "CFP0": 0.0,
+    "CFPR10": 0.1,
+    "CFPR25": 0.25,
+    "CFPR50": 0.5
+  },
+  "lambda_fp": 1.0,
+  "lambda_teacher": 0.5,
+  "lambda_route": 0.5,
+  "gradient_projection_equation": "g_r_perp = g_r - ((g_c \u00b7 g_r) / (|g_c|_2^2 + eps)) g_c  if (g_c \u00b7 g_r) < 0 else g_r",
+  "gradient_budget_equation": "alpha = min(1, rho |g_c|_2 / (|g_r_perp|_2 + eps)); g_enc = g_c + alpha g_r_perp; g_odst = g_c",
+  "eps_grad": 1e-12,
+  "cosine_eps": 1e-08,
+  "seeds": [
+    42,
+    52,
+    62
+  ],
+  "split_hashes": {
+    "train_sha256": "b268328d3bf2e98f712d1145958dabe175ce2c07a7c390da4b84a663317ebc2e",
+    "val_sha256": "5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c",
+    "user_mapping_sha256": "851385f9c926cf945b3c74b5c9442e3ccb94cf1d9dabb98106a29cbfea01c5c0"
+  },
+  "train_npz": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_train.npz",
+  "val_npz": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_validation.npz",
+  "scaler_json": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor021\\review\\editor006a_preinference_freeze\\EDITOR006A_SCALER.json",
+  "clean_gates": {
+    "mean_margin": 0.001,
+    "seed_margin": 0.003,
+    "cfp0_scaffold_reference": "starting TA2 (F11) INNER_SELECT; EDITOR-020 TA2-R0 not rerun"
+  },
+  "robustness_gates": {
+    "composite_gain": 0.005,
+    "S_source": "mean_c (PR_source,c - PR_clean)",
+    "S_noise": "mean_sigma (PR_noise,sigma - PR_clean)",
+    "S_composite": "0.5 S_source + 0.5 S_noise"
+  },
+  "selection_rules": "G1-G5 then greatest S_composite; tie <=0.001 chooses smaller rho",
+  "official_validation_rules": "O1-O6 on CFP0 vs one selected CFPR only",
+  "deny_list": [
+    "r5.2 TEST",
+    "r5.1",
+    "r6.2",
+    "adversarial training"
+  ],
+  "terminology_allowed": [
+    "ROBUSTNESS-ORIENTED TRAINING",
+    "CONTROLLED DEGRADED-INPUT ROBUSTNESS",
+    "NOISE-ROBUST TRAINING",
+    "SOURCE-CHANNEL DEGRADATION",
+    "CLEAN-FUNCTION-PRESERVING REPRESENTATION ROBUSTNESS",
+    "DATA-QUALITY RESILIENCE"
+  ],
+  "terminology_forbidden": [
+    "ADVERSARIAL_ROBUSTNESS",
+    "EVASION_ROBUSTNESS",
+    "POISONING_ROBUSTNESS",
+    "ADVERSARIAL ROBUSTNESS",
+    "EVASION RESISTANCE",
+    "POISONING RESISTANCE"
+  ],
+  "producing_pins": {
+    "architecture": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+    "odst": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+    "sequence_ensemble": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475"
+  },
+  "perturbation_hashes": {
+    "objective3_missing_source_robustness.py": "dc83b14cbf27822f86b1626032c5947ac79aa55c264b0a2c524ca44c9e1b07c2",
+    "objective3_perturbations.py": "bcab265042f6b6363d6bc7245d5a0bf6d177d2fcb75528a124978f04d8d9bb1f",
+    "EDITOR006A_SCALER.json": "6a092df8275e15b6e05c685b306f48de72ab55fb1e88ede5ed5899ecd63f3488"
+  },
+  "sampler": {
+    "SAMPLER_SEED": 42,
+    "family_first": true,
+    "P_source": 0.5,
+    "P_noise": 0.5,
+    "source_channels": [
+      "logon",
+      "device",
+      "file",
+      "email",
+      "http"
+    ],
+    "source_uniform": true,
+    "noise_levels": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "noise_uniform": true,
+    "at_most_one_degraded_partner_per_example_per_step": true,
+    "clean_example_always_retained": true,
+    "labels_unchanged_by_corruption": true,
+    "validation_derived_corruption_parameters": false,
+    "overweighting_source_ablation_avoided": "family_first_0.5_0.5_then_uniform_within_family",
+    "rng": "numpy SeedSequence([SAMPLER_SEED, epoch, example_index])",
+    "distribution_frozen_before_results": true
+  },
+  "perturbation_lock": {
+    "source_ablation": {
+      "implementation_id": "objective3_missing_source_robustness.apply_missing_source_condition",
+      "module": "src/objective3_missing_source_robustness.py",
+      "function": "apply_missing_source_condition",
+      "feature_treatment": "inverse_scale_raw_zero_then_forward_scale",
+      "reference_value": "raw_0.0_maps_to_scaled_minus_mean_over_scale",
+      "scaler": "r52_T20_s1_trainonly_standardscaler_v1",
+      "total_events_recomputed": true,
+      "is_active_day_recomputed": true,
+      "active_duration_rule": "zero_if_day_inactive_else_retain_residual_multi_source_span",
+      "labels_change": false,
+      "intervention_class": "CONTROLLED_SOURCE_CHANNEL_ABLATION",
+      "not_physical_source_absence": true,
+      "source_list": [
+        "logon",
+        "device",
+        "file",
+        "email",
+        "http"
+      ],
+      "source_selection": "predeclared_five_channels_no_result_driven_choice",
+      "terminology": "CONTROLLED_SOURCE_CHANNEL_ABLATION"
+    },
+    "gaussian_noise": {
+      "implementation_id": "objective3_perturbations.gaussian_noise_continuous",
+      "module": "src/objective3_perturbations.py",
+      "function": "apply_paired_perturbation",
+      "inner_function": "gaussian_noise_continuous",
+      "distribution": "bounded_gaussian_elementwise",
+      "scale_definition": "std_equals_level_times_max_abs_x_1e-3_clip_pm_level_times_scale_floor_at_0",
+      "binary_features": "untouched_indices_7_to_12",
+      "continuous_features": "indices_0_to_6_only",
+      "levels": [
+        0.05,
+        0.1,
+        0.2
+      ],
+      "perturbation_seed": 101,
+      "rng": "apply_paired_perturbation_sha256_derived_per_level",
+      "labels_change": false,
+      "total_events_recomputed": false,
+      "active_duration_changed_by_rule": false,
+      "validation_derived_parameter": false,
+      "terminology": "CONTROLLED_GAUSSIAN_INPUT_NOISE"
+    },
+    "rejected_mixins": [
+      "scaled_space_zero_ablation_used_only_as_r52_fallback_when_scaler_unverified",
+      "additive_all_feature_gaussian_from_value_audit_and_tradeoff",
+      "paper_r42_scaler_must_not_be_applied_to_r52_tensors"
+    ],
+    "severities_frozen_before_results": true,
+    "source_list_frozen_before_results": true,
+    "validation_derived_noise_parameter": false,
+    "validation_derived_source_selection": false,
+    "labels_unchanged": true
+  },
+  "frozen_clean_val_PR_AUC_TA2": {
+    "42": 0.9454098053584642,
+    "52": 0.9337067425514769,
+    "62": 0.9494100170861509
+  },
+  "frozen_ta2_mean": 0.9428421883320307,
+  "editor020_ta2_r0_inner": {
+    "42": 0.9357336366198652
+  },
+  "CURRENT_PAPER_MODEL_AT_START": "TA2",
+  "CLEAN_ODST_PREDICTIVE_SUPERIORITY": "NOT_SUPPORTED",
+  "GLOBAL_TOPK_PR_AUC_FAITHFULNESS": "NOT_SUPPORTED",
+  "SOURCE_CHANNELS": [
+    "logon",
+    "device",
+    "file",
+    "email",
+    "http"
+  ],
+  "NOISE_LEVELS": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "SAMPLER_SEED": 42,
+  "P_source": 0.5,
+  "P_noise": 0.5,
+  "RESULT_STATUS_AT_START": "UNSEEN"
+}

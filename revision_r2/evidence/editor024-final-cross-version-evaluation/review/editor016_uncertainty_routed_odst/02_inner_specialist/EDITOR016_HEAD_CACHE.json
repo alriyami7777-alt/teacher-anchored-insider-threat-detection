@@ -1,0 +1,9 @@
+{
+  "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor016\\outputs\\editor016_uncertainty_routed_odst\\cache\\inner_seed42.npz",
+  "SHA256": "02554431e1c9fc6ef7c2bd96322671b2dbc778b3753763497eb0643161b303d4",
+  "INNER_TRAIN_n": 622000,
+  "INNER_SELECT_n": 128000,
+  "z_dim": 128,
+  "seed": 42,
+  "official_validation_used": false
+}

@@ -1,0 +1,23 @@
+{
+  "cluster": "user",
+  "n_users": 2000,
+  "n_valid_resamples": 2000,
+  "n_attempted_draws": 2000,
+  "seed": 42,
+  "sampling_unit": "validation user",
+  "statistic": "mean_across_seeds_delta_PR_AUC_R2OPT_minus_C2OPT",
+  "mean_delta_pr_auc": 0.002188074065476287,
+  "ci95_pr_auc": [
+    -0.0005706871795265717,
+    0.00575289244919462
+  ],
+  "mean_delta_f1": 0.002190789117538915,
+  "ci95_f1": [
+    -0.006336236675482522,
+    0.009568129804263014
+  ],
+  "note": "user-cluster bootstrap; windows not independent; three seeds are not independent experimental units",
+  "malicious_users_represented": 31,
+  "effective_malicious_cluster_support": 31,
+  "three_seeds_are_not_independent_experimental_units": true
+}

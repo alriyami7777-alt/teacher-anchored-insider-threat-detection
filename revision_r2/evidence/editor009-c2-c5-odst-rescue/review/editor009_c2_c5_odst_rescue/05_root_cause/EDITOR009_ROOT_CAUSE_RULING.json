@@ -1,0 +1,82 @@
+{
+  "H1_CONSTANT_ANCHORING_PREVENTS_LATE_SUPERVISED_DEPARTURE": "SUPPORTED",
+  "H2_ROUTE_ANCHOR_GRADIENT_OPPOSES_TASK_GRADIENT": "NOT_SUPPORTED",
+  "H3_LOGIT_ANCHOR_GRADIENT_OPPOSES_TASK_GRADIENT": "SUPPORTED",
+  "H4_BENIGN_MAJORITY_DOMINATES_ANCHORING": "SUPPORTED",
+  "H5_RANDOM_INIT_ROUTE_CORRESPONDENCE_IS_INVALID": "SUPPORTED",
+  "H6_ODST_ROUTING_SATURATION_OR_LEAF_COLLAPSE_LIMITS_OPTIMISATION": "SUPPORTED",
+  "H7_ODST_IS_REDUNDANT_GIVEN_LINEARLY_SEPARABLE_ATTENDED_REPRESENTATION": "PARTIALLY_SUPPORTED",
+  "H8_C5_INHERITS_TEACHER_ERRORS": "SUPPORTED",
+  "H9_CURRENT_TEACHER_HAS_INSUFFICIENT_PREDICTIVE_HEADROOM": "PARTIALLY_SUPPORTED",
+  "H10_RESIDUAL_ODST_EXTRACTS_ADDITIONAL_NONLINEAR_SIGNAL": "SUPPORTED",
+  "H11_ANNEALED_OR_SELECTIVE_ANCHORING_IMPROVES_OVER_C2": "NOT_SUPPORTED",
+  "evidence": {
+    "headroom": {
+      "seed": 42,
+      "teacher_PR_AUC": 0.9334004808363426,
+      "C2_PR_AUC": 0.9318418728771596,
+      "C5_PR_AUC": 0.933577847233109,
+      "attention_linear_PR_AUC": 0.9378754065901991,
+      "rank_corr_teacher_C2": 0.9899101568445322,
+      "rank_corr_teacher_C5": 0.9963621467407608,
+      "rank_corr_C2_C5": 0.9853588570952521,
+      "logit_corr_teacher_C2": 0.9899101568445322,
+      "logit_corr_teacher_C5": 0.9963621467407608,
+      "C5_closer_to_teacher_than_C2": true,
+      "delta_C5_minus_C2": 0.00173597435594941,
+      "delta_C2_minus_teacher": -0.001558607959183056,
+      "delta_C5_minus_teacher": 0.00017736639676635413,
+      "disagreement_C2_teacher": 0.000375,
+      "disagreement_C5_teacher": 0.000109375,
+      "positive_disagreement_C2_teacher": 0.012362637362637362,
+      "positive_disagreement_C5_teacher": 0.006868131868131868,
+      "negative_disagreement_C2_teacher": 0.0002370716904792009,
+      "negative_disagreement_C5_teacher": 3.160955873056012e-05,
+      "C2_corrects_teacher_errors": 8,
+      "C5_reverts_C2_corrections_toward_teacher": 4,
+      "does_teacher_leave_headroom": true,
+      "C5_mainly_reproduces_teacher_ranking": true
+    },
+    "gradient_c5": {
+      "tag": "C5_trained",
+      "seed": 42,
+      "phase": "late_checkpoint",
+      "w_logit": 0.5,
+      "w_route": 0.5,
+      "task_loss": 0.6239722967147827,
+      "logit_anchor_loss": 0.01066106092184782,
+      "route_anchor_loss": 0.001674171769991517,
+      "grad_task_all": 0.11029938608407974,
+      "grad_logit_all": 0.2940637171268463,
+      "grad_route_all": 0.010648038238286972,
+      "grad_task_odst": 0.10694132000207901,
+      "grad_logit_odst": 0.1406635195016861,
+      "grad_route_odst": 0.007858079858124256,
+      "cos_task_logit": -0.24622297359613274,
+      "cos_task_route": 0.1539178529351534,
+      "cos_logit_route": 0.38335322787996706,
+      "n_pos": 3
+    },
+    "permutation": {
+      "raw_index_route_loss": 0.06557057797908783,
+      "permuted_route_loss_mean": 1.7085140496492386,
+      "permuted_route_loss_std": 0.28824763536304526,
+      "ratio_perm_over_raw": 26.056107820097733,
+      "ROUTE_ANCHOR_PERMUTATION_SENSITIVE": "YES",
+      "RAW_INDEX_CORRESPONDENCE_IS_STRUCTURALLY_INVALID_UNDER_RANDOM_INIT": "SUPPORTED",
+      "ROUTE_INDEX_IDENTITY_ASSUMED": "YES",
+      "matched_route_loss": 1.7543364763259888,
+      "raw_vs_matched": {
+        "raw": 0.06557057797908783,
+        "matched": 1.7543364763259888
+      }
+    },
+    "odst_c5_saturation": 0.9902925491333008,
+    "odst_c5_routing_entropy": NaN,
+    "classifications": {
+      "R8": "CLEAR_DEVELOPMENT_RESCUE",
+      "R7": "CLEAR_DEVELOPMENT_RESCUE",
+      "R2": "CLEAR_DEVELOPMENT_RESCUE"
+    }
+  }
+}

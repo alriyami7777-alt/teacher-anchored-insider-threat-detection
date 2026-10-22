@@ -1,0 +1,195 @@
+{
+  "HISTORICAL_PARITY_GATE": "PASS",
+  "tolerance": 0.0005,
+  "live_means": {
+    "C2-OPT": 0.9353238885175368,
+    "F10": 0.9425948632340028,
+    "TA2": 0.9428421883320307,
+    "L1": 0.9388809579807144
+  },
+  "frozen_means": {
+    "C2-OPT": 0.9353238885175368,
+    "F10": 0.9425948632340028,
+    "TA2": 0.9428421883320307,
+    "L1": 0.9388809579807144
+  },
+  "rows": [
+    {
+      "model": "C2-OPT",
+      "seed": 42,
+      "live_PR_AUC": 0.9443205892331505
+    },
+    {
+      "model": "C2-OPT",
+      "seed": 52,
+      "live_PR_AUC": 0.9214711755922543
+    },
+    {
+      "model": "C2-OPT",
+      "seed": 62,
+      "live_PR_AUC": 0.9401799007272055,
+      "model_mean": 0.9353238885175368,
+      "frozen_mean": 0.9353238885175368,
+      "delta": 0.0,
+      "PASS": true
+    },
+    {
+      "model": "F10",
+      "seed": 42,
+      "live_PR_AUC": 0.9441007472746944
+    },
+    {
+      "model": "F10",
+      "seed": 52,
+      "live_PR_AUC": 0.9361330144482553
+    },
+    {
+      "model": "F10",
+      "seed": 62,
+      "live_PR_AUC": 0.9475508279790588,
+      "model_mean": 0.9425948632340028,
+      "frozen_mean": 0.9425948632340028,
+      "delta": 0.0,
+      "PASS": true
+    },
+    {
+      "model": "TA2",
+      "seed": 42,
+      "live_PR_AUC": 0.9454098053584642
+    },
+    {
+      "model": "TA2",
+      "seed": 52,
+      "live_PR_AUC": 0.9337067425514769
+    },
+    {
+      "model": "TA2",
+      "seed": 62,
+      "live_PR_AUC": 0.9494100170861509,
+      "model_mean": 0.9428421883320307,
+      "frozen_mean": 0.9428421883320307,
+      "delta": 0.0,
+      "PASS": true
+    },
+    {
+      "model": "L1",
+      "seed": 42,
+      "live_PR_AUC": 0.9368690603400606
+    },
+    {
+      "model": "L1",
+      "seed": 52,
+      "live_PR_AUC": 0.9360656904165168
+    },
+    {
+      "model": "L1",
+      "seed": 62,
+      "live_PR_AUC": 0.9437081231855656,
+      "model_mean": 0.9388809579807144,
+      "frozen_mean": 0.9388809579807144,
+      "delta": 0.0,
+      "PASS": true
+    }
+  ],
+  "checkpoints": {
+    "CHECKPOINT_GATE": "PASS",
+    "records": [
+      {
+        "model": "C2-OPT",
+        "seed": 42,
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed42\\best_student.pt",
+        "expected_sha256": "d64651d25e48b3bcd4cad7d107d3bc55a4c555a2827f3656a087624e94ac4baf",
+        "observed_sha256": "d64651d25e48b3bcd4cad7d107d3bc55a4c555a2827f3656a087624e94ac4baf",
+        "PASS": true
+      },
+      {
+        "model": "C2-OPT",
+        "seed": 52,
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed52\\best_student.pt",
+        "expected_sha256": "f0eea90099ba7dd3e721efb930e367e868049c94f6542d5b2156d9fe469acb7e",
+        "observed_sha256": "f0eea90099ba7dd3e721efb930e367e868049c94f6542d5b2156d9fe469acb7e",
+        "PASS": true
+      },
+      {
+        "model": "C2-OPT",
+        "seed": 62,
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed62\\best_student.pt",
+        "expected_sha256": "50512aa5392ee7f4d93dc5f84471fc1074baeb757ae9fb5b96caed141ee586da",
+        "observed_sha256": "50512aa5392ee7f4d93dc5f84471fc1074baeb757ae9fb5b96caed141ee586da",
+        "PASS": true
+      },
+      {
+        "model": "F10",
+        "seed": 42,
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F10_DOPT\\seed42\\best_student.pt",
+        "expected_sha256": "ea8cd41a1ae3f845719956fd7a49230fa82807ffac87841be5f5ab95c64ac0c2",
+        "observed_sha256": "ea8cd41a1ae3f845719956fd7a49230fa82807ffac87841be5f5ab95c64ac0c2",
+        "PASS": true
+      },
+      {
+        "model": "F10",
+        "seed": 52,
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F10_DOPT\\seed52\\best_student.pt",
+        "expected_sha256": "829135230c5629f0b11161e11d76eba7a15e65bf9d03b5a55ffa297a93ddf959",
+        "observed_sha256": "829135230c5629f0b11161e11d76eba7a15e65bf9d03b5a55ffa297a93ddf959",
+        "PASS": true
+      },
+      {
+        "model": "F10",
+        "seed": 62,
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F10_DOPT\\seed62\\best_student.pt",
+        "expected_sha256": "06313d6f2602de51f8dd6e15e1d1292864fd8cbd158f33977fa42c8a47036aee",
+        "observed_sha256": "06313d6f2602de51f8dd6e15e1d1292864fd8cbd158f33977fa42c8a47036aee",
+        "PASS": true
+      },
+      {
+        "model": "TA2",
+        "seed": 42,
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed42\\best_student.pt",
+        "expected_sha256": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8",
+        "observed_sha256": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8",
+        "PASS": true
+      },
+      {
+        "model": "TA2",
+        "seed": 52,
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed52\\best_student.pt",
+        "expected_sha256": "7613ba559bcf55827d04129066eb595b677994494609646f8b2463308ed5edb4",
+        "observed_sha256": "7613ba559bcf55827d04129066eb595b677994494609646f8b2463308ed5edb4",
+        "PASS": true
+      },
+      {
+        "model": "TA2",
+        "seed": 62,
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed62\\best_student.pt",
+        "expected_sha256": "904003dca219435464476cf36abedb11ee4e2f7a11ff09caa3791d685b8f644d",
+        "observed_sha256": "904003dca219435464476cf36abedb11ee4e2f7a11ff09caa3791d685b8f644d",
+        "PASS": true
+      },
+      {
+        "model": "L1",
+        "seed": 42,
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed42\\best.pt",
+        "expected_sha256": "513e272063250aa209efa2c42b490cc44316c7979fa6b2be5dd8cce4592d1ab2",
+        "observed_sha256": "513e272063250aa209efa2c42b490cc44316c7979fa6b2be5dd8cce4592d1ab2",
+        "PASS": true
+      },
+      {
+        "model": "L1",
+        "seed": 52,
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed52\\best.pt",
+        "expected_sha256": "a503f6705955da221bdbd1921034e9102b90db6acb5187114276ccaeb474e1c4",
+        "observed_sha256": "a503f6705955da221bdbd1921034e9102b90db6acb5187114276ccaeb474e1c4",
+        "PASS": true
+      },
+      {
+        "model": "L1",
+        "seed": 62,
+        "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor013\\outputs\\editor013_odst_value_proof\\L1\\seed62\\best.pt",
+        "expected_sha256": "60d5c43692a17ba6971c8d23f74048ac3c4fe0bd1b18889eeb21bbab7bf3d3e9",
+        "observed_sha256": "60d5c43692a17ba6971c8d23f74048ac3c4fe0bd1b18889eeb21bbab7bf3d3e9",
+        "PASS": true
+      }
+    ]
+  }
+}

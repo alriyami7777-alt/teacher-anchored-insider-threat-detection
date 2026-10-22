@@ -1,0 +1,12 @@
+{
+  "identity_sha256": "9fad3220967a83a45964e4aecc5cd1e42d6d539c8f0176f5baa01c59933770db",
+  "artifacts": {
+    "RUN_IDENTITY.json": "7a76afe274d3ecd015e39878e652b34c61b2be29c3a173f73cc51828c880e9c5",
+    "MODEL.pt": "08ac15aa7253d769bfbc5d1e68d294c7acf127ef5be9f1014d068ec4edcdbc01",
+    "PREDICTIONS_LOCAL.npz": "0c958f428685d509da03bb84d4ba412889d4a5129341db85c5eb01c579a1c985",
+    "RESULT.json": "ae7cefd574aa6c768cf24b35733608153ded9eddda9854fa9c6744e37b327d7e",
+    "TRAINING_HISTORY.json": "b29b0458d58d8150de790d6740a315961f4cd1bd59d3c1d472eab04cd6a47085",
+    "COST.json": "62b8c7b63cdb6b6dab3600b02ce8c06afdcc584ed204a7abfb1dbce414b0bde5",
+    "PAIRING.json": "3ce1fb58664d904b216c1a0cee02fe62bc9a932047db2844db22f9a4934cd9a3"
+  }
+}

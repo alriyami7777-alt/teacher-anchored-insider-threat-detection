@@ -1,0 +1,55 @@
+{
+  "binding": {
+    "data": {
+      "schema": "F29",
+      "partition": "outer",
+      "representation_sha256": "083c90400aaf6de2f8bf7cde26c82f7dd898be38bb72290398abe2287b9beb30",
+      "columns": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day",
+        "outside_0800_1800_event_count",
+        "outside_0800_1800_event_fraction",
+        "active_hour_bins",
+        "largest_hour_event_fraction",
+        "unique_pc_count",
+        "largest_pc_event_fraction",
+        "logon_start_count",
+        "device_connect_count",
+        "file_write_count",
+        "file_to_removable_count",
+        "email_sent_count",
+        "email_sent_unique_recipient_count",
+        "email_sent_size_sum",
+        "email_sent_attachment_count",
+        "http_unique_hostname_count",
+        "largest_http_hostname_fraction"
+      ],
+      "preprocessor_sha256": "8c6a0409ecd8d84c9ebdc800e45c2dfa88674207cde7a3fbf6fabed02b31af94",
+      "train_labels_sha256": "ac52cdae8f762f303a726c57bf753fe4125dab12f87b3eb23d29eac7cf5678bb",
+      "eval_labels_sha256": "91f8c9065b53cc1835e9a10541e916d8c8ec4d0b0b98b71fa30f0e2748f2ba39"
+    },
+    "manifest_sha256": "55d25c09e52b70161fec902034776659eff2370219c76e07321cfea4ecdc32f9",
+    "teachers": [
+      "66fb2bbc9e67f6b6d6c4e9dbaca1437cfaefee9c3b95e34de2cb47a00a17eefa",
+      "54e8f8507160d59174596dfbb22392e3888b100f22beaabc1200a8358b539a5a",
+      "02ef62def1ea6d5bb7938bc8b4c836047c441a666a778a64b159ef8caa06e8e5"
+    ]
+  },
+  "artifacts": {
+    "TRAIN_LOGITS.npy": "71124775af4a777977a0dc1990ce005100c971b1cf00c0e828c6f65e2333e943",
+    "EVAL_LOGITS.npy": "a2244aec2ee7ce9b81ec72fd924ed6c306f6bfff33338d40e4e869f397fe2c72",
+    "RESULT.json": "82c35ddfd90054d9b66508335f94510ce70c4cedd7c0e2315c7c0cfc05387a8c"
+  },
+  "new_fits": 0
+}

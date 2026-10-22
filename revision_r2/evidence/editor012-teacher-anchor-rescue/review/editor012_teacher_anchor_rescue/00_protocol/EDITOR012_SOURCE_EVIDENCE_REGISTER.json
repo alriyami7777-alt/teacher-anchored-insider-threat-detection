@@ -1,0 +1,192 @@
+{
+  "task_id": "EDITOR-012",
+  "status": "PHASE_A_FROZEN_BEFORE_RESULTS",
+  "hash_method": "SHA-256 of file bytes",
+  "read_only_inspection": true,
+  "EDITOR009_RESULTS_COMMIT": "0182685656ec99fe2edcda2d00179a7400db9d06",
+  "EDITOR010_RESULTS_COMMIT": "3c5ac01d6739df91f50dcc3ba0258a019dcb3119",
+  "EDITOR011_RESULTS_COMMIT": "65214bdeb51f9a04925be41d3b4c778de75cf088",
+  "BASE_COMMIT": "cde793de9135c8d4f6491d204f586ce8e00c3e0d",
+  "historical_packets_readonly": true,
+  "ET1_recovered_from_producing_artefacts": true,
+  "ET1_formula": "L = L_task + 0.5 * mean((student_logit - mean(T-OPT logits))^2)",
+  "ET1_temperature": null,
+  "ET1_lambda": 0.5,
+  "ET1_equal_weight": true,
+  "ET1_route_anchor": false,
+  "teacher_ensemble": "T-OPT(42), T-OPT(52), T-OPT(62)",
+  "producing_pins": {
+    "architecture": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd",
+    "odst": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb",
+    "sequence_ensemble": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475"
+  },
+  "sources": [
+    {
+      "role": "EDITOR010_ODST_GRID",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor010\\review\\editor010_capacity_objective_teacher_rescue\\03_odst_landscape\\EDITOR010_ODST_GRID.json",
+      "exists": true,
+      "sha256": "e11dc4a9f00cc760350d4b993e0b83d9067ca39d2ab67c2afed0ddbc543f7825",
+      "bytes": 17942
+    },
+    {
+      "role": "EDITOR010_ET1_TRAIN_IMPL",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor010\\src\\editor010_rescue\\train.py",
+      "exists": true,
+      "sha256": "ce6c12752b6f53f224037c98f400bc9f380e4f733a4b2cbc11237824451283fb",
+      "bytes": 11823
+    },
+    {
+      "role": "EDITOR010_ET1_WEIGHT",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor010\\src\\editor010_rescue\\constants.py",
+      "exists": true,
+      "sha256": "ac1ec36df152d7c3cfe6429d16e22957e7652bdaffc5537c0506b233a8d79444",
+      "bytes": 9979
+    },
+    {
+      "role": "EDITOR010_PROMOTION_FREEZE",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor010\\review\\editor010_capacity_objective_teacher_rescue\\06_promoted_full_r52\\EDITOR010_PROMOTION_FREEZE.json",
+      "exists": true,
+      "sha256": "6fe67adc5a7c804502e8fa51e96c24d7f373dfbc9a36b451356694b739a3b9ef",
+      "bytes": 2910
+    },
+    {
+      "role": "EDITOR010_INNER_SPLIT",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor010\\review\\editor010_capacity_objective_teacher_rescue\\01_inner_development\\EDITOR010_INNER_SPLIT.json",
+      "exists": true,
+      "sha256": "08bad1e0b6c84eed6b7f88dca016db338424c69dd36d6924b22a095a916dab38",
+      "bytes": 493
+    },
+    {
+      "role": "EDITOR010_INNER_SPLIT_CHECKSUMS",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor010\\review\\editor010_capacity_objective_teacher_rescue\\01_inner_development\\EDITOR010_INNER_SPLIT_CHECKSUMS.json",
+      "exists": true,
+      "sha256": "c80f158c1a0617425a58e02da20bb24a1e6b7fa72e963ade77eaa88b0f1f0cd3",
+      "bytes": 232
+    },
+    {
+      "role": "EDITOR011_ODST046_LOCK",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\review\\editor011_matched_route_confirmation\\00_protocol\\EDITOR011_ODST046_LOCK.json",
+      "exists": true,
+      "sha256": "76ba108627a7ba8560450dd746d3083d7fc23d9bcaa0bf37cbb02e095eda7ab9",
+      "bytes": 2650
+    },
+    {
+      "role": "EDITOR011_TOPT_CHECKPOINTS",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\review\\editor011_matched_route_confirmation\\01_teacher_training\\EDITOR011_TOPT_CHECKPOINTS.json",
+      "exists": true,
+      "sha256": "44126f4bad721e3f56853654fd9071b7c8c50dd6b7d41c834d296bbf1e3f4efa",
+      "bytes": 3525
+    },
+    {
+      "role": "EDITOR011_STUDENT_CHECKPOINTS",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\review\\editor011_matched_route_confirmation\\02_student_training\\EDITOR011_STUDENT_CHECKPOINTS.json",
+      "exists": true,
+      "sha256": "03397c586e85a4b7215d108d7a61e6eff173533f037d3e321f0ce1000dd6f37d",
+      "bytes": 2887
+    },
+    {
+      "role": "EDITOR011_USER_MAPPING",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\review\\editor011_matched_route_confirmation\\05_statistics\\EDITOR011_VALIDATION_USER_MAPPING.json",
+      "exists": true,
+      "sha256": "63f884c9057299f8a8d7fdf0f471f746b947f9886c38750dd5a991f577a91345",
+      "bytes": 1106
+    },
+    {
+      "role": "r52_train_npz",
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_train.npz",
+      "exists": true,
+      "sha256": "b268328d3bf2e98f712d1145958dabe175ce2c07a7c390da4b84a663317ebc2e",
+      "bytes": 12866585
+    },
+    {
+      "role": "r52_validation_npz",
+      "path": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_validation.npz",
+      "exists": true,
+      "sha256": "5ac2e7e8fbd50eb62638cdb8c9d444464e02ff2ea20ba55989c36926dd751a5c",
+      "bytes": 1291503
+    },
+    {
+      "role": "T-OPT_seed42",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed42\\best_teacher.pt",
+      "exists": true,
+      "sha256": "b007f48085ef42b146b22a0d5ace5bb9c8380874405622281a5903831599fb20",
+      "bytes": 239481,
+      "expected_sha256": "b007f48085ef42b146b22a0d5ace5bb9c8380874405622281a5903831599fb20",
+      "hash_match": true
+    },
+    {
+      "role": "T-OPT_seed52",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed52\\best_teacher.pt",
+      "exists": true,
+      "sha256": "5b4c17e15a8f49ba8cf240c0092b893e6e665232967fafce8eb13e0650227f2a",
+      "bytes": 239481,
+      "expected_sha256": "5b4c17e15a8f49ba8cf240c0092b893e6e665232967fafce8eb13e0650227f2a",
+      "hash_match": true
+    },
+    {
+      "role": "T-OPT_seed62",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed62\\best_teacher.pt",
+      "exists": true,
+      "sha256": "24bf2efa2343e4aaf5f32871c0a9bffb3d511f345375ce754e9f081f82eac02c",
+      "bytes": 239481,
+      "expected_sha256": "24bf2efa2343e4aaf5f32871c0a9bffb3d511f345375ce754e9f081f82eac02c",
+      "hash_match": true
+    },
+    {
+      "role": "C2-OPT_seed42",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed42\\best_student.pt",
+      "exists": true,
+      "sha256": "d64651d25e48b3bcd4cad7d107d3bc55a4c555a2827f3656a087624e94ac4baf",
+      "bytes": 239545,
+      "expected_sha256": "d64651d25e48b3bcd4cad7d107d3bc55a4c555a2827f3656a087624e94ac4baf",
+      "hash_match": true
+    },
+    {
+      "role": "C2-OPT_seed52",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed52\\best_student.pt",
+      "exists": true,
+      "sha256": "f0eea90099ba7dd3e721efb930e367e868049c94f6542d5b2156d9fe469acb7e",
+      "bytes": 239545,
+      "expected_sha256": "f0eea90099ba7dd3e721efb930e367e868049c94f6542d5b2156d9fe469acb7e",
+      "hash_match": true
+    },
+    {
+      "role": "C2-OPT_seed62",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\C2-OPT\\seed62\\best_student.pt",
+      "exists": true,
+      "sha256": "50512aa5392ee7f4d93dc5f84471fc1074baeb757ae9fb5b96caed141ee586da",
+      "bytes": 239545,
+      "expected_sha256": "50512aa5392ee7f4d93dc5f84471fc1074baeb757ae9fb5b96caed141ee586da",
+      "hash_match": true
+    },
+    {
+      "role": "R2-OPT_seed42",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\R2-OPT\\seed42\\best_student.pt",
+      "exists": true,
+      "sha256": "ecc7ec7c3b1628ffc2bbec62efbb006d867fcbefe577f556d058de79d161ba63",
+      "bytes": 239545,
+      "expected_sha256": "ecc7ec7c3b1628ffc2bbec62efbb006d867fcbefe577f556d058de79d161ba63",
+      "hash_match": true
+    },
+    {
+      "role": "R2-OPT_seed52",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\R2-OPT\\seed52\\best_student.pt",
+      "exists": true,
+      "sha256": "917bce3a2c9e783791f01f3b642c1bdaa79ed0a2e7c402c04d3c0151e76915b1",
+      "bytes": 239545,
+      "expected_sha256": "917bce3a2c9e783791f01f3b642c1bdaa79ed0a2e7c402c04d3c0151e76915b1",
+      "hash_match": true
+    },
+    {
+      "role": "R2-OPT_seed62",
+      "path": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\R2-OPT\\seed62\\best_student.pt",
+      "exists": true,
+      "sha256": "9e3e7d92de7ac30a48229127a0784ac7514f620359499a3c84b8e00e1a7670bc",
+      "bytes": 239545,
+      "expected_sha256": "9e3e7d92de7ac30a48229127a0784ac7514f620359499a3c84b8e00e1a7670bc",
+      "hash_match": true
+    }
+  ],
+  "r52_test_opened": false,
+  "r52_test_hashed": false
+}

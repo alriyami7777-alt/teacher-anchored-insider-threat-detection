@@ -1,0 +1,107 @@
+{
+  "L1": {
+    "rounds": [
+      {
+        "round": 1,
+        "n_timed": 200,
+        "median_s": 0.0024514500109944493,
+        "iqr_s": 0.0007545500702690333,
+        "mean_s": 0.002458911000576336
+      },
+      {
+        "round": 2,
+        "n_timed": 200,
+        "median_s": 0.0024882500001695007,
+        "iqr_s": 0.0007550250447820872,
+        "mean_s": 0.0025414005003403873
+      },
+      {
+        "round": 3,
+        "n_timed": 200,
+        "median_s": 0.002433799993013963,
+        "iqr_s": 0.0006963999912841246,
+        "mean_s": 0.0024661174995708277
+      },
+      {
+        "round": 4,
+        "n_timed": 200,
+        "median_s": 0.0022570999863091856,
+        "iqr_s": 0.000683374993968755,
+        "mean_s": 0.0024413975010975264
+      },
+      {
+        "round": 5,
+        "n_timed": 200,
+        "median_s": 0.0021044999884907156,
+        "iqr_s": 0.000670900015393272,
+        "mean_s": 0.0023629910021554677
+      }
+    ],
+    "median_latency_s": 0.002433799993013963,
+    "iqr_latency_s": 0.0006963999912841246,
+    "throughput_sequences_per_s": 420741.22891745984,
+    "warmup_batches": 50,
+    "timed_batches": 200,
+    "independent_rounds": 5,
+    "batch_size": 1024,
+    "cuda_synchronize": true,
+    "validation_tensor": true,
+    "descriptive_only": true,
+    "parameter_count": 48897,
+    "total_loaded_parameter_count": 57677,
+    "checkpoint_size": 238877
+  },
+  "TA2": {
+    "rounds": [
+      {
+        "round": 1,
+        "n_timed": 200,
+        "median_s": 0.004120650002732873,
+        "iqr_s": 0.0008264000352937728,
+        "mean_s": 0.004200522999162785
+      },
+      {
+        "round": 2,
+        "n_timed": 200,
+        "median_s": 0.004036099999211729,
+        "iqr_s": 0.0007857499731471762,
+        "mean_s": 0.004125326499924995
+      },
+      {
+        "round": 3,
+        "n_timed": 200,
+        "median_s": 0.00406839998322539,
+        "iqr_s": 0.0006876749830553308,
+        "mean_s": 0.004121653000474908
+      },
+      {
+        "round": 4,
+        "n_timed": 200,
+        "median_s": 0.003909699997166172,
+        "iqr_s": 0.0008631000091554597,
+        "mean_s": 0.004050255498150364
+      },
+      {
+        "round": 5,
+        "n_timed": 200,
+        "median_s": 0.0039937500259839,
+        "iqr_s": 0.0009236750047421083,
+        "mean_s": 0.004110562999267131
+      }
+    ],
+    "median_latency_s": 0.004036099999211729,
+    "iqr_latency_s": 0.0008264000352937728,
+    "throughput_sequences_per_s": 253710.2649091927,
+    "warmup_batches": 50,
+    "timed_batches": 200,
+    "independent_rounds": 5,
+    "batch_size": 1024,
+    "cuda_synchronize": true,
+    "validation_tensor": true,
+    "descriptive_only": true,
+    "parameter_count": 57548,
+    "checkpoint_size": 239673
+  },
+  "same_gpu": true,
+  "same_batch_size": 1024
+}

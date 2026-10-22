@@ -1,0 +1,93 @@
+{
+  "R61_R62_SHIFT_VECTOR_CORRELATION": 0.9989583062467048,
+  "R61_R51_SHIFT_VECTOR_CORRELATION": -0.19598609013295454,
+  "descriptive_resemblance": "r6 generation",
+  "causal_statement": "NONE",
+  "r51_rerun": "NO",
+  "r62_rerun": "NO",
+  "r61_shift_vector_abs_mean_shift_z": {
+    "total_events": 0.1587618550296383,
+    "logon_count": 0.04096792641043758,
+    "device_count": 0.005226937994736664,
+    "file_count": 0.03784128581107536,
+    "email_count": 0.6442391695392732,
+    "http_count": 0.018428916497261597,
+    "active_duration_minutes": 0.06105442131594883,
+    "has_logon_activity": 0.009228204223875857,
+    "has_device_activity": 0.004882516154525145,
+    "has_file_activity": 0.22486704669288815,
+    "has_email_activity": 0.021479549668506782,
+    "has_http_activity": 0.00844613848798373,
+    "is_active_day": 0.011362341413065238
+  },
+  "r62_frozen_abs_mean_shift": {
+    "total_events": 0.16137824873465834,
+    "logon_count": 0.04195716337693503,
+    "device_count": 0.023524271608322767,
+    "file_count": 0.02851629280154796,
+    "email_count": 0.6446153950437812,
+    "http_count": 0.01968189207563814,
+    "active_duration_minutes": 0.053508080520958075,
+    "has_logon_activity": 0.011169109252555662,
+    "has_device_activity": 0.02442522401421525,
+    "has_file_activity": 0.23059279523815454,
+    "has_email_activity": 0.02357081480631228,
+    "has_http_activity": 0.01058386750139461,
+    "is_active_day": 0.013304853612925448
+  },
+  "r51_frozen_abs_mean_shift": {
+    "total_events": 0.002737227409403461,
+    "logon_count": 0.007366952108944383,
+    "device_count": 0.017109699876946445,
+    "file_count": 0.012993164428636914,
+    "email_count": 0.006223244044609241,
+    "http_count": 0.003191351320191595,
+    "active_duration_minutes": 0.027765897864357823,
+    "has_logon_activity": 0.00785050085579293,
+    "has_device_activity": 0.015078085820470835,
+    "has_file_activity": 0.011506945577586818,
+    "has_email_activity": 0.007742835316496532,
+    "has_http_activity": 0.007117890566018133,
+    "is_active_day": 0.008303312196712279
+  },
+  "common_top_shift_features": {
+    "r61_top5": [
+      "email_count",
+      "total_events",
+      "has_file_activity",
+      "http_count",
+      "active_duration_minutes"
+    ],
+    "r62_frozen_rank": [
+      "email_count",
+      "has_file_activity",
+      "total_events",
+      "active_duration_minutes",
+      "logon_count",
+      "file_count",
+      "has_device_activity",
+      "has_email_activity",
+      "device_count",
+      "http_count",
+      "is_active_day",
+      "has_logon_activity",
+      "has_http_activity"
+    ],
+    "r51_frozen_rank": [
+      "active_duration_minutes",
+      "device_count",
+      "has_device_activity",
+      "file_count",
+      "has_file_activity",
+      "is_active_day",
+      "has_logon_activity",
+      "has_email_activity",
+      "logon_count",
+      "has_http_activity",
+      "email_count",
+      "http_count",
+      "total_events"
+    ]
+  },
+  "source": "review/editor007d_cross_version_synthesis/EDITOR007D_FEATURE_SHIFT.json"
+}

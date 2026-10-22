@@ -1,0 +1,60 @@
+{
+  "scope": "CERT_STUDY",
+  "manifest_sha256": "55d25c09e52b70161fec902034776659eff2370219c76e07321cfea4ecdc32f9",
+  "recorded_utc": "2026-10-09T04:43:07.978736+00:00",
+  "report_path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\audit\\stage2_v06_response_20261009\\tl_final_round_20261009\\final_clearance\\AUDIT_REPORT_FINAL_ROUND_TL.md",
+  "report_sha256": "727b898516532c53dde86fb9bdff7a94bccac9466a4a5a8d2684232462f0d512",
+  "findings_path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\audit\\stage2_v06_response_20261009\\tl_final_round_20261009\\final_clearance\\AUDIT_FINDINGS_FINAL_ROUND_TL.json",
+  "findings_sha256": "1b7f2f3ea983f8881cb15bd7da5ee94d131a29656ce150c907867a7554d2ba20",
+  "provenance": "Report copied byte-for-byte from user attachment 441d711e-23c5-4415-a7d3-326388b0ef21/Pasted text.txt. Findings faithfully transcribed from the user-provided JSON in this thread; no independent verdict authored by Codex.",
+  "transport_disclosure": "Local pasted/transcribed copies do not reproduce the quoted original download hash prefixes; actual retained-copy hashes above are used. Original download byte identities are not claimed.",
+  "original_download_hash_prefixes_as_reported": {
+    "report": "f9d0b2ea",
+    "findings": "9dee485f"
+  },
+  "claude_is_not_launch_approver": true,
+  "no_new_review_sent": true,
+  "verdict": "NO_BLOCKING_DEFECT_FOUND",
+  "execution_verdict": "READY",
+  "reported_implementation_verdict": "NO_BLOCKING_DEFECT_FOUND_WITHIN_VERIFIED_SCOPE",
+  "conditions": [],
+  "verification_limits": [
+    "Producer suites not executed by reviewer; no CUDA execution",
+    "Reduced-dimension orchestration",
+    "Saved-array preflight is producer evidence",
+    "No OS power-cut proof",
+    "Stage 2 is outcome-exposed retrospective estimation"
+  ],
+  "residual_notes": [
+    {
+      "id": "R-1",
+      "severity": "P3",
+      "note": "Pre-first-commit interruption -> review stop (runbook)"
+    },
+    {
+      "id": "R-2",
+      "severity": "P3",
+      "note": "Older-prefix ledger audit at startup/final"
+    },
+    {
+      "id": "R-3",
+      "severity": "P3",
+      "note": "Process-kill durability, not OS power cut"
+    },
+    {
+      "id": "R-4",
+      "severity": "P3",
+      "note": "ETA extrapolated; epochs unknown"
+    },
+    {
+      "id": "R-5",
+      "severity": "P3",
+      "note": "Synthetic offsets are single-class, so offset AP values are None for all contrasts; offset value path not exercised synthetically (logic previously verified equivalent to Stage 1)"
+    },
+    {
+      "id": "R-6",
+      "severity": "P3",
+      "note": "analysis.py edited in place in implementation_v0_6; provenance preserved by archive; prefer new versioned directory for any future change"
+    }
+  ]
+}

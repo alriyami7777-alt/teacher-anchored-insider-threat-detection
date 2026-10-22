@@ -1,0 +1,40 @@
+{
+  "id": "outer_G_F13_seed52",
+  "partition": "outer",
+  "condition": "G",
+  "schema": "F13",
+  "seed": 52,
+  "data": {
+    "schema": "F13",
+    "partition": "outer",
+    "representation_sha256": "738e13205c9b3376dbb507e0b698838c2a0bd6c344f099e0802b59bca634fbe7",
+    "columns": [
+      "total_events",
+      "logon_count",
+      "device_count",
+      "file_count",
+      "email_count",
+      "http_count",
+      "active_duration_minutes",
+      "has_logon_activity",
+      "has_device_activity",
+      "has_file_activity",
+      "has_email_activity",
+      "has_http_activity",
+      "is_active_day"
+    ],
+    "preprocessor_sha256": "dd3c7b408f67facd72680790ec0338dc2db17b11154f92df6340994a03a0042d",
+    "train_labels_sha256": "ac52cdae8f762f303a726c57bf753fe4125dab12f87b3eb23d29eac7cf5678bb",
+    "eval_labels_sha256": "91f8c9065b53cc1835e9a10541e916d8c8ec4d0b0b98b71fa30f0e2748f2ba39"
+  },
+  "manifest_sha256": "55d25c09e52b70161fec902034776659eff2370219c76e07321cfea4ecdc32f9",
+  "construction_state_sha256": "472bb27ee542f9874b901e8ccd1ef8af6dce1287fa94e509352bf6fdeeb2ca27",
+  "starting_state_sha256": "c2dc9034af5cd36547f902d1455de604e82a1283791fcb501977cbe22be79bcd",
+  "dependencies": {
+    "teacher": "d88af5dd5382e456381e07a0f39758401a0a2454d00056386956062afe62a181",
+    "ensemble": "5abeb4f3ef18998f7624853ec90d546706e9053f50b32bf6b918a0416ec9b0fa"
+  },
+  "outer_epochs": 4,
+  "threshold": 0.8718935243812215,
+  "training_rng_seed": 113864627
+}

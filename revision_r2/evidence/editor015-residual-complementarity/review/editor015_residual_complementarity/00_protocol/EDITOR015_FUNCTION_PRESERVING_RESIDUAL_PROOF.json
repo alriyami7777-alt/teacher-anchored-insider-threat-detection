@@ -1,0 +1,12 @@
+{
+  "task_id": "EDITOR-015",
+  "FUNCTION_PRESERVING_RESIDUAL_INITIAL_OUTPUT": "ZERO",
+  "FUNCTION_PRESERVING_RESIDUAL_INITIAL_EQUALS_L1": true,
+  "FUNCTION_PRESERVING_RESIDUAL_INITIAL_ODST_GRADIENT": "NONZERO",
+  "odst_grad_l2": 0.022282106358628918,
+  "reference_odst_grad_l1": 0.0,
+  "reference_requires_grad": false,
+  "R3_equivalent_to_R1_under_frozen_L1": true,
+  "R3": "REDUNDANT_NOT_EXECUTED",
+  "formula": "final_logit = L1_logit + (g_theta(z) - stop_gradient(g_theta0(z)))"
+}

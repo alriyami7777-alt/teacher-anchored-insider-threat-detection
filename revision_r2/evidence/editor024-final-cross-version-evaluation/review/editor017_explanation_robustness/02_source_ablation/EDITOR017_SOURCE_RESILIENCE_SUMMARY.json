@@ -1,0 +1,93 @@
+{
+  "models": {
+    "C2-OPT": {
+      "MEAN_SOURCE_DELTA": -0.40995982507365447,
+      "MEAN_SOURCE_DELTA_by_seed": {
+        "42": -0.3942241014976577,
+        "52": -0.35082284658809737,
+        "62": -0.4848325271352083
+      },
+      "WORST_SOURCE_DELTA": -0.8920290657694908,
+      "WORST_SOURCE_by_seed": {
+        "42": "file",
+        "52": "file",
+        "62": "file"
+      },
+      "per_source_mean_delta": {
+        "logon": -0.06842430495362654,
+        "device": -0.8201678483171628,
+        "file": -0.8920290657694908,
+        "email": -0.20665915217278089,
+        "http": -0.06251875415521135
+      }
+    },
+    "F10": {
+      "MEAN_SOURCE_DELTA": -0.3870633497549547,
+      "MEAN_SOURCE_DELTA_by_seed": {
+        "42": -0.3812840560577112,
+        "52": -0.3615779351374745,
+        "62": -0.4183280580696784
+      },
+      "WORST_SOURCE_DELTA": -0.8955058962722261,
+      "WORST_SOURCE_by_seed": {
+        "42": "file",
+        "52": "file",
+        "62": "file"
+      },
+      "per_source_mean_delta": {
+        "logon": -0.0858876907940634,
+        "device": -0.8029364880047377,
+        "file": -0.8955058962722261,
+        "email": -0.0997967869111962,
+        "http": -0.051189886792550064
+      }
+    },
+    "TA2": {
+      "MEAN_SOURCE_DELTA": -0.3853127732910046,
+      "MEAN_SOURCE_DELTA_by_seed": {
+        "42": -0.4053613535883331,
+        "52": -0.3493503094618669,
+        "62": -0.4012266568228138
+      },
+      "WORST_SOURCE_DELTA": -0.8989039133204084,
+      "WORST_SOURCE_by_seed": {
+        "42": "file",
+        "52": "file",
+        "62": "file"
+      },
+      "per_source_mean_delta": {
+        "logon": -0.08027903415900035,
+        "device": -0.8075790986011193,
+        "file": -0.8989039133204084,
+        "email": -0.08734655509969196,
+        "http": -0.05245526527480282
+      }
+    },
+    "L1": {
+      "MEAN_SOURCE_DELTA": -0.39770500416778054,
+      "MEAN_SOURCE_DELTA_by_seed": {
+        "42": -0.38467229663704117,
+        "52": -0.3667514515122239,
+        "62": -0.44169126435407646
+      },
+      "WORST_SOURCE_DELTA": -0.8833087738519545,
+      "WORST_SOURCE_by_seed": {
+        "42": "file",
+        "52": "file",
+        "62": "file"
+      },
+      "per_source_mean_delta": {
+        "logon": -0.09093884249512312,
+        "device": -0.8312970491703403,
+        "file": -0.8833087738519545,
+        "email": -0.12748989512936923,
+        "http": -0.0554904601921152
+      }
+    }
+  },
+  "TA2_WORST_SOURCE": "file",
+  "TA2_WORST_SOURCE_DELTA": -0.8989039133204084,
+  "TEACHER_GUIDANCE_SOURCE_RESILIENCE_EFFECT": 0.02289647531869976,
+  "ROUTE_ANCHOR_SOURCE_RESILIENCE_EFFECT": 0.0017505764639501042,
+  "TA2_VS_LINEAR_SOURCE_RESILIENCE_EFFECT": 0.012392230876775934
+}

@@ -1,0 +1,94 @@
+{
+  "EDITOR024_R61_COMPATIBILITY_GATE": "PASS",
+  "required_source_files_readable": true,
+  "peeks": [
+    {
+      "path": "C:\\PhD\\06_Datasets\\r6.1\\r6.1\\logon.csv",
+      "header": [
+        "id",
+        "date",
+        "user",
+        "pc",
+        "activity"
+      ],
+      "header_ok": true,
+      "n_peeked_parsed": 32,
+      "readable": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\r6.1\\r6.1\\device.csv",
+      "header": [
+        "id",
+        "date",
+        "user",
+        "pc",
+        "file_tree",
+        "activity"
+      ],
+      "header_ok": true,
+      "n_peeked_parsed": 32,
+      "readable": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\r6.1\\r6.1\\file.csv",
+      "header": [
+        "id",
+        "date",
+        "user",
+        "pc",
+        "filename",
+        "activity",
+        "to_removable_media",
+        "from_removable_media",
+        "content"
+      ],
+      "header_ok": true,
+      "n_peeked_parsed": 32,
+      "readable": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\r6.1\\r6.1\\email.csv",
+      "header": [
+        "id",
+        "date",
+        "user",
+        "pc",
+        "to",
+        "cc",
+        "bcc",
+        "from",
+        "activity",
+        "size",
+        "attachments",
+        "content"
+      ],
+      "header_ok": true,
+      "n_peeked_parsed": 32,
+      "readable": true
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\r6.1\\r6.1\\http.csv",
+      "header": [
+        "id",
+        "date",
+        "user",
+        "pc",
+        "url",
+        "activity",
+        "content"
+      ],
+      "header_ok": true,
+      "n_peeked_parsed": 32,
+      "readable": true
+    }
+  ],
+  "answer_files": [
+    "C:\\PhD\\06_Datasets\\answers\\r6.1-1.csv",
+    "C:\\PhD\\06_Datasets\\answers\\r6.1-2.csv",
+    "C:\\PhD\\06_Datasets\\answers\\r6.1-3.csv",
+    "C:\\PhD\\06_Datasets\\answers\\r6.1-5.csv"
+  ],
+  "reasons": [],
+  "predictive_outcomes_inspected": false,
+  "written_at": "2026-08-18T05:26:35Z"
+}

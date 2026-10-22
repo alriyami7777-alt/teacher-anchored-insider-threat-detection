@@ -1,0 +1,40 @@
+{
+  "id": "inner_T_F13_seed52",
+  "partition": "inner",
+  "condition": "T",
+  "schema": "F13",
+  "seed": 52,
+  "data": {
+    "schema": "F13",
+    "partition": "inner",
+    "representation_sha256": "738e13205c9b3376dbb507e0b698838c2a0bd6c344f099e0802b59bca634fbe7",
+    "columns": [
+      "total_events",
+      "logon_count",
+      "device_count",
+      "file_count",
+      "email_count",
+      "http_count",
+      "active_duration_minutes",
+      "has_logon_activity",
+      "has_device_activity",
+      "has_file_activity",
+      "has_email_activity",
+      "has_http_activity",
+      "is_active_day"
+    ],
+    "preprocessor_sha256": "9eea662635feee1d0b9543506dec68160659623d5f37232100c98d04cb2b8d73",
+    "train_labels_sha256": "75e04a2a65590012ca73d5f09c52af4f42f57c8802d6989f237e7aafc417304c",
+    "eval_labels_sha256": "b28352b9adea538e3f15af1a7068b34cc900392c30f71e855bb0d0c414976328"
+  },
+  "manifest_sha256": "55d25c09e52b70161fec902034776659eff2370219c76e07321cfea4ecdc32f9",
+  "construction_state_sha256": "41aec1d86aee51ab1f5ab9ad043efd5e5bfd832d6434b163a9464751a0282b75",
+  "starting_state_sha256": "4f627598d22ca5d03b6f0bb8a167d336ad6d94b2ebfdc587557083012479a11e",
+  "dependencies": {
+    "precursor": "2109e4db1ca7c5832d5c225e250ff39b1833c9e201a0f0eb377836477f81c6e1",
+    "init_sample_sha256": "ce0c87eda38d8a0e31b1a6e6b2fda81a4d094ecdab25d1cc57c0ef9b9fc0e589"
+  },
+  "outer_epochs": null,
+  "threshold": null,
+  "training_rng_seed": 2194672908
+}

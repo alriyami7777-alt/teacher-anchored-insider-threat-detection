@@ -1,0 +1,192 @@
+{
+  "stage": "SECONDARY_LEARNERS",
+  "aliases": {
+    "F13": "F13",
+    "F6_PRIMITIVES": "F6_PRIMITIVES",
+    "S13": "LOCO_active_duration_minutes",
+    "F29": "F29",
+    "Splus": "FAM_actions"
+  },
+  "names": [
+    "F13",
+    "F6_PRIMITIVES",
+    "LOCO_active_duration_minutes",
+    "F29",
+    "FAM_actions"
+  ],
+  "seeds": [
+    42,
+    52,
+    62
+  ],
+  "rf_recipe": {
+    "n_estimators": 200,
+    "criterion": "gini",
+    "max_depth": 20,
+    "min_samples_split": 2,
+    "min_samples_leaf": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "max_features": 1.0,
+    "max_leaf_nodes": null,
+    "min_impurity_decrease": 0.0,
+    "bootstrap": true,
+    "oob_score": false,
+    "n_jobs": 4,
+    "verbose": 0,
+    "warm_start": false,
+    "class_weight": "balanced_subsample",
+    "ccp_alpha": 0.0,
+    "max_samples": null,
+    "monotonic_cst": null
+  },
+  "attention_recipe": {
+    "hidden_per_direction": 64,
+    "lstm_layers": 1,
+    "bidirectional": true,
+    "lstm_bias": true,
+    "lstm_internal_dropout": 0.0,
+    "hidden_dropout": 0.2,
+    "attention_hidden": 64,
+    "attention_activation": "tanh",
+    "attention_projection_bias": true,
+    "attention_score_bias": false,
+    "readout_bias": true,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0,
+    "amsgrad": false,
+    "foreach": false,
+    "fused": false,
+    "batch_size": 1024,
+    "drop_last": false,
+    "shuffle": "numpy.default_rng(seed).permutation each epoch, generator advances",
+    "loader_workers": 0,
+    "max_epochs": 15,
+    "patience": 4,
+    "min_delta": 0.0,
+    "stop_metric": "INNER_SELECT average_precision",
+    "ties": "earliest epoch",
+    "grad_clip_norm": 1.0,
+    "positive_weight": ".25 * fit negatives / fit positives",
+    "dtype": "float32",
+    "device": "cuda:0",
+    "amp": false,
+    "tf32": false,
+    "deterministic_algorithms": true,
+    "cudnn_benchmark": false,
+    "cublas_workspace": ":4096:8",
+    "torch_threads": 4,
+    "interop_threads": 1,
+    "initialization": "PyTorch 2.12.1 default module initialization after seed reset",
+    "outer_epochs": "median of three one-based best inner epochs for the schema; clamp 1..15"
+  },
+  "inner_max_fits": 30,
+  "outer_max_fits": 30,
+  "selection_sha256": "15936100ea34d15d762e9e983de7eb3f951ced07c603f7807256ca232705155a",
+  "inner_manifest_sha256": "4216f6a8912ccf69aa1b90e6568ae1794d47acc0b12e2bb13a6fcbdd3919cef4",
+  "train_inputs": {
+    "approved": {
+      "revision_v0.2/PROTOCOL_DRAFT_v0.2.md": "1dfa3f414d9470f4e9369bf5e44efae4f344c912a763bf4ff54ae12a612e371e",
+      "revision_v0.2/feature_catalog_v0.2.json": "7c77878c855752042ad5d202f1c84b7aafab7aa29ee5b3ac574cf877400ad2e4",
+      "revision_v0.2/AUDIT_RESPONSE.md": "61f376b15a25f209ba6788a199bcbd84050e56647d5cafe0a8dbc8c9c3cdbfe0",
+      "revision_v0.2/evidence_manifest_v0.2.json": "7e10d98bb7eb605b2445e937301e40a7d81903652a7831b3f15548e4f1c2b5cb"
+    },
+    "outputs": {
+      "ANSWER_INPUTS_LOCAL.json": "56a69cd45df43f3556f639ae3ee7be71e14a13ee0521c5ec5baf77f62b704774",
+      "APPROVED_INPUTS.json": "019527d5f5c848adeae0963ed1119e5507e19e4322f446d5705cd8f52cea6c7c",
+      "CANDIDATE_MISSINGNESS.json": "4742be3ec6c34c804afe8c15e2df7e6b4cff4377e6d62f3348d887fcf6c24d61",
+      "CODE_IDENTITY.json": "749aa47807b1ebc230efa7d06d3ad9e838f3d7a8e83f96e1a9b9456fed5a8d24",
+      "COHORT_LOCAL.json": "c85736cfa43823ab77f6f306f662e3dbd21b5f216c75267eb6709a32dbc0e530",
+      "DAILY_PREPROCESSORS.json": "0e7149bc4fe88e6402cf4ed7ecf6fc181f4460635ce89f19be93eabd277be538",
+      "ENVIRONMENT.json": "b0a18bb3abb270c1923dcff07c1a842341e6c1b4229e2f7bec400fabd943eb44",
+      "EXTRACTION_COUNTS.json": "f7bb197d2215581f9d322a674242cd84abc5884cb5f5b23daef972e21eb2b189",
+      "FULL_TRAIN_PARITY.json": "5e63d37ea21ba03d95b37195cb0adcf3c4316b440aace14af6a61d9b61a56fe8",
+      "INNER_REDUNDANCY.json": "91cda08ab64596f29f4bbba0732fc236ff1002e477b85446b11b8954497c3a45",
+      "RAW_INPUTS.json": "ae3d9d44906658e81cd745a7576513f87703872224a68b7b4c045b81a000148d",
+      "REALIZED_SCHEMAS.json": "9ac1623e56722fd3c517a9545fd0d6eb738e11c066d34364912321f8f1c3fd00",
+      "REBUILT_SPLITS.json": "90aabce48a8ccf3fe267076a8df788f22ae9b2b844a7339e9a9988c9393578cb",
+      "SYNTHETIC_TESTS.txt": "c7c6c09b4b373fe7353e24a38d389fc130d49ef18dc2d9e2f3d3d00cf6d15cae",
+      "train_daily_F29.npy": "c63b721b7c5e09adac93e537cd54aaf457dca205f33b65b778506774c440bc1a",
+      "train_daily_label_event_counts.npy": "6a00ad3bf9af8dec5a941fc0a1abc584cc17b9f1b337cf8ad7e5115415f98bed",
+      "train_daily_withdrawal_F13.npy": "a4ea6989a8f71375428c829a4f5318ea84d85fbc11761292a25261dcc480fe14",
+      "WITHDRAWAL_LABEL_DIAGNOSTICS.json": "c116965a2b6c339e3dd139de037b21517e27c577fbd8411da121a236eb86e87a"
+    },
+    "preflight_result_sha256": "ca599fe457f002aae2eb18c7e47c56d78efbec2b30166271ff6744e683583ca0"
+  },
+  "validation_complete_sha256": "0e6aa7817a41b22f192433a0c776b735fdb4c711734791aa933fd9dcaaf6c621",
+  "validation_outputs": {
+    "ACCESS_LOCK.json": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\validation_preflight_20261007_r1\\ACCESS_LOCK.json",
+      "sha256": "2f1eadbbbffcd6cf54000d274255f9dbfbcde037f1fa195938dfd0f18d87179a"
+    },
+    "ANSWER_INPUTS_LOCAL.json": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\validation_preflight_20261007_r1\\ANSWER_INPUTS_LOCAL.json",
+      "sha256": "f551783936f91619fb571f0103052d884dd89452b4410947cf8d6ea91c272444"
+    },
+    "MISSINGNESS.json": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\validation_preflight_20261007_r1\\MISSINGNESS.json",
+      "sha256": "c8e804e6b4f84b9e4ffe18aa14a3493746134752d8acb2a05fd4c3b6efe35f77"
+    },
+    "PARITY.json": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\validation_preflight_20261007_r1\\PARITY.json",
+      "sha256": "704f39dfed4cf690af71b5f58a61170e70af11b674283d6347f349eb49b2d58f"
+    },
+    "RAW_INPUTS.json": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\validation_preflight_20261007_r1\\RAW_INPUTS.json",
+      "sha256": "33fee134a60c9e12921dca7b5f0e1b8996c8116c0239c3c245ad298c0ca36ba3"
+    },
+    "validation_daily_F29.npy": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\validation_preflight_20261007_r1\\validation_daily_F29.npy",
+      "sha256": "1a706dd9b0e4b271282311d3616511bd62abdfe2a8fa534bdbdfa3f9bff4c6ba"
+    },
+    "validation_daily_label_event_counts.npy": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\validation_preflight_20261007_r1\\validation_daily_label_event_counts.npy",
+      "sha256": "ad55bd15391b7206ea28dce7625eb8f095265b4129d33da22fbeb6f6d063ba13"
+    },
+    "validation_daily_withdrawal_F13.npy": {
+      "path": "C:\\PhD\\07_Projects\\cert-feature-selection-expansion-study\\implementation_runs\\validation_preflight_20261007_r1\\validation_daily_withdrawal_F13.npy",
+      "sha256": "cf2d106431eec5d4d3437389950957072a9dc7e0a664ab0dbf777b64b7589966"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.3",
+    "pyarrow": "25.0.0",
+    "duckdb": "1.5.4",
+    "xgboost": "3.2.0",
+    "scikit-learn": "1.9.0",
+    "torch": "2.12.1+cu130",
+    "psutil": "7.2.2"
+  },
+  "code_hashes": {
+    "analyze_secondary_experiments.py": "8d50b8760af36c0787e953e1549dc4815ea630fa6bf8f09b06bdd9bb327b8996",
+    "cert_features.py": "c8729c80e82f005cbafef04f24928f69d1a776356a9f99171339f79e98a67e15",
+    "execution_guard.py": "c5b7e604fc4dad2cc7922efec64123fab0d2d477b09e62cfcf23864660df917a",
+    "experiment_rules.py": "f4dda4ca4c1dd2727c16d0dedd80cc7d5bb6693c31fea574c5093b4fb8abe0b5",
+    "full_train_preflight.py": "a6488eab7a7a3bf1caf306994a2279e163d531a0318cbbd7dbfdff637b10ba5b",
+    "outer_analysis_rules.py": "712bab3fd03cf8648cd1e5082da3989b27f3cce32fac00aed95b1c7b5f2116d8",
+    "run_campaign.py": "c0ba384ca9e88b4e448ae33508fd347476b820e6cece92f63dba007095181735",
+    "run_inner_experiments.py": "9699e8381d2b2d38a1502e6722c59ba97e0dae14a2b3f585d1e8f0efb11da9dc",
+    "run_outer_xgb.py": "60b1685b69915ffa636a1f2a4cf13b979d582ac2f902a87105da67c3b414cca8",
+    "run_preflight.py": "b85b84b93d8dd6c979b4d57e7726157778c560c26955598ee556e1f78cbaab07",
+    "run_secondary_experiments.py": "59033ba9ae9630903d27b446f9f7e2fb4e12fdc151fda5143ae1267485f901fd",
+    "secondary_models.py": "5c482ddcba2afdea6f95d73161f751a7c88fc059e287ac263414610ac7aea58b",
+    "test_cert_features.py": "6f11b73f8476014b8c6953c048f0cc19764782c52d77df2a5ad8ccd565d78c6e",
+    "test_execution_guard.py": "420abd122967d6dcbb83ff5f98798ab977e8bcc1b270ac4946d1b9af32d1373a",
+    "test_experiment_rules.py": "69eff4aa5727871b88d8b9e7ad8f7c2669be23be00b52d846a82fb864e5395fe",
+    "test_full_train_preflight.py": "16d4072fa5f40c2d0bf2cb2539c4eb2e0eb353a0a8b14f2f4d187df80f134911",
+    "test_outer_stage.py": "f2fb2300d1b249e535edcd2c35c071b1e99dfb6708e28a40ddd41ae06696be6f",
+    "test_secondary_models.py": "be72f9e0e14f90c0947e35ff8d0a66a814860697198f16a06e3d29cdf0bc5530",
+    "test_secondary_runner.py": "71d04e6f8e1da55bd4eda708d18092f456807af41faed519c0bd8e0a66b6f0fe",
+    "validation_preflight.py": "260c6f32faf3a9e4c58b83b76c0b236d255ac28623e6fb4f7de53e8ea007b1cc"
+  },
+  "execution_spec_sha256": "a45b661d5b37630c53f2c506147578c6f7e7c6b19a4cf5e9e048fdc8d18975bc",
+  "test_access": false,
+  "optional_history_enabled": false,
+  "created_utc": "2026-10-07T04:57:09.546517+00:00"
+}

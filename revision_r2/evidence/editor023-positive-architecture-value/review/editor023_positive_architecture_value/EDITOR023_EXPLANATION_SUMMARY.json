@@ -1,0 +1,12 @@
+{
+  "TA2_aggregate_spearman": 0.47076917411103125,
+  "F10_aggregate_spearman": 0.4304292851212394,
+  "TA2_minus_F10": 0.04033988898979185,
+  "TA2_source_spearman": 0.5230131210754405,
+  "F10_source_spearman": 0.47555845674795355,
+  "TA2_noise_spearman": 0.29662268422966687,
+  "F10_noise_spearman": 0.2799987130321917,
+  "definition": "reference-centred signed tree-contribution vector; rank-stability = tree_contribution_spearman",
+  "tree_identities_compared_across_seeds": false,
+  "three_seeds_are_not_independent_experimental_units": true
+}

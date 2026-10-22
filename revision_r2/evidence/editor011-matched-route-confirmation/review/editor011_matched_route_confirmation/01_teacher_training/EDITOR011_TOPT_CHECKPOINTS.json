@@ -1,0 +1,113 @@
+{
+  "42": {
+    "seed": 42,
+    "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed42\\best_teacher.pt",
+    "sha256": "b007f48085ef42b146b22a0d5ace5bb9c8380874405622281a5903831599fb20",
+    "best_epoch": 9,
+    "validation_PR_AUC": 0.9423486577182849,
+    "config": {
+      "input_dim": 13,
+      "hidden_size": 64,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "fusion_variant": "sparsemax_sigmoid_odst",
+      "node_num_layers": 2,
+      "node_n_trees": 4,
+      "node_depth": 4,
+      "node_tree_dim": 1,
+      "node_temperature": 0.5,
+      "node_dropout": 0.0,
+      "leaf_init_std": 0.05,
+      "gate_hidden_dim": 32
+    },
+    "odst": {
+      "n_trees": 4,
+      "depth": 4,
+      "temperature": 0.5,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "num_layers": 2,
+      "dropout": 0.0,
+      "leaf_init_std": 0.05,
+      "choice_function": "sparsemax_sigmoid",
+      "readout": "canonical_tree_average",
+      "candidate_id": "ODST-046",
+      "tree_dim": 1,
+      "fusion_variant": "sparsemax_sigmoid_odst"
+    }
+  },
+  "52": {
+    "seed": 52,
+    "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed52\\best_teacher.pt",
+    "sha256": "5b4c17e15a8f49ba8cf240c0092b893e6e665232967fafce8eb13e0650227f2a",
+    "best_epoch": 7,
+    "validation_PR_AUC": 0.9228451512846401,
+    "config": {
+      "input_dim": 13,
+      "hidden_size": 64,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "fusion_variant": "sparsemax_sigmoid_odst",
+      "node_num_layers": 2,
+      "node_n_trees": 4,
+      "node_depth": 4,
+      "node_tree_dim": 1,
+      "node_temperature": 0.5,
+      "node_dropout": 0.0,
+      "leaf_init_std": 0.05,
+      "gate_hidden_dim": 32
+    },
+    "odst": {
+      "n_trees": 4,
+      "depth": 4,
+      "temperature": 0.5,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "num_layers": 2,
+      "dropout": 0.0,
+      "leaf_init_std": 0.05,
+      "choice_function": "sparsemax_sigmoid",
+      "readout": "canonical_tree_average",
+      "candidate_id": "ODST-046",
+      "tree_dim": 1,
+      "fusion_variant": "sparsemax_sigmoid_odst"
+    }
+  },
+  "62": {
+    "seed": 62,
+    "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor011\\outputs\\editor011_matched_route_confirmation\\T-OPT\\seed62\\best_teacher.pt",
+    "sha256": "24bf2efa2343e4aaf5f32871c0a9bffb3d511f345375ce754e9f081f82eac02c",
+    "best_epoch": 9,
+    "validation_PR_AUC": 0.9405909178207581,
+    "config": {
+      "input_dim": 13,
+      "hidden_size": 64,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "fusion_variant": "sparsemax_sigmoid_odst",
+      "node_num_layers": 2,
+      "node_n_trees": 4,
+      "node_depth": 4,
+      "node_tree_dim": 1,
+      "node_temperature": 0.5,
+      "node_dropout": 0.0,
+      "leaf_init_std": 0.05,
+      "gate_hidden_dim": 32
+    },
+    "odst": {
+      "n_trees": 4,
+      "depth": 4,
+      "temperature": 0.5,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "num_layers": 2,
+      "dropout": 0.0,
+      "leaf_init_std": 0.05,
+      "choice_function": "sparsemax_sigmoid",
+      "readout": "canonical_tree_average",
+      "candidate_id": "ODST-046",
+      "tree_dim": 1,
+      "fusion_variant": "sparsemax_sigmoid_odst"
+    }
+  }
+}

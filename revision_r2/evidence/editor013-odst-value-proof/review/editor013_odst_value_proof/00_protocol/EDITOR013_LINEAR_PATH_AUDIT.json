@@ -1,0 +1,21 @@
+{
+  "task_id": "EDITOR-013",
+  "source": "src/editor012_rescue/models.py student_forward + live_odst_forward",
+  "producing_architecture": "prototype_v3_node.architecture.AttentionNodeEnsemble",
+  "student_forward_returns": {
+    "logit": "ODST tree_outputs.mean(dim=-1)",
+    "linear_logit": "linear_head(z) from encode_attention_h",
+    "z": "attended Bi-LSTM representation, dim=128"
+  },
+  "linear_head_architecture": "nn.Linear(encoder_dim=128, out_features=1, bias=True)",
+  "linear_head_input_dimension": 128,
+  "linear_head_state_provenance": "Present in T-OPT checkpoints. T-OPT trains only node_head (build_teacher_optimizer). During T-OPT, lstm/attention/linear_head are eval() and not in the optimiser. C2-OPT/TA2 enable_student freezes linear_head. Stored T-OPT linear_head is NOT a valid trained attention-linear reference for EDITOR-013 comparisons.",
+  "trained_in_TOPT": false,
+  "frozen_in_C2OPT": true,
+  "frozen_in_TA2": true,
+  "linear_logit_contributes_to_final_prediction": false,
+  "LINEAR_PATH_PRESENT": true,
+  "LINEAR_PATH_USED_BY_HISTORICAL_ODST_PREDICTION": false,
+  "do_not_use_stored_topt_linear_as_attention_linear_reference": true,
+  "editor013_linear_head": "new zero-initialised nn.Linear(128, 1); identical across L0/L1/hybrid"
+}

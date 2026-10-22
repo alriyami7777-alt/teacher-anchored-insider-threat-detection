@@ -1,0 +1,6 @@
+family,Bi-LSTM,attention,linear_head,ODST_feature_selectors,ODST_thresholds,ODST_temperatures,ODST_leaf_responses,other_tree_parameters
+Teacher,frozen/absent,frozen/absent,frozen/absent,frozen/absent,frozen/absent,frozen/absent,frozen/absent,frozen/absent
+C2,trainable,trainable,frozen/absent,trainable,trainable,trainable,trainable,frozen/absent
+C5,trainable,trainable,frozen/absent,trainable,trainable,trainable,trainable,frozen/absent
+Random-init + anchoring,trainable,trainable,frozen/absent,trainable,trainable,trainable,trainable,frozen/absent
+Attention-linear,trainable,trainable,trainable,frozen/absent,frozen/absent,frozen/absent,frozen/absent,frozen/absent

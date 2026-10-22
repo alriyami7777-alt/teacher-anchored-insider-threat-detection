@@ -1,0 +1,3 @@
+condition,family,teacher,seed,select_PR_AUC,select_F1,select_Brier,select_log_loss,best_epoch,checkpoint
+MLP40-XD,MLP40,True,42,0.9381860166837507,0.8763280917977051,0.0021500867173137126,0.009387706412650094,11,C:\PhD\07_Projects\teacher-anchored-insider-threat-detection-editor019\outputs\editor019_oblique_boosted_tree_rescue\MLP40-XD\seed42\best.pt
+BSO-DTE40-XD,BSO-DTE40,True,42,0.9239670425144786,0.866581956797967,0.0021055102712302888,0.008791459561969249,15,C:\PhD\07_Projects\teacher-anchored-insider-threat-detection-editor019\outputs\editor019_oblique_boosted_tree_rescue\BSO-DTE40-XD\seed42\best.pt

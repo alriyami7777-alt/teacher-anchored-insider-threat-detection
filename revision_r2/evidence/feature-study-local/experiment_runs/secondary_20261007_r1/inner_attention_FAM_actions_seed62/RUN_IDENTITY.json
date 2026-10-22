@@ -1,0 +1,9 @@
+{
+  "stage": "inner",
+  "learner": "attention",
+  "schema": "FAM_actions",
+  "seed": 62,
+  "manifest_sha256": "73217bb99ae49c7dd329b6529e014d91b934ffab725d193c949af216ae0c3889",
+  "representation_sha256": "098581f1053f1c29abebed44d1fa6466d62ef16d5c3242568bae6f97ede022df",
+  "preprocessor_sha256": "5252bedb73d889bfa9b4de25fc8930dbbecad3a3fdfe9533e57fab06b8ee1261"
+}

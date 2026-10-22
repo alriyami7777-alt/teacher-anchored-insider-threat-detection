@@ -1,0 +1,105 @@
+{
+  "LIN40": {
+    "type": "linear",
+    "in_dim": 40,
+    "init": "zeros"
+  },
+  "MLP40": {
+    "type": "shallow_mlp",
+    "in_dim": 40,
+    "hidden": [
+      128,
+      64
+    ],
+    "activation": "relu",
+    "dropout": 0.2,
+    "weight_decay": 0.0,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "provenance": "RECOVERED_SAME_INFORMATION_SHALLOW_MLP_IN_DIM_CHANGED_TO_40",
+    "blocked": false
+  },
+  "ODST40": {
+    "in_dim": 40,
+    "num_layers": 2,
+    "n_trees": 4,
+    "depth": 4,
+    "temperature": 0.5,
+    "tree_dim": 1,
+    "choice_function": "sparsemax_sigmoid",
+    "readout": "canonical_tree_average",
+    "leaf_init_std": 0.05,
+    "dropout": 0.0
+  },
+  "IWODST40": {
+    "in_dim": 40,
+    "num_layers": 2,
+    "n_trees": 4,
+    "depth": 4,
+    "temperature": 0.5,
+    "tree_dim": 1,
+    "choice_function": "sparsemax_sigmoid",
+    "readout": "canonical_tree_average",
+    "leaf_init_std": 0.05,
+    "dropout": 0.0,
+    "instance_wise_gate": "softmax(W_g s + b_g)",
+    "W_g_init": 0,
+    "b_g_init": 0,
+    "initial_weights": 0.125,
+    "no_gate_hidden_layer": true,
+    "no_gating_temperature_search": true,
+    "no_regulariser_search": true,
+    "distinct_from_editor013_global_tree_weights": true
+  },
+  "function_preserving": {
+    "LIN40": {
+      "family": "LIN40",
+      "initial_final_equals_l1": true,
+      "initial_correction_zero": true,
+      "live_grad_norm": 125.78429412841797,
+      "reference_grad_norm": 0.0,
+      "lambda_teacher": 0.5,
+      "iw_initial_weights": null
+    },
+    "MLP40": {
+      "family": "MLP40",
+      "initial_final_equals_l1": true,
+      "initial_correction_zero": true,
+      "live_grad_norm": 167.59981727600098,
+      "reference_grad_norm": 0.0,
+      "lambda_teacher": 0.5,
+      "iw_initial_weights": null
+    },
+    "ODST40": {
+      "family": "ODST40",
+      "initial_final_equals_l1": true,
+      "initial_correction_zero": true,
+      "live_grad_norm": 5.9765013521537185,
+      "reference_grad_norm": 0.0,
+      "lambda_teacher": 0.5,
+      "iw_initial_weights": null
+    },
+    "IWODST40": {
+      "family": "IWODST40",
+      "initial_final_equals_l1": true,
+      "initial_correction_zero": true,
+      "live_grad_norm": 6.718320259824395,
+      "reference_grad_norm": 0.0,
+      "lambda_teacher": 0.5,
+      "iw_initial_weights": [
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ]
+    }
+  },
+  "teacher_residual": "mean(T-OPT42, T-OPT52, T-OPT62) - L1_logit",
+  "lambda_teacher": 0.5,
+  "no_route_anchor_during_architecture_screen": true,
+  "information_fairness": "ODST value requires beating matched LIN40/MLP40 on the same 40-vector"
+}

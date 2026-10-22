@@ -1,0 +1,68 @@
+{
+  "EDITOR009_PAPER_RESCUE_GATE": "RESCUE_SUCCESS_CANDIDATE_FOUND",
+  "BEST_RESCUE_CONDITION": "EDITOR009_R2_ROUTE_ANCHOR_ONLY",
+  "BEST_RESCUE_SCREEN_ID": "R2",
+  "exact_architecture_delta": "none; same sparsemax_sigmoid_odst 2x8 depth-4 student",
+  "exact_optimisation_delta": "drop logit anchoring; keep teacher init + task loss + lambda_route=0.5",
+  "new_hyperparameters": "none beyond lambda_logit=0 (historical C4 / authorised R2)",
+  "not_historical_C5": true,
+  "R7_R8_track_attention_linear": true,
+  "CLUSTER_AWARE_CI_VS_C2": "NOT_AVAILABLE_NO_WINDOW_USER_ID_IN_TENSOR",
+  "classifications": {
+    "R8": "CLEAR_DEVELOPMENT_RESCUE",
+    "R7": "CLEAR_DEVELOPMENT_RESCUE",
+    "R2": "CLEAR_DEVELOPMENT_RESCUE"
+  },
+  "promoted": [
+    "R8",
+    "R7",
+    "R2"
+  ],
+  "comparison": {
+    "teacher": {
+      "mean_PR_AUC": 0.9308597983767313
+    },
+    "B0": {
+      "mean_PR_AUC": 0.9290457851613539
+    },
+    "B1": {
+      "mean_PR_AUC": 0.9312938562868864
+    },
+    "attention_linear": {
+      "mean_PR_AUC": 0.9311180134363881
+    },
+    "R8": {
+      "mean_PR_AUC": 0.9335712116947139,
+      "delta_vs_C2": [
+        0.006581141968986626,
+        -0.0008390828843177767,
+        0.007834220515410939
+      ],
+      "mean_delta_vs_C2": 0.004525426533359929,
+      "positive_delta_seeds": 2
+    },
+    "R7": {
+      "mean_PR_AUC": 0.9315086378153365,
+      "delta_vs_C2": [
+        0.005884650091431132,
+        -0.0128736767842349,
+        0.014377584654751696
+      ],
+      "mean_delta_vs_C2": 0.0024628526539826425,
+      "positive_delta_seeds": 2
+    },
+    "R2": {
+      "mean_PR_AUC": 0.9336159387038109,
+      "delta_vs_C2": [
+        0.004426403690199643,
+        0.0035575838380665914,
+        0.00572647309910479
+      ],
+      "mean_delta_vs_C2": 0.004570153542457008,
+      "positive_delta_seeds": 3
+    }
+  },
+  "R52_TEST_ACCESSED": false,
+  "R51_RERUN": false,
+  "R62_RERUN": false
+}

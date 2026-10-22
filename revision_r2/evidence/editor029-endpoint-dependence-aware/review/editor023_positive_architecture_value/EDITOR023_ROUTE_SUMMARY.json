@@ -1,0 +1,18 @@
+{
+  "F10_CLEAN_ROUTE_MAE": 0.0075467338844202765,
+  "TA2_CLEAN_ROUTE_MAE": 0.0024146931577659057,
+  "F10_DEGRADED_ROUTE_MAE": 0.011343588323287973,
+  "TA2_DEGRADED_ROUTE_MAE": 0.005600903922956214,
+  "F10_source_teacher_relative_route_MAE": 0.0097433706539228,
+  "TA2_source_teacher_relative_route_MAE": 0.004315678833622054,
+  "F10_noise_teacher_relative_route_MAE": 0.012943805992653145,
+  "TA2_noise_teacher_relative_route_MAE": 0.006886129012290373,
+  "F10_CLEAN_ROUTE_KL": 0.02032738054665657,
+  "TA2_CLEAN_ROUTE_KL": 0.004147589798221331,
+  "F10_CLEAN_hard_route_agreement": 0.9965156249999999,
+  "TA2_CLEAN_hard_route_agreement": 0.9980305989583332,
+  "F10_CLEAN_dominant_leaf_agreement": 0.9885846354166666,
+  "TA2_CLEAN_dominant_leaf_agreement": 0.9931959635416666,
+  "note": "route identities compared only within the same model/seed; teacher-relative uses matched T-OPT",
+  "three_seeds_are_not_independent_experimental_units": true
+}

@@ -1,0 +1,42 @@
+{
+  "task_id": "EDITOR-009",
+  "campaign": "EDITOR-009 DEVELOPMENT RESCUE",
+  "status": "PHASE0_FROZEN_BEFORE_RESCUE_EXECUTION",
+  "branch": "editor009-c2-c5-odst-rescue",
+  "base_commit": "cde793de9135c8d4f6491d204f586ce8e00c3e0d",
+  "base_commit_role": "EDITOR008_PROTOCOL_COMMIT; EDITOR-008 is not executed in this task",
+  "known_related_commits": {
+    "EDITOR007D1_CORRECTION_COMMIT": "d5a6416bfe5ea582b2439803ffc0d896c091d844",
+    "EDITOR008_TARGET_LOCK_COMMIT": "0eef55cbb00c410626f273a7878e81cb166c310d",
+    "EDITOR008_PROTOCOL_COMMIT": "cde793de9135c8d4f6491d204f586ce8e00c3e0d"
+  },
+  "protocol_files": [
+    "EDITOR009_OVERNIGHT_PROTOCOL.json",
+    "EDITOR009_BASELINE_IDENTITY_REGISTER.json",
+    "EDITOR009_INPUT_CHECKSUMS.json",
+    "EDITOR009_PROTOCOL_MANIFEST.json"
+  ],
+  "campaign_directories": [
+    "00_protocol",
+    "01_forensics",
+    "02_instrumentation",
+    "03_seed42_screen",
+    "04_full_seed_rescue",
+    "05_root_cause",
+    "06_paper_handover"
+  ],
+  "declarations": {
+    "TEST_ACCESS": "PROHIBITED",
+    "R51_EXECUTION": "PROHIBITED",
+    "R62_EXECUTION": "PROHIBITED",
+    "EDITOR008_EXECUTED": false,
+    "new_development_experiments_authorised": true,
+    "historical_editor006_007_008_readonly": true,
+    "unrelated_untracked_leftovers_must_not_be_staged": [
+      "EDITOR006B_REVIEW_PACKAGE.zip",
+      "EDITOR006B_REVIEW_PACKAGE/",
+      "review/editor004a_r51_model_free_audit/",
+      "review/editor005a_r62_model_free_audit/"
+    ]
+  }
+}

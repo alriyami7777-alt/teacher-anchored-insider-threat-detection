@@ -1,0 +1,50 @@
+{
+  "L_total": "L_task + lambda_logit * L_logit + lambda_route * L_route",
+  "C2": {
+    "lambda_logit": 0.0,
+    "lambda_route": 0.0
+  },
+  "C5_original_paper": {
+    "lambda_logit": 0.5,
+    "lambda_route": 0.5
+  },
+  "LOGIT_ANCHOR_WEIGHT_STATIC": "YES",
+  "ROUTE_ANCHOR_WEIGHT_STATIC": "YES",
+  "terms": {
+    "L_task": {
+      "code_file": "producing train.py",
+      "function": "nn.BCEWithLogitsLoss",
+      "reduction": "mean over windows",
+      "class_weighting": "pos_weight=(n_neg/n_pos)*0.25",
+      "teacher_detach": "n/a",
+      "student_parameters_affected": [
+        "lstm",
+        "attention",
+        "node_head"
+      ]
+    },
+    "L_logit": {
+      "code_file": "producing models.py",
+      "function": "logit_consistency_loss",
+      "line_range_feasibility": "162-165",
+      "reduction": "mean over windows then divide by teacher batch variance",
+      "weight": 0.5,
+      "schedule": "static",
+      "class_weighting": "none",
+      "masking": "none",
+      "teacher_detach": true
+    },
+    "L_route": {
+      "code_file": "producing models.py",
+      "function": "route_consistency_loss",
+      "line_range_feasibility": "168-175",
+      "reduction": "mean over (window, tree_index, depth)",
+      "weight": 0.5,
+      "schedule": "static",
+      "class_weighting": "none",
+      "masking": "none",
+      "teacher_detach": true,
+      "ROUTE_INDEX_IDENTITY_ASSUMED": "YES"
+    }
+  }
+}

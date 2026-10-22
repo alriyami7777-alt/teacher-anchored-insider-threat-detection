@@ -1,0 +1,11 @@
+{
+  "train_n_pos": 3957,
+  "train_n_neg": 784043,
+  "prevalence": 0.005021573604060914,
+  "logit_anchor_averaged_over": "all windows equally (then teacher-variance normalisation)",
+  "route_anchor_averaged_over": "all windows equally AND all trees equally AND all split depths equally",
+  "expected_negative_window_share": 0.9949784263959391,
+  "expected_positive_window_share": 0.005021573604060914,
+  "benign_majority_dominates_anchoring": true,
+  "note": "Neither anchor term is class-balanced. With prevalence ~0.502%, about 99.5% of the mean is benign windows."
+}

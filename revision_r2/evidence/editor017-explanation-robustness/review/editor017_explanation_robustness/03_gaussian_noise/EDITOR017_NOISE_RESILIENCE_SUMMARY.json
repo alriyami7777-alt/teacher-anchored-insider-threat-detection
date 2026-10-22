@@ -1,0 +1,64 @@
+{
+  "models": {
+    "C2-OPT": {
+      "MEAN_NOISE_RETENTION": 0.92090325910195,
+      "MEAN_NOISE_RETENTION_by_seed": {
+        "42": 0.934005457478367,
+        "52": 0.9210045280834397,
+        "62": 0.9076997917440434
+      },
+      "degradation_slope": -0.27579818790517785,
+      "degradation_slope_by_seed": {
+        "42": -0.24771130317823808,
+        "52": -0.2649835804657506,
+        "62": -0.3146996800715449
+      }
+    },
+    "F10": {
+      "MEAN_NOISE_RETENTION": 0.9300872310306101,
+      "MEAN_NOISE_RETENTION_by_seed": {
+        "42": 0.9285114776778393,
+        "52": 0.9260615382103999,
+        "62": 0.9356886772035908
+      },
+      "degradation_slope": -0.26202274533673614,
+      "degradation_slope_by_seed": {
+        "42": -0.26906775526026433,
+        "52": -0.27119417728283013,
+        "62": -0.24580630346711396
+      }
+    },
+    "TA2": {
+      "MEAN_NOISE_RETENTION": 0.9355917807697932,
+      "MEAN_NOISE_RETENTION_by_seed": {
+        "42": 0.933722870268651,
+        "52": 0.9314544627239659,
+        "62": 0.9415980093167627
+      },
+      "degradation_slope": -0.23685398541317462,
+      "degradation_slope_by_seed": {
+        "42": -0.24599756220622582,
+        "52": -0.24202028214815058,
+        "62": -0.2225441118851475
+      }
+    },
+    "L1": {
+      "MEAN_NOISE_RETENTION": 0.9258249295057069,
+      "MEAN_NOISE_RETENTION_by_seed": {
+        "42": 0.9179654902433563,
+        "52": 0.9183422303454568,
+        "62": 0.9411670679283074
+      },
+      "degradation_slope": -0.27217677084750064,
+      "degradation_slope_by_seed": {
+        "42": -0.30543219565417806,
+        "52": -0.2896992036356604,
+        "62": -0.22139891325266348
+      }
+    }
+  },
+  "slope_definition": "ordinary_least_squares_PR_AUC_on_0.00_0.05_0.10_0.20",
+  "TEACHER_GUIDANCE_NOISE_RESILIENCE_EFFECT": 0.00918397192866005,
+  "ROUTE_ANCHOR_NOISE_RESILIENCE_EFFECT": 0.005504549739183129,
+  "TA2_VS_LINEAR_NOISE_RESILIENCE_EFFECT": 0.009766851264086274
+}

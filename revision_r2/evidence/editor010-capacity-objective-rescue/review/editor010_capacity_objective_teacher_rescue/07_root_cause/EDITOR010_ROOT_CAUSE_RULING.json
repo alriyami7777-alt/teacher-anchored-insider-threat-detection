@@ -1,0 +1,101 @@
+{
+  "H1_CURRENT_ODST_CAPACITY_IS_SUBOPTIMAL": "SUPPORTED",
+  "H2_CURRENT_ODST_ROUTING_SOFTNESS_IS_SUBOPTIMAL": "SUPPORTED",
+  "H3_CURRENT_ODST_OPTIMISATION_IS_SUBOPTIMAL": "SUPPORTED",
+  "H4_ATTENDED_REPRESENTATION_HAS_NONLINEAR_HEADROOM": "PARTIALLY_SUPPORTED",
+  "H5_ATTENDED_REPRESENTATION_IS_ALREADY_NEAR_LINEARLY_SEPARABLE": "NOT_SUPPORTED",
+  "H6_CURRENT_SUPERVISED_OBJECTIVE_IS_POORLY_ALIGNED_WITH_PR_AUC": "PARTIALLY_SUPPORTED",
+  "H7_RARE_EVENT_CLASS_IMBALANCE_LIMITS_ODST_LEARNING": "NOT_SUPPORTED",
+  "H8_PAIRWISE_RANKING_SIGNAL_IMPROVES_RARE_EVENT_ORDERING": "NOT_SUPPORTED",
+  "H9_FOCAL_OBJECTIVE_IMPROVES_ODST": "NOT_SUPPORTED",
+  "H10_SINGLE_TEACHER_IS_A_PREDICTIVE_CEILING": "PARTIALLY_SUPPORTED",
+  "H11_TEACHER_ENSEMBLE_CONTAINS_ADDITIONAL_RANKING_INFORMATION": "NOT_SUPPORTED",
+  "H12_STRONGER_TEACHER_TARGETS_ENABLE_STUDENT_IMPROVEMENT": "SUPPORTED",
+  "evidence": {
+    "headroom": {
+      "NONLINEAR_HEADROOM": "PARTIALLY_SUPPORTED",
+      "CURRENT_ODST_CAPTURES_NONLINEAR_HEADROOM": "PARTIALLY",
+      "H-LIN_pr_auc": 0.9109793200442964,
+      "H-ODST_pr_auc": 0.8804225840691786,
+      "H-MLP_pr_auc": 0.9016584160033765,
+      "pairwise": {
+        "H-MLP_vs_H-LIN": {
+          "logit_correlation": 0.9570143818855286,
+          "rank_correlation": 0.9614661742522694,
+          "prediction_disagreement": 0.0005390625,
+          "positive_case_disagreement": 0.018121911037891267,
+          "error_overlap": 0.0024921875
+        },
+        "H-ODST_vs_H-LIN": {
+          "logit_correlation": 0.8717537522315979,
+          "rank_correlation": 0.9499312594380576,
+          "prediction_disagreement": 0.001046875,
+          "positive_case_disagreement": 0.05601317957166392,
+          "error_overlap": 0.0021015625
+        },
+        "H-MLP_vs_H-ODST": {
+          "logit_correlation": 0.7861181497573853,
+          "rank_correlation": 0.8840460782196703,
+          "prediction_disagreement": 0.0013515625,
+          "positive_case_disagreement": 0.057660626029654036,
+          "error_overlap": 0.0020703125
+        }
+      },
+      "margin": 0.01
+    },
+    "landscape": {
+      "CURRENT_ODST_CAPACITY_TOO_SMALL": "SUPPORTED",
+      "CURRENT_ODST_CAPACITY_TOO_LARGE": "SUPPORTED",
+      "CURRENT_ODST_DEPTH_SUBOPTIMAL": "PARTIALLY_SUPPORTED",
+      "CURRENT_ODST_TEMPERATURE_SUBOPTIMAL": "SUPPORTED",
+      "CURRENT_ODST_HEAD_LR_SUBOPTIMAL": "SUPPORTED",
+      "CURRENT_ODST_REGULARISATION_SUBOPTIMAL": "PARTIALLY_SUPPORTED",
+      "CURRENT_ODST_CONFIGURATION_NEAR_OPTIMUM": "NOT_SUPPORTED",
+      "best_candidate_id": "ODST-046",
+      "best_inner_select_pr_auc": 0.9024814169875076,
+      "producing_inner_select_pr_auc": 0.8804225840691786
+    },
+    "objective": {
+      "CURRENT_OBJECTIVE_MISALIGNED_WITH_PR_AUC": "PARTIALLY_SUPPORTED",
+      "CLASS_BALANCING_HELPS": "NO",
+      "FOCAL_HELPS": "NO",
+      "PAIRWISE_RANKING_HELPS": "NO",
+      "O0_mean_inner_select_pr_auc": 0.8918573301303205,
+      "O1_mean": 0.8857620582948239,
+      "O2_mean": 0.8927863133421171,
+      "O3_mean": 0.8967476239818534,
+      "O4_mean": 0.8886181474958772
+    },
+    "teacher": {
+      "SINGLE_TEACHER_IS_PREDICTIVE_CEILING": "PARTIALLY_SUPPORTED",
+      "ENSEMBLE_TEACHER_HAS_ADDITIONAL_RANKING_INFORMATION": "NOT_SUPPORTED",
+      "teacher_ensemble_pr_auc": 0.9373497808604082,
+      "best_single_teacher_pr_auc": 0.9347250769667722
+    },
+    "best_full": {
+      "candidate_id": "P4_ET1",
+      "mean_pr_auc": 0.9395197554210609,
+      "delta_vs_C2_mean": 0.010474013646443736,
+      "delta_vs_C5_mean": 0.008226059182307788,
+      "delta_vs_attention_linear_mean": 0.008392811745434936,
+      "per_seed_delta_vs_C2": {
+        "42": 0.01151659451490561,
+        "52": 0.009179668161565457,
+        "62": 0.010725778262860586
+      },
+      "per_seed_delta_vs_C5": {
+        "42": 0.009780764287677823,
+        "52": 0.008678480930214616,
+        "62": 0.006218932329031035
+      },
+      "per_seed_delta_vs_AL": {
+        "42": 0.005476679108276983,
+        "52": 0.023634021415878115,
+        "62": -0.0039322652878501785
+      },
+      "POSITIVE_DELTA_VS_C2_SEEDS": "3/3",
+      "POSITIVE_DELTA_VS_ATTENTION_LINEAR_SEEDS": "2/3",
+      "classification": "CLEAR_DEVELOPMENT_RESCUE"
+    }
+  }
+}

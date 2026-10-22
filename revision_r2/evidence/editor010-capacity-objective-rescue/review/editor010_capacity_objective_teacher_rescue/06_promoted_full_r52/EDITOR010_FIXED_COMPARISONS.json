@@ -1,0 +1,108 @@
+{
+  "C2_MEAN_PR_AUC": 0.9290457417746172,
+  "C5_ORIGINAL_MEAN_PR_AUC": 0.9312936962387531,
+  "ATTENTION_LINEAR_MEAN_PR_AUC": 0.931126943675626,
+  "comparisons": [
+    {
+      "candidate_id": "P1_best_current_objective",
+      "mean_pr_auc": 0.9334244121760161,
+      "delta_vs_C2_mean": 0.004378670401398943,
+      "delta_vs_C5_mean": 0.0021307159372629947,
+      "delta_vs_attention_linear_mean": 0.002297468500390143,
+      "per_seed_delta_vs_C2": {
+        "42": 0.012417230559885084,
+        "52": -0.014797783263959086,
+        "62": 0.015516563908271164
+      },
+      "per_seed_delta_vs_C5": {
+        "42": 0.010681400332657298,
+        "52": -0.015298970495309927,
+        "62": 0.011009717974441613
+      },
+      "per_seed_delta_vs_AL": {
+        "42": 0.006377315153256458,
+        "52": -0.0003434300096464282,
+        "62": 0.0008585203575603995
+      },
+      "POSITIVE_DELTA_VS_C2_SEEDS": "2/3",
+      "POSITIVE_DELTA_VS_ATTENTION_LINEAR_SEEDS": "2/3",
+      "classification": "CLEAR_DEVELOPMENT_RESCUE"
+    },
+    {
+      "candidate_id": "P2_best_ranking_aware",
+      "mean_pr_auc": 0.9317489727017992,
+      "delta_vs_C2_mean": 0.0027032309271820543,
+      "delta_vs_C5_mean": 0.0004552764630461059,
+      "delta_vs_attention_linear_mean": 0.0006220290261732542,
+      "per_seed_delta_vs_C2": {
+        "42": 0.011580163961170897,
+        "52": -0.006998706189555004,
+        "62": 0.0035282350099307136
+      },
+      "per_seed_delta_vs_C5": {
+        "42": 0.009844333733943111,
+        "52": -0.007499893420905845,
+        "62": -0.0009786109238988372
+      },
+      "per_seed_delta_vs_AL": {
+        "42": 0.005540248554542271,
+        "52": 0.007455647064757653,
+        "62": -0.01112980854078005
+      },
+      "POSITIVE_DELTA_VS_C2_SEEDS": "2/3",
+      "POSITIVE_DELTA_VS_ATTENTION_LINEAR_SEEDS": "2/3",
+      "classification": "CLEAR_DEVELOPMENT_RESCUE"
+    },
+    {
+      "candidate_id": "P3_best_focal_or_balanced",
+      "mean_pr_auc": 0.9355468009456057,
+      "delta_vs_C2_mean": 0.006501059170988532,
+      "delta_vs_C5_mean": 0.004253104706852584,
+      "delta_vs_attention_linear_mean": 0.004419857269979732,
+      "per_seed_delta_vs_C2": {
+        "42": 0.009496203452855956,
+        "52": -0.0005517598195757811,
+        "62": 0.010558733879685644
+      },
+      "per_seed_delta_vs_C5": {
+        "42": 0.00776037322562817,
+        "52": -0.0010529470509266226,
+        "62": 0.006051887945856094
+      },
+      "per_seed_delta_vs_AL": {
+        "42": 0.0034562880462273293,
+        "52": 0.013902593434736876,
+        "62": -0.00409930967102512
+      },
+      "POSITIVE_DELTA_VS_C2_SEEDS": "2/3",
+      "POSITIVE_DELTA_VS_ATTENTION_LINEAR_SEEDS": "2/3",
+      "classification": "CLEAR_DEVELOPMENT_RESCUE"
+    },
+    {
+      "candidate_id": "P4_ET1",
+      "mean_pr_auc": 0.9395197554210609,
+      "delta_vs_C2_mean": 0.010474013646443736,
+      "delta_vs_C5_mean": 0.008226059182307788,
+      "delta_vs_attention_linear_mean": 0.008392811745434936,
+      "per_seed_delta_vs_C2": {
+        "42": 0.01151659451490561,
+        "52": 0.009179668161565457,
+        "62": 0.010725778262860586
+      },
+      "per_seed_delta_vs_C5": {
+        "42": 0.009780764287677823,
+        "52": 0.008678480930214616,
+        "62": 0.006218932329031035
+      },
+      "per_seed_delta_vs_AL": {
+        "42": 0.005476679108276983,
+        "52": 0.023634021415878115,
+        "62": -0.0039322652878501785
+      },
+      "POSITIVE_DELTA_VS_C2_SEEDS": "3/3",
+      "POSITIVE_DELTA_VS_ATTENTION_LINEAR_SEEDS": "2/3",
+      "classification": "CLEAR_DEVELOPMENT_RESCUE"
+    }
+  ],
+  "note": "C2/C5/AL means are frozen producing/replay validation PR-AUC; candidates evaluated once on the same r5.2 VALIDATION"
+}

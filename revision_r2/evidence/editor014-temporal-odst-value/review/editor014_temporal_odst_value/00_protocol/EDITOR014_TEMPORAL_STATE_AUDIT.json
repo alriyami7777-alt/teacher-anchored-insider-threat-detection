@@ -1,0 +1,46 @@
+{
+  "task_id": "EDITOR-014",
+  "source": "prototype_v3_node.architecture.AttentionNodeEnsemble.encode_attention_h",
+  "Bi-LSTM_state_tensor_shape": [
+    null,
+    20,
+    128
+  ],
+  "observed_hidden_shape": [
+    2,
+    20,
+    128
+  ],
+  "direction_concatenation": "bidirectional LSTM hidden_size=64 concatenated to 128",
+  "hidden_dimension": 128,
+  "lstm": {
+    "input_size": 13,
+    "hidden_size": 64,
+    "num_layers": 1,
+    "batch_first": true,
+    "bidirectional": true
+  },
+  "dropout_location": "after Bi-LSTM hidden states, before temporal attention",
+  "dropout_p": 0.2,
+  "attention_score_computation": "score(tanh(Linear_HtoA(h_t))); Linear_Ato1 has no bias",
+  "attention_weight_shape": [
+    null,
+    20
+  ],
+  "observed_attention_shape": [
+    2,
+    20
+  ],
+  "attention_normalisation": "softmax over time; weights non-negative and sum to 1",
+  "attended_representation_formula": "z = \u03a3_t alpha_t h_t",
+  "observed_z_shape": [
+    2,
+    128
+  ],
+  "LINEAR_AFTER_ATTENTION_EQUIVALENT_TO_ATTENTION_WEIGHTED_LINEAR_PER_TIME": "YES",
+  "equivalence_identity": "w^T \u03a3_t \u03b1_t h_t + b = \u03a3_t \u03b1_t (w^T h_t) + b  (because \u03a3_t \u03b1_t = 1)",
+  "historical_architecture": "ODST(\u03a3_t \u03b1_t h_t)",
+  "new_temporal_architecture": "\u03a3_t \u03b1_t ODST(h_t)",
+  "operations_generally_equivalent": false,
+  "reason_not_equivalent": "ODST is nonlinear, so ODST(\u03a3 \u03b1 h) \u2260 \u03a3 \u03b1 ODST(h) in general"
+}

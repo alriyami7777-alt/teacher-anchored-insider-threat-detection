@@ -1,0 +1,62 @@
+{
+  "task_id": "EDITOR-010",
+  "campaign": "ODST capacity / rare-event objective / teacher-quality rescue",
+  "status": "PHASE0_FROZEN_BEFORE_RESCUE_EXECUTION",
+  "manuscript": "Teacher-Anchored Differentiable Sequence–Ensemble Learning for Explainable Insider Threat Detection",
+  "parallel_to": "EDITOR-009 (anchoring mechanics / gradient conflict / route correspondence / residual ODST) — independent axis",
+  "EDITOR009_WORKTREE_TOUCHED": false,
+  "worktree": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor010",
+  "branch": "editor010-capacity-objective-rescue",
+  "base_commit": "cde793de9135c8d4f6491d204f586ce8e00c3e0d",
+  "DEVELOPMENT_ONLY": true,
+  "authorised_partitions": ["CERT r5.2 TRAIN", "CERT r5.2 VALIDATION"],
+  "hard_blocks": [
+    "r5.2 TEST access risk",
+    "input identity mismatch",
+    "baseline checkpoint ambiguity",
+    "historical evidence modification",
+    "inner split leakage",
+    "branch/worktree corruption",
+    "irrecoverable data error"
+  ],
+  "failed_candidate_is_not_a_hard_block": true,
+  "inner_split": {
+    "source": "exact frozen r5.2 TRAIN",
+    "per_user": "first 80% of that user's TRAIN calendar days = INNER_TRAIN; remaining 20% = INNER_SELECT",
+    "T": 20,
+    "stride": 1,
+    "n_features": 13,
+    "no_boundary_crossing_windows": true,
+    "no_user_reassignment": true,
+    "official_validation_unaltered": true
+  },
+  "promotion_rule": "up to 4 diverse candidates selected on INNER_SELECT only; freeze identities before official validation evaluation",
+  "success_classes": [
+    "CLEAR_DEVELOPMENT_RESCUE",
+    "PROMISING_BUT_NOT_ESTABLISHED",
+    "NO_MEANINGFUL_GAIN",
+    "REGRESSION",
+    "OPTIMISATION_FAILURE"
+  ],
+  "CLEAR_DEVELOPMENT_RESCUE_minimum": {
+    "mean_PR_AUC_gt_C2_mean": true,
+    "positive_delta_vs_C2_on_at_least": "2/3 seeds"
+  },
+  "paper_rescue_gate_allowed_statuses": [
+    "ODST_CAPACITY_RESCUE_FOUND",
+    "RARE_EVENT_OBJECTIVE_RESCUE_FOUND",
+    "TEACHER_QUALITY_RESCUE_FOUND",
+    "MULTI_FACTOR_RESCUE_FOUND",
+    "PROMISING_REQUIRES_CONFIRMATION",
+    "NO_PREDICTIVE_RESCUE_FOUND"
+  ],
+  "do_not_force_success": true,
+  "do_not_read_EDITOR009_results_until_EDITOR010_results_frozen": true,
+  "merge_tonight": false,
+  "protocol_files": [
+    "EDITOR010_EXPERIMENT_FREEZE.json",
+    "EDITOR010_BASELINE_REGISTER.json",
+    "EDITOR010_INPUT_CHECKSUMS.json",
+    "EDITOR010_PROTOCOL_MANIFEST.json"
+  ]
+}

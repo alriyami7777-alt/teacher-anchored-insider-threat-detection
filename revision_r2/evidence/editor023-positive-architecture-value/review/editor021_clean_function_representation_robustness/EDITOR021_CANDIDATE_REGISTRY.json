@@ -1,0 +1,41 @@
+{
+  "candidates": {
+    "CFP0": {
+      "rho": 0.0,
+      "robustness": false,
+      "simplicity_rank": 0
+    },
+    "CFPR10": {
+      "rho": 0.1,
+      "robustness": true,
+      "simplicity_rank": 1
+    },
+    "CFPR25": {
+      "rho": 0.25,
+      "robustness": true,
+      "simplicity_rank": 2
+    },
+    "CFPR50": {
+      "rho": 0.5,
+      "robustness": true,
+      "simplicity_rank": 3
+    }
+  },
+  "start_checkpoints": {
+    "42": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed42\\best_student.pt",
+      "sha256": "54f6c097af9568a4ee5701ef375559a2f649cec6c1817e578d3e8e01e6d73df8",
+      "validation_PR_AUC": 0.9454098053584642
+    },
+    "52": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed52\\best_student.pt",
+      "sha256": "7613ba559bcf55827d04129066eb595b677994494609646f8b2463308ed5edb4",
+      "validation_PR_AUC": 0.9337067425514769
+    },
+    "62": {
+      "checkpoint": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor012\\outputs\\editor012_teacher_anchor_rescue\\F11_DROPT\\seed62\\best_student.pt",
+      "sha256": "904003dca219435464476cf36abedb11ee4e2f7a11ff09caa3791d685b8f644d",
+      "validation_PR_AUC": 0.9494100170861509
+    }
+  }
+}

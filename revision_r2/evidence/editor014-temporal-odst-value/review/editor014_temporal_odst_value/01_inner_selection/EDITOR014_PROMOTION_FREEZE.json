@@ -1,0 +1,14 @@
+{
+  "official_r52_validation_not_used_for_selection": true,
+  "INNER_SELECT_only": true,
+  "B0_LINEAR_DISTILL_PR_AUC": 0.9317661852802129,
+  "B1_TA2_PR_AUC": 0.9350171069071892,
+  "promotion_margin": 0.001,
+  "promoted": [],
+  "n_promoted": 0,
+  "best_temporal_candidate": "T1",
+  "best_inner_delta_vs_linear": 0.0009198614590498755,
+  "eligible_before_cap": [],
+  "frozen_before_official_validation_evaluation_of_candidates": true,
+  "no_candidate_invented_after_results": true
+}

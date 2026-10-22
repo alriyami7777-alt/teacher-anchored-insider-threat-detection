@@ -1,0 +1,9 @@
+{
+  "stage": "inner",
+  "learner": "attention",
+  "schema": "LOCO_active_duration_minutes",
+  "seed": 62,
+  "manifest_sha256": "73217bb99ae49c7dd329b6529e014d91b934ffab725d193c949af216ae0c3889",
+  "representation_sha256": "f7ed14f13678359ff79fc092629de693ec39cf790fb2410a44e2093830698007",
+  "preprocessor_sha256": "1da65c1f0c03e10dc2448e68a50a1ea05cb793a4fee5e642814cb4879d858902"
+}

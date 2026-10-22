@@ -1,0 +1,92 @@
+{
+  "files": [
+    {
+      "filename": "r6.1-1.csv",
+      "exists": true,
+      "path": "C:\\PhD\\06_Datasets\\answers\\r6.1-1.csv",
+      "sha256": "67bb1598d9311c979bab5e7c5351add6735cb5fd8840e57e2365b2233137b41a",
+      "byte_size": 4683,
+      "scenario": "r6.1-1",
+      "row_count": 22,
+      "parsed_answer_event_count": 22,
+      "n_locations_found": 2,
+      "all_paths": [
+        "C:\\PhD\\06_Datasets\\answers\\r6.1-1.csv",
+        "C:\\PhD\\07_Projects\\cert-r42-feasibility\\answers\\answers\\r6.1-1.csv"
+      ]
+    },
+    {
+      "filename": "r6.1-2.csv",
+      "exists": true,
+      "path": "C:\\PhD\\06_Datasets\\answers\\r6.1-2.csv",
+      "sha256": "d279494b6c36e8d7ada0a9323a12ffbe65d1737d70b6c9ca53fd1bb99d80075d",
+      "byte_size": 103603,
+      "scenario": "r6.1-2",
+      "row_count": 226,
+      "parsed_answer_event_count": 226,
+      "n_locations_found": 2,
+      "all_paths": [
+        "C:\\PhD\\06_Datasets\\answers\\r6.1-2.csv",
+        "C:\\PhD\\07_Projects\\cert-r42-feasibility\\answers\\answers\\r6.1-2.csv"
+      ]
+    },
+    {
+      "filename": "r6.1-3.csv",
+      "exists": true,
+      "path": "C:\\PhD\\06_Datasets\\answers\\r6.1-3.csv",
+      "sha256": "8fe0939fa8236e0f710fbec0d260d4f396322e55b9465d0d3a1add6fa6b8f4f1",
+      "byte_size": 12336,
+      "scenario": "r6.1-3",
+      "row_count": 28,
+      "parsed_answer_event_count": 28,
+      "n_locations_found": 2,
+      "all_paths": [
+        "C:\\PhD\\06_Datasets\\answers\\r6.1-3.csv",
+        "C:\\PhD\\07_Projects\\cert-r42-feasibility\\answers\\answers\\r6.1-3.csv"
+      ]
+    },
+    {
+      "filename": "r6.1-4.csv",
+      "exists": false,
+      "path": null,
+      "sha256": null,
+      "byte_size": null,
+      "scenario": "r6.1-4",
+      "row_count": null,
+      "parsed_answer_event_count": null,
+      "n_locations_found": 0,
+      "all_paths": []
+    },
+    {
+      "filename": "r6.1-5.csv",
+      "exists": true,
+      "path": "C:\\PhD\\06_Datasets\\answers\\r6.1-5.csv",
+      "sha256": "76f78a4d307ba55db0255a750a73f2d13037417f507e1fc390f5a943667cbd81",
+      "byte_size": 1568,
+      "scenario": "r6.1-5",
+      "row_count": 4,
+      "parsed_answer_event_count": 4,
+      "n_locations_found": 2,
+      "all_paths": [
+        "C:\\PhD\\06_Datasets\\answers\\r6.1-5.csv",
+        "C:\\PhD\\07_Projects\\cert-r42-feasibility\\answers\\answers\\r6.1-5.csv"
+      ]
+    },
+    {
+      "filename": "insiders.csv",
+      "exists": true,
+      "path": "C:\\PhD\\06_Datasets\\answers\\insiders.csv",
+      "sha256": "394202dfd70884edb61fc9ecde9f08d6f616700e4eee0984bf06a52d1a99d726",
+      "byte_size": 13792,
+      "scenario": "insiders",
+      "row_count": 192,
+      "parsed_answer_event_count": 0,
+      "n_locations_found": 2,
+      "all_paths": [
+        "C:\\PhD\\06_Datasets\\answers\\insiders.csv",
+        "C:\\PhD\\07_Projects\\cert-r42-feasibility\\answers\\answers\\insiders.csv"
+      ]
+    }
+  ],
+  "written_at": "2026-08-18T10:24:38Z"
+}

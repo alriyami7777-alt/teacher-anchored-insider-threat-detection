@@ -1,0 +1,129 @@
+{
+  "phase": "complete",
+  "utc": "2026-08-18T08:29:32Z",
+  "EDITOR024_RESULTS_COMMIT": "PENDING_BY_DESIGN",
+  "EDITOR023_RESULTS_COMMIT": "a480fa2413cf0b70c398081ca5f8f52470a665a3",
+  "EDITOR024_PROTOCOL_FREEZE_COMMIT": "3f36f6906e209375d06cb9af685b2fe0efd41398",
+  "SOURCE_GATE": "PASS",
+  "UNIT_TEST_GATE": "PASS",
+  "R61_COMPATIBILITY_GATE": "PASS",
+  "CHECKPOINT_GATE": "PASS",
+  "SCALER_GATE": "PASS",
+  "first_access_utc": "2026-08-18T05:25:23Z",
+  "device": "cuda",
+  "means": {
+    "C2-OPT": 9.58548433287757e-05,
+    "F10": 9.391288112518778e-05,
+    "TA2": 9.445740146879832e-05,
+    "L1": 9.99715314772706e-05
+  },
+  "deov_means": {
+    "C2-OPT": 7.687878919880549e-05,
+    "F10": 6.99677226650398e-05,
+    "TA2": 7.325030027402456e-05,
+    "L1": 7.733065214547175e-05
+  },
+  "point": {
+    "TA2_RANKING_EXCESS": -1.1160391750648653e-06,
+    "TA2_MINUS_C2": -1.397441859977386e-06,
+    "F10_MINUS_C2": -1.941962203587925e-06,
+    "TA2_MINUS_F10": 5.445203436105391e-07,
+    "TA2_MINUS_L1": -5.514130008472278e-06
+  },
+  "rulings": {
+    "R61_FINAL_TA2_RANKING_TRANSFER": "NOT_SUPPORTED",
+    "R61_COMPLETE_FORMULATION_VALUE": "NOT_SUPPORTED",
+    "R61_TEACHER_GUIDANCE_VALUE": "NOT_SUPPORTED",
+    "R61_ROUTE_ANCHOR_VALUE": "CONSISTENT",
+    "R61_TA2_OVER_LINEAR_VALUE": "NOT_SUPPORTED"
+  },
+  "claims": {
+    "H1": "NOT_SUPPORTED",
+    "R61_FINAL_TA2_RANKING_TRANSFER": "NOT_SUPPORTED",
+    "R61_TEACHER_GUIDANCE_VALUE": "NOT_SUPPORTED",
+    "R61_COMPLETE_FORMULATION_VALUE": "NOT_SUPPORTED",
+    "R61_ROUTE_ANCHOR_VALUE": "CONSISTENT",
+    "R61_TA2_OVER_LINEAR_VALUE": "NOT_SUPPORTED",
+    "R61_ROUTE_STRUCTURAL_VALUE": "SUPPORTED",
+    "FINAL_PROSPECTIVELY_RESERVED_EVALUATION_COMPLETED": "YES",
+    "EDITOR_CONCERN5_STATUS": "PROSPECTIVELY_TESTED_BUT_GENERALISATION_LIMITED",
+    "CURRENT_PAPER_MODEL": "TA2",
+    "paper_wording": "The prospectively reserved cross-release evaluation exposed limited transfer to CERT r6.1 despite strong r5.2 validation performance.",
+    "designated_final_model_unchanged": true
+  },
+  "route": {
+    "compatible": true,
+    "F10": {
+      "teacher_relative_route_MAE": 0.013852491027299319,
+      "teacher_relative_route_KL": 0.0482107648820738,
+      "hard_route_agreement": 0.9886372401073106,
+      "dominant_leaf_agreement": 0.9601502137826962
+    },
+    "TA2": {
+      "teacher_relative_route_MAE": 0.009477296424532945,
+      "teacher_relative_route_KL": 0.016242056279121068,
+      "hard_route_agreement": 0.9920958878269618,
+      "dominant_leaf_agreement": 0.9712782947686117
+    },
+    "R61_ROUTE_STRUCTURAL_VALUE": "SUPPORTED"
+  },
+  "prevalence": 9.557344064386318e-05,
+  "n": 1988000,
+  "n_pos": 190,
+  "ta2_lift": 0.9883227058945845,
+  "ta2_ret": 0.00010016940257667009,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "pytorch": "2.11.0+cu128",
+  "TRAINING_EXECUTED": "NO",
+  "MODEL_PARAMETERS_UPDATED": "NO",
+  "TARGET_SCALER_FIT": "NO",
+  "TARGET_CALIBRATION_FIT": "NO",
+  "TARGET_THRESHOLD_SEARCH": "NO",
+  "TARGET_MODEL_SELECTION": "NO",
+  "R52_TEST_ACCESSED": "NO",
+  "R52_TEST_PREDICTIONS_GENERATED": "NO",
+  "R51_RERUN": "NO",
+  "R62_RERUN": "NO",
+  "CURRENT_PAPER_MODEL": "TA2",
+  "raw_prediction_paths": [
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\C2-OPT_seed42_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\C2-OPT_seed42_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\F10_seed42_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\F10_seed42_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\TA2_seed42_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\TA2_seed42_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\L1_seed42_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\L1_seed42_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\C2-OPT_seed52_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\C2-OPT_seed52_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\F10_seed52_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\F10_seed52_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\TA2_seed52_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\TA2_seed52_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\L1_seed52_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\L1_seed52_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\C2-OPT_seed62_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\C2-OPT_seed62_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\F10_seed62_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\F10_seed62_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\TA2_seed62_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\TA2_seed62_DEOVERLAP_OFFSET0.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\L1_seed62_COMPLETED_WINDOW.npz",
+    "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\outputs\\editor024_r61_final_confirmation\\raw_predictions\\L1_seed62_DEOVERLAP_OFFSET0.npz"
+  ],
+  "review_rel": "review\\editor024_r61_final_confirmation",
+  "output_rel": "outputs\\editor024_r61_final_confirmation",
+  "PRIMARY_CONTRASTS": {
+    "TA2-C2-OPT": "complete final formulation versus teacher initialisation alone",
+    "F10-C2-OPT": "ensemble predictive teacher-guidance contribution",
+    "TA2-F10": "incremental route-anchor contribution",
+    "TA2-L1": "final ODST formulation versus matched attention-linear reference"
+  },
+  "written_at": "2026-08-18T08:29:32Z",
+  "bootstrap_meta": {
+    "n_users": 4000,
+    "n_valid_resamples": 2000,
+    "n_attempted_draws": 2001,
+    "n_positive_label_users": 9
+  }
+}

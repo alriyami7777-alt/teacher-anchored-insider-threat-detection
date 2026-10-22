@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "scan_UTC": "2026-10-21T15:19:17.409355+00:00",
+  "scope": "Every file and relative path under evidence_export, including manifest and metadata inventories",
+  "user_ID_regex": "\\b[A-Z]{3}[0-9]{4}\\b",
+  "secret_patterns": {
+    "email": "(?i)\\b[A-Z0-9._%+\\-]+@[A-Z0-9.\\-]+\\.[A-Z]{2,}\\b",
+    "private_key": "-----BEGIN (?:RSA |EC |OPENSSH |DSA )?PRIVATE KEY-----",
+    "provider_token": "\\b(?:gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|AKIA[A-Z0-9]{16}|sk-(?:proj-)?[A-Za-z0-9_\\-]{20,}|xox[baprs]-[A-Za-z0-9\\-]{15,})\\b",
+    "credential_assignment": "(?i)\\b(?:api[_-]?key|access[_-]?token|auth[_-]?token|client[_-]?secret|password|passwd|secret[_-]?key)\\b\\s*[=:]\\s*[\"'](?![\"']|(?:example|dummy|test|placeholder|none|null|your_|changeme)[^\"']*[\"'])[A-Za-z0-9_+/=\\-.]{12,}[\"']",
+    "credential_url": "(?i)https?://[^\\s/:]+:[^\\s/@]{3,}@"
+  },
+  "independent_rg_user_ID_scan": {
+    "exit_code": 1,
+    "matching_files": 0,
+    "stderr": ""
+  },
+  "sha256_verified_exported_files": 5623,
+  "redactions_recomputed_from_original_Git_blobs": 88,
+  "hash_or_redaction_errors": [],
+  "branch_tip_changes": [],
+  "export_manifest_sha256": "c9c273761c76311e5b5ea103c583e90eef717a4d7f5541a33bd8ac8ece45df49",
+  "counts": {
+    "EXACT": 5535,
+    "REDACTED": 88,
+    "SKIPPED_BINARY": 7
+  },
+  "out_of_scope_binary_records": 375,
+  "unique_out_of_scope_binary_blobs": 105,
+  "note": "Zero matches certifies these disclosed detection patterns. Arbitrary, encoded, obfuscated or unknown secrets cannot be mathematically ruled out by a pattern scan.",
+  "files_scanned": 5628,
+  "bytes_scanned": 28904961,
+  "user_ID_matches": 0,
+  "user_ID_matches_in_paths": 0,
+  "secret_pattern_matches": {
+    "email": 0,
+    "private_key": 0,
+    "provider_token": 0,
+    "credential_assignment": 0,
+    "credential_url": 0
+  },
+  "files_with_findings": []
+}

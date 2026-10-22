@@ -1,0 +1,32 @@
+{
+  "rows": [
+    {
+      "k": 3,
+      "base_pr_auc": 0.9454098053584642,
+      "top_k_pr_auc": 0.9505108350782673,
+      "random_k_pr_auc": 0.9389089195921543,
+      "top_k_drop": -0.005101029719803085,
+      "random_k_drop": 0.006500885766309916,
+      "top_minus_random_drop": -0.011601915486113001,
+      "n_trees": 8,
+      "references_from": "r5.2 TRAIN only"
+    },
+    {
+      "k": 5,
+      "base_pr_auc": 0.9454098053584642,
+      "top_k_pr_auc": 0.9511926846316229,
+      "random_k_pr_auc": 0.9360278438396864,
+      "top_k_drop": -0.005782879273158681,
+      "random_k_drop": 0.009381961518777793,
+      "top_minus_random_drop": -0.015164840791936474,
+      "n_trees": 8,
+      "references_from": "r5.2 TRAIN only"
+    }
+  ],
+  "PROMOTED_ODST_REFERENCE_CENTRED_FAITHFULNESS": "NOT_SUPPORTED",
+  "ODST_ROUTE_TRACEABILITY": "SUPPORTED",
+  "ODST_LEAF_TRACEABILITY": "SUPPORTED",
+  "ROUTE_LEAF_INDEPENDENT_FAITHFULNESS": "UNSUPPORTED",
+  "n_trees": 8,
+  "users_available_for_bootstrap": true
+}

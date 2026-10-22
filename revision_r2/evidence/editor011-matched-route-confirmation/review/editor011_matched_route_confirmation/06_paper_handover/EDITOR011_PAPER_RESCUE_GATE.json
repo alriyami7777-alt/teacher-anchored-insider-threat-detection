@@ -1,0 +1,37 @@
+{
+  "EDITOR011_PAPER_RESCUE_GATE": "MATCHED_ROUTE_ANCHOR_RESCUE_MIXED",
+  "PRIMARY_ROUTE_ANCHOR_CONFIRMATION": "MIXED_ROUTE_ANCHOR_EFFECT",
+  "R2_OPT_VS_ET1": "WORSE",
+  "odst_rescue_gate": {
+    "ODST046_TEACHER_VIABLE": "YES",
+    "ODST046_C2_BEATS_ORIGINAL_C2": true,
+    "ODST046_R2_BEATS_ORIGINAL_R2": true,
+    "ODST046_R2_BEATS_ATTENTION_LINEAR": true
+  },
+  "BEST_CURRENT_ROUTE_ANCHORED_CONDITION": "R2-OPT",
+  "NEXT_RECOMMENDED_ACTION": "Return the matched R2-OPT versus C2-OPT result honestly. Do not launch additional rescue searches. ET1 remains the strongest teacher-guided EDITOR-010 candidate.",
+  "r52_test_accessed": false,
+  "T_OPT_mean_PR_AUC": 0.9352615756078944,
+  "mechanism": {
+    "R2_OPT_route_MAE_lt_C2": true,
+    "R2_OPT_route_KL_lt_C2": true,
+    "R2_OPT_hard_route_agreement_gt_C2": true,
+    "R2_OPT_dominant_leaf_agreement_gt_C2": true,
+    "means": {
+      "R2_OPT_route_MAE": 0.001272262427071609,
+      "C2_OPT_route_MAE": 0.002504093636292667,
+      "R2_OPT_route_KL": 0.0019614517039047608,
+      "C2_OPT_route_KL": 0.012854169015451833,
+      "R2_OPT_hard_route_agreement": 0.9988551432291667,
+      "C2_OPT_hard_route_agreement": 0.9975997721354167,
+      "R2_OPT_dominant_leaf_agreement": 0.995826171875,
+      "C2_OPT_dominant_leaf_agreement": 0.9920084635416666
+    },
+    "intended_mechanism": "route fidelity without logit-rank over-constraint",
+    "lambda_logit": 0.0
+  },
+  "bootstrap_ci95_pr_auc": [
+    -0.0005706871795265717,
+    0.00575289244919462
+  ]
+}
