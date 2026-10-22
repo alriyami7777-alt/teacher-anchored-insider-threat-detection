@@ -18,7 +18,7 @@
 Each completed experiment should record:
 
 1. experiment identifier;
-2. research objective;
+2. paper section or analysis it supports;
 3. manuscript evidence role;
 4. dataset release and split;
 5. branch and commit hash;

@@ -1,6 +1,6 @@
 ﻿# Study Status
 
-Last consolidated status: 26 August 2026.
+Last consolidated status: 22 October 2026.
 
 ## Submission status
 
@@ -8,7 +8,11 @@ Last consolidated status: 26 August 2026.
 - Original prescreened manuscript: Access-2026-37987
 - Revised title: Teacher-Guided Differentiable Sequence–Ensemble Learning for
   Explainable Insider Threat Detection
-- Status: resubmitted, under editorial consideration
+- Status: reviewer comments received; second-round revision (R2) in
+  preparation on branch `ieee-access-r2-revision`. New R2 evidence is in
+  `revision_r2/` (see the README section "Revision R2: where to find each
+  result"). The sections below record the evidence state of the August 2026
+  resubmission.
 
 ## Scope
 
@@ -26,7 +30,7 @@ CERT r4.2 development evidence, CERT r5.2 historical guarded-reference evidence
 plus final train/validation evidence, and CERT r6.1 one-pass cross-release
 evidence.
 
-## Objective 1 — Time-aware preprocessing
+## Data preparation
 
 ### Completed
 
@@ -41,7 +45,7 @@ evidence.
   Retained as historical material; no model-performance claim.
 - Full CERT r6.2 preprocessing and model-ready sequence generation.
 
-## Objective 2 — Unified sequence–ensemble modelling
+## Sequence–ensemble model and comparative evaluation
 
 ### Completed, current
 
@@ -84,7 +88,7 @@ evidence.
 - ODST accounted for approximately 72–73% of device-resident inference time in
   the component audit.
 
-## Objective 3 — Explanation and robustness
+## Explanation and degraded-input robustness
 
 ### Completed
 

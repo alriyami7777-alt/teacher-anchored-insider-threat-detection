@@ -1,8 +1,10 @@
 # Teacher-Guided Differentiable Sequence–Ensemble Learning for Explainable Insider Threat Detection
 
-This repository is the paper-support and reproducibility repository for the
-IEEE Access manuscript of the same title. It is not a general PhD companion
-repository.
+This repository supports the IEEE Access submission **Access-2026-42960**,
+*Teacher-Guided Differentiable Sequence–Ensemble Learning for Explainable
+Insider Threat Detection* (Alriyami and Mohamad). It holds the code, protocols,
+frozen results and provenance records for that paper only. Results added for
+the second-round revision (R2) are in `revision_r2/`.
 
 The repository was renamed on 22 October 2026 from
 `teacher-anchored-insider-threat-detection` to
@@ -162,7 +164,7 @@ See `KNOWN_LIMITATIONS.md` for the complete list.
 - `REPRODUCIBILITY.md` — reproducibility requirements.
 - `DATA_AVAILABILITY.md` — dataset restrictions and expected local layout.
 - `KNOWN_LIMITATIONS.md` — protocol and interpretation limits.
-- `protocols/` — objective-linked experimental protocols.
+- `protocols/` — experimental protocols for the analyses reported in the paper.
 - `manifests/` — experiment registry and result provenance.
 - `paper/manuscript/` — historical manuscript checkpoint, retained unchanged.
 - `results/tables/` — compact manuscript-facing result tables.

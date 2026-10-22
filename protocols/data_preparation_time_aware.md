@@ -1,8 +1,7 @@
-# Objective 1 Protocol: Time-Aware Preprocessing
+# Protocol: Time-Aware Preprocessing
 
-**Research objective:** Develop time-aware preprocessing that preserves inactivity and behavioural chronology.
+**Aim:** Develop time-aware preprocessing that preserves inactivity and behavioural chronology.
 
-**Chapter 3 phase:** Phase 1, data preparation and temporal representation.
 
 ## Procedure
 

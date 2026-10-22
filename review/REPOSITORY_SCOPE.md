@@ -1,11 +1,13 @@
 ﻿# Repository Scope
 
-This private repository is the paper-support and reproducibility repository for
-the IEEE Access manuscript. It is not a general PhD companion repository.
+This repository is the paper-support and reproducibility repository for the
+IEEE Access submission Access-2026-42960. It contains material for that paper
+only.
 
-The repository name retains the original `teacher-anchored-insider-threat-detection`
-wording for continuity, although the revised manuscript now uses
-"Teacher-Guided".
+The repository was renamed on 22 October 2026 from
+`teacher-anchored-insider-threat-detection` to
+`teacher-guided-insider-threat-detection` to match the revised manuscript
+title. The old URL redirects.
 
 ## Included
 

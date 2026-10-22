@@ -1,8 +1,7 @@
-# Objective 3 Protocol: Explanation Evidence
+# Protocol: Explanation Evidence
 
-**Research objective:** Assess whether model explanations provide faithful evidence for analyst interpretation.
+**Aim:** Assess whether model explanations provide faithful evidence for analyst interpretation.
 
-**Chapter 3 phase:** Phase 3, explainability assessment.
 
 ## Components
 

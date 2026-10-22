@@ -1,8 +1,7 @@
-# Objective 3 Protocol: Robustness
+# Protocol: Degraded-Input Robustness
 
-**Research objective:** Evaluate controlled robustness under degraded inputs.
+**Aim:** Evaluate controlled robustness under degraded inputs.
 
-**Chapter 3 phase:** Phase 3, robustness assessment.
 
 ## Conditions
 
