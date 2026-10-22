@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-22T12:27:07.048410+00:00",
+  "T20_source_sha256": "515248973e864bbaa89638e951929d06ae950ae76bcde1a7e71a5b165bca0405",
+  "T10": {
+    "length": 10,
+    "windows": 223000,
+    "positives": 1013,
+    "scaler_sha256": "6600c7f47da4f35680aded9da163332e75392ff2330c23e9e4b4cd58f0e9f3db",
+    "X_sha256": "422e542463e21c03e2fac74fc0a16ea56430fcc2a763720727aba61efc060e03",
+    "metadata_sha256": "e8b94571c108c1780fa2fc372ff6b167c23d0794811ec0fa68843988358e4da1",
+    "fit_on_holdout": false,
+    "r52_test_read": false
+  },
+  "T30": {
+    "length": 30,
+    "windows": 203000,
+    "positives": 1264,
+    "scaler_sha256": "6600c7f47da4f35680aded9da163332e75392ff2330c23e9e4b4cd58f0e9f3db",
+    "X_sha256": "31dba97274fab2714430e855b420dbb7533450dd96418aa138bd7b442025355b",
+    "metadata_sha256": "3ec5cfd77c9f5563ed6fe74b7db0cdccc09a8c9f1da5feb9c553e4cb83611698",
+    "fit_on_holdout": false,
+    "r52_test_read": false
+  },
+  "periods": [
+    "train",
+    "validation"
+  ],
+  "r52_test_read": false
+}

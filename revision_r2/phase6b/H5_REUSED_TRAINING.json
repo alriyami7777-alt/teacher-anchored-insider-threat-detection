@@ -1,0 +1,1262 @@
+[
+  {
+    "model": "TRACE-10",
+    "seed": 42,
+    "config": {
+      "model": "TA2",
+      "seed": 42,
+      "development_only": true,
+      "max_epochs": 15,
+      "patience": 4,
+      "batch_size": 1024,
+      "gradient_clip_norm": 1.0,
+      "weight_decay": 0.0,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "hidden_size": 64,
+      "bidirectional": true,
+      "state_dim": 128,
+      "checkpoint_metric": "development_validation_average_precision",
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "pos_weight": 62.09567901234568,
+      "optimizer": "Adam",
+      "encoder_lr": 3e-05,
+      "attention_lr": 3e-05,
+      "head_lr": 0.001,
+      "lambda_teacher": 0.5,
+      "lambda_route": 0.5,
+      "architecture": {
+        "input_dim": 13,
+        "hidden_size": 64,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "node_num_layers": 2,
+        "node_n_trees": 4,
+        "node_depth": 4,
+        "node_tree_dim": 1,
+        "node_temperature": 0.5,
+        "node_dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "gate_hidden_dim": 32
+      },
+      "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+      "teacher_target": "equal mean of 3 development T-OPT logits",
+      "initialization": "matched development T-OPT",
+      "phase6_config": "r52_T10_F13",
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "sequence_length": 10,
+      "training_partition": "TRAIN",
+      "selection_partition": "VALIDATION",
+      "excluded_holdout": true
+    },
+    "epochs": 15,
+    "best_epoch": 13,
+    "dev_validation_pr_auc": 0.917397371921219,
+    "threshold": 0.7000000000000001,
+    "wall_seconds": 339.6865499000123,
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r52_T10_F13\\checkpoints\\TA2\\seed42\\best.pt",
+    "sha256": "59d5c691957bcb994c0e75ad0e46c7399802fc9dd8f9e3f87da24d8426c83237",
+    "status": "ok",
+    "history": [
+      {
+        "epoch": 1,
+        "dev_validation_pr_auc": 0.9008853784449063,
+        "train_loss": 0.9878126748245541,
+        "seconds": 21.3851250000007
+      },
+      {
+        "epoch": 2,
+        "dev_validation_pr_auc": 0.904068800988996,
+        "train_loss": 0.4796117647229248,
+        "seconds": 20.82982919999631
+      },
+      {
+        "epoch": 3,
+        "dev_validation_pr_auc": 0.9072259537411012,
+        "train_loss": 0.2719119879668302,
+        "seconds": 21.02702490001684
+      },
+      {
+        "epoch": 4,
+        "dev_validation_pr_auc": 0.907748322076251,
+        "train_loss": 0.20461364120461367,
+        "seconds": 20.863469700008864
+      },
+      {
+        "epoch": 5,
+        "dev_validation_pr_auc": 0.9104366613998001,
+        "train_loss": 0.1884740323485321,
+        "seconds": 20.662413699988974
+      },
+      {
+        "epoch": 6,
+        "dev_validation_pr_auc": 0.9125364263125756,
+        "train_loss": 0.18451393072361205,
+        "seconds": 21.102725000004284
+      },
+      {
+        "epoch": 7,
+        "dev_validation_pr_auc": 0.9137160498536816,
+        "train_loss": 0.1822964619110913,
+        "seconds": 20.575802900013514
+      },
+      {
+        "epoch": 8,
+        "dev_validation_pr_auc": 0.9142358007630897,
+        "train_loss": 0.1807053484743578,
+        "seconds": 21.35332539997762
+      },
+      {
+        "epoch": 9,
+        "dev_validation_pr_auc": 0.9163550234336997,
+        "train_loss": 0.18008698884606755,
+        "seconds": 20.620816299982835
+      },
+      {
+        "epoch": 10,
+        "dev_validation_pr_auc": 0.916003089996231,
+        "train_loss": 0.17907759289143502,
+        "seconds": 20.901347300008638
+      },
+      {
+        "epoch": 11,
+        "dev_validation_pr_auc": 0.9156451858733528,
+        "train_loss": 0.17818307172583275,
+        "seconds": 20.210501399997156
+      },
+      {
+        "epoch": 12,
+        "dev_validation_pr_auc": 0.9163896181856552,
+        "train_loss": 0.17817270677081823,
+        "seconds": 21.59961549998843
+      },
+      {
+        "epoch": 13,
+        "dev_validation_pr_auc": 0.917397371921219,
+        "train_loss": 0.17794755719911934,
+        "seconds": 21.65142549999291
+      },
+      {
+        "epoch": 14,
+        "dev_validation_pr_auc": 0.9160627715148284,
+        "train_loss": 0.17725699460349068,
+        "seconds": 22.399143499991624
+      },
+      {
+        "epoch": 15,
+        "dev_validation_pr_auc": 0.9160840039136803,
+        "train_loss": 0.17742073749984452,
+        "seconds": 22.134097499976633
+      }
+    ],
+    "source_model": "TA2",
+    "length": 10,
+    "reused_from_phase6": true
+  },
+  {
+    "model": "TRACE-10",
+    "seed": 52,
+    "config": {
+      "model": "TA2",
+      "seed": 52,
+      "development_only": true,
+      "max_epochs": 15,
+      "patience": 4,
+      "batch_size": 1024,
+      "gradient_clip_norm": 1.0,
+      "weight_decay": 0.0,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "hidden_size": 64,
+      "bidirectional": true,
+      "state_dim": 128,
+      "checkpoint_metric": "development_validation_average_precision",
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "pos_weight": 62.09567901234568,
+      "optimizer": "Adam",
+      "encoder_lr": 3e-05,
+      "attention_lr": 3e-05,
+      "head_lr": 0.001,
+      "lambda_teacher": 0.5,
+      "lambda_route": 0.5,
+      "architecture": {
+        "input_dim": 13,
+        "hidden_size": 64,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "node_num_layers": 2,
+        "node_n_trees": 4,
+        "node_depth": 4,
+        "node_tree_dim": 1,
+        "node_temperature": 0.5,
+        "node_dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "gate_hidden_dim": 32
+      },
+      "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+      "teacher_target": "equal mean of 3 development T-OPT logits",
+      "initialization": "matched development T-OPT",
+      "phase6_config": "r52_T10_F13",
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "sequence_length": 10,
+      "training_partition": "TRAIN",
+      "selection_partition": "VALIDATION",
+      "excluded_holdout": true
+    },
+    "epochs": 14,
+    "best_epoch": 10,
+    "dev_validation_pr_auc": 0.9204419518424939,
+    "threshold": 0.92,
+    "wall_seconds": 310.62060619998374,
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r52_T10_F13\\checkpoints\\TA2\\seed52\\best.pt",
+    "sha256": "6b7191fa2b40c41a2faa57850baa6096cad29292f64325c5b7ec53a49a0bcfdd",
+    "status": "ok",
+    "history": [
+      {
+        "epoch": 1,
+        "dev_validation_pr_auc": 0.9067844467672914,
+        "train_loss": 0.48887300576943377,
+        "seconds": 21.858748100028606
+      },
+      {
+        "epoch": 2,
+        "dev_validation_pr_auc": 0.9095488934780781,
+        "train_loss": 0.25411567558943243,
+        "seconds": 21.399371600011364
+      },
+      {
+        "epoch": 3,
+        "dev_validation_pr_auc": 0.9123244558601192,
+        "train_loss": 0.20087843702492542,
+        "seconds": 21.788376300013624
+      },
+      {
+        "epoch": 4,
+        "dev_validation_pr_auc": 0.915834016824958,
+        "train_loss": 0.1918642345450499,
+        "seconds": 22.2310157000029
+      },
+      {
+        "epoch": 5,
+        "dev_validation_pr_auc": 0.9166545666653727,
+        "train_loss": 0.18858946014001424,
+        "seconds": 22.227541300002486
+      },
+      {
+        "epoch": 6,
+        "dev_validation_pr_auc": 0.9176996337431975,
+        "train_loss": 0.18694627999708596,
+        "seconds": 21.56444499999634
+      },
+      {
+        "epoch": 7,
+        "dev_validation_pr_auc": 0.9176311669069519,
+        "train_loss": 0.18539495743383275,
+        "seconds": 21.81210340000689
+      },
+      {
+        "epoch": 8,
+        "dev_validation_pr_auc": 0.9194610309657518,
+        "train_loss": 0.1842359327593259,
+        "seconds": 21.58057839999674
+      },
+      {
+        "epoch": 9,
+        "dev_validation_pr_auc": 0.9194589079245181,
+        "train_loss": 0.18314642846623663,
+        "seconds": 21.734178399987286
+      },
+      {
+        "epoch": 10,
+        "dev_validation_pr_auc": 0.9204419518424939,
+        "train_loss": 0.18329233737039094,
+        "seconds": 21.580669899994973
+      },
+      {
+        "epoch": 11,
+        "dev_validation_pr_auc": 0.9182352932656972,
+        "train_loss": 0.18252475839046756,
+        "seconds": 21.618972900003428
+      },
+      {
+        "epoch": 12,
+        "dev_validation_pr_auc": 0.9194177872008418,
+        "train_loss": 0.18207189187318973,
+        "seconds": 21.635102799977176
+      },
+      {
+        "epoch": 13,
+        "dev_validation_pr_auc": 0.9188502403192312,
+        "train_loss": 0.1815735393298341,
+        "seconds": 22.888741900009336
+      },
+      {
+        "epoch": 14,
+        "dev_validation_pr_auc": 0.9177755296295342,
+        "train_loss": 0.18132545905970898,
+        "seconds": 23.157161300012376
+      }
+    ],
+    "source_model": "TA2",
+    "length": 10,
+    "reused_from_phase6": true
+  },
+  {
+    "model": "TRACE-10",
+    "seed": 62,
+    "config": {
+      "model": "TA2",
+      "seed": 62,
+      "development_only": true,
+      "max_epochs": 15,
+      "patience": 4,
+      "batch_size": 1024,
+      "gradient_clip_norm": 1.0,
+      "weight_decay": 0.0,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "hidden_size": 64,
+      "bidirectional": true,
+      "state_dim": 128,
+      "checkpoint_metric": "development_validation_average_precision",
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "pos_weight": 62.09567901234568,
+      "optimizer": "Adam",
+      "encoder_lr": 3e-05,
+      "attention_lr": 3e-05,
+      "head_lr": 0.001,
+      "lambda_teacher": 0.5,
+      "lambda_route": 0.5,
+      "architecture": {
+        "input_dim": 13,
+        "hidden_size": 64,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "node_num_layers": 2,
+        "node_n_trees": 4,
+        "node_depth": 4,
+        "node_tree_dim": 1,
+        "node_temperature": 0.5,
+        "node_dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "gate_hidden_dim": 32
+      },
+      "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+      "teacher_target": "equal mean of 3 development T-OPT logits",
+      "initialization": "matched development T-OPT",
+      "phase6_config": "r52_T10_F13",
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "sequence_length": 10,
+      "training_partition": "TRAIN",
+      "selection_partition": "VALIDATION",
+      "excluded_holdout": true
+    },
+    "epochs": 15,
+    "best_epoch": 11,
+    "dev_validation_pr_auc": 0.9285643660493731,
+    "threshold": 0.72,
+    "wall_seconds": 276.888604399981,
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r52_T10_F13\\checkpoints\\TA2\\seed62\\best.pt",
+    "sha256": "430870af9de742f1d8d57b287e9e4b3c7ed1bcaab640a433d4f168ea831d8294",
+    "status": "ok",
+    "history": [
+      {
+        "epoch": 1,
+        "dev_validation_pr_auc": 0.9219004804226797,
+        "train_loss": 0.4877582337517943,
+        "seconds": 22.53453299999819
+      },
+      {
+        "epoch": 2,
+        "dev_validation_pr_auc": 0.922719033185708,
+        "train_loss": 0.2679920924685576,
+        "seconds": 21.745434599986766
+      },
+      {
+        "epoch": 3,
+        "dev_validation_pr_auc": 0.9215501329073189,
+        "train_loss": 0.2457418919734829,
+        "seconds": 21.582683900021948
+      },
+      {
+        "epoch": 4,
+        "dev_validation_pr_auc": 0.9225461719423366,
+        "train_loss": 0.23015550435061502,
+        "seconds": 21.268229100009194
+      },
+      {
+        "epoch": 5,
+        "dev_validation_pr_auc": 0.9246229987270843,
+        "train_loss": 0.2168381233518273,
+        "seconds": 22.70479570000316
+      },
+      {
+        "epoch": 6,
+        "dev_validation_pr_auc": 0.9225941301509483,
+        "train_loss": 0.20442890576088782,
+        "seconds": 18.02945530001307
+      },
+      {
+        "epoch": 7,
+        "dev_validation_pr_auc": 0.9273299732223667,
+        "train_loss": 0.1937637346853124,
+        "seconds": 15.865578700002516
+      },
+      {
+        "epoch": 8,
+        "dev_validation_pr_auc": 0.9249278524136761,
+        "train_loss": 0.18469966959638565,
+        "seconds": 16.36996369998087
+      },
+      {
+        "epoch": 9,
+        "dev_validation_pr_auc": 0.9258746278394563,
+        "train_loss": 0.18166176957855917,
+        "seconds": 16.25622789998306
+      },
+      {
+        "epoch": 10,
+        "dev_validation_pr_auc": 0.9281384176945588,
+        "train_loss": 0.18200046152328894,
+        "seconds": 16.107289600011427
+      },
+      {
+        "epoch": 11,
+        "dev_validation_pr_auc": 0.9285643660493731,
+        "train_loss": 0.18094895271460215,
+        "seconds": 15.994388799997978
+      },
+      {
+        "epoch": 12,
+        "dev_validation_pr_auc": 0.9240677261400985,
+        "train_loss": 0.18066387018866273,
+        "seconds": 16.230625600001076
+      },
+      {
+        "epoch": 13,
+        "dev_validation_pr_auc": 0.9266655682315773,
+        "train_loss": 0.18030220746915332,
+        "seconds": 16.32583389998763
+      },
+      {
+        "epoch": 14,
+        "dev_validation_pr_auc": 0.9255401931197998,
+        "train_loss": 0.17993917695051767,
+        "seconds": 16.435224800021388
+      },
+      {
+        "epoch": 15,
+        "dev_validation_pr_auc": 0.9242177480837509,
+        "train_loss": 0.1800584277744734,
+        "seconds": 16.22488340002019
+      }
+    ],
+    "source_model": "TA2",
+    "length": 10,
+    "reused_from_phase6": true
+  },
+  {
+    "model": "XGBoost-40-10",
+    "seed": 42,
+    "config": {
+      "model": "XGBoost_40",
+      "seed": 42,
+      "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "params": {
+        "n_estimators": 300,
+        "max_depth": 6,
+        "learning_rate": 0.1,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 1.0,
+        "objective": "binary:logistic",
+        "eval_metric": "aucpr",
+        "scale_pos_weight": 248.3827160493827,
+        "n_jobs": 2,
+        "random_state": 42,
+        "tree_method": "hist"
+      },
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "development_only": true,
+      "phase6_config": "r52_T10_F13",
+      "sequence_length": 10,
+      "training_partition": "TRAIN",
+      "selection_partition": "VALIDATION",
+      "excluded_holdout": true
+    },
+    "epochs": 300,
+    "best_epoch": 300,
+    "dev_validation_pr_auc": 0.8882309828251438,
+    "threshold": 0.53,
+    "wall_seconds": 12.44029599998612,
+    "gpu": "CPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r52_T10_F13\\checkpoints\\XGBoost_40\\seed42\\best.json",
+    "sha256": "658b742c0b43e4a8772fe1dc870c9b3780b648f7987f6728f1b16da0d2a182a3",
+    "status": "ok",
+    "source_model": "XGBoost_40",
+    "length": 10,
+    "reused_from_phase6": true
+  },
+  {
+    "model": "XGBoost-40-10",
+    "seed": 52,
+    "config": {
+      "model": "XGBoost_40",
+      "seed": 52,
+      "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "params": {
+        "n_estimators": 300,
+        "max_depth": 6,
+        "learning_rate": 0.1,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 1.0,
+        "objective": "binary:logistic",
+        "eval_metric": "aucpr",
+        "scale_pos_weight": 248.3827160493827,
+        "n_jobs": 2,
+        "random_state": 52,
+        "tree_method": "hist"
+      },
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "development_only": true,
+      "phase6_config": "r52_T10_F13",
+      "sequence_length": 10,
+      "training_partition": "TRAIN",
+      "selection_partition": "VALIDATION",
+      "excluded_holdout": true
+    },
+    "epochs": 300,
+    "best_epoch": 300,
+    "dev_validation_pr_auc": 0.8872654899256797,
+    "threshold": 0.16,
+    "wall_seconds": 13.454003300023032,
+    "gpu": "CPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r52_T10_F13\\checkpoints\\XGBoost_40\\seed52\\best.json",
+    "sha256": "0a7740a841e659aa54b3bfee7e15dde0046b98c22f072499b8e8e7e736c01f23",
+    "status": "ok",
+    "source_model": "XGBoost_40",
+    "length": 10,
+    "reused_from_phase6": true
+  },
+  {
+    "model": "XGBoost-40-10",
+    "seed": 62,
+    "config": {
+      "model": "XGBoost_40",
+      "seed": 62,
+      "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "params": {
+        "n_estimators": 300,
+        "max_depth": 6,
+        "learning_rate": 0.1,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 1.0,
+        "objective": "binary:logistic",
+        "eval_metric": "aucpr",
+        "scale_pos_weight": 248.3827160493827,
+        "n_jobs": 2,
+        "random_state": 62,
+        "tree_method": "hist"
+      },
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "development_only": true,
+      "phase6_config": "r52_T10_F13",
+      "sequence_length": 10,
+      "training_partition": "TRAIN",
+      "selection_partition": "VALIDATION",
+      "excluded_holdout": true
+    },
+    "epochs": 300,
+    "best_epoch": 300,
+    "dev_validation_pr_auc": 0.8876058812861944,
+    "threshold": 0.52,
+    "wall_seconds": 18.02833030000329,
+    "gpu": "CPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r52_T10_F13\\checkpoints\\XGBoost_40\\seed62\\best.json",
+    "sha256": "65d23f8bfcd9a235e2734d438c1b7c080845e9bf9b36b6fbf278adfa25ffe74b",
+    "status": "ok",
+    "source_model": "XGBoost_40",
+    "length": 10,
+    "reused_from_phase6": true
+  },
+  {
+    "model": "TRACE-30",
+    "seed": 42,
+    "config": {
+      "model": "TA2",
+      "seed": 42,
+      "development_only": true,
+      "max_epochs": 15,
+      "patience": 4,
+      "batch_size": 1024,
+      "gradient_clip_norm": 1.0,
+      "weight_decay": 0.0,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "hidden_size": 64,
+      "bidirectional": true,
+      "state_dim": 128,
+      "checkpoint_metric": "development_validation_average_precision",
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "pos_weight": 40.81073567151412,
+      "optimizer": "Adam",
+      "encoder_lr": 3e-05,
+      "attention_lr": 3e-05,
+      "head_lr": 0.001,
+      "lambda_teacher": 0.5,
+      "lambda_route": 0.5,
+      "architecture": {
+        "input_dim": 13,
+        "hidden_size": 64,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "node_num_layers": 2,
+        "node_n_trees": 4,
+        "node_depth": 4,
+        "node_tree_dim": 1,
+        "node_temperature": 0.5,
+        "node_dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "gate_hidden_dim": 32
+      },
+      "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+      "teacher_target": "equal mean of 3 development T-OPT logits",
+      "initialization": "matched development T-OPT",
+      "phase6_config": "r52_T30_F13",
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "sequence_length": 30,
+      "training_partition": "TRAIN",
+      "selection_partition": "VALIDATION",
+      "excluded_holdout": true
+    },
+    "epochs": 9,
+    "best_epoch": 5,
+    "dev_validation_pr_auc": 0.9884439396165551,
+    "threshold": 0.31,
+    "wall_seconds": 172.4713590000174,
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r52_T30_F13\\checkpoints\\TA2\\seed42\\best.pt",
+    "sha256": "082ca0be4640da9dc1885afda6578738e551dac6c8fc9d537d01ad988a464e3e",
+    "status": "ok",
+    "history": [
+      {
+        "epoch": 1,
+        "dev_validation_pr_auc": 0.9865321617290478,
+        "train_loss": 0.7435597563849555,
+        "seconds": 15.972655799996573
+      },
+      {
+        "epoch": 2,
+        "dev_validation_pr_auc": 0.9875651627659066,
+        "train_loss": 0.37706623225741914,
+        "seconds": 15.715298399998574
+      },
+      {
+        "epoch": 3,
+        "dev_validation_pr_auc": 0.9870671035861742,
+        "train_loss": 0.2505812706682417,
+        "seconds": 16.55854269998963
+      },
+      {
+        "epoch": 4,
+        "dev_validation_pr_auc": 0.9879836528393074,
+        "train_loss": 0.21757532215118408,
+        "seconds": 16.25926769999205
+      },
+      {
+        "epoch": 5,
+        "dev_validation_pr_auc": 0.9884439396165551,
+        "train_loss": 0.20919260160128275,
+        "seconds": 16.01794669998344
+      },
+      {
+        "epoch": 6,
+        "dev_validation_pr_auc": 0.9874823080542214,
+        "train_loss": 0.20582420207394495,
+        "seconds": 16.95906570000807
+      },
+      {
+        "epoch": 7,
+        "dev_validation_pr_auc": 0.9875857837595801,
+        "train_loss": 0.2038211988210678,
+        "seconds": 18.764290000020992
+      },
+      {
+        "epoch": 8,
+        "dev_validation_pr_auc": 0.9876305073513564,
+        "train_loss": 0.20273441562387678,
+        "seconds": 19.037145499984035
+      },
+      {
+        "epoch": 9,
+        "dev_validation_pr_auc": 0.9874020459039745,
+        "train_loss": 0.20178742600811853,
+        "seconds": 18.971713899984024
+      }
+    ],
+    "source_model": "TA2",
+    "length": 30,
+    "reused_from_phase6": true
+  },
+  {
+    "model": "TRACE-30",
+    "seed": 52,
+    "config": {
+      "model": "TA2",
+      "seed": 52,
+      "development_only": true,
+      "max_epochs": 15,
+      "patience": 4,
+      "batch_size": 1024,
+      "gradient_clip_norm": 1.0,
+      "weight_decay": 0.0,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "hidden_size": 64,
+      "bidirectional": true,
+      "state_dim": 128,
+      "checkpoint_metric": "development_validation_average_precision",
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "pos_weight": 40.81073567151412,
+      "optimizer": "Adam",
+      "encoder_lr": 3e-05,
+      "attention_lr": 3e-05,
+      "head_lr": 0.001,
+      "lambda_teacher": 0.5,
+      "lambda_route": 0.5,
+      "architecture": {
+        "input_dim": 13,
+        "hidden_size": 64,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "node_num_layers": 2,
+        "node_n_trees": 4,
+        "node_depth": 4,
+        "node_tree_dim": 1,
+        "node_temperature": 0.5,
+        "node_dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "gate_hidden_dim": 32
+      },
+      "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+      "teacher_target": "equal mean of 3 development T-OPT logits",
+      "initialization": "matched development T-OPT",
+      "phase6_config": "r52_T30_F13",
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "sequence_length": 30,
+      "training_partition": "TRAIN",
+      "selection_partition": "VALIDATION",
+      "excluded_holdout": true
+    },
+    "epochs": 9,
+    "best_epoch": 5,
+    "dev_validation_pr_auc": 0.9593766911524726,
+    "threshold": 0.39,
+    "wall_seconds": 183.31806200000574,
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r52_T30_F13\\checkpoints\\TA2\\seed52\\best.pt",
+    "sha256": "661a13d4c9502ab923e2f1c6da4e625330881d5f67a3b7dae837429ca444ca9f",
+    "status": "ok",
+    "history": [
+      {
+        "epoch": 1,
+        "dev_validation_pr_auc": 0.9540312265469687,
+        "train_loss": 0.23200110970603094,
+        "seconds": 20.50409549998585
+      },
+      {
+        "epoch": 2,
+        "dev_validation_pr_auc": 0.9490941775280684,
+        "train_loss": 0.21368877878453996,
+        "seconds": 19.23607240000274
+      },
+      {
+        "epoch": 3,
+        "dev_validation_pr_auc": 0.956649308001724,
+        "train_loss": 0.2111724335882399,
+        "seconds": 21.514363500027684
+      },
+      {
+        "epoch": 4,
+        "dev_validation_pr_auc": 0.955886613585641,
+        "train_loss": 0.21011016656292808,
+        "seconds": 20.10708479999448
+      },
+      {
+        "epoch": 5,
+        "dev_validation_pr_auc": 0.9593766911524726,
+        "train_loss": 0.20932770783371396,
+        "seconds": 19.909794200008037
+      },
+      {
+        "epoch": 6,
+        "dev_validation_pr_auc": 0.9570718912023838,
+        "train_loss": 0.208548719074991,
+        "seconds": 19.23771640000632
+      },
+      {
+        "epoch": 7,
+        "dev_validation_pr_auc": 0.9575601100384651,
+        "train_loss": 0.20803591095076668,
+        "seconds": 19.414561199984746
+      },
+      {
+        "epoch": 8,
+        "dev_validation_pr_auc": 0.9583755724283356,
+        "train_loss": 0.20754359851943122,
+        "seconds": 21.230020599992713
+      },
+      {
+        "epoch": 9,
+        "dev_validation_pr_auc": 0.9550458223809606,
+        "train_loss": 0.2071135425567627,
+        "seconds": 19.29418459997396
+      }
+    ],
+    "source_model": "TA2",
+    "length": 30,
+    "reused_from_phase6": true
+  },
+  {
+    "model": "TRACE-30",
+    "seed": 62,
+    "config": {
+      "model": "TA2",
+      "seed": 62,
+      "development_only": true,
+      "max_epochs": 15,
+      "patience": 4,
+      "batch_size": 1024,
+      "gradient_clip_norm": 1.0,
+      "weight_decay": 0.0,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "hidden_size": 64,
+      "bidirectional": true,
+      "state_dim": 128,
+      "checkpoint_metric": "development_validation_average_precision",
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "pos_weight": 40.81073567151412,
+      "optimizer": "Adam",
+      "encoder_lr": 3e-05,
+      "attention_lr": 3e-05,
+      "head_lr": 0.001,
+      "lambda_teacher": 0.5,
+      "lambda_route": 0.5,
+      "architecture": {
+        "input_dim": 13,
+        "hidden_size": 64,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "node_num_layers": 2,
+        "node_n_trees": 4,
+        "node_depth": 4,
+        "node_tree_dim": 1,
+        "node_temperature": 0.5,
+        "node_dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "gate_hidden_dim": 32
+      },
+      "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+      "teacher_target": "equal mean of 3 development T-OPT logits",
+      "initialization": "matched development T-OPT",
+      "phase6_config": "r52_T30_F13",
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "sequence_length": 30,
+      "training_partition": "TRAIN",
+      "selection_partition": "VALIDATION",
+      "excluded_holdout": true
+    },
+    "epochs": 11,
+    "best_epoch": 7,
+    "dev_validation_pr_auc": 0.9607926813241396,
+    "threshold": 0.8400000000000001,
+    "wall_seconds": 247.52336210000794,
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r52_T30_F13\\checkpoints\\TA2\\seed62\\best.pt",
+    "sha256": "eb7f19230b9eb31be9bb05d9723d1a0ef0c197f57916117917600a1ed9c8b900",
+    "status": "ok",
+    "history": [
+      {
+        "epoch": 1,
+        "dev_validation_pr_auc": 0.956616553242811,
+        "train_loss": 0.23103336095809937,
+        "seconds": 23.362104799976805
+      },
+      {
+        "epoch": 2,
+        "dev_validation_pr_auc": 0.9591392125727475,
+        "train_loss": 0.2086263380580478,
+        "seconds": 21.723415899992688
+      },
+      {
+        "epoch": 3,
+        "dev_validation_pr_auc": 0.9595516634567051,
+        "train_loss": 0.20532191288471222,
+        "seconds": 20.499294800014468
+      },
+      {
+        "epoch": 4,
+        "dev_validation_pr_auc": 0.9600221738600604,
+        "train_loss": 0.2042224246793323,
+        "seconds": 24.468493299995316
+      },
+      {
+        "epoch": 5,
+        "dev_validation_pr_auc": 0.960252481712139,
+        "train_loss": 0.20347234723303054,
+        "seconds": 22.78250199998729
+      },
+      {
+        "epoch": 6,
+        "dev_validation_pr_auc": 0.9607911038551689,
+        "train_loss": 0.20310835256841447,
+        "seconds": 22.556337199988775
+      },
+      {
+        "epoch": 7,
+        "dev_validation_pr_auc": 0.9607926813241396,
+        "train_loss": 0.20286615355809529,
+        "seconds": 21.91301809999277
+      },
+      {
+        "epoch": 8,
+        "dev_validation_pr_auc": 0.9589209366384037,
+        "train_loss": 0.20269468196233115,
+        "seconds": 21.804713999998057
+      },
+      {
+        "epoch": 9,
+        "dev_validation_pr_auc": 0.9581532291778391,
+        "train_loss": 0.20246631036864388,
+        "seconds": 23.02679669999634
+      },
+      {
+        "epoch": 10,
+        "dev_validation_pr_auc": 0.9601639561828583,
+        "train_loss": 0.20181405537658267,
+        "seconds": 21.910653300001286
+      },
+      {
+        "epoch": 11,
+        "dev_validation_pr_auc": 0.9598194640601556,
+        "train_loss": 0.20190788617399003,
+        "seconds": 20.356174500018824
+      }
+    ],
+    "source_model": "TA2",
+    "length": 30,
+    "reused_from_phase6": true
+  },
+  {
+    "model": "XGBoost-40-30",
+    "seed": 42,
+    "config": {
+      "model": "XGBoost_40",
+      "seed": 42,
+      "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "params": {
+        "n_estimators": 300,
+        "max_depth": 6,
+        "learning_rate": 0.1,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 1.0,
+        "objective": "binary:logistic",
+        "eval_metric": "aucpr",
+        "scale_pos_weight": 163.24294268605647,
+        "n_jobs": 2,
+        "random_state": 42,
+        "tree_method": "hist"
+      },
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "development_only": true,
+      "phase6_config": "r52_T30_F13",
+      "sequence_length": 30,
+      "training_partition": "TRAIN",
+      "selection_partition": "VALIDATION",
+      "excluded_holdout": true
+    },
+    "epochs": 300,
+    "best_epoch": 300,
+    "dev_validation_pr_auc": 0.9426350883384298,
+    "threshold": 0.4,
+    "wall_seconds": 17.39853239999502,
+    "gpu": "CPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r52_T30_F13\\checkpoints\\XGBoost_40\\seed42\\best.json",
+    "sha256": "1c05b876c99d082eb6bb1d4d3f7ebce2b69e53e6c94300c0f310e15810a9989a",
+    "status": "ok",
+    "source_model": "XGBoost_40",
+    "length": 30,
+    "reused_from_phase6": true
+  },
+  {
+    "model": "XGBoost-40-30",
+    "seed": 52,
+    "config": {
+      "model": "XGBoost_40",
+      "seed": 52,
+      "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "params": {
+        "n_estimators": 300,
+        "max_depth": 6,
+        "learning_rate": 0.1,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 1.0,
+        "objective": "binary:logistic",
+        "eval_metric": "aucpr",
+        "scale_pos_weight": 163.24294268605647,
+        "n_jobs": 2,
+        "random_state": 52,
+        "tree_method": "hist"
+      },
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "development_only": true,
+      "phase6_config": "r52_T30_F13",
+      "sequence_length": 30,
+      "training_partition": "TRAIN",
+      "selection_partition": "VALIDATION",
+      "excluded_holdout": true
+    },
+    "epochs": 300,
+    "best_epoch": 300,
+    "dev_validation_pr_auc": 0.944917379616923,
+    "threshold": 0.51,
+    "wall_seconds": 16.521619299979648,
+    "gpu": "CPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r52_T30_F13\\checkpoints\\XGBoost_40\\seed52\\best.json",
+    "sha256": "ceca343e3b6a6257126e65a99f21120265b8219be3f26437e971ad08a1ae994c",
+    "status": "ok",
+    "source_model": "XGBoost_40",
+    "length": 30,
+    "reused_from_phase6": true
+  },
+  {
+    "model": "XGBoost-40-30",
+    "seed": 62,
+    "config": {
+      "model": "XGBoost_40",
+      "seed": 62,
+      "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "params": {
+        "n_estimators": 300,
+        "max_depth": 6,
+        "learning_rate": 0.1,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 1.0,
+        "objective": "binary:logistic",
+        "eval_metric": "aucpr",
+        "scale_pos_weight": 163.24294268605647,
+        "n_jobs": 2,
+        "random_state": 62,
+        "tree_method": "hist"
+      },
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "development_only": true,
+      "phase6_config": "r52_T30_F13",
+      "sequence_length": 30,
+      "training_partition": "TRAIN",
+      "selection_partition": "VALIDATION",
+      "excluded_holdout": true
+    },
+    "epochs": 300,
+    "best_epoch": 300,
+    "dev_validation_pr_auc": 0.9384856679324517,
+    "threshold": 0.54,
+    "wall_seconds": 16.98245399998268,
+    "gpu": "CPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6\\private\\training\\r52_T30_F13\\checkpoints\\XGBoost_40\\seed62\\best.json",
+    "sha256": "7d11132a9234c5c715314bf3be93e7141c8f2755d771c3fc9bd6cc64385cd870",
+    "status": "ok",
+    "source_model": "XGBoost_40",
+    "length": 30,
+    "reused_from_phase6": true
+  }
+]

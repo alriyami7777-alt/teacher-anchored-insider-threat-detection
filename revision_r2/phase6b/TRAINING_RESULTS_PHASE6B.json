@@ -1,0 +1,1547 @@
+[
+  {
+    "model": "AL_PRECURSOR",
+    "seed": 42,
+    "config": {
+      "model": "AL_PRECURSOR",
+      "seed": 42,
+      "development_only": true,
+      "max_epochs": 15,
+      "patience": 4,
+      "batch_size": 1024,
+      "gradient_clip_norm": 1.0,
+      "weight_decay": 0.0,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "hidden_size": 64,
+      "bidirectional": true,
+      "state_dim": 128,
+      "checkpoint_metric": "development_validation_average_precision",
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "pos_weight": 193.4078947368421,
+      "optimizer": "Adam",
+      "encoder_lr": 0.001,
+      "attention_lr": 0.001,
+      "head_lr": 0.001,
+      "lambda_teacher": 0.0,
+      "lambda_route": 0.0,
+      "architecture": {
+        "input_dim": 13,
+        "hidden_size": 64,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "node_num_layers": 2,
+        "node_n_trees": 4,
+        "node_depth": 4,
+        "node_tree_dim": 1,
+        "node_temperature": 0.5,
+        "node_dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "gate_hidden_dim": 32
+      },
+      "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+      "pos_weight_multiplier": 1.0,
+      "scheduler": {
+        "name": "ReduceLROnPlateau",
+        "factor": 0.5,
+        "patience": 2,
+        "min_lr": 1e-05
+      },
+      "improvement_epsilon": 1e-06,
+      "role": "development-only prerequisite for frozen T-OPT initialization"
+    },
+    "epochs": 12,
+    "best_epoch": 8,
+    "dev_validation_pr_auc": 0.9654723832112518,
+    "threshold": 0.76,
+    "wall_seconds": 116.6792505000194,
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\orderfree\\checkpoints\\AL_PRECURSOR\\seed42\\best.pt",
+    "sha256": "f3da6375268cfad78fd2b03da5e625d4c26ffc4c99fc0c009fa2b70b75e819b9",
+    "status": "ok",
+    "history": [
+      {
+        "epoch": 1,
+        "dev_validation_pr_auc": 0.9033273771481086,
+        "train_loss": 0.43763223746666047,
+        "seconds": 10.312237800011644
+      },
+      {
+        "epoch": 2,
+        "dev_validation_pr_auc": 0.9006390391771855,
+        "train_loss": 0.19364164695118485,
+        "seconds": 9.46548869999242
+      },
+      {
+        "epoch": 3,
+        "dev_validation_pr_auc": 0.9341677238557501,
+        "train_loss": 0.1762017605390948,
+        "seconds": 9.355025299999397
+      },
+      {
+        "epoch": 4,
+        "dev_validation_pr_auc": 0.9318962375774509,
+        "train_loss": 0.16276510432418026,
+        "seconds": 9.308744699985255
+      },
+      {
+        "epoch": 5,
+        "dev_validation_pr_auc": 0.9401301726996342,
+        "train_loss": 0.1489945780284917,
+        "seconds": 9.397882599994773
+      },
+      {
+        "epoch": 6,
+        "dev_validation_pr_auc": 0.9235757346611541,
+        "train_loss": 0.13242393239006375,
+        "seconds": 9.523176099988632
+      },
+      {
+        "epoch": 7,
+        "dev_validation_pr_auc": 0.9538395091406305,
+        "train_loss": 0.12524548932251264,
+        "seconds": 9.351584299991373
+      },
+      {
+        "epoch": 8,
+        "dev_validation_pr_auc": 0.9654723832112518,
+        "train_loss": 0.11935633527108054,
+        "seconds": 9.469210600014776
+      },
+      {
+        "epoch": 9,
+        "dev_validation_pr_auc": 0.9505563854864085,
+        "train_loss": 0.10983355360431518,
+        "seconds": 9.36929400000372
+      },
+      {
+        "epoch": 10,
+        "dev_validation_pr_auc": 0.9439685043172794,
+        "train_loss": 0.11066390661983522,
+        "seconds": 9.492759599990677
+      },
+      {
+        "epoch": 11,
+        "dev_validation_pr_auc": 0.9595797560510289,
+        "train_loss": 0.09974633238541494,
+        "seconds": 9.419951499992749
+      },
+      {
+        "epoch": 12,
+        "dev_validation_pr_auc": 0.9629270744522883,
+        "train_loss": 0.08401966407296425,
+        "seconds": 9.407508299977053
+      }
+    ],
+    "orderfree": true
+  },
+  {
+    "model": "AL_PRECURSOR",
+    "seed": 52,
+    "config": {
+      "model": "AL_PRECURSOR",
+      "seed": 52,
+      "development_only": true,
+      "max_epochs": 15,
+      "patience": 4,
+      "batch_size": 1024,
+      "gradient_clip_norm": 1.0,
+      "weight_decay": 0.0,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "hidden_size": 64,
+      "bidirectional": true,
+      "state_dim": 128,
+      "checkpoint_metric": "development_validation_average_precision",
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "pos_weight": 193.4078947368421,
+      "optimizer": "Adam",
+      "encoder_lr": 0.001,
+      "attention_lr": 0.001,
+      "head_lr": 0.001,
+      "lambda_teacher": 0.0,
+      "lambda_route": 0.0,
+      "architecture": {
+        "input_dim": 13,
+        "hidden_size": 64,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "node_num_layers": 2,
+        "node_n_trees": 4,
+        "node_depth": 4,
+        "node_tree_dim": 1,
+        "node_temperature": 0.5,
+        "node_dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "gate_hidden_dim": 32
+      },
+      "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+      "pos_weight_multiplier": 1.0,
+      "scheduler": {
+        "name": "ReduceLROnPlateau",
+        "factor": 0.5,
+        "patience": 2,
+        "min_lr": 1e-05
+      },
+      "improvement_epsilon": 1e-06,
+      "role": "development-only prerequisite for frozen T-OPT initialization"
+    },
+    "epochs": 15,
+    "best_epoch": 11,
+    "dev_validation_pr_auc": 0.9689693264406377,
+    "threshold": 0.8116945880651475,
+    "wall_seconds": 141.6339796000102,
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\orderfree\\checkpoints\\AL_PRECURSOR\\seed52\\best.pt",
+    "sha256": "3798eee238c2ab9f8df5cac7885373f7f8caae095f355be8a695d51d603bbc7b",
+    "status": "ok",
+    "history": [
+      {
+        "epoch": 1,
+        "dev_validation_pr_auc": 0.8910120785191121,
+        "train_loss": 0.44278611313368865,
+        "seconds": 9.946671199984848
+      },
+      {
+        "epoch": 2,
+        "dev_validation_pr_auc": 0.9246584475741298,
+        "train_loss": 0.1844065107040599,
+        "seconds": 9.465659800014691
+      },
+      {
+        "epoch": 3,
+        "dev_validation_pr_auc": 0.9341134371593797,
+        "train_loss": 0.15169262652802587,
+        "seconds": 9.473280699981842
+      },
+      {
+        "epoch": 4,
+        "dev_validation_pr_auc": 0.9297036479028945,
+        "train_loss": 0.1438404852068162,
+        "seconds": 9.476850400009425
+      },
+      {
+        "epoch": 5,
+        "dev_validation_pr_auc": 0.9455212465152495,
+        "train_loss": 0.12963801219792132,
+        "seconds": 9.432312499993714
+      },
+      {
+        "epoch": 6,
+        "dev_validation_pr_auc": 0.9568028171712278,
+        "train_loss": 0.12558382016047204,
+        "seconds": 9.587714699999196
+      },
+      {
+        "epoch": 7,
+        "dev_validation_pr_auc": 0.9462016034985211,
+        "train_loss": 0.11034379200715502,
+        "seconds": 9.388487099990016
+      },
+      {
+        "epoch": 8,
+        "dev_validation_pr_auc": 0.9331079799169619,
+        "train_loss": 0.10354673771961086,
+        "seconds": 9.509636100003263
+      },
+      {
+        "epoch": 9,
+        "dev_validation_pr_auc": 0.9508461057850246,
+        "train_loss": 0.10821769999529908,
+        "seconds": 9.498969700012822
+      },
+      {
+        "epoch": 10,
+        "dev_validation_pr_auc": 0.9689257033879461,
+        "train_loss": 0.08726984789743138,
+        "seconds": 9.503850300010527
+      },
+      {
+        "epoch": 11,
+        "dev_validation_pr_auc": 0.9689693264406377,
+        "train_loss": 0.0831665086456261,
+        "seconds": 8.48785420000786
+      },
+      {
+        "epoch": 12,
+        "dev_validation_pr_auc": 0.9520279576576397,
+        "train_loss": 0.08104332685057081,
+        "seconds": 8.139400800020667
+      },
+      {
+        "epoch": 13,
+        "dev_validation_pr_auc": 0.9437178948085096,
+        "train_loss": 0.08254871860184343,
+        "seconds": 8.767948199994862
+      },
+      {
+        "epoch": 14,
+        "dev_validation_pr_auc": 0.9449693878128183,
+        "train_loss": 0.07193014465554817,
+        "seconds": 9.289995800005272
+      },
+      {
+        "epoch": 15,
+        "dev_validation_pr_auc": 0.951664025539648,
+        "train_loss": 0.07250583661918712,
+        "seconds": 9.492060199991101
+      }
+    ],
+    "orderfree": true
+  },
+  {
+    "model": "AL_PRECURSOR",
+    "seed": 62,
+    "config": {
+      "model": "AL_PRECURSOR",
+      "seed": 62,
+      "development_only": true,
+      "max_epochs": 15,
+      "patience": 4,
+      "batch_size": 1024,
+      "gradient_clip_norm": 1.0,
+      "weight_decay": 0.0,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "hidden_size": 64,
+      "bidirectional": true,
+      "state_dim": 128,
+      "checkpoint_metric": "development_validation_average_precision",
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "pos_weight": 193.4078947368421,
+      "optimizer": "Adam",
+      "encoder_lr": 0.001,
+      "attention_lr": 0.001,
+      "head_lr": 0.001,
+      "lambda_teacher": 0.0,
+      "lambda_route": 0.0,
+      "architecture": {
+        "input_dim": 13,
+        "hidden_size": 64,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "node_num_layers": 2,
+        "node_n_trees": 4,
+        "node_depth": 4,
+        "node_tree_dim": 1,
+        "node_temperature": 0.5,
+        "node_dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "gate_hidden_dim": 32
+      },
+      "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+      "pos_weight_multiplier": 1.0,
+      "scheduler": {
+        "name": "ReduceLROnPlateau",
+        "factor": 0.5,
+        "patience": 2,
+        "min_lr": 1e-05
+      },
+      "improvement_epsilon": 1e-06,
+      "role": "development-only prerequisite for frozen T-OPT initialization"
+    },
+    "epochs": 8,
+    "best_epoch": 4,
+    "dev_validation_pr_auc": 0.9137836066885834,
+    "threshold": 0.9400000000000001,
+    "wall_seconds": 79.61995959997876,
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\orderfree\\checkpoints\\AL_PRECURSOR\\seed62\\best.pt",
+    "sha256": "478e860ab12a83710e0127f5bcb3fc0f223b0c1866138f07c395b3ca446c72f7",
+    "status": "ok",
+    "history": [
+      {
+        "epoch": 1,
+        "dev_validation_pr_auc": 0.8920363470412415,
+        "train_loss": 0.463391487772493,
+        "seconds": 9.996611099981237
+      },
+      {
+        "epoch": 2,
+        "dev_validation_pr_auc": 0.8871648886735323,
+        "train_loss": 0.20081368618497591,
+        "seconds": 9.543472999997903
+      },
+      {
+        "epoch": 3,
+        "dev_validation_pr_auc": 0.8610503711646269,
+        "train_loss": 0.19111997319518412,
+        "seconds": 9.466035799996462
+      },
+      {
+        "epoch": 4,
+        "dev_validation_pr_auc": 0.9137836066885834,
+        "train_loss": 0.18159068986052385,
+        "seconds": 9.499943399976473
+      },
+      {
+        "epoch": 5,
+        "dev_validation_pr_auc": 0.8954255941193519,
+        "train_loss": 0.15302006461333906,
+        "seconds": 9.682045199995628
+      },
+      {
+        "epoch": 6,
+        "dev_validation_pr_auc": 0.90958935104599,
+        "train_loss": 0.15580253010146106,
+        "seconds": 9.677735300007043
+      },
+      {
+        "epoch": 7,
+        "dev_validation_pr_auc": 0.9135656572513904,
+        "train_loss": 0.14451162809234383,
+        "seconds": 9.522270599991316
+      },
+      {
+        "epoch": 8,
+        "dev_validation_pr_auc": 0.8931191869392143,
+        "train_loss": 0.11987832183190408,
+        "seconds": 9.796319800021593
+      }
+    ],
+    "orderfree": true
+  },
+  {
+    "model": "T-OPT",
+    "seed": 42,
+    "config": {
+      "model": "T-OPT",
+      "seed": 42,
+      "development_only": true,
+      "max_epochs": 15,
+      "patience": 4,
+      "batch_size": 1024,
+      "gradient_clip_norm": 1.0,
+      "weight_decay": 0.0,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "hidden_size": 64,
+      "bidirectional": true,
+      "state_dim": 128,
+      "checkpoint_metric": "development_validation_average_precision",
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "pos_weight": 48.35197368421053,
+      "optimizer": "Adam",
+      "encoder_lr": 3e-05,
+      "attention_lr": 3e-05,
+      "head_lr": 0.001,
+      "lambda_teacher": 0.0,
+      "lambda_route": 0.0,
+      "architecture": {
+        "input_dim": 13,
+        "hidden_size": 64,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "node_num_layers": 2,
+        "node_n_trees": 4,
+        "node_depth": 4,
+        "node_tree_dim": 1,
+        "node_temperature": 0.5,
+        "node_dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "gate_hidden_dim": 32
+      },
+      "source": "EDITOR011 producing frozen-node teacher recipe",
+      "encoder_frozen": true,
+      "attention_frozen": true,
+      "linear_frozen": true
+    },
+    "epochs": 5,
+    "best_epoch": 1,
+    "dev_validation_pr_auc": 0.9687433105113973,
+    "threshold": 0.55,
+    "wall_seconds": 57.51668579998659,
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\orderfree\\checkpoints\\T-OPT\\seed42\\best.pt",
+    "sha256": "ef6baae34a1bc01c7191ea1d6913a3957cc83ac416ae1c2e4fca4c2d80595d86",
+    "status": "ok",
+    "history": [
+      {
+        "epoch": 1,
+        "dev_validation_pr_auc": 0.9687433105113973,
+        "train_loss": 0.6577667185211343,
+        "seconds": 11.386519699997734
+      },
+      {
+        "epoch": 2,
+        "dev_validation_pr_auc": 0.9656757165439472,
+        "train_loss": 0.43347826891663516,
+        "seconds": 10.79595580001478
+      },
+      {
+        "epoch": 3,
+        "dev_validation_pr_auc": 0.9618179500112447,
+        "train_loss": 0.30713435414014933,
+        "seconds": 10.678434600005858
+      },
+      {
+        "epoch": 4,
+        "dev_validation_pr_auc": 0.960999907032796,
+        "train_loss": 0.22819541518881842,
+        "seconds": 10.612830900005065
+      },
+      {
+        "epoch": 5,
+        "dev_validation_pr_auc": 0.9650481777976115,
+        "train_loss": 0.17645122241610803,
+        "seconds": 10.991904900001828
+      }
+    ],
+    "orderfree": true
+  },
+  {
+    "model": "T-OPT",
+    "seed": 52,
+    "config": {
+      "model": "T-OPT",
+      "seed": 52,
+      "development_only": true,
+      "max_epochs": 15,
+      "patience": 4,
+      "batch_size": 1024,
+      "gradient_clip_norm": 1.0,
+      "weight_decay": 0.0,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "hidden_size": 64,
+      "bidirectional": true,
+      "state_dim": 128,
+      "checkpoint_metric": "development_validation_average_precision",
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "pos_weight": 48.35197368421053,
+      "optimizer": "Adam",
+      "encoder_lr": 3e-05,
+      "attention_lr": 3e-05,
+      "head_lr": 0.001,
+      "lambda_teacher": 0.0,
+      "lambda_route": 0.0,
+      "architecture": {
+        "input_dim": 13,
+        "hidden_size": 64,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "node_num_layers": 2,
+        "node_n_trees": 4,
+        "node_depth": 4,
+        "node_tree_dim": 1,
+        "node_temperature": 0.5,
+        "node_dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "gate_hidden_dim": 32
+      },
+      "source": "EDITOR011 producing frozen-node teacher recipe",
+      "encoder_frozen": true,
+      "attention_frozen": true,
+      "linear_frozen": true
+    },
+    "epochs": 8,
+    "best_epoch": 4,
+    "dev_validation_pr_auc": 0.9739532108217325,
+    "threshold": 0.5800000000000001,
+    "wall_seconds": 90.32269219998852,
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\orderfree\\checkpoints\\T-OPT\\seed52\\best.pt",
+    "sha256": "b0105f73f75933e198b4b1e324d11bc3ce74818ba906ace08beea1e4849d31c2",
+    "status": "ok",
+    "history": [
+      {
+        "epoch": 1,
+        "dev_validation_pr_auc": 0.9734704248667568,
+        "train_loss": 0.663301524078382,
+        "seconds": 11.76021910001873
+      },
+      {
+        "epoch": 2,
+        "dev_validation_pr_auc": 0.9721577422192809,
+        "train_loss": 0.4446542983063183,
+        "seconds": 10.951262199989287
+      },
+      {
+        "epoch": 3,
+        "dev_validation_pr_auc": 0.9726535319536947,
+        "train_loss": 0.31431871358755276,
+        "seconds": 10.860411899979226
+      },
+      {
+        "epoch": 4,
+        "dev_validation_pr_auc": 0.9739532108217325,
+        "train_loss": 0.23226752264689268,
+        "seconds": 10.59611370001221
+      },
+      {
+        "epoch": 5,
+        "dev_validation_pr_auc": 0.9722526826263569,
+        "train_loss": 0.17797424352663221,
+        "seconds": 10.769851199991535
+      },
+      {
+        "epoch": 6,
+        "dev_validation_pr_auc": 0.9719173302592443,
+        "train_loss": 0.14086956339822404,
+        "seconds": 11.014660499989986
+      },
+      {
+        "epoch": 7,
+        "dev_validation_pr_auc": 0.9736336974707362,
+        "train_loss": 0.11467196046660597,
+        "seconds": 11.115842999977758
+      },
+      {
+        "epoch": 8,
+        "dev_validation_pr_auc": 0.9682147644520992,
+        "train_loss": 0.0959912364189899,
+        "seconds": 10.625961699988693
+      }
+    ],
+    "orderfree": true
+  },
+  {
+    "model": "T-OPT",
+    "seed": 62,
+    "config": {
+      "model": "T-OPT",
+      "seed": 62,
+      "development_only": true,
+      "max_epochs": 15,
+      "patience": 4,
+      "batch_size": 1024,
+      "gradient_clip_norm": 1.0,
+      "weight_decay": 0.0,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "hidden_size": 64,
+      "bidirectional": true,
+      "state_dim": 128,
+      "checkpoint_metric": "development_validation_average_precision",
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "pos_weight": 48.35197368421053,
+      "optimizer": "Adam",
+      "encoder_lr": 3e-05,
+      "attention_lr": 3e-05,
+      "head_lr": 0.001,
+      "lambda_teacher": 0.0,
+      "lambda_route": 0.0,
+      "architecture": {
+        "input_dim": 13,
+        "hidden_size": 64,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "node_num_layers": 2,
+        "node_n_trees": 4,
+        "node_depth": 4,
+        "node_tree_dim": 1,
+        "node_temperature": 0.5,
+        "node_dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "gate_hidden_dim": 32
+      },
+      "source": "EDITOR011 producing frozen-node teacher recipe",
+      "encoder_frozen": true,
+      "attention_frozen": true,
+      "linear_frozen": true
+    },
+    "epochs": 5,
+    "best_epoch": 1,
+    "dev_validation_pr_auc": 0.9214322493208819,
+    "threshold": 0.63,
+    "wall_seconds": 65.19354249999742,
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\orderfree\\checkpoints\\T-OPT\\seed62\\best.pt",
+    "sha256": "e094857c8705fd5d430eee65359378511dfe0237589682382afa82d96261976a",
+    "status": "ok",
+    "history": [
+      {
+        "epoch": 1,
+        "dev_validation_pr_auc": 0.9214322493208819,
+        "train_loss": 0.6649931724406337,
+        "seconds": 12.45343480000156
+      },
+      {
+        "epoch": 2,
+        "dev_validation_pr_auc": 0.9106763647724572,
+        "train_loss": 0.45420658294642235,
+        "seconds": 12.68280650000088
+      },
+      {
+        "epoch": 3,
+        "dev_validation_pr_auc": 0.9098588346011306,
+        "train_loss": 0.32775370976343976,
+        "seconds": 12.331141600006958
+      },
+      {
+        "epoch": 4,
+        "dev_validation_pr_auc": 0.9065582669638937,
+        "train_loss": 0.24805211868140903,
+        "seconds": 12.500062899984187
+      },
+      {
+        "epoch": 5,
+        "dev_validation_pr_auc": 0.9073233401336521,
+        "train_loss": 0.19506261506016082,
+        "seconds": 12.453299200016772
+      }
+    ],
+    "orderfree": true
+  },
+  {
+    "model": "TA2",
+    "seed": 42,
+    "config": {
+      "model": "TA2",
+      "seed": 42,
+      "development_only": true,
+      "max_epochs": 15,
+      "patience": 4,
+      "batch_size": 1024,
+      "gradient_clip_norm": 1.0,
+      "weight_decay": 0.0,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "hidden_size": 64,
+      "bidirectional": true,
+      "state_dim": 128,
+      "checkpoint_metric": "development_validation_average_precision",
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "pos_weight": 48.35197368421053,
+      "optimizer": "Adam",
+      "encoder_lr": 3e-05,
+      "attention_lr": 3e-05,
+      "head_lr": 0.001,
+      "lambda_teacher": 0.5,
+      "lambda_route": 0.5,
+      "architecture": {
+        "input_dim": 13,
+        "hidden_size": 64,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "node_num_layers": 2,
+        "node_n_trees": 4,
+        "node_depth": 4,
+        "node_tree_dim": 1,
+        "node_temperature": 0.5,
+        "node_dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "gate_hidden_dim": 32
+      },
+      "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+      "teacher_target": "equal mean of 3 development T-OPT logits",
+      "initialization": "matched development T-OPT"
+    },
+    "epochs": 8,
+    "best_epoch": 4,
+    "dev_validation_pr_auc": 0.9723630097609652,
+    "threshold": 0.65,
+    "wall_seconds": 159.6227122999844,
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\orderfree\\checkpoints\\TA2\\seed42\\best.pt",
+    "sha256": "f5b1dd15077ebed66887559c74320eeef35325e68e8c5b775dfc9784bbf6a141",
+    "status": "ok",
+    "history": [
+      {
+        "epoch": 1,
+        "dev_validation_pr_auc": 0.968886297930234,
+        "train_loss": 0.45253356088034796,
+        "seconds": 19.592256100004306
+      },
+      {
+        "epoch": 2,
+        "dev_validation_pr_auc": 0.9707135799807762,
+        "train_loss": 0.3514821121144012,
+        "seconds": 17.35832039997331
+      },
+      {
+        "epoch": 3,
+        "dev_validation_pr_auc": 0.9702035716450593,
+        "train_loss": 0.3357791045732708,
+        "seconds": 16.63834959999076
+      },
+      {
+        "epoch": 4,
+        "dev_validation_pr_auc": 0.9723630097609652,
+        "train_loss": 0.3295777142253624,
+        "seconds": 16.649446700001135
+      },
+      {
+        "epoch": 5,
+        "dev_validation_pr_auc": 0.9715911106282685,
+        "train_loss": 0.3253570820353358,
+        "seconds": 17.302750300004845
+      },
+      {
+        "epoch": 6,
+        "dev_validation_pr_auc": 0.9714382281821995,
+        "train_loss": 0.3227229511419125,
+        "seconds": 16.901511699979892
+      },
+      {
+        "epoch": 7,
+        "dev_validation_pr_auc": 0.9714097314092669,
+        "train_loss": 0.3211137434758511,
+        "seconds": 16.544279099995038
+      },
+      {
+        "epoch": 8,
+        "dev_validation_pr_auc": 0.9714194168516065,
+        "train_loss": 0.32033861012547554,
+        "seconds": 16.97612769997795
+      }
+    ],
+    "orderfree": true
+  },
+  {
+    "model": "TA2",
+    "seed": 52,
+    "config": {
+      "model": "TA2",
+      "seed": 52,
+      "development_only": true,
+      "max_epochs": 15,
+      "patience": 4,
+      "batch_size": 1024,
+      "gradient_clip_norm": 1.0,
+      "weight_decay": 0.0,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "hidden_size": 64,
+      "bidirectional": true,
+      "state_dim": 128,
+      "checkpoint_metric": "development_validation_average_precision",
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "pos_weight": 48.35197368421053,
+      "optimizer": "Adam",
+      "encoder_lr": 3e-05,
+      "attention_lr": 3e-05,
+      "head_lr": 0.001,
+      "lambda_teacher": 0.5,
+      "lambda_route": 0.5,
+      "architecture": {
+        "input_dim": 13,
+        "hidden_size": 64,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "node_num_layers": 2,
+        "node_n_trees": 4,
+        "node_depth": 4,
+        "node_tree_dim": 1,
+        "node_temperature": 0.5,
+        "node_dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "gate_hidden_dim": 32
+      },
+      "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+      "teacher_target": "equal mean of 3 development T-OPT logits",
+      "initialization": "matched development T-OPT"
+    },
+    "epochs": 15,
+    "best_epoch": 12,
+    "dev_validation_pr_auc": 0.9793949601524325,
+    "threshold": 0.51,
+    "wall_seconds": 285.2648924999812,
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\orderfree\\checkpoints\\TA2\\seed52\\best.pt",
+    "sha256": "1baa8cb34ec96a7d4c7393ed6ab2e39d26eb234876c94ec494d4da457c29a426",
+    "status": "ok",
+    "history": [
+      {
+        "epoch": 1,
+        "dev_validation_pr_auc": 0.9709806431101805,
+        "train_loss": 0.3693604458927503,
+        "seconds": 17.179371200007154
+      },
+      {
+        "epoch": 2,
+        "dev_validation_pr_auc": 0.9733210448348643,
+        "train_loss": 0.33210391701417524,
+        "seconds": 16.78145399998175
+      },
+      {
+        "epoch": 3,
+        "dev_validation_pr_auc": 0.9732731205935448,
+        "train_loss": 0.31862556971188527,
+        "seconds": 16.77317440000479
+      },
+      {
+        "epoch": 4,
+        "dev_validation_pr_auc": 0.975605839702308,
+        "train_loss": 0.31722082712121824,
+        "seconds": 16.635814700013725
+      },
+      {
+        "epoch": 5,
+        "dev_validation_pr_auc": 0.9758202268435815,
+        "train_loss": 0.31652014570631554,
+        "seconds": 18.98607089999132
+      },
+      {
+        "epoch": 6,
+        "dev_validation_pr_auc": 0.9768374814195346,
+        "train_loss": 0.31615382664215746,
+        "seconds": 19.841531899990514
+      },
+      {
+        "epoch": 7,
+        "dev_validation_pr_auc": 0.9766488199296754,
+        "train_loss": 0.31567325414175107,
+        "seconds": 19.61016740000923
+      },
+      {
+        "epoch": 8,
+        "dev_validation_pr_auc": 0.9759784122759234,
+        "train_loss": 0.3157398924855815,
+        "seconds": 19.34660950000398
+      },
+      {
+        "epoch": 9,
+        "dev_validation_pr_auc": 0.978157344455312,
+        "train_loss": 0.3156138624951319,
+        "seconds": 18.965426899987506
+      },
+      {
+        "epoch": 10,
+        "dev_validation_pr_auc": 0.976653123446306,
+        "train_loss": 0.3155460493915577,
+        "seconds": 19.680747899983544
+      },
+      {
+        "epoch": 11,
+        "dev_validation_pr_auc": 0.9774228861243167,
+        "train_loss": 0.3155043437799625,
+        "seconds": 19.721748500014655
+      },
+      {
+        "epoch": 12,
+        "dev_validation_pr_auc": 0.9793949601524325,
+        "train_loss": 0.314999604772997,
+        "seconds": 19.847990100010065
+      },
+      {
+        "epoch": 13,
+        "dev_validation_pr_auc": 0.9756304187436946,
+        "train_loss": 0.31511153944535103,
+        "seconds": 20.00736039999174
+      },
+      {
+        "epoch": 14,
+        "dev_validation_pr_auc": 0.9780702763953099,
+        "train_loss": 0.31505117873976074,
+        "seconds": 19.753038099996047
+      },
+      {
+        "epoch": 15,
+        "dev_validation_pr_auc": 0.9757506223471655,
+        "train_loss": 0.31473705416201736,
+        "seconds": 19.75232379999943
+      }
+    ],
+    "orderfree": true
+  },
+  {
+    "model": "TA2",
+    "seed": 62,
+    "config": {
+      "model": "TA2",
+      "seed": 62,
+      "development_only": true,
+      "max_epochs": 15,
+      "patience": 4,
+      "batch_size": 1024,
+      "gradient_clip_norm": 1.0,
+      "weight_decay": 0.0,
+      "dropout": 0.2,
+      "attention_dim": 64,
+      "hidden_size": 64,
+      "bidirectional": true,
+      "state_dim": 128,
+      "checkpoint_metric": "development_validation_average_precision",
+      "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+      "pos_weight": 48.35197368421053,
+      "optimizer": "Adam",
+      "encoder_lr": 3e-05,
+      "attention_lr": 3e-05,
+      "head_lr": 0.001,
+      "lambda_teacher": 0.5,
+      "lambda_route": 0.5,
+      "architecture": {
+        "input_dim": 13,
+        "hidden_size": 64,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "fusion_variant": "sparsemax_sigmoid_odst",
+        "node_num_layers": 2,
+        "node_n_trees": 4,
+        "node_depth": 4,
+        "node_tree_dim": 1,
+        "node_temperature": 0.5,
+        "node_dropout": 0.0,
+        "leaf_init_std": 0.05,
+        "gate_hidden_dim": 32
+      },
+      "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+      "teacher_target": "equal mean of 3 development T-OPT logits",
+      "initialization": "matched development T-OPT"
+    },
+    "epochs": 10,
+    "best_epoch": 6,
+    "dev_validation_pr_auc": 0.9223112803514001,
+    "threshold": 0.8,
+    "wall_seconds": 173.07398750001448,
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\orderfree\\checkpoints\\TA2\\seed62\\best.pt",
+    "sha256": "add439160d3371fe8de9cb92013eaf7e5e34d7a0a730b9e43ba150052cb1674c",
+    "status": "ok",
+    "history": [
+      {
+        "epoch": 1,
+        "dev_validation_pr_auc": 0.9055787833082345,
+        "train_loss": 0.479168338521483,
+        "seconds": 19.55355780001264
+      },
+      {
+        "epoch": 2,
+        "dev_validation_pr_auc": 0.9080677033881495,
+        "train_loss": 0.3650843548447953,
+        "seconds": 17.79297210002551
+      },
+      {
+        "epoch": 3,
+        "dev_validation_pr_auc": 0.9063289552479573,
+        "train_loss": 0.34666992357741355,
+        "seconds": 16.96711399999913
+      },
+      {
+        "epoch": 4,
+        "dev_validation_pr_auc": 0.9143991219785302,
+        "train_loss": 0.3400305876215501,
+        "seconds": 16.291416199994273
+      },
+      {
+        "epoch": 5,
+        "dev_validation_pr_auc": 0.9188986973312401,
+        "train_loss": 0.3363419653142971,
+        "seconds": 16.22724159999052
+      },
+      {
+        "epoch": 6,
+        "dev_validation_pr_auc": 0.9223112803514001,
+        "train_loss": 0.3342673790208781,
+        "seconds": 16.14953819999937
+      },
+      {
+        "epoch": 7,
+        "dev_validation_pr_auc": 0.9150696674940195,
+        "train_loss": 0.3321681991781277,
+        "seconds": 16.1851888000092
+      },
+      {
+        "epoch": 8,
+        "dev_validation_pr_auc": 0.9179328340549033,
+        "train_loss": 0.33118726713846985,
+        "seconds": 16.2292323000147
+      },
+      {
+        "epoch": 9,
+        "dev_validation_pr_auc": 0.9185339401962155,
+        "train_loss": 0.33060019326048656,
+        "seconds": 16.395763500011526
+      },
+      {
+        "epoch": 10,
+        "dev_validation_pr_auc": 0.9203847586627497,
+        "train_loss": 0.32990164936335153,
+        "seconds": 18.559654600016074
+      }
+    ],
+    "orderfree": true
+  },
+  {
+    "model": "XGBoost-260",
+    "seed": 42,
+    "status": "ok",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\XGBoost-260\\seed42\\best.json",
+    "sha256": "21793971d3eccbd1071d4a3c91a03056297a8c6c456eaffd276304ba27983141",
+    "threshold": 0.39,
+    "development_AP": 0.8976702936364853,
+    "epochs": 300,
+    "best_epoch": 300,
+    "wall_seconds": 50.55830530001549,
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 6,
+      "learning_rate": 0.1,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 1.0,
+      "objective": "binary:logistic",
+      "eval_metric": "aucpr",
+      "n_jobs": 2,
+      "tree_method": "hist",
+      "scale_pos_weight": 193.4078947368421,
+      "random_state": 42
+    },
+    "history": [],
+    "development_only": true,
+    "orderfree": false
+  },
+  {
+    "model": "XGBoost-260",
+    "seed": 52,
+    "status": "ok",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\XGBoost-260\\seed52\\best.json",
+    "sha256": "25035d6be154f747319d83d892669583bfbcdc9ea2bebcd8f6852244c44ccd14",
+    "threshold": 0.5,
+    "development_AP": 0.8997876989652682,
+    "epochs": 300,
+    "best_epoch": 300,
+    "wall_seconds": 51.30711269998574,
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 6,
+      "learning_rate": 0.1,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 1.0,
+      "objective": "binary:logistic",
+      "eval_metric": "aucpr",
+      "n_jobs": 2,
+      "tree_method": "hist",
+      "scale_pos_weight": 193.4078947368421,
+      "random_state": 52
+    },
+    "history": [],
+    "development_only": true,
+    "orderfree": false
+  },
+  {
+    "model": "XGBoost-260",
+    "seed": 62,
+    "status": "ok",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\XGBoost-260\\seed62\\best.json",
+    "sha256": "254f8592877ea06984447cced5106f3468d0c7d11d12cb77b7ad2589914c183f",
+    "threshold": 0.42000000000000004,
+    "development_AP": 0.9101186412872234,
+    "epochs": 300,
+    "best_epoch": 300,
+    "wall_seconds": 47.90920979998191,
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 6,
+      "learning_rate": 0.1,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 1.0,
+      "objective": "binary:logistic",
+      "eval_metric": "aucpr",
+      "n_jobs": 2,
+      "tree_method": "hist",
+      "scale_pos_weight": 193.4078947368421,
+      "random_state": 62
+    },
+    "history": [],
+    "development_only": true,
+    "orderfree": false
+  },
+  {
+    "model": "RF-260",
+    "seed": 42,
+    "status": "ok",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\RF-260\\seed42\\best.joblib",
+    "sha256": "e3c529df93947e5300f415868424ccb43f1ff2fb61a16466b16c2343fa3fc29e",
+    "threshold": 0.39,
+    "development_AP": 0.9006249244705098,
+    "epochs": 200,
+    "best_epoch": 200,
+    "wall_seconds": 334.78213140001753,
+    "params": {
+      "n_estimators": 200,
+      "max_depth": 20,
+      "min_samples_leaf": 2,
+      "n_jobs": 2,
+      "class_weight": "balanced_subsample",
+      "random_state": 42
+    },
+    "history": [],
+    "development_only": true,
+    "orderfree": false
+  },
+  {
+    "model": "RF-260",
+    "seed": 52,
+    "status": "ok",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\RF-260\\seed52\\best.joblib",
+    "sha256": "fd0b9a09b2bdf1aa75f0e9e1dd71cb6aef7f0dc8e1fd937dd371f0b35702df99",
+    "threshold": 0.38,
+    "development_AP": 0.8993738924223611,
+    "epochs": 200,
+    "best_epoch": 200,
+    "wall_seconds": 330.1260980000079,
+    "params": {
+      "n_estimators": 200,
+      "max_depth": 20,
+      "min_samples_leaf": 2,
+      "n_jobs": 2,
+      "class_weight": "balanced_subsample",
+      "random_state": 52
+    },
+    "history": [],
+    "development_only": true,
+    "orderfree": false
+  },
+  {
+    "model": "RF-260",
+    "seed": 62,
+    "status": "ok",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\RF-260\\seed62\\best.joblib",
+    "sha256": "7cc1fde06cd9b60fec6cdd2273dcd3258017a39ddb2d84564e4066b87544efa4",
+    "threshold": 0.39,
+    "development_AP": 0.8983806507808153,
+    "epochs": 200,
+    "best_epoch": 200,
+    "wall_seconds": 327.0095097000012,
+    "params": {
+      "n_estimators": 200,
+      "max_depth": 20,
+      "min_samples_leaf": 2,
+      "n_jobs": 2,
+      "class_weight": "balanced_subsample",
+      "random_state": 62
+    },
+    "history": [],
+    "development_only": true,
+    "orderfree": false
+  },
+  {
+    "model": "LightGBM-260",
+    "seed": 42,
+    "status": "ok",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\LightGBM-260\\seed42\\best.joblib",
+    "sha256": "2f5b343f05334e0bf077c0ebcbd0603e8926761f8ef34f90b9f6e2c77cdcdc26",
+    "threshold": 0.7878561014656813,
+    "development_AP": 0.8862598227765653,
+    "epochs": 300,
+    "best_epoch": 300,
+    "wall_seconds": 35.72315639999579,
+    "params": {
+      "n_estimators": 300,
+      "num_leaves": 31,
+      "learning_rate": 0.05,
+      "scale_pos_weight": 193.4078947368421,
+      "subsample": 0.8,
+      "subsample_freq": 1,
+      "colsample_bytree": 0.8,
+      "deterministic": true,
+      "random_state": 42,
+      "n_jobs": 2,
+      "verbosity": -1
+    },
+    "history": [],
+    "development_only": true,
+    "orderfree": false
+  },
+  {
+    "model": "LightGBM-260",
+    "seed": 52,
+    "status": "ok",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\LightGBM-260\\seed52\\best.joblib",
+    "sha256": "c70931a8cd6f53d6842697a8ebb4544b228248f605112971dd3e14c0dc794240",
+    "threshold": 0.6999118709137563,
+    "development_AP": 0.8844307657786452,
+    "epochs": 300,
+    "best_epoch": 300,
+    "wall_seconds": 35.781887000019196,
+    "params": {
+      "n_estimators": 300,
+      "num_leaves": 31,
+      "learning_rate": 0.05,
+      "scale_pos_weight": 193.4078947368421,
+      "subsample": 0.8,
+      "subsample_freq": 1,
+      "colsample_bytree": 0.8,
+      "deterministic": true,
+      "random_state": 52,
+      "n_jobs": 2,
+      "verbosity": -1
+    },
+    "history": [],
+    "development_only": true,
+    "orderfree": false
+  },
+  {
+    "model": "LightGBM-260",
+    "seed": 62,
+    "status": "ok",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\LightGBM-260\\seed62\\best.joblib",
+    "sha256": "5ae5adb3f1354dd74e2e998be283514f9645184c4f7633cfbd09ff2f52dbf8d7",
+    "threshold": 0.8270429226016898,
+    "development_AP": 0.8887365002379565,
+    "epochs": 300,
+    "best_epoch": 300,
+    "wall_seconds": 36.36357680000947,
+    "params": {
+      "n_estimators": 300,
+      "num_leaves": 31,
+      "learning_rate": 0.05,
+      "scale_pos_weight": 193.4078947368421,
+      "subsample": 0.8,
+      "subsample_freq": 1,
+      "colsample_bytree": 0.8,
+      "deterministic": true,
+      "random_state": 62,
+      "n_jobs": 2,
+      "verbosity": -1
+    },
+    "history": [],
+    "development_only": true,
+    "orderfree": false
+  },
+  {
+    "model": "MLP-40",
+    "seed": 42,
+    "status": "ok",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\MLP-40\\seed42\\best.pt",
+    "sha256": "94abb2e00cdde42dacd44597412cc9210e7ad6f956d0f6657de9dbf05fda5330",
+    "threshold": 0.839523978201515,
+    "development_AP": 0.9357792211127445,
+    "epochs": 9,
+    "best_epoch": 5,
+    "wall_seconds": 80.57734940003138,
+    "params": {
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "batch_size": 1024,
+      "positive_weight": 48.35197368421053,
+      "gradient_clip": 1.0,
+      "max_epochs": 15,
+      "patience": 4,
+      "hidden": [
+        128,
+        64
+      ],
+      "dropout": 0.2,
+      "input_width": 40
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "development_AP": 0.8693410886693226,
+        "train_loss": 0.18582557446823508,
+        "seconds": 9.297761099995114
+      },
+      {
+        "epoch": 2,
+        "development_AP": 0.9136999552644733,
+        "train_loss": 0.09575242262887067,
+        "seconds": 8.820921500038821
+      },
+      {
+        "epoch": 3,
+        "development_AP": 0.909367243009353,
+        "train_loss": 0.0820163263426416,
+        "seconds": 8.349969699978828
+      },
+      {
+        "epoch": 4,
+        "development_AP": 0.9319513093677847,
+        "train_loss": 0.07402485711454034,
+        "seconds": 8.652571599988732
+      },
+      {
+        "epoch": 5,
+        "development_AP": 0.9357792211127445,
+        "train_loss": 0.06761643803237533,
+        "seconds": 8.834362199995667
+      },
+      {
+        "epoch": 6,
+        "development_AP": 0.9233383371589075,
+        "train_loss": 0.06238533120258206,
+        "seconds": 8.62578250002116
+      },
+      {
+        "epoch": 7,
+        "development_AP": 0.9029911479641386,
+        "train_loss": 0.0613659241782681,
+        "seconds": 8.751372699975036
+      },
+      {
+        "epoch": 8,
+        "development_AP": 0.9196781384942243,
+        "train_loss": 0.059794911450238394,
+        "seconds": 8.850281300023198
+      },
+      {
+        "epoch": 9,
+        "development_AP": 0.9334709740637822,
+        "train_loss": 0.05714647279899132,
+        "seconds": 8.397973700019065
+      }
+    ],
+    "development_only": true,
+    "orderfree": false
+  },
+  {
+    "model": "MLP-40",
+    "seed": 52,
+    "status": "ok",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\MLP-40\\seed52\\best.pt",
+    "sha256": "92b4e8ded983e128f0398aad81be822b8af665230450b22502af9848fdd35510",
+    "threshold": 0.8676924526160275,
+    "development_AP": 0.9184800907514579,
+    "epochs": 6,
+    "best_epoch": 2,
+    "wall_seconds": 53.87321489996975,
+    "params": {
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "batch_size": 1024,
+      "positive_weight": 48.35197368421053,
+      "gradient_clip": 1.0,
+      "max_epochs": 15,
+      "patience": 4,
+      "hidden": [
+        128,
+        64
+      ],
+      "dropout": 0.2,
+      "input_width": 40
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "development_AP": 0.876594432195481,
+        "train_loss": 0.18384710712340077,
+        "seconds": 8.91972629999509
+      },
+      {
+        "epoch": 2,
+        "development_AP": 0.9184800907514579,
+        "train_loss": 0.09621566197008853,
+        "seconds": 8.202435199986212
+      },
+      {
+        "epoch": 3,
+        "development_AP": 0.9046617860064993,
+        "train_loss": 0.0822862527267834,
+        "seconds": 8.45773189997999
+      },
+      {
+        "epoch": 4,
+        "development_AP": 0.9140812283674405,
+        "train_loss": 0.07188922357619716,
+        "seconds": 8.723574900010135
+      },
+      {
+        "epoch": 5,
+        "development_AP": 0.8993689650882009,
+        "train_loss": 0.06746718580211479,
+        "seconds": 8.664393800019752
+      },
+      {
+        "epoch": 6,
+        "development_AP": 0.9172008137961798,
+        "train_loss": 0.06058781306957432,
+        "seconds": 8.741047299990896
+      }
+    ],
+    "development_only": true,
+    "orderfree": false
+  },
+  {
+    "model": "MLP-40",
+    "seed": 62,
+    "status": "ok",
+    "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6b\\private\\training\\MLP-40\\seed62\\best.pt",
+    "sha256": "699e0cce42d41d1be7c0f3555359e31079530a6488ceca63a6fce81e3e7452d2",
+    "threshold": 0.8047567716686849,
+    "development_AP": 0.9455063965841176,
+    "epochs": 10,
+    "best_epoch": 6,
+    "wall_seconds": 87.36408530001063,
+    "params": {
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "batch_size": 1024,
+      "positive_weight": 48.35197368421053,
+      "gradient_clip": 1.0,
+      "max_epochs": 15,
+      "patience": 4,
+      "hidden": [
+        128,
+        64
+      ],
+      "dropout": 0.2,
+      "input_width": 40
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "development_AP": 0.8968961512219851,
+        "train_loss": 0.18103990126831077,
+        "seconds": 8.665341800020542
+      },
+      {
+        "epoch": 2,
+        "development_AP": 0.9146003078902211,
+        "train_loss": 0.0915589111328831,
+        "seconds": 8.53636790002929
+      },
+      {
+        "epoch": 3,
+        "development_AP": 0.8972200662419122,
+        "train_loss": 0.08005795099100889,
+        "seconds": 8.433486499998253
+      },
+      {
+        "epoch": 4,
+        "development_AP": 0.9113107038096838,
+        "train_loss": 0.07010839268328171,
+        "seconds": 8.310732000041753
+      },
+      {
+        "epoch": 5,
+        "development_AP": 0.924363979852818,
+        "train_loss": 0.06520081113619247,
+        "seconds": 8.393681700050365
+      },
+      {
+        "epoch": 6,
+        "development_AP": 0.9455063965841176,
+        "train_loss": 0.05956053739257926,
+        "seconds": 8.760156700038351
+      },
+      {
+        "epoch": 7,
+        "development_AP": 0.923259696308779,
+        "train_loss": 0.05995590573826619,
+        "seconds": 8.665788099984638
+      },
+      {
+        "epoch": 8,
+        "development_AP": 0.9148230640129362,
+        "train_loss": 0.053152935301743184,
+        "seconds": 8.64231959998142
+      },
+      {
+        "epoch": 9,
+        "development_AP": 0.9198001124396538,
+        "train_loss": 0.05278452490933252,
+        "seconds": 8.297346799983643
+      },
+      {
+        "epoch": 10,
+        "development_AP": 0.919970782218816,
+        "train_loss": 0.05006170748912945,
+        "seconds": 8.390781799971592
+      }
+    ],
+    "development_only": true,
+    "orderfree": false
+  }
+]

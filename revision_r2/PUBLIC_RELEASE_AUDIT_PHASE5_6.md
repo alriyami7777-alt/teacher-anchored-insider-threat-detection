@@ -26,3 +26,11 @@ Each `reproducibility_code/*.py` was hashed (SHA-256) and compared with the hash
 
 ## Line endings
 The repository's `.gitattributes` normalises text files to LF. The `.py` files were already LF, so their hashes above hold in a clone. The JSON, CSV and Markdown outputs were written with CRLF on Windows; in a clone they are LF, so a byte-level hash of those outputs will differ from one taken on the author's PC. Their content is unchanged.
+
+## Phase 6B (added 22 Oct 2026, 22:15)
+| Item | Result |
+|---|---|
+| Source | `phase6b_public_bundle.zip` (40 files), byte-identical to `R2_revision\phase6b\` top-level files; `private/` excluded. `STATUS.json` stage = `PHASE6B_COMPLETE`, all checks passed. |
+| Code | `phase6b/reproducibility_code/`: 11 scripts from `phase6b\private\code_snapshot\` (code only). 11/11 SHA-256 match the hashes frozen in the Phase 6B JSON records. |
+| Audit | No CERT user IDs, CERT raw/answer data, binaries, `private/` content or files >10 MB. Absolute paths only under `C:\PhD\04_Journal_Papers` and `C:\PhD\07_Projects`, already public. |
+| Line endings | Two scripts (`bootstrap6b.py`, `common6b.py`) have mixed line endings. `revision_r2/.gitattributes` marks every `reproducibility_code/*.py` as `-text`, so clones keep the exact bytes and the hashes hold. |

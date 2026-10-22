@@ -1,0 +1,50 @@
+[
+  {
+    "utc": "2026-10-22T12:35:15.828441+00:00",
+    "seed": 42,
+    "model_sha256": "80fd6ecbd8c3f22b5241aad353c02ca34426c9dc34c8c1fa489bb679f87234d9",
+    "selection_sha256": "36fdd9281b0dbc75fe4f66b007a961d0081ff3fcc96e6422f54fa4bb110380bb",
+    "Phase4_prediction_max_abs_error": 4.628202399103998e-08,
+    "development_allvalid_mask_parity": 0.0,
+    "tree_reference_sha256": "78d39fb2c5261ef007fde274ee98422e8e357d2f54f749f454c9e03b95d9a41f",
+    "temporal_sha256": "73e6c6491620d22116821222901c913dbde854712949ebac30ec689520eb516a",
+    "tree_sha256": "4845bb0b4b84a145c279b85a6afe4c73c10aa00ab8f076e1ad1b0be5dade8e05",
+    "reused_feature_sha256": "8168f919c113d014af7ee42efc21c2cbb125b024f17be9939d4ab146f0c1d404",
+    "random_controls_new_levels": 25,
+    "random_controls_inherited_feature": 200,
+    "r52_test_read": false,
+    "status": "ok"
+  },
+  {
+    "utc": "2026-10-22T12:35:31.022612+00:00",
+    "seed": 52,
+    "model_sha256": "2927c9975a4f59b219afd448c709b964396a879ac4f36b82bfef7538d3612080",
+    "selection_sha256": "36fdd9281b0dbc75fe4f66b007a961d0081ff3fcc96e6422f54fa4bb110380bb",
+    "Phase4_prediction_max_abs_error": 4.834520439533918e-08,
+    "development_allvalid_mask_parity": 0.0,
+    "tree_reference_sha256": "d65478e9beafae8ffd85c5360faa23b796f4c6b796af9967ab33ebe1b76119aa",
+    "temporal_sha256": "aff289dfa3e88265a0fba03dd66c8a84f95ce9dd2f613c91e53790b151d3883a",
+    "tree_sha256": "b9989d2da886d5f14d564134c8674fa0f68ebb1eab7137e73e887132480129b8",
+    "reused_feature_sha256": "aafbb0aa579d17562c244ac9cef6eb6d73743913f5ff5a14506aaa4cdd9d919a",
+    "random_controls_new_levels": 25,
+    "random_controls_inherited_feature": 200,
+    "r52_test_read": false,
+    "status": "ok"
+  },
+  {
+    "utc": "2026-10-22T12:35:46.075481+00:00",
+    "seed": 62,
+    "model_sha256": "0d246d87aecbc078bf46bf211fc2a03df7bdf41355da17f82079da39849d5f18",
+    "selection_sha256": "36fdd9281b0dbc75fe4f66b007a961d0081ff3fcc96e6422f54fa4bb110380bb",
+    "Phase4_prediction_max_abs_error": 4.185869201256409e-08,
+    "development_allvalid_mask_parity": 0.0,
+    "tree_reference_sha256": "0056a875f7481df225c14adfb759b94acdf9816a33ff7fb266709df8181c6896",
+    "temporal_sha256": "50edd7d77f95f138543c21281ef1bafd25a291596abbfacfce84a10dcd16da55",
+    "tree_sha256": "c7324969e36ab05f873cd6a0aedf74339cb74a4d983d139f496b39a7db22f021",
+    "reused_feature_sha256": "3ed681d1a7ec590313805a7365b96c22cd0189a357688a6fa940f5e09886679b",
+    "random_controls_new_levels": 25,
+    "random_controls_inherited_feature": 200,
+    "r52_test_read": false,
+    "status": "ok"
+  }
+]

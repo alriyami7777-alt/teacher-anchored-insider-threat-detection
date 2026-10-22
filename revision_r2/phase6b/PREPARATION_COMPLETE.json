@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-22T11:40:24.289244+00:00",
+  "development_only": true,
+  "holdout_data_read": false,
+  "r52_test_read": false,
+  "orderfree_rng": "SeedSequence([42,original_split_row_index])",
+  "H5_checkpoints_verified": 12,
+  "H5_development_manifest_sha256": "3ab09bd9fafe288d6fa2f89d1e3e07ecc0f3817c8bb893e316912bbd2c8cba47"
+}

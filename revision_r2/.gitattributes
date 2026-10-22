@@ -1,0 +1,2 @@
+# Keep reproducibility scripts byte-identical so their SHA-256 matches the frozen protocol hashes.
+**/reproducibility_code/*.py -text

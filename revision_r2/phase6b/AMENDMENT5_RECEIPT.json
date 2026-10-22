@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-22T11:37:35.9827764Z",
+  "sha256": "c4d82ec9ba726877bd436a744b3ec9dc38e67d3b189790327ec2931568a8b3b2",
+  "hashed_bytes": 29906,
+  "previous_prefix_bytes": 19979,
+  "previous_prefix_sha256": "5c6d6df2ecb33da9a5dd55b711de7150a5079e80020b88256ba0162647d9ad8c",
+  "preregistration_final_sha256": "ba085b9000da3e4e55078dc0deac94976fe1fd9b7ecaa272682e012e6755dbee",
+  "before_scoring": true
+}

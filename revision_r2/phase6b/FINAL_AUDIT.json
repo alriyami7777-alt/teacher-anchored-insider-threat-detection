@@ -1,0 +1,132 @@
+{
+  "utc": "2026-10-22T12:41:39.244005+00:00",
+  "all_checks_passed": true,
+  "checks": {
+    "preserved_preregistration_prefix": true,
+    "amendment5_hash": true,
+    "clarification_hash": true,
+    "preregistration_final_hash": true,
+    "all_checkpoints_unchanged": true,
+    "frozen_scoring_sources_unchanged": true,
+    "source_model_development_preflight": true,
+    "all_original_Phase4_checkpoints_unchanged": true,
+    "all_original_Phase4_sources_unchanged": true,
+    "all_scoring_outcomes_accounted": true,
+    "predictions_and_exclusive_receipts": true,
+    "H6_sources_unchanged": true,
+    "frozen_explanation_cohort_unchanged": true,
+    "inherited_feature_arrays_unchanged": true,
+    "full_840_test_Holm_family": true,
+    "separate_H6_families": true,
+    "feature_reuse_estimate_and_CI_parity": true,
+    "all_successful_training_and_teacher_checkpoints_unchanged": true,
+    "pre_scoring_H5_teacher_verification": true,
+    "development_and_orderfree_inputs_unchanged": true,
+    "insider_denominator_25": true,
+    "all_five_views": true,
+    "permitted_HOLDOUT_periods_only": true,
+    "r52_test_sealed": true,
+    "five_300dpi_figures_with_CSV": true,
+    "report_marker": true,
+    "report_hash": true,
+    "all_outcomes_in_report": true,
+    "no_raw_CERT_user_ids_in_public_outputs": true
+  },
+  "cohorts": [
+    {
+      "length": 10,
+      "windows": 223000,
+      "positive_windows": 1013,
+      "users": 500,
+      "max_end_date": "2011-04-10",
+      "min_end_date": "2010-01-11",
+      "positive_users": 25
+    },
+    {
+      "length": 20,
+      "windows": 213000,
+      "positive_windows": 1172,
+      "users": 500,
+      "max_end_date": "2011-04-10",
+      "min_end_date": "2010-01-21",
+      "positive_users": 25
+    },
+    {
+      "length": 30,
+      "windows": 203000,
+      "positive_windows": 1264,
+      "users": 500,
+      "max_end_date": "2011-04-10",
+      "min_end_date": "2010-01-31",
+      "positive_users": 25
+    }
+  ],
+  "figures": {
+    "figure_a_40_vs_260.png": {
+      "size": [
+        2400,
+        1320
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "sha256": "43a0dc8ad2bf8c96126917ad6b1dc9d26e853318f71637e50c26cbbfce704bbf",
+      "CSV_sha256": "f90bd1f1c415e6ca97b632a39314ec3445338d7baa92a36790a55b92b84f67b9"
+    },
+    "figure_b_orderfree.png": {
+      "size": [
+        1950,
+        1320
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "sha256": "48937e44c04015fb73a816bc40890c41b1babb01ad39ac583cbc06d85fd7c650",
+      "CSV_sha256": "9335687fd7358590a7eb975edb859315add21edd0afaf5d0aa12c7feb7ff49a5"
+    },
+    "figure_c_interventions.png": {
+      "size": [
+        3600,
+        1350
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "sha256": "43e033c23f4cddf663a62bacee48ed0cea1813596b71be98a0d17636c2d4f2ce",
+      "CSV_sha256": "a0b8b878e8ec9b8bbd0b8df352cece5b0f9010abc519f2d7e1f98f2b57eaea6d"
+    },
+    "figure_d_history_ranking_excess.png": {
+      "size": [
+        2250,
+        1350
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "sha256": "b0c6587a856153cde797a6d1aed64787d4f48ede973fdb83ab14857997fc18f0",
+      "CSV_sha256": "19b8bedc54db4900b3b6f53865d37945d49210766b5a30fd79f8c68931acc5d4"
+    },
+    "figure_e_three_level_explanation.png": {
+      "size": [
+        4200,
+        1350
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "sha256": "235103fd3953db41dbbf761662431d0455ff8b6bcec5dec79233351de5620e69",
+      "CSV_sha256": "d75223b37ae87e348af7fac1a53515d6caee55af93299e1305e34614fefea9e4"
+    }
+  },
+  "raw_id_leak_files": [],
+  "successful_scoring_passes": 72,
+  "planned_scoring_jobs": 72,
+  "report_sha256": "2ae8a4d56e7f6109473c19a0ecfa5e1926214f8c1313c0c17dfcbbbe1b3778a0",
+  "result_sha256": "acaedca2f0737186a61d87ceb31896c41c8761b87b7efd43fd66fd20969de2d6",
+  "r52_test_read": false
+}

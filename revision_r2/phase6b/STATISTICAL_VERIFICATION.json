@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-22T12:10:56.266089+00:00",
+  "all_source_syntax_passed": true,
+  "Holm_known_example_passed": true,
+  "zero_effect_bootstrap_passed": true,
+  "finite_two_sided_p_resolution": 0.0009995002498750624,
+  "minimum_first_Holm_840": 0.8395802098950524,
+  "test_inputs": "synthetic only",
+  "holdout_scored": false
+}

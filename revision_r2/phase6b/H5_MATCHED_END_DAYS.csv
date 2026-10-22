@@ -1,0 +1,21 @@
+contrast,view,matched_windows,matched_users,matched_label_disagreements,match_key,paired_population
+TRACE-30 original minus TRACE original,pooled_completed,203000,500,182,"pseudonym, period, end_date",intersection of each length-specific view
+TRACE-30 original minus TRACE original,train_completed,192000,500,147,"pseudonym, period, end_date",intersection of each length-specific view
+TRACE-30 original minus TRACE original,validation_completed,11000,500,35,"pseudonym, period, end_date",intersection of each length-specific view
+TRACE-30 original minus TRACE original,pooled_offset0,3000,500,2,"pseudonym, period, end_date",intersection of each length-specific view
+TRACE-30 original minus TRACE original,pooled_endpoint,203000,500,0,"pseudonym, period, end_date",intersection of each length-specific view
+TRACE-10 original minus TRACE original,pooled_completed,213000,500,240,"pseudonym, period, end_date",intersection of each length-specific view
+TRACE-10 original minus TRACE original,train_completed,197000,500,187,"pseudonym, period, end_date",intersection of each length-specific view
+TRACE-10 original minus TRACE original,validation_completed,16000,500,53,"pseudonym, period, end_date",intersection of each length-specific view
+TRACE-10 original minus TRACE original,pooled_offset0,11000,500,10,"pseudonym, period, end_date",intersection of each length-specific view
+TRACE-10 original minus TRACE original,pooled_endpoint,213000,500,0,"pseudonym, period, end_date",intersection of each length-specific view
+XGBoost-40-30 original minus XGBoost-40 original,pooled_completed,203000,500,182,"pseudonym, period, end_date",intersection of each length-specific view
+XGBoost-40-30 original minus XGBoost-40 original,train_completed,192000,500,147,"pseudonym, period, end_date",intersection of each length-specific view
+XGBoost-40-30 original minus XGBoost-40 original,validation_completed,11000,500,35,"pseudonym, period, end_date",intersection of each length-specific view
+XGBoost-40-30 original minus XGBoost-40 original,pooled_offset0,3000,500,2,"pseudonym, period, end_date",intersection of each length-specific view
+XGBoost-40-30 original minus XGBoost-40 original,pooled_endpoint,203000,500,0,"pseudonym, period, end_date",intersection of each length-specific view
+XGBoost-40-10 original minus XGBoost-40 original,pooled_completed,213000,500,240,"pseudonym, period, end_date",intersection of each length-specific view
+XGBoost-40-10 original minus XGBoost-40 original,train_completed,197000,500,187,"pseudonym, period, end_date",intersection of each length-specific view
+XGBoost-40-10 original minus XGBoost-40 original,validation_completed,16000,500,53,"pseudonym, period, end_date",intersection of each length-specific view
+XGBoost-40-10 original minus XGBoost-40 original,pooled_offset0,11000,500,10,"pseudonym, period, end_date",intersection of each length-specific view
+XGBoost-40-10 original minus XGBoost-40 original,pooled_endpoint,213000,500,0,"pseudonym, period, end_date",intersection of each length-specific view
