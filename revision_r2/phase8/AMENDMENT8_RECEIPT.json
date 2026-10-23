@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-23T01:18:54.9090136Z",
+  "sha256": "cd52680cc15a377d81730ddd1847f564db67646d80c8d6180c3b72d9f359d808",
+  "hashed_bytes": 66920,
+  "previous_bytes": 55149,
+  "previous_sha256": "4b09693825062f2fa572375ec2f4e8b6629df8e2ebef8d4f37b87d93c7b827e2",
+  "preregistration_final_sha256": "84b32c9e943fb04878e2deefbd4afe38b0c36badc5cea05aa8c659a22c724ad2",
+  "phase7_report_sha256": "b2a60d786ba76d0b46550700edb526c1a432cbc12d9a725e92cb0d26f0f8b8b1",
+  "phase7_audit_passed": true,
+  "phase8_computation_or_training_preceded_receipt": false
+}

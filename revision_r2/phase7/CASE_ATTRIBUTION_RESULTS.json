@@ -1,0 +1,6458 @@
+{
+  "utc": "2026-10-22T14:31:48.825918+00:00",
+  "cases": [
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "malicious_days": 23,
+      "first_malicious_day": "2010-07-06",
+      "last_malicious_day": "2010-08-19",
+      "span_calendar_days": 45,
+      "malicious_window_count": 64,
+      "nonmalicious_reference_days": 441,
+      "nonmalicious_active_days": 148,
+      "nonmalicious_inactive_days": 293,
+      "missed_all_TRACE_seeds": true,
+      "missed_TRACE_seeds": [
+        42,
+        52,
+        62
+      ]
+    }
+  ],
+  "all_seeds_missed": [
+    "U_488844ba74"
+  ],
+  "peak_windows": [
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "seed": 42,
+      "source_row": 176975,
+      "end_date": "2010-07-25",
+      "max_malicious_window_score": 0.2911074318320326,
+      "threshold": 0.56,
+      "score_margin": -0.26889256816796747,
+      "global_window_rank": 3173.0,
+      "rank_percent": 1.4896713615023474,
+      "malicious_days_within_window": 14,
+      "detected": false
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "seed": 52,
+      "source_row": 177019,
+      "end_date": "2010-09-07",
+      "max_malicious_window_score": 0.2323729116471023,
+      "threshold": 0.56,
+      "score_margin": -0.3276270883528978,
+      "global_window_rank": 4250.0,
+      "rank_percent": 1.9953051643192488,
+      "malicious_days_within_window": 1,
+      "detected": false
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "seed": 62,
+      "source_row": 176977,
+      "end_date": "2010-07-27",
+      "max_malicious_window_score": 0.23392687808863946,
+      "threshold": 0.38,
+      "score_margin": -0.14607312191136054,
+      "global_window_rank": 3224.0,
+      "rank_percent": 1.5136150234741785,
+      "malicious_days_within_window": 14,
+      "detected": false
+    }
+  ],
+  "peak_all_windows": [
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 177028,
+      "end_date": "2010-09-16",
+      "max_all_window_score": 0.9664232078041042,
+      "threshold": 0.56,
+      "global_window_rank": 464.0,
+      "contains_malicious_day": false,
+      "alert": true,
+      "days_since_last_malicious_day": 28,
+      "all_alert_windows": 17,
+      "malicious_alert_windows": 0
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177033,
+      "end_date": "2010-09-21",
+      "max_all_window_score": 0.945327575216124,
+      "threshold": 0.56,
+      "global_window_rank": 257.0,
+      "contains_malicious_day": false,
+      "alert": true,
+      "days_since_last_malicious_day": 33,
+      "all_alert_windows": 13,
+      "malicious_alert_windows": 0
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 177033,
+      "end_date": "2010-09-21",
+      "max_all_window_score": 0.9640724447205467,
+      "threshold": 0.38,
+      "global_window_rank": 513.0,
+      "contains_malicious_day": false,
+      "alert": true,
+      "days_since_last_malicious_day": 33,
+      "all_alert_windows": 16,
+      "malicious_alert_windows": 0
+    }
+  ],
+  "other_model_detection": [
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "model": "F00",
+      "seed": 42,
+      "malicious_days": 23,
+      "first_malicious_day": "2010-07-06",
+      "detected": false,
+      "first_any_alert_date": "2010-09-15",
+      "first_any_alert_delay_days": 71,
+      "first_any_alert_rank": 587.0,
+      "first_any_alert_score": 0.9589818358633989,
+      "pre_onset_within_19_days": false,
+      "first_malicious_window_alert_date": null,
+      "detection_delay_days": null,
+      "first_malicious_window_alert_rank": null,
+      "first_malicious_window_alert_score": null,
+      "threshold": 0.9500000000000001
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "model": "F00",
+      "seed": 52,
+      "malicious_days": 23,
+      "first_malicious_day": "2010-07-06",
+      "detected": false,
+      "first_any_alert_date": "2010-09-08",
+      "first_any_alert_delay_days": 64,
+      "first_any_alert_rank": 2834.0,
+      "first_any_alert_score": 0.726718528739708,
+      "pre_onset_within_19_days": false,
+      "first_malicious_window_alert_date": null,
+      "detection_delay_days": null,
+      "first_malicious_window_alert_rank": null,
+      "first_malicious_window_alert_score": null,
+      "threshold": 0.56
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "model": "F00",
+      "seed": 62,
+      "malicious_days": 23,
+      "first_malicious_day": "2010-07-06",
+      "detected": false,
+      "first_any_alert_date": "2010-04-12",
+      "first_any_alert_delay_days": -85,
+      "first_any_alert_rank": 2311.0,
+      "first_any_alert_score": 0.7151571919301977,
+      "pre_onset_within_19_days": false,
+      "first_malicious_window_alert_date": null,
+      "detection_delay_days": null,
+      "first_malicious_window_alert_rank": null,
+      "first_malicious_window_alert_score": null,
+      "threshold": 0.22
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "model": "L1",
+      "seed": 42,
+      "malicious_days": 23,
+      "first_malicious_day": "2010-07-06",
+      "detected": false,
+      "first_any_alert_date": "2010-03-04",
+      "first_any_alert_delay_days": -124,
+      "first_any_alert_rank": 2582.0,
+      "first_any_alert_score": 0.6646190627687856,
+      "pre_onset_within_19_days": false,
+      "first_malicious_window_alert_date": null,
+      "detection_delay_days": null,
+      "first_malicious_window_alert_rank": null,
+      "first_malicious_window_alert_score": null,
+      "threshold": 0.66
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "model": "L1",
+      "seed": 52,
+      "malicious_days": 23,
+      "first_malicious_day": "2010-07-06",
+      "detected": false,
+      "first_any_alert_date": "2010-09-09",
+      "first_any_alert_delay_days": 65,
+      "first_any_alert_rank": 2545.0,
+      "first_any_alert_score": 0.6841775077839223,
+      "pre_onset_within_19_days": false,
+      "first_malicious_window_alert_date": null,
+      "detection_delay_days": null,
+      "first_malicious_window_alert_rank": null,
+      "first_malicious_window_alert_score": null,
+      "threshold": 0.59
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "model": "L1",
+      "seed": 62,
+      "malicious_days": 23,
+      "first_malicious_day": "2010-07-06",
+      "detected": false,
+      "first_any_alert_date": "2010-04-12",
+      "first_any_alert_delay_days": -85,
+      "first_any_alert_rank": 2535.0,
+      "first_any_alert_score": 0.6680036043688069,
+      "pre_onset_within_19_days": false,
+      "first_malicious_window_alert_date": null,
+      "detection_delay_days": null,
+      "first_malicious_window_alert_rank": null,
+      "first_malicious_window_alert_score": null,
+      "threshold": 0.44
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "model": "XGBoost-40",
+      "seed": 42,
+      "malicious_days": 23,
+      "first_malicious_day": "2010-07-06",
+      "detected": true,
+      "first_any_alert_date": "2010-07-07",
+      "first_any_alert_delay_days": 1,
+      "first_any_alert_rank": 921.0,
+      "first_any_alert_score": 0.8364638090133667,
+      "pre_onset_within_19_days": false,
+      "first_malicious_window_alert_date": "2010-07-07",
+      "detection_delay_days": 1,
+      "first_malicious_window_alert_rank": 921.0,
+      "first_malicious_window_alert_score": 0.8364638090133667,
+      "threshold": 0.64
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "model": "XGBoost-40",
+      "seed": 52,
+      "malicious_days": 23,
+      "first_malicious_day": "2010-07-06",
+      "detected": true,
+      "first_any_alert_date": "2010-07-06",
+      "first_any_alert_delay_days": 0,
+      "first_any_alert_rank": 913.0,
+      "first_any_alert_score": 0.8787922263145447,
+      "pre_onset_within_19_days": false,
+      "first_malicious_window_alert_date": "2010-07-06",
+      "detection_delay_days": 0,
+      "first_malicious_window_alert_rank": 913.0,
+      "first_malicious_window_alert_score": 0.8787922263145447,
+      "threshold": 0.51
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "model": "XGBoost-40",
+      "seed": 62,
+      "malicious_days": 23,
+      "first_malicious_day": "2010-07-06",
+      "detected": true,
+      "first_any_alert_date": "2010-07-06",
+      "first_any_alert_delay_days": 0,
+      "first_any_alert_rank": 959.0,
+      "first_any_alert_score": 0.7319004535675049,
+      "pre_onset_within_19_days": false,
+      "first_malicious_window_alert_date": "2010-07-06",
+      "detection_delay_days": 0,
+      "first_malicious_window_alert_rank": 959.0,
+      "first_malicious_window_alert_score": 0.7319004535675049,
+      "threshold": 0.060000000000000005
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "model": "LightGBM-40",
+      "seed": 42,
+      "malicious_days": 23,
+      "first_malicious_day": "2010-07-06",
+      "detected": true,
+      "first_any_alert_date": "2010-07-06",
+      "first_any_alert_delay_days": 0,
+      "first_any_alert_rank": 2190.0,
+      "first_any_alert_score": 0.04211898056661916,
+      "pre_onset_within_19_days": false,
+      "first_malicious_window_alert_date": "2010-07-06",
+      "detection_delay_days": 0,
+      "first_malicious_window_alert_rank": 2190.0,
+      "first_malicious_window_alert_score": 0.04211898056661916,
+      "threshold": 0.03927665168157338
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "model": "LightGBM-40",
+      "seed": 52,
+      "malicious_days": 23,
+      "first_malicious_day": "2010-07-06",
+      "detected": true,
+      "first_any_alert_date": "2010-07-06",
+      "first_any_alert_delay_days": 0,
+      "first_any_alert_rank": 1119.0,
+      "first_any_alert_score": 0.5535183297468488,
+      "pre_onset_within_19_days": false,
+      "first_malicious_window_alert_date": "2010-07-06",
+      "detection_delay_days": 0,
+      "first_malicious_window_alert_rank": 1119.0,
+      "first_malicious_window_alert_score": 0.5535183297468488,
+      "threshold": 0.4770094739207801
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "model": "LightGBM-40",
+      "seed": 62,
+      "malicious_days": 23,
+      "first_malicious_day": "2010-07-06",
+      "detected": true,
+      "first_any_alert_date": "2010-07-08",
+      "first_any_alert_delay_days": 2,
+      "first_any_alert_rank": 1284.0,
+      "first_any_alert_score": 0.37405080618018743,
+      "pre_onset_within_19_days": false,
+      "first_malicious_window_alert_date": "2010-07-08",
+      "detection_delay_days": 2,
+      "first_malicious_window_alert_rank": 1284.0,
+      "first_malicious_window_alert_score": 0.37405080618018743,
+      "threshold": 0.28661416483798197
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "model": "Transformer",
+      "seed": 42,
+      "malicious_days": 23,
+      "first_malicious_day": "2010-07-06",
+      "detected": false,
+      "first_any_alert_date": "2010-09-09",
+      "first_any_alert_delay_days": 65,
+      "first_any_alert_rank": 2217.0,
+      "first_any_alert_score": 0.6835722042292669,
+      "pre_onset_within_19_days": false,
+      "first_malicious_window_alert_date": null,
+      "detection_delay_days": null,
+      "first_malicious_window_alert_rank": null,
+      "first_malicious_window_alert_score": null,
+      "threshold": 0.5875557798129798
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "model": "Transformer",
+      "seed": 52,
+      "malicious_days": 23,
+      "first_malicious_day": "2010-07-06",
+      "detected": false,
+      "first_any_alert_date": "2010-09-09",
+      "first_any_alert_delay_days": 65,
+      "first_any_alert_rank": 1627.0,
+      "first_any_alert_score": 0.9037345860807922,
+      "pre_onset_within_19_days": false,
+      "first_malicious_window_alert_date": null,
+      "detection_delay_days": null,
+      "first_malicious_window_alert_rank": null,
+      "first_malicious_window_alert_score": null,
+      "threshold": 0.8818812480482827
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "model": "Transformer",
+      "seed": 62,
+      "malicious_days": 23,
+      "first_malicious_day": "2010-07-06",
+      "detected": true,
+      "first_any_alert_date": "2010-07-19",
+      "first_any_alert_delay_days": 13,
+      "first_any_alert_rank": 2600.0,
+      "first_any_alert_score": 0.8801131670713407,
+      "pre_onset_within_19_days": false,
+      "first_malicious_window_alert_date": "2010-07-19",
+      "detection_delay_days": 13,
+      "first_malicious_window_alert_rank": 2600.0,
+      "first_malicious_window_alert_score": 0.8801131670713407,
+      "threshold": 0.8638576856119904
+    }
+  ],
+  "malicious_day_features": [
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-06",
+      "feature": "total_events",
+      "malicious_day_value": 190.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 190.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-06",
+      "feature": "logon_count",
+      "malicious_day_value": 8.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 8.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-06",
+      "feature": "device_count",
+      "malicious_day_value": 6.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 6.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-06",
+      "feature": "file_count",
+      "malicious_day_value": 7.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 7.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-06",
+      "feature": "email_count",
+      "malicious_day_value": 53.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 53.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-06",
+      "feature": "http_count",
+      "malicious_day_value": 116.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 116.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-06",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 968.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 968.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-06",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-06",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-06",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-06",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-06",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-06",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-07",
+      "feature": "total_events",
+      "malicious_day_value": 198.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 198.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-07",
+      "feature": "logon_count",
+      "malicious_day_value": 10.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 10.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-07",
+      "feature": "device_count",
+      "malicious_day_value": 8.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 8.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-07",
+      "feature": "file_count",
+      "malicious_day_value": 9.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 9.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-07",
+      "feature": "email_count",
+      "malicious_day_value": 50.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 50.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-07",
+      "feature": "http_count",
+      "malicious_day_value": 121.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 121.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-07",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 1027.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1027.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-07",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-07",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-07",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-07",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-07",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-07",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-08",
+      "feature": "total_events",
+      "malicious_day_value": 185.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 185.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-08",
+      "feature": "logon_count",
+      "malicious_day_value": 8.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 8.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-08",
+      "feature": "device_count",
+      "malicious_day_value": 6.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 6.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-08",
+      "feature": "file_count",
+      "malicious_day_value": 19.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 19.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-08",
+      "feature": "email_count",
+      "malicious_day_value": 37.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 37.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-08",
+      "feature": "http_count",
+      "malicious_day_value": 115.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 115.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-08",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 858.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 858.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-08",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-08",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-08",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-08",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-08",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-08",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-09",
+      "feature": "total_events",
+      "malicious_day_value": 178.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 178.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-09",
+      "feature": "logon_count",
+      "malicious_day_value": 10.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 10.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-09",
+      "feature": "device_count",
+      "malicious_day_value": 8.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 8.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-09",
+      "feature": "file_count",
+      "malicious_day_value": 11.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 11.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-09",
+      "feature": "email_count",
+      "malicious_day_value": 33.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 33.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-09",
+      "feature": "http_count",
+      "malicious_day_value": 116.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 116.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-09",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 1078.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1078.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-09",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-09",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-09",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-09",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-09",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-09",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-12",
+      "feature": "total_events",
+      "malicious_day_value": 183.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 183.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-12",
+      "feature": "logon_count",
+      "malicious_day_value": 4.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 4.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-12",
+      "feature": "device_count",
+      "malicious_day_value": 2.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 2.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-12",
+      "feature": "file_count",
+      "malicious_day_value": 7.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 7.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-12",
+      "feature": "email_count",
+      "malicious_day_value": 52.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 52.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-12",
+      "feature": "http_count",
+      "malicious_day_value": 118.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 118.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-12",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 702.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 702.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-12",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-12",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-12",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-12",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-12",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-12",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-13",
+      "feature": "total_events",
+      "malicious_day_value": 157.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 157.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-13",
+      "feature": "logon_count",
+      "malicious_day_value": 4.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 4.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-13",
+      "feature": "device_count",
+      "malicious_day_value": 0.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 0.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-13",
+      "feature": "file_count",
+      "malicious_day_value": 0.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 0.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-13",
+      "feature": "email_count",
+      "malicious_day_value": 35.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 35.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-13",
+      "feature": "http_count",
+      "malicious_day_value": 118.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 118.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-13",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 742.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 742.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-13",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-13",
+      "feature": "has_device_activity",
+      "malicious_day_value": 0.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 0.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-13",
+      "feature": "has_file_activity",
+      "malicious_day_value": 0.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 0.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-13",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-13",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-13",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-14",
+      "feature": "total_events",
+      "malicious_day_value": 188.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 188.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-14",
+      "feature": "logon_count",
+      "malicious_day_value": 12.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 12.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-14",
+      "feature": "device_count",
+      "malicious_day_value": 8.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 8.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-14",
+      "feature": "file_count",
+      "malicious_day_value": 21.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 21.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-14",
+      "feature": "email_count",
+      "malicious_day_value": 31.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 31.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-14",
+      "feature": "http_count",
+      "malicious_day_value": 116.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 116.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-14",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 1193.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1193.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-14",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-14",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-14",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-14",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-14",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-14",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-15",
+      "feature": "total_events",
+      "malicious_day_value": 158.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 158.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-15",
+      "feature": "logon_count",
+      "malicious_day_value": 4.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 4.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-15",
+      "feature": "device_count",
+      "malicious_day_value": 2.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 2.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-15",
+      "feature": "file_count",
+      "malicious_day_value": 2.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 2.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-15",
+      "feature": "email_count",
+      "malicious_day_value": 35.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 35.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-15",
+      "feature": "http_count",
+      "malicious_day_value": 115.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 115.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-15",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 761.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 761.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-15",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-15",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-15",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-15",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-15",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-15",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-16",
+      "feature": "total_events",
+      "malicious_day_value": 162.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 162.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-16",
+      "feature": "logon_count",
+      "malicious_day_value": 4.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 4.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-16",
+      "feature": "device_count",
+      "malicious_day_value": 2.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 2.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-16",
+      "feature": "file_count",
+      "malicious_day_value": 2.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 2.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-16",
+      "feature": "email_count",
+      "malicious_day_value": 33.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 33.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-16",
+      "feature": "http_count",
+      "malicious_day_value": 121.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 121.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-16",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 913.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 913.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-16",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-16",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-16",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-16",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-16",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-16",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-19",
+      "feature": "total_events",
+      "malicious_day_value": 179.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 179.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-19",
+      "feature": "logon_count",
+      "malicious_day_value": 6.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 6.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-19",
+      "feature": "device_count",
+      "malicious_day_value": 2.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 2.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-19",
+      "feature": "file_count",
+      "malicious_day_value": 8.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 8.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-19",
+      "feature": "email_count",
+      "malicious_day_value": 46.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 46.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-19",
+      "feature": "http_count",
+      "malicious_day_value": 117.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 117.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-19",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 880.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 880.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-19",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-19",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-19",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-19",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-19",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-19",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-20",
+      "feature": "total_events",
+      "malicious_day_value": 167.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 167.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-20",
+      "feature": "logon_count",
+      "malicious_day_value": 4.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 4.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-20",
+      "feature": "device_count",
+      "malicious_day_value": 2.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 2.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-20",
+      "feature": "file_count",
+      "malicious_day_value": 9.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 9.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-20",
+      "feature": "email_count",
+      "malicious_day_value": 34.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 34.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-20",
+      "feature": "http_count",
+      "malicious_day_value": 118.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 118.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-20",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 883.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 883.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-20",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-20",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-20",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-20",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-20",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-20",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-21",
+      "feature": "total_events",
+      "malicious_day_value": 182.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 182.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-21",
+      "feature": "logon_count",
+      "malicious_day_value": 10.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 10.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-21",
+      "feature": "device_count",
+      "malicious_day_value": 8.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 8.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-21",
+      "feature": "file_count",
+      "malicious_day_value": 10.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 10.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-21",
+      "feature": "email_count",
+      "malicious_day_value": 32.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 32.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-21",
+      "feature": "http_count",
+      "malicious_day_value": 122.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 122.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-21",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 888.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 888.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-21",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-21",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-21",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-21",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-21",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-21",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-22",
+      "feature": "total_events",
+      "malicious_day_value": 176.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 176.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-22",
+      "feature": "logon_count",
+      "malicious_day_value": 10.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 10.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-22",
+      "feature": "device_count",
+      "malicious_day_value": 6.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 6.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-22",
+      "feature": "file_count",
+      "malicious_day_value": 7.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 7.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-22",
+      "feature": "email_count",
+      "malicious_day_value": 32.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 32.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-22",
+      "feature": "http_count",
+      "malicious_day_value": 121.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 121.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-22",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 914.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 914.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-22",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-22",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-22",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-22",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-22",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-22",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-23",
+      "feature": "total_events",
+      "malicious_day_value": 186.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 186.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-23",
+      "feature": "logon_count",
+      "malicious_day_value": 12.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 12.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-23",
+      "feature": "device_count",
+      "malicious_day_value": 10.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 10.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-23",
+      "feature": "file_count",
+      "malicious_day_value": 15.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 15.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-23",
+      "feature": "email_count",
+      "malicious_day_value": 31.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 31.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-23",
+      "feature": "http_count",
+      "malicious_day_value": 118.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 118.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-23",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 772.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 772.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-23",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-23",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-23",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-23",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-23",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-23",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-26",
+      "feature": "total_events",
+      "malicious_day_value": 184.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 184.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-26",
+      "feature": "logon_count",
+      "malicious_day_value": 10.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 10.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-26",
+      "feature": "device_count",
+      "malicious_day_value": 8.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 8.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-26",
+      "feature": "file_count",
+      "malicious_day_value": 3.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 3.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-26",
+      "feature": "email_count",
+      "malicious_day_value": 47.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 47.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-26",
+      "feature": "http_count",
+      "malicious_day_value": 116.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 116.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-26",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 1221.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1221.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-26",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-26",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-26",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-26",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-26",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-26",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-27",
+      "feature": "total_events",
+      "malicious_day_value": 186.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 186.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-27",
+      "feature": "logon_count",
+      "malicious_day_value": 10.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 10.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-27",
+      "feature": "device_count",
+      "malicious_day_value": 8.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 8.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-27",
+      "feature": "file_count",
+      "malicious_day_value": 16.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 16.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-27",
+      "feature": "email_count",
+      "malicious_day_value": 35.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 35.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-27",
+      "feature": "http_count",
+      "malicious_day_value": 117.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 117.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-27",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 1364.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1364.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-27",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-27",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-27",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-27",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-27",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-27",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-28",
+      "feature": "total_events",
+      "malicious_day_value": 162.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 162.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-28",
+      "feature": "logon_count",
+      "malicious_day_value": 4.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 4.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-28",
+      "feature": "device_count",
+      "malicious_day_value": 2.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 2.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-28",
+      "feature": "file_count",
+      "malicious_day_value": 3.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 3.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-28",
+      "feature": "email_count",
+      "malicious_day_value": 30.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 30.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-28",
+      "feature": "http_count",
+      "malicious_day_value": 123.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 123.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-28",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 726.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 726.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-28",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-28",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-28",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-28",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-28",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-28",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-29",
+      "feature": "total_events",
+      "malicious_day_value": 191.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 191.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-29",
+      "feature": "logon_count",
+      "malicious_day_value": 12.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 12.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-29",
+      "feature": "device_count",
+      "malicious_day_value": 8.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 8.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-29",
+      "feature": "file_count",
+      "malicious_day_value": 14.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 14.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-29",
+      "feature": "email_count",
+      "malicious_day_value": 39.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 39.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-29",
+      "feature": "http_count",
+      "malicious_day_value": 118.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 118.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-29",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 1269.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1269.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-29",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-29",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-29",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-29",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-29",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-29",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-30",
+      "feature": "total_events",
+      "malicious_day_value": 160.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 160.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-30",
+      "feature": "logon_count",
+      "malicious_day_value": 4.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 4.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-30",
+      "feature": "device_count",
+      "malicious_day_value": 2.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 2.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-30",
+      "feature": "file_count",
+      "malicious_day_value": 0.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 0.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-30",
+      "feature": "email_count",
+      "malicious_day_value": 36.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 36.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-30",
+      "feature": "http_count",
+      "malicious_day_value": 118.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 118.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-30",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 839.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 839.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-30",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-30",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-30",
+      "feature": "has_file_activity",
+      "malicious_day_value": 0.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 0.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-30",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-30",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-07-30",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-02",
+      "feature": "total_events",
+      "malicious_day_value": 171.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 171.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-02",
+      "feature": "logon_count",
+      "malicious_day_value": 6.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 6.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-02",
+      "feature": "device_count",
+      "malicious_day_value": 4.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 4.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-02",
+      "feature": "file_count",
+      "malicious_day_value": 0.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 0.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-02",
+      "feature": "email_count",
+      "malicious_day_value": 45.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 45.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-02",
+      "feature": "http_count",
+      "malicious_day_value": 116.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 116.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-02",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 596.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 596.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-02",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-02",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-02",
+      "feature": "has_file_activity",
+      "malicious_day_value": 0.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 0.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-02",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-02",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-02",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-03",
+      "feature": "total_events",
+      "malicious_day_value": 161.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 161.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-03",
+      "feature": "logon_count",
+      "malicious_day_value": 4.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 4.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-03",
+      "feature": "device_count",
+      "malicious_day_value": 2.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 2.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-03",
+      "feature": "file_count",
+      "malicious_day_value": 9.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 9.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-03",
+      "feature": "email_count",
+      "malicious_day_value": 30.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 30.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-03",
+      "feature": "http_count",
+      "malicious_day_value": 116.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 116.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-03",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 832.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 832.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-03",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-03",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-03",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-03",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-03",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-03",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-04",
+      "feature": "total_events",
+      "malicious_day_value": 174.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 174.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-04",
+      "feature": "logon_count",
+      "malicious_day_value": 6.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 6.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-04",
+      "feature": "device_count",
+      "malicious_day_value": 4.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 4.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-04",
+      "feature": "file_count",
+      "malicious_day_value": 8.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 8.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-04",
+      "feature": "email_count",
+      "malicious_day_value": 39.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 39.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-04",
+      "feature": "http_count",
+      "malicious_day_value": 117.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 117.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-04",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 785.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 785.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-04",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-04",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-04",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-04",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-04",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-04",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-19",
+      "feature": "total_events",
+      "malicious_day_value": 153.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 153.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-19",
+      "feature": "logon_count",
+      "malicious_day_value": 4.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 4.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-19",
+      "feature": "device_count",
+      "malicious_day_value": 2.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 2.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-19",
+      "feature": "file_count",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-19",
+      "feature": "email_count",
+      "malicious_day_value": 32.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 32.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-19",
+      "feature": "http_count",
+      "malicious_day_value": 114.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 114.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-19",
+      "feature": "active_duration_minutes",
+      "malicious_day_value": 754.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 754.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-19",
+      "feature": "has_logon_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-19",
+      "feature": "has_device_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-19",
+      "feature": "has_file_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-19",
+      "feature": "has_email_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-19",
+      "feature": "has_http_activity",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    },
+    {
+      "user": "U_488844ba74",
+      "scenario": "2",
+      "date": "2010-08-19",
+      "feature": "is_active_day",
+      "malicious_day_value": 1.0,
+      "own_nonmalicious_day_median": 0.0,
+      "difference": 1.0,
+      "nonmalicious_reference_days": 441
+    }
+  ],
+  "attention": [
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 1,
+      "date": "2010-07-06",
+      "attention": 0.020143263041973114,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.026249628393079302
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 2,
+      "date": "2010-07-07",
+      "attention": 0.027913302183151245,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.032665278869499235
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 3,
+      "date": "2010-07-08",
+      "attention": 0.0008560229907743633,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.022400631955975404
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 4,
+      "date": "2010-07-09",
+      "attention": 0.010884455405175686,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.016277555234053217
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 5,
+      "date": "2010-07-10",
+      "attention": 5.4736399761168286e-05,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.004086437922211657
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 6,
+      "date": "2010-07-11",
+      "attention": 0.0027156216092407703,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.012049693507172495
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 7,
+      "date": "2010-07-12",
+      "attention": 0.0001735174737405032,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.0070025508364495405
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 8,
+      "date": "2010-07-13",
+      "attention": 0.00026550452457740903,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.0018162985155680113
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 9,
+      "date": "2010-07-14",
+      "attention": 0.0010238063987344503,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.025986259188294794
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 10,
+      "date": "2010-07-15",
+      "attention": 0.0003772405325435102,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.010771516042496682
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 11,
+      "date": "2010-07-16",
+      "attention": 0.0002994218666572124,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.018796085657113396
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 12,
+      "date": "2010-07-17",
+      "attention": 0.0003402031143195927,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.00861358082927405
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 13,
+      "date": "2010-07-18",
+      "attention": 0.009430564008653164,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.0034053255406608944
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 14,
+      "date": "2010-07-19",
+      "attention": 0.0010744138853624463,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.015740523135373923
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 15,
+      "date": "2010-07-20",
+      "attention": 0.009053337387740612,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.012565487845239106
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 16,
+      "date": "2010-07-21",
+      "attention": 0.2976102828979492,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.02754387324665656
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 17,
+      "date": "2010-07-22",
+      "attention": 0.5920601487159729,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.30875183339711365
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 18,
+      "date": "2010-07-23",
+      "attention": 0.024505991488695145,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.2191762868066736
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 19,
+      "date": "2010-07-24",
+      "attention": 7.84077710704878e-05,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.11851992761012184
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "timestep": 20,
+      "date": "2010-07-25",
+      "attention": 0.0011396817862987518,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.10758122546697267
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 1,
+      "date": "2010-08-19",
+      "attention": 0.1608123928308487,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.019003390328779433
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 2,
+      "date": "2010-08-20",
+      "attention": 0.5282554030418396,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.057619298780528676
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 3,
+      "date": "2010-08-21",
+      "attention": 0.00016245964798144996,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.008371750763451964
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 4,
+      "date": "2010-08-22",
+      "attention": 8.204085315810516e-05,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.009278581753580118
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 5,
+      "date": "2010-08-23",
+      "attention": 0.10057040303945541,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.05197869121323941
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 6,
+      "date": "2010-08-24",
+      "attention": 0.07236121594905853,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.06764650913534921
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 7,
+      "date": "2010-08-25",
+      "attention": 0.07840296626091003,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.05211328685969616
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 8,
+      "date": "2010-08-26",
+      "attention": 0.014251488260924816,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.03345427473884994
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 9,
+      "date": "2010-08-27",
+      "attention": 0.0033578306902199984,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.03917152832000761
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 10,
+      "date": "2010-08-28",
+      "attention": 4.7520584303129e-06,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.027089572291209837
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 11,
+      "date": "2010-08-29",
+      "attention": 7.437358817696804e-06,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.028071198731705462
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 12,
+      "date": "2010-08-30",
+      "attention": 0.004954650066792965,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.06864208692915688
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 13,
+      "date": "2010-08-31",
+      "attention": 0.009865895844995975,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.11115457277170261
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 14,
+      "date": "2010-09-01",
+      "attention": 0.004067160189151764,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.09115789733667354
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 15,
+      "date": "2010-09-02",
+      "attention": 0.022843461483716965,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.15149336082815493
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 16,
+      "date": "2010-09-03",
+      "attention": 2.9705109483302294e-08,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.03155362089599139
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 17,
+      "date": "2010-09-04",
+      "attention": 2.72080367125227e-08,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.03472950688146545
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 18,
+      "date": "2010-09-05",
+      "attention": 3.979382867669301e-08,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.03738918368781318
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 19,
+      "date": "2010-09-06",
+      "attention": 8.478677671064361e-08,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.03959620840248067
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "timestep": 20,
+      "date": "2010-09-07",
+      "attention": 2.7137306801705563e-07,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.040485479350163514
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 1,
+      "date": "2010-07-08",
+      "attention": 0.00023285743372980505,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.16145467518665693
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 2,
+      "date": "2010-07-09",
+      "attention": 0.004348014481365681,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.16635627313784856
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 3,
+      "date": "2010-07-10",
+      "attention": 0.010272481478750706,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.03204734711645372
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 4,
+      "date": "2010-07-11",
+      "attention": 0.02044006437063217,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.03957615902494286
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 5,
+      "date": "2010-07-12",
+      "attention": 0.00011821095540653914,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.09933375633895215
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 6,
+      "date": "2010-07-13",
+      "attention": 0.047904375940561295,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.019808429839712777
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 7,
+      "date": "2010-07-14",
+      "attention": 0.005953068379312754,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.08932365505631014
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 8,
+      "date": "2010-07-15",
+      "attention": 0.0020673030521720648,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.02426699156092299
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 9,
+      "date": "2010-07-16",
+      "attention": 0.004145028535276651,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.022904800053487943
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 10,
+      "date": "2010-07-17",
+      "attention": 0.06062030792236328,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.010712795462169166
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 11,
+      "date": "2010-07-18",
+      "attention": 0.10689368844032288,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.014339243101242766
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 12,
+      "date": "2010-07-19",
+      "attention": 0.0004692120128311217,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.029936480103920197
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 13,
+      "date": "2010-07-20",
+      "attention": 0.007708392105996609,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.018180270249287152
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 14,
+      "date": "2010-07-21",
+      "attention": 0.10662917792797089,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.022948802024364126
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 15,
+      "date": "2010-07-22",
+      "attention": 0.3871206045150757,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.0723754781652693
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 16,
+      "date": "2010-07-23",
+      "attention": 0.04240287467837334,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.04305151807586273
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 17,
+      "date": "2010-07-24",
+      "attention": 0.012769646011292934,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.025372812847995835
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 18,
+      "date": "2010-07-25",
+      "attention": 0.025134971365332603,
+      "malicious_day": 0,
+      "IG_absolute_share": 0.01928844291637594
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 19,
+      "date": "2010-07-26",
+      "attention": 0.10289695113897324,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.03736907378493926
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "timestep": 20,
+      "date": "2010-07-27",
+      "attention": 0.05187277868390083,
+      "malicious_day": 1,
+      "IG_absolute_share": 0.05135299595328547
+    }
+  ],
+  "IG_features": [
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "feature": "total_events",
+      "signed_IG_sum": -0.18009305617306381,
+      "absolute_IG": 0.37710960174445063,
+      "absolute_IG_share": 0.02102997189266007,
+      "absolute_rank": 13
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "feature": "logon_count",
+      "signed_IG_sum": 2.2298006534110755,
+      "absolute_IG": 2.2940819712821394,
+      "absolute_IG_share": 0.1279322487477118,
+      "absolute_rank": 3
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "feature": "device_count",
+      "signed_IG_sum": 0.5146600068546832,
+      "absolute_IG": 0.9500177619047463,
+      "absolute_IG_share": 0.05297888661006134,
+      "absolute_rank": 7
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "feature": "file_count",
+      "signed_IG_sum": -0.41583631094545126,
+      "absolute_IG": 1.070768621750176,
+      "absolute_IG_share": 0.05971270398521463,
+      "absolute_rank": 5
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "feature": "email_count",
+      "signed_IG_sum": 0.017359340214170516,
+      "absolute_IG": 0.5446165414759889,
+      "absolute_IG_share": 0.030371198469985188,
+      "absolute_rank": 12
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "feature": "http_count",
+      "signed_IG_sum": 0.33010011274018325,
+      "absolute_IG": 0.5880790670926217,
+      "absolute_IG_share": 0.0327949386449203,
+      "absolute_rank": 9
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "feature": "active_duration_minutes",
+      "signed_IG_sum": 1.484393366612494,
+      "absolute_IG": 1.8678656984120607,
+      "absolute_IG_share": 0.10416378409661521,
+      "absolute_rank": 4
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "feature": "has_logon_activity",
+      "signed_IG_sum": -0.9553844733163714,
+      "absolute_IG": 1.0160646820440888,
+      "absolute_IG_share": 0.05666207279174963,
+      "absolute_rank": 6
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "feature": "has_device_activity",
+      "signed_IG_sum": -3.989628676790744,
+      "absolute_IG": 4.026726062875241,
+      "absolute_IG_share": 0.22455523680644177,
+      "absolute_rank": 1
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "feature": "has_file_activity",
+      "signed_IG_sum": 3.1626577214337885,
+      "absolute_IG": 3.335211133118719,
+      "absolute_IG_share": 0.18599207249330063,
+      "absolute_rank": 2
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "feature": "has_email_activity",
+      "signed_IG_sum": 0.46941100829280913,
+      "absolute_IG": 0.5537938324268907,
+      "absolute_IG_share": 0.03088298117150074,
+      "absolute_rank": 11
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "feature": "has_http_activity",
+      "signed_IG_sum": -0.6763653610832989,
+      "absolute_IG": 0.7255374793894589,
+      "absolute_IG_share": 0.04046047283879927,
+      "absolute_rank": 8
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "feature": "is_active_day",
+      "signed_IG_sum": -0.4977023210376501,
+      "absolute_IG": 0.5821344777941704,
+      "absolute_IG_share": 0.03246343145103942,
+      "absolute_rank": 10
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "feature": "total_events",
+      "signed_IG_sum": 2.073998937383294,
+      "absolute_IG": 2.5196217205375433,
+      "absolute_IG_share": 0.05008824353550722,
+      "absolute_rank": 7
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "feature": "logon_count",
+      "signed_IG_sum": 4.093671444803476,
+      "absolute_IG": 5.323132444173098,
+      "absolute_IG_share": 0.10581999355785005,
+      "absolute_rank": 4
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "feature": "device_count",
+      "signed_IG_sum": 5.394205641001463,
+      "absolute_IG": 5.394205641001463,
+      "absolute_IG_share": 0.10723287691354152,
+      "absolute_rank": 3
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "feature": "file_count",
+      "signed_IG_sum": 0.6119134714826941,
+      "absolute_IG": 1.2991156885400414,
+      "absolute_IG_share": 0.025825473108919472,
+      "absolute_rank": 11
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "feature": "email_count",
+      "signed_IG_sum": -0.4066091631539166,
+      "absolute_IG": 0.6923976493999362,
+      "absolute_IG_share": 0.01376436065932858,
+      "absolute_rank": 12
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "feature": "http_count",
+      "signed_IG_sum": -0.11630865780898603,
+      "absolute_IG": 0.4360568689808133,
+      "absolute_IG_share": 0.008668492762549312,
+      "absolute_rank": 13
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "feature": "active_duration_minutes",
+      "signed_IG_sum": 3.3723229747265577,
+      "absolute_IG": 3.9709140937775373,
+      "absolute_IG_share": 0.07893887823179829,
+      "absolute_rank": 5
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "feature": "has_logon_activity",
+      "signed_IG_sum": -1.4279921320267022,
+      "absolute_IG": 1.4393403637222946,
+      "absolute_IG_share": 0.028613037457554176,
+      "absolute_rank": 10
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "feature": "has_device_activity",
+      "signed_IG_sum": -15.787214159965515,
+      "absolute_IG": 15.787214159965515,
+      "absolute_IG_share": 0.3138383119759974,
+      "absolute_rank": 1
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "feature": "has_file_activity",
+      "signed_IG_sum": 6.510148584842682,
+      "absolute_IG": 6.857752203941345,
+      "absolute_IG_share": 0.13632711597036626,
+      "absolute_rank": 2
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "feature": "has_email_activity",
+      "signed_IG_sum": 1.5022896695882082,
+      "absolute_IG": 1.5022896695882082,
+      "absolute_IG_share": 0.029864423781502177,
+      "absolute_rank": 9
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "feature": "has_http_activity",
+      "signed_IG_sum": -1.6603431133553386,
+      "absolute_IG": 1.6603431133553386,
+      "absolute_IG_share": 0.033006411056220805,
+      "absolute_rank": 8
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "feature": "is_active_day",
+      "signed_IG_sum": -3.4212713465094566,
+      "absolute_IG": 3.4212713465094566,
+      "absolute_IG_share": 0.06801238098886478,
+      "absolute_rank": 6
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "feature": "total_events",
+      "signed_IG_sum": 0.1969949909253046,
+      "absolute_IG": 0.6711973127676174,
+      "absolute_IG_share": 0.014935675162333207,
+      "absolute_rank": 12
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "feature": "logon_count",
+      "signed_IG_sum": -2.805641669780016,
+      "absolute_IG": 7.202493119984865,
+      "absolute_IG_share": 0.16027194321661142,
+      "absolute_rank": 3
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "feature": "device_count",
+      "signed_IG_sum": 2.926115340553224,
+      "absolute_IG": 3.4413663325831294,
+      "absolute_IG_share": 0.07657827092023388,
+      "absolute_rank": 5
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "feature": "file_count",
+      "signed_IG_sum": 7.117865522857755,
+      "absolute_IG": 8.485251003410667,
+      "absolute_IG_share": 0.18881623964677766,
+      "absolute_rank": 2
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "feature": "email_count",
+      "signed_IG_sum": -1.3610596871003509,
+      "absolute_IG": 2.5271804789081216,
+      "absolute_IG_share": 0.056235545035070084,
+      "absolute_rank": 7
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "feature": "http_count",
+      "signed_IG_sum": 0.6928945546969771,
+      "absolute_IG": 0.9642947660759091,
+      "absolute_IG_share": 0.02145776377956727,
+      "absolute_rank": 9
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "feature": "active_duration_minutes",
+      "signed_IG_sum": 0.7527323011308908,
+      "absolute_IG": 2.996452758088708,
+      "absolute_IG_share": 0.06667792642010344,
+      "absolute_rank": 6
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "feature": "has_logon_activity",
+      "signed_IG_sum": -0.7934655100107193,
+      "absolute_IG": 0.7934655100107193,
+      "absolute_IG_share": 0.01765642216469689,
+      "absolute_rank": 10
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "feature": "has_device_activity",
+      "signed_IG_sum": -10.080065935850143,
+      "absolute_IG": 10.080065935850143,
+      "absolute_IG_share": 0.2243045190570995,
+      "absolute_rank": 1
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "feature": "has_file_activity",
+      "signed_IG_sum": 4.527927527204156,
+      "absolute_IG": 4.527927527204156,
+      "absolute_IG_share": 0.10075674234458987,
+      "absolute_rank": 4
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "feature": "has_email_activity",
+      "signed_IG_sum": -0.0022682896815240383,
+      "absolute_IG": 0.7264394038356841,
+      "absolute_IG_share": 0.01616493802108713,
+      "absolute_rank": 11
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "feature": "has_http_activity",
+      "signed_IG_sum": -1.964332640171051,
+      "absolute_IG": 1.964332640171051,
+      "absolute_IG_share": 0.043710893453056524,
+      "absolute_rank": 8
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "feature": "is_active_day",
+      "signed_IG_sum": 0.1251860074698925,
+      "absolute_IG": 0.558734517544508,
+      "absolute_IG_share": 0.012433120778773106,
+      "absolute_rank": 13
+    }
+  ],
+  "tree_contributions": [
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "tree": 1,
+      "raw_tree_output": -1.2681742906570435,
+      "development_TRAIN_reference": -2.0518136617581497,
+      "reference_centred_logit_contribution": 0.09795492138763828,
+      "absolute_rank": 4,
+      "top_three": false
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "tree": 2,
+      "raw_tree_output": 0.637488603591919,
+      "development_TRAIN_reference": -2.483140951489024,
+      "reference_centred_logit_contribution": 0.3900786943851179,
+      "absolute_rank": 1,
+      "top_three": true
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "tree": 3,
+      "raw_tree_output": -1.3113173246383667,
+      "development_TRAIN_reference": -2.0065966490517306,
+      "reference_centred_logit_contribution": 0.08690991555167049,
+      "absolute_rank": 6,
+      "top_three": false
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "tree": 4,
+      "raw_tree_output": -1.7512959241867065,
+      "development_TRAIN_reference": -1.9338942108672836,
+      "reference_centred_logit_contribution": 0.022824785835072137,
+      "absolute_rank": 8,
+      "top_three": false
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "tree": 5,
+      "raw_tree_output": -1.4889024496078491,
+      "development_TRAIN_reference": -1.9565228957912275,
+      "reference_centred_logit_contribution": 0.0584525557729223,
+      "absolute_rank": 7,
+      "top_three": false
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "tree": 6,
+      "raw_tree_output": 0.07853011041879654,
+      "development_TRAIN_reference": -1.8260511582630943,
+      "reference_centred_logit_contribution": 0.23807265858523635,
+      "absolute_rank": 2,
+      "top_three": true
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "tree": 7,
+      "raw_tree_output": -0.635930061340332,
+      "development_TRAIN_reference": -1.9122524123511777,
+      "reference_centred_logit_contribution": 0.1595402938763557,
+      "absolute_rank": 3,
+      "top_three": true
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "tree": 8,
+      "raw_tree_output": -1.3804912567138672,
+      "development_TRAIN_reference": -2.1040361487131234,
+      "reference_centred_logit_contribution": 0.09044311149990703,
+      "absolute_rank": 5,
+      "top_three": false
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "tree": 1,
+      "raw_tree_output": 0.15245608985424042,
+      "development_TRAIN_reference": -1.9805983672700833,
+      "reference_centred_logit_contribution": 0.26663180714054047,
+      "absolute_rank": 1,
+      "top_three": true
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "tree": 2,
+      "raw_tree_output": -1.3465158939361572,
+      "development_TRAIN_reference": -2.0483897590927667,
+      "reference_centred_logit_contribution": 0.08773423314457618,
+      "absolute_rank": 4,
+      "top_three": false
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "tree": 3,
+      "raw_tree_output": -1.0651605129241943,
+      "development_TRAIN_reference": -2.03888644501225,
+      "reference_centred_logit_contribution": 0.12171574151100695,
+      "absolute_rank": 3,
+      "top_three": true
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "tree": 4,
+      "raw_tree_output": -1.4461416006088257,
+      "development_TRAIN_reference": -2.01695979818368,
+      "reference_centred_logit_contribution": 0.07135227469685679,
+      "absolute_rank": 6,
+      "top_three": false
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "tree": 5,
+      "raw_tree_output": -1.6129825115203857,
+      "development_TRAIN_reference": -2.1349254900081913,
+      "reference_centred_logit_contribution": 0.0652428723109757,
+      "absolute_rank": 7,
+      "top_three": false
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "tree": 6,
+      "raw_tree_output": -1.2899186611175537,
+      "development_TRAIN_reference": -1.9759414990892084,
+      "reference_centred_logit_contribution": 0.08575285474645683,
+      "absolute_rank": 5,
+      "top_three": false
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "tree": 7,
+      "raw_tree_output": -1.0177478790283203,
+      "development_TRAIN_reference": -2.033344185169917,
+      "reference_centred_logit_contribution": 0.1269495382676996,
+      "absolute_rank": 2,
+      "top_three": true
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "tree": 8,
+      "raw_tree_output": -1.9336740970611572,
+      "development_TRAIN_reference": -2.0370551962236263,
+      "reference_centred_logit_contribution": 0.012922637395308634,
+      "absolute_rank": 8,
+      "top_three": false
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "tree": 1,
+      "raw_tree_output": -1.7856011390686035,
+      "development_TRAIN_reference": -1.897909023795226,
+      "reference_centred_logit_contribution": 0.01403848559082782,
+      "absolute_rank": 7,
+      "top_three": false
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "tree": 2,
+      "raw_tree_output": 0.40269535779953003,
+      "development_TRAIN_reference": -2.3516755621148455,
+      "reference_centred_logit_contribution": 0.34429636498929694,
+      "absolute_rank": 1,
+      "top_three": true
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "tree": 3,
+      "raw_tree_output": -0.37035471200942993,
+      "development_TRAIN_reference": -2.0760081869914058,
+      "reference_centred_logit_contribution": 0.21320668437274698,
+      "absolute_rank": 2,
+      "top_three": true
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "tree": 4,
+      "raw_tree_output": -0.6992220878601074,
+      "development_TRAIN_reference": -1.8240341274326242,
+      "reference_centred_logit_contribution": 0.1406015049465646,
+      "absolute_rank": 3,
+      "top_three": true
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "tree": 5,
+      "raw_tree_output": -1.4565213918685913,
+      "development_TRAIN_reference": -1.9135543838730673,
+      "reference_centred_logit_contribution": 0.0571291240005595,
+      "absolute_rank": 4,
+      "top_three": false
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "tree": 6,
+      "raw_tree_output": -1.9035944938659668,
+      "development_TRAIN_reference": -2.1032900195371758,
+      "reference_centred_logit_contribution": 0.02496194070890112,
+      "absolute_rank": 6,
+      "top_three": false
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "tree": 7,
+      "raw_tree_output": -1.9267029762268066,
+      "development_TRAIN_reference": -2.010250585966746,
+      "reference_centred_logit_contribution": 0.010443451217492405,
+      "absolute_rank": 8,
+      "top_three": false
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "tree": 8,
+      "raw_tree_output": -1.7508509159088135,
+      "development_TRAIN_reference": -2.1325615093546055,
+      "reference_centred_logit_contribution": 0.04771382418072401,
+      "absolute_rank": 5,
+      "top_three": false
+    }
+  ],
+  "explanation_diagnostics": [
+    {
+      "user": "U_488844ba74",
+      "seed": 42,
+      "source_row": 176975,
+      "original_logit": -0.8900116086006165,
+      "threshold_logit": 0.24116205681688824,
+      "attention_mass_on_malicious_days": 0.9862406849861145,
+      "malicious_day_fraction": 0.7,
+      "IG_logit_difference": 1.2104082107543945,
+      "IG_completeness_residual": 0.2829637994582299,
+      "IG_relative_completeness_residual": 0.2337755122149006
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 52,
+      "source_row": 177019,
+      "original_logit": -1.194960594177246,
+      "threshold_logit": 0.24116205681688824,
+      "attention_mass_on_malicious_days": 0.1608123928308487,
+      "malicious_day_fraction": 0.05,
+      "IG_logit_difference": 0.9061844348907471,
+      "IG_completeness_residual": -0.16737228388228687,
+      "IG_relative_completeness_residual": 0.1847000206999427
+    },
+    {
+      "user": "U_488844ba74",
+      "seed": 62,
+      "source_row": 176977,
+      "original_logit": -1.1862690448760986,
+      "threshold_logit": -0.4895482253187058,
+      "attention_mass_on_malicious_days": 0.7638688683509827,
+      "malicious_day_fraction": 0.7,
+      "IG_logit_difference": 0.9151580333709717,
+      "IG_completeness_residual": -1.5822755211265758,
+      "IG_relative_completeness_residual": 1.728964248172839
+    }
+  ],
+  "P2_coverage": [
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "full_windows": 562,
+      "saved_explanation_windows": 3,
+      "valid_IG_windows": 3,
+      "zero_total_IG_excluded": 0,
+      "coverage_fraction": 0.005338078291814947,
+      "median_IG_relative_completeness_residual": 0.014496112999286789,
+      "P95_IG_relative_completeness_residual": 0.07019363947762368
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "full_windows": 968,
+      "saved_explanation_windows": 968,
+      "valid_IG_windows": 968,
+      "zero_total_IG_excluded": 0,
+      "coverage_fraction": 1.0,
+      "median_IG_relative_completeness_residual": 0.0007734682950692213,
+      "P95_IG_relative_completeness_residual": 0.06380958183718605
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "full_windows": 724,
+      "saved_explanation_windows": 5,
+      "valid_IG_windows": 5,
+      "zero_total_IG_excluded": 0,
+      "coverage_fraction": 0.006906077348066298,
+      "median_IG_relative_completeness_residual": 0.007952468081361956,
+      "P95_IG_relative_completeness_residual": 0.06164137727198781
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "full_windows": 969,
+      "saved_explanation_windows": 969,
+      "valid_IG_windows": 969,
+      "zero_total_IG_excluded": 0,
+      "coverage_fraction": 1.0,
+      "median_IG_relative_completeness_residual": 0.006595838344346918,
+      "P95_IG_relative_completeness_residual": 0.07304994825598121
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "full_windows": 648,
+      "saved_explanation_windows": 5,
+      "valid_IG_windows": 5,
+      "zero_total_IG_excluded": 0,
+      "coverage_fraction": 0.007716049382716049,
+      "median_IG_relative_completeness_residual": 0.0006216564143603396,
+      "P95_IG_relative_completeness_residual": 0.11245315271431622
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "full_windows": 973,
+      "saved_explanation_windows": 973,
+      "valid_IG_windows": 973,
+      "zero_total_IG_excluded": 0,
+      "coverage_fraction": 1.0,
+      "median_IG_relative_completeness_residual": 0.003278533372677063,
+      "P95_IG_relative_completeness_residual": 0.8610874498507821
+    }
+  ],
+  "P2_attribution": [
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "total_events",
+      "mean_absolute_IG_share": 0.009315131217508226,
+      "explanation_windows": 3
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "logon_count",
+      "mean_absolute_IG_share": 0.03941238014326374,
+      "explanation_windows": 3
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "device_count",
+      "mean_absolute_IG_share": 0.17107791060592545,
+      "explanation_windows": 3
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "file_count",
+      "mean_absolute_IG_share": 0.10217051210111279,
+      "explanation_windows": 3
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "email_count",
+      "mean_absolute_IG_share": 0.06007264965246031,
+      "explanation_windows": 3
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "http_count",
+      "mean_absolute_IG_share": 0.025362103615550535,
+      "explanation_windows": 3
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "active_duration_minutes",
+      "mean_absolute_IG_share": 0.16648003190778035,
+      "explanation_windows": 3
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "has_logon_activity",
+      "mean_absolute_IG_share": 0.05670534886384206,
+      "explanation_windows": 3
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "has_device_activity",
+      "mean_absolute_IG_share": 0.21121568971845694,
+      "explanation_windows": 3
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "has_file_activity",
+      "mean_absolute_IG_share": 0.09284947326507605,
+      "explanation_windows": 3
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "has_email_activity",
+      "mean_absolute_IG_share": 0.017274121736105274,
+      "explanation_windows": 3
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "has_http_activity",
+      "mean_absolute_IG_share": 0.023474562044942446,
+      "explanation_windows": 3
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "is_active_day",
+      "mean_absolute_IG_share": 0.024590085127975832,
+      "explanation_windows": 3
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "level": "source",
+      "name": "logon",
+      "mean_absolute_IG_share": 0.0961177290071058,
+      "explanation_windows": 3
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "level": "source",
+      "name": "device",
+      "mean_absolute_IG_share": 0.3822936003243824,
+      "explanation_windows": 3
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "level": "source",
+      "name": "file",
+      "mean_absolute_IG_share": 0.19501998536618884,
+      "explanation_windows": 3
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "level": "source",
+      "name": "email",
+      "mean_absolute_IG_share": 0.07734677138856559,
+      "explanation_windows": 3
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "level": "source",
+      "name": "http",
+      "mean_absolute_IG_share": 0.048836665660492974,
+      "explanation_windows": 3
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "level": "source",
+      "name": "shared/activity",
+      "mean_absolute_IG_share": 0.2003852482532644,
+      "explanation_windows": 3
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "total_events",
+      "mean_absolute_IG_share": 0.027401481640433722,
+      "explanation_windows": 968
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "logon_count",
+      "mean_absolute_IG_share": 0.08027427947026206,
+      "explanation_windows": 968
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "device_count",
+      "mean_absolute_IG_share": 0.11341782983482537,
+      "explanation_windows": 968
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "file_count",
+      "mean_absolute_IG_share": 0.054107737973122884,
+      "explanation_windows": 968
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "email_count",
+      "mean_absolute_IG_share": 0.029404216567001436,
+      "explanation_windows": 968
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "http_count",
+      "mean_absolute_IG_share": 0.03769465853355804,
+      "explanation_windows": 968
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "active_duration_minutes",
+      "mean_absolute_IG_share": 0.0880933360995111,
+      "explanation_windows": 968
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "has_logon_activity",
+      "mean_absolute_IG_share": 0.03173789307744221,
+      "explanation_windows": 968
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "has_device_activity",
+      "mean_absolute_IG_share": 0.11432776495443678,
+      "explanation_windows": 968
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "has_file_activity",
+      "mean_absolute_IG_share": 0.34721622071634844,
+      "explanation_windows": 968
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "has_email_activity",
+      "mean_absolute_IG_share": 0.028789497237396402,
+      "explanation_windows": 968
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "has_http_activity",
+      "mean_absolute_IG_share": 0.02756714506906288,
+      "explanation_windows": 968
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "is_active_day",
+      "mean_absolute_IG_share": 0.01996793882659866,
+      "explanation_windows": 968
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "level": "source",
+      "name": "logon",
+      "mean_absolute_IG_share": 0.11201217254770428,
+      "explanation_windows": 968
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "level": "source",
+      "name": "device",
+      "mean_absolute_IG_share": 0.22774559478926212,
+      "explanation_windows": 968
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "level": "source",
+      "name": "file",
+      "mean_absolute_IG_share": 0.40132395868947135,
+      "explanation_windows": 968
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "level": "source",
+      "name": "email",
+      "mean_absolute_IG_share": 0.05819371380439784,
+      "explanation_windows": 968
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "level": "source",
+      "name": "http",
+      "mean_absolute_IG_share": 0.06526180360262092,
+      "explanation_windows": 968
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "level": "source",
+      "name": "shared/activity",
+      "mean_absolute_IG_share": 0.1354627565665435,
+      "explanation_windows": 968
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "total_events",
+      "mean_absolute_IG_share": 0.061303764757153156,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "logon_count",
+      "mean_absolute_IG_share": 0.0940905706812332,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "device_count",
+      "mean_absolute_IG_share": 0.08272048606398866,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "file_count",
+      "mean_absolute_IG_share": 0.04631761953159312,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "email_count",
+      "mean_absolute_IG_share": 0.025331631098388836,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "http_count",
+      "mean_absolute_IG_share": 0.03655321230785209,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "active_duration_minutes",
+      "mean_absolute_IG_share": 0.08170116010936627,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "has_logon_activity",
+      "mean_absolute_IG_share": 0.019673413038132505,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "has_device_activity",
+      "mean_absolute_IG_share": 0.21739289852974183,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "has_file_activity",
+      "mean_absolute_IG_share": 0.2535295306149933,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "has_email_activity",
+      "mean_absolute_IG_share": 0.018329269252463608,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "has_http_activity",
+      "mean_absolute_IG_share": 0.019614034124345897,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "is_active_day",
+      "mean_absolute_IG_share": 0.04344240989074756,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "level": "source",
+      "name": "logon",
+      "mean_absolute_IG_share": 0.11376398371936572,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "level": "source",
+      "name": "device",
+      "mean_absolute_IG_share": 0.3001133845937305,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "level": "source",
+      "name": "file",
+      "mean_absolute_IG_share": 0.29984715014658636,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "level": "source",
+      "name": "email",
+      "mean_absolute_IG_share": 0.04366090035085244,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "level": "source",
+      "name": "http",
+      "mean_absolute_IG_share": 0.05616724643219799,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "level": "source",
+      "name": "shared/activity",
+      "mean_absolute_IG_share": 0.186447334757267,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "total_events",
+      "mean_absolute_IG_share": 0.03930900643965861,
+      "explanation_windows": 969
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "logon_count",
+      "mean_absolute_IG_share": 0.07307844009279556,
+      "explanation_windows": 969
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "device_count",
+      "mean_absolute_IG_share": 0.06614230145684587,
+      "explanation_windows": 969
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "file_count",
+      "mean_absolute_IG_share": 0.06483452422335274,
+      "explanation_windows": 969
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "email_count",
+      "mean_absolute_IG_share": 0.027007752550160687,
+      "explanation_windows": 969
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "http_count",
+      "mean_absolute_IG_share": 0.024277960553512376,
+      "explanation_windows": 969
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "active_duration_minutes",
+      "mean_absolute_IG_share": 0.045233319949639694,
+      "explanation_windows": 969
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "has_logon_activity",
+      "mean_absolute_IG_share": 0.010445075079020039,
+      "explanation_windows": 969
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "has_device_activity",
+      "mean_absolute_IG_share": 0.12481994337869888,
+      "explanation_windows": 969
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "has_file_activity",
+      "mean_absolute_IG_share": 0.45648017261668056,
+      "explanation_windows": 969
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "has_email_activity",
+      "mean_absolute_IG_share": 0.02272976170590154,
+      "explanation_windows": 969
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "has_http_activity",
+      "mean_absolute_IG_share": 0.01943064286104183,
+      "explanation_windows": 969
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "is_active_day",
+      "mean_absolute_IG_share": 0.026211099092691634,
+      "explanation_windows": 969
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "level": "source",
+      "name": "logon",
+      "mean_absolute_IG_share": 0.08352351517181558,
+      "explanation_windows": 969
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "level": "source",
+      "name": "device",
+      "mean_absolute_IG_share": 0.19096224483554475,
+      "explanation_windows": 969
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "level": "source",
+      "name": "file",
+      "mean_absolute_IG_share": 0.5213146968400333,
+      "explanation_windows": 969
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "level": "source",
+      "name": "email",
+      "mean_absolute_IG_share": 0.04973751425606224,
+      "explanation_windows": 969
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "level": "source",
+      "name": "http",
+      "mean_absolute_IG_share": 0.0437086034145542,
+      "explanation_windows": 969
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "level": "source",
+      "name": "shared/activity",
+      "mean_absolute_IG_share": 0.11075342548198995,
+      "explanation_windows": 969
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "total_events",
+      "mean_absolute_IG_share": 0.009178576985534134,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "logon_count",
+      "mean_absolute_IG_share": 0.04806246505368178,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "device_count",
+      "mean_absolute_IG_share": 0.08505451588153251,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "file_count",
+      "mean_absolute_IG_share": 0.07342199250370515,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "email_count",
+      "mean_absolute_IG_share": 0.04121061183432991,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "http_count",
+      "mean_absolute_IG_share": 0.02979970176592852,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "active_duration_minutes",
+      "mean_absolute_IG_share": 0.1625684168304379,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "has_logon_activity",
+      "mean_absolute_IG_share": 0.05028764353833627,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "has_device_activity",
+      "mean_absolute_IG_share": 0.21192400691757257,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "has_file_activity",
+      "mean_absolute_IG_share": 0.19887955970891935,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "has_email_activity",
+      "mean_absolute_IG_share": 0.01158799152438829,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "has_http_activity",
+      "mean_absolute_IG_share": 0.03188136257059196,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "level": "feature",
+      "name": "is_active_day",
+      "mean_absolute_IG_share": 0.046143154885041684,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "level": "source",
+      "name": "logon",
+      "mean_absolute_IG_share": 0.09835010859201805,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "level": "source",
+      "name": "device",
+      "mean_absolute_IG_share": 0.296978522799105,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "level": "source",
+      "name": "file",
+      "mean_absolute_IG_share": 0.27230155221262453,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "level": "source",
+      "name": "email",
+      "mean_absolute_IG_share": 0.05279860335871821,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "level": "source",
+      "name": "http",
+      "mean_absolute_IG_share": 0.061681064336520486,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "level": "source",
+      "name": "shared/activity",
+      "mean_absolute_IG_share": 0.21789014870101373,
+      "explanation_windows": 5
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "total_events",
+      "mean_absolute_IG_share": 0.02156940540265424,
+      "explanation_windows": 973
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "logon_count",
+      "mean_absolute_IG_share": 0.08214596658719328,
+      "explanation_windows": 973
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "device_count",
+      "mean_absolute_IG_share": 0.10860241753052018,
+      "explanation_windows": 973
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "file_count",
+      "mean_absolute_IG_share": 0.05389304980377755,
+      "explanation_windows": 973
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "email_count",
+      "mean_absolute_IG_share": 0.03277398990106573,
+      "explanation_windows": 973
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "http_count",
+      "mean_absolute_IG_share": 0.028376797551424995,
+      "explanation_windows": 973
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "active_duration_minutes",
+      "mean_absolute_IG_share": 0.06329048189049893,
+      "explanation_windows": 973
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "has_logon_activity",
+      "mean_absolute_IG_share": 0.020203669230266418,
+      "explanation_windows": 973
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "has_device_activity",
+      "mean_absolute_IG_share": 0.14683398316619273,
+      "explanation_windows": 973
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "has_file_activity",
+      "mean_absolute_IG_share": 0.381849483460142,
+      "explanation_windows": 973
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "has_email_activity",
+      "mean_absolute_IG_share": 0.01830922071805187,
+      "explanation_windows": 973
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "has_http_activity",
+      "mean_absolute_IG_share": 0.022310467022615826,
+      "explanation_windows": 973
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "level": "feature",
+      "name": "is_active_day",
+      "mean_absolute_IG_share": 0.019841067735596168,
+      "explanation_windows": 973
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "level": "source",
+      "name": "logon",
+      "mean_absolute_IG_share": 0.1023496358174597,
+      "explanation_windows": 973
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "level": "source",
+      "name": "device",
+      "mean_absolute_IG_share": 0.2554364006967129,
+      "explanation_windows": 973
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "level": "source",
+      "name": "file",
+      "mean_absolute_IG_share": 0.4357425332639196,
+      "explanation_windows": 973
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "level": "source",
+      "name": "email",
+      "mean_absolute_IG_share": 0.05108321061911761,
+      "explanation_windows": 973
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "level": "source",
+      "name": "http",
+      "mean_absolute_IG_share": 0.05068726457404083,
+      "explanation_windows": 973
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "level": "source",
+      "name": "shared/activity",
+      "mean_absolute_IG_share": 0.10470095502874933,
+      "explanation_windows": 973
+    }
+  ],
+  "P2_activity": [
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "feature": "total_events",
+      "window_day_weighted_mean": 39.743416370106765,
+      "unique_user_day_mean": 60.78245856353591,
+      "windows": 562,
+      "window_day_instances": 11240,
+      "unique_user_days": 1448
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "feature": "logon_count",
+      "window_day_weighted_mean": 2.2936832740213524,
+      "unique_user_day_mean": 2.665745856353591,
+      "windows": 562,
+      "window_day_instances": 11240,
+      "unique_user_days": 1448
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "feature": "device_count",
+      "window_day_weighted_mean": 2.9519572953736657,
+      "unique_user_day_mean": 2.2810773480662982,
+      "windows": 562,
+      "window_day_instances": 11240,
+      "unique_user_days": 1448
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "feature": "file_count",
+      "window_day_weighted_mean": 2.4075622775800714,
+      "unique_user_day_mean": 2.2437845303867405,
+      "windows": 562,
+      "window_day_instances": 11240,
+      "unique_user_days": 1448
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "feature": "email_count",
+      "window_day_weighted_mean": 8.906405693950179,
+      "unique_user_day_mean": 13.92403314917127,
+      "windows": 562,
+      "window_day_instances": 11240,
+      "unique_user_days": 1448
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "feature": "http_count",
+      "window_day_weighted_mean": 23.183807829181493,
+      "unique_user_day_mean": 39.66781767955801,
+      "windows": 562,
+      "window_day_instances": 11240,
+      "unique_user_days": 1448
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "feature": "active_duration_minutes",
+      "window_day_weighted_mean": 419.93051601423485,
+      "unique_user_day_mean": 432.5421270718232,
+      "windows": 562,
+      "window_day_instances": 11240,
+      "unique_user_days": 1448
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "feature": "has_logon_activity",
+      "window_day_weighted_mean": 0.7750889679715303,
+      "unique_user_day_mean": 0.7133977900552486,
+      "windows": 562,
+      "window_day_instances": 11240,
+      "unique_user_days": 1448
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "feature": "has_device_activity",
+      "window_day_weighted_mean": 0.6473309608540925,
+      "unique_user_day_mean": 0.47928176795580113,
+      "windows": 562,
+      "window_day_instances": 11240,
+      "unique_user_days": 1448
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "feature": "has_file_activity",
+      "window_day_weighted_mean": 0.5152135231316726,
+      "unique_user_day_mean": 0.39779005524861877,
+      "windows": 562,
+      "window_day_instances": 11240,
+      "unique_user_days": 1448
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "feature": "has_email_activity",
+      "window_day_weighted_mean": 0.7711743772241992,
+      "unique_user_day_mean": 0.705110497237569,
+      "windows": 562,
+      "window_day_instances": 11240,
+      "unique_user_days": 1448
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "feature": "has_http_activity",
+      "window_day_weighted_mean": 0.772153024911032,
+      "unique_user_day_mean": 0.7044198895027625,
+      "windows": 562,
+      "window_day_instances": 11240,
+      "unique_user_days": 1448
+    },
+    {
+      "seed": 42,
+      "group": "false_alarm_noninsider",
+      "feature": "is_active_day",
+      "window_day_weighted_mean": 0.7775800711743772,
+      "unique_user_day_mean": 0.7147790055248618,
+      "windows": 562,
+      "window_day_instances": 11240,
+      "unique_user_days": 1448
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "feature": "total_events",
+      "window_day_weighted_mean": 97.25444214876033,
+      "unique_user_day_mean": 86.07522123893806,
+      "windows": 968,
+      "window_day_instances": 19360,
+      "unique_user_days": 1582
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "feature": "logon_count",
+      "window_day_weighted_mean": 1.8057851239669422,
+      "unique_user_day_mean": 1.7496839443742098,
+      "windows": 968,
+      "window_day_instances": 19360,
+      "unique_user_days": 1582
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "feature": "device_count",
+      "window_day_weighted_mean": 2.5416838842975205,
+      "unique_user_day_mean": 2.0056890012642223,
+      "windows": 968,
+      "window_day_instances": 19360,
+      "unique_user_days": 1582
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "feature": "file_count",
+      "window_day_weighted_mean": 1.165547520661157,
+      "unique_user_day_mean": 0.9652338811630847,
+      "windows": 968,
+      "window_day_instances": 19360,
+      "unique_user_days": 1582
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "feature": "email_count",
+      "window_day_weighted_mean": 20.067303719008265,
+      "unique_user_day_mean": 18.06637168141593,
+      "windows": 968,
+      "window_day_instances": 19360,
+      "unique_user_days": 1582
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "feature": "http_count",
+      "window_day_weighted_mean": 71.67412190082645,
+      "unique_user_day_mean": 63.288242730720604,
+      "windows": 968,
+      "window_day_instances": 19360,
+      "unique_user_days": 1582
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "feature": "active_duration_minutes",
+      "window_day_weighted_mean": 381.74127066115705,
+      "unique_user_day_mean": 372.19026548672565,
+      "windows": 968,
+      "window_day_instances": 19360,
+      "unique_user_days": 1582
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "feature": "has_logon_activity",
+      "window_day_weighted_mean": 0.6699380165289256,
+      "unique_user_day_mean": 0.6472819216182049,
+      "windows": 968,
+      "window_day_instances": 19360,
+      "unique_user_days": 1582
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "feature": "has_device_activity",
+      "window_day_weighted_mean": 0.2893595041322314,
+      "unique_user_day_mean": 0.23767383059418457,
+      "windows": 968,
+      "window_day_instances": 19360,
+      "unique_user_days": 1582
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "feature": "has_file_activity",
+      "window_day_weighted_mean": 0.27923553719008265,
+      "unique_user_day_mean": 0.2281921618204804,
+      "windows": 968,
+      "window_day_instances": 19360,
+      "unique_user_days": 1582
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "feature": "has_email_activity",
+      "window_day_weighted_mean": 0.6706095041322314,
+      "unique_user_day_mean": 0.6460176991150443,
+      "windows": 968,
+      "window_day_instances": 19360,
+      "unique_user_days": 1582
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "feature": "has_http_activity",
+      "window_day_weighted_mean": 0.6669938016528926,
+      "unique_user_day_mean": 0.6447534766118836,
+      "windows": 968,
+      "window_day_instances": 19360,
+      "unique_user_days": 1582
+    },
+    {
+      "seed": 42,
+      "group": "true_positive",
+      "feature": "is_active_day",
+      "window_day_weighted_mean": 0.6741219008264463,
+      "unique_user_day_mean": 0.6504424778761062,
+      "windows": 968,
+      "window_day_instances": 19360,
+      "unique_user_days": 1582
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "feature": "total_events",
+      "window_day_weighted_mean": 66.97099447513813,
+      "unique_user_day_mean": 88.9905862216517,
+      "windows": 724,
+      "window_day_instances": 14480,
+      "unique_user_days": 2337
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "feature": "logon_count",
+      "window_day_weighted_mean": 2.166988950276243,
+      "unique_user_day_mean": 2.321780059905862,
+      "windows": 724,
+      "window_day_instances": 14480,
+      "unique_user_days": 2337
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "feature": "device_count",
+      "window_day_weighted_mean": 2.3303867403314915,
+      "unique_user_day_mean": 1.6482670089858793,
+      "windows": 724,
+      "window_day_instances": 14480,
+      "unique_user_days": 2337
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "feature": "file_count",
+      "window_day_weighted_mean": 2.2587707182320442,
+      "unique_user_day_mean": 2.1112537441163886,
+      "windows": 724,
+      "window_day_instances": 14480,
+      "unique_user_days": 2337
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "feature": "email_count",
+      "window_day_weighted_mean": 13.132113259668508,
+      "unique_user_day_mean": 18.16474112109542,
+      "windows": 724,
+      "window_day_instances": 14480,
+      "unique_user_days": 2337
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "feature": "http_count",
+      "window_day_weighted_mean": 47.08273480662984,
+      "unique_user_day_mean": 64.74454428754814,
+      "windows": 724,
+      "window_day_instances": 14480,
+      "unique_user_days": 2337
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "feature": "active_duration_minutes",
+      "window_day_weighted_mean": 424.15517955801107,
+      "unique_user_day_mean": 437.4480102695764,
+      "windows": 724,
+      "window_day_instances": 14480,
+      "unique_user_days": 2337
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "feature": "has_logon_activity",
+      "window_day_weighted_mean": 0.7537292817679558,
+      "unique_user_day_mean": 0.7252888318356868,
+      "windows": 724,
+      "window_day_instances": 14480,
+      "unique_user_days": 2337
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "feature": "has_device_activity",
+      "window_day_weighted_mean": 0.5035220994475138,
+      "unique_user_day_mean": 0.37098844672657255,
+      "windows": 724,
+      "window_day_instances": 14480,
+      "unique_user_days": 2337
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "feature": "has_file_activity",
+      "window_day_weighted_mean": 0.4082182320441989,
+      "unique_user_day_mean": 0.31450577663671375,
+      "windows": 724,
+      "window_day_instances": 14480,
+      "unique_user_days": 2337
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "feature": "has_email_activity",
+      "window_day_weighted_mean": 0.7466160220994476,
+      "unique_user_day_mean": 0.7184424475823705,
+      "windows": 724,
+      "window_day_instances": 14480,
+      "unique_user_days": 2337
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "feature": "has_http_activity",
+      "window_day_weighted_mean": 0.7469613259668508,
+      "unique_user_day_mean": 0.7167308515190415,
+      "windows": 724,
+      "window_day_instances": 14480,
+      "unique_user_days": 2337
+    },
+    {
+      "seed": 52,
+      "group": "false_alarm_noninsider",
+      "feature": "is_active_day",
+      "window_day_weighted_mean": 0.7553176795580111,
+      "unique_user_day_mean": 0.7265725288831836,
+      "windows": 724,
+      "window_day_instances": 14480,
+      "unique_user_days": 2337
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "feature": "total_events",
+      "window_day_weighted_mean": 97.43013415892673,
+      "unique_user_day_mean": 85.78787878787878,
+      "windows": 969,
+      "window_day_instances": 19380,
+      "unique_user_days": 1584
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "feature": "logon_count",
+      "window_day_weighted_mean": 1.8100103199174407,
+      "unique_user_day_mean": 1.744949494949495,
+      "windows": 969,
+      "window_day_instances": 19380,
+      "unique_user_days": 1584
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "feature": "device_count",
+      "window_day_weighted_mean": 2.5381320949432404,
+      "unique_user_day_mean": 1.9993686868686869,
+      "windows": 969,
+      "window_day_instances": 19380,
+      "unique_user_days": 1584
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "feature": "file_count",
+      "window_day_weighted_mean": 1.16124871001032,
+      "unique_user_day_mean": 0.961489898989899,
+      "windows": 969,
+      "window_day_instances": 19380,
+      "unique_user_days": 1584
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "feature": "email_count",
+      "window_day_weighted_mean": 20.121052631578948,
+      "unique_user_day_mean": 18.02462121212121,
+      "windows": 969,
+      "window_day_instances": 19380,
+      "unique_user_days": 1584
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "feature": "http_count",
+      "window_day_weighted_mean": 71.79969040247678,
+      "unique_user_day_mean": 63.057449494949495,
+      "windows": 969,
+      "window_day_instances": 19380,
+      "unique_user_days": 1584
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "feature": "active_duration_minutes",
+      "window_day_weighted_mean": 381.22389060887514,
+      "unique_user_day_mean": 371.3554292929293,
+      "windows": 969,
+      "window_day_instances": 19380,
+      "unique_user_days": 1584
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "feature": "has_logon_activity",
+      "window_day_weighted_mean": 0.6707946336429309,
+      "unique_user_day_mean": 0.6458333333333334,
+      "windows": 969,
+      "window_day_instances": 19380,
+      "unique_user_days": 1584
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "feature": "has_device_activity",
+      "window_day_weighted_mean": 0.2890608875128999,
+      "unique_user_day_mean": 0.2361111111111111,
+      "windows": 969,
+      "window_day_instances": 19380,
+      "unique_user_days": 1584
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "feature": "has_file_activity",
+      "window_day_weighted_mean": 0.27915376676986586,
+      "unique_user_day_mean": 0.22664141414141414,
+      "windows": 969,
+      "window_day_instances": 19380,
+      "unique_user_days": 1584
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "feature": "has_email_activity",
+      "window_day_weighted_mean": 0.6713106295149639,
+      "unique_user_day_mean": 0.6445707070707071,
+      "windows": 969,
+      "window_day_instances": 19380,
+      "unique_user_days": 1584
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "feature": "has_http_activity",
+      "window_day_weighted_mean": 0.6678018575851393,
+      "unique_user_day_mean": 0.6433080808080808,
+      "windows": 969,
+      "window_day_instances": 19380,
+      "unique_user_days": 1584
+    },
+    {
+      "seed": 52,
+      "group": "true_positive",
+      "feature": "is_active_day",
+      "window_day_weighted_mean": 0.6749742002063983,
+      "unique_user_day_mean": 0.648989898989899,
+      "windows": 969,
+      "window_day_instances": 19380,
+      "unique_user_days": 1584
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "feature": "total_events",
+      "window_day_weighted_mean": 48.30933641975309,
+      "unique_user_day_mean": 69.18761904761905,
+      "windows": 648,
+      "window_day_instances": 12960,
+      "unique_user_days": 2100
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "feature": "logon_count",
+      "window_day_weighted_mean": 2.5027006172839505,
+      "unique_user_day_mean": 2.731904761904762,
+      "windows": 648,
+      "window_day_instances": 12960,
+      "unique_user_days": 2100
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "feature": "device_count",
+      "window_day_weighted_mean": 2.9492283950617284,
+      "unique_user_day_mean": 2.2461904761904763,
+      "windows": 648,
+      "window_day_instances": 12960,
+      "unique_user_days": 2100
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "feature": "file_count",
+      "window_day_weighted_mean": 2.5516975308641974,
+      "unique_user_day_mean": 2.2347619047619047,
+      "windows": 648,
+      "window_day_instances": 12960,
+      "unique_user_days": 2100
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "feature": "email_count",
+      "window_day_weighted_mean": 11.124922839506173,
+      "unique_user_day_mean": 15.965238095238096,
+      "windows": 648,
+      "window_day_instances": 12960,
+      "unique_user_days": 2100
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "feature": "http_count",
+      "window_day_weighted_mean": 29.18078703703704,
+      "unique_user_day_mean": 46.00952380952381,
+      "windows": 648,
+      "window_day_instances": 12960,
+      "unique_user_days": 2100
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "feature": "active_duration_minutes",
+      "window_day_weighted_mean": 422.4954475308642,
+      "unique_user_day_mean": 434.7133333333333,
+      "windows": 648,
+      "window_day_instances": 12960,
+      "unique_user_days": 2100
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "feature": "has_logon_activity",
+      "window_day_weighted_mean": 0.750462962962963,
+      "unique_user_day_mean": 0.7214285714285714,
+      "windows": 648,
+      "window_day_instances": 12960,
+      "unique_user_days": 2100
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "feature": "has_device_activity",
+      "window_day_weighted_mean": 0.6090277777777777,
+      "unique_user_day_mean": 0.45666666666666667,
+      "windows": 648,
+      "window_day_instances": 12960,
+      "unique_user_days": 2100
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "feature": "has_file_activity",
+      "window_day_weighted_mean": 0.4878858024691358,
+      "unique_user_day_mean": 0.38571428571428573,
+      "windows": 648,
+      "window_day_instances": 12960,
+      "unique_user_days": 2100
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "feature": "has_email_activity",
+      "window_day_weighted_mean": 0.746141975308642,
+      "unique_user_day_mean": 0.7138095238095238,
+      "windows": 648,
+      "window_day_instances": 12960,
+      "unique_user_days": 2100
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "feature": "has_http_activity",
+      "window_day_weighted_mean": 0.7470679012345679,
+      "unique_user_day_mean": 0.7133333333333334,
+      "windows": 648,
+      "window_day_instances": 12960,
+      "unique_user_days": 2100
+    },
+    {
+      "seed": 62,
+      "group": "false_alarm_noninsider",
+      "feature": "is_active_day",
+      "window_day_weighted_mean": 0.7521604938271605,
+      "unique_user_day_mean": 0.7223809523809523,
+      "windows": 648,
+      "window_day_instances": 12960,
+      "unique_user_days": 2100
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "feature": "total_events",
+      "window_day_weighted_mean": 96.9589928057554,
+      "unique_user_day_mean": 85.69880277252678,
+      "windows": 973,
+      "window_day_instances": 19460,
+      "unique_user_days": 1587
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "feature": "logon_count",
+      "window_day_weighted_mean": 1.8178828365878725,
+      "unique_user_day_mean": 1.7448015122873346,
+      "windows": 973,
+      "window_day_instances": 19460,
+      "unique_user_days": 1587
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "feature": "device_count",
+      "window_day_weighted_mean": 2.5198869475847894,
+      "unique_user_day_mean": 2.0018903591682418,
+      "windows": 973,
+      "window_day_instances": 19460,
+      "unique_user_days": 1587
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "feature": "file_count",
+      "window_day_weighted_mean": 1.1701952723535458,
+      "unique_user_day_mean": 0.9634530560806553,
+      "windows": 973,
+      "window_day_instances": 19460,
+      "unique_user_days": 1587
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "feature": "email_count",
+      "window_day_weighted_mean": 20.093165467625898,
+      "unique_user_day_mean": 17.991178323881538,
+      "windows": 973,
+      "window_day_instances": 19460,
+      "unique_user_days": 1587
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "feature": "http_count",
+      "window_day_weighted_mean": 71.35786228160329,
+      "unique_user_day_mean": 62.997479521109014,
+      "windows": 973,
+      "window_day_instances": 19460,
+      "unique_user_days": 1587
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "feature": "active_duration_minutes",
+      "window_day_weighted_mean": 382.46079136690645,
+      "unique_user_day_mean": 371.69313169502203,
+      "windows": 973,
+      "window_day_instances": 19460,
+      "unique_user_days": 1587
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "feature": "has_logon_activity",
+      "window_day_weighted_mean": 0.6726104830421377,
+      "unique_user_day_mean": 0.6471329552614997,
+      "windows": 973,
+      "window_day_instances": 19460,
+      "unique_user_days": 1587
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "feature": "has_device_activity",
+      "window_day_weighted_mean": 0.289311408016444,
+      "unique_user_day_mean": 0.2381852551984877,
+      "windows": 973,
+      "window_day_instances": 19460,
+      "unique_user_days": 1587
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "feature": "has_file_activity",
+      "window_day_weighted_mean": 0.27975334018499487,
+      "unique_user_day_mean": 0.22810333963453056,
+      "windows": 973,
+      "window_day_instances": 19460,
+      "unique_user_days": 1587
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "feature": "has_email_activity",
+      "window_day_weighted_mean": 0.6731757451181911,
+      "unique_user_day_mean": 0.645872715816005,
+      "windows": 973,
+      "window_day_instances": 19460,
+      "unique_user_days": 1587
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "feature": "has_http_activity",
+      "window_day_weighted_mean": 0.6698869475847893,
+      "unique_user_day_mean": 0.6446124763705104,
+      "windows": 973,
+      "window_day_instances": 19460,
+      "unique_user_days": 1587
+    },
+    {
+      "seed": 62,
+      "group": "true_positive",
+      "feature": "is_active_day",
+      "window_day_weighted_mean": 0.6767728674203495,
+      "unique_user_day_mean": 0.6502835538752363,
+      "windows": 973,
+      "window_day_instances": 19460,
+      "unique_user_days": 1587
+    }
+  ],
+  "missing_components": [],
+  "new_IG_or_interventions": false,
+  "new_holdout_inference": false
+}

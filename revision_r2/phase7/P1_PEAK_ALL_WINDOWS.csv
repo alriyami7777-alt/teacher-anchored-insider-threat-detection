@@ -1,0 +1,4 @@
+user,seed,source_row,end_date,max_all_window_score,threshold,global_window_rank,contains_malicious_day,alert,days_since_last_malicious_day,all_alert_windows,malicious_alert_windows
+U_488844ba74,42,177028,2010-09-16,0.9664232078041042,0.56,464.0,False,True,28,17,0
+U_488844ba74,52,177033,2010-09-21,0.945327575216124,0.56,257.0,False,True,33,13,0
+U_488844ba74,62,177033,2010-09-21,0.9640724447205467,0.38,513.0,False,True,33,16,0

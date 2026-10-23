@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-23T01:32:21.465773+00:00",
+  "all_checks_passed": true,
+  "checks": {
+    "all_scripts_parse": true,
+    "input_hidden_context_gradients_connected": true,
+    "weighted_tied_AUC_matches_sklearn": true,
+    "Spearman_ties_and_constant_vectors": true,
+    "exact_final_logit_IG_algorithm": true,
+    "consensus_cache_is_original_three_teachers": true,
+    "Q5_all_52_unlabelled_feature_rows": true,
+    "Q5_histogram_mass_and_flags": true
+  },
+  "details": {
+    "IG_final_only_vs_original_engine_max_abs_error": 0.0,
+    "original_consensus_cache_development_CPU_parity_max_error": 4.76837158203125e-07
+  },
+  "development_only": true,
+  "device": "CPU"
+}

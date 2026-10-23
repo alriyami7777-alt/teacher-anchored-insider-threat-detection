@@ -1,0 +1,71 @@
+{
+  "utc": "2026-10-22T14:30:30.455077+00:00",
+  "figures": [
+    {
+      "stem": "figure_P1_timeline_U_488844ba74",
+      "dpi": 300,
+      "minimum_font_pt": 12.0,
+      "size_inches": [
+        16.0,
+        10.0
+      ],
+      "png_sha256": "c76fd54eabc414c6f376ab95e3e4829cf81760e87f60c15c7bb7496be61b2b51",
+      "CSV_sha256": "967a900ab26ad66877b0f74fe10ee339ddc377d9a8e732ede2746dc3eedba0ac"
+    },
+    {
+      "stem": "figure_P1_explanations_U_488844ba74",
+      "dpi": 300,
+      "minimum_font_pt": 12.0,
+      "size_inches": [
+        18.0,
+        13.0
+      ],
+      "png_sha256": "64e4cab8ebf17b39f2f95d3cd6127537a3f591b87833a336937c41361275afff",
+      "CSV_sha256": "9715e49ff7574751900cb257bfad7fe9d833ffecb40fa39c605cfac544608e4e"
+    },
+    {
+      "stem": "figure_P2_false_alarms",
+      "dpi": 300,
+      "minimum_font_pt": 12.0,
+      "size_inches": [
+        15.0,
+        6.5
+      ],
+      "png_sha256": "99f6c2bf78a8c1db1bfe8202766ed50866a73cb2fd304962af63b9424b2e18bc",
+      "CSV_sha256": "72f7538752dd1fa793a8cb56c73dd78217bbe00ca1f9a4aef0593e3ee16a2b16"
+    },
+    {
+      "stem": "figure_P4_daily_budget",
+      "dpi": 300,
+      "minimum_font_pt": 12.0,
+      "size_inches": [
+        15.0,
+        6.5
+      ],
+      "png_sha256": "1e9f81c019d815f426690c75d9cd910b851d7b28253dcc7d5aac4de476d8b383",
+      "CSV_sha256": "75aac5a3d6b0bfd1d5468f97bf74239c43fcdd8011e10127deb88780eada7107"
+    },
+    {
+      "stem": "figure_P5_rank_average",
+      "dpi": 300,
+      "minimum_font_pt": 12.0,
+      "size_inches": [
+        13.0,
+        6.0
+      ],
+      "png_sha256": "60bb3cb9e4fec0940e4606616f237adb3b051c26f5b1fc46d9ad2a6984ba95bd",
+      "CSV_sha256": "95530cd251246a8a359e78fc32bb30ec76414b2caa678484cd15771470659b50"
+    },
+    {
+      "stem": "figure_P6_threshold_rules",
+      "dpi": 300,
+      "minimum_font_pt": 12.0,
+      "size_inches": [
+        17.0,
+        6.5
+      ],
+      "png_sha256": "0b9d28d8c83eb3be94df5b612350fee9cb97e80c36d95fd255f3e37c1d7139c0",
+      "CSV_sha256": "af70c0b49c04f8a55af6f8ef3820c47df38f762ecb6168c1b652062191b6ead9"
+    }
+  ]
+}

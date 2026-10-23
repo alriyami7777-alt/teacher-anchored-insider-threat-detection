@@ -1,0 +1,324 @@
+{
+  "utc": "2026-10-22T14:23:33.014809+00:00",
+  "validation_only": true,
+  "validation_windows": 48000,
+  "validation_positive_windows": 473,
+  "development_predictions": [
+    {
+      "model": "TRACE",
+      "seed": 42,
+      "origin": "frozen Phase 4 checkpoint; development VALIDATION inference only",
+      "checkpoint_sha256": "80fd6ecbd8c3f22b5241aad353c02ca34426c9dc34c8c1fa489bb679f87234d9",
+      "prediction_sha256": "34aeb4ca0efc7da92d72efd43d15519829a2981909bfeb41d6bb8dee620c3034",
+      "validation_AP": 0.9572546163979258,
+      "frozen_model_threshold": 0.56,
+      "reproduced_original_threshold": 0.56,
+      "development_only": true,
+      "holdout_inference": false
+    },
+    {
+      "model": "TRACE",
+      "seed": 52,
+      "origin": "frozen Phase 4 checkpoint; development VALIDATION inference only",
+      "checkpoint_sha256": "2927c9975a4f59b219afd448c709b964396a879ac4f36b82bfef7538d3612080",
+      "prediction_sha256": "216fb0052452451b5287dd78cafd6ceaeda79cf6e82b65aa96199886c3c9053c",
+      "validation_AP": 0.9618754872086749,
+      "frozen_model_threshold": 0.56,
+      "reproduced_original_threshold": 0.56,
+      "development_only": true,
+      "holdout_inference": false
+    },
+    {
+      "model": "TRACE",
+      "seed": 62,
+      "origin": "frozen Phase 4 checkpoint; development VALIDATION inference only",
+      "checkpoint_sha256": "0d246d87aecbc078bf46bf211fc2a03df7bdf41355da17f82079da39849d5f18",
+      "prediction_sha256": "1e0209174f3d084e4c1920c95941e54ef9d3b0014eac5b9de18a494b76708272",
+      "validation_AP": 0.9698787123054355,
+      "frozen_model_threshold": 0.38,
+      "reproduced_original_threshold": 0.38,
+      "development_only": true,
+      "holdout_inference": false
+    },
+    {
+      "model": "XGBoost-40",
+      "seed": 42,
+      "origin": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints_parity_v2\\XGBoost_40\\seed42\\development_validation_probabilities.npz",
+      "checkpoint_sha256": "07597ac880cc45573fb63b63852e00732f8dd27ed69b34e2f1e5865844984481",
+      "prediction_sha256": "ba003e53b2b1c9d5e3c7ee6ce2dba423106e38159fa51ff5e8a94aa531866046",
+      "validation_AP": 0.9231876109974032,
+      "frozen_model_threshold": 0.64,
+      "reproduced_original_threshold": 0.64,
+      "development_only": true,
+      "holdout_inference": false
+    },
+    {
+      "model": "XGBoost-40",
+      "seed": 52,
+      "origin": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints_parity_v2\\XGBoost_40\\seed52\\development_validation_probabilities.npz",
+      "checkpoint_sha256": "230eafa930aa7a47c2467ea86ba32a933fa70c8a7aaa8512bcbde03f8f2254c4",
+      "prediction_sha256": "6d52caf9e2e7c97d251b80dc4b65a8fc7b526c7cd89bb05603794672fe009f53",
+      "validation_AP": 0.9260931799351121,
+      "frozen_model_threshold": 0.51,
+      "reproduced_original_threshold": 0.51,
+      "development_only": true,
+      "holdout_inference": false
+    },
+    {
+      "model": "XGBoost-40",
+      "seed": 62,
+      "origin": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints_parity_v2\\XGBoost_40\\seed62\\development_validation_probabilities.npz",
+      "checkpoint_sha256": "3c8c5d3d528473ed1c88c206f58b1bce7178fc7dc3cf598462fe217a88ddd6fb",
+      "prediction_sha256": "cf139778c39801576c930ad3e0bf14939150e0807ca33dc8b03522c7d5e3e2e7",
+      "validation_AP": 0.9274200342071266,
+      "frozen_model_threshold": 0.060000000000000005,
+      "reproduced_original_threshold": 0.060000000000000005,
+      "development_only": true,
+      "holdout_inference": false
+    },
+    {
+      "model": "L1",
+      "seed": 42,
+      "origin": "frozen Phase 4 checkpoint; development VALIDATION inference only",
+      "checkpoint_sha256": "5c0c13dc8a2caaf9335c479f68e3b61e0e7ba534f95d163bbcd54a900ecdc5d7",
+      "prediction_sha256": "0ce6015433e4e7b6c81f44e81da781aaea85f8f4dc63aa9ad27e86e42f5a3f00",
+      "validation_AP": 0.9555095986886415,
+      "frozen_model_threshold": 0.66,
+      "reproduced_original_threshold": 0.66,
+      "development_only": true,
+      "holdout_inference": false
+    },
+    {
+      "model": "L1",
+      "seed": 52,
+      "origin": "frozen Phase 4 checkpoint; development VALIDATION inference only",
+      "checkpoint_sha256": "23aba738c1d1a51354c40386b77d7e474299c15b951297954a1181773c87568c",
+      "prediction_sha256": "07aaee6eb7850d1213c8e7eefdc3d2fdac02d8c147ca796ab87eac0ea202b6af",
+      "validation_AP": 0.957096355786254,
+      "frozen_model_threshold": 0.59,
+      "reproduced_original_threshold": 0.59,
+      "development_only": true,
+      "holdout_inference": false
+    },
+    {
+      "model": "L1",
+      "seed": 62,
+      "origin": "frozen Phase 4 checkpoint; development VALIDATION inference only",
+      "checkpoint_sha256": "fe079206035332ede7b077794955a028c6fbf13460a81ded73016f1559b47923",
+      "prediction_sha256": "5683b90ca4d0548de45ce230e854ca41c79e55b862c35cefb61a0ddebc9b8d38",
+      "validation_AP": 0.9665016896993207,
+      "frozen_model_threshold": 0.44,
+      "reproduced_original_threshold": 0.44,
+      "development_only": true,
+      "holdout_inference": false
+    }
+  ],
+  "P5_combination_thresholds": [
+    {
+      "model": "Rank-average",
+      "seed": 42,
+      "threshold": 0.99,
+      "rule": "original sorted grid+quantile max-F1; first maximum",
+      "validation_PR_AUC": 0.9601389975865907,
+      "validation_F1": 0.8980963045912654,
+      "validation_precision": 0.9547619047619048,
+      "validation_recall": 0.8477801268498943,
+      "validation_alert_windows": 420
+    },
+    {
+      "model": "Rank-average",
+      "seed": 52,
+      "threshold": 0.99,
+      "rule": "original sorted grid+quantile max-F1; first maximum",
+      "validation_PR_AUC": 0.9590212107125421,
+      "validation_F1": 0.9096916299559471,
+      "validation_precision": 0.9494252873563218,
+      "validation_recall": 0.8731501057082452,
+      "validation_alert_windows": 435
+    },
+    {
+      "model": "Rank-average",
+      "seed": 62,
+      "threshold": 0.99,
+      "rule": "original sorted grid+quantile max-F1; first maximum",
+      "validation_PR_AUC": 0.9701702239133239,
+      "validation_F1": 0.9121245828698554,
+      "validation_precision": 0.9624413145539906,
+      "validation_recall": 0.8668076109936576,
+      "validation_alert_windows": 426
+    }
+  ],
+  "P6_thresholds": [
+    {
+      "model": "TRACE",
+      "seed": 42,
+      "rule": "recall_ge_0.90",
+      "threshold": 0.4235482648382562,
+      "validation_precision": 0.8711656441717791,
+      "validation_recall": 0.9006342494714588,
+      "target_attained": true
+    },
+    {
+      "model": "TRACE",
+      "seed": 42,
+      "rule": "precision_ge_0.50",
+      "threshold": 0.13199378108307142,
+      "validation_precision": 0.5,
+      "validation_recall": 0.9767441860465116,
+      "target_attained": true
+    },
+    {
+      "model": "TRACE",
+      "seed": 52,
+      "rule": "recall_ge_0.90",
+      "threshold": 0.6853122312711856,
+      "validation_precision": 0.9362637362637363,
+      "validation_recall": 0.9006342494714588,
+      "target_attained": true
+    },
+    {
+      "model": "TRACE",
+      "seed": 52,
+      "rule": "precision_ge_0.50",
+      "threshold": 0.14949974305824099,
+      "validation_precision": 0.5,
+      "validation_recall": 0.9746300211416491,
+      "target_attained": true
+    },
+    {
+      "model": "TRACE",
+      "seed": 62,
+      "rule": "recall_ge_0.90",
+      "threshold": 0.4433681374720153,
+      "validation_precision": 0.9383259911894273,
+      "validation_recall": 0.9006342494714588,
+      "target_attained": true
+    },
+    {
+      "model": "TRACE",
+      "seed": 62,
+      "rule": "precision_ge_0.50",
+      "threshold": 0.12087244769946688,
+      "validation_precision": 0.5,
+      "validation_recall": 0.9830866807610994,
+      "target_attained": true
+    },
+    {
+      "model": "XGBoost-40",
+      "seed": 42,
+      "rule": "recall_ge_0.90",
+      "threshold": 0.0007671490893699229,
+      "validation_precision": 0.5627476882430648,
+      "validation_recall": 0.9006342494714588,
+      "target_attained": true
+    },
+    {
+      "model": "XGBoost-40",
+      "seed": 42,
+      "rule": "precision_ge_0.50",
+      "threshold": 0.0005667560617439449,
+      "validation_precision": 0.5,
+      "validation_recall": 0.9006342494714588,
+      "target_attained": true
+    },
+    {
+      "model": "XGBoost-40",
+      "seed": 52,
+      "rule": "recall_ge_0.90",
+      "threshold": 0.000502986425999552,
+      "validation_precision": 0.5157384987893463,
+      "validation_recall": 0.9006342494714588,
+      "target_attained": true
+    },
+    {
+      "model": "XGBoost-40",
+      "seed": 52,
+      "rule": "precision_ge_0.50",
+      "threshold": 0.0004532989114522934,
+      "validation_precision": 0.5,
+      "validation_recall": 0.904862579281184,
+      "target_attained": true
+    },
+    {
+      "model": "XGBoost-40",
+      "seed": 62,
+      "rule": "recall_ge_0.90",
+      "threshold": 0.0005857369978912175,
+      "validation_precision": 0.5065398335315101,
+      "validation_recall": 0.9006342494714588,
+      "target_attained": true
+    },
+    {
+      "model": "XGBoost-40",
+      "seed": 62,
+      "rule": "precision_ge_0.50",
+      "threshold": 0.0005631920066662133,
+      "validation_precision": 0.5,
+      "validation_recall": 0.9027484143763214,
+      "target_attained": true
+    },
+    {
+      "model": "L1",
+      "seed": 42,
+      "rule": "recall_ge_0.90",
+      "threshold": 0.33859096280454776,
+      "validation_precision": 0.841897233201581,
+      "validation_recall": 0.9006342494714588,
+      "target_attained": true
+    },
+    {
+      "model": "L1",
+      "seed": 42,
+      "rule": "precision_ge_0.50",
+      "threshold": 0.1499458729578545,
+      "validation_precision": 0.5,
+      "validation_recall": 0.9788583509513742,
+      "target_attained": true
+    },
+    {
+      "model": "L1",
+      "seed": 52,
+      "rule": "recall_ge_0.90",
+      "threshold": 0.49837327577441215,
+      "validation_precision": 0.9240780911062907,
+      "validation_recall": 0.9006342494714588,
+      "target_attained": true
+    },
+    {
+      "model": "L1",
+      "seed": 52,
+      "rule": "precision_ge_0.50",
+      "threshold": 0.18148075431823546,
+      "validation_precision": 0.5,
+      "validation_recall": 0.959830866807611,
+      "target_attained": true
+    },
+    {
+      "model": "L1",
+      "seed": 62,
+      "rule": "recall_ge_0.90",
+      "threshold": 0.4501510902610236,
+      "validation_precision": 0.9362637362637363,
+      "validation_recall": 0.9006342494714588,
+      "target_attained": true
+    },
+    {
+      "model": "L1",
+      "seed": 62,
+      "rule": "precision_ge_0.50",
+      "threshold": 0.14332011110752096,
+      "validation_precision": 0.5,
+      "validation_recall": 0.9746300211416491,
+      "target_attained": true
+    }
+  ],
+  "amendment7_sha256": "1768798af048c4918a6b68f8f750032ed7ab9375d442928e8806e5610a9a9af4",
+  "code_hashes": {
+    "common7.py": "2437d302717df4582b32a41c76c8a640f14e1cd6c02fcea93c798038d762a44e",
+    "development7.py": "458e5931fd4a3653683b62ef09638f0b6e31886c06fb905610a73d27aa6909a7",
+    "inspect7.py": "02a7dd6be225a1d63a3712516851a657ce244857df6014343db4c9d352576a95",
+    "prepare7.py": "e15c3c6b8ed4c14925f7f95c7eb5f15458c8a945a34db1790e526a65b019ab98"
+  },
+  "r52_test_read": false,
+  "no_retraining": true
+}

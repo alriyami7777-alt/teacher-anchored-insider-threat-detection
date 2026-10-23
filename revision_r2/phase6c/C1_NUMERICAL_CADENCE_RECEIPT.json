@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-22T13:07:26.670914+00:00",
+  "old_code_hashes": {
+    "c1.py": "7d3f1a91606ba3f4eb55e47cc1da8f1500c3aaecf905be18e0455a75d743fc61",
+    "common6c.py": "90b61fbe50cd3656ee3046fc644912505cd489d6b630dd7a085636dd164c9852"
+  },
+  "new_code_hashes": {
+    "c1.py": "2e5fb7181c98d113db6e49d77cae080846db8c27d4045ddf0912375eb1360f52",
+    "common6c.py": "90b61fbe50cd3656ee3046fc644912505cd489d6b630dd7a085636dd164c9852"
+  },
+  "reason": "Restore exact Phase 6B per-metric 100-row GEMV cadence before any extension; no statistical definition changed",
+  "no_scoring": true,
+  "extension_started": false
+}

@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-22T13:07:26.662422+00:00",
+  "all_1236_B2000_statistics_identical": true,
+  "family_sizes": {
+    "H1_H5": 840,
+    "temporal": 72,
+    "feature": 162,
+    "tree": 162
+  },
+  "no_new_scoring": true
+}

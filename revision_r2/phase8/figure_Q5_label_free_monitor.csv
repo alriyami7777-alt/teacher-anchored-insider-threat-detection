@@ -1,0 +1,5 @@
+release,max_absolute_standardized_feature_shift,max_PSI,shift_exceeds_0_25,PSI_exceeds_0_25,flagged,expected_flagged,matches_requested_pattern
+r5.1,0.0361309064991839,0.032441370878046064,False,False,False,False,True
+r6.1,0.6397291322915316,3.4302947698208395,True,True,True,True,True
+r6.2,0.6401094012369204,3.4071700819820188,True,True,True,True,True
+r5.2_HOLDOUT,0.07079994655148975,0.005930971018680195,False,False,False,False,True

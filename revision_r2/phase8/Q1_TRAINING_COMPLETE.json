@@ -1,0 +1,2534 @@
+{
+  "utc": "2026-10-23T02:07:30.847260+00:00",
+  "runs": 25,
+  "successful": 25,
+  "outcomes": [
+    {
+      "model": "AL_PRECURSOR",
+      "seed": 72,
+      "config": {
+        "model": "AL_PRECURSOR",
+        "seed": 72,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 193.4078947368421,
+        "optimizer": "Adam",
+        "encoder_lr": 0.001,
+        "attention_lr": 0.001,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+        "pos_weight_multiplier": 1.0,
+        "scheduler": {
+          "name": "ReduceLROnPlateau",
+          "factor": 0.5,
+          "patience": 2,
+          "min_lr": 1e-05
+        },
+        "improvement_epsilon": 1e-06,
+        "role": "development-only prerequisite for frozen T-OPT initialization"
+      },
+      "epochs": 7,
+      "best_epoch": 3,
+      "dev_validation_pr_auc": 0.9550026943897807,
+      "threshold": 0.99,
+      "wall_seconds": 75.72429049998755,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\AL_PRECURSOR\\seed72\\best.pt",
+      "sha256": "b4416229f6a2111093cb7f0852bb9db6e668b3318a6864aec16c917c575b977a",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9068496717853982,
+          "train_loss": 0.43429160281748536,
+          "seconds": 11.029189000022598
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9227701524165101,
+          "train_loss": 0.17052436783768601,
+          "seconds": 10.15083479997702
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9550026943897807,
+          "train_loss": 0.1455380817128317,
+          "seconds": 10.19171159999678
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9465178713165905,
+          "train_loss": 0.11983610235333644,
+          "seconds": 10.627562000008766
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9194270804157618,
+          "train_loss": 0.11276503907116335,
+          "seconds": 10.086418299993966
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9422047901768243,
+          "train_loss": 0.1035214520984293,
+          "seconds": 10.187908799969591
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9345756353155051,
+          "train_loss": 0.08129328244400105,
+          "seconds": 10.030907699954696
+        }
+      ],
+      "consensus_seeds": [],
+      "matched_teacher_seed": null,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "AL_PRECURSOR",
+      "seed": 82,
+      "config": {
+        "model": "AL_PRECURSOR",
+        "seed": 82,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 193.4078947368421,
+        "optimizer": "Adam",
+        "encoder_lr": 0.001,
+        "attention_lr": 0.001,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+        "pos_weight_multiplier": 1.0,
+        "scheduler": {
+          "name": "ReduceLROnPlateau",
+          "factor": 0.5,
+          "patience": 2,
+          "min_lr": 1e-05
+        },
+        "improvement_epsilon": 1e-06,
+        "role": "development-only prerequisite for frozen T-OPT initialization"
+      },
+      "epochs": 7,
+      "best_epoch": 3,
+      "dev_validation_pr_auc": 0.9458233753852371,
+      "threshold": 0.8400000000000001,
+      "wall_seconds": 75.37187589996029,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\AL_PRECURSOR\\seed82\\best.pt",
+      "sha256": "92adccb81042c76723d2b748b03a478c5105a0f2be4f3b9f3ebb24b360b77b8b",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.8545588209885234,
+          "train_loss": 0.4191640681399004,
+          "seconds": 11.033348900033161
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9157373292411705,
+          "train_loss": 0.17537944581605455,
+          "seconds": 10.28063240001211
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9458233753852371,
+          "train_loss": 0.13775930119627322,
+          "seconds": 10.365496599988546
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9194652264567911,
+          "train_loss": 0.11528865542322045,
+          "seconds": 10.224114599986933
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.8836049412680077,
+          "train_loss": 0.10083642724136209,
+          "seconds": 10.377596599981189
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9256642932481678,
+          "train_loss": 0.09258012453528427,
+          "seconds": 10.13892689999193
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9042130885456284,
+          "train_loss": 0.06828975578973641,
+          "seconds": 10.018953499966301
+        }
+      ],
+      "consensus_seeds": [],
+      "matched_teacher_seed": null,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "AL_PRECURSOR",
+      "seed": 92,
+      "config": {
+        "model": "AL_PRECURSOR",
+        "seed": 92,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 193.4078947368421,
+        "optimizer": "Adam",
+        "encoder_lr": 0.001,
+        "attention_lr": 0.001,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+        "pos_weight_multiplier": 1.0,
+        "scheduler": {
+          "name": "ReduceLROnPlateau",
+          "factor": 0.5,
+          "patience": 2,
+          "min_lr": 1e-05
+        },
+        "improvement_epsilon": 1e-06,
+        "role": "development-only prerequisite for frozen T-OPT initialization"
+      },
+      "epochs": 8,
+      "best_epoch": 4,
+      "dev_validation_pr_auc": 0.9567442976813032,
+      "threshold": 0.98,
+      "wall_seconds": 84.99381710001035,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\AL_PRECURSOR\\seed92\\best.pt",
+      "sha256": "b618d4b8551a78c527ab511b31e241ef00b2dda8ea96adb41b7befbe20d97be4",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9247831143058127,
+          "train_loss": 0.40446994170238926,
+          "seconds": 10.762239999952726
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9028346716915061,
+          "train_loss": 0.17238213879495304,
+          "seconds": 10.127912700001616
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9019342668767744,
+          "train_loss": 0.1535036649139702,
+          "seconds": 10.278533499978948
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9567442976813032,
+          "train_loss": 0.1332427375377132,
+          "seconds": 10.057448600011412
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9234338687913336,
+          "train_loss": 0.11406342309965499,
+          "seconds": 10.245347500022035
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9149357790046017,
+          "train_loss": 0.11068396813290386,
+          "seconds": 10.218912700016517
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9475566475778897,
+          "train_loss": 0.09672512481544425,
+          "seconds": 10.314670499996282
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.9176992213112138,
+          "train_loss": 0.07249590362270572,
+          "seconds": 10.133116400043946
+        }
+      ],
+      "consensus_seeds": [],
+      "matched_teacher_seed": null,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "AL_PRECURSOR",
+      "seed": 102,
+      "config": {
+        "model": "AL_PRECURSOR",
+        "seed": 102,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 193.4078947368421,
+        "optimizer": "Adam",
+        "encoder_lr": 0.001,
+        "attention_lr": 0.001,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+        "pos_weight_multiplier": 1.0,
+        "scheduler": {
+          "name": "ReduceLROnPlateau",
+          "factor": 0.5,
+          "patience": 2,
+          "min_lr": 1e-05
+        },
+        "improvement_epsilon": 1e-06,
+        "role": "development-only prerequisite for frozen T-OPT initialization"
+      },
+      "epochs": 7,
+      "best_epoch": 3,
+      "dev_validation_pr_auc": 0.9453007666576765,
+      "threshold": 0.8300000000000001,
+      "wall_seconds": 74.43566429999191,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\AL_PRECURSOR\\seed102\\best.pt",
+      "sha256": "0d6579da7d97eaa68a2cff76a65ed65981f9df85d93fe0c26f83b9f7986358a9",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.8942258222602062,
+          "train_loss": 0.41949442978629403,
+          "seconds": 10.574522899987642
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9115918448324044,
+          "train_loss": 0.18102190597246948,
+          "seconds": 10.28159859997686
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9453007666576765,
+          "train_loss": 0.15132955895755093,
+          "seconds": 10.254180799995083
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.933269080830096,
+          "train_loss": 0.13932072078314328,
+          "seconds": 10.056949599995278
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9359607963120392,
+          "train_loss": 0.11880251876571785,
+          "seconds": 10.10649919998832
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.938629470152573,
+          "train_loss": 0.09881457596089432,
+          "seconds": 10.17129130003741
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9293732894685114,
+          "train_loss": 0.07677650528069895,
+          "seconds": 10.271483000018634
+        }
+      ],
+      "consensus_seeds": [],
+      "matched_teacher_seed": null,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "AL_PRECURSOR",
+      "seed": 112,
+      "config": {
+        "model": "AL_PRECURSOR",
+        "seed": 112,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 193.4078947368421,
+        "optimizer": "Adam",
+        "encoder_lr": 0.001,
+        "attention_lr": 0.001,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+        "pos_weight_multiplier": 1.0,
+        "scheduler": {
+          "name": "ReduceLROnPlateau",
+          "factor": 0.5,
+          "patience": 2,
+          "min_lr": 1e-05
+        },
+        "improvement_epsilon": 1e-06,
+        "role": "development-only prerequisite for frozen T-OPT initialization"
+      },
+      "epochs": 10,
+      "best_epoch": 6,
+      "dev_validation_pr_auc": 0.9265053104777855,
+      "threshold": 0.98,
+      "wall_seconds": 103.87287389999256,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\AL_PRECURSOR\\seed112\\best.pt",
+      "sha256": "fa7afee848d9c1df3d1daf9ddf68ecea3c2448adc25338e102cdbae490428bfa",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.8656747047104784,
+          "train_loss": 0.43385856629819836,
+          "seconds": 10.703079200000502
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9164539946302518,
+          "train_loss": 0.17561595294277882,
+          "seconds": 10.12487580004381
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9164774156693659,
+          "train_loss": 0.1494387308031623,
+          "seconds": 10.154003200004809
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9133747498815737,
+          "train_loss": 0.1264293755142116,
+          "seconds": 9.896539599983953
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9198458769559209,
+          "train_loss": 0.1093488270699877,
+          "seconds": 9.939529600029346
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9265053104777855,
+          "train_loss": 0.10244970898293652,
+          "seconds": 10.063997799996287
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9185575145373395,
+          "train_loss": 0.08575050779178663,
+          "seconds": 9.859150399977807
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.9253549063241974,
+          "train_loss": 0.0791329522236753,
+          "seconds": 9.985972499998752
+        },
+        {
+          "epoch": 9,
+          "dev_validation_pr_auc": 0.8728677842871068,
+          "train_loss": 0.07712415655496863,
+          "seconds": 9.995194900024217
+        },
+        {
+          "epoch": 10,
+          "dev_validation_pr_auc": 0.8973576682845006,
+          "train_loss": 0.05343762641761912,
+          "seconds": 10.148012799967546
+        }
+      ],
+      "consensus_seeds": [],
+      "matched_teacher_seed": null,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "T-OPT",
+      "seed": 72,
+      "config": {
+        "model": "T-OPT",
+        "seed": 72,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 producing frozen-node teacher recipe",
+        "encoder_frozen": true,
+        "attention_frozen": true,
+        "linear_frozen": true
+      },
+      "epochs": 6,
+      "best_epoch": 2,
+      "dev_validation_pr_auc": 0.9536854021478319,
+      "threshold": 0.72,
+      "wall_seconds": 80.10026600002311,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\T-OPT\\seed72\\best.pt",
+      "sha256": "65c08b0ea3b3728b54b3c1c519ba24b86384b83eb301ad81a0816e042dbc0299",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9491277182037099,
+          "train_loss": 0.666811803058521,
+          "seconds": 12.960127500002272
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9536854021478319,
+          "train_loss": 0.44901149142091046,
+          "seconds": 13.029210600012448
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9478212068275332,
+          "train_loss": 0.32046587108516855,
+          "seconds": 12.841170699975919
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9424056840836131,
+          "train_loss": 0.23933964393062238,
+          "seconds": 12.828825299977325
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9507029602648105,
+          "train_loss": 0.18614291541790196,
+          "seconds": 12.671570700011216
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9495158804288875,
+          "train_loss": 0.14991003802978448,
+          "seconds": 12.558700599998701
+        }
+      ],
+      "consensus_seeds": [],
+      "matched_teacher_seed": null,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "T-OPT",
+      "seed": 82,
+      "config": {
+        "model": "T-OPT",
+        "seed": 82,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 producing frozen-node teacher recipe",
+        "encoder_frozen": true,
+        "attention_frozen": true,
+        "linear_frozen": true
+      },
+      "epochs": 10,
+      "best_epoch": 6,
+      "dev_validation_pr_auc": 0.9576122018925356,
+      "threshold": 0.792544767781809,
+      "wall_seconds": 130.06496330001391,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\T-OPT\\seed82\\best.pt",
+      "sha256": "71a9675422b189b89daa4256fad562aff28e02875a519033fb31dca67a040be7",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9546655078665142,
+          "train_loss": 0.6672094734328249,
+          "seconds": 13.251582600001711
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.955182819621312,
+          "train_loss": 0.4496044293744915,
+          "seconds": 12.702854899980593
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9568145208611807,
+          "train_loss": 0.3193548258645886,
+          "seconds": 12.68479050003225
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9566336448586475,
+          "train_loss": 0.23703987131909468,
+          "seconds": 12.691065499966498
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9557810401939367,
+          "train_loss": 0.1833228161218001,
+          "seconds": 12.612113400013186
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9576122018925356,
+          "train_loss": 0.14640746759803566,
+          "seconds": 12.549114900000859
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9565231107722868,
+          "train_loss": 0.12083586973012402,
+          "seconds": 12.446940800000448
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.9553661133344417,
+          "train_loss": 0.10227179315771952,
+          "seconds": 12.479983599972911
+        },
+        {
+          "epoch": 9,
+          "dev_validation_pr_auc": 0.9489676306609953,
+          "train_loss": 0.08862367711424222,
+          "seconds": 12.691707800026052
+        },
+        {
+          "epoch": 10,
+          "dev_validation_pr_auc": 0.953488197845621,
+          "train_loss": 0.07820251533436998,
+          "seconds": 12.537950699974317
+        }
+      ],
+      "consensus_seeds": [],
+      "matched_teacher_seed": null,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "T-OPT",
+      "seed": 92,
+      "config": {
+        "model": "T-OPT",
+        "seed": 92,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 producing frozen-node teacher recipe",
+        "encoder_frozen": true,
+        "attention_frozen": true,
+        "linear_frozen": true
+      },
+      "epochs": 5,
+      "best_epoch": 1,
+      "dev_validation_pr_auc": 0.9445576875673553,
+      "threshold": 0.62,
+      "wall_seconds": 67.38748729997315,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\T-OPT\\seed92\\best.pt",
+      "sha256": "b0c82405b854019efbdfe15fe11948c6aaa43736edd6da91e785d9cb37e958a2",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9445576875673553,
+          "train_loss": 0.6679970662690661,
+          "seconds": 13.147933800006285
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9360414693717908,
+          "train_loss": 0.45240651084646555,
+          "seconds": 12.597927500028163
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9376356872895824,
+          "train_loss": 0.3214672456667105,
+          "seconds": 12.770754900004249
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.941219029673884,
+          "train_loss": 0.23816333343998833,
+          "seconds": 12.706387700047344
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9412378025713879,
+          "train_loss": 0.1833026610316359,
+          "seconds": 12.673306600016076
+        }
+      ],
+      "consensus_seeds": [],
+      "matched_teacher_seed": null,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "T-OPT",
+      "seed": 102,
+      "config": {
+        "model": "T-OPT",
+        "seed": 102,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 producing frozen-node teacher recipe",
+        "encoder_frozen": true,
+        "attention_frozen": true,
+        "linear_frozen": true
+      },
+      "epochs": 5,
+      "best_epoch": 1,
+      "dev_validation_pr_auc": 0.9357199241060342,
+      "threshold": 0.61,
+      "wall_seconds": 65.08450539998012,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\T-OPT\\seed102\\best.pt",
+      "sha256": "3f8e37c9de42ef718e5e25b20fac5862f9eccec0e2d53602c4ce345f03fae038",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9357199241060342,
+          "train_loss": 0.6668002143031247,
+          "seconds": 12.877967999957036
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9311240649702384,
+          "train_loss": 0.45142071220757796,
+          "seconds": 12.578289100027177
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9326921826224308,
+          "train_loss": 0.32270383884620346,
+          "seconds": 12.64268320001429
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9354602478687775,
+          "train_loss": 0.24162981327334435,
+          "seconds": 11.884141699993052
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9351723058220216,
+          "train_loss": 0.18849941982049023,
+          "seconds": 11.704843499988783
+        }
+      ],
+      "consensus_seeds": [],
+      "matched_teacher_seed": null,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "T-OPT",
+      "seed": 112,
+      "config": {
+        "model": "T-OPT",
+        "seed": 112,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 producing frozen-node teacher recipe",
+        "encoder_frozen": true,
+        "attention_frozen": true,
+        "linear_frozen": true
+      },
+      "epochs": 9,
+      "best_epoch": 5,
+      "dev_validation_pr_auc": 0.9232583656683995,
+      "threshold": 0.87,
+      "wall_seconds": 113.75891060003778,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\T-OPT\\seed112\\best.pt",
+      "sha256": "0917f4f79bbad5a5727a0a2f961b6596fe891cd45a6d33c9bab8339498741d37",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9203762614778392,
+          "train_loss": 0.6610382776268444,
+          "seconds": 12.87966050003888
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9198645789622819,
+          "train_loss": 0.43480030599584435,
+          "seconds": 12.274170399992727
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9191742964470241,
+          "train_loss": 0.3044826531067314,
+          "seconds": 11.556565099977888
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9174228775979175,
+          "train_loss": 0.22317534171264183,
+          "seconds": 11.268121999979485
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9232583656683995,
+          "train_loss": 0.16958878787842702,
+          "seconds": 12.697166400030255
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9175257402910009,
+          "train_loss": 0.13328333121487734,
+          "seconds": 12.407472399994731
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9201894908047369,
+          "train_loss": 0.10774323122231085,
+          "seconds": 12.36879300000146
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.9196928014941739,
+          "train_loss": 0.0894354847659516,
+          "seconds": 12.473260400001891
+        },
+        {
+          "epoch": 9,
+          "dev_validation_pr_auc": 0.9123892098264176,
+          "train_loss": 0.07599055390773489,
+          "seconds": 12.501708800031338
+        }
+      ],
+      "consensus_seeds": [],
+      "matched_teacher_seed": null,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "F00",
+      "seed": 72,
+      "config": {
+        "model": "F00",
+        "seed": 72,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": null,
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 7,
+      "best_epoch": 3,
+      "dev_validation_pr_auc": 0.926460358360722,
+      "threshold": 0.88,
+      "wall_seconds": 107.14043060003314,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\F00\\seed72\\best.pt",
+      "sha256": "9b80bb71979a8c4792d2832040c62ade516daa73a4361c852d1f479802fe31a0",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9233827343602471,
+          "train_loss": 0.3065439888035182,
+          "seconds": 15.497077299980447
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9167317870967463,
+          "train_loss": 0.21394377951492916,
+          "seconds": 14.755545400024857
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.926460358360722,
+          "train_loss": 0.16067069411449222,
+          "seconds": 14.562591699999757
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.91575010221315,
+          "train_loss": 0.12848841216429036,
+          "seconds": 14.91783769999165
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9140738174170713,
+          "train_loss": 0.10599403628419499,
+          "seconds": 14.923780900018755
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9138950760903872,
+          "train_loss": 0.09240789236897341,
+          "seconds": 14.766029599995818
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9116501212664629,
+          "train_loss": 0.08048391478971378,
+          "seconds": 14.839968300017063
+        }
+      ],
+      "consensus_seeds": [],
+      "matched_teacher_seed": 72,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "F00",
+      "seed": 82,
+      "config": {
+        "model": "F00",
+        "seed": 82,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": null,
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 8,
+      "best_epoch": 4,
+      "dev_validation_pr_auc": 0.9414812488266356,
+      "threshold": 0.76,
+      "wall_seconds": 122.45198929996695,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\F00\\seed82\\best.pt",
+      "sha256": "9b1f7ce3735817f953126f958e31fe30d340b68b3460f555d2b773eb56e64626",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9403075812679801,
+          "train_loss": 0.11626975084571467,
+          "seconds": 15.320719700015616
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9290461014891166,
+          "train_loss": 0.09107014204685257,
+          "seconds": 14.923658800020348
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9310618334299405,
+          "train_loss": 0.07827057903800821,
+          "seconds": 14.922096299997065
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9414812488266356,
+          "train_loss": 0.0686159747891418,
+          "seconds": 14.691935800015926
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9335693711233236,
+          "train_loss": 0.06133313730979329,
+          "seconds": 14.8814767000149
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9360780154431521,
+          "train_loss": 0.05812052160511565,
+          "seconds": 14.948934499989264
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.930529265950818,
+          "train_loss": 0.0548726100813339,
+          "seconds": 14.83178130001761
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.9255675288301167,
+          "train_loss": 0.05248595443196506,
+          "seconds": 15.032269200019073
+        }
+      ],
+      "consensus_seeds": [],
+      "matched_teacher_seed": 82,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "F00",
+      "seed": 92,
+      "config": {
+        "model": "F00",
+        "seed": 92,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": null,
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 12,
+      "best_epoch": 8,
+      "dev_validation_pr_auc": 0.9353073504871192,
+      "threshold": 0.9400000000000001,
+      "wall_seconds": 180.50405859999591,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\F00\\seed92\\best.pt",
+      "sha256": "1566b136903dedf43b5699a78936733bdd54b0e3187f1fad2c05f77c060c1586",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9131759269013825,
+          "train_loss": 0.4421171344016409,
+          "seconds": 15.5751247999724
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9133038430326401,
+          "train_loss": 0.30159342931470695,
+          "seconds": 14.94090500002494
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9091727413886359,
+          "train_loss": 0.21973694260007434,
+          "seconds": 14.814741599955596
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9347530186417757,
+          "train_loss": 0.1687734601826434,
+          "seconds": 14.515801000001375
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9263349101673464,
+          "train_loss": 0.13468928610754094,
+          "seconds": 14.782901500002481
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.93336579641859,
+          "train_loss": 0.11026259415847597,
+          "seconds": 15.090230299974792
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9316246952849127,
+          "train_loss": 0.09410561283242884,
+          "seconds": 14.557260899979156
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.9353073504871192,
+          "train_loss": 0.08171406068848272,
+          "seconds": 15.0343290999881
+        },
+        {
+          "epoch": 9,
+          "dev_validation_pr_auc": 0.9270852884271691,
+          "train_loss": 0.071504525283922,
+          "seconds": 14.568014200020116
+        },
+        {
+          "epoch": 10,
+          "dev_validation_pr_auc": 0.9216411555066749,
+          "train_loss": 0.0646181083661449,
+          "seconds": 14.557534600025974
+        },
+        {
+          "epoch": 11,
+          "dev_validation_pr_auc": 0.9255139404247086,
+          "train_loss": 0.05883953490278442,
+          "seconds": 14.813542799965944
+        },
+        {
+          "epoch": 12,
+          "dev_validation_pr_auc": 0.9189877175450475,
+          "train_loss": 0.055874629322647446,
+          "seconds": 14.391715399979148
+        }
+      ],
+      "consensus_seeds": [],
+      "matched_teacher_seed": 92,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "F00",
+      "seed": 102,
+      "config": {
+        "model": "F00",
+        "seed": 102,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": null,
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 5,
+      "best_epoch": 1,
+      "dev_validation_pr_auc": 0.9418873152564803,
+      "threshold": 0.7000000000000001,
+      "wall_seconds": 76.16798299999209,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\F00\\seed102\\best.pt",
+      "sha256": "e6cf93da2529136aa5707cae0a475b675067a347acc69c4ef1bec856beb00a2f",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9418873152564803,
+          "train_loss": 0.440905216429641,
+          "seconds": 15.13396800000919
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9369536454206444,
+          "train_loss": 0.30295770899253044,
+          "seconds": 14.325169400020968
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9326757310161901,
+          "train_loss": 0.22072792223121107,
+          "seconds": 14.437615300004836
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9357754505394821,
+          "train_loss": 0.17066404710707528,
+          "seconds": 14.625078300014138
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9354928555756019,
+          "train_loss": 0.13728883200006436,
+          "seconds": 14.754998399992473
+        }
+      ],
+      "consensus_seeds": [],
+      "matched_teacher_seed": 102,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "F00",
+      "seed": 112,
+      "config": {
+        "model": "F00",
+        "seed": 112,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": null,
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 6,
+      "best_epoch": 2,
+      "dev_validation_pr_auc": 0.9226839044178665,
+      "threshold": 0.5700000000000001,
+      "wall_seconds": 91.774095700006,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\F00\\seed112\\best.pt",
+      "sha256": "f38bc0fa13b1d5f99903006291e62c06f1e8503d6c743ecb0c550b11f4a32962",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9155383762971332,
+          "train_loss": 0.12635936544530485,
+          "seconds": 15.387846099969465
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9226839044178665,
+          "train_loss": 0.09251740580534976,
+          "seconds": 14.87158440001076
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9185562431510442,
+          "train_loss": 0.07348547939260297,
+          "seconds": 14.797346799983643
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9114863469798059,
+          "train_loss": 0.0612141633180747,
+          "seconds": 14.66323620005278
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9136527695899661,
+          "train_loss": 0.05388077735487378,
+          "seconds": 14.86569960002089
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9071063980408861,
+          "train_loss": 0.04770949151980897,
+          "seconds": 14.694801500008907
+        }
+      ],
+      "consensus_seeds": [],
+      "matched_teacher_seed": 112,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "TA2",
+      "seed": 72,
+      "config": {
+        "model": "TA2",
+        "seed": 72,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.5,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 12,
+      "best_epoch": 8,
+      "dev_validation_pr_auc": 0.947866503062455,
+      "threshold": 0.67,
+      "wall_seconds": 249.62441200000467,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\TA2\\seed72\\best.pt",
+      "sha256": "7ace683d3a4bf146708c38654f75ccf43c44f3e70e2c1e48936d0f059f310f79",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.943396665807708,
+          "train_loss": 0.512977900588573,
+          "seconds": 21.354602599982172
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.942123532900339,
+          "train_loss": 0.26352196224712077,
+          "seconds": 20.38702680001734
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.944034347493301,
+          "train_loss": 0.2014689506417402,
+          "seconds": 20.9222842999734
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9435491771319823,
+          "train_loss": 0.18981675777883095,
+          "seconds": 20.464531200006604
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9440689708607996,
+          "train_loss": 0.18605976412179304,
+          "seconds": 20.53102980001131
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9462158464150228,
+          "train_loss": 0.18393386782284718,
+          "seconds": 20.53013019997161
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9452614691636853,
+          "train_loss": 0.18266176032677117,
+          "seconds": 20.472409400041215
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.947866503062455,
+          "train_loss": 0.18175208150311775,
+          "seconds": 20.417350799951237
+        },
+        {
+          "epoch": 9,
+          "dev_validation_pr_auc": 0.9437446544464587,
+          "train_loss": 0.18104002022904592,
+          "seconds": 20.15346410003258
+        },
+        {
+          "epoch": 10,
+          "dev_validation_pr_auc": 0.9447335681209432,
+          "train_loss": 0.17994469418884734,
+          "seconds": 20.59867520001717
+        },
+        {
+          "epoch": 11,
+          "dev_validation_pr_auc": 0.9459552500623855,
+          "train_loss": 0.17981216708153436,
+          "seconds": 20.37590669997735
+        },
+        {
+          "epoch": 12,
+          "dev_validation_pr_auc": 0.9453213187361162,
+          "train_loss": 0.17896782309290923,
+          "seconds": 20.712103500030935
+        }
+      ],
+      "consensus_seeds": [
+        42,
+        52,
+        62
+      ],
+      "matched_teacher_seed": 72,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "TA2",
+      "seed": 82,
+      "config": {
+        "model": "TA2",
+        "seed": 82,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.5,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 8,
+      "best_epoch": 4,
+      "dev_validation_pr_auc": 0.9582271955130691,
+      "threshold": 0.64,
+      "wall_seconds": 166.54978729999857,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\TA2\\seed82\\best.pt",
+      "sha256": "c4aab3a452b2274f6f4d466e2a0ae67346d177ba74a3aea9ce10998a00ddae5f",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9534778362702974,
+          "train_loss": 0.2106789892831228,
+          "seconds": 21.280967800004873
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9550186352081227,
+          "train_loss": 0.18804543759939835,
+          "seconds": 19.978494900045916
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9541557510677284,
+          "train_loss": 0.18491119599786104,
+          "seconds": 20.312955900037196
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9582271955130691,
+          "train_loss": 0.18308662810805687,
+          "seconds": 20.30839520000154
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9559593399266615,
+          "train_loss": 0.18084379201391224,
+          "seconds": 20.365962799987756
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9569793964448486,
+          "train_loss": 0.1806753692207401,
+          "seconds": 20.66084659995977
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9575446618159914,
+          "train_loss": 0.17995141257529734,
+          "seconds": 20.295801600033883
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.9566899461582211,
+          "train_loss": 0.17969884354551835,
+          "seconds": 20.48169849999249
+        }
+      ],
+      "consensus_seeds": [
+        42,
+        52,
+        62
+      ],
+      "matched_teacher_seed": 82,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "TA2",
+      "seed": 92,
+      "config": {
+        "model": "TA2",
+        "seed": 92,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.5,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 12,
+      "best_epoch": 8,
+      "dev_validation_pr_auc": 0.9615763277817402,
+      "threshold": 0.55,
+      "wall_seconds": 244.99965620000148,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\TA2\\seed92\\best.pt",
+      "sha256": "a0b1197e93d5fa44fc0bd42b288680097f181b82028205f4ae35837f5f004360",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9451368195044481,
+          "train_loss": 1.0366726648827695,
+          "seconds": 21.011998400033917
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.951386450582864,
+          "train_loss": 0.5123951138308407,
+          "seconds": 19.812653100001626
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9576343369509202,
+          "train_loss": 0.28667239341921413,
+          "seconds": 20.092912600026466
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9595022494774799,
+          "train_loss": 0.20827395556904943,
+          "seconds": 19.99091860000044
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9578413267297111,
+          "train_loss": 0.1872591639172204,
+          "seconds": 20.30961070000194
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9606831985243955,
+          "train_loss": 0.18075299183688995,
+          "seconds": 20.458927700005006
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9591819822213459,
+          "train_loss": 0.1788775120503608,
+          "seconds": 19.880961299990304
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.9615763277817402,
+          "train_loss": 0.1773174948200155,
+          "seconds": 20.19214129995089
+        },
+        {
+          "epoch": 9,
+          "dev_validation_pr_auc": 0.9612500763625331,
+          "train_loss": 0.175787580097589,
+          "seconds": 20.002606699999887
+        },
+        {
+          "epoch": 10,
+          "dev_validation_pr_auc": 0.9608724765643902,
+          "train_loss": 0.17489009496705787,
+          "seconds": 20.14189109997824
+        },
+        {
+          "epoch": 11,
+          "dev_validation_pr_auc": 0.9598741481669526,
+          "train_loss": 0.17422328623922545,
+          "seconds": 19.995866200013552
+        },
+        {
+          "epoch": 12,
+          "dev_validation_pr_auc": 0.9583000349292007,
+          "train_loss": 0.1740216414847753,
+          "seconds": 20.24588479998056
+        }
+      ],
+      "consensus_seeds": [
+        42,
+        52,
+        62
+      ],
+      "matched_teacher_seed": 92,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "TA2",
+      "seed": 102,
+      "config": {
+        "model": "TA2",
+        "seed": 102,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.5,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 8,
+      "best_epoch": 4,
+      "dev_validation_pr_auc": 0.9502388619408301,
+      "threshold": 0.52,
+      "wall_seconds": 164.65141460002633,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\TA2\\seed102\\best.pt",
+      "sha256": "619085c0f0747a28249463c4f85155512dc4f4048633c30a3c60e974a70529d7",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9430736342572636,
+          "train_loss": 1.0295985466058282,
+          "seconds": 20.83843440003693
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9418824084187774,
+          "train_loss": 0.5131279261713302,
+          "seconds": 19.951970399997663
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9436004789272268,
+          "train_loss": 0.29181936410175363,
+          "seconds": 20.243144000007305
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9502388619408301,
+          "train_loss": 0.21408777993947722,
+          "seconds": 20.025530599988997
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9496673977372111,
+          "train_loss": 0.19300747155477552,
+          "seconds": 20.153793100034818
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9491838012332711,
+          "train_loss": 0.18663034448748717,
+          "seconds": 20.22575790004339
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9479102658079571,
+          "train_loss": 0.18397823892692625,
+          "seconds": 20.478175099997316
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.9495791998206827,
+          "train_loss": 0.1827315009178849,
+          "seconds": 19.95976520003751
+        }
+      ],
+      "consensus_seeds": [
+        42,
+        52,
+        62
+      ],
+      "matched_teacher_seed": 102,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "TA2",
+      "seed": 112,
+      "config": {
+        "model": "TA2",
+        "seed": 112,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.5,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 15,
+      "best_epoch": 11,
+      "dev_validation_pr_auc": 0.9483638215353309,
+      "threshold": 0.9500000000000001,
+      "wall_seconds": 308.7264186000102,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\TA2\\seed112\\best.pt",
+      "sha256": "eed62843fd8125c6757834f69444cdb4682d8b1f3a64d86bab830521d330579e",
+      "status": "ok",
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9338039867481635,
+          "train_loss": 0.1838282155254367,
+          "seconds": 20.998787999968044
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9388126107524276,
+          "train_loss": 0.17614248842817878,
+          "seconds": 20.185147599957418
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.941628374245858,
+          "train_loss": 0.1734341226445035,
+          "seconds": 20.357442900014576
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9434022338567222,
+          "train_loss": 0.17175509463691874,
+          "seconds": 20.376801599981263
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9430288076624248,
+          "train_loss": 0.17104681820332904,
+          "seconds": 20.64955720002763
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9424097740632994,
+          "train_loss": 0.17017471900466333,
+          "seconds": 20.54593099997146
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9439444080350791,
+          "train_loss": 0.17007939212072118,
+          "seconds": 20.408326300035696
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.9421307204719427,
+          "train_loss": 0.16958364266752188,
+          "seconds": 20.251883499964606
+        },
+        {
+          "epoch": 9,
+          "dev_validation_pr_auc": 0.9452311737232428,
+          "train_loss": 0.16885870533465533,
+          "seconds": 20.218041100015398
+        },
+        {
+          "epoch": 10,
+          "dev_validation_pr_auc": 0.9464454282393764,
+          "train_loss": 0.1686013791341265,
+          "seconds": 20.647938599984627
+        },
+        {
+          "epoch": 11,
+          "dev_validation_pr_auc": 0.9483638215353309,
+          "train_loss": 0.16847999067274244,
+          "seconds": 20.27909909997834
+        },
+        {
+          "epoch": 12,
+          "dev_validation_pr_auc": 0.9468124722774107,
+          "train_loss": 0.1681637138245271,
+          "seconds": 20.242350800021086
+        },
+        {
+          "epoch": 13,
+          "dev_validation_pr_auc": 0.9454520010621004,
+          "train_loss": 0.16817319052876958,
+          "seconds": 20.44863580004312
+        },
+        {
+          "epoch": 14,
+          "dev_validation_pr_auc": 0.946639926359224,
+          "train_loss": 0.16765176173696664,
+          "seconds": 19.787167600006796
+        },
+        {
+          "epoch": 15,
+          "dev_validation_pr_auc": 0.9461872788722617,
+          "train_loss": 0.1672787890561341,
+          "seconds": 20.33669289998943
+        }
+      ],
+      "consensus_seeds": [
+        42,
+        52,
+        62
+      ],
+      "matched_teacher_seed": 112,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "XGBoost_40",
+      "seed": 72,
+      "config": {
+        "model": "XGBoost_40",
+        "seed": 72,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "features": "40 aggregates of standardized float32 sequence tensors; exact producing aggregate_common13_windows",
+        "params": {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "learning_rate": 0.1,
+          "subsample": 0.8,
+          "colsample_bytree": 0.8,
+          "reg_lambda": 1.0,
+          "objective": "binary:logistic",
+          "eval_metric": "aucpr",
+          "scale_pos_weight": 193.4078947368421,
+          "n_jobs": 2,
+          "random_state": 72,
+          "tree_method": "hist"
+        },
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "development_only": true
+      },
+      "epochs": 300,
+      "best_epoch": 300,
+      "dev_validation_pr_auc": 0.9274319913296714,
+      "threshold": 0.06999999999999999,
+      "wall_seconds": 15.369204299990088,
+      "gpu": "CPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\XGBoost_40\\seed72\\best.json",
+      "sha256": "3734c7020f757a8a76db5ab9dd8442514bbd09e575b5ff29afbdae6901b1a552",
+      "status": "ok",
+      "consensus_seeds": [],
+      "matched_teacher_seed": null,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "XGBoost_40",
+      "seed": 82,
+      "config": {
+        "model": "XGBoost_40",
+        "seed": 82,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "features": "40 aggregates of standardized float32 sequence tensors; exact producing aggregate_common13_windows",
+        "params": {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "learning_rate": 0.1,
+          "subsample": 0.8,
+          "colsample_bytree": 0.8,
+          "reg_lambda": 1.0,
+          "objective": "binary:logistic",
+          "eval_metric": "aucpr",
+          "scale_pos_weight": 193.4078947368421,
+          "n_jobs": 2,
+          "random_state": 82,
+          "tree_method": "hist"
+        },
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "development_only": true
+      },
+      "epochs": 300,
+      "best_epoch": 300,
+      "dev_validation_pr_auc": 0.928322776679435,
+      "threshold": 0.04,
+      "wall_seconds": 15.21002870000666,
+      "gpu": "CPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\XGBoost_40\\seed82\\best.json",
+      "sha256": "338d6a85619c93a9b98ce428cf37459279cef997bf476d6b8739b66b61a6173a",
+      "status": "ok",
+      "consensus_seeds": [],
+      "matched_teacher_seed": null,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "XGBoost_40",
+      "seed": 92,
+      "config": {
+        "model": "XGBoost_40",
+        "seed": 92,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "features": "40 aggregates of standardized float32 sequence tensors; exact producing aggregate_common13_windows",
+        "params": {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "learning_rate": 0.1,
+          "subsample": 0.8,
+          "colsample_bytree": 0.8,
+          "reg_lambda": 1.0,
+          "objective": "binary:logistic",
+          "eval_metric": "aucpr",
+          "scale_pos_weight": 193.4078947368421,
+          "n_jobs": 2,
+          "random_state": 92,
+          "tree_method": "hist"
+        },
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "development_only": true
+      },
+      "epochs": 300,
+      "best_epoch": 300,
+      "dev_validation_pr_auc": 0.9298343863944997,
+      "threshold": 0.12,
+      "wall_seconds": 16.010664400004316,
+      "gpu": "CPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\XGBoost_40\\seed92\\best.json",
+      "sha256": "defe0521eea47f929b3fbd9bdb367123a92080c891ed9202a4c3bd2428645e6a",
+      "status": "ok",
+      "consensus_seeds": [],
+      "matched_teacher_seed": null,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "XGBoost_40",
+      "seed": 102,
+      "config": {
+        "model": "XGBoost_40",
+        "seed": 102,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "features": "40 aggregates of standardized float32 sequence tensors; exact producing aggregate_common13_windows",
+        "params": {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "learning_rate": 0.1,
+          "subsample": 0.8,
+          "colsample_bytree": 0.8,
+          "reg_lambda": 1.0,
+          "objective": "binary:logistic",
+          "eval_metric": "aucpr",
+          "scale_pos_weight": 193.4078947368421,
+          "n_jobs": 2,
+          "random_state": 102,
+          "tree_method": "hist"
+        },
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "development_only": true
+      },
+      "epochs": 300,
+      "best_epoch": 300,
+      "dev_validation_pr_auc": 0.928998612025215,
+      "threshold": 0.46,
+      "wall_seconds": 15.570850200019777,
+      "gpu": "CPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\XGBoost_40\\seed102\\best.json",
+      "sha256": "6c45fca8a265f4cc88c2922192e63603f8d24d1decb5b3c97bfdb7626c6d707f",
+      "status": "ok",
+      "consensus_seeds": [],
+      "matched_teacher_seed": null,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    },
+    {
+      "model": "XGBoost_40",
+      "seed": 112,
+      "config": {
+        "model": "XGBoost_40",
+        "seed": 112,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "features": "40 aggregates of standardized float32 sequence tensors; exact producing aggregate_common13_windows",
+        "params": {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "learning_rate": 0.1,
+          "subsample": 0.8,
+          "colsample_bytree": 0.8,
+          "reg_lambda": 1.0,
+          "objective": "binary:logistic",
+          "eval_metric": "aucpr",
+          "scale_pos_weight": 193.4078947368421,
+          "n_jobs": 2,
+          "random_state": 112,
+          "tree_method": "hist"
+        },
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "development_only": true
+      },
+      "epochs": 300,
+      "best_epoch": 300,
+      "dev_validation_pr_auc": 0.9243493230005541,
+      "threshold": 0.7100000000000001,
+      "wall_seconds": 15.296807900012936,
+      "gpu": "CPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\training\\checkpoints\\XGBoost_40\\seed112\\best.json",
+      "sha256": "84b9997b0ba43438f3738b012473db8c155fc51848e7117684067e928fffaafd",
+      "status": "ok",
+      "consensus_seeds": [],
+      "matched_teacher_seed": null,
+      "development_only": true,
+      "validation_only_checkpoint_and_threshold": true,
+      "source_runtime_sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+      "code_sha256": "46c7a771536a11ade75aca665fc536dc42d466a7bff8ed71079dfb076fb88eeb"
+    }
+  ]
+}

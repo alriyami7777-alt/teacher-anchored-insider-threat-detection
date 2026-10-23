@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-22T14:23:10.484431+00:00",
+  "daily_source": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\interval_level\\r52_user_day_intervals_dense.parquet",
+  "columns": [
+    "interval_date",
+    "total_events",
+    "logon_count",
+    "device_count",
+    "file_count",
+    "email_count",
+    "http_count",
+    "active_duration_minutes",
+    "has_logon_activity",
+    "has_device_activity",
+    "has_file_activity",
+    "has_email_activity",
+    "has_http_activity",
+    "is_active_day",
+    "is_malicious_interval"
+  ],
+  "explicit_date_predicate": [
+    "2010-01-02",
+    "2011-04-10"
+  ],
+  "rows": 232000,
+  "daily_features_sha256": "18129ea9ee8d3630942e1cbf8e6127ce12b8364ec69dbcef56a4ab9cade95fcd",
+  "all_daily_labels_match_Phase5": true,
+  "all_users_pseudonymised": true,
+  "raw_log_text_read": false,
+  "answer_payload_read": false,
+  "r52_test_read": false,
+  "original_sources": 65
+}

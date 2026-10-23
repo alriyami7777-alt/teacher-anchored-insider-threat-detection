@@ -1,0 +1,4 @@
+model,seed,threshold,rule,validation_PR_AUC,validation_F1,validation_precision,validation_recall,validation_alert_windows
+Rank-average,42,0.99,original sorted grid+quantile max-F1; first maximum,0.9601389975865907,0.8980963045912654,0.9547619047619048,0.8477801268498943,420
+Rank-average,52,0.99,original sorted grid+quantile max-F1; first maximum,0.9590212107125421,0.9096916299559471,0.9494252873563218,0.8731501057082452,435
+Rank-average,62,0.99,original sorted grid+quantile max-F1; first maximum,0.9701702239133239,0.9121245828698554,0.9624413145539906,0.8668076109936576,426

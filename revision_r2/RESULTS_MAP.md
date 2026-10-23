@@ -71,5 +71,8 @@ For each results table, the numbers in the LaTeX source were compared with the l
 - **Unseen-user retraining and scoring (`tab:holdout`, `fig:holdout`):** frozen code in `holdout/code/` (split, data rebuild, training recipes, scoring); data preparation from raw CERT r5.2 in `holdout/data_prep/`; seed-42 checkpoints in `holdout/checkpoints_seed42/`; step-by-step reproduction in the main README section "Reproduce the unseen-user result (seed 42)".
 - **Explanation runs (`explanation/`, `explanation_holdout/`):** code in `explanation/code/` (see `explanation/CODE_NOTE.md`).
 
-## Gaps
-- **Phases 6C and 7:** not yet included.
+## Further R2 analyses (Phases 6C, 7 and 8, added 23 Oct 2026)
+Each folder has its report (`CHATGPT_PHASE*_REPORT.md`), CSVs, figures, frozen-model and code receipts, and `reproducibility_code/`. Their rows are not yet keyed to manuscript labels; this map will be refreshed when the manuscript cites them.
+- `phase6c/`: C1 and C2 analyses (see `CHATGPT_PHASE6C_REPORT.md`), including augmented TRACE and XGBoost-40 runs, retention curves and Holm-corrected contrasts.
+- `phase7/`: case-level and operational analyses on the unseen users (P1–P6: case attribution, false alarms, insider timing, daily alert budget, rank-average combination, threshold rules).
+- `phase8/`: Q1–Q5 (more seeds, gradients by day, ODST routing and leaf occupancy, explanation randomisation checks, label-free input monitoring).

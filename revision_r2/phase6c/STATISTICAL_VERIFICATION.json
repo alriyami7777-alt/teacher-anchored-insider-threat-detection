@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-22T13:14:29.540218+00:00",
+  "all_source_syntax_passed": true,
+  "tied_AP_F1_bootstrap_passed": true,
+  "paired_clean_denominator_AURC_check": true,
+  "Holm_known_example_passed": true,
+  "synthetic_inputs_only": true
+}

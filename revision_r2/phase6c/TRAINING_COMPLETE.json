@@ -1,0 +1,2121 @@
+{
+  "utc": "2026-10-22T13:32:00.799137+00:00",
+  "runs": [
+    {
+      "model": "AL_PRECURSOR",
+      "seed": 42,
+      "status": "ok",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6c\\private\\training\\checkpoints\\AL_PRECURSOR\\seed42\\best.pt",
+      "sha256": "ce2ae45c14c06935cf8932508b7673be1795b6921522d54db74a326df37cffc4",
+      "config": {
+        "model": "AL_PRECURSOR",
+        "seed": 42,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 193.4078947368421,
+        "optimizer": "Adam",
+        "encoder_lr": 0.001,
+        "attention_lr": 0.001,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+        "pos_weight_multiplier": 1.0,
+        "scheduler": {
+          "name": "ReduceLROnPlateau",
+          "factor": 0.5,
+          "patience": 2,
+          "min_lr": 1e-05
+        },
+        "improvement_epsilon": 1e-06,
+        "role": "development-only prerequisite for frozen T-OPT initialization"
+      },
+      "threshold": 0.45,
+      "dev_validation_pr_auc": 0.9621687729451879,
+      "epochs": 15,
+      "best_epoch": 12,
+      "wall_seconds": 170.88183119997848,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.7765703954354508,
+          "train_loss": 0.5143137024243672,
+          "seconds": 11.257928500010166,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177521,
+            "noised": 177881,
+            "both": 53123
+          }
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.8642861929659148,
+          "train_loss": 0.2894137471371698,
+          "seconds": 10.773638400016353,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177258,
+            "noised": 177234,
+            "both": 52859
+          }
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9051678746101753,
+          "train_loss": 0.25086432345824194,
+          "seconds": 10.924533800047357,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 176919,
+            "noised": 176793,
+            "both": 52867
+          }
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.896703110987212,
+          "train_loss": 0.20880267866492877,
+          "seconds": 10.745877799985465,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177056,
+            "noised": 176733,
+            "both": 53341
+          }
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9298916427004985,
+          "train_loss": 0.19706671094884323,
+          "seconds": 11.225559099984821,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177365,
+            "noised": 177170,
+            "both": 53368
+          }
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.8905078368888488,
+          "train_loss": 0.187312501454313,
+          "seconds": 11.120670899981633,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177222,
+            "noised": 177169,
+            "both": 53423
+          }
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9274664066855891,
+          "train_loss": 0.1795441028066925,
+          "seconds": 11.207736799959093,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177110,
+            "noised": 177185,
+            "both": 53051
+          }
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.9318327312148457,
+          "train_loss": 0.16011214821083494,
+          "seconds": 11.22851470002206,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177742,
+            "noised": 177318,
+            "both": 53114
+          }
+        },
+        {
+          "epoch": 9,
+          "dev_validation_pr_auc": 0.9223122681633035,
+          "train_loss": 0.15012015069600088,
+          "seconds": 11.07315790001303,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177861,
+            "noised": 176596,
+            "both": 53169
+          }
+        },
+        {
+          "epoch": 10,
+          "dev_validation_pr_auc": 0.9170393388522913,
+          "train_loss": 0.14407439971635788,
+          "seconds": 11.18487619998632,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177386,
+            "noised": 177598,
+            "both": 53585
+          }
+        },
+        {
+          "epoch": 11,
+          "dev_validation_pr_auc": 0.947767428390219,
+          "train_loss": 0.14079489985930335,
+          "seconds": 11.232970000011846,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 178039,
+            "noised": 176888,
+            "both": 53250
+          }
+        },
+        {
+          "epoch": 12,
+          "dev_validation_pr_auc": 0.9621687729451879,
+          "train_loss": 0.1352613310248618,
+          "seconds": 11.154063099995255,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177349,
+            "noised": 177770,
+            "both": 53142
+          }
+        },
+        {
+          "epoch": 13,
+          "dev_validation_pr_auc": 0.9278431865540322,
+          "train_loss": 0.12253921814335986,
+          "seconds": 11.630904600024223,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 176330,
+            "noised": 177082,
+            "both": 52903
+          }
+        },
+        {
+          "epoch": 14,
+          "dev_validation_pr_auc": 0.9388599653103041,
+          "train_loss": 0.11903210338339991,
+          "seconds": 11.99473500001477,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177103,
+            "noised": 177186,
+            "both": 53002
+          }
+        },
+        {
+          "epoch": 15,
+          "dev_validation_pr_auc": 0.9429724301584439,
+          "train_loss": 0.11921966811578387,
+          "seconds": 11.255972200015094,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177432,
+            "noised": 177060,
+            "both": 53138
+          }
+        }
+      ],
+      "online_teachers_same_augmented_input": false,
+      "augmentation": {
+        "source_probability": 0.3,
+        "noise_probability": 0.3,
+        "noise_grid": [
+          0.025,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "order": "source_then_noise",
+        "rng": "SeedSequence([42,42,0])"
+      },
+      "development_only": true,
+      "validation_clean": true
+    },
+    {
+      "model": "AL_PRECURSOR",
+      "seed": 52,
+      "status": "ok",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6c\\private\\training\\checkpoints\\AL_PRECURSOR\\seed52\\best.pt",
+      "sha256": "d62f052bd0cdfd919cfd1114e9414f2dc07d2f4746cdf20d704e08019648e985",
+      "config": {
+        "model": "AL_PRECURSOR",
+        "seed": 52,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 193.4078947368421,
+        "optimizer": "Adam",
+        "encoder_lr": 0.001,
+        "attention_lr": 0.001,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+        "pos_weight_multiplier": 1.0,
+        "scheduler": {
+          "name": "ReduceLROnPlateau",
+          "factor": 0.5,
+          "patience": 2,
+          "min_lr": 1e-05
+        },
+        "improvement_epsilon": 1e-06,
+        "role": "development-only prerequisite for frozen T-OPT initialization"
+      },
+      "threshold": 0.30212908118963466,
+      "dev_validation_pr_auc": 0.9413943303177887,
+      "epochs": 15,
+      "best_epoch": 12,
+      "wall_seconds": 176.34386710001854,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.8754481789337206,
+          "train_loss": 0.5365436915855117,
+          "seconds": 11.914747200033162,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177798,
+            "noised": 176549,
+            "both": 53057
+          }
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.8929906696387991,
+          "train_loss": 0.2935628683667901,
+          "seconds": 11.449930500006303,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177399,
+            "noised": 177323,
+            "both": 53403
+          }
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9086226625280367,
+          "train_loss": 0.23201768950197701,
+          "seconds": 11.474032300000545,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 176854,
+            "noised": 177008,
+            "both": 52901
+          }
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9239534186233509,
+          "train_loss": 0.2253095562947684,
+          "seconds": 11.237674899981357,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177405,
+            "noised": 177007,
+            "both": 53027
+          }
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9083885052363175,
+          "train_loss": 0.18360935325887803,
+          "seconds": 11.284995199996047,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177313,
+            "noised": 177357,
+            "both": 53185
+          }
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.8892255003219744,
+          "train_loss": 0.18771833093890483,
+          "seconds": 11.48794939997606,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 176889,
+            "noised": 177343,
+            "both": 52823
+          }
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9204180181776078,
+          "train_loss": 0.17401678927890743,
+          "seconds": 11.495893399987835,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177004,
+            "noised": 177029,
+            "both": 53189
+          }
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.9373129187625051,
+          "train_loss": 0.14119539588407412,
+          "seconds": 11.54103900003247,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177795,
+            "noised": 176542,
+            "both": 53203
+          }
+        },
+        {
+          "epoch": 9,
+          "dev_validation_pr_auc": 0.9218673930701562,
+          "train_loss": 0.1424369032553408,
+          "seconds": 11.405208599986508,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177188,
+            "noised": 177342,
+            "both": 53105
+          }
+        },
+        {
+          "epoch": 10,
+          "dev_validation_pr_auc": 0.907459279932728,
+          "train_loss": 0.1350327036156368,
+          "seconds": 11.92833659995813,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177235,
+            "noised": 177223,
+            "both": 53147
+          }
+        },
+        {
+          "epoch": 11,
+          "dev_validation_pr_auc": 0.9357332918475607,
+          "train_loss": 0.13391401826841173,
+          "seconds": 11.78930040000705,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177546,
+            "noised": 177690,
+            "both": 53507
+          }
+        },
+        {
+          "epoch": 12,
+          "dev_validation_pr_auc": 0.9413943303177887,
+          "train_loss": 0.1311937354497498,
+          "seconds": 11.325601799995638,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177163,
+            "noised": 177153,
+            "both": 53111
+          }
+        },
+        {
+          "epoch": 13,
+          "dev_validation_pr_auc": 0.9300391118665562,
+          "train_loss": 0.1181114878418734,
+          "seconds": 11.53801839996595,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177570,
+            "noised": 177215,
+            "both": 53181
+          }
+        },
+        {
+          "epoch": 14,
+          "dev_validation_pr_auc": 0.9315597214188426,
+          "train_loss": 0.11189531144434224,
+          "seconds": 11.810692300030496,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177486,
+            "noised": 177217,
+            "both": 53552
+          }
+        },
+        {
+          "epoch": 15,
+          "dev_validation_pr_auc": 0.9406192768627402,
+          "train_loss": 0.13113371486056677,
+          "seconds": 11.660503599967342,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177187,
+            "noised": 177238,
+            "both": 53276
+          }
+        }
+      ],
+      "online_teachers_same_augmented_input": false,
+      "augmentation": {
+        "source_probability": 0.3,
+        "noise_probability": 0.3,
+        "noise_grid": [
+          0.025,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "order": "source_then_noise",
+        "rng": "SeedSequence([42,52,0])"
+      },
+      "development_only": true,
+      "validation_clean": true
+    },
+    {
+      "model": "AL_PRECURSOR",
+      "seed": 62,
+      "status": "ok",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6c\\private\\training\\checkpoints\\AL_PRECURSOR\\seed62\\best.pt",
+      "sha256": "1105d1e1f5f1b4a62249f8a14525ed193ef67cf96838a5bce867f46669c10bcf",
+      "config": {
+        "model": "AL_PRECURSOR",
+        "seed": 62,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 193.4078947368421,
+        "optimizer": "Adam",
+        "encoder_lr": 0.001,
+        "attention_lr": 0.001,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+        "pos_weight_multiplier": 1.0,
+        "scheduler": {
+          "name": "ReduceLROnPlateau",
+          "factor": 0.5,
+          "patience": 2,
+          "min_lr": 1e-05
+        },
+        "improvement_epsilon": 1e-06,
+        "role": "development-only prerequisite for frozen T-OPT initialization"
+      },
+      "threshold": 0.5,
+      "dev_validation_pr_auc": 0.9448344369216928,
+      "epochs": 15,
+      "best_epoch": 11,
+      "wall_seconds": 179.64565250003943,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.7736120636836803,
+          "train_loss": 0.5248258434947574,
+          "seconds": 11.919227500038687,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177208,
+            "noised": 177336,
+            "both": 53272
+          }
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.8701504101832922,
+          "train_loss": 0.2786316202292991,
+          "seconds": 11.530846899957396,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 178637,
+            "noised": 177050,
+            "both": 53330
+          }
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.879410873325427,
+          "train_loss": 0.24984958588976142,
+          "seconds": 11.719725799979642,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177304,
+            "noised": 177277,
+            "both": 53119
+          }
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.914101966837497,
+          "train_loss": 0.23960108519165246,
+          "seconds": 11.249034400039818,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177184,
+            "noised": 177624,
+            "both": 53472
+          }
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9347462342919445,
+          "train_loss": 0.2191015433415947,
+          "seconds": 10.793338200019207,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177661,
+            "noised": 176998,
+            "both": 53090
+          }
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9292786368101179,
+          "train_loss": 0.1993926872279741,
+          "seconds": 11.465474400029052,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177960,
+            "noised": 177723,
+            "both": 53374
+          }
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.939612186285484,
+          "train_loss": 0.2011418028030097,
+          "seconds": 11.975436100037768,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177004,
+            "noised": 177371,
+            "both": 53190
+          }
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.9269942690345293,
+          "train_loss": 0.19272849231242326,
+          "seconds": 11.931532700022217,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177028,
+            "noised": 177360,
+            "both": 53175
+          }
+        },
+        {
+          "epoch": 9,
+          "dev_validation_pr_auc": 0.9382925333060623,
+          "train_loss": 0.16971246743403917,
+          "seconds": 11.854575900011696,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177321,
+            "noised": 177050,
+            "both": 53126
+          }
+        },
+        {
+          "epoch": 10,
+          "dev_validation_pr_auc": 0.9395429100536135,
+          "train_loss": 0.1685588098321671,
+          "seconds": 12.119880500016734,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177828,
+            "noised": 177292,
+            "both": 53542
+          }
+        },
+        {
+          "epoch": 11,
+          "dev_validation_pr_auc": 0.9448344369216928,
+          "train_loss": 0.13571822206723913,
+          "seconds": 12.057412199967075,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177430,
+            "noised": 177842,
+            "both": 53298
+          }
+        },
+        {
+          "epoch": 12,
+          "dev_validation_pr_auc": 0.9230145415749685,
+          "train_loss": 0.13057181225679249,
+          "seconds": 12.083050800021738,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177386,
+            "noised": 176825,
+            "both": 52927
+          }
+        },
+        {
+          "epoch": 13,
+          "dev_validation_pr_auc": 0.9317293822629226,
+          "train_loss": 0.12624622161774668,
+          "seconds": 11.958485000010114,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177296,
+            "noised": 177779,
+            "both": 53425
+          }
+        },
+        {
+          "epoch": 14,
+          "dev_validation_pr_auc": 0.9318266495079873,
+          "train_loss": 0.12909939538948428,
+          "seconds": 12.036126299994066,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177573,
+            "noised": 178186,
+            "both": 53465
+          }
+        },
+        {
+          "epoch": 15,
+          "dev_validation_pr_auc": 0.9343722511316773,
+          "train_loss": 0.12222546835881602,
+          "seconds": 12.164846600033343,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177602,
+            "noised": 177624,
+            "both": 53181
+          }
+        }
+      ],
+      "online_teachers_same_augmented_input": false,
+      "augmentation": {
+        "source_probability": 0.3,
+        "noise_probability": 0.3,
+        "noise_grid": [
+          0.025,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "order": "source_then_noise",
+        "rng": "SeedSequence([42,62,0])"
+      },
+      "development_only": true,
+      "validation_clean": true
+    },
+    {
+      "model": "T-OPT",
+      "seed": 42,
+      "status": "ok",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6c\\private\\training\\checkpoints\\T-OPT\\seed42\\best.pt",
+      "sha256": "7a661ba23c995cc9535e21417b67dc6894a13ad87bf79910d45e50ee8aa663c0",
+      "config": {
+        "model": "T-OPT",
+        "seed": 42,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 producing frozen-node teacher recipe",
+        "encoder_frozen": true,
+        "attention_frozen": true,
+        "linear_frozen": true
+      },
+      "threshold": 0.5700000000000001,
+      "dev_validation_pr_auc": 0.9581567530026567,
+      "epochs": 9,
+      "best_epoch": 5,
+      "wall_seconds": 126.50631730002351,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9569193451222836,
+          "train_loss": 0.6631083230580977,
+          "seconds": 14.048086699971464,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177174,
+            "noised": 177298,
+            "both": 53178
+          }
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9541861357083342,
+          "train_loss": 0.44495268776453084,
+          "seconds": 13.839431400003377,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177911,
+            "noised": 177205,
+            "both": 53195
+          }
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9437410512635932,
+          "train_loss": 0.31585567986380225,
+          "seconds": 13.918291700014379,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177512,
+            "noised": 177051,
+            "both": 52841
+          }
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9413094916445152,
+          "train_loss": 0.23426239587469957,
+          "seconds": 13.596274400013499,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177454,
+            "noised": 177651,
+            "both": 53069
+          }
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9581567530026567,
+          "train_loss": 0.18421467811726475,
+          "seconds": 13.71937219996471,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177333,
+            "noised": 177371,
+            "both": 53213
+          }
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9558240576037221,
+          "train_loss": 0.14742224946723978,
+          "seconds": 13.672644800040871,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177802,
+            "noised": 177894,
+            "both": 53718
+          }
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9537298427850669,
+          "train_loss": 0.12409939987435559,
+          "seconds": 14.023294199956581,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177370,
+            "noised": 177133,
+            "both": 53045
+          }
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.956035099256926,
+          "train_loss": 0.10532786189985356,
+          "seconds": 13.10136390000116,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 178224,
+            "noised": 177067,
+            "both": 53352
+          }
+        },
+        {
+          "epoch": 9,
+          "dev_validation_pr_auc": 0.9564645574846636,
+          "train_loss": 0.09113911547455086,
+          "seconds": 13.408788800006732,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177265,
+            "noised": 176579,
+            "both": 53139
+          }
+        }
+      ],
+      "online_teachers_same_augmented_input": false,
+      "augmentation": {
+        "source_probability": 0.3,
+        "noise_probability": 0.3,
+        "noise_grid": [
+          0.025,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "order": "source_then_noise",
+        "rng": "SeedSequence([42,42,1])"
+      },
+      "development_only": true,
+      "validation_clean": true
+    },
+    {
+      "model": "T-OPT",
+      "seed": 52,
+      "status": "ok",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6c\\private\\training\\checkpoints\\T-OPT\\seed52\\best.pt",
+      "sha256": "e5902aaa06b5a20f940a786a74d18fd4b8d46f9e6ccab717247984ed0490de89",
+      "config": {
+        "model": "T-OPT",
+        "seed": 52,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 producing frozen-node teacher recipe",
+        "encoder_frozen": true,
+        "attention_frozen": true,
+        "linear_frozen": true
+      },
+      "threshold": 0.18000000000000002,
+      "dev_validation_pr_auc": 0.9546167187914478,
+      "epochs": 13,
+      "best_epoch": 9,
+      "wall_seconds": 170.9472959000268,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9457219639995673,
+          "train_loss": 0.6625510256911695,
+          "seconds": 13.634825499961153,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177539,
+            "noised": 176891,
+            "both": 53146
+          }
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9414873427528865,
+          "train_loss": 0.44687150015806787,
+          "seconds": 13.110740999982227,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177182,
+            "noised": 177540,
+            "both": 53457
+          }
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9478521880415903,
+          "train_loss": 0.3193230519068826,
+          "seconds": 13.187604899983853,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177426,
+            "noised": 177573,
+            "both": 53036
+          }
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9482814619902431,
+          "train_loss": 0.2400640310180167,
+          "seconds": 13.041386400000192,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 176939,
+            "noised": 177220,
+            "both": 52709
+          }
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9495755608290528,
+          "train_loss": 0.187699083131582,
+          "seconds": 12.686035299964715,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177824,
+            "noised": 176450,
+            "both": 53121
+          }
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9509917078195558,
+          "train_loss": 0.15046658833095466,
+          "seconds": 12.534289599978365,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177544,
+            "noised": 176864,
+            "both": 53093
+          }
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9500777146448417,
+          "train_loss": 0.1254544387145091,
+          "seconds": 12.226094700046815,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 176918,
+            "noised": 177831,
+            "both": 52750
+          }
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.9542154428529954,
+          "train_loss": 0.10769897620024414,
+          "seconds": 12.57466690003639,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177544,
+            "noised": 178023,
+            "both": 53536
+          }
+        },
+        {
+          "epoch": 9,
+          "dev_validation_pr_auc": 0.9546167187914478,
+          "train_loss": 0.09358110405043298,
+          "seconds": 12.872976600017864,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 176925,
+            "noised": 177186,
+            "both": 53238
+          }
+        },
+        {
+          "epoch": 10,
+          "dev_validation_pr_auc": 0.9534849719344008,
+          "train_loss": 0.08406079888026122,
+          "seconds": 12.994934700021986,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177510,
+            "noised": 177327,
+            "both": 53173
+          }
+        },
+        {
+          "epoch": 11,
+          "dev_validation_pr_auc": 0.9508142995375886,
+          "train_loss": 0.07700719807545343,
+          "seconds": 13.001471400028095,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 176838,
+            "noised": 177699,
+            "both": 53135
+          }
+        },
+        {
+          "epoch": 12,
+          "dev_validation_pr_auc": 0.9515349878336761,
+          "train_loss": 0.06881933210878405,
+          "seconds": 13.035739900020417,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177155,
+            "noised": 177030,
+            "both": 53146
+          }
+        },
+        {
+          "epoch": 13,
+          "dev_validation_pr_auc": 0.953724139784255,
+          "train_loss": 0.06479665045246054,
+          "seconds": 12.904192199988756,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177235,
+            "noised": 177275,
+            "both": 53394
+          }
+        }
+      ],
+      "online_teachers_same_augmented_input": false,
+      "augmentation": {
+        "source_probability": 0.3,
+        "noise_probability": 0.3,
+        "noise_grid": [
+          0.025,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "order": "source_then_noise",
+        "rng": "SeedSequence([42,52,1])"
+      },
+      "development_only": true,
+      "validation_clean": true
+    },
+    {
+      "model": "T-OPT",
+      "seed": 62,
+      "status": "ok",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6c\\private\\training\\checkpoints\\T-OPT\\seed62\\best.pt",
+      "sha256": "57f3e171637ef97659d39edc7d57975cf48b0d6159f4382b45cbea4001b39cce",
+      "config": {
+        "model": "T-OPT",
+        "seed": 62,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 producing frozen-node teacher recipe",
+        "encoder_frozen": true,
+        "attention_frozen": true,
+        "linear_frozen": true
+      },
+      "threshold": 0.64,
+      "dev_validation_pr_auc": 0.9520985339028019,
+      "epochs": 7,
+      "best_epoch": 3,
+      "wall_seconds": 95.38534760003677,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9371018010077589,
+          "train_loss": 0.6601278824552061,
+          "seconds": 13.640541600005236,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 176778,
+            "noised": 177324,
+            "both": 52605
+          }
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9398773140501138,
+          "train_loss": 0.44648561966116657,
+          "seconds": 13.051123999990523,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 176502,
+            "noised": 177171,
+            "both": 52930
+          }
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9520985339028019,
+          "train_loss": 0.3199569235725451,
+          "seconds": 11.814354500034824,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177557,
+            "noised": 177832,
+            "both": 53266
+          }
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9375819997322047,
+          "train_loss": 0.23932359244113444,
+          "seconds": 13.288554699975066,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177400,
+            "noised": 177678,
+            "both": 53165
+          }
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9387345786092322,
+          "train_loss": 0.18835959754801038,
+          "seconds": 13.49993990000803,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177555,
+            "noised": 177434,
+            "both": 53443
+          }
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9418031416342606,
+          "train_loss": 0.15171671055456507,
+          "seconds": 13.243453300034162,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177424,
+            "noised": 177024,
+            "both": 53039
+          }
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.933393455991813,
+          "train_loss": 0.1267020699274923,
+          "seconds": 13.78811120003229,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177729,
+            "noised": 177340,
+            "both": 53661
+          }
+        }
+      ],
+      "online_teachers_same_augmented_input": false,
+      "augmentation": {
+        "source_probability": 0.3,
+        "noise_probability": 0.3,
+        "noise_grid": [
+          0.025,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "order": "source_then_noise",
+        "rng": "SeedSequence([42,62,1])"
+      },
+      "development_only": true,
+      "validation_clean": true
+    },
+    {
+      "model": "TA2",
+      "seed": 42,
+      "status": "ok",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6c\\private\\training\\checkpoints\\TA2\\seed42\\best.pt",
+      "sha256": "b4c9d88d3acac9ecc5c52857457191da8a56e95133dab0f09fbe90fd768ae8fd",
+      "config": {
+        "model": "TA2",
+        "seed": 42,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.5,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT"
+      },
+      "threshold": 0.29000000000000004,
+      "dev_validation_pr_auc": 0.9646443203123293,
+      "epochs": 15,
+      "best_epoch": 15,
+      "wall_seconds": 348.06929299997864,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9607256936243803,
+          "train_loss": 0.16135921228960687,
+          "seconds": 22.30849229998421,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177367,
+            "noised": 176803,
+            "both": 52927
+          }
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9605875977912176,
+          "train_loss": 0.152621983543467,
+          "seconds": 22.135332399979234,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 176840,
+            "noised": 177924,
+            "both": 53233
+          }
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.962031047081965,
+          "train_loss": 0.15072004461369135,
+          "seconds": 24.25504210003419,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 176797,
+            "noised": 178057,
+            "both": 53113
+          }
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9620112377236574,
+          "train_loss": 0.14791521437277044,
+          "seconds": 24.428040700033307,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177439,
+            "noised": 177317,
+            "both": 53408
+          }
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9634462636508145,
+          "train_loss": 0.14819217859992723,
+          "seconds": 24.63232579996111,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177509,
+            "noised": 177134,
+            "both": 53196
+          }
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9631832384773032,
+          "train_loss": 0.14593633121302488,
+          "seconds": 25.253641800023615,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 176904,
+            "noised": 177098,
+            "both": 53000
+          }
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9640002952407699,
+          "train_loss": 0.14807281079994242,
+          "seconds": 25.21704130002763,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177711,
+            "noised": 176907,
+            "both": 53248
+          }
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.96259237032981,
+          "train_loss": 0.1462598606951144,
+          "seconds": 25.787954100000206,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177057,
+            "noised": 177254,
+            "both": 52953
+          }
+        },
+        {
+          "epoch": 9,
+          "dev_validation_pr_auc": 0.9623859675110404,
+          "train_loss": 0.14611421538549027,
+          "seconds": 25.145748899958562,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177363,
+            "noised": 177411,
+            "both": 53093
+          }
+        },
+        {
+          "epoch": 10,
+          "dev_validation_pr_auc": 0.9637738898648166,
+          "train_loss": 0.1459484969213126,
+          "seconds": 21.305893199983984,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177242,
+            "noised": 177110,
+            "both": 52959
+          }
+        },
+        {
+          "epoch": 11,
+          "dev_validation_pr_auc": 0.9645043384290342,
+          "train_loss": 0.14572319382580404,
+          "seconds": 20.98548810003558,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 176772,
+            "noised": 177311,
+            "both": 52987
+          }
+        },
+        {
+          "epoch": 12,
+          "dev_validation_pr_auc": 0.9641541534241623,
+          "train_loss": 0.14398795457217092,
+          "seconds": 20.849918100051582,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177083,
+            "noised": 176557,
+            "both": 52715
+          }
+        },
+        {
+          "epoch": 13,
+          "dev_validation_pr_auc": 0.9630737849554699,
+          "train_loss": 0.14581341137458426,
+          "seconds": 20.403593600029126,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177774,
+            "noised": 177493,
+            "both": 53386
+          }
+        },
+        {
+          "epoch": 14,
+          "dev_validation_pr_auc": 0.9613327561355403,
+          "train_loss": 0.14444984918338594,
+          "seconds": 20.737062000029255,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177847,
+            "noised": 177432,
+            "both": 53602
+          }
+        },
+        {
+          "epoch": 15,
+          "dev_validation_pr_auc": 0.9646443203123293,
+          "train_loss": 0.14383515087158344,
+          "seconds": 21.909511400037445,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177521,
+            "noised": 177759,
+            "both": 53308
+          }
+        }
+      ],
+      "online_teachers_same_augmented_input": true,
+      "augmentation": {
+        "source_probability": 0.3,
+        "noise_probability": 0.3,
+        "noise_grid": [
+          0.025,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "order": "source_then_noise",
+        "rng": "SeedSequence([42,42,2])"
+      },
+      "development_only": true,
+      "validation_clean": true
+    },
+    {
+      "model": "TA2",
+      "seed": 52,
+      "status": "ok",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6c\\private\\training\\checkpoints\\TA2\\seed52\\best.pt",
+      "sha256": "def2177bbd3db7d711ebd25e409bfb1c9eaa030565604c78c8929ffe5657972a",
+      "config": {
+        "model": "TA2",
+        "seed": 52,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.5,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT"
+      },
+      "threshold": 0.26,
+      "dev_validation_pr_auc": 0.960278116225669,
+      "epochs": 8,
+      "best_epoch": 4,
+      "wall_seconds": 179.39336029998958,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9509987503617752,
+          "train_loss": 0.21774465783981703,
+          "seconds": 22.302023400028702,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177743,
+            "noised": 177344,
+            "both": 53434
+          }
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9553459416930556,
+          "train_loss": 0.17459905612287183,
+          "seconds": 22.07195379998302,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177787,
+            "noised": 177196,
+            "both": 53396
+          }
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.957141633409704,
+          "train_loss": 0.16435960930454752,
+          "seconds": 22.682846800016705,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177215,
+            "noised": 177697,
+            "both": 53298
+          }
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.960278116225669,
+          "train_loss": 0.15464217678514228,
+          "seconds": 21.86993159999838,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 176955,
+            "noised": 177066,
+            "both": 53020
+          }
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9592553466605397,
+          "train_loss": 0.14862487415432324,
+          "seconds": 22.123146299971268,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177595,
+            "noised": 177367,
+            "both": 53440
+          }
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9578708554546971,
+          "train_loss": 0.1450263667140919,
+          "seconds": 21.732271099986974,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177216,
+            "noised": 177601,
+            "both": 53119
+          }
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.9594289950665383,
+          "train_loss": 0.14527783476681072,
+          "seconds": 21.78136269998504,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177098,
+            "noised": 177109,
+            "both": 53202
+          }
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.9593425895509944,
+          "train_loss": 0.14464328850929306,
+          "seconds": 21.97143779997714,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177105,
+            "noised": 177114,
+            "both": 52949
+          }
+        }
+      ],
+      "online_teachers_same_augmented_input": true,
+      "augmentation": {
+        "source_probability": 0.3,
+        "noise_probability": 0.3,
+        "noise_grid": [
+          0.025,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "order": "source_then_noise",
+        "rng": "SeedSequence([42,52,2])"
+      },
+      "development_only": true,
+      "validation_clean": true
+    },
+    {
+      "model": "TA2",
+      "seed": 62,
+      "status": "ok",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6c\\private\\training\\checkpoints\\TA2\\seed62\\best.pt",
+      "sha256": "eb274d283d226515d44cf9a760499f6b19a40fed89d7124b7313f673a22eaebd",
+      "config": {
+        "model": "TA2",
+        "seed": 62,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.5,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT"
+      },
+      "threshold": 0.21000000000000002,
+      "dev_validation_pr_auc": 0.9595179295451124,
+      "epochs": 8,
+      "best_epoch": 4,
+      "wall_seconds": 190.84822670003632,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_validation_pr_auc": 0.9504241180410056,
+          "train_loss": 0.41579901034456823,
+          "seconds": 22.470056499994826,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177435,
+            "noised": 177279,
+            "both": 53264
+          }
+        },
+        {
+          "epoch": 2,
+          "dev_validation_pr_auc": 0.9567993500657292,
+          "train_loss": 0.21146678496213936,
+          "seconds": 21.882604499987792,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177367,
+            "noised": 177665,
+            "both": 53487
+          }
+        },
+        {
+          "epoch": 3,
+          "dev_validation_pr_auc": 0.9588310696265564,
+          "train_loss": 0.1653149154141873,
+          "seconds": 21.512434200034477,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 176836,
+            "noised": 177340,
+            "both": 53126
+          }
+        },
+        {
+          "epoch": 4,
+          "dev_validation_pr_auc": 0.9595179295451124,
+          "train_loss": 0.15938962132505152,
+          "seconds": 23.842355100030545,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177472,
+            "noised": 177023,
+            "both": 53215
+          }
+        },
+        {
+          "epoch": 5,
+          "dev_validation_pr_auc": 0.9568765156494551,
+          "train_loss": 0.15751848353952322,
+          "seconds": 24.372351299971342,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177013,
+            "noised": 176766,
+            "both": 52983
+          }
+        },
+        {
+          "epoch": 6,
+          "dev_validation_pr_auc": 0.9580286511620493,
+          "train_loss": 0.15631726120339232,
+          "seconds": 25.469172200013418,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177653,
+            "noised": 177713,
+            "both": 53406
+          }
+        },
+        {
+          "epoch": 7,
+          "dev_validation_pr_auc": 0.958938378007812,
+          "train_loss": 0.15348575829561995,
+          "seconds": 24.242742599977646,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 176898,
+            "noised": 176730,
+            "both": 52963
+          }
+        },
+        {
+          "epoch": 8,
+          "dev_validation_pr_auc": 0.9582452143504114,
+          "train_loss": 0.15546989547843254,
+          "seconds": 24.145119100052398,
+          "augmentation": {
+            "windows": 591000,
+            "source_dropped": 177523,
+            "noised": 177891,
+            "both": 53628
+          }
+        }
+      ],
+      "online_teachers_same_augmented_input": true,
+      "augmentation": {
+        "source_probability": 0.3,
+        "noise_probability": 0.3,
+        "noise_grid": [
+          0.025,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "order": "source_then_noise",
+        "rng": "SeedSequence([42,62,2])"
+      },
+      "development_only": true,
+      "validation_clean": true
+    },
+    {
+      "model": "XGBoost-40-aug",
+      "seed": 42,
+      "status": "ok",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6c\\private\\training\\checkpoints\\XGBoost-40-aug\\seed42\\best.json",
+      "sha256": "2773031d41611d0edbff1d3329b66a33512281c142d88d34cab904871c13a500",
+      "config": {
+        "model": "XGBoost_40",
+        "seed": 42,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "features": "40 aggregates of standardized float32 sequence tensors; exact producing aggregate_common13_windows",
+        "params": {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "learning_rate": 0.1,
+          "subsample": 0.8,
+          "colsample_bytree": 0.8,
+          "reg_lambda": 1.0,
+          "objective": "binary:logistic",
+          "eval_metric": "aucpr",
+          "scale_pos_weight": 193.4078947368421,
+          "n_jobs": 2,
+          "random_state": 42,
+          "tree_method": "hist"
+        },
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "development_only": true
+      },
+      "threshold": 0.13,
+      "dev_validation_pr_auc": 0.8746852383120501,
+      "epochs": 300,
+      "best_epoch": 300,
+      "wall_seconds": 21.928179699985776,
+      "augmented_training_rows": 591000,
+      "augmented_summary_sha256": "2dcc0903a5f9b541b6ff7d9df362472585cbceb90ebc2f38a5c92ac32cf344f7",
+      "augmentation_totals": {
+        "windows": 591000,
+        "source_dropped": 177297,
+        "noised": 176936,
+        "both": 53284
+      },
+      "augmentation": {
+        "source_probability": 0.3,
+        "noise_probability": 0.3,
+        "noise_grid": [
+          0.025,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "order": "source_then_noise",
+        "rng": "SeedSequence([42,42,3])"
+      },
+      "development_only": true,
+      "validation_clean": true
+    },
+    {
+      "model": "XGBoost-40-aug",
+      "seed": 52,
+      "status": "ok",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6c\\private\\training\\checkpoints\\XGBoost-40-aug\\seed52\\best.json",
+      "sha256": "dfec18f2ea09c577f676667bf9dccec19ad35208c002711a288c162dca497beb",
+      "config": {
+        "model": "XGBoost_40",
+        "seed": 52,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "features": "40 aggregates of standardized float32 sequence tensors; exact producing aggregate_common13_windows",
+        "params": {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "learning_rate": 0.1,
+          "subsample": 0.8,
+          "colsample_bytree": 0.8,
+          "reg_lambda": 1.0,
+          "objective": "binary:logistic",
+          "eval_metric": "aucpr",
+          "scale_pos_weight": 193.4078947368421,
+          "n_jobs": 2,
+          "random_state": 52,
+          "tree_method": "hist"
+        },
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "development_only": true
+      },
+      "threshold": 0.08,
+      "dev_validation_pr_auc": 0.9127100898697681,
+      "epochs": 300,
+      "best_epoch": 300,
+      "wall_seconds": 21.85052330000326,
+      "augmented_training_rows": 591000,
+      "augmented_summary_sha256": "11f22b9e4b47ffc053331ada35f94e2a37ec8f806b1dd70f644cfdfcead00101",
+      "augmentation_totals": {
+        "windows": 591000,
+        "source_dropped": 177468,
+        "noised": 177319,
+        "both": 53034
+      },
+      "augmentation": {
+        "source_probability": 0.3,
+        "noise_probability": 0.3,
+        "noise_grid": [
+          0.025,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "order": "source_then_noise",
+        "rng": "SeedSequence([42,52,3])"
+      },
+      "development_only": true,
+      "validation_clean": true
+    },
+    {
+      "model": "XGBoost-40-aug",
+      "seed": 62,
+      "status": "ok",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase6c\\private\\training\\checkpoints\\XGBoost-40-aug\\seed62\\best.json",
+      "sha256": "1b1d13a6d78c4c820aef2e1398ec5f42b808e31ee95546fa0c02173e47b8f03a",
+      "config": {
+        "model": "XGBoost_40",
+        "seed": 62,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "features": "40 aggregates of standardized float32 sequence tensors; exact producing aggregate_common13_windows",
+        "params": {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "learning_rate": 0.1,
+          "subsample": 0.8,
+          "colsample_bytree": 0.8,
+          "reg_lambda": 1.0,
+          "objective": "binary:logistic",
+          "eval_metric": "aucpr",
+          "scale_pos_weight": 193.4078947368421,
+          "n_jobs": 2,
+          "random_state": 62,
+          "tree_method": "hist"
+        },
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "development_only": true
+      },
+      "threshold": 0.12,
+      "dev_validation_pr_auc": 0.897976290570359,
+      "epochs": 300,
+      "best_epoch": 300,
+      "wall_seconds": 20.95686860004207,
+      "augmented_training_rows": 591000,
+      "augmented_summary_sha256": "66feb909d7f2951809ce00ebf988c65e0a5ded8643ebb67c1cc46acd5ddfbe6e",
+      "augmentation_totals": {
+        "windows": 591000,
+        "source_dropped": 177329,
+        "noised": 177050,
+        "both": 53122
+      },
+      "augmentation": {
+        "source_probability": 0.3,
+        "noise_probability": 0.3,
+        "noise_grid": [
+          0.025,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "order": "source_then_noise",
+        "rng": "SeedSequence([42,62,3])"
+      },
+      "development_only": true,
+      "validation_clean": true
+    }
+  ],
+  "successful": 12
+}

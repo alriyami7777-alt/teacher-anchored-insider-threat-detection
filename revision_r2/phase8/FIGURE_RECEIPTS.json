@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-23T02:29:04.798081+00:00",
+  "figures": [
+    {
+      "stem": "figure_Q1_more_seeds",
+      "png_sha256": "20c5a936d377dd2bf6b70366c0e1db814d7d6d91d6fd17ed695aa735929e8e69",
+      "CSV_sha256": "685afd4dd39f082361b976b73054cb6492ac78a1112756dbed52d7164f320192",
+      "dpi": 300,
+      "minimum_font_pt": 12.0,
+      "size_inches": [
+        16.0,
+        7.0
+      ]
+    },
+    {
+      "stem": "figure_Q2_gradient_by_day",
+      "png_sha256": "5f9b8b6c76dc895144d31a155063f59c63ca339cedc613fb8a4b4e252f36a807",
+      "CSV_sha256": "8e759eba0add7fe7af2fb0bcd5f0646b11fb96eb423dfde69c3ef3480832c701",
+      "dpi": 300,
+      "minimum_font_pt": 12.0,
+      "size_inches": [
+        18.0,
+        11.0
+      ]
+    },
+    {
+      "stem": "figure_Q3_leaf_occupancy",
+      "png_sha256": "e36668a188e086863e0c5d109482d10daab5d415799c1491898ea88b482bdb42",
+      "CSV_sha256": "2e56108a49adae4c665129c9a5b56268beca9400bdf52b2a0e30be46f2aebb69",
+      "dpi": 300,
+      "minimum_font_pt": 12.0,
+      "size_inches": [
+        16.0,
+        10.0
+      ]
+    },
+    {
+      "stem": "figure_Q4_randomization",
+      "png_sha256": "108e37a74e799d2d2e66ba9c6c7606c37e5fb1a38b71657e46d0eada71ec76ed",
+      "CSV_sha256": "75ca1145081a40f9c43fb5cf8d7716b9b47e08cbb0f4dfac5f627f3f01b21849",
+      "dpi": 300,
+      "minimum_font_pt": 12.0,
+      "size_inches": [
+        16.0,
+        11.0
+      ]
+    },
+    {
+      "stem": "figure_Q5_label_free_monitor",
+      "png_sha256": "6166ac026f225de99a7d9017021de789dadf1a5131e79646fa69485ac8e050a0",
+      "CSV_sha256": "35071c634d31c551f9f63e14fa5ec2fbb5eacaec6736f351a019c18fdb4aeb77",
+      "dpi": 300,
+      "minimum_font_pt": 12.0,
+      "size_inches": [
+        16.0,
+        6.5
+      ]
+    }
+  ]
+}

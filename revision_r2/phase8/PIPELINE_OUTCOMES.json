@@ -1,0 +1,44 @@
+[
+  {
+    "script": "score8.py",
+    "utc": "2026-10-23T02:09:35.516592+00:00",
+    "exit": 0,
+    "status": "ok",
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\logs\\pipeline_score8.py.log"
+  },
+  {
+    "script": "q1_analysis8.py",
+    "utc": "2026-10-23T02:09:56.475785+00:00",
+    "exit": 0,
+    "status": "ok",
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\logs\\pipeline_q1_analysis8.py.log"
+  },
+  {
+    "script": "gradient8.py",
+    "utc": "2026-10-23T02:11:36.180360+00:00",
+    "exit": 0,
+    "status": "ok",
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\logs\\pipeline_gradient8.py.log"
+  },
+  {
+    "script": "q3_routes8.py",
+    "utc": "2026-10-23T02:13:30.818093+00:00",
+    "exit": 0,
+    "status": "ok",
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\logs\\pipeline_q3_routes8.py.log"
+  },
+  {
+    "script": "randomization8.py",
+    "utc": "2026-10-23T02:22:28.300781+00:00",
+    "exit": 0,
+    "status": "ok",
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\logs\\pipeline_randomization8.py.log"
+  },
+  {
+    "script": "shift8.py",
+    "utc": "2026-10-23T02:25:03.058410+00:00",
+    "exit": 0,
+    "status": "ok",
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase8\\private\\logs\\pipeline_shift8.py.log"
+  }
+]

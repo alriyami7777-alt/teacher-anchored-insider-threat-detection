@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-23T02:31:05.3200719Z",
+  "all_figures_reviewed": true,
+  "figure_hashes": {
+    "figure_Q1_more_seeds": "20c5a936d377dd2bf6b70366c0e1db814d7d6d91d6fd17ed695aa735929e8e69",
+    "figure_Q2_gradient_by_day": "5f9b8b6c76dc895144d31a155063f59c63ca339cedc613fb8a4b4e252f36a807",
+    "figure_Q3_leaf_occupancy": "e36668a188e086863e0c5d109482d10daab5d415799c1491898ea88b482bdb42",
+    "figure_Q4_randomization": "108e37a74e799d2d2e66ba9c6c7606c37e5fb1a38b71657e46d0eada71ec76ed",
+    "figure_Q5_label_free_monitor": "6166ac026f225de99a7d9017021de789dadf1a5131e79646fa69485ac8e050a0"
+  },
+  "review": "All five figures visually inspected. Refreshed Q5 cutoff labels are clear. Other four figure images unchanged."
+}

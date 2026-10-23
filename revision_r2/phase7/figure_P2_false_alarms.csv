@@ -1,0 +1,43 @@
+model,seed,noninsiders_flagged,noninsiders_total,pseudonyms,panel,group,level,name,mean_absolute_IG_share,explanation_windows
+TRACE,42,23.0,475.0,"['U_00d7382852', 'U_0b4988ea44', 'U_1395e115e0', 'U_217664027b', 'U_3587ea251a', 'U_3aece6655b', 'U_445cd56f20', 'U_4ccaf1afe9', 'U_5814f3f5cb', 'U_5a5c3625a1', 'U_5a77b606e6', 'U_67616d93dc', 'U_7aed45d3ef', 'U_a2106df5a8', 'U_a5af8727ec', 'U_b8b5a79958', 'U_baa4b2a94c', 'U_c72ed145b3', 'U_c85bb22296', 'U_cf53883e73', 'U_daaad9fa33', 'U_dc922788cb', 'U_dd24ef56c6']",counts,,,,,
+TRACE,52,27.0,475.0,"['U_00d7382852', 'U_0862fafe5a', 'U_10802dd2b3', 'U_1187a51971', 'U_217664027b', 'U_3587ea251a', 'U_3aece6655b', 'U_445cd56f20', 'U_4ccaf1afe9', 'U_5814f3f5cb', 'U_5a5c3625a1', 'U_5a77b606e6', 'U_67616d93dc', 'U_7aed45d3ef', 'U_9f7d1f507d', 'U_a2106df5a8', 'U_a5af8727ec', 'U_b61a0fcfd2', 'U_baa4b2a94c', 'U_bdce9b56f4', 'U_c5be0c0344', 'U_c72ed145b3', 'U_c85bb22296', 'U_cf53883e73', 'U_daaad9fa33', 'U_dc922788cb', 'U_dd24ef56c6']",counts,,,,,
+TRACE,62,28.0,475.0,"['U_00d7382852', 'U_1187a51971', 'U_217664027b', 'U_3587ea251a', 'U_3aece6655b', 'U_445cd56f20', 'U_4b7de8106c', 'U_4ccaf1afe9', 'U_5814f3f5cb', 'U_59b8b2a258', 'U_5a5c3625a1', 'U_5a77b606e6', 'U_67616d93dc', 'U_71427fad52', 'U_71dd986d3d', 'U_7aed45d3ef', 'U_a2106df5a8', 'U_a5af8727ec', 'U_b8b5a79958', 'U_baa4b2a94c', 'U_c5be0c0344', 'U_c72ed145b3', 'U_c85bb22296', 'U_cf53883e73', 'U_daaad9fa33', 'U_dc922788cb', 'U_dd24ef56c6', 'U_e3a3d59800']",counts,,,,,
+XGBoost-40,42,6.0,475.0,"['U_10802dd2b3', 'U_3aece6655b', 'U_74b292206d', 'U_cf53883e73', 'U_daaad9fa33', 'U_f08bf7e746']",counts,,,,,
+XGBoost-40,52,8.0,475.0,"['U_10802dd2b3', 'U_3aece6655b', 'U_5814f3f5cb', 'U_67616d93dc', 'U_74b292206d', 'U_cf53883e73', 'U_daaad9fa33', 'U_f08bf7e746']",counts,,,,,
+XGBoost-40,62,22.0,475.0,"['U_10802dd2b3', 'U_217664027b', 'U_3587ea251a', 'U_3aece6655b', 'U_486f9d22e0', 'U_5608823934', 'U_5814f3f5cb', 'U_5a5c3625a1', 'U_61218359a5', 'U_67616d93dc', 'U_74b292206d', 'U_7aed45d3ef', 'U_b3e26a10ba', 'U_b8b5a79958', 'U_baa4b2a94c', 'U_bdce9b56f4', 'U_c72ed145b3', 'U_cd716ea833', 'U_cf53883e73', 'U_daaad9fa33', 'U_f08bf7e746', 'U_f9fd97e578']",counts,,,,,
+,42,,,,attribution,false_alarm_noninsider,source,logon,0.0961177290071058,3.0
+,42,,,,attribution,false_alarm_noninsider,source,device,0.3822936003243824,3.0
+,42,,,,attribution,false_alarm_noninsider,source,file,0.19501998536618884,3.0
+,42,,,,attribution,false_alarm_noninsider,source,email,0.07734677138856559,3.0
+,42,,,,attribution,false_alarm_noninsider,source,http,0.048836665660492974,3.0
+,42,,,,attribution,false_alarm_noninsider,source,shared/activity,0.2003852482532644,3.0
+,42,,,,attribution,true_positive,source,logon,0.11201217254770428,968.0
+,42,,,,attribution,true_positive,source,device,0.22774559478926212,968.0
+,42,,,,attribution,true_positive,source,file,0.40132395868947135,968.0
+,42,,,,attribution,true_positive,source,email,0.05819371380439784,968.0
+,42,,,,attribution,true_positive,source,http,0.06526180360262092,968.0
+,42,,,,attribution,true_positive,source,shared/activity,0.1354627565665435,968.0
+,52,,,,attribution,false_alarm_noninsider,source,logon,0.11376398371936572,5.0
+,52,,,,attribution,false_alarm_noninsider,source,device,0.3001133845937305,5.0
+,52,,,,attribution,false_alarm_noninsider,source,file,0.29984715014658636,5.0
+,52,,,,attribution,false_alarm_noninsider,source,email,0.04366090035085244,5.0
+,52,,,,attribution,false_alarm_noninsider,source,http,0.05616724643219799,5.0
+,52,,,,attribution,false_alarm_noninsider,source,shared/activity,0.186447334757267,5.0
+,52,,,,attribution,true_positive,source,logon,0.08352351517181558,969.0
+,52,,,,attribution,true_positive,source,device,0.19096224483554475,969.0
+,52,,,,attribution,true_positive,source,file,0.5213146968400333,969.0
+,52,,,,attribution,true_positive,source,email,0.04973751425606224,969.0
+,52,,,,attribution,true_positive,source,http,0.0437086034145542,969.0
+,52,,,,attribution,true_positive,source,shared/activity,0.11075342548198995,969.0
+,62,,,,attribution,false_alarm_noninsider,source,logon,0.09835010859201805,5.0
+,62,,,,attribution,false_alarm_noninsider,source,device,0.296978522799105,5.0
+,62,,,,attribution,false_alarm_noninsider,source,file,0.27230155221262453,5.0
+,62,,,,attribution,false_alarm_noninsider,source,email,0.05279860335871821,5.0
+,62,,,,attribution,false_alarm_noninsider,source,http,0.061681064336520486,5.0
+,62,,,,attribution,false_alarm_noninsider,source,shared/activity,0.21789014870101373,5.0
+,62,,,,attribution,true_positive,source,logon,0.1023496358174597,973.0
+,62,,,,attribution,true_positive,source,device,0.2554364006967129,973.0
+,62,,,,attribution,true_positive,source,file,0.4357425332639196,973.0
+,62,,,,attribution,true_positive,source,email,0.05108321061911761,973.0
+,62,,,,attribution,true_positive,source,http,0.05068726457404083,973.0
+,62,,,,attribution,true_positive,source,shared/activity,0.10470095502874933,973.0

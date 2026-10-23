@@ -1,0 +1,62 @@
+[
+  {
+    "utc": "2026-10-23T02:22:43.651529+00:00",
+    "release": "development_TRAIN",
+    "seed": 42,
+    "windows": 591000,
+    "prediction_sha256": "9ffaec372d7675ba189dba85dd6d8e26ad52faf804a711138a98a89bf7075ae1",
+    "checkpoint_sha256": "80fd6ecbd8c3f22b5241aad353c02ca34426c9dc34c8c1fa489bb679f87234d9",
+    "unlabelled_inputs_only": true,
+    "status": "ok"
+  },
+  {
+    "utc": "2026-10-23T02:22:55.942265+00:00",
+    "release": "development_TRAIN",
+    "seed": 52,
+    "windows": 591000,
+    "prediction_sha256": "453cd28a8bf020346286df1b76cb4bbd7627cd52c6b5918fb0efd66c3a836763",
+    "checkpoint_sha256": "2927c9975a4f59b219afd448c709b964396a879ac4f36b82bfef7538d3612080",
+    "unlabelled_inputs_only": true,
+    "status": "ok"
+  },
+  {
+    "utc": "2026-10-23T02:23:08.139935+00:00",
+    "release": "development_TRAIN",
+    "seed": 62,
+    "windows": 591000,
+    "prediction_sha256": "966732dcabfe3b13d39e55da4bb4dc7218bd01140567d11ef9ae6d0dd3df15c0",
+    "checkpoint_sha256": "0d246d87aecbc078bf46bf211fc2a03df7bdf41355da17f82079da39849d5f18",
+    "unlabelled_inputs_only": true,
+    "status": "ok"
+  },
+  {
+    "utc": "2026-10-23T02:23:44.682747+00:00",
+    "release": "r6.1",
+    "seed": 42,
+    "windows": 1988000,
+    "prediction_sha256": "e5b44b68f31b68ba442f871c9be3e5e6b5ca103333b3fe865169e4a23bbf862b",
+    "checkpoint_sha256": "80fd6ecbd8c3f22b5241aad353c02ca34426c9dc34c8c1fa489bb679f87234d9",
+    "unlabelled_inputs_only": true,
+    "status": "ok"
+  },
+  {
+    "utc": "2026-10-23T02:24:21.543142+00:00",
+    "release": "r6.1",
+    "seed": 52,
+    "windows": 1988000,
+    "prediction_sha256": "eacf52aa907fa296c84788cccb66eacd6795383cbac5fbe038cb91f30f78d60e",
+    "checkpoint_sha256": "2927c9975a4f59b219afd448c709b964396a879ac4f36b82bfef7538d3612080",
+    "unlabelled_inputs_only": true,
+    "status": "ok"
+  },
+  {
+    "utc": "2026-10-23T02:24:58.486920+00:00",
+    "release": "r6.1",
+    "seed": 62,
+    "windows": 1988000,
+    "prediction_sha256": "44781d0b173953fb27477abde44722cd42c52612f19fe7c6c98f3e6f209b183c",
+    "checkpoint_sha256": "0d246d87aecbc078bf46bf211fc2a03df7bdf41355da17f82079da39849d5f18",
+    "unlabelled_inputs_only": true,
+    "status": "ok"
+  }
+]

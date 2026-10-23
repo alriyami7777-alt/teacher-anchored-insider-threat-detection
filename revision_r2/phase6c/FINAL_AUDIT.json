@@ -1,0 +1,83 @@
+{
+  "utc": "2026-10-22T14:18:01.860056+00:00",
+  "all_checks_passed": true,
+  "checks": {
+    "preserved_prior_preregistration_prefix": true,
+    "amendment6_hash": true,
+    "final_preregistration_hash": true,
+    "all_successful_new_checkpoints_unchanged": true,
+    "original_checkpoints_unchanged": true,
+    "frozen_scoring_code_unchanged": true,
+    "frozen_Phase5_helpers_unchanged": true,
+    "original_prediction_arrays_unchanged": true,
+    "clean_development_preflight": true,
+    "TRAIN_only_augmentation_and_clean_VALIDATION": true,
+    "XGBoost_one_copy_unchanged_training_size": true,
+    "XGBoost_frozen_hyperparameters": true,
+    "TRACE_same_augmented_input_teacher_targets": true,
+    "Phase4_HOLDOUT_cohort_unchanged": true,
+    "all_Phase6B_prediction_arrays_unchanged": true,
+    "Phase6B_report_and_results_unchanged": true,
+    "exactly_162_new_scoring_receipts": true,
+    "all_new_prediction_hashes": true,
+    "one_clean_pass_per_new_model_seed": true,
+    "all_degradations_match_Phase5_realizations": true,
+    "C1_frozen_sources_unchanged": true,
+    "C1_exact_2000_prefix_verified": true,
+    "C1_family_sizes_unchanged": true,
+    "C1_exact_test_identities_and_estimates_unchanged": true,
+    "C1_completed_common_replicate_prefix": true,
+    "C1_target_or_documented_budget_fallback": true,
+    "C2_exact_23_test_Holm_family": true,
+    "C2_2000_paired_replicates": true,
+    "preservation_rule_applied_without_redefinition": true,
+    "all_five_Phase4_views": true,
+    "operational_denominators_frozen": true,
+    "all_original_and_augmented_conditions_reported": true,
+    "300dpi_figures_and_paired_CSVs": true,
+    "report_completion_marker": true,
+    "report_hash": true,
+    "sealed_TEST_and_no_HOLDOUT_fitting": true,
+    "no_raw_CERT_ids_in_public_outputs": true
+  },
+  "C1_B": 50000,
+  "C1_tests": 1236,
+  "C2_tests": 23,
+  "new_scoring_records": 162,
+  "model_view_rows": {
+    "TRACE": 405,
+    "TRACE-aug": 405,
+    "XGBoost-40": 405,
+    "XGBoost-40-aug": 405
+  },
+  "figures": {
+    "figure_a_retention_all_sources": {
+      "png_sha256": "67b57c9b5c2cfdc209624471935b096fc6d807b35a9265a9e093b9527460e705",
+      "CSV_sha256": "6e9be5aed1eb90fb7a30586fb19ef74d5e8515ead17e957226a132c195e9f1fe",
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "size": [
+        4500,
+        2700
+      ]
+    },
+    "figure_b_clean_PR_AUC": {
+      "png_sha256": "724d2a470de1c3187d07dc5088ed89651cdc6c0b5f9a8959215c919b3ce94476",
+      "CSV_sha256": "5c4f7d92c2c33837a87a438046e4cd3ed728ce047f21f2b9fe7ea8b928604c72",
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "size": [
+        2400,
+        1500
+      ]
+    }
+  },
+  "raw_id_leak_files": [],
+  "report_sha256": "49e65383a32f1ffdaf859bf70ce1bc5b28777e7b9519fe5b7b8cfcf5998b86fe",
+  "result_sha256": "9ead25917dfaf4282f7aa520424ae4397b11533ced4d6b23119246f958eabc0a",
+  "r52_test_read": false
+}

@@ -1,0 +1,55 @@
+{
+  "utc": "2026-10-22T13:40:56.814958+00:00",
+  "outcomes": [
+    {
+      "utc": "2026-10-22T13:33:32.157684+00:00",
+      "model": "TRACE-aug",
+      "seed": 42,
+      "conditions": 27,
+      "clean_passes": 1,
+      "status": "ok"
+    },
+    {
+      "utc": "2026-10-22T13:34:51.533357+00:00",
+      "model": "TRACE-aug",
+      "seed": 52,
+      "conditions": 27,
+      "clean_passes": 1,
+      "status": "ok"
+    },
+    {
+      "utc": "2026-10-22T13:36:10.967042+00:00",
+      "model": "TRACE-aug",
+      "seed": 62,
+      "conditions": 27,
+      "clean_passes": 1,
+      "status": "ok"
+    },
+    {
+      "utc": "2026-10-22T13:37:50.500263+00:00",
+      "model": "XGBoost-40-aug",
+      "seed": 42,
+      "conditions": 27,
+      "clean_passes": 1,
+      "status": "ok"
+    },
+    {
+      "utc": "2026-10-22T13:39:22.364908+00:00",
+      "model": "XGBoost-40-aug",
+      "seed": 52,
+      "conditions": 27,
+      "clean_passes": 1,
+      "status": "ok"
+    },
+    {
+      "utc": "2026-10-22T13:40:56.158479+00:00",
+      "model": "XGBoost-40-aug",
+      "seed": 62,
+      "conditions": 27,
+      "clean_passes": 1,
+      "status": "ok"
+    }
+  ],
+  "new_model_seeds": 6,
+  "r52_test_read": false
+}

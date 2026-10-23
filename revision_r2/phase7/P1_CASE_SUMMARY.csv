@@ -1,0 +1,2 @@
+user,scenario,malicious_days,first_malicious_day,last_malicious_day,span_calendar_days,malicious_window_count,nonmalicious_reference_days,nonmalicious_active_days,nonmalicious_inactive_days,missed_all_TRACE_seeds,missed_TRACE_seeds
+U_488844ba74,2,23,2010-07-06,2010-08-19,45,64,441,148,293,True,"[42, 52, 62]"

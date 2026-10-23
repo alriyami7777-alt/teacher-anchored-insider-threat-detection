@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-23T01:38:37.0400036Z",
+  "analysis_code": {
+    "common8.py": "0dad8ea2d39325202ce48dc0b80131889c0c5de3757f4d8422bae4c89ef81289",
+    "score8.py": "cb64437a053a0945135853315309b3c12c55f02cf704eb982e6e91a3bc5c7f03",
+    "routing8.py": "aa8129d6639620102feef2ba255c779a144afdaba98a6a1b3ed44e33ae1be4e2",
+    "q1_analysis8.py": "5c3c95518c45b2db69a91ed161fa766ae492d9e85301f942c1b86eccb7956ba7",
+    "gradient8.py": "d07028cef58d7e943289ab64ecf425c7142fd52a36b9e053c99427ab784d9b20",
+    "q3_routes8.py": "1ba44f118edfffbc736a4bca8e9bd1111303061cd32301ea5d6cc0909b0a25f2",
+    "randomization8.py": "29d759ed3b4f564ab945614fd54b946dbb54576cd2402e1befaf5f0fbe02ed8f",
+    "shift8.py": "ddd5008bc28d09aeaaaa101dd3edcf582f14e42532aaab0eb5466e7d4f2c6569"
+  },
+  "dependencies": {
+    "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor011_confirmation\\models.py": "5511b9e06b2768419c0919b891fa8c51862a2da6da638584dedf365c54e68235",
+    "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor012_rescue\\losses.py": "3828ebd4c3fe3091ac5147048adba3f172a364116a1b43eb9cd3d143e93a0ce4",
+    "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\explanation\\phase3_engine.py": "ebbdd362f4274c99f76fffab46112b130d2eac3f3028247a4f3614ee99a43c82",
+    "C:\\PhD\\00_RESEARCH_CONTROL\\phase6b_staging\\bootstrap6b.py": "4428a8dfb7e05b4f30d4c73f6c5fd9edf1161c2ddbfb361d764ac4b6c1d5059c"
+  },
+  "Q1_training_code_frozen_separately": true,
+  "Q5_input_flags_already_frozen": true
+}

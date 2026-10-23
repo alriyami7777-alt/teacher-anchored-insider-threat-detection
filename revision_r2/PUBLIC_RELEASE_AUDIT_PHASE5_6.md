@@ -52,3 +52,14 @@ The repository's `.gitattributes` normalises text files to LF. The `.py` files w
 | `explanation/code/` | `C:\PhD\07_Projects\r2_explanation` without `.venv` | 5/5 files listed in its `CODE_HASHES.json` match. Paths only under `C:\PhD`. |
 
 Audit: no CERT user IDs (after the two redactions), no CERT data, answer files, tensors or `private/` content. The only binaries are the two seed-42 `.pt` checkpoints. `revision_r2/.gitattributes` keeps all of these folders byte-exact in clones.
+
+## Phases 6C, 7 and 8 (added 23 Oct 2026)
+| Folder | Source | Code | Notes |
+|---|---|---|---|
+| `phase6c/` (40 + 10 files) | `phase6c_public_bundle.zip`; byte-identical to `R2_revision\phase6c\` minus `private/`; status `PHASE6C_COMPLETE` | `phase6c\private\code_snapshot\` (code only); 10/10 hashes match the frozen records | 498 user pseudonyms |
+| `phase7/` (58 + 10 files) | `phase7_public_bundle.zip`; byte-identical to `R2_revision\phase7\` minus `private/`; status `PHASE7_COMPLETE` | `C:\PhD\00_RESEARCH_CONTROL\phase7_staging`; 10/10 hashes match | 500 user pseudonyms |
+| `phase8/` (57 + 18 files) | `phase8_public_bundle.zip`; byte-identical to `R2_revision\phase8\` minus `private/`; status `PHASE8_COMPLETE` | `C:\PhD\00_RESEARCH_CONTROL\phase8_staging` (`.py` files only); 18/18 hashes match | No per-user identifiers |
+
+Audit: no CERT user IDs, CERT data, answer files, binaries or `private/` content. Absolute paths only under prefixes already public (`C:\PhD\00_RESEARCH_CONTROL`, `04_Journal_Papers`, `06_Datasets`, `07_Projects`). Largest files: `phase8/Q2_OUTCOMES.json` (15.6 MB) and `phase7/P4_SELECTED_USER_DAY_ALERTS.csv` (9.4 MB), both below GitHub's limits.
+
+Pseudonyms: every `U_` token has the form `U_` + the first 10 hex digits of SHA-256(CERT user ID), the same scheme as `revision_r2/evidence/`. All 500 distinct pseudonyms were checked against the r5.2 user list and none is a raw ID. The hash is unsalted, so anyone who holds the licensed CERT r5.2 data can map a pseudonym back to its synthetic user ID; it does not reveal IDs to anyone without the dataset.

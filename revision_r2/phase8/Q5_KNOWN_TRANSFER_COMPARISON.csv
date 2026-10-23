@@ -1,0 +1,6 @@
+release,block,PR_AUC,F1,precision,recall,model,view,seeds,population_note,source,source_sha256
+r5.1,original,0.2778720494169021,0.1794387845381794,0.12304963855802609,0.3420101229211858,,,,,,
+r5.1,development,0.28036487063327226,0.14481858072826193,0.09095025827380077,0.3665943600867679,,,,,,
+r6.2,original,0.0004429517130215331,0.00092012252705276,0.0004604369762397145,0.5641025641025642,,,,,,
+r6.2,development,0.0004566708744728227,0.0009226805369410082,0.0004617148632938236,0.5687645687645687,,,,,,
+r6.1,historical_original_TRACE_all_user_r52,9.44574014687983e-05,,,,TRACE,COMPLETED_WINDOW,"[42, 52, 62]",Existing all-user r5.2 checkpoint results; different from Phase4 development-user checkpoint,C:\PhD\07_Projects\teacher-anchored-insider-threat-detection-editor024-r61\review\editor024_r61_final_confirmation\EDITOR024_R61_PRIMARY_SUMMARY.csv,a0c747a3fe3036ea18e622a9a91333ce5f7bbe17caf3a365a3517afa778eb91d

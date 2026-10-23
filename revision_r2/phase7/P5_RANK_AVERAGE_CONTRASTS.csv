@@ -1,0 +1,25 @@
+contrast,metric,seed,estimate,ci95_low,ci95_high,CI_direction,attempted_replicates,valid_replicates,undefined_replicates,bootstrap_seed,cluster,multiplicity_adjusted
+Rank-average minus TRACE,PR_AUC,42,0.10450522381210825,0.012589468117835982,0.22078074657290853,above,2000,2000,0,42,user,False
+Rank-average minus TRACE,PR_AUC,52,0.1048138829670463,0.008915825256523001,0.23220655305514099,above,2000,2000,0,42,user,False
+Rank-average minus TRACE,PR_AUC,62,0.09058962649996272,-0.0038544966811020587,0.2108094550430345,compatible_with_zero,2000,2000,0,42,user,False
+Rank-average minus TRACE,PR_AUC,mean_three,0.09996957775970576,0.007573844188528064,0.2189963823414768,above,2000,2000,0,42,user,False
+Rank-average minus TRACE,F1,42,0.26070527162943957,0.11307807165489608,0.3848842480614498,above,2000,2000,0,42,user,False
+Rank-average minus TRACE,F1,52,0.28851986884326647,0.14457605763362463,0.4116442449776976,above,2000,2000,0,42,user,False
+Rank-average minus TRACE,F1,62,0.25975321162947934,0.12620619873571354,0.3928988849566614,above,2000,2000,0,42,user,False
+Rank-average minus TRACE,F1,mean_three,0.26965945070072844,0.12972036112707006,0.3965109875455117,above,2000,2000,0,42,user,False
+Rank-average minus TRACE,insiders_detected,42,-1.0,-3.0,0.0,compatible_with_zero,2000,2000,0,42,user,False
+Rank-average minus TRACE,insiders_detected,52,-1.0,-3.0,0.0,compatible_with_zero,2000,2000,0,42,user,False
+Rank-average minus TRACE,insiders_detected,62,0.0,-3.0,3.0,compatible_with_zero,2000,2000,0,42,user,False
+Rank-average minus TRACE,insiders_detected,mean_three,-0.6666666666666666,-3.0,1.0,compatible_with_zero,2000,2000,0,42,user,False
+Rank-average minus XGBoost-40,PR_AUC,42,-0.008264115555857154,-0.10307416807262748,0.10024794837529381,compatible_with_zero,2000,2000,0,42,user,False
+Rank-average minus XGBoost-40,PR_AUC,52,-0.01950887038965854,-0.12500727257725616,0.08601761901644676,compatible_with_zero,2000,2000,0,42,user,False
+Rank-average minus XGBoost-40,PR_AUC,62,-0.007725699467665659,-0.11228259768506021,0.09822017926730803,compatible_with_zero,2000,2000,0,42,user,False
+Rank-average minus XGBoost-40,PR_AUC,mean_three,-0.011832895137727117,-0.11248585039922476,0.09221203415289574,compatible_with_zero,2000,2000,0,42,user,False
+Rank-average minus XGBoost-40,F1,42,-0.0608407976562918,-0.1895429919132753,0.07869831656360975,compatible_with_zero,2000,2000,0,42,user,False
+Rank-average minus XGBoost-40,F1,52,-0.03797730272197952,-0.15980348737299302,0.09972870459670095,compatible_with_zero,2000,2000,0,42,user,False
+Rank-average minus XGBoost-40,F1,62,0.10026079397276155,-0.06957819993517628,0.27603680780684364,compatible_with_zero,2000,2000,0,42,user,False
+Rank-average minus XGBoost-40,F1,mean_three,0.00048089786483007657,-0.1292170692485336,0.1420454374795855,compatible_with_zero,2000,2000,0,42,user,False
+Rank-average minus XGBoost-40,insiders_detected,42,1.0,-2.0,4.024999999999864,compatible_with_zero,2000,2000,0,42,user,False
+Rank-average minus XGBoost-40,insiders_detected,52,0.0,-3.0,3.0,compatible_with_zero,2000,2000,0,42,user,False
+Rank-average minus XGBoost-40,insiders_detected,62,0.0,0.0,0.0,compatible_with_zero,2000,2000,0,42,user,False
+Rank-average minus XGBoost-40,insiders_detected,mean_three,0.3333333333333333,-1.3333333333333333,2.3333333333333335,compatible_with_zero,2000,2000,0,42,user,False

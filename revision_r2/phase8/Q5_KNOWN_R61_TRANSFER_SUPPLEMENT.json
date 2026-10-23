@@ -1,0 +1,61 @@
+{
+  "utc": "2026-10-23T02:28:49.240459+00:00",
+  "reason": "The shared cross-version portfolio has no r6.1 rows; use its separate existing primary aggregate summary after the monitor freeze.",
+  "monitor_sha256": "24dd617086beedb26d576e349d121aa5811e56a3762d30a11028d033fda86eb2",
+  "monitor_utc": "2026-10-23T02:25:02.251501+00:00",
+  "record": {
+    "release": "r6.1",
+    "block": "historical_original_TRACE_all_user_r52",
+    "PR_AUC": 9.44574014687983e-05,
+    "F1": null,
+    "precision": null,
+    "recall": null,
+    "model": "TRACE",
+    "view": "COMPLETED_WINDOW",
+    "seeds": [
+      42,
+      52,
+      62
+    ],
+    "population_note": "Existing all-user r5.2 checkpoint results; different from Phase4 development-user checkpoint",
+    "source": "C:\\PhD\\07_Projects\\teacher-anchored-insider-threat-detection-editor024-r61\\review\\editor024_r61_final_confirmation\\EDITOR024_R61_PRIMARY_SUMMARY.csv",
+    "source_sha256": "a0c747a3fe3036ea18e622a9a91333ce5f7bbe17caf3a365a3517afa778eb91d"
+  },
+  "per_seed_records": [
+    {
+      "model": "TA2",
+      "seed": 42,
+      "view": "COMPLETED_WINDOW",
+      "PR_AUC": 9.278752218492676e-05,
+      "n": 1988000,
+      "n_pos": 190,
+      "prevalence": 9.557344064386318e-05,
+      "PR_AUC_over_prevalence": 0.9708504952822864,
+      "RANKING_EXCESS": -2.7859184589364226e-06
+    },
+    {
+      "model": "TA2",
+      "seed": 52,
+      "view": "COMPLETED_WINDOW",
+      "PR_AUC": 9.160882334119452e-05,
+      "n": 1988000,
+      "n_pos": 190,
+      "prevalence": 9.557344064386318e-05,
+      "PR_AUC_over_prevalence": 0.9585175831699724,
+      "RANKING_EXCESS": -3.964617302668649e-06
+    },
+    {
+      "model": "TA2",
+      "seed": 62,
+      "view": "COMPLETED_WINDOW",
+      "PR_AUC": 9.897585888027364e-05,
+      "n": 1988000,
+      "n_pos": 190,
+      "prevalence": 9.557344064386318e-05,
+      "PR_AUC_over_prevalence": 1.0356000392314946,
+      "RANKING_EXCESS": 3.4024182364104488e-06
+    }
+  ],
+  "raw_label_arrays_read": false,
+  "monitor_or_predictions_recomputed": false
+}
