@@ -17,7 +17,8 @@ and configuration templates, result summaries and provenance records,
 explanation and robustness procedures, and documented limitations.
 
 It does **not** distribute CERT datasets, answer files, raw user identifiers (exported evidence uses pseudonyms), model
-checkpoints, large prediction arrays, or private organisational material.
+checkpoints (except the three seed-42 checkpoints in `revision_r2/holdout/checkpoints_seed42/`, published for the
+unseen-user check), large prediction arrays, or private organisational material.
 
 ## Revision R2 (IEEE Access, Access-2026-42960): where to find each result
 
@@ -37,6 +38,111 @@ The final model is called **TRACE** in the revised manuscript (internal label TA
 | Disclosures (model-selection history, AI use, exclusions) | `revision_r2/DISCLOSURES.md`, `revision_r2/EXCLUDED_FROM_PUBLIC_COPY.md` |
 
 CERT data, answer files, raw user identifiers and model checkpoints are not distributed. Some run logs contain local Windows paths of the authors' workstation; they carry no data.
+
+## Reproduce the unseen-user result (seed 42)
+
+This section reproduces the paper's unseen-user evaluation (`tab:holdout`) for seed 42. It covers TRACE, the task-only control (F00) and XGBoost-40, each scored on the 500 held-out CERT r5.2 users.
+
+There are two routes:
+- **Load:** score the published seed-42 checkpoints. After the data preparation (step 3), this runs on a CPU in minutes.
+- **Retrain:** rebuild the models from the frozen recipes. This needs an NVIDIA GPU. The nine training runs took about 13 minutes in total on the authors' laptop RTX 5070 (`revision_r2/holdout/TRAINING_LOG.csv`).
+
+The work uses the frozen code under `revision_r2/holdout/code/`, run through `revision_r2/holdout/reproduce/reproduce_unseen_seed42.py`.
+
+**The r5.2 TEST period is never used.**
+- Step 3 turns the whole raw release into a day-level table, because the raw files are not split by date.
+- After that, every step reads only days from 2010-01-02 to 2011-04-10 (the TRAIN and VALIDATION periods).
+- No TEST-period window is built, scored or summarised.
+
+### 0. What you need
+- **The CERT r5.2 release folder.** It contains `logon.csv`, `device.csv`, `file.csv`, `email.csv` and `http.csv`. Below it is called `R52_RAW`.
+- **The CERT answers package folder.** It contains `insiders.csv` and the folders `r5.2-1` … `r5.2-4`. Below it is called `ANSWERS`.
+- **Python 3.11** and enough free disk for the intermediate Parquet files of step 3 (event-level, event-stream and daily tables).
+- **A private work folder outside the clone.** Below it is called `WORK`. It will hold user IDs, tensors and checkpoints. Never commit or upload it.
+
+In the commands below, replace `R52_RAW`, `ANSWERS` and `WORK` with full paths on your machine. The commands are for Windows PowerShell. On Linux or macOS, use `/` in paths, `\` instead of the backtick at line ends, and `export NAME=value` instead of `$env:NAME = "value"`.
+
+### 1. Clone
+```powershell
+git clone https://github.com/alriyami7777-alt/teacher-guided-insider-threat-detection.git
+cd teacher-guided-insider-threat-detection
+git checkout ieee-access-r2-revision
+```
+
+### 2. Fresh environment
+Windows PowerShell:
+```powershell
+py -3.11 -m venv .venv-r2
+.\.venv-r2\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu128
+```
+On Linux, use `python3.11 -m venv .venv-r2` and `source .venv-r2/bin/activate`, then the same `pip install` line. The pinned CUDA build of PyTorch also runs on a machine without a GPU, which is enough for the load route. macOS has no CUDA build: there, install `torch==2.11.0` from PyPI and the remaining lines of `requirements.txt`.
+
+### 3. Build the day-level table from the raw CERT r5.2 files (CPU; the longest step)
+```powershell
+python revision_r2/holdout/data_prep/prepare_cert_common13_pipeline.py --dataset-version 5.2 `
+  --raw-dir "R52_RAW" --answers-dir "ANSWERS" `
+  --processed-dir "WORK\processed" --output-dir "WORK\prep_reports" `
+  --stages match,label_events,unified_stream,daily_intervals,densify
+```
+- This step writes `WORK\processed\interval_level\r52_user_day_intervals_dense.parquet`.
+- The `match` stage reads the answers package to label malicious events. That is the only use of answer-file content.
+- The scripts are the preparation pipeline used for the paper's data on 23 July 2026; see `revision_r2/holdout/data_prep/README.md` for their provenance. Step 6's `build` checks the result against the hashes of the paper's own tensors.
+
+### 4. Point the reproduction script at the data
+```powershell
+$env:R2_WORK = "WORK"
+$env:CERT_R52_DENSE = "WORK\processed\interval_level\r52_user_day_intervals_dense.parquet"
+$env:CERT_R52_ANSWERS = "ANSWERS"
+cd revision_r2/holdout/reproduce
+python reproduce_unseen_seed42.py check
+```
+- `check` confirms that the published code matches the SHA-256 hashes recorded when it ran (`MODELS_FROZEN.json`, `phase4/MODELS_FROZEN_PHASE4.json`).
+- Two files show as `REDACTED`, as listed in `revision_r2/holdout/code/REDACTIONS.json`.
+
+### 5. Rebuild the pre-registered 1,500 / 500 user split
+```powershell
+python reproduce_unseen_seed42.py split
+```
+- Both lines should report `list_sha256 MATCHES SPLIT_RECEIPT.json`.
+- The split rule is in `revision_r2/holdout/PREREGISTRATION_R2_HOLDOUT.md`.
+- The user lists are written only to `WORK`.
+
+### 6a. Load route
+```powershell
+python reproduce_unseen_seed42.py build
+python reproduce_unseen_seed42.py score --route load
+```
+- `build` refits the scaler on the development users and rebuilds their TRAIN and VALIDATION tensors (CPU, about 1 GB of disk). It reports whether each tensor matches the hash recorded in `revision_r2/holdout/DATA_MANIFEST.json`. All six should match; a mismatch means step 3 produced a different day-level table.
+- `score` checks each checkpoint in `revision_r2/holdout/checkpoints_seed42/` against its frozen hash before use.
+
+### 6b. Retrain route (NVIDIA GPU required)
+```powershell
+python reproduce_unseen_seed42.py build
+python reproduce_unseen_seed42.py train
+python reproduce_unseen_seed42.py score --route retrain
+```
+Skip `build` if you already ran it in 6a. `train` runs the frozen recipe in this order:
+1. Three attention–linear precursors (seeds 42, 52, 62).
+2. Three teachers (T-OPT; TRACE is guided by all three).
+3. F00, TRACE and XGBoost-40 for seed 42.
+
+GPU training is not bit-for-bit deterministic, so retrained scores can differ slightly from the loaded ones.
+
+### 7. Output
+`WORK\results\unseen_users_seed42_<route>.csv` has one row per model. It gives:
+- the number of windows and positive windows;
+- PR-AUC (average precision over all windows of the 500 held-out users);
+- the frozen threshold, with precision, recall and alerts per 1,000 windows at that threshold;
+- the number of held-out insiders and normal users;
+- how many insiders were detected (at least one positive window at or above the threshold);
+- how many normal users were flagged.
+
+### Notes
+- **Cohort definition:** the held-out cohort is the TRAIN and VALIDATION periods of the 500 users, built as in the paper's scoring script `revision_r2/holdout/code/phase4/score.py`.
+- **Frozen code is unchanged:** `reproduce_unseen_seed42.py` imports the frozen modules unchanged. It points their hard-coded Windows paths at `WORK` and refuses to run if a frozen module is loaded from outside the clone.
+- **Phase 3 explanation code:** published for reference in `revision_r2/explanation/code/`. It is not needed for this result.
 
 ## Current architecture
 

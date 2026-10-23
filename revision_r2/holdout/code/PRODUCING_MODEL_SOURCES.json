@@ -1,0 +1,17 @@
+[
+  {
+    "source": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\prototype_v3_node\\architecture.py",
+    "copied_to": "C:\\PhD\\07_Projects\\r2_holdout\\producing_model\\prototype_v3_node\\architecture.py",
+    "sha256": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd"
+  },
+  {
+    "source": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\prototype_v3_node\\odst.py",
+    "copied_to": "C:\\PhD\\07_Projects\\r2_holdout\\producing_model\\prototype_v3_node\\odst.py",
+    "sha256": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb"
+  },
+  {
+    "source": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\scripts\\models\\sequence_ensemble.py",
+    "copied_to": "C:\\PhD\\07_Projects\\r2_holdout\\producing_model\\models\\sequence_ensemble.py",
+    "sha256": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475"
+  }
+]

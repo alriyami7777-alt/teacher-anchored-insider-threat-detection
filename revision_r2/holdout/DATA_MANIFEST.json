@@ -1,0 +1,181 @@
+{
+  "utc": "2026-10-21T15:07:34.280552+00:00",
+  "features": [
+    "total_events",
+    "logon_count",
+    "device_count",
+    "file_count",
+    "email_count",
+    "http_count",
+    "active_duration_minutes",
+    "has_logon_activity",
+    "has_device_activity",
+    "has_file_activity",
+    "has_email_activity",
+    "has_http_activity",
+    "is_active_day"
+  ],
+  "sequence_length": 20,
+  "stride": 1,
+  "development_users": 1500,
+  "holdout_users": 500,
+  "test_read": false,
+  "holdout_features_materialized": false,
+  "daily_date_filter": [
+    "2010-01-02",
+    "2011-04-10"
+  ],
+  "scaler_fit_user_days": 619500,
+  "scaler_sha256": "868bcc465ebb0f254597c948096427d252b911a9c0ceefe2396d8809e54fe1dc",
+  "splits": {
+    "train": {
+      "shape": [
+        591000,
+        20,
+        13
+      ],
+      "summary_shape": [
+        591000,
+        40
+      ],
+      "positives": 3040,
+      "label_mismatches": 0,
+      "count_matches_original_development_subset": true,
+      "files": {
+        "train_metadata.npz": "6aa00d741caba1903bb898ab2fcda9a6c80606a05e98a97aa235eb0e048f7120",
+        "train_X.npy": "e9e414692883d9e364af89437b4bfb8faca5d8c00328d70fe9af9b5105f35cc4",
+        "train_X40.npy": "40ffbccd51885d50bbcd244cfde4e22eb57aa25c4666f3f5d650fab37b35e845",
+        "train_y.npy": "d328560bc0c68c2e3947918f58c358cb9477379cdc9e71ae8e94e1cf1d43e345"
+      }
+    },
+    "validation": {
+      "shape": [
+        48000,
+        20,
+        13
+      ],
+      "summary_shape": [
+        48000,
+        40
+      ],
+      "positives": 473,
+      "label_mismatches": 0,
+      "count_matches_original_development_subset": true,
+      "files": {
+        "validation_metadata.npz": "9c37fb1f12407970031e1fec468f1279f1ae93430c1400c3a3b99d1437cf1d8c",
+        "validation_X.npy": "ce82cdc9d088325c183a4cdb21d621b718b8f2224ff9e952dd129d21198271a5",
+        "validation_X40.npy": "a2962c0c443f87d165248b471833f55d498098844731ed5e1f572a12e2e0c2d1",
+        "validation_y.npy": "00a48050bc36c82682fcf2bc6f29875c8cefee8a71865a087fa03431bb993e76"
+      }
+    }
+  },
+  "positive_counts": {
+    "HOLDOUT": {
+      "users": 500,
+      "insider": 25,
+      "non_insider": 475,
+      "list_sha256": "9aa35a84e0ddb723bf11b1f332bdaad224b2db50bde01c06579e8930356dd001",
+      "periods": {
+        "train": {
+          "windows": 197000,
+          "positive_windows": 917
+        },
+        "validation": {
+          "windows": 16000,
+          "positive_windows": 255
+        }
+      }
+    },
+    "DEVELOPMENT": {
+      "users": 1500,
+      "insider": 74,
+      "non_insider": 1426,
+      "list_sha256": "7559b7357eb1b4c7fbb11a23bbee9da6bc2262e8af53163f263e9f91fdc48aad",
+      "periods": {
+        "train": {
+          "windows": 591000,
+          "positive_windows": 3040
+        },
+        "validation": {
+          "windows": 48000,
+          "positive_windows": 473
+        }
+      }
+    }
+  },
+  "sanity_mismatches": 0,
+  "original_tensor_member_access": [
+    {
+      "source": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_train.npz",
+      "members_read": [
+        "user",
+        "y",
+        "start_date",
+        "end_date",
+        "sequence_id",
+        "feature_names"
+      ],
+      "X_read": false
+    },
+    {
+      "source": "C:\\PhD\\07_Projects\\cert-r42-feasibility\\data\\processed\\r5.2\\tensors\\r52_T20_s1_validation.npz",
+      "members_read": [
+        "user",
+        "y",
+        "start_date",
+        "end_date",
+        "sequence_id",
+        "feature_names"
+      ],
+      "X_read": false
+    }
+  ],
+  "tabular_feature_recipe": "Exact producing aggregate_common13_windows on standardized float32 development sequence tensors; no additional 40-feature scaler",
+  "tabular_feature_names": [
+    "total_events_sum",
+    "total_events_mean",
+    "total_events_max",
+    "total_events_std",
+    "logon_count_sum",
+    "logon_count_mean",
+    "logon_count_max",
+    "logon_count_std",
+    "device_count_sum",
+    "device_count_mean",
+    "device_count_max",
+    "device_count_std",
+    "file_count_sum",
+    "file_count_mean",
+    "file_count_max",
+    "file_count_std",
+    "email_count_sum",
+    "email_count_mean",
+    "email_count_max",
+    "email_count_std",
+    "http_count_sum",
+    "http_count_mean",
+    "http_count_max",
+    "http_count_std",
+    "active_duration_minutes_sum",
+    "active_duration_minutes_mean",
+    "active_duration_minutes_max",
+    "active_duration_minutes_std",
+    "has_logon_activity_active_days",
+    "has_logon_activity_active_proportion",
+    "has_device_activity_active_days",
+    "has_device_activity_active_proportion",
+    "has_file_activity_active_days",
+    "has_file_activity_active_proportion",
+    "has_email_activity_active_days",
+    "has_email_activity_active_proportion",
+    "has_http_activity_active_days",
+    "has_http_activity_active_proportion",
+    "is_active_day_active_days",
+    "is_active_day_active_proportion"
+  ],
+  "pos_weight": 48.35197368421053,
+  "cpu_seconds": 96.91641309999977,
+  "completed_utc": "2026-10-21T15:09:09.980743+00:00",
+  "parity_correction_utc": "2026-10-21T22:27:36.297683+00:00",
+  "previous_manifest_sha256": "9eb4624fc7fc3c24bb20c6246414314b0bf927484f61136971488887de66861d"
+}

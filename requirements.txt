@@ -13,3 +13,5 @@ matplotlib==3.11.1
 PyYAML==6.0.3
 tqdm==4.70.0
 pytest==9.1.1
+# Data preparation from raw CERT files (revision_r2/holdout/data_prep), version from the preparation environment:
+duckdb==1.5.4

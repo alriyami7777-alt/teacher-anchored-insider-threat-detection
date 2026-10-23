@@ -1,0 +1,3197 @@
+{
+  "utc": "2026-10-21T22:28:43.465741+00:00",
+  "training_finished": true,
+  "all_requested_models_succeeded": true,
+  "requested_successful_runs": 27,
+  "requested_total_runs": 27,
+  "holdout_scored": false,
+  "test_read": false,
+  "models": [
+    {
+      "model": "AL_PRECURSOR",
+      "seed": 42,
+      "config": {
+        "model": "AL_PRECURSOR",
+        "seed": 42,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 193.4078947368421,
+        "optimizer": "Adam",
+        "encoder_lr": 0.001,
+        "attention_lr": 0.001,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+        "pos_weight_multiplier": 1.0,
+        "scheduler": {
+          "name": "ReduceLROnPlateau",
+          "factor": 0.5,
+          "patience": 2,
+          "min_lr": 1e-05
+        },
+        "improvement_epsilon": 1e-06,
+        "role": "development-only prerequisite for frozen T-OPT initialization"
+      },
+      "epochs": 9,
+      "best_epoch": 5,
+      "dev_validation_pr_auc": 0.9455018983993528,
+      "threshold": 0.97,
+      "wall_seconds": 80.13912090001395,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\AL_PRECURSOR\\seed42\\best.pt",
+      "sha256": "f9e2870888fd4119e76195118cf53bfc90935e744f3ab03d3fe6985e52d7dc02",
+      "status": "ok"
+    },
+    {
+      "model": "AL_PRECURSOR",
+      "seed": 52,
+      "config": {
+        "model": "AL_PRECURSOR",
+        "seed": 52,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 193.4078947368421,
+        "optimizer": "Adam",
+        "encoder_lr": 0.001,
+        "attention_lr": 0.001,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+        "pos_weight_multiplier": 1.0,
+        "scheduler": {
+          "name": "ReduceLROnPlateau",
+          "factor": 0.5,
+          "patience": 2,
+          "min_lr": 1e-05
+        },
+        "improvement_epsilon": 1e-06,
+        "role": "development-only prerequisite for frozen T-OPT initialization"
+      },
+      "epochs": 6,
+      "best_epoch": 2,
+      "dev_validation_pr_auc": 0.9469917137495742,
+      "threshold": 0.88,
+      "wall_seconds": 55.265907799999695,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\AL_PRECURSOR\\seed52\\best.pt",
+      "sha256": "0620549a556269a279ec30a271941f309c27b4add67be662d9f731aec264829a",
+      "status": "ok"
+    },
+    {
+      "model": "AL_PRECURSOR",
+      "seed": 62,
+      "config": {
+        "model": "AL_PRECURSOR",
+        "seed": 62,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 193.4078947368421,
+        "optimizer": "Adam",
+        "encoder_lr": 0.001,
+        "attention_lr": 0.001,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+        "pos_weight_multiplier": 1.0,
+        "scheduler": {
+          "name": "ReduceLROnPlateau",
+          "factor": 0.5,
+          "patience": 2,
+          "min_lr": 1e-05
+        },
+        "improvement_epsilon": 1e-06,
+        "role": "development-only prerequisite for frozen T-OPT initialization"
+      },
+      "epochs": 12,
+      "best_epoch": 8,
+      "dev_validation_pr_auc": 0.9637990019695503,
+      "threshold": 0.63,
+      "wall_seconds": 103.74467380001443,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\AL_PRECURSOR\\seed62\\best.pt",
+      "sha256": "d2afe1ae0e0ad78890888952e7b150ba92d1bbe6b17174660f2896af5f735aff",
+      "status": "ok"
+    },
+    {
+      "model": "T-OPT",
+      "seed": 42,
+      "config": {
+        "model": "T-OPT",
+        "seed": 42,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 producing frozen-node teacher recipe",
+        "encoder_frozen": true,
+        "attention_frozen": true,
+        "linear_frozen": true
+      },
+      "epochs": 12,
+      "best_epoch": 8,
+      "dev_validation_pr_auc": 0.9359856095714502,
+      "threshold": 0.72,
+      "wall_seconds": 104.14099129999522,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\T-OPT\\seed42\\best.pt",
+      "sha256": "02d53605d688b951e3ba21c40e27db94286282ffb9cf202b02bb702aff79377c",
+      "status": "ok"
+    },
+    {
+      "model": "T-OPT",
+      "seed": 52,
+      "config": {
+        "model": "T-OPT",
+        "seed": 52,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 producing frozen-node teacher recipe",
+        "encoder_frozen": true,
+        "attention_frozen": true,
+        "linear_frozen": true
+      },
+      "epochs": 5,
+      "best_epoch": 1,
+      "dev_validation_pr_auc": 0.9461892719782865,
+      "threshold": 0.63,
+      "wall_seconds": 44.73304580000695,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\T-OPT\\seed52\\best.pt",
+      "sha256": "078ad83248e48686fa653a0c30c81292831e19c0a18fe5f6227e9ea49281c401",
+      "status": "ok"
+    },
+    {
+      "model": "T-OPT",
+      "seed": 62,
+      "config": {
+        "model": "T-OPT",
+        "seed": 62,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 producing frozen-node teacher recipe",
+        "encoder_frozen": true,
+        "attention_frozen": true,
+        "linear_frozen": true
+      },
+      "epochs": 9,
+      "best_epoch": 5,
+      "dev_validation_pr_auc": 0.9547789308040711,
+      "threshold": 0.4,
+      "wall_seconds": 77.57757570000831,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\T-OPT\\seed62\\best.pt",
+      "sha256": "be5b3a1f97f2c65bef5aae13431ee7f181b8078817bf551d0edfb9eb06a3d0ea",
+      "status": "ok"
+    },
+    {
+      "model": "F00",
+      "seed": 42,
+      "config": {
+        "model": "F00",
+        "seed": 42,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": null,
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 5,
+      "best_epoch": 1,
+      "dev_validation_pr_auc": 0.931590160880502,
+      "threshold": 0.9500000000000001,
+      "wall_seconds": 52.859720299980836,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\F00\\seed42\\best.pt",
+      "sha256": "ee6729744d45406186ede9fced2fc99a2b54e62bdd9508853b0afff4d481a54f",
+      "status": "ok"
+    },
+    {
+      "model": "F00",
+      "seed": 52,
+      "config": {
+        "model": "F00",
+        "seed": 52,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": null,
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 13,
+      "best_epoch": 9,
+      "dev_validation_pr_auc": 0.9589286731705673,
+      "threshold": 0.56,
+      "wall_seconds": 134.5096773999976,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\F00\\seed52\\best.pt",
+      "sha256": "52fa4e08814f8494b39b1bad586970a9ae037cb39e890a1e336374ff4b6069f5",
+      "status": "ok"
+    },
+    {
+      "model": "F00",
+      "seed": 62,
+      "config": {
+        "model": "F00",
+        "seed": 62,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": null,
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 8,
+      "best_epoch": 4,
+      "dev_validation_pr_auc": 0.9584971357194747,
+      "threshold": 0.22,
+      "wall_seconds": 84.5761729000078,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\F00\\seed62\\best.pt",
+      "sha256": "255487f91ffb2edcc52856d1615eda1fc6e9d0c518057d80f550c9ce1f2f1c32",
+      "status": "ok"
+    },
+    {
+      "model": "TA2",
+      "seed": 42,
+      "config": {
+        "model": "TA2",
+        "seed": 42,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.5,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 15,
+      "best_epoch": 15,
+      "dev_validation_pr_auc": 0.9572546163979256,
+      "threshold": 0.56,
+      "wall_seconds": 223.3155540000007,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\TA2\\seed42\\best.pt",
+      "sha256": "80fd6ecbd8c3f22b5241aad353c02ca34426c9dc34c8c1fa489bb679f87234d9",
+      "status": "ok"
+    },
+    {
+      "model": "TA2",
+      "seed": 52,
+      "config": {
+        "model": "TA2",
+        "seed": 52,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.5,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 13,
+      "best_epoch": 9,
+      "dev_validation_pr_auc": 0.9618754872086749,
+      "threshold": 0.56,
+      "wall_seconds": 183.1271117000142,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\TA2\\seed52\\best.pt",
+      "sha256": "2927c9975a4f59b219afd448c709b964396a879ac4f36b82bfef7538d3612080",
+      "status": "ok"
+    },
+    {
+      "model": "TA2",
+      "seed": 62,
+      "config": {
+        "model": "TA2",
+        "seed": 62,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.5,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 15,
+      "best_epoch": 15,
+      "dev_validation_pr_auc": 0.9698787123054354,
+      "threshold": 0.38,
+      "wall_seconds": 212.30240280000726,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\TA2\\seed62\\best.pt",
+      "sha256": "0d246d87aecbc078bf46bf211fc2a03df7bdf41355da17f82079da39849d5f18",
+      "status": "ok"
+    },
+    {
+      "model": "L1",
+      "seed": 42,
+      "config": {
+        "model": "L1",
+        "seed": 42,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR013 L1 (used by EDITOR023)",
+        "linear_init": "zero",
+        "initial_encoder": "matched development T-OPT",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "node_head_used": false
+      },
+      "epochs": 15,
+      "best_epoch": 15,
+      "dev_validation_pr_auc": 0.9555095986886415,
+      "threshold": 0.66,
+      "wall_seconds": 137.01609419999295,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\L1\\seed42\\best.pt",
+      "sha256": "5c0c13dc8a2caaf9335c479f68e3b61e0e7ba534f95d163bbcd54a900ecdc5d7",
+      "status": "ok"
+    },
+    {
+      "model": "L1",
+      "seed": 52,
+      "config": {
+        "model": "L1",
+        "seed": 52,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR013 L1 (used by EDITOR023)",
+        "linear_init": "zero",
+        "initial_encoder": "matched development T-OPT",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "node_head_used": false
+      },
+      "epochs": 13,
+      "best_epoch": 9,
+      "dev_validation_pr_auc": 0.957096355786254,
+      "threshold": 0.59,
+      "wall_seconds": 119.00937509999494,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\L1\\seed52\\best.pt",
+      "sha256": "23aba738c1d1a51354c40386b77d7e474299c15b951297954a1181773c87568c",
+      "status": "ok"
+    },
+    {
+      "model": "L1",
+      "seed": 62,
+      "config": {
+        "model": "L1",
+        "seed": 62,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR013 L1 (used by EDITOR023)",
+        "linear_init": "zero",
+        "initial_encoder": "matched development T-OPT",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "node_head_used": false
+      },
+      "epochs": 10,
+      "best_epoch": 6,
+      "dev_validation_pr_auc": 0.9665016896993206,
+      "threshold": 0.44,
+      "wall_seconds": 93.33641580000403,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\L1\\seed62\\best.pt",
+      "sha256": "fe079206035332ede7b077794955a028c6fbf13460a81ded73016f1559b47923",
+      "status": "ok"
+    },
+    {
+      "model": "F10",
+      "seed": 42,
+      "config": {
+        "model": "F10",
+        "seed": 42,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 14,
+      "best_epoch": 10,
+      "dev_validation_pr_auc": 0.9562091819930187,
+      "threshold": 0.47000000000000003,
+      "wall_seconds": 171.37949970000773,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\F10\\seed42\\best.pt",
+      "sha256": "5865614fc4485f82e2ec666bd876774ad931d19006c63fabd017e86f3fe9b26d",
+      "status": "ok"
+    },
+    {
+      "model": "F10",
+      "seed": 52,
+      "config": {
+        "model": "F10",
+        "seed": 52,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 13,
+      "best_epoch": 9,
+      "dev_validation_pr_auc": 0.9624639066637501,
+      "threshold": 0.59,
+      "wall_seconds": 156.43704499999876,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\F10\\seed52\\best.pt",
+      "sha256": "0df249d712ae11f75cddb3b2eae3edaca9d200431bef9432a7df153c808787c6",
+      "status": "ok"
+    },
+    {
+      "model": "F10",
+      "seed": 62,
+      "config": {
+        "model": "F10",
+        "seed": 62,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 64,
+        "bidirectional": true,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 64,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 15,
+      "best_epoch": 15,
+      "dev_validation_pr_auc": 0.9690408859419766,
+      "threshold": 0.38,
+      "wall_seconds": 179.65724069997668,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\F10\\seed62\\best.pt",
+      "sha256": "492e80505e9125a0cd75f93eab86b60becb1f1f0a082c812f44f70b4814d6385",
+      "status": "ok"
+    },
+    {
+      "model": "uniAL_PRECURSOR",
+      "seed": 42,
+      "config": {
+        "model": "uniAL_PRECURSOR",
+        "seed": 42,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 128,
+        "bidirectional": false,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 193.4078947368421,
+        "optimizer": "Adam",
+        "encoder_lr": 0.001,
+        "attention_lr": 0.001,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 128,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32,
+          "bidirectional": false,
+          "encoder_dim": 128
+        },
+        "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+        "pos_weight_multiplier": 1.0,
+        "scheduler": {
+          "name": "ReduceLROnPlateau",
+          "factor": 0.5,
+          "patience": 2,
+          "min_lr": 1e-05
+        },
+        "improvement_epsilon": 1e-06,
+        "role": "development-only prerequisite for frozen T-OPT initialization"
+      },
+      "epochs": 6,
+      "best_epoch": 2,
+      "dev_validation_pr_auc": 0.9307951056945145,
+      "threshold": 0.98,
+      "wall_seconds": 56.37385629999335,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\uniAL_PRECURSOR\\seed42\\best.pt",
+      "sha256": "6fecc59303d11f8831a17b709ee169774c10131aed12942c7ab730fcab3e0371",
+      "status": "ok"
+    },
+    {
+      "model": "uniAL_PRECURSOR",
+      "seed": 52,
+      "config": {
+        "model": "uniAL_PRECURSOR",
+        "seed": 52,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 128,
+        "bidirectional": false,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 193.4078947368421,
+        "optimizer": "Adam",
+        "encoder_lr": 0.001,
+        "attention_lr": 0.001,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 128,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32,
+          "bidirectional": false,
+          "encoder_dim": 128
+        },
+        "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+        "pos_weight_multiplier": 1.0,
+        "scheduler": {
+          "name": "ReduceLROnPlateau",
+          "factor": 0.5,
+          "patience": 2,
+          "min_lr": 1e-05
+        },
+        "improvement_epsilon": 1e-06,
+        "role": "development-only prerequisite for frozen T-OPT initialization"
+      },
+      "epochs": 6,
+      "best_epoch": 2,
+      "dev_validation_pr_auc": 0.914815311646519,
+      "threshold": 0.9600000000000001,
+      "wall_seconds": 56.25250059997779,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\uniAL_PRECURSOR\\seed52\\best.pt",
+      "sha256": "b52b975582464c88c313cd5d21a2ea53029bb370c16066215653a76355f8fde6",
+      "status": "ok"
+    },
+    {
+      "model": "uniAL_PRECURSOR",
+      "seed": 62,
+      "config": {
+        "model": "uniAL_PRECURSOR",
+        "seed": 62,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 128,
+        "bidirectional": false,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 193.4078947368421,
+        "optimizer": "Adam",
+        "encoder_lr": 0.001,
+        "attention_lr": 0.001,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 128,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32,
+          "bidirectional": false,
+          "encoder_dim": 128
+        },
+        "source": "producing r52_odst_confirmation attention_linear config / run_sequence_ensemble.py",
+        "pos_weight_multiplier": 1.0,
+        "scheduler": {
+          "name": "ReduceLROnPlateau",
+          "factor": 0.5,
+          "patience": 2,
+          "min_lr": 1e-05
+        },
+        "improvement_epsilon": 1e-06,
+        "role": "development-only prerequisite for frozen T-OPT initialization"
+      },
+      "epochs": 8,
+      "best_epoch": 4,
+      "dev_validation_pr_auc": 0.9265136009074335,
+      "threshold": 0.9500000000000001,
+      "wall_seconds": 74.86662929999875,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\uniAL_PRECURSOR\\seed62\\best.pt",
+      "sha256": "20db499663b60e9d08601dd80366844f9b7f567d00dc8c24b24ec07fd6ef4830",
+      "status": "ok"
+    },
+    {
+      "model": "uniT-OPT",
+      "seed": 42,
+      "config": {
+        "model": "uniT-OPT",
+        "seed": 42,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 128,
+        "bidirectional": false,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 128,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32,
+          "bidirectional": false,
+          "encoder_dim": 128
+        },
+        "source": "EDITOR011 producing frozen-node teacher recipe",
+        "encoder_frozen": true,
+        "attention_frozen": true,
+        "linear_frozen": true
+      },
+      "epochs": 15,
+      "best_epoch": 14,
+      "dev_validation_pr_auc": 0.9419536472717002,
+      "threshold": 0.9,
+      "wall_seconds": 131.3968281999987,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\uniT-OPT\\seed42\\best.pt",
+      "sha256": "1c092c800494ec1e10759b3ccc7f9e9217b6e8686f63a5882aefb562e355d4e9",
+      "status": "ok"
+    },
+    {
+      "model": "uniT-OPT",
+      "seed": 52,
+      "config": {
+        "model": "uniT-OPT",
+        "seed": 52,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 128,
+        "bidirectional": false,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 128,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32,
+          "bidirectional": false,
+          "encoder_dim": 128
+        },
+        "source": "EDITOR011 producing frozen-node teacher recipe",
+        "encoder_frozen": true,
+        "attention_frozen": true,
+        "linear_frozen": true
+      },
+      "epochs": 13,
+      "best_epoch": 9,
+      "dev_validation_pr_auc": 0.9342974633403444,
+      "threshold": 0.87,
+      "wall_seconds": 114.16902249999112,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\uniT-OPT\\seed52\\best.pt",
+      "sha256": "83c33a8f51ce59f4d506dfbda5eb58ca7da2df114850ef65ff24398fef473f90",
+      "status": "ok"
+    },
+    {
+      "model": "uniT-OPT",
+      "seed": 62,
+      "config": {
+        "model": "uniT-OPT",
+        "seed": 62,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 128,
+        "bidirectional": false,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.0,
+        "lambda_route": 0.0,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 128,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32,
+          "bidirectional": false,
+          "encoder_dim": 128
+        },
+        "source": "EDITOR011 producing frozen-node teacher recipe",
+        "encoder_frozen": true,
+        "attention_frozen": true,
+        "linear_frozen": true
+      },
+      "epochs": 5,
+      "best_epoch": 1,
+      "dev_validation_pr_auc": 0.8828654072854502,
+      "threshold": 0.64,
+      "wall_seconds": 45.632480000000214,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\uniT-OPT\\seed62\\best.pt",
+      "sha256": "c12f9da9a0cb45e2cf48c63c5042fd6dbddfd540796e548c8e6849a1f99f6661",
+      "status": "ok"
+    },
+    {
+      "model": "uniTA2",
+      "seed": 42,
+      "config": {
+        "model": "uniTA2",
+        "seed": 42,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 128,
+        "bidirectional": false,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.5,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 128,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32,
+          "bidirectional": false,
+          "encoder_dim": 128
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 5,
+      "best_epoch": 1,
+      "dev_validation_pr_auc": 0.9452751118561448,
+      "threshold": 0.86,
+      "wall_seconds": 88.78351959999418,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\uniTA2\\seed42\\best.pt",
+      "sha256": "bc941a789af6ab6c30070ac2e492f390faddf598cd5f34bd83483b3db2a9a3e3",
+      "status": "ok"
+    },
+    {
+      "model": "uniTA2",
+      "seed": 52,
+      "config": {
+        "model": "uniTA2",
+        "seed": 52,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 128,
+        "bidirectional": false,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.5,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 128,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32,
+          "bidirectional": false,
+          "encoder_dim": 128
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 6,
+      "best_epoch": 2,
+      "dev_validation_pr_auc": 0.9402264197703227,
+      "threshold": 0.85,
+      "wall_seconds": 93.49649769999087,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\uniTA2\\seed52\\best.pt",
+      "sha256": "0a4fc078bbd99e3c6708315e52d6627bbef23401f74ced4f231be2d01e3b7725",
+      "status": "ok"
+    },
+    {
+      "model": "uniTA2",
+      "seed": 62,
+      "config": {
+        "model": "uniTA2",
+        "seed": 62,
+        "development_only": true,
+        "max_epochs": 15,
+        "patience": 4,
+        "batch_size": 1024,
+        "gradient_clip_norm": 1.0,
+        "weight_decay": 0.0,
+        "dropout": 0.2,
+        "attention_dim": 64,
+        "hidden_size": 128,
+        "bidirectional": false,
+        "state_dim": 128,
+        "checkpoint_metric": "development_validation_average_precision",
+        "threshold_rule": "maximum development validation F1; sorted grid+quantile candidates; first maximum",
+        "pos_weight": 48.35197368421053,
+        "optimizer": "Adam",
+        "encoder_lr": 3e-05,
+        "attention_lr": 3e-05,
+        "head_lr": 0.001,
+        "lambda_teacher": 0.5,
+        "lambda_route": 0.5,
+        "architecture": {
+          "input_dim": 13,
+          "hidden_size": 128,
+          "dropout": 0.2,
+          "attention_dim": 64,
+          "fusion_variant": "sparsemax_sigmoid_odst",
+          "node_num_layers": 2,
+          "node_n_trees": 4,
+          "node_depth": 4,
+          "node_tree_dim": 1,
+          "node_temperature": 0.5,
+          "node_dropout": 0.0,
+          "leaf_init_std": 0.05,
+          "gate_hidden_dim": 32,
+          "bidirectional": false,
+          "encoder_dim": 128
+        },
+        "source": "EDITOR011 matched ODST046 and EDITOR012 factorial producing recipes",
+        "teacher_target": "equal mean of 3 development T-OPT logits",
+        "initialization": "matched development T-OPT"
+      },
+      "epochs": 15,
+      "best_epoch": 11,
+      "dev_validation_pr_auc": 0.9519191169442572,
+      "threshold": 0.85,
+      "wall_seconds": 227.53424949999317,
+      "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints\\uniTA2\\seed62\\best.pt",
+      "sha256": "c29d5ed868842475120e38c3362d762785a4c6786aff0dca1b934a2d5e060ae4",
+      "status": "ok"
+    },
+    {
+      "model": "XGBoost_40",
+      "seed": 42,
+      "config": {
+        "model": "XGBoost_40",
+        "seed": 42,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "params": {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "learning_rate": 0.1,
+          "subsample": 0.8,
+          "colsample_bytree": 0.8,
+          "reg_lambda": 1.0,
+          "objective": "binary:logistic",
+          "eval_metric": "aucpr",
+          "n_jobs": -1,
+          "tree_method": "hist",
+          "scale_pos_weight": 193.4078947368421,
+          "random_state": 42
+        },
+        "all_estimator_parameters": {
+          "objective": "binary:logistic",
+          "base_score": null,
+          "booster": null,
+          "callbacks": null,
+          "colsample_bylevel": null,
+          "colsample_bynode": null,
+          "colsample_bytree": 0.8,
+          "device": null,
+          "early_stopping_rounds": null,
+          "enable_categorical": false,
+          "eval_metric": "aucpr",
+          "feature_types": null,
+          "feature_weights": null,
+          "gamma": null,
+          "grow_policy": null,
+          "importance_type": null,
+          "interaction_constraints": null,
+          "learning_rate": 0.1,
+          "max_bin": null,
+          "max_cat_threshold": null,
+          "max_cat_to_onehot": null,
+          "max_delta_step": null,
+          "max_depth": 6,
+          "max_leaves": null,
+          "min_child_weight": null,
+          "missing": "NaN",
+          "monotone_constraints": null,
+          "multi_strategy": null,
+          "n_estimators": 300,
+          "n_jobs": -1,
+          "num_parallel_tree": null,
+          "random_state": 42,
+          "reg_alpha": null,
+          "reg_lambda": 1.0,
+          "sampling_method": null,
+          "scale_pos_weight": 193.4078947368421,
+          "subsample": 0.8,
+          "tree_method": "hist",
+          "validate_parameters": null,
+          "verbosity": null
+        },
+        "feature_names": [
+          "total_events_sum",
+          "total_events_mean",
+          "total_events_max",
+          "total_events_std",
+          "logon_count_sum",
+          "logon_count_mean",
+          "logon_count_max",
+          "logon_count_std",
+          "device_count_sum",
+          "device_count_mean",
+          "device_count_max",
+          "device_count_std",
+          "file_count_sum",
+          "file_count_mean",
+          "file_count_max",
+          "file_count_std",
+          "email_count_sum",
+          "email_count_mean",
+          "email_count_max",
+          "email_count_std",
+          "http_count_sum",
+          "http_count_mean",
+          "http_count_max",
+          "http_count_std",
+          "active_duration_minutes_sum",
+          "active_duration_minutes_mean",
+          "active_duration_minutes_max",
+          "active_duration_minutes_std",
+          "has_logon_activity_active_days",
+          "has_logon_activity_active_proportion",
+          "has_device_activity_active_days",
+          "has_device_activity_active_proportion",
+          "has_file_activity_active_days",
+          "has_file_activity_active_proportion",
+          "has_email_activity_active_days",
+          "has_email_activity_active_proportion",
+          "has_http_activity_active_days",
+          "has_http_activity_active_proportion",
+          "is_active_day_active_days",
+          "is_active_day_active_proportion"
+        ],
+        "features": "40 aggregates of development-TRAIN-standardized float32 20x13 tensors; exact producing aggregate_common13_windows",
+        "early_stopping": null,
+        "fit_eval_set": null,
+        "labels_dtype": "int32",
+        "threshold_input_dtype": "float64",
+        "threshold_rule": "producing maximum validation F1; sorted grid+quantiles; first maximum",
+        "development_only": true,
+        "parity_correction": true
+      },
+      "epochs": 300,
+      "best_epoch": 300,
+      "dev_validation_pr_auc": 0.9231876109974032,
+      "threshold": 0.64,
+      "wall_seconds": 4.365560900012497,
+      "gpu": "CPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints_parity_v2\\XGBoost_40\\seed42\\model.json",
+      "sha256": "07597ac880cc45573fb63b63852e00732f8dd27ed69b34e2f1e5865844984481",
+      "status": "ok",
+      "parity_corrected": true
+    },
+    {
+      "model": "XGBoost_40",
+      "seed": 52,
+      "config": {
+        "model": "XGBoost_40",
+        "seed": 52,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "params": {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "learning_rate": 0.1,
+          "subsample": 0.8,
+          "colsample_bytree": 0.8,
+          "reg_lambda": 1.0,
+          "objective": "binary:logistic",
+          "eval_metric": "aucpr",
+          "n_jobs": -1,
+          "tree_method": "hist",
+          "scale_pos_weight": 193.4078947368421,
+          "random_state": 52
+        },
+        "all_estimator_parameters": {
+          "objective": "binary:logistic",
+          "base_score": null,
+          "booster": null,
+          "callbacks": null,
+          "colsample_bylevel": null,
+          "colsample_bynode": null,
+          "colsample_bytree": 0.8,
+          "device": null,
+          "early_stopping_rounds": null,
+          "enable_categorical": false,
+          "eval_metric": "aucpr",
+          "feature_types": null,
+          "feature_weights": null,
+          "gamma": null,
+          "grow_policy": null,
+          "importance_type": null,
+          "interaction_constraints": null,
+          "learning_rate": 0.1,
+          "max_bin": null,
+          "max_cat_threshold": null,
+          "max_cat_to_onehot": null,
+          "max_delta_step": null,
+          "max_depth": 6,
+          "max_leaves": null,
+          "min_child_weight": null,
+          "missing": "NaN",
+          "monotone_constraints": null,
+          "multi_strategy": null,
+          "n_estimators": 300,
+          "n_jobs": -1,
+          "num_parallel_tree": null,
+          "random_state": 52,
+          "reg_alpha": null,
+          "reg_lambda": 1.0,
+          "sampling_method": null,
+          "scale_pos_weight": 193.4078947368421,
+          "subsample": 0.8,
+          "tree_method": "hist",
+          "validate_parameters": null,
+          "verbosity": null
+        },
+        "feature_names": [
+          "total_events_sum",
+          "total_events_mean",
+          "total_events_max",
+          "total_events_std",
+          "logon_count_sum",
+          "logon_count_mean",
+          "logon_count_max",
+          "logon_count_std",
+          "device_count_sum",
+          "device_count_mean",
+          "device_count_max",
+          "device_count_std",
+          "file_count_sum",
+          "file_count_mean",
+          "file_count_max",
+          "file_count_std",
+          "email_count_sum",
+          "email_count_mean",
+          "email_count_max",
+          "email_count_std",
+          "http_count_sum",
+          "http_count_mean",
+          "http_count_max",
+          "http_count_std",
+          "active_duration_minutes_sum",
+          "active_duration_minutes_mean",
+          "active_duration_minutes_max",
+          "active_duration_minutes_std",
+          "has_logon_activity_active_days",
+          "has_logon_activity_active_proportion",
+          "has_device_activity_active_days",
+          "has_device_activity_active_proportion",
+          "has_file_activity_active_days",
+          "has_file_activity_active_proportion",
+          "has_email_activity_active_days",
+          "has_email_activity_active_proportion",
+          "has_http_activity_active_days",
+          "has_http_activity_active_proportion",
+          "is_active_day_active_days",
+          "is_active_day_active_proportion"
+        ],
+        "features": "40 aggregates of development-TRAIN-standardized float32 20x13 tensors; exact producing aggregate_common13_windows",
+        "early_stopping": null,
+        "fit_eval_set": null,
+        "labels_dtype": "int32",
+        "threshold_input_dtype": "float64",
+        "threshold_rule": "producing maximum validation F1; sorted grid+quantiles; first maximum",
+        "development_only": true,
+        "parity_correction": true
+      },
+      "epochs": 300,
+      "best_epoch": 300,
+      "dev_validation_pr_auc": 0.9260931799351121,
+      "threshold": 0.51,
+      "wall_seconds": 4.2713346000236925,
+      "gpu": "CPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints_parity_v2\\XGBoost_40\\seed52\\model.json",
+      "sha256": "230eafa930aa7a47c2467ea86ba32a933fa70c8a7aaa8512bcbde03f8f2254c4",
+      "status": "ok",
+      "parity_corrected": true
+    },
+    {
+      "model": "XGBoost_40",
+      "seed": 62,
+      "config": {
+        "model": "XGBoost_40",
+        "seed": 62,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "params": {
+          "n_estimators": 300,
+          "max_depth": 6,
+          "learning_rate": 0.1,
+          "subsample": 0.8,
+          "colsample_bytree": 0.8,
+          "reg_lambda": 1.0,
+          "objective": "binary:logistic",
+          "eval_metric": "aucpr",
+          "n_jobs": -1,
+          "tree_method": "hist",
+          "scale_pos_weight": 193.4078947368421,
+          "random_state": 62
+        },
+        "all_estimator_parameters": {
+          "objective": "binary:logistic",
+          "base_score": null,
+          "booster": null,
+          "callbacks": null,
+          "colsample_bylevel": null,
+          "colsample_bynode": null,
+          "colsample_bytree": 0.8,
+          "device": null,
+          "early_stopping_rounds": null,
+          "enable_categorical": false,
+          "eval_metric": "aucpr",
+          "feature_types": null,
+          "feature_weights": null,
+          "gamma": null,
+          "grow_policy": null,
+          "importance_type": null,
+          "interaction_constraints": null,
+          "learning_rate": 0.1,
+          "max_bin": null,
+          "max_cat_threshold": null,
+          "max_cat_to_onehot": null,
+          "max_delta_step": null,
+          "max_depth": 6,
+          "max_leaves": null,
+          "min_child_weight": null,
+          "missing": "NaN",
+          "monotone_constraints": null,
+          "multi_strategy": null,
+          "n_estimators": 300,
+          "n_jobs": -1,
+          "num_parallel_tree": null,
+          "random_state": 62,
+          "reg_alpha": null,
+          "reg_lambda": 1.0,
+          "sampling_method": null,
+          "scale_pos_weight": 193.4078947368421,
+          "subsample": 0.8,
+          "tree_method": "hist",
+          "validate_parameters": null,
+          "verbosity": null
+        },
+        "feature_names": [
+          "total_events_sum",
+          "total_events_mean",
+          "total_events_max",
+          "total_events_std",
+          "logon_count_sum",
+          "logon_count_mean",
+          "logon_count_max",
+          "logon_count_std",
+          "device_count_sum",
+          "device_count_mean",
+          "device_count_max",
+          "device_count_std",
+          "file_count_sum",
+          "file_count_mean",
+          "file_count_max",
+          "file_count_std",
+          "email_count_sum",
+          "email_count_mean",
+          "email_count_max",
+          "email_count_std",
+          "http_count_sum",
+          "http_count_mean",
+          "http_count_max",
+          "http_count_std",
+          "active_duration_minutes_sum",
+          "active_duration_minutes_mean",
+          "active_duration_minutes_max",
+          "active_duration_minutes_std",
+          "has_logon_activity_active_days",
+          "has_logon_activity_active_proportion",
+          "has_device_activity_active_days",
+          "has_device_activity_active_proportion",
+          "has_file_activity_active_days",
+          "has_file_activity_active_proportion",
+          "has_email_activity_active_days",
+          "has_email_activity_active_proportion",
+          "has_http_activity_active_days",
+          "has_http_activity_active_proportion",
+          "is_active_day_active_days",
+          "is_active_day_active_proportion"
+        ],
+        "features": "40 aggregates of development-TRAIN-standardized float32 20x13 tensors; exact producing aggregate_common13_windows",
+        "early_stopping": null,
+        "fit_eval_set": null,
+        "labels_dtype": "int32",
+        "threshold_input_dtype": "float64",
+        "threshold_rule": "producing maximum validation F1; sorted grid+quantiles; first maximum",
+        "development_only": true,
+        "parity_correction": true
+      },
+      "epochs": 300,
+      "best_epoch": 300,
+      "dev_validation_pr_auc": 0.9274200342071266,
+      "threshold": 0.060000000000000005,
+      "wall_seconds": 4.548068100004457,
+      "gpu": "CPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints_parity_v2\\XGBoost_40\\seed62\\model.json",
+      "sha256": "3c8c5d3d528473ed1c88c206f58b1bce7178fc7dc3cf598462fe217a88ddd6fb",
+      "status": "ok",
+      "parity_corrected": true
+    },
+    {
+      "model": "RF_40",
+      "seed": 42,
+      "config": {
+        "model": "RF_40",
+        "seed": 42,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 20,
+          "min_samples_leaf": 2,
+          "n_jobs": -1,
+          "class_weight": "balanced_subsample",
+          "random_state": 42
+        },
+        "all_estimator_parameters": {
+          "bootstrap": true,
+          "ccp_alpha": 0.0,
+          "class_weight": "balanced_subsample",
+          "criterion": "gini",
+          "max_depth": 20,
+          "max_features": "sqrt",
+          "max_leaf_nodes": null,
+          "max_samples": null,
+          "min_impurity_decrease": 0.0,
+          "min_samples_leaf": 2,
+          "min_samples_split": 2,
+          "min_weight_fraction_leaf": 0.0,
+          "monotonic_cst": null,
+          "n_estimators": 200,
+          "n_jobs": -1,
+          "oob_score": false,
+          "random_state": 42,
+          "verbose": 0,
+          "warm_start": false
+        },
+        "feature_names": [
+          "total_events_sum",
+          "total_events_mean",
+          "total_events_max",
+          "total_events_std",
+          "logon_count_sum",
+          "logon_count_mean",
+          "logon_count_max",
+          "logon_count_std",
+          "device_count_sum",
+          "device_count_mean",
+          "device_count_max",
+          "device_count_std",
+          "file_count_sum",
+          "file_count_mean",
+          "file_count_max",
+          "file_count_std",
+          "email_count_sum",
+          "email_count_mean",
+          "email_count_max",
+          "email_count_std",
+          "http_count_sum",
+          "http_count_mean",
+          "http_count_max",
+          "http_count_std",
+          "active_duration_minutes_sum",
+          "active_duration_minutes_mean",
+          "active_duration_minutes_max",
+          "active_duration_minutes_std",
+          "has_logon_activity_active_days",
+          "has_logon_activity_active_proportion",
+          "has_device_activity_active_days",
+          "has_device_activity_active_proportion",
+          "has_file_activity_active_days",
+          "has_file_activity_active_proportion",
+          "has_email_activity_active_days",
+          "has_email_activity_active_proportion",
+          "has_http_activity_active_days",
+          "has_http_activity_active_proportion",
+          "is_active_day_active_days",
+          "is_active_day_active_proportion"
+        ],
+        "features": "40 aggregates of development-TRAIN-standardized float32 20x13 tensors; exact producing aggregate_common13_windows",
+        "early_stopping": null,
+        "fit_eval_set": null,
+        "labels_dtype": "int32",
+        "threshold_input_dtype": "float64",
+        "threshold_rule": "producing maximum validation F1; sorted grid+quantiles; first maximum",
+        "development_only": true,
+        "parity_correction": true
+      },
+      "epochs": 200,
+      "best_epoch": 200,
+      "dev_validation_pr_auc": 0.9435161062965295,
+      "threshold": 0.46,
+      "wall_seconds": 17.059225700009847,
+      "gpu": "CPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints_parity_v2\\RF_40\\seed42\\model.joblib",
+      "sha256": "a33186795166ba4c0343dc51a61fd84f4006a9ef472083ca80a35c80b2b8b32c",
+      "status": "ok",
+      "parity_corrected": true
+    },
+    {
+      "model": "RF_40",
+      "seed": 52,
+      "config": {
+        "model": "RF_40",
+        "seed": 52,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 20,
+          "min_samples_leaf": 2,
+          "n_jobs": -1,
+          "class_weight": "balanced_subsample",
+          "random_state": 52
+        },
+        "all_estimator_parameters": {
+          "bootstrap": true,
+          "ccp_alpha": 0.0,
+          "class_weight": "balanced_subsample",
+          "criterion": "gini",
+          "max_depth": 20,
+          "max_features": "sqrt",
+          "max_leaf_nodes": null,
+          "max_samples": null,
+          "min_impurity_decrease": 0.0,
+          "min_samples_leaf": 2,
+          "min_samples_split": 2,
+          "min_weight_fraction_leaf": 0.0,
+          "monotonic_cst": null,
+          "n_estimators": 200,
+          "n_jobs": -1,
+          "oob_score": false,
+          "random_state": 52,
+          "verbose": 0,
+          "warm_start": false
+        },
+        "feature_names": [
+          "total_events_sum",
+          "total_events_mean",
+          "total_events_max",
+          "total_events_std",
+          "logon_count_sum",
+          "logon_count_mean",
+          "logon_count_max",
+          "logon_count_std",
+          "device_count_sum",
+          "device_count_mean",
+          "device_count_max",
+          "device_count_std",
+          "file_count_sum",
+          "file_count_mean",
+          "file_count_max",
+          "file_count_std",
+          "email_count_sum",
+          "email_count_mean",
+          "email_count_max",
+          "email_count_std",
+          "http_count_sum",
+          "http_count_mean",
+          "http_count_max",
+          "http_count_std",
+          "active_duration_minutes_sum",
+          "active_duration_minutes_mean",
+          "active_duration_minutes_max",
+          "active_duration_minutes_std",
+          "has_logon_activity_active_days",
+          "has_logon_activity_active_proportion",
+          "has_device_activity_active_days",
+          "has_device_activity_active_proportion",
+          "has_file_activity_active_days",
+          "has_file_activity_active_proportion",
+          "has_email_activity_active_days",
+          "has_email_activity_active_proportion",
+          "has_http_activity_active_days",
+          "has_http_activity_active_proportion",
+          "is_active_day_active_days",
+          "is_active_day_active_proportion"
+        ],
+        "features": "40 aggregates of development-TRAIN-standardized float32 20x13 tensors; exact producing aggregate_common13_windows",
+        "early_stopping": null,
+        "fit_eval_set": null,
+        "labels_dtype": "int32",
+        "threshold_input_dtype": "float64",
+        "threshold_rule": "producing maximum validation F1; sorted grid+quantiles; first maximum",
+        "development_only": true,
+        "parity_correction": true
+      },
+      "epochs": 200,
+      "best_epoch": 200,
+      "dev_validation_pr_auc": 0.9392026124639733,
+      "threshold": 0.46,
+      "wall_seconds": 17.35902599999099,
+      "gpu": "CPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints_parity_v2\\RF_40\\seed52\\model.joblib",
+      "sha256": "d613813accb345de8080f5b8a216223d8ae68347de88d4c14b913107208387ba",
+      "status": "ok",
+      "parity_corrected": true
+    },
+    {
+      "model": "RF_40",
+      "seed": 62,
+      "config": {
+        "model": "RF_40",
+        "seed": 62,
+        "source": "cert-r52-locked-baselines/scripts/r52_locked_baselines/train.py",
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 20,
+          "min_samples_leaf": 2,
+          "n_jobs": -1,
+          "class_weight": "balanced_subsample",
+          "random_state": 62
+        },
+        "all_estimator_parameters": {
+          "bootstrap": true,
+          "ccp_alpha": 0.0,
+          "class_weight": "balanced_subsample",
+          "criterion": "gini",
+          "max_depth": 20,
+          "max_features": "sqrt",
+          "max_leaf_nodes": null,
+          "max_samples": null,
+          "min_impurity_decrease": 0.0,
+          "min_samples_leaf": 2,
+          "min_samples_split": 2,
+          "min_weight_fraction_leaf": 0.0,
+          "monotonic_cst": null,
+          "n_estimators": 200,
+          "n_jobs": -1,
+          "oob_score": false,
+          "random_state": 62,
+          "verbose": 0,
+          "warm_start": false
+        },
+        "feature_names": [
+          "total_events_sum",
+          "total_events_mean",
+          "total_events_max",
+          "total_events_std",
+          "logon_count_sum",
+          "logon_count_mean",
+          "logon_count_max",
+          "logon_count_std",
+          "device_count_sum",
+          "device_count_mean",
+          "device_count_max",
+          "device_count_std",
+          "file_count_sum",
+          "file_count_mean",
+          "file_count_max",
+          "file_count_std",
+          "email_count_sum",
+          "email_count_mean",
+          "email_count_max",
+          "email_count_std",
+          "http_count_sum",
+          "http_count_mean",
+          "http_count_max",
+          "http_count_std",
+          "active_duration_minutes_sum",
+          "active_duration_minutes_mean",
+          "active_duration_minutes_max",
+          "active_duration_minutes_std",
+          "has_logon_activity_active_days",
+          "has_logon_activity_active_proportion",
+          "has_device_activity_active_days",
+          "has_device_activity_active_proportion",
+          "has_file_activity_active_days",
+          "has_file_activity_active_proportion",
+          "has_email_activity_active_days",
+          "has_email_activity_active_proportion",
+          "has_http_activity_active_days",
+          "has_http_activity_active_proportion",
+          "is_active_day_active_days",
+          "is_active_day_active_proportion"
+        ],
+        "features": "40 aggregates of development-TRAIN-standardized float32 20x13 tensors; exact producing aggregate_common13_windows",
+        "early_stopping": null,
+        "fit_eval_set": null,
+        "labels_dtype": "int32",
+        "threshold_input_dtype": "float64",
+        "threshold_rule": "producing maximum validation F1; sorted grid+quantiles; first maximum",
+        "development_only": true,
+        "parity_correction": true
+      },
+      "epochs": 200,
+      "best_epoch": 200,
+      "dev_validation_pr_auc": 0.9410520662851289,
+      "threshold": 0.15000000000000002,
+      "wall_seconds": 17.62495769999805,
+      "gpu": "CPU",
+      "checkpoint": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\private\\checkpoints_parity_v2\\RF_40\\seed62\\model.joblib",
+      "sha256": "82c59d136b7a5448422e9086a765db80d7e6a914a8f8f2f31953a29fe4506a2d",
+      "status": "ok",
+      "parity_corrected": true
+    }
+  ],
+  "skipped": [],
+  "scoring_script": {
+    "path": "C:\\PhD\\07_Projects\\r2_holdout\\phase2_score_later.py",
+    "sha256": "25f027bcfc3f74686f67e8f0ecd8e1dd7468ccf0330cc8be3cef92f27e58419c",
+    "executed": false
+  },
+  "implementation_files": [
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\phase2_data.py",
+      "sha256": "94464af2f87988cee9cc2d2edcc4fd5e5a1cf3dbcb008204c73f71ee0f06ed0c"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\phase2_inspect.py",
+      "sha256": "78a329c4928c83519613abc896e167127a0afeedada1ed52e4abb314be0ec4ff"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\phase2_install.py",
+      "sha256": "a268814aeee5991c8d157721ceb1801da8108667b8883d60fe42cc4341d59b41"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\phase2_parity_audit.py",
+      "sha256": "9927bcf8f1cbb727c8b40d6f0bf88af66b85fb8a54d3295198cb13c1968ec38d"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\phase2_parity_verify.py",
+      "sha256": "01a01d0deed2dd86bd2c69b3ef85b892ed3b477909b5fa4b0998941832eea967"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\phase2_prepare.py",
+      "sha256": "c4ff93d7c4b93509ceaf18c5ee60b07d8fb1539a50a3238ecdd67c0be8837aee"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\phase2_runtime.py",
+      "sha256": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\phase2_score_later.py",
+      "sha256": "25f027bcfc3f74686f67e8f0ecd8e1dd7468ccf0330cc8be3cef92f27e58419c"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\phase2_worker.py",
+      "sha256": "d6972e0f17e090d54e124a3f4a83d88139b243416b9368a61ea43afb21d9d802"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\parity_source\\r52_locked_baselines\\data.py",
+      "sha256": "0e9ad707221f6278f99b9fe143383386d0b01e3617151a0c3ef27d7ee776dfcf"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\parity_source\\r52_locked_baselines\\metrics.py",
+      "sha256": "af1e4fc015e73a84962eabb316a86656cbd6fddc2744d505666d5f8f1c623edf"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\parity_source\\r52_locked_baselines\\safety.py",
+      "sha256": "1ead980d7b85a90b49f131b023fe23f226140b7835f9ba69f38d45a9ddcdcd88"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\parity_source\\r52_locked_baselines\\__init__.py",
+      "sha256": "d975be05a8d827eedc7d018fe3ce2c2351e44ab754e1b716d0ad63fd4e209028"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\producing_model\\models\\sequence_ensemble.py",
+      "sha256": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\producing_model\\models\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\producing_model\\prototype_v3_node\\architecture.py",
+      "sha256": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\producing_model\\prototype_v3_node\\odst.py",
+      "sha256": "95764ce80a7c80529108d8d6b72f6bd06896c39d065f7e475c12dce8421417bb"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\producing_model\\prototype_v3_node\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\analyse_threshold_sensitivity.py",
+      "sha256": "d7ec7cd83912e5ccce45d9ef2d106cc4156431db83c91f9b979ea2d4653c64e6"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\audit_cert_dataset_readiness.py",
+      "sha256": "4b63ec55c7546b086cf89381ffff6f09b35ee917b6553cac7e8bae49ac9f2387"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\audit_objective3_explainability_robustness.py",
+      "sha256": "4444c3851e824efe7acc2016dfabf50f784212d32614fcb022079b945cfaadf2"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\cert_data_quality.py",
+      "sha256": "954468a2ee122d8cffbf49c6ba8a157bb2fd3788732ac2e75a6f4a00542f7e4f"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\cert_ground_truth.py",
+      "sha256": "10ed68a88c1a296b656c7e9694ded9d866ac9172ebf1f351514ddea0518c3084"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\cert_schema_audit.py",
+      "sha256": "5ad596f789f0cc2cfad25362af4e804c22f29ef97251a42b8f3993e323878785"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\check_and_densify_user_day_intervals.py",
+      "sha256": "e8d7aa64cfe4e88fe55748f9f50e30f5eec240c063b6f995db7a64ac4d0e6f1b"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\close_objective2_architecture_candidates.py",
+      "sha256": "b699fd856ecf0912d0e81fc7f1158e64ce211f76a5a1c58d04143ca8381ba56e"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\compare_temporal_windows.py",
+      "sha256": "e07b89124cd10e0460292b8d66385c2c0c76fb995e92024e864b5ea02f08c673"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\compare_threshold_selection_criteria.py",
+      "sha256": "38da3c75cefc0e65f7b46a92ddc89063c6e51fa54779d22b14d5a80d230568ab"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\consolidate_objective2_final.py",
+      "sha256": "f4804a12e38b040ea82b801e904507dc5c3ebbcd1d34cdf1d48d69dfb66ecada"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\consolidate_objective2_validation.py",
+      "sha256": "967d9314bab2b99181136b0f99efebbcb46c6a50516b33aa40ada275d83dc12e"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\create_event_level_labels.py",
+      "sha256": "d4cecb767fc02d4637a4c0282a1ce8b5529f345172e2564a84776df3f255290f"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\create_interval_level_representation.py",
+      "sha256": "2cd77ed738038c629ef68360fe82633dbc39c617f2d4beae6332bcebec935de9"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\create_sequence_feature_table.py",
+      "sha256": "cb8b3eb3aebcd6299b5f46877135bac955fa96078ec79142616b9fc86877bd32"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\create_sequence_tensors.py",
+      "sha256": "9bedbfc0d2443cf2e7fb8ebbae8baf2e4e6c6b97e188e4ff3153b64674534b14"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\create_sliding_window_sequences.py",
+      "sha256": "260fa801a2b3622d18e965fa226ed730d2f38c45e0766847dad93f1f7847ccf7"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\create_unified_event_stream.py",
+      "sha256": "b7abd161bd1f1efe87024301642154860555505e731cd686a0d28a1007524900"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\dataset_registry.py",
+      "sha256": "4fd6418275ac4ad4a89302cf685d515e02fff7793a60a233f02c7805a8c6f9dd"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\evaluate_locked_objective2.py",
+      "sha256": "0f2934d4618a907585d4350a7d64538dc4cd7d13db5b327b4d2fc4561b9f64fa"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\find_ground_truth.py",
+      "sha256": "10fa338b7c0f1fc4a22e2bdad92250bb59624a453a353cdf49808434ff2b7830"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\generate_objective2_report_assets.py",
+      "sha256": "a5107bee04a38847fe8d3d5411a9c93eed372898f94f4f0dc58f8898f39e34f1"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\generate_odst_inference_integration_reports.py",
+      "sha256": "1d31df69dcbfed202fc0727ef4ee0d63b912e42c77eee036a338256c2841bac1"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\generate_odst_loader_port_reports.py",
+      "sha256": "0448623134abbc59527258892dc9006209dce6076f56c534d8682d6b4d84ccb7"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\match_malicious_event_ids.py",
+      "sha256": "821ba349d3e92c4a6d6ef70f8db495c221a57f8f785959279e907483d4ac725d"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_locked_common.py",
+      "sha256": "9681d184d4d240f172f444dcc06e32184c206b5a33f46a608799e54ac659a448"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective3_analysis.py",
+      "sha256": "b2ee3ec86c501d2b256c3f624e50d7b9cd5bc71b364f8b389bbfc24a2aa0142c"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective3_attention_faithfulness.py",
+      "sha256": "57d36cf1ba818b6cefbf0fc28bfb924063dee4a9d516e8413d41ef90c7627f6a"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective3_attention_faithfulness_expanded.py",
+      "sha256": "3bd9ef0f840e519d5c3947da4601a8f87524b8f8177644508bf723bb17d56011"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective3_inference.py",
+      "sha256": "d725e6b032ed822c0271ad40c30073e8d15bce4951afa5fef3fee29013275e1b"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective3_locked_common.py",
+      "sha256": "445092b7a38125f71820fcfc0d0dd07f6a26ae906c00c98ce0d6d6e84ce35e8e"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective3_missing_source_robustness.py",
+      "sha256": "dc83b14cbf27822f86b1626032c5947ac79aa55c264b0a2c524ca44c9e1b07c2"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective3_model_interface.py",
+      "sha256": "51923860cf89c466b8b9dffa39df603579061216f728fbf892f8f8961de6f842"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective3_model_registry.py",
+      "sha256": "5b1e4562f1a10210b54d4fe18cf05dbcbcf7ee74332746f2b4523facfa4b22d5"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective3_multiseed_native_extraction.py",
+      "sha256": "5c5918810442768ea2e5130656bbca4e0b20366f16561efe8e9b80c53efc0b28"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective3_native_explanation_pilot.py",
+      "sha256": "030b0c32785cdc3bc3ac38f1a964e1b8aff025853d757e77320efec6e8a721df"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective3_odst_loader.py",
+      "sha256": "98e59a77c0f9d5273c26d52a0b9c06ed6223d888379fac2b8576ea1d2cff7591"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective3_perturbations.py",
+      "sha256": "bcab265042f6b6363d6bc7245d5a0bf6d177d2fcb75528a124978f04d8d9bb1f"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\run_baseline_evaluation.py",
+      "sha256": "e5a7276a0ef725fd6b37684d906689500a532ddb22f0e84cf3c3a09d19532d2e"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\run_bilstm_baseline.py",
+      "sha256": "ece05e8a2fa54be7c896d319a371f6c92c3c7b0a014a13dcfb63a0b7ec50509c"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\run_fragmented_hybrid_baseline.py",
+      "sha256": "a7370fd53705b0b32e132d8bd4bd1b74b1d79c04d6aef831293a63717dbf75e6"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\run_objective2_r52_matched_temporal_learning.py",
+      "sha256": "989796aa9d39bb504a7c9ae439af264e913890db7f25ffbafe67d4045d5e55e4"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\run_objective2_r52_same_information_baselines.py",
+      "sha256": "ca5da9f5a7ddcaf063368d265763fc4470d475f6b92b851c7de75b11c1cbdaae"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\run_objective2_r52_teacher_anchored_reproducibility.py",
+      "sha256": "72eb760dde0ad3c6f883b0fed288122982cd772b099288a73c1301dc721d6a6e"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\run_objective2_r52_teacher_anchoring_ablation.py",
+      "sha256": "1e045881ea249ff40fa33ee694065e24c5e1383090f08ef732cbb068fa09b210"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\run_objective2_teacher_anchored_final_audit.py",
+      "sha256": "88f71f574f1b3eb3e4922c34683500963025f450f4d93c36ca6e324fcf6f0a7e"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\run_objective2_teacher_anchored_odst.py",
+      "sha256": "05cdd327cbf21f998448198d4d343a67634c31566d1f398fac674e41259f1511"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\run_objective2_temporal_value_analysis.py",
+      "sha256": "c24ebc19433f556153f28d13a12ca0bd6da6ef60b0185b7b6873ad63a0cb3a56"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\run_sequence_ensemble.py",
+      "sha256": "dc9a0bbc88da827588bb4d14477feb017440d68c08e7afebc1f1c101ec85855b"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\run_soft_decision_forest.py",
+      "sha256": "17d23abd5208291b3a68cc30865dfface8e95ccb08d054dd63af5ca1d500a8e0"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\summarize_ground_truth.py",
+      "sha256": "06603513224d24e6034636c989f8b60bd517d37b4f008eb2b11e4a3f20045c78"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\summarize_labelled_event_logs.py",
+      "sha256": "c2fa6b0517aba1dfe70523c7262b2acd061d4476432ade65f8aff60e5df6f9d6"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor006b_harness\\bootstrap.py",
+      "sha256": "2512f7e5e06cf679f79b333c4c09c7fa9ed1742bb96422585b6344ec3fe94830"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor006b_harness\\cli.py",
+      "sha256": "397815091072408226f1b4f86dcc6027fd22e88d097e726ba3586f81683c58be"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor006b_harness\\contracts.py",
+      "sha256": "79efdcd03a1e2bf99c9d9525f00e5d7de55130be9c82a1998a4ab8a36128d4b9"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor006b_harness\\hash_gate.py",
+      "sha256": "5e8db6291217b339c20eea944290378f7fa2725ab1b6eabb275dae30ba34ba43"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor006b_harness\\input_bundle.py",
+      "sha256": "6361ef02d562828b1e8d793b5cb386e959adc617b32fb4831932d919bc591fbf"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor006b_harness\\manifests.py",
+      "sha256": "96cb42514d2ef18e048d54dec482453097b822f89c6873ab589570b9ff41e867"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor006b_harness\\mechanism.py",
+      "sha256": "2f6af24c4fac328b7e441591f8c96b946c56842c46e86e29569ee438a1b60540"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor006b_harness\\metrics.py",
+      "sha256": "a91510234936fa1ac2c3cb0197d905160c4f68b24d389aab4f745185a297533a"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor006b_harness\\model_loaders.py",
+      "sha256": "4e16d7284e752164b0430c5b9231ef8a0194459a6ebdb6cd8ba6e2ec10b14792"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor006b_harness\\safety.py",
+      "sha256": "fe9cabccfc1d2f2342169097bb00ea86e377d49bccc2d8b1a3492a4720e933af"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor006b_harness\\scoring.py",
+      "sha256": "468cd9b1207eba332dcef32635622a20db632264f6649626b19bf7e46236e080"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor006b_harness\\__init__.py",
+      "sha256": "dd055aca4fc0bbe1cf54fa2868c320f3c2bfd3994289d0ee043ee8398474525e"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor011_confirmation\\bootstrap.py",
+      "sha256": "f26ec36267a523b9ec0d427e61df6000dd8bd77806d84bfcfe546662ab2c06e4"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor011_confirmation\\campaign.py",
+      "sha256": "7707ab3cea69fdec497217a7a0c158941f69179a0d1022ac452e352389a4e585"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor011_confirmation\\constants.py",
+      "sha256": "24edd749ebe0706629ccca2b96f3f2c9f7c9c93de693f0a731c1a167daf26002"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor011_confirmation\\data.py",
+      "sha256": "cd25e88550684d7e1199df8779ce0d86e13df04a9be44e93a0d5d1c6833148d4"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor011_confirmation\\evaluate.py",
+      "sha256": "1d3e01510cca2847ba96657a607ee8ca66ade8c276a666c809fe527293fb35bc"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor011_confirmation\\io_util.py",
+      "sha256": "2d7e2bcf07d24b77f7401977864126b02dbed3e63d8f025f8c7fac5d59b5616b"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor011_confirmation\\losses.py",
+      "sha256": "f5d2c885b03e573c8f2763c3c5471a86aa087c2d78947929cf4b121e92975cfc"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor011_confirmation\\metrics.py",
+      "sha256": "c34b67b3f3d825327a671ef0b265df6acd64a515f6ccd801b216f86de77d00ce"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor011_confirmation\\models.py",
+      "sha256": "5511b9e06b2768419c0919b891fa8c51862a2da6da638584dedf365c54e68235"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor011_confirmation\\producing.py",
+      "sha256": "797db8a006d0875960f47b1da99c9c3025fb8f090416e2089452647023284756"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor011_confirmation\\safety.py",
+      "sha256": "983d1cd6f0609bc1dd91e0096cded495e68a2d1dd81dfd936d311f7c77eb1249"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor011_confirmation\\train.py",
+      "sha256": "190c90b8595cff0ac0f8e0a1165d3820723620cc0eda0017702e4c66de9bf0fc"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor011_confirmation\\__init__.py",
+      "sha256": "ab1e465747a053f832b3dca43df7554d56d8ddc653716b9598c03dacf36685fd"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor012_rescue\\bootstrap.py",
+      "sha256": "ac08939afd17e290aec4c0ab83031335234bb16b63e44681573603ffd9f237e9"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor012_rescue\\campaign.py",
+      "sha256": "897423e984383ed50c7f63cc94e779846183c7a44afe1ec740ce34cce0c9da93"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor012_rescue\\constants.py",
+      "sha256": "fa41ad27132d6b56ba5fea9216a8cfc8ecc875f2cd38b082f5d9fbbe1c197dc0"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor012_rescue\\data.py",
+      "sha256": "80608d8a44892f688b6ea75d2274e56e6496ee184c6512aea0151546a4e0362e"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor012_rescue\\evaluate.py",
+      "sha256": "d6a67f9d425793ac293dcefc9368e173c1785c1d1434b0ac5ddf5c39a063cfac"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor012_rescue\\freeze.py",
+      "sha256": "efd7310fe654bbe99f33cc53457fcc3d8dc1a78fb213eefa1d2b2e77cd801166"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor012_rescue\\inner_split.py",
+      "sha256": "7a2649c087f8d2f3a48257d13fad65594f9ea153cfd11ff6a4593def74d2220d"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor012_rescue\\io_util.py",
+      "sha256": "61ca27945ef500660c18f0b7cf264e89e12ccd134b5937adbac38b34404f3ec1"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor012_rescue\\losses.py",
+      "sha256": "3828ebd4c3fe3091ac5147048adba3f172a364116a1b43eb9cd3d143e93a0ce4"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor012_rescue\\metrics.py",
+      "sha256": "f7b69420cba3d0e18e74ff9340b31f66b1b5760e48b34a745d02c6eb50eaeeef"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor012_rescue\\models.py",
+      "sha256": "56261513d4be6424972798a1afa2a3e312b35c84c0e3817e0c1b64161b2aebc7"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor012_rescue\\producing.py",
+      "sha256": "22f55e0413b67e67165a4f73ee05d52cc04c9901518ad50bba1b28c8a143e2a4"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor012_rescue\\promotion.py",
+      "sha256": "20aa39060ca18c2170cdae2d3cf7ee0eb0884885d47dd0179483e75e96eb2f1f"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor012_rescue\\safety.py",
+      "sha256": "d0c300445fc53ebc4d81a395cb160b20d25d93c516bd1e5f52416ba20b129625"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor012_rescue\\train.py",
+      "sha256": "c78d6ae6e853ede51e4a7a28d054b11b0cfd4875f236f61a52de3a17e4460336"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor012_rescue\\__init__.py",
+      "sha256": "e96da39586a801aa9a2ce587de0531986e192019f5934245cdc0d0fca56aa63e"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor023_architecture_value\\bootstrap_curves.py",
+      "sha256": "c010288c13bb758e9f67872d6595fe0380a7d7836aa6b532c47adbb81d2f535b"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor023_architecture_value\\campaign.py",
+      "sha256": "ba82f4a7838c0fd0f39a0b03935fd6b8da3c2fcffd6a245a5b5f92d88a5be6f2"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor023_architecture_value\\constants.py",
+      "sha256": "816a115fde434f987d8ee00b3d8d296fac82785867701fb709f546d25bc99814"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor023_architecture_value\\curves.py",
+      "sha256": "3b9c57f32c004238c243e12c7756013ea2903c67831a8a7f5488ee30a12951d2"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor023_architecture_value\\io_util.py",
+      "sha256": "67a853a22e20d0f2e633338db715f4bc7bced63516cff56d70428b1864ca0904"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor023_architecture_value\\perturbations.py",
+      "sha256": "91d6126c025828f1cda11f1522d425e9bc06954c837cfc057ba973a8ea157a9a"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor023_architecture_value\\protocol.py",
+      "sha256": "01afd54bae6c2a1349afd6d02e7ed779bac916ccaf94b05f814142135419cd3c"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor023_architecture_value\\ruling.py",
+      "sha256": "9607b151d4f643a3783bb7fc4d743c82e63c467ceed7956ccd70547427e46441"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor023_architecture_value\\safety.py",
+      "sha256": "83fb2ee09da11a6a18fba1d72c6ed607634579502001af2b9be8edd69aedc0e1"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor023_architecture_value\\stability.py",
+      "sha256": "48858bdcb26277499f7abdcbbb1d18ca8c716c14c0fbc60f197bba0c575022a6"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor023_architecture_value\\training_gate.py",
+      "sha256": "95f3e9969430da04ecf2ff3a61eed5398ab470fa851498bc3b4b203013fb2e99"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor023_architecture_value\\__init__.py",
+      "sha256": "413874120e0f2aa6805fb705cf0d1efa88591c22a281b54c628f16c28dbdd890"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\models\\sequence_ensemble.py",
+      "sha256": "43f16bce9c09305c7578d319dadf4c23c6c18cbe70fd7dcc1fda0114c86d6475"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\models\\sequence_ensemble_v2.py",
+      "sha256": "23dec170572b61528534d205855d751e177a99839621c0671cef9f378be462ba"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\models\\__init__.py",
+      "sha256": "3b675858c9bf793c580ad8a76759f5c0fde83c69d9930650b120896c556e649f"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_end_to_end_refinement\\checkpoints.py",
+      "sha256": "741b6f93859bcb342fb0e0634cac4aef9d1033510c8c61ef3ff05ffa3b93deb4"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_end_to_end_refinement\\gates.py",
+      "sha256": "8c61c1c469d1e3aed58480551b995a1368136768b72212bc00ce67bca14ce406"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_end_to_end_refinement\\probes.py",
+      "sha256": "e3f250b8ee0a695f3b5ec0e31627d3dac166e9f6c558edbd6f98cacc3ef35f9c"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_end_to_end_refinement\\protocol.py",
+      "sha256": "38e3988c43c5bf0b95492917443282927026a31c2f7d38203334ac9f53aba13e"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_end_to_end_refinement\\representations.py",
+      "sha256": "71cc3d6eb6589e4572d0bf2e3e31c3367d479ec623242e649f418b4aff9f5593"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_end_to_end_refinement\\safety.py",
+      "sha256": "15fe8c06fc06ebdffe89960380f17115a9a7af2740275c08a49e9efb4ea21c9d"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_end_to_end_refinement\\schedules.py",
+      "sha256": "b6b6a316f0deece01ef86ae5195aa1916824e44a35ce049d4f7fd33987bd9451"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_end_to_end_refinement\\shared_init.py",
+      "sha256": "a5dc0c1834b1b324601b9badd07169d254eb2878ea76be164e1d0d4c78b2c3cd"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_end_to_end_refinement\\train_micro.py",
+      "sha256": "83c7e5f715dc60edf4ed3025862e3971d9dca4a0594428f651e419c2f73fb75c"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_end_to_end_refinement\\__init__.py",
+      "sha256": "eedb31addd1a6f3def131ec7016da5ce7216239687553bac3c5ef00ac14c27d7"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_calibration_alert_burden\\alert_burden.py",
+      "sha256": "ecd383bbf6f628e08ac0608ea4aa97c0f1d0f5c540a5456db2357ea2045120be"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_calibration_alert_burden\\calibration.py",
+      "sha256": "c970b5826c865e051f67dbd01b00877200941df9efe272bca99421f91875116c"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_calibration_alert_burden\\comparison.py",
+      "sha256": "26ebe54620d9ab20881e31fe8d6815a49fd118f965a1eff7615ecb04cf716759"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_calibration_alert_burden\\constants.py",
+      "sha256": "e1c584a9907d7a165a5aab941e66690bb7266cbea0c28ca9fa752f26b0b16841"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_calibration_alert_burden\\evidence.py",
+      "sha256": "81679883e7a73d29d0eb777e979ae3dcb9bc67fa526e850ed51bf8fdb1a0a72f"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_calibration_alert_burden\\figures.py",
+      "sha256": "dd2023a7e782c8ec23a972bd7f5b0ce73392aaf72cad0e3458a25aa5d0c3c339"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_calibration_alert_burden\\pipeline.py",
+      "sha256": "d98ecd547def0a8d4f29ef72bb596c04370c14175f20250de7a199e1669ce7e9"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_calibration_alert_burden\\reports.py",
+      "sha256": "e6bffedf175301483dedaa7caad1a0e8f8bbad3d65e5d8d8e451c8d1ab41cbc6"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_calibration_alert_burden\\safety.py",
+      "sha256": "67ee49b7fa0c6d771a13b846f5394390772ab191510f60fb5473a737a4fb5590"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_calibration_alert_burden\\__init__.py",
+      "sha256": "ee3c64ae33827725af625ffeb1006a7da222f85f06939244c5fad57908aa48e1"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_calibration_alert_burden\\__main__.py",
+      "sha256": "8b95ec297680519d6813502a0a74aa654dfacc065c646c9b674c0f40c1678be1"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_component_latency_audit\\constants.py",
+      "sha256": "afa2b69ac1e271cb27f33c21c12eef14e376022530e193de7bf99ff7dafda338"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_component_latency_audit\\pipeline.py",
+      "sha256": "04921cd796de203924ba95344d79262094a605b8931934cb34922f4c720ba3e6"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_component_latency_audit\\profiling.py",
+      "sha256": "c20b52468ff84b87ba8245b51e860dbd1ddbbdf4f549cf08adbb2d0fc313c6c6"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_component_latency_audit\\safety.py",
+      "sha256": "3bd1d343a3fe179be3d4313222c6448627be732212271667286be25edeb400cf"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_component_latency_audit\\__init__.py",
+      "sha256": "49033b997670bbae24309e18008918844ff93b9566fadbc71052d774714130e6"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_component_latency_audit\\__main__.py",
+      "sha256": "9fb9f6e8f2a2f0afa774694ef5495fe43230541b0ff47e8cf3796c3949286d71"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_matched_temporal_learning\\bootstrap.py",
+      "sha256": "91df0f20044e900aa9c615a6e1173b8ffad96cddd45d753ca3612d132fb59d7c"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_matched_temporal_learning\\constants.py",
+      "sha256": "69cc351fc8281b7ce322630e61d6f4bc69fc655d89a4752bfc9a5545af239d2e"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_matched_temporal_learning\\figures.py",
+      "sha256": "0ab8fb264e1c8d2179fde2cfa8c44f952be148c0233dbebfb5338bde752e47e3"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_matched_temporal_learning\\metrics.py",
+      "sha256": "e5d8d053014759ffe44aaf93693bf1ae7cb987012870cdaf764a350bf61ba0af"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_matched_temporal_learning\\models_forward.py",
+      "sha256": "1fccbb53b4e583d40748c146a2d3e00459bc8c498f83d72d5e7de196f1e7fc82"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_matched_temporal_learning\\pipeline.py",
+      "sha256": "5ff46244024776297c4dcb3e268bbc1cbe76ca3887f7e130be57c2ec8f1c5203"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_matched_temporal_learning\\reports.py",
+      "sha256": "b0636e5ef1de325d58eaa41a490e7f6816c6e22ece67f2fb978261e2a5e3e32b"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_matched_temporal_learning\\safety.py",
+      "sha256": "1cf118cee6a6b2238e1922b3bd92d0fba07e2d44c8f3deaacfbc34bd594796d2"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_matched_temporal_learning\\transforms.py",
+      "sha256": "00140206f187711be02ddb381fffc48170f1b8b42c708a3a7d66798f11de9ab3"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_matched_temporal_learning\\__init__.py",
+      "sha256": "f48bdbcbbbe91a2ae46a0148d520aca59f396e1edd8f8a5df471866f90f77e5c"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_odst_8tree_ablation\\constants.py",
+      "sha256": "f2dbf62747b372433563a95f2dcd77061b4895a53089d37cd9d0c845852a7ef1"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_odst_8tree_ablation\\fidelity.py",
+      "sha256": "db2dda565351610bbd961655cb10b95f85d59a1d7895b0b23477aab2e1b9ab1c"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_odst_8tree_ablation\\gate.py",
+      "sha256": "b86b9c424a680194538f315a1da5c2b8bdc7c872dc9fcc8d8196c4bcff57847e"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_odst_8tree_ablation\\pipeline.py",
+      "sha256": "c52bf29da6b6cba8f3ae256c90108bffaa5072062ee208b05db95b3d605b43cd"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_odst_8tree_ablation\\safety.py",
+      "sha256": "c2b35d63b52b73e3dde0ced4524371572e88f16e2ae95f4cfca6dd235cbd5762"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_odst_8tree_ablation\\student_train.py",
+      "sha256": "9dafe709671d01dbf6ec953f04c5b0f1a3ec7a7c4dd99f113d0d0b14d953f958"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_odst_8tree_ablation\\teacher_stage_b.py",
+      "sha256": "dfe08480c9dd4efc551bcdca5eafcaec3ca41b287cf19863394923a45470533c"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_odst_8tree_ablation\\__init__.py",
+      "sha256": "c283fbcfa2dd5760b761e19127125516554d7e217fbfa84c460676086b29ae74"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_odst_8tree_ablation\\__main__.py",
+      "sha256": "9fb9f6e8f2a2f0afa774694ef5495fe43230541b0ff47e8cf3796c3949286d71"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_same_information_baselines\\analyses.py",
+      "sha256": "9948287fa3d6cacb4d9dd506d0c0b75ac1df1810460d614a4ef6519c19cce110"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_same_information_baselines\\constants.py",
+      "sha256": "edd2a92e621a4614a2055e736439c31ffcb619df3b274a36bd2880bc08726b41"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_same_information_baselines\\data.py",
+      "sha256": "5a9cff3595f725f902cb84293b0b7dfbf75cd90d28e8d99dbd71213299811ce5"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_same_information_baselines\\evidence.py",
+      "sha256": "9c9d0705bc2be23f4b4977515b1f48f68c754e3b28afa5e7d07510842b04a731"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_same_information_baselines\\figures.py",
+      "sha256": "491ac9f8b1690ba576caeaa6f9949428dfd065165d9b6fba4bb4367afb4dcbbf"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_same_information_baselines\\metrics.py",
+      "sha256": "a49cc3b13c71e9b68db42fd16fd9da869bdd80d098760c6920a2a1350f6f55e5"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_same_information_baselines\\models.py",
+      "sha256": "091ffb8894348ffe554e47da228ce97d388c59e3951ec08541aa1eee179f35df"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_same_information_baselines\\pipeline.py",
+      "sha256": "0a6e203726e7bc9cfd4d267c0eea3eace483d7372f07cd85a8869f3551fbabeb"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_same_information_baselines\\reports.py",
+      "sha256": "92adbf1303a254eedee850ed54bb3d55ce5080afa09317ad5e2f676735c10b3a"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_same_information_baselines\\safety.py",
+      "sha256": "d11e5b513b1719264b3d48152c51edde837a9ff12f38f9588db0dba740e6ed4c"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_same_information_baselines\\__init__.py",
+      "sha256": "fd25aeaf7db52bee86581ca70a075b6b57a0c4e5ea1d8f82d7c594e343c8460b"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_teacher_anchored_reproducibility\\constants.py",
+      "sha256": "4762d2248dc984ad6e7fba788bbb87f0c80a6b56d7b7f76b7dcf8d9d57437d40"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_teacher_anchored_reproducibility\\data.py",
+      "sha256": "42ed2fc44ff857cd682ca6040ea2d2ce5b1d64195bfa06527d46955d42ef4d52"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_teacher_anchored_reproducibility\\reports.py",
+      "sha256": "4947bab1fb441c1fbbfa6b1a2c26eaafe926bda11edd1731385eab9a42306f27"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_teacher_anchored_reproducibility\\safety.py",
+      "sha256": "c7a4cace3e070a31f621f2dd421db4f400f26683c9b579cc2b6b1f9a3960958e"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_teacher_anchored_reproducibility\\status.py",
+      "sha256": "d7807ea3f3708861b3826ef338900114d5fa8425497d7883eec9e14e42b75ffd"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_teacher_anchored_reproducibility\\__init__.py",
+      "sha256": "4c9c55c5a4cd09d6b4e4d30a6d0487b1eb357c1d25eb01c4841bcd9bb4c7897e"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_teacher_anchoring_ablation\\aggregate.py",
+      "sha256": "d3a84f340e11c40774b2b0239e20eb017dfd3d5a6e40d2a59811c0ad8fc40df8"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_teacher_anchoring_ablation\\constants.py",
+      "sha256": "f5014b96f1007387909ac0f0f2423ea916c77e046dd7ea57c656111d20a0fde4"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_teacher_anchoring_ablation\\safety.py",
+      "sha256": "807b4a401129314531493b978750a0f4a62089c03366cdfa2d31422b92dd8b9e"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_r52_teacher_anchoring_ablation\\__init__.py",
+      "sha256": "229d972afff0de0060cd678bf9e24c3c43008780011aa9399a25cb51252b860f"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_teacher_anchored_odst\\config.py",
+      "sha256": "0afd3825202a8c3e1ba34ec12030af0cd8330cc7e3cd7f147debcf624e3dbfad"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_teacher_anchored_odst\\models.py",
+      "sha256": "dc5b9848eeb92e23e18fda60c3bc0d7f805353ea2ef7a1e327792cfb3ea0948a"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_teacher_anchored_odst\\safety.py",
+      "sha256": "ddf7bd8a54fa102f41487824d709e8e6c29d376bccbf1ace9e446f83ee40fb1c"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_teacher_anchored_odst\\train.py",
+      "sha256": "8a7a97afe829a7ef438461eaefaa786bfa1b58e8577869da133ffc4c4011a831"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_teacher_anchored_odst\\viability.py",
+      "sha256": "daff011745077f7f186630e69272a090799bdc464445fbd9fc43ccaa7a8f0ca4"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_teacher_anchored_odst\\__init__.py",
+      "sha256": "e6de8dc821530142582779ab23797c1d1e8aa131981d964e5c393b92ebe98e3a"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_temporal_value_analysis\\constants.py",
+      "sha256": "faff923e59669895ae165d2f41a70f8f7617532365ba30383bb1be089bc386ed"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_temporal_value_analysis\\eval.py",
+      "sha256": "406da35efda8eb813d10c865b8f838d66a00e57258393136c9588e13c6bbb223"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_temporal_value_analysis\\reports.py",
+      "sha256": "77a3a75c7733c904d874ee7e351b0a474fb68d9cf5a02ea447976759defa02ed"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_temporal_value_analysis\\safety.py",
+      "sha256": "ec1f68644c74e2f310762f622441bab905466f0d6d3100365f9f262ddcbc3cb5"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_temporal_value_analysis\\transforms.py",
+      "sha256": "01c4b24c214620c09df8158cf7933ccced1f3924b2e1a1dba5e6716fa4d896aa"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\objective2_temporal_value_analysis\\__init__.py",
+      "sha256": "452dd2504600a783963355f2b1f3fb6b64e0a64d91e4e804edf17f5b4fc0767b"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\prototype_v2\\architecture.py",
+      "sha256": "bde51d79c25a6c119d819c012bdd22f6c23dd02198e929bc4a4eb567c82ef973"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\prototype_v2\\data.py",
+      "sha256": "d30199bc9168e8cbb93e8dbd84e1f088603cf1339d523254d3d1bb561378ff88"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\prototype_v2\\diagnostics.py",
+      "sha256": "d968a319f4a92593bb7d56d5b2eafe4c1674597500c107c01fcd7c14cf2a434f"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\prototype_v2\\protocol.py",
+      "sha256": "320bba48b9f320555735cca202ecb41d1e9ca7d4730ef2caca6b20480a693dd4"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\prototype_v2\\safety.py",
+      "sha256": "cf504e5e1965e598ac795919e41cef5386894a0532e0c9af92dd8d367f5505ea"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\prototype_v2\\__init__.py",
+      "sha256": "1432547dcc3f292de7eea826428522ec15c8770c3928c4534de6fd1e140d16ec"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\prototype_v3_node\\architecture.py",
+      "sha256": "d9bdef39ce9d2afaa6cfcce210b59b61a68178b6895c4687d10459f088fa9221"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\prototype_v3_node\\diagnostics.py",
+      "sha256": "cbedc0eac2b56d628470fba1828c4696b7fb9e2108c1b565072d3cb346ceb45b"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\prototype_v3_node\\losses.py",
+      "sha256": "8dfa7c286159dcbe814e913b1aab906af3a8962910e96c59f93ff3d620340f75"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\prototype_v3_node\\odst.py",
+      "sha256": "3eb9563396601d8bd649d628a13c1d8e828de5eaaf113db289c8327c98563601"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\prototype_v3_node\\protocol.py",
+      "sha256": "ca4ad2423474c138f2a4fbd1b2c6ea359a45030a307b46890681aee6460d7cdb"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\prototype_v3_node\\safety.py",
+      "sha256": "1fa642a9dbcebf960749a733db9aae320ef3ae4d0a14547f425a40b63cc2923b"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\prototype_v3_node\\train.py",
+      "sha256": "5b23c7d03ba4a7a2278a804b323e54bd1e2a366fd00337b8d23ee460f9f663f4"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\prototype_v3_node\\__init__.py",
+      "sha256": "993d09ea465f6b0900d8ebb1e0fec31f57c9e15ed96d4da014122623e4b73314"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\scripts\\__init__.py",
+      "sha256": "93c105ff14a83d1c67efeda49c46892d5e86fde5f82eb64e29e088366a0da624"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\scripts\\r52_locked_baselines\\consolidate.py",
+      "sha256": "67b21134c0b47a688dbff2ba855697da799d546f9be29eb5649dd0d40c9f95dc"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\scripts\\r52_locked_baselines\\data.py",
+      "sha256": "0e9ad707221f6278f99b9fe143383386d0b01e3617151a0c3ef27d7ee776dfcf"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\scripts\\r52_locked_baselines\\evaluate_r52_test_guarded.py",
+      "sha256": "d9894523b17baf743c3ea3e7bd9b9fb0e9eda7e112b70d2e7327ed56f2815a85"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\scripts\\r52_locked_baselines\\freeze_preregistration.py",
+      "sha256": "e69b581e72ac23a1faf3c5a1ed0e221cb63587fcac3e95e969a45f490b7fcf8f"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\scripts\\r52_locked_baselines\\guards.py",
+      "sha256": "5814f9e539eed3800025fc7a7893f184d0c45714f7ed998051981ae25908cc10"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\scripts\\r52_locked_baselines\\inference.py",
+      "sha256": "900cb467a6de159fab1652ce14884c243747ad8c90b32b5f7bd399127fce192b"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\scripts\\r52_locked_baselines\\lock_configs.py",
+      "sha256": "2f87802f4b0d5ce959ac4c543840dd79c659aab9a4a9dd4d3dbdb69f5c3f4bb6"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\scripts\\r52_locked_baselines\\metrics.py",
+      "sha256": "af1e4fc015e73a84962eabb316a86656cbd6fddc2744d505666d5f8f1c623edf"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\scripts\\r52_locked_baselines\\run_pipeline.py",
+      "sha256": "03c5265cfde5389269406c905d80dbd23626751cf879539e0011174a932d6354"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\scripts\\r52_locked_baselines\\safety.py",
+      "sha256": "1ead980d7b85a90b49f131b023fe23f226140b7835f9ba69f38d45a9ddcdcd88"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\scripts\\r52_locked_baselines\\train.py",
+      "sha256": "63577243bac27256d4452a830e9368c10a7855d37e08f6c3408813ec8aa595bd"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\scripts\\r52_locked_baselines\\write_freeze_manifest_v2.py",
+      "sha256": "4a404ae3fb697a4fc45b48274acadbc3fcd7e6f4dfa3fe6292a61cd29920c30a"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\scripts\\r52_locked_baselines\\write_postrun_audit.py",
+      "sha256": "6c85c0d08e28b9cb2fae90c9b3861afdd8d1cf65ec68f9ff8e92b0bba93acd2b"
+    },
+    {
+      "path": "C:\\PhD\\07_Projects\\r2_holdout\\src\\scripts\\r52_locked_baselines\\__init__.py",
+      "sha256": "d975be05a8d827eedc7d018fe3ce2c2351e44ab754e1b716d0ad63fd4e209028"
+    }
+  ],
+  "data_manifest_sha256": "a94fbb2e932a8acc5b45a7a23f5bd1a4dd81257303128463b823ea9d99d02c58",
+  "scaler_sha256": "868bcc465ebb0f254597c948096427d252b911a9c0ceefe2396d8809e54fe1dc",
+  "holdout_list_sha256": "9aa35a84e0ddb723bf11b1f332bdaad224b2db50bde01c06579e8930356dd001",
+  "development_list_sha256": "7559b7357eb1b4c7fbb11a23bbee9da6bc2262e8af53163f263e9f91fdc48aad",
+  "phase1_gate": {
+    "observed_utc": "2026-10-21T15:23:11.694317+00:00",
+    "phase1_report_sha256": "81f7ade1bb91e3be62e4898c54bd73c8d60580791c7f82ae0d0907f45177b2f5",
+    "marker": "PHASE1_COMPLETE"
+  },
+  "version": 2,
+  "supersedes_freeze_sha256": "d43fa78c47d4b176df501ad1885a861085379ee9ecdcea833027564de670b4a4",
+  "configs_frozen_sha256": "0ba1ec321f9f73b872522ec43be142b72c724946ef3409191a73c398133fef1a",
+  "parity_gate_sha256": "7cf0f1a98051f0e72045fdca5fc9bada43b8c54a0d52812941977f046b75fa81",
+  "parity_gate_status": "PARITY_GATE_FIXED",
+  "environment_sha256": "c3dfe09b3a7c9a49ede4687220737aac9fcdc5bd9a3d1d1c514e95fc76ce4390",
+  "parity_verification_sha256": "9d6a10309b37a5a05f44c4b355d92c437a0d70efaf474b8e8e2081c34ffded95"
+}

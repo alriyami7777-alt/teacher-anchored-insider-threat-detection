@@ -1,0 +1,17 @@
+{
+  "note": "Files changed for the public copy. All other files are byte-identical to the frozen run; reproduce_unseen_seed42.py check verifies this against MODELS_FROZEN.json.",
+  "files": [
+    {
+      "file": "phase2_prepare.py",
+      "reason": "A path to the author's local prompt file was replaced by <PRIVATE_PATH_TO_PROMPT_TEXT>. The script only wrote the pre-registration file and is not run during reproduction.",
+      "original_sha256": "c4ff93d7c4b93509ceaf18c5ee60b07d8fb1539a50a3238ecdd67c0be8837aee",
+      "published_sha256": "b8e970ff09bb4cae313eaec12d7b765b418f68c24175efcb9df8d6f8f88e30b9"
+    },
+    {
+      "file": "src/cert_ground_truth.py",
+      "reason": "A CERT user ID in an example file-name comment was replaced by <USERID>. No code changed.",
+      "original_sha256": "10ed68a88c1a296b656c7e9694ded9d866ac9172ebf1f351514ddea0518c3084",
+      "published_sha256": "896e4ed6019e43d95c42001e2bfbd02067e846306cfd686e3262d47139fc66e0"
+    }
+  ]
+}

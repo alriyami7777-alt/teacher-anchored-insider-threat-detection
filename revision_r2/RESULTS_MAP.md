@@ -30,7 +30,7 @@ Keyed by LaTeX label, because table and figure numbers may still change. The **N
 | Label | No. | Result | Output files | Producing code | Settings |
 |---|---|---|---|---|---|
 | `tab:r52_components` | T7 | TRACE, matched variants and references on r5.2 validation (all 2,000 users) | `../results/tables/r52_validation_all_models.csv`; factorial `E/editor012-teacher-anchor-rescue/.../02_factorial_confirmation/EDITOR012_FACTORIAL_RESULTS.csv`; L1 `E/editor013-odst-value-proof/.../02_validation_confirmation/EDITOR013_VALIDATION_RESULTS.csv`; XGBoost-40/RF-40 per `DISCLOSURES.md` D1 | `../src/editor012_rescue/`, `../src/editor013_odst_value/` | Seeds 42/52/62; validation-selected checkpoints |
-| `tab:holdout`, `fig:holdout` | T8, F6 | 17 models on the 500 unseen users | `holdout/phase4/HOLDOUT_RESULTS.csv`, `HOLDOUT_CONTRASTS.csv`, `CHATGPT_PHASE4_REPORT.md` | Figure: `paper_figures/plot_holdout.py`. Training/scoring code: see *Gaps* | Retrained on 1,500 development users; scored once; frozen development thresholds; seeds 42/52/62 |
+| `tab:holdout`, `fig:holdout` | T8, F6 | 17 models on the 500 unseen users | `holdout/phase4/HOLDOUT_RESULTS.csv`, `HOLDOUT_CONTRASTS.csv`, `CHATGPT_PHASE4_REPORT.md` | Figure: `paper_figures/plot_holdout.py`. Training and scoring: `holdout/code/phase2_runtime.py`, `holdout/code/phase4/score.py`; reproduction: `holdout/reproduce/reproduce_unseen_seed42.py` | Retrained on 1,500 development users; scored once; frozen development thresholds; seeds 42/52/62 |
 | `tab:operational` | T9 | Insider-level and operational results, unseen users | `phase5/C_INSIDER_DETECTION.csv`, `C_ALERT_EPISODES.csv`, `C_USERS_FLAGGED_PER_DAY.csv`, `C_TOPK_TRIAGE.csv`, `C_SCENARIO_DETECTION.csv`, `C_OPERATIONAL_SUMMARY.csv` | `phase5/reproducibility_code/operational.py` | Per-seed fixed development thresholds |
 | `fig:teacher_guidance_component_effects` | F7 | Paired component contrasts, r5.2 validation | Values from `E/editor011-matched-route-confirmation/.../EDITOR011_USER_CLUSTER_BOOTSTRAP.json`, `E/editor012-teacher-anchor-rescue/.../EDITOR012_CLUSTER_BOOTSTRAP.json`, `E/editor023-positive-architecture-value/.../EDITOR023_CLUSTER_BOOTSTRAP.json` | `paper_figures/plot_components_dependence.py` | 2,000 user-cluster replicates (historical manifests) |
 | `fig:same_information_comparison` | F8 | Same 20×13 inputs, development-user validation | `phase6/I2_SAME_INFORMATION.png` (identical file), `I2_SAME_INFORMATION_data.csv`, `I2_SAME_INFORMATION.csv`, `I2_PAIRED_CIS.csv` | `phase6/reproducibility_code/report6.py`, `inference6.py` | 48,000 windows, 473 positive |
@@ -67,7 +67,9 @@ Keyed by LaTeX label, because table and figure numbers may still change. The **N
 ## How this map was checked
 For each results table, the numbers in the LaTeX source were compared with the listed CSV/JSON files. Five figures (F8, F9, F10, F11 and F13) are byte-identical to the PNG listed.
 
-## Gaps (being closed before the tagged release)
-- **Unseen-user retraining and scoring (`tab:holdout`, Phase 4):** the frozen recipes, logs and results are here. The training and scoring code is not yet in `revision_r2/holdout/`.
-- **Explanation runs (`revision_r2/explanation*/`):** outputs and code hashes are here. The code itself is not yet included.
+## Code for the unseen-user and explanation results (added 23 Oct 2026)
+- **Unseen-user retraining and scoring (`tab:holdout`, `fig:holdout`):** frozen code in `holdout/code/` (split, data rebuild, training recipes, scoring); data preparation from raw CERT r5.2 in `holdout/data_prep/`; seed-42 checkpoints in `holdout/checkpoints_seed42/`; step-by-step reproduction in the main README section "Reproduce the unseen-user result (seed 42)".
+- **Explanation runs (`explanation/`, `explanation_holdout/`):** code in `explanation/code/` (see `explanation/CODE_NOTE.md`).
+
+## Gaps
 - **Phases 6C and 7:** not yet included.

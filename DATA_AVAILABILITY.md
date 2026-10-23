@@ -11,7 +11,7 @@ The following must not be committed:
 - raw CERT event files;
 - processed user-level datasets;
 - answer packages or insider identity files;
-- model checkpoints;
+- model checkpoints (one exception: the three seed-42 checkpoints in `revision_r2/holdout/checkpoints_seed42/`, published on 23 October 2026 so the unseen-user result can be checked; they contain weights, settings and thresholds only);
 - large tensor, prediction, or cache files;
 - credentials or tokens;
 - absolute local file paths;

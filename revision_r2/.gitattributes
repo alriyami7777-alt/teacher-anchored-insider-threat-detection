@@ -1,2 +1,7 @@
 # Keep reproducibility scripts byte-identical so their SHA-256 matches the frozen protocol hashes.
 **/reproducibility_code/*.py -text
+# Frozen code published for the unseen-user and explanation runs: keep exact bytes (hashes in MODELS_FROZEN*.json and CODE_HASHES.json).
+holdout/code/** -text
+holdout/data_prep/** -text
+explanation/code/** -text
+holdout/checkpoints_seed42/** -text

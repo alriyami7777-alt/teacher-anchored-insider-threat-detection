@@ -1,0 +1,26 @@
+[
+  {
+    "source_commit": "563f4981df6dc9dc4e0f96410c32b728706310f0",
+    "source_path": "scripts/r52_locked_baselines/__init__.py",
+    "copied_path": "C:\\PhD\\07_Projects\\r2_holdout\\parity_source\\r52_locked_baselines\\__init__.py",
+    "sha256": "d975be05a8d827eedc7d018fe3ce2c2351e44ab754e1b716d0ad63fd4e209028"
+  },
+  {
+    "source_commit": "563f4981df6dc9dc4e0f96410c32b728706310f0",
+    "source_path": "scripts/r52_locked_baselines/data.py",
+    "copied_path": "C:\\PhD\\07_Projects\\r2_holdout\\parity_source\\r52_locked_baselines\\data.py",
+    "sha256": "0e9ad707221f6278f99b9fe143383386d0b01e3617151a0c3ef27d7ee776dfcf"
+  },
+  {
+    "source_commit": "563f4981df6dc9dc4e0f96410c32b728706310f0",
+    "source_path": "scripts/r52_locked_baselines/safety.py",
+    "copied_path": "C:\\PhD\\07_Projects\\r2_holdout\\parity_source\\r52_locked_baselines\\safety.py",
+    "sha256": "1ead980d7b85a90b49f131b023fe23f226140b7835f9ba69f38d45a9ddcdcd88"
+  },
+  {
+    "source_commit": "563f4981df6dc9dc4e0f96410c32b728706310f0",
+    "source_path": "scripts/r52_locked_baselines/metrics.py",
+    "copied_path": "C:\\PhD\\07_Projects\\r2_holdout\\parity_source\\r52_locked_baselines\\metrics.py",
+    "sha256": "af1e4fc015e73a84962eabb316a86656cbd6fddc2744d505666d5f8f1c623edf"
+  }
+]

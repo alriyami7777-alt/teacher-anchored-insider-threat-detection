@@ -1,0 +1,4 @@
+"""EDITOR-012 teacher-anchor predictive rescue."""
+
+CAMPAIGN = "EDITOR-012 TEACHER-ANCHOR PREDICTIVE RESCUE"
+TASK_ID = "EDITOR-012"
