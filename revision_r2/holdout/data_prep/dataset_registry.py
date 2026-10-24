@@ -26,19 +26,12 @@ REQUIRED_ACTIVITY_LOGS: tuple[str, ...] = (
 
 CORE_EVENT_LOGS: tuple[str, ...] = ("logon", "device", "file", "email", "http")
 
-# Known non-canonical / incomplete trees — never auto-selected.
-FORBIDDEN_RAW_SOURCES: tuple[Path, ...] = (
-    Path(r"C:\PhD\07_Projects\r5.2"),
-    Path(r"C:\PhD\07_Projects\r6.2"),
-    Path(r"C:\PhD\06_Datasets\CERT_r6.2"),
-    Path(r"C:\PhD\07_Projects\cert-r5.2"),
-)
+# Public copy: the authors' machine-specific blocklist and fallback paths were removed
+# (see data_prep/README.md). Pass --raw-dir explicitly. A raw folder is still accepted
+# only if it contains the CERT activity CSVs (_looks_like_release_root).
+FORBIDDEN_RAW_SOURCES: tuple[Path, ...] = ()
 
-# Explicit fallbacks only when junction paths are absent.
-CANONICAL_EXTERNAL_RAW: dict[str, Path] = {
-    "5.2": Path(r"C:\PhD\06_Datasets\CERT r5.2\r5.2"),
-    "6.2": Path(r"C:\PhD\06_Datasets\r6.2\r6.2"),
-}
+CANONICAL_EXTERNAL_RAW: dict[str, Path] = {}
 
 
 @dataclass(frozen=True)

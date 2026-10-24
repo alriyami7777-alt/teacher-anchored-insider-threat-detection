@@ -59,6 +59,7 @@ The work uses the frozen code under `revision_r2/holdout/code/`, run through `re
 - **The CERT answers package folder.** It contains `insiders.csv` and the folders `r5.2-1` … `r5.2-4`. Below it is called `ANSWERS`.
 - **Python 3.11** and enough free disk for the intermediate Parquet files of step 3 (event-level, event-stream and daily tables).
 - **A private work folder outside the clone.** Below it is called `WORK`. It will hold user IDs, tensors and checkpoints. Never commit or upload it.
+  - **`WORK` must not be the clone folder or any folder inside it.** Clone the repository somewhere else, for example `C:\Repro\teacher-guided-insider-threat-detection` with `WORK` = `C:\Repro\work`. `reproduce_unseen_seed42.py` refuses to run if `WORK` is inside the clone.
 
 In the commands below, replace `R52_RAW`, `ANSWERS` and `WORK` with full paths on your machine. The commands are for Windows PowerShell. On Linux or macOS, use `/` in paths, `\` instead of the backtick at line ends, and `export NAME=value` instead of `$env:NAME = "value"`.
 
@@ -86,6 +87,7 @@ python revision_r2/holdout/data_prep/prepare_cert_common13_pipeline.py --dataset
   --processed-dir "WORK\processed" --output-dir "WORK\prep_reports" `
   --stages match,label_events,unified_stream,daily_intervals,densify
 ```
+- `--raw-dir` must be the folder that directly contains `logon.csv`, `device.csv`, `file.csv`, `email.csv` and `http.csv`.
 - This step writes `WORK\processed\interval_level\r52_user_day_intervals_dense.parquet`.
 - The `match` stage reads the answers package to label malicious events. That is the only use of answer-file content.
 - The scripts are the preparation pipeline used for the paper's data on 23 July 2026; see `revision_r2/holdout/data_prep/README.md` for their provenance. Step 6's `build` checks the result against the hashes of the paper's own tensors.
