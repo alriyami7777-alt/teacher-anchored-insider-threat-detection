@@ -80,22 +80,26 @@ pip install -r requirements.txt --extra-index-url https://download.pytorch.org/w
 ```
 On Linux, use `python3.11 -m venv .venv-r2` and `source .venv-r2/bin/activate`, then the same `pip install` line. The pinned CUDA build of PyTorch also runs on a machine without a GPU, which is enough for the load route. macOS has no CUDA build: there, install `torch==2.11.0` from PyPI and the remaining lines of `requirements.txt`.
 
+On Windows 11 with **Smart App Control** turned on, Windows may block a DLL in the pinned `pyarrow` wheel, so `import pyarrow` fails. Smart App Control is a Windows security setting, not a problem with the repository. If you see this, use the Linux instructions inside WSL (for example Ubuntu 24.04 with Python 3.11). The CERT folders on the Windows drive are reachable there under `/mnt/c/...`.
+
 ### 3. Build the day-level table from the raw CERT r5.2 files (CPU; the longest step)
 ```powershell
 python revision_r2/holdout/data_prep/prepare_cert_common13_pipeline.py --dataset-version 5.2 `
   --raw-dir "R52_RAW" --answers-dir "ANSWERS" `
-  --processed-dir "WORK\processed" --output-dir "WORK\prep_reports" `
+  --processed-dir "WORK\processed\r5.2" --output-dir "WORK\prep_reports" `
   --stages match,label_events,unified_stream,daily_intervals,densify
 ```
 - `--raw-dir` must be the folder that directly contains `logon.csv`, `device.csv`, `file.csv`, `email.csv` and `http.csv`.
-- This step writes `WORK\processed\interval_level\r52_user_day_intervals_dense.parquet`.
+- `--processed-dir` must include a folder named `r5.2`; end it with `r5.2`, as shown. Otherwise the script stops with "must be under a 'r5.2' folder".
+- Do not use these folder names anywhere in the `WORK` path, because the script refuses to write into them: `objective2`, `objective3`, `baselines`, `sequence_ensemble`, `chapter4`, `v2`, `v3_fusion`, `v3_node`.
+- This step writes `WORK\processed\r5.2\interval_level\r52_user_day_intervals_dense.parquet`.
 - The `match` stage reads the answers package to label malicious events. That is the only use of answer-file content.
 - The scripts are the preparation pipeline used for the paper's data on 23 July 2026; see `revision_r2/holdout/data_prep/README.md` for their provenance. Step 6's `build` checks the result against the hashes of the paper's own tensors.
 
 ### 4. Point the reproduction script at the data
 ```powershell
 $env:R2_WORK = "WORK"
-$env:CERT_R52_DENSE = "WORK\processed\interval_level\r52_user_day_intervals_dense.parquet"
+$env:CERT_R52_DENSE = "WORK\processed\r5.2\interval_level\r52_user_day_intervals_dense.parquet"
 $env:CERT_R52_ANSWERS = "ANSWERS"
 cd revision_r2/holdout/reproduce
 python reproduce_unseen_seed42.py check
