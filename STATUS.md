@@ -25,10 +25,12 @@ manuscript. Evidence is recorded in two layers.
   records of the stage that produced them. They are not restated as current
   claims.
 
-CERT r6.2 is outside the current manuscript. The current evidence streams are
-CERT r4.2 development evidence, CERT r5.2 historical guarded-reference evidence
-plus final train/validation evidence, and CERT r6.1 one-pass cross-release
-evidence.
+In the August 2026 resubmission the evidence streams were CERT r4.2
+development evidence, CERT r5.2 historical guarded-reference evidence plus
+final train/validation evidence, and CERT r6.1 one-pass cross-release evidence;
+CERT r6.2 was outside that manuscript. The R2 manuscript adds the user-disjoint
+r5.2 evaluation, zero-shot r5.1 and r6.2 cross-release results, and exploratory
+r6.2 training (see the README section "Evidence streams" and `revision_r2/`).
 
 ## Data preparation
 

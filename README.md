@@ -31,8 +31,9 @@ The final model is called **TRACE** in the revised manuscript (internal label TA
 | Pre-registered user-disjoint holdout protocol, with Amendment 1 (TRAIN + VALIDATION periods; r5.2 TEST sealed) and Amendment 2 (eight additional baselines), each SHA-256 receipted | `revision_r2/holdout/PREREGISTRATION_R2_HOLDOUT.md` |
 | Split receipt (counts and list hashes only) | `revision_r2/holdout/SPLIT_RECEIPT.json` |
 | Training logs and frozen-model hashes | `revision_r2/holdout/TRAINING_LOG.csv`, `revision_r2/holdout/phase4/TRAINING_LOG_PHASE4.csv`, `MODELS_FROZEN_PHASE4.json` |
-| Table 10 / Fig. 10 (unseen users, 17 models, all views) | `revision_r2/holdout/phase4/HOLDOUT_RESULTS.csv`, `HOLDOUT_CONTRASTS.csv`, `CHATGPT_PHASE4_REPORT.md`; plotting script `revision_r2/holdout/figures/plot_holdout.py` |
-| Integrated Gradients and TreeSHAP faithfulness (Section IV-E) | `revision_r2/explanation/` (validation cohort) and `revision_r2/explanation_holdout/` (unseen users) |
+| Table 6 / Fig. 6, Section IV-C (unseen users, 17 models, all views) | `revision_r2/holdout/phase4/HOLDOUT_RESULTS.csv`, `HOLDOUT_CONTRASTS.csv`, `CHATGPT_PHASE4_REPORT.md`; plotting script `revision_r2/holdout/figures/plot_holdout.py` |
+| Integrated Gradients and TreeSHAP faithfulness: validation cohort (Section IV-I, Fig. 9); unseen users (Section IV-G, Table 8, Fig. 8) | `revision_r2/explanation/` (validation cohort), `revision_r2/explanation_holdout/` and `revision_r2/phase6b/` (unseen users) |
+| Eight seeds on the unseen users (Fig. 7, Section IV-C) | `revision_r2/phase8/` (Q1) |
 | Frozen evidence behind every other table and figure (redacted: user IDs replaced by `U_` + first 10 hex digits of SHA-256) | `revision_r2/evidence/` with `EXPORT_MANIFEST.csv` and `FINAL_SCAN.json` |
 | Supplementary material source | `revision_r2/Supplementary_Material.tex` |
 | Disclosures (model-selection history, AI use, exclusions) | `revision_r2/DISCLOSURES.md`, `revision_r2/EXCLUDED_FROM_PUBLIC_COPY.md` |
@@ -57,7 +58,7 @@ The work uses the frozen code under `revision_r2/holdout/code/`, run through `re
 ### 0. What you need
 - **The CERT r5.2 release folder.** It contains `logon.csv`, `device.csv`, `file.csv`, `email.csv` and `http.csv`. Below it is called `R52_RAW`.
 - **The CERT answers package folder.** It contains `insiders.csv` and the folders `r5.2-1` … `r5.2-4`. Below it is called `ANSWERS`.
-- **Python 3.11** and enough free disk for the intermediate Parquet files of step 3 (event-level, event-stream and daily tables).
+- **Python 3.11** and enough free disk for the intermediate Parquet files of step 3 (event-level, event-stream and daily tables). Plan for more than 20 GB in `WORK` and plenty of RAM: step 3 runs DuckDB with an 8 GB memory limit (set in `cert_common13_pipeline.py`) on top of Python's own use. In the independent test run, step 3 took about 1 h 50 min.
 - **A private work folder outside the clone.** Below it is called `WORK`. It will hold user IDs, tensors and checkpoints. Never commit or upload it.
   - **`WORK` must not be the clone folder or any folder inside it.** Clone the repository somewhere else, for example `C:\Repro\teacher-guided-insider-threat-detection` with `WORK` = `C:\Repro\work`. `reproduce_unseen_seed42.py` refuses to run if `WORK` is inside the clone.
 
@@ -90,6 +91,7 @@ python revision_r2/holdout/data_prep/prepare_cert_common13_pipeline.py --dataset
   --stages match,label_events,unified_stream,daily_intervals,densify
 ```
 - `--raw-dir` must be the folder that directly contains `logon.csv`, `device.csv`, `file.csv`, `email.csv` and `http.csv`.
+- If step 3 is interrupted, rerun it with `--stages` listing only the stage that stopped and the stages after it (order: `match`, `label_events`, `unified_stream`, `daily_intervals`, `densify`). Each stage deletes and rewrites its own output and reads the files of the stage before it.
 - `--processed-dir` must include a folder named `r5.2`; end it with `r5.2`, as shown. Otherwise the script stops with "must be under a 'r5.2' folder".
 - Do not use these folder names anywhere in the `WORK` path, because the script refuses to write into them: `objective2`, `objective3`, `baselines`, `sequence_ensemble`, `chapter4`, `v2`, `v3_fusion`, `v3_node`.
 - This step writes `WORK\processed\r5.2\interval_level\r52_user_day_intervals_dense.parquet`.
@@ -134,13 +136,13 @@ Skip `build` if you already ran it in 6a. `train` runs the frozen recipe in this
 2. Three teachers (T-OPT; TRACE is guided by all three).
 3. F00, TRACE and XGBoost-40 for seed 42.
 
-GPU training is not bit-for-bit deterministic, so retrained scores can differ slightly from the loaded ones.
+GPU training is not bit-for-bit deterministic, so retrained scores can differ slightly from the loaded ones. The nine runs took about 13 minutes on the authors' Windows machine and about 19 minutes in the independent test run under WSL on the same GPU.
 
 ### 7. Output
 `WORK\results\unseen_users_seed42_<route>.csv` has one row per model. It gives:
 - the number of windows and positive windows;
 - PR-AUC (average precision over all windows of the 500 held-out users);
-- the frozen threshold, with precision, recall and alerts per 1,000 windows at that threshold;
+- the decision threshold, with precision, recall and alerts per 1,000 windows at that threshold. In the load route this is each checkpoint's frozen threshold from `revision_r2/holdout/phase4/MODELS_FROZEN_PHASE4.json`. In the retrain route it is chosen again by the same frozen rule: the threshold with the highest F1 on the development users' VALIDATION windows (`threshold` in `revision_r2/holdout/code/phase2_runtime.py`). The two routes can therefore report different thresholds;
 - the number of held-out insiders and normal users;
 - how many insiders were detected (at least one positive window at or above the threshold);
 - how many normal users were flagged.
@@ -159,9 +161,11 @@ Input sequences are 20 days × 13 daily behavioural features.
 | Temporal encoder | Single-layer bidirectional LSTM, hidden size 64 per direction, 128-dimensional temporal state |
 | Dropout | p = 0.2, after the Bi-LSTM hidden states and before temporal attention |
 | Temporal attention | Additive attention, hidden dimension 64 |
-| Tree head (ODST-046) | 2 layers × 4 trees per layer = 8 trees in total, depth 4, head dropout 0.0, sparsemax/sigmoid routing, routing temperature 0.5 |
+| Tree head (ODST-046) | 2 layers × 4 trees per layer = 8 trees in total, depth 4, head dropout 0.0, sparsemax/sigmoid routing; routing temperature learned per tree and depth (see below) |
 | Second-layer input | 132 dimensions = 128 context dimensions + 4 first-layer tree outputs |
 | Readout | Mean of all 8 tree outputs before the sigmoid |
+
+**Routing temperature.** Each tree and depth has its own temperature, τ = softplus(ρ) + 10⁻⁴, learned with the rest of the head (`odst.py`). The constructor sets ρ = ln 0.5, which would give τ ≈ 0.41. When a teacher is built, however, `data_aware_initialize_from_batch` resets the thresholds and temperatures from one unlabelled training batch, and students start from their matched teacher. So the starting values are data-dependent, not 0.41. In the published seed-42 TRACE checkpoint the learned temperatures range from 0.013 to 0.069.
 
 The current eight-tree head is distinct from the sixteen-tree configuration in
 the historical July 2026 manuscript checkpoint. Both are valid frozen records of
@@ -171,7 +175,10 @@ the stage that produced them.
 
 Students are trained on CERT r5.2 with seeds 42, 52 and 62 under
 `L = L_cls + 0.5·L_teacher + 0.5·L_route`, batch size 1024, encoder and
-attention learning rate 3e-5, and ODST learning rate 1e-3.
+attention learning rate 3e-5, and ODST learning rate 1e-3. The positive-class
+weight in `L_cls` is w₊ = 0.25 × N_neg / N_pos (Eq. 10), which is 49.535 on
+the r5.2 TRAIN windows. The unseen-user models recompute it on the 1,500
+development users' TRAIN windows (48.352).
 
 Component roles, as separated by the frozen factorial:
 
@@ -195,9 +202,12 @@ and XGBoost remain strong engineered-tabular comparators.
 - **CERT r4.2** — development evidence.
 - **CERT r5.2** — historical guarded-reference evidence, plus the final
   train/validation evidence.
-- **CERT r6.1** — one-pass cross-release evidence.
-
-CERT r6.2 is outside the current manuscript.
+- **CERT r5.1, r6.1 and r6.2** — zero-shot cross-release evaluation of models
+  trained on r5.2 (Section IV-M, Table 12; `revision_r2/phase5/`; r6.1 also in
+  `evidence/`).
+- **CERT r6.2** — additionally, exploratory training that includes r6.2:
+  pooled r5.2 + r6.2 and within-r6.2 training on user-grouped splits
+  (Section IV-M; `revision_r2/phase10/`, `revision_r2/phase11/`).
 
 ## Key supported findings
 
@@ -242,10 +252,10 @@ This section answers the reviewers' request that the repository support every an
 
 | Paper result | Frozen source (branch @ commit : path) | Copy in this branch |
 |---|---|---|
-| r5.2 validation factorial, Eq. (18), ten-seed extension | `editor012-teacher-anchor-rescue` @ `4bcf522` : `review/editor012_teacher_anchor_rescue/` | `results/tables/r52_validation_all_models.csv`, `results/tables/ten_seed_extension_extra_seeds.csv` |
+| r5.2 validation factorial (Table 5; component contrasts in Section IV-E) | `editor012-teacher-anchor-rescue` @ `4bcf522` : `review/editor012_teacher_anchor_rescue/` | `results/tables/r52_validation_all_models.csv`; the earlier ten-seed validation extension, not reported in the R2 manuscript, is kept in `results/tables/ten_seed_extension_extra_seeds.csv` |
 | Formulation search before the factorial (8 candidates) | same : `01_inner_anchor_search/` | `results/tables/formulation_search_editor012_inner.csv` |
 | XGBoost-40 / RF-40 on the same r5.2 validation partition | `editor015-residual-complementarity` @ `d8e1d04` : `review/editor007a_post006e_diagnostics/EDITOR007A_R52_VALIDATION_PARITY.csv` | `results/tables/r52_validation_all_models.csv` |
-| CERT r5.1 and r6.2 (frozen pre-TA2 family) | same : `review/editor007d_cross_version_synthesis/` | `results/tables/cross_version_r51_r62_frozen_family.csv` |
+| CERT r5.1 and r6.2, historical frozen pre-TA2 family (Table 12 itself uses TRACE: `revision_r2/phase5/`) | same : `review/editor007d_cross_version_synthesis/` | `results/tables/cross_version_r51_r62_frozen_family.csv` |
 | Non-overlapping and endpoint analyses | `editor029-endpoint-dependence-aware` @ `28475d5` : `review/editor029_endpoint_dependence/` | `evidence/` (redacted export) |
 | CERT r6.1 cross-release | `editor024-r61-final-confirmation` @ `23794a7` : `review/editor024_r61_final_confirmation/` | `evidence/` (redacted export) |
 | Explanation and degraded-input analyses | `editor017-…` @ `c75321a`, `editor023-…` @ `a480fa2` | `evidence/` (redacted export) |
@@ -267,6 +277,8 @@ This section answers the reviewers' request that the repository support every an
   top-k tree-ranking faithfulness is not supported.
 - Missing-source and Gaussian-noise experiments are controlled degraded-input
   and data-quality sensitivity analyses, not adversarial robustness experiments.
+  Local evasion and poisoning attacks are reported separately (Section IV-K,
+  Table 10; `revision_r2/phase9/`).
 - Overlapping sequence windows are correlated observations.
 
 See `KNOWN_LIMITATIONS.md` for the complete list.
