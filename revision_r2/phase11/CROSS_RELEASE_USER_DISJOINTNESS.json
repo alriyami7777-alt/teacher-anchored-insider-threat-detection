@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-23T11:45:52.702388+00:00",
+  "all_release_ID_overlap": 0,
+  "r62_all_overlap_r52_development": 0,
+  "r62_all_overlap_r52_holdout": 0,
+  "r52_development_holdout_overlap": 0,
+  "source_lists_pseudonymized": false,
+  "raw_IDs_disclosed": false,
+  "phase10_check": {
+    "r62_HOLDOUT_ID_overlap_r52_DEVELOPMENT": 0,
+    "r52_HOLDOUT_ID_overlap_r62_DEVELOPMENT": 0,
+    "all_release_ID_overlap": 0,
+    "raw_IDs_disclosed": false
+  }
+}

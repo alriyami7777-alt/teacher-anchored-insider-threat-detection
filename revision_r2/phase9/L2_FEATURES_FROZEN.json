@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-23T03:57:58.372081+00:00",
+  "dropped": [
+    "email_count"
+  ],
+  "kept": [
+    "total_events",
+    "logon_count",
+    "device_count",
+    "file_count",
+    "http_count",
+    "active_duration_minutes",
+    "has_logon_activity",
+    "has_device_activity",
+    "has_file_activity",
+    "has_email_activity",
+    "has_http_activity",
+    "is_active_day"
+  ],
+  "indices": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "source_sha256": "24a3b30c5ffdfac4951f0fc758aa283be5d1ef0a4b35dc2ef491290ec5e7dea7",
+  "rule": "absolute shift >0.25 in both r6.1 and r6.2; no PSI/labels"
+}

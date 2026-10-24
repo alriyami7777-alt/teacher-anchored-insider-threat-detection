@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-23T07:39:01.498463+00:00",
+  "split_receipt_sha256": "b719319abc2194e2dfcca7ce01fca5301348e0b9e3894ca1b3bfad6cbc52c323",
+  "correction": "The split receipt field features_or_labels_opened=false is inaccurate for labels: completed-window labels and window user indices were read ONLY to derive the 29-user stratification status under the hashed pre-split clarification. No feature data, scores, metrics or training were read before split hashing. The frozen split and indices are unchanged.",
+  "insider_status_sha256": "4f823e92076ce2542c44d54dfaa29bffedf19757516a4cf149d1b6edbb9bff6f",
+  "split_only_label_sources": [
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006c_bundle\\window_index.npy",
+      "sha256": "703d14e489617a8b3fbc63f1b10aa9e1d099c0d81c096de2630aec875776a484",
+      "role": "immutable r6.2 source"
+    },
+    {
+      "path": "C:\\PhD\\06_Datasets\\derived\\teacher_anchored_r62_editor006c_bundle\\completed_window_labels.npy",
+      "sha256": "3082df95fa676c96e9d2579e22dfedea02902cb6bc46e563a8006c36d4bd0984",
+      "role": "immutable r6.2 source"
+    }
+  ]
+}

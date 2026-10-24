@@ -1,0 +1,163 @@
+{
+  "utc": "2026-10-23T04:42:29.629103+00:00",
+  "all_checks_passed": true,
+  "records": [
+    {
+      "user": "U_1313adc649",
+      "daily_labelled_event_total": 28,
+      "source_labelled_event_total": 28,
+      "equal": true
+    },
+    {
+      "user": "U_865e43c4d2",
+      "daily_labelled_event_total": 13,
+      "source_labelled_event_total": 13,
+      "equal": true
+    },
+    {
+      "user": "U_5be8860c51",
+      "daily_labelled_event_total": 100,
+      "source_labelled_event_total": 100,
+      "equal": true
+    },
+    {
+      "user": "U_40ed753be3",
+      "daily_labelled_event_total": 144,
+      "source_labelled_event_total": 144,
+      "equal": true
+    },
+    {
+      "user": "U_b69b0bc631",
+      "daily_labelled_event_total": 210,
+      "source_labelled_event_total": 210,
+      "equal": true
+    },
+    {
+      "user": "U_cbc9bd5e00",
+      "daily_labelled_event_total": 18,
+      "source_labelled_event_total": 18,
+      "equal": true
+    },
+    {
+      "user": "U_0e8c026f6f",
+      "daily_labelled_event_total": 15,
+      "source_labelled_event_total": 15,
+      "equal": true
+    },
+    {
+      "user": "U_c7a4246880",
+      "daily_labelled_event_total": 9,
+      "source_labelled_event_total": 9,
+      "equal": true
+    },
+    {
+      "user": "U_0df5d55f49",
+      "daily_labelled_event_total": 7,
+      "source_labelled_event_total": 7,
+      "equal": true
+    },
+    {
+      "user": "U_0154c27516",
+      "daily_labelled_event_total": 104,
+      "source_labelled_event_total": 104,
+      "equal": true
+    },
+    {
+      "user": "U_d7f4f10c1e",
+      "daily_labelled_event_total": 245,
+      "source_labelled_event_total": 245,
+      "equal": true
+    },
+    {
+      "user": "U_58cbf501e1",
+      "daily_labelled_event_total": 244,
+      "source_labelled_event_total": 244,
+      "equal": true
+    },
+    {
+      "user": "U_bb95f9e8f0",
+      "daily_labelled_event_total": 84,
+      "source_labelled_event_total": 84,
+      "equal": true
+    },
+    {
+      "user": "U_1f2969af58",
+      "daily_labelled_event_total": 220,
+      "source_labelled_event_total": 220,
+      "equal": true
+    },
+    {
+      "user": "U_a48019351b",
+      "daily_labelled_event_total": 16,
+      "source_labelled_event_total": 16,
+      "equal": true
+    },
+    {
+      "user": "U_19d37d837a",
+      "daily_labelled_event_total": 67,
+      "source_labelled_event_total": 67,
+      "equal": true
+    },
+    {
+      "user": "U_3544b1e64c",
+      "daily_labelled_event_total": 101,
+      "source_labelled_event_total": 101,
+      "equal": true
+    },
+    {
+      "user": "U_4c2fbd8f96",
+      "daily_labelled_event_total": 132,
+      "source_labelled_event_total": 132,
+      "equal": true
+    },
+    {
+      "user": "U_fb2ba82804",
+      "daily_labelled_event_total": 161,
+      "source_labelled_event_total": 161,
+      "equal": true
+    },
+    {
+      "user": "U_488844ba74",
+      "daily_labelled_event_total": 95,
+      "source_labelled_event_total": 95,
+      "equal": true
+    },
+    {
+      "user": "U_b13c5022f7",
+      "daily_labelled_event_total": 184,
+      "source_labelled_event_total": 184,
+      "equal": true
+    },
+    {
+      "user": "U_0aeb6e5b2a",
+      "daily_labelled_event_total": 205,
+      "source_labelled_event_total": 205,
+      "equal": true
+    },
+    {
+      "user": "U_6766236577",
+      "daily_labelled_event_total": 13,
+      "source_labelled_event_total": 13,
+      "equal": true
+    },
+    {
+      "user": "U_2cfd941e08",
+      "daily_labelled_event_total": 89,
+      "source_labelled_event_total": 89,
+      "equal": true
+    },
+    {
+      "user": "U_0b3522e30f",
+      "daily_labelled_event_total": 28,
+      "source_labelled_event_total": 28,
+      "equal": true
+    }
+  ],
+  "target_choice_sha256": "fc629d4089874a67bb48499dcebbabd39c14cb31247926bf813f3f59f08076a6",
+  "projected_columns": [
+    "user",
+    "malicious_event_count"
+  ],
+  "rows": 11600,
+  "r52_test_read": false
+}

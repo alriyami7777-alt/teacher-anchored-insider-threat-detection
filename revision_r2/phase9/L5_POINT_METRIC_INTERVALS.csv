@@ -1,0 +1,19 @@
+model,group,metric,estimate,ci95_low,ci95_high,attempted_replicates,valid_replicates,undefined_replicates,interpretation
+TA2,three,PR_AUC,0.7331720359066024,0.5627424014513395,0.8606694362091659,2000,2000,0,descriptive marginal interval; no extra null test
+TA2,three,insiders_detected,24.0,15.0,34.0,2000,2000,0,descriptive marginal interval; no extra null test
+TA2,three,noninsiders_flagged,27.0,18.0,38.0,2000,2000,0,descriptive marginal interval; no extra null test
+TA2,eight,PR_AUC,0.7333713268824305,0.5701003503696086,0.8633378302265171,2000,2000,0,descriptive marginal interval; no extra null test
+TA2,eight,insiders_detected,24.0,15.0,34.0,2000,2000,0,descriptive marginal interval; no extra null test
+TA2,eight,noninsiders_flagged,21.0,13.0,30.0,2000,2000,0,descriptive marginal interval; no extra null test
+F00,three,PR_AUC,0.730622525723829,0.5597534304754667,0.8574701788783468,2000,2000,0,descriptive marginal interval; no extra null test
+F00,three,insiders_detected,23.0,14.0,33.0,2000,2000,0,descriptive marginal interval; no extra null test
+F00,three,noninsiders_flagged,19.0,11.0,28.0,2000,2000,0,descriptive marginal interval; no extra null test
+F00,eight,PR_AUC,0.7177554195841516,0.5542523040593946,0.8515621145444627,2000,2000,0,descriptive marginal interval; no extra null test
+F00,eight,insiders_detected,24.0,15.0,34.0,2000,2000,0,descriptive marginal interval; no extra null test
+F00,eight,noninsiders_flagged,26.0,17.0,37.0,2000,2000,0,descriptive marginal interval; no extra null test
+XGBoost_40,three,PR_AUC,0.8256051052174687,0.669812983744135,0.9463656754660523,2000,2000,0,descriptive marginal interval; no extra null test
+XGBoost_40,three,insiders_detected,22.0,13.0,32.0,2000,2000,0,descriptive marginal interval; no extra null test
+XGBoost_40,three,noninsiders_flagged,5.0,1.0,10.0,2000,2000,0,descriptive marginal interval; no extra null test
+XGBoost_40,eight,PR_AUC,0.8249835463298258,0.6670161280552336,0.9461397660067921,2000,2000,0,descriptive marginal interval; no extra null test
+XGBoost_40,eight,insiders_detected,23.0,14.0,33.0,2000,2000,0,descriptive marginal interval; no extra null test
+XGBoost_40,eight,noninsiders_flagged,6.0,2.0,11.0,2000,2000,0,descriptive marginal interval; no extra null test

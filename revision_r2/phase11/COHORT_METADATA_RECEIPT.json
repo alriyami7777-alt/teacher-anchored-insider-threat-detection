@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-23T11:56:17.082725+00:00",
+  "sha256": "42f019960db212766ad107063607507d8df02d4043da995ddca6e47c8d974564",
+  "users": 4000,
+  "official": 5,
+  "affected": 29,
+  "windows": 1700000,
+  "positive_windows": 636,
+  "first_window_endpoint": "2010-01-21",
+  "metadata_only": true
+}

@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-23T12:50:17.471865+00:00",
+  "all_checks_passed": true,
+  "checks": {
+    "complete_window_labels_exact_source_alignment": true,
+    "endpoint_dates_exact": true,
+    "all_users_exactly_425_windows": true,
+    "official_and_affected_status_preserved": true,
+    "cohort_metadata_hash_preserved": true
+  },
+  "cohort_sha256": "42f019960db212766ad107063607507d8df02d4043da995ddca6e47c8d974564",
+  "source_completed_labels_sha256": "3082df95fa676c96e9d2579e22dfedea02902cb6bc46e563a8006c36d4bd0984",
+  "before_full_OOF_metric_computation": true
+}

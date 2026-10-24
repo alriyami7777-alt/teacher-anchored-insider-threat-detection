@@ -1,0 +1,13 @@
+key,budget,pseudonym,official,calendar_date,scenario,scenario_day_since_first_malicious,malicious_day_ordinal,daily_rank
+POSTHOC_within_TA2_62,20,U_51db80150c,True,2010-08-12,3,1,1,20
+POSTHOC_within_TA2_62,20,U_51db80150c,True,2010-08-13,3,2,2,15
+POSTHOC_within_TA2_62,10,U_2011e45ea5,False,2010-08-15,3,1,1,10
+POSTHOC_within_TA2_62,20,U_2011e45ea5,False,2010-08-15,3,1,1,10
+POSTHOC_within_TA2_62,10,U_b945143e91,False,2010-08-16,3,1,1,6
+POSTHOC_within_TA2_62,20,U_b945143e91,False,2010-08-16,3,1,1,6
+POSTHOC_within_TA2_62,20,U_2011e45ea5,False,2010-08-16,3,2,2,14
+POSTHOC_within_TA2_62,20,U_dc56d9b1a0,False,2010-08-16,3,1,1,15
+POSTHOC_within_TA2_62,5,U_b945143e91,False,2010-08-17,3,2,2,3
+POSTHOC_within_TA2_62,10,U_b945143e91,False,2010-08-17,3,2,2,3
+POSTHOC_within_TA2_62,20,U_b945143e91,False,2010-08-17,3,2,2,3
+POSTHOC_within_TA2_62,20,U_2011e45ea5,False,2010-08-17,3,3,3,11

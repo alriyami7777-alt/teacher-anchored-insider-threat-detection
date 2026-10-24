@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-23T16:14:34.378220+00:00",
+  "owned_presentation_PIDs_stopped": [
+    18876,
+    44580
+  ],
+  "scientific_training_inference_analysis_uninterrupted": true,
+  "no_heldout_rescoring": true,
+  "reason": "Load current report-only findings, original-r52 comparisons and coverage/guard provenance; fresh writer starts immediately"
+}

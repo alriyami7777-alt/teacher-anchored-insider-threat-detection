@@ -63,3 +63,27 @@ Audit: no CERT user IDs (after the two redactions), no CERT data, answer files, 
 Audit: no CERT user IDs, CERT data, answer files, binaries or `private/` content. Absolute paths only under prefixes already public (`C:\PhD\00_RESEARCH_CONTROL`, `04_Journal_Papers`, `06_Datasets`, `07_Projects`). Largest files: `phase8/Q2_OUTCOMES.json` (15.6 MB) and `phase7/P4_SELECTED_USER_DAY_ALERTS.csv` (9.4 MB), both below GitHub's limits.
 
 Pseudonyms: every `U_` token has the form `U_` + the first 10 hex digits of SHA-256(CERT user ID), the same scheme as `revision_r2/evidence/`. All 500 distinct pseudonyms were checked against the r5.2 user list and none is a raw ID. The hash is unsalted, so anyone who holds the licensed CERT r5.2 data can map a pseudonym back to its synthetic user ID; it does not reveal IDs to anyone without the dataset.
+
+## Phases 9, 10 and 11 (added 24 Oct 2026)
+| Folder | Source | Code | Notes |
+|---|---|---|---|
+| `phase9/` (120 + 35 files) | `phase9_public.zip`; byte-identical to `R2_revision\phase9\` minus `private/`; report ends `PHASE9_COMPLETE` | `C:\PhD\00_RESEARCH_CONTROL\phase9_staging` (`.py` only); 35/35 hashes match the frozen records (16 in the final code freezes, the rest in other receipts). Imported `r2_holdout` modules are already in `holdout/code/`. | 31 r5.2 pseudonyms |
+| `phase10/` (53 + 21 files) | `phase10_public_v2.zip`; byte-identical to `R2_revision\phase10\` minus `private/`; report ends `PHASE10_COMPLETE` | `phase10_staging`; 21/21 match | 4,000 CERT r6.2 user pseudonyms, including the development and held-out lists `R62_*_PSEUDONYMS.txt` |
+| `phase11/` (96 + 25 files) | `phase11_public.zip`; byte-identical to `R2_revision\phase11\` minus `private/`; report ends `PHASE11_COMPLETE` | `phase11_staging`; 25/25 match | 4,000 r6.2 pseudonyms |
+
+Excluded:
+- `phase10/DEADLINE_EXTENSION_CONTROL_CHANGE.json` and `phase11/NO_LIMIT_COORDINATOR_TRANSITION.json`. These are process-control receipts, not results, and they contain the Python install path under `C:\Users\`.
+- Every `private/` folder.
+
+Audit:
+- No CERT user IDs, CERT data, answer files, tensors, checkpoints or binaries.
+- No tokens, keys, passwords or e-mail addresses.
+- Absolute paths appear only under prefixes that are already public.
+- The largest new file is under 5 MB.
+- "answer" appears only as a file-name string inside hash records (`answer_scenario_day_bitmask.npy`, whose content is not included) and in code.
+
+Pseudonyms:
+- All tokens have the form `U_` plus the first 10 hex digits of SHA-256 of the user ID. The r6.2 split receipt states the same rule.
+- The 31 Phase 9 pseudonyms all match r5.2 users.
+- The r6.2 pseudonyms could not be checked against the r6.2 user list, because that data was not mounted. None of them matches the CERT ID pattern.
+- As before, the hash is unsalted. A CERT licensee can map pseudonyms back to synthetic user IDs and, through the insider-status columns, to insider status. Licensees already hold that information in the answer files.

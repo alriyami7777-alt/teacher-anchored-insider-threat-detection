@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-23T04:28:03.990291+00:00",
+  "checks": {
+    "exact1500_development_users_and500_disjoint_holdout": true,
+    "reduced_feature_transformation_and_untouched_rows_exact": true,
+    "flip01_feature_transformation_and_untouched_rows_exact": true,
+    "flip01_whole_insider_positives_only": true,
+    "flip05_feature_transformation_and_untouched_rows_exact": true,
+    "flip05_whole_insider_positives_only": true,
+    "flip10_feature_transformation_and_untouched_rows_exact": true,
+    "flip10_whole_insider_positives_only": true,
+    "backdoor01_feature_transformation_and_untouched_rows_exact": true
+  },
+  "all_checks_passed": true,
+  "conditions": [
+    {
+      "config": "reduced",
+      "features": 12,
+      "summary_features": 36,
+      "modified_positive_windows": 0,
+      "actual_modified_fraction": 0.0,
+      "added_copies": 0
+    },
+    {
+      "config": "flip01",
+      "features": 13,
+      "summary_features": 40,
+      "modified_positive_windows": 96,
+      "actual_modified_fraction": 0.031578947368421054,
+      "added_copies": 0
+    },
+    {
+      "config": "flip05",
+      "features": 13,
+      "summary_features": 40,
+      "modified_positive_windows": 171,
+      "actual_modified_fraction": 0.05625,
+      "added_copies": 0
+    },
+    {
+      "config": "flip10",
+      "features": 13,
+      "summary_features": 40,
+      "modified_positive_windows": 315,
+      "actual_modified_fraction": 0.10361842105263158,
+      "added_copies": 0
+    },
+    {
+      "config": "backdoor01",
+      "features": 13,
+      "summary_features": 40,
+      "modified_positive_windows": 31,
+      "actual_modified_fraction": 0.010197368421052632,
+      "added_copies": 31
+    }
+  ],
+  "HOLDOUT_used": false
+}

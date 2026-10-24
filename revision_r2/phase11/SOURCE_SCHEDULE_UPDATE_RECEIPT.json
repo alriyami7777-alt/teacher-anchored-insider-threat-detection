@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-23T22:02:28.880575+00:00",
+  "reason": "Qasim explicitly updated only the Phase 11 prompt schedule at24Oct05:53+08; preserve the original source freeze and bind this authorised exception",
+  "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\CHATGPT_PHASE11_PROMPT.md",
+  "original_prompt_sha256": "8a42701e6644b1fc651b3e9053c5da35f918d134852a1251d86fbdeab67399f6",
+  "authorised_prompt_sha256": "d414a9b8cff2dd7d224d6f0fe51d65386c8bb0f8df321d2ad75c669515384aaf",
+  "original_source_freeze_sha256": "f490ea2232ac058163f0a94743929bfc0eeec69231e1244418a57815995ee29f",
+  "schedule_receipt_sha256": "0d5025e8a3e984f5b6f25eea8ef3dcc3e53e398338902d98036c9d315c9ebcc3",
+  "research_data_sources_unchanged": true
+}

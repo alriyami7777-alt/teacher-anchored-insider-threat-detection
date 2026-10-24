@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-23T11:50:35.980055+00:00",
+  "code": {
+    "metadata11.py": "74941fc2022372bb88f15962fd4a53ef4629f7e3fcd94ad01d2c9a26fb4e9130",
+    "stats11.py": "9a3b3cd6d71dcc38656362fbaf56c51e82f2dc83c652d089cc426f9f093a8726",
+    "contrasts11.py": "78add1795bdeb66da808ac4901d97ce55a1c6d811a2f0215a3bd168c5da9ee5e",
+    "analysis_worker11.py": "cd50ad423d6e9b026ff38223e7a6caebb6569b1112b28138d3f053e84a72ef87"
+  },
+  "metrics_not_started": true
+}

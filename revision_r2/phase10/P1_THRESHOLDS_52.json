@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-23T08:51:25.951109+00:00",
+  "development_validation_only": true,
+  "records": [
+    {
+      "model": "TA2",
+      "seed": 52,
+      "old_threshold": 0.56,
+      "threshold": 0.9453162633779152,
+      "validation_windows": 64000,
+      "validation_positives": 28,
+      "checkpoint_sha256": "2927c9975a4f59b219afd448c709b964396a879ac4f36b82bfef7538d3612080"
+    },
+    {
+      "model": "F00",
+      "seed": 52,
+      "old_threshold": 0.56,
+      "threshold": 0.9600737547066605,
+      "validation_windows": 64000,
+      "validation_positives": 28,
+      "checkpoint_sha256": "52fa4e08814f8494b39b1bad586970a9ae037cb39e890a1e336374ff4b6069f5"
+    },
+    {
+      "model": "XGBoost_40",
+      "seed": 52,
+      "old_threshold": 0.51,
+      "threshold": 0.999993085861206,
+      "validation_windows": 64000,
+      "validation_positives": 28,
+      "checkpoint_sha256": "230eafa930aa7a47c2467ea86ba32a933fa70c8a7aaa8512bcbde03f8f2254c4"
+    }
+  ]
+}

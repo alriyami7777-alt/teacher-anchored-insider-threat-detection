@@ -1,0 +1,4 @@
+key,budget,pseudonym,official,calendar_date,scenario,scenario_day_since_first_malicious,malicious_day_ordinal,daily_rank
+C3_TA2_42,5,U_2a21e8daf2,False,2010-08-16,3,1,1,4
+C3_TA2_42,10,U_2a21e8daf2,False,2010-08-16,3,1,1,4
+C3_TA2_42,20,U_2a21e8daf2,False,2010-08-16,3,1,1,4

@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-23T15:19:49.769613+00:00",
+  "all_checks_passed": true,
+  "checks": {
+    "exact_stratified_default_rng42_fold_reconstruction": true,
+    "all_fold_training_users_exclude_own_heldout": true,
+    "weighted_AP_exact_sklearn_ties_and_cluster_duplication": true,
+    "weighted_ROC_exact_sklearn_ties_and_cluster_duplication": true,
+    "all_prepared_TRAIN_VALIDATION_labels_exact_independent_reconstruction": true,
+    "oversampling_only_r62_positive_TRAIN_even_repeats_two_percent": true,
+    "no_validation_oversampling": true
+  },
+  "prepared_conditions": 5,
+  "oversampling_conditions_checked": 1
+}

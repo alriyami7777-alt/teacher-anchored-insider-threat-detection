@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-23T07:32:32.595672+00:00",
+  "rng": "numpy.default_rng(42), sorted identity strata, insider first",
+  "users": 4000,
+  "development_users": 2000,
+  "heldout_users": 2000,
+  "development_insiders": 14,
+  "heldout_insiders": 15,
+  "pseudonym_rule": "U_ + SHA256(identity)[:10]",
+  "heldout_list_sha256": "2c86c6788633a9b1db561c4f6cc6256aaf940aec9b5334edfa980d07c7211b62",
+  "development_list_sha256": "4c615a44dece5fb070b1d22bc89787373a6d6dde7c9e0b19ae04a68e50bd5eae",
+  "index_hashes": {
+    "ADAPT10_indices.npy": "c96bb8e1aba23c4ad182cdfd5d8462e541214f8410f09792ed818e9aa331b634",
+    "ADAPT25_indices.npy": "d0c0479b3df69c9967e25ac651e9c845b613df3bda3ecc524b9eafd7c8d2631a",
+    "DEVELOPMENT_indices.npy": "52993df9dd4868f48edc4f9eca8f6bd9e4686d5b8f0f2b6da8e9fe15d3711e38",
+    "HOLDOUT_indices.npy": "c3b10225f700e49e4f0663e29b32e7d096b75a91f2ded4d9574cfd0546255e9f"
+  },
+  "TRAIN": [
+    "2010-01-02",
+    "2011-02-17"
+  ],
+  "VALIDATION": [
+    "2011-02-18",
+    "2011-04-09"
+  ],
+  "unused_final_segment": [
+    "2011-04-10",
+    "2011-06-01"
+  ],
+  "n_days": 516,
+  "n_train_days": 412,
+  "n_validation_days": 51,
+  "adaptation": {
+    "10": {
+      "users": 200,
+      "insiders": 1
+    },
+    "25": {
+      "users": 500,
+      "insiders": 4
+    }
+  },
+  "metadata_hashes": {
+    "user_ids.npy": "80e9f043ddf35732eea77a6fbeda916b77402a857570c4620ca802c0ca8a36c2",
+    "official_insider_flags.npy": "71188e7fde146989765d20030aa679670b35926a118165047cc6f8957fbaec5d",
+    "calendar_dates.npy": "5db6f62535cc8c1c45ac92dc1111c0e842683403569e1312fcec20ef1a3b4309"
+  },
+  "features_or_labels_opened": false
+}

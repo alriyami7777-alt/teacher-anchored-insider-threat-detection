@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-23T04:26:09.147005+00:00",
+  "reason": "Use exact original integer daily counts for the already-declared count-box attacker, avoiding inverse-standardization roundoff creating false >0 indicators. No attack condition has been consumed and no model outcome informed this correction.",
+  "raw_daily_source": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase7\\private\\daily_features.npy",
+  "raw_daily_sha256": "18129ea9ee8d3630942e1cbf8e6127ce12b8364ec69dbcef56a4ab9cade95fcd",
+  "raw_to_original_model_input_max_abs_error": 0.0,
+  "phantom_positive_zero_count_coordinates_from_inverse_scaling": 22507,
+  "previous_analysis_manifest_sha256": "132cc822c9927d9d5cb0b07981a5dc79e6a83bcc8a0d7080f355fbf0f111d69b",
+  "old_attack_code_sha256": "3fec22bf352905dfcb2009ba6a2b5a73514bf510fe7edc324a53a371090472f6",
+  "new_attack_code_sha256": "fe5bd29c6ed6b6881bfadadc7916954d2fc82f7bedc0e176c022e6fae1c57f1f",
+  "r52_test_read": false
+}

@@ -1,0 +1,13 @@
+key,budget,pseudonym,official,calendar_date,scenario,scenario_day_since_first_malicious,malicious_day_ordinal,daily_rank
+C3_TA2_52,10,U_51db80150c,True,2010-08-12,3,1,1,8
+C3_TA2_52,20,U_51db80150c,True,2010-08-12,3,1,1,8
+C3_TA2_52,20,U_51db80150c,True,2010-08-13,3,2,2,18
+C3_TA2_52,5,U_2a21e8daf2,False,2010-08-16,3,1,1,2
+C3_TA2_52,10,U_2a21e8daf2,False,2010-08-16,3,1,1,2
+C3_TA2_52,20,U_2a21e8daf2,False,2010-08-16,3,1,1,2
+C3_TA2_52,20,U_b945143e91,False,2010-08-16,3,1,1,11
+C3_TA2_52,20,U_b0c09711fa,False,2010-08-16,3,1,1,13
+C3_TA2_52,5,U_b945143e91,False,2010-08-17,3,2,2,5
+C3_TA2_52,10,U_b945143e91,False,2010-08-17,3,2,2,5
+C3_TA2_52,20,U_b945143e91,False,2010-08-17,3,2,2,5
+C3_TA2_52,20,U_b0c09711fa,False,2010-08-17,3,2,2,13

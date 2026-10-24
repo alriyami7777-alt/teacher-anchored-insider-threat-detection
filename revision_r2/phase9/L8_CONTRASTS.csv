@@ -1,0 +1,97 @@
+condition,model,seed,metric,contrast,estimate,ci95_low,ci95_high,attempted_replicates,valid_replicates,undefined_replicates,p_unadjusted,CI_direction,null,Holm_family,Holm_family_size,p_Holm,Holm_reject_0_05,exploratory
+flip01,TA2,42,PR_AUC,poisoned minus unpoisoned,-0.04355056355350939,-0.11767984841379632,0.021768326734066635,2000,2000,0,0.20389805097451275,compatible,0,L8,96,1.0,False,True
+flip01,XGBoost_40,42,PR_AUC,poisoned minus unpoisoned,0.0016734464894604395,-0.005608221712295994,0.009624426858141072,2000,2000,0,0.6771614192903548,compatible,0,L8,96,1.0,False,True
+flip01,TRACE minus XGBoost,42,PR_AUC,TRACE minus XGBoost difference of poisoning changes,-0.04522401004296983,-0.11704697958957247,0.01747510186050727,2000,2000,0,0.17541229385307347,compatible,0,L8,96,1.0,False,True
+flip01,TA2,42,insiders_detected,poisoned minus unpoisoned,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+flip01,XGBoost_40,42,insiders_detected,poisoned minus unpoisoned,2.0,0.0,5.0,2000,2000,0,0.27586206896551724,compatible,0,L8,96,1.0,False,True
+flip01,TRACE minus XGBoost,42,insiders_detected,TRACE minus XGBoost difference of poisoning changes,-2.0,-5.0,0.0,2000,2000,0,0.27586206896551724,compatible,0,L8,96,1.0,False,True
+flip01,TA2,52,PR_AUC,poisoned minus unpoisoned,-0.01854058476301146,-0.05731716344007548,0.011636416400029574,2000,2000,0,0.27586206896551724,compatible,0,L8,96,1.0,False,True
+flip01,XGBoost_40,52,PR_AUC,poisoned minus unpoisoned,0.00457670740473326,-0.010149116969157343,0.021446702865039396,2000,2000,0,0.5417291354322838,compatible,0,L8,96,1.0,False,True
+flip01,TRACE minus XGBoost,52,PR_AUC,TRACE minus XGBoost difference of poisoning changes,-0.02311729216774472,-0.06395651730522758,0.010666293891817318,2000,2000,0,0.1924037981009495,compatible,0,L8,96,1.0,False,True
+flip01,TA2,52,insiders_detected,poisoned minus unpoisoned,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+flip01,XGBoost_40,52,insiders_detected,poisoned minus unpoisoned,1.0,0.0,3.0,2000,2000,0,0.6296851574212894,compatible,0,L8,96,1.0,False,True
+flip01,TRACE minus XGBoost,52,insiders_detected,TRACE minus XGBoost difference of poisoning changes,-1.0,-3.0,0.0,2000,2000,0,0.6296851574212894,compatible,0,L8,96,1.0,False,True
+flip01,TA2,62,PR_AUC,poisoned minus unpoisoned,-0.03297164994309809,-0.08948893862147031,0.015861368086865064,2000,2000,0,0.19790104947526238,compatible,0,L8,96,1.0,False,True
+flip01,XGBoost_40,62,PR_AUC,poisoned minus unpoisoned,0.003341416123024854,-0.007087855221334746,0.010685720985173806,2000,2000,0,0.47626186906546725,compatible,0,L8,96,1.0,False,True
+flip01,TRACE minus XGBoost,62,PR_AUC,TRACE minus XGBoost difference of poisoning changes,-0.036313066066122945,-0.09354982012819123,0.014160651290485802,2000,2000,0,0.17191404297851073,compatible,0,L8,96,1.0,False,True
+flip01,TA2,62,insiders_detected,poisoned minus unpoisoned,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+flip01,XGBoost_40,62,insiders_detected,poisoned minus unpoisoned,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+flip01,TRACE minus XGBoost,62,insiders_detected,TRACE minus XGBoost difference of poisoning changes,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+flip01,TA2,mean,PR_AUC,poisoned minus unpoisoned,-0.03168759941987298,-0.07189229504089419,0.000945198777677442,2000,2000,0,0.09095452273863068,compatible,0,L8,96,1.0,False,True
+flip01,XGBoost_40,mean,PR_AUC,poisoned minus unpoisoned,0.0031971900057395177,-0.003392166789608504,0.009610702085748747,2000,2000,0,0.34832583708145926,compatible,0,L8,96,1.0,False,True
+flip01,TRACE minus XGBoost,mean,PR_AUC,TRACE minus XGBoost difference of poisoning changes,-0.034884789425612496,-0.07479155287652359,-0.0008649855215214946,2000,2000,0,0.06196901549225387,below,0,L8,96,1.0,False,True
+flip01,TA2,mean,insiders_detected,poisoned minus unpoisoned,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+flip01,XGBoost_40,mean,insiders_detected,poisoned minus unpoisoned,1.0,0.0,2.6666666666666665,2000,2000,0,0.272863568215892,compatible,0,L8,96,1.0,False,True
+flip01,TRACE minus XGBoost,mean,insiders_detected,TRACE minus XGBoost difference of poisoning changes,-1.0,-2.6666666666666665,0.0,2000,2000,0,0.272863568215892,compatible,0,L8,96,1.0,False,True
+flip05,TA2,42,PR_AUC,poisoned minus unpoisoned,-0.03930529875337618,-0.0781193293026245,-0.011841296018872344,2000,2000,0,0.02498750624687656,below,0,L8,96,1.0,False,True
+flip05,XGBoost_40,42,PR_AUC,poisoned minus unpoisoned,-0.021515327507582005,-0.04451334452659976,-0.0004390134225689597,2000,2000,0,0.053973013493253376,below,0,L8,96,1.0,False,True
+flip05,TRACE minus XGBoost,42,PR_AUC,TRACE minus XGBoost difference of poisoning changes,-0.01778997124579418,-0.054440396119435144,0.013034085797887182,2000,2000,0,0.25687156421789104,compatible,0,L8,96,1.0,False,True
+flip05,TA2,42,insiders_detected,poisoned minus unpoisoned,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+flip05,XGBoost_40,42,insiders_detected,poisoned minus unpoisoned,1.0,0.0,3.0,2000,2000,0,0.6291854072963519,compatible,0,L8,96,1.0,False,True
+flip05,TRACE minus XGBoost,42,insiders_detected,TRACE minus XGBoost difference of poisoning changes,-1.0,-3.0,0.0,2000,2000,0,0.6291854072963519,compatible,0,L8,96,1.0,False,True
+flip05,TA2,52,PR_AUC,poisoned minus unpoisoned,-0.013087846909153322,-0.07979445734011106,0.059359358803795094,2000,2000,0,0.7286356821589205,compatible,0,L8,96,1.0,False,True
+flip05,XGBoost_40,52,PR_AUC,poisoned minus unpoisoned,-0.01729148840923167,-0.04637544364025861,0.00876196318136765,2000,2000,0,0.2098950524737631,compatible,0,L8,96,1.0,False,True
+flip05,TRACE minus XGBoost,52,PR_AUC,TRACE minus XGBoost difference of poisoning changes,0.004203641500078348,-0.06595734414847237,0.09281402367309473,2000,2000,0,0.9220389805097451,compatible,0,L8,96,1.0,False,True
+flip05,TA2,52,insiders_detected,poisoned minus unpoisoned,1.0,0.0,3.0,2000,2000,0,0.6511744127936032,compatible,0,L8,96,1.0,False,True
+flip05,XGBoost_40,52,insiders_detected,poisoned minus unpoisoned,1.0,0.0,3.0,2000,2000,0,0.6296851574212894,compatible,0,L8,96,1.0,False,True
+flip05,TRACE minus XGBoost,52,insiders_detected,TRACE minus XGBoost difference of poisoning changes,0.0,-3.0,3.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+flip05,TA2,62,PR_AUC,poisoned minus unpoisoned,-0.040540315110277336,-0.09256710480300648,-0.0035727097427387306,2000,2000,0,0.06346826586706647,below,0,L8,96,1.0,False,True
+flip05,XGBoost_40,62,PR_AUC,poisoned minus unpoisoned,-0.013780154934227018,-0.03659902539658678,0.005220479867212122,2000,2000,0,0.1714142928535732,compatible,0,L8,96,1.0,False,True
+flip05,TRACE minus XGBoost,62,PR_AUC,TRACE minus XGBoost difference of poisoning changes,-0.02676016017605032,-0.08586103520771417,0.019436566852586556,2000,2000,0,0.3268365817091454,compatible,0,L8,96,1.0,False,True
+flip05,TA2,62,insiders_detected,poisoned minus unpoisoned,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+flip05,XGBoost_40,62,insiders_detected,poisoned minus unpoisoned,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+flip05,TRACE minus XGBoost,62,insiders_detected,TRACE minus XGBoost difference of poisoning changes,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+flip05,TA2,mean,PR_AUC,poisoned minus unpoisoned,-0.03097782025760228,-0.07681034755446961,0.008067411416733582,2000,2000,0,0.15142428785607195,compatible,0,L8,96,1.0,False,True
+flip05,XGBoost_40,mean,PR_AUC,poisoned minus unpoisoned,-0.01752899028368023,-0.0404034610188014,0.0006965928110977003,2000,2000,0,0.08345827086456771,compatible,0,L8,96,1.0,False,True
+flip05,TRACE minus XGBoost,mean,PR_AUC,TRACE minus XGBoost difference of poisoning changes,-0.01344882997392205,-0.06225297367310601,0.035112017424247126,2000,2000,0,0.5752123938030984,compatible,0,L8,96,1.0,False,True
+flip05,TA2,mean,insiders_detected,poisoned minus unpoisoned,0.3333333333333333,0.0,1.0,2000,2000,0,0.6511744127936032,compatible,0,L8,96,1.0,False,True
+flip05,XGBoost_40,mean,insiders_detected,poisoned minus unpoisoned,0.6666666666666666,0.0,1.6666666666666667,2000,2000,0,0.27586206896551724,compatible,0,L8,96,1.0,False,True
+flip05,TRACE minus XGBoost,mean,insiders_detected,TRACE minus XGBoost difference of poisoning changes,-0.3333333333333333,-1.3416666666666663,0.6666666666666666,2000,2000,0,0.7461269365317341,compatible,0,L8,96,1.0,False,True
+flip10,TA2,42,PR_AUC,poisoned minus unpoisoned,-0.024606771251403092,-0.07562545329747236,0.009676301506326706,2000,2000,0,0.2733633183408296,compatible,0,L8,96,1.0,False,True
+flip10,XGBoost_40,42,PR_AUC,poisoned minus unpoisoned,-0.0060822386270698026,-0.04454017456799795,0.02613169669358887,2000,2000,0,0.7051474262868566,compatible,0,L8,96,1.0,False,True
+flip10,TRACE minus XGBoost,42,PR_AUC,TRACE minus XGBoost difference of poisoning changes,-0.01852453262433329,-0.08055156308924076,0.029277846962281133,2000,2000,0,0.49775112443778113,compatible,0,L8,96,1.0,False,True
+flip10,TA2,42,insiders_detected,poisoned minus unpoisoned,-1.0,-3.0,0.0,2000,2000,0,0.6226886556721639,compatible,0,L8,96,1.0,False,True
+flip10,XGBoost_40,42,insiders_detected,poisoned minus unpoisoned,1.0,0.0,3.0,2000,2000,0,0.6296851574212894,compatible,0,L8,96,1.0,False,True
+flip10,TRACE minus XGBoost,42,insiders_detected,TRACE minus XGBoost difference of poisoning changes,-2.0,-5.0,0.0,2000,2000,0,0.2723638180909545,compatible,0,L8,96,1.0,False,True
+flip10,TA2,52,PR_AUC,poisoned minus unpoisoned,-0.01382141985564933,-0.09148943121316187,0.0512783476341414,2000,2000,0,0.6966516741629185,compatible,0,L8,96,1.0,False,True
+flip10,XGBoost_40,52,PR_AUC,poisoned minus unpoisoned,-0.004748947470799014,-0.04148319186767087,0.023947546033834345,2000,2000,0,0.7646176911544228,compatible,0,L8,96,1.0,False,True
+flip10,TRACE minus XGBoost,52,PR_AUC,TRACE minus XGBoost difference of poisoning changes,-0.009072472384850316,-0.08573704845458888,0.07050573175372572,2000,2000,0,0.8250874562718641,compatible,0,L8,96,1.0,False,True
+flip10,TA2,52,insiders_detected,poisoned minus unpoisoned,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+flip10,XGBoost_40,52,insiders_detected,poisoned minus unpoisoned,0.0,-3.0,3.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+flip10,TRACE minus XGBoost,52,insiders_detected,TRACE minus XGBoost difference of poisoning changes,0.0,-3.0,3.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+flip10,TA2,62,PR_AUC,poisoned minus unpoisoned,-0.02474645012267873,-0.06434153196853623,0.0063936887759677785,2000,2000,0,0.16241879060469766,compatible,0,L8,96,1.0,False,True
+flip10,XGBoost_40,62,PR_AUC,poisoned minus unpoisoned,-0.015188944010282146,-0.05515453655436503,0.015165655453076953,2000,2000,0,0.3733133433283358,compatible,0,L8,96,1.0,False,True
+flip10,TRACE minus XGBoost,62,PR_AUC,TRACE minus XGBoost difference of poisoning changes,-0.009557506112396585,-0.05818803223191327,0.03944820795243722,2000,2000,0,0.6986506746626686,compatible,0,L8,96,1.0,False,True
+flip10,TA2,62,insiders_detected,poisoned minus unpoisoned,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+flip10,XGBoost_40,62,insiders_detected,poisoned minus unpoisoned,-2.0,-5.0,0.0,2000,2000,0,0.27586206896551724,compatible,0,L8,96,1.0,False,True
+flip10,TRACE minus XGBoost,62,insiders_detected,TRACE minus XGBoost difference of poisoning changes,2.0,0.0,5.0,2000,2000,0,0.27586206896551724,compatible,0,L8,96,1.0,False,True
+flip10,TA2,mean,PR_AUC,poisoned minus unpoisoned,-0.02105821374324372,-0.0536713362256001,0.0010924533652431159,2000,2000,0,0.13993003498250875,compatible,0,L8,96,1.0,False,True
+flip10,XGBoost_40,mean,PR_AUC,poisoned minus unpoisoned,-0.008673376702716987,-0.04577221120650459,0.020743684759821378,2000,2000,0,0.5822088955522239,compatible,0,L8,96,1.0,False,True
+flip10,TRACE minus XGBoost,mean,PR_AUC,TRACE minus XGBoost difference of poisoning changes,-0.012384837040526732,-0.05789338323585996,0.031216633043608773,2000,2000,0,0.5637181409295352,compatible,0,L8,96,1.0,False,True
+flip10,TA2,mean,insiders_detected,poisoned minus unpoisoned,-0.3333333333333333,-1.0,0.0,2000,2000,0,0.6226886556721639,compatible,0,L8,96,1.0,False,True
+flip10,XGBoost_40,mean,insiders_detected,poisoned minus unpoisoned,-0.3333333333333333,-2.0,1.0,2000,2000,0,0.84007996001999,compatible,0,L8,96,1.0,False,True
+flip10,TRACE minus XGBoost,mean,insiders_detected,TRACE minus XGBoost difference of poisoning changes,0.0,-1.3333333333333333,1.6666666666666667,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+backdoor01,TA2,42,PR_AUC,poisoned minus unpoisoned,-0.01049876547281936,-0.05037289491407574,0.02222946854028967,2000,2000,0,0.5602198900549725,compatible,0,L8,96,1.0,False,True
+backdoor01,XGBoost_40,42,PR_AUC,poisoned minus unpoisoned,-0.0029563429388782536,-0.041020979735881834,0.032417601104547715,2000,2000,0,0.8680659670164917,compatible,0,L8,96,1.0,False,True
+backdoor01,TRACE minus XGBoost,42,PR_AUC,TRACE minus XGBoost difference of poisoning changes,-0.007542422533941107,-0.05506359267857429,0.03720973805292702,2000,2000,0,0.7496251874062968,compatible,0,L8,96,1.0,False,True
+backdoor01,TA2,42,insiders_detected,poisoned minus unpoisoned,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+backdoor01,XGBoost_40,42,insiders_detected,poisoned minus unpoisoned,2.0,0.0,5.0,2000,2000,0,0.27586206896551724,compatible,0,L8,96,1.0,False,True
+backdoor01,TRACE minus XGBoost,42,insiders_detected,TRACE minus XGBoost difference of poisoning changes,-2.0,-5.0,0.0,2000,2000,0,0.27586206896551724,compatible,0,L8,96,1.0,False,True
+backdoor01,TA2,52,PR_AUC,poisoned minus unpoisoned,-0.018060580809342475,-0.08232616886449255,0.04874368066478678,2000,2000,0,0.5592203898050975,compatible,0,L8,96,1.0,False,True
+backdoor01,XGBoost_40,52,PR_AUC,poisoned minus unpoisoned,-0.005729829350145099,-0.030364427076880397,0.012562223086919247,2000,2000,0,0.5962018990504747,compatible,0,L8,96,1.0,False,True
+backdoor01,TRACE minus XGBoost,52,PR_AUC,TRACE minus XGBoost difference of poisoning changes,-0.012330751459197375,-0.07780042073270697,0.05461553466227914,2000,2000,0,0.6896551724137931,compatible,0,L8,96,1.0,False,True
+backdoor01,TA2,52,insiders_detected,poisoned minus unpoisoned,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+backdoor01,XGBoost_40,52,insiders_detected,poisoned minus unpoisoned,1.0,0.0,3.0,2000,2000,0,0.6296851574212894,compatible,0,L8,96,1.0,False,True
+backdoor01,TRACE minus XGBoost,52,insiders_detected,TRACE minus XGBoost difference of poisoning changes,-1.0,-3.0,0.0,2000,2000,0,0.6296851574212894,compatible,0,L8,96,1.0,False,True
+backdoor01,TA2,62,PR_AUC,poisoned minus unpoisoned,-0.03247116164849373,-0.08143306321804207,0.01348995366308027,2000,2000,0,0.16091954022988506,compatible,0,L8,96,1.0,False,True
+backdoor01,XGBoost_40,62,PR_AUC,poisoned minus unpoisoned,-0.006987854450777875,-0.04031456246281653,0.020724365145311088,2000,2000,0,0.656671664167916,compatible,0,L8,96,1.0,False,True
+backdoor01,TRACE minus XGBoost,62,PR_AUC,TRACE minus XGBoost difference of poisoning changes,-0.025483307197715854,-0.07446195017785712,0.020314798082267098,2000,2000,0,0.28235882058970513,compatible,0,L8,96,1.0,False,True
+backdoor01,TA2,62,insiders_detected,poisoned minus unpoisoned,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+backdoor01,XGBoost_40,62,insiders_detected,poisoned minus unpoisoned,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+backdoor01,TRACE minus XGBoost,62,insiders_detected,TRACE minus XGBoost difference of poisoning changes,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+backdoor01,TA2,mean,PR_AUC,poisoned minus unpoisoned,-0.020343502643551854,-0.04654382782674452,0.003971569735392324,2000,2000,0,0.10494752623688156,compatible,0,L8,96,1.0,False,True
+backdoor01,XGBoost_40,mean,PR_AUC,poisoned minus unpoisoned,-0.005224675579933742,-0.0355896031657811,0.02037817493241085,2000,2000,0,0.704647676161919,compatible,0,L8,96,1.0,False,True
+backdoor01,TRACE minus XGBoost,mean,PR_AUC,TRACE minus XGBoost difference of poisoning changes,-0.015118827063618112,-0.042505476672951764,0.013688990379399583,2000,2000,0,0.2888555722138931,compatible,0,L8,96,1.0,False,True
+backdoor01,TA2,mean,insiders_detected,poisoned minus unpoisoned,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+backdoor01,XGBoost_40,mean,insiders_detected,poisoned minus unpoisoned,1.0,0.0,2.6666666666666665,2000,2000,0,0.272863568215892,compatible,0,L8,96,1.0,False,True
+backdoor01,TRACE minus XGBoost,mean,insiders_detected,TRACE minus XGBoost difference of poisoning changes,-1.0,-2.6666666666666665,0.0,2000,2000,0,0.272863568215892,compatible,0,L8,96,1.0,False,True

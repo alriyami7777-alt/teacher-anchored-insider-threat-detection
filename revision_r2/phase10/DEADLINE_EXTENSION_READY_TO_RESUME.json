@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-23T08:58:45.312454+00:00",
+  "recovered_jobs": [
+    {
+      "utc": "2026-10-23T08:58:45.309833+00:00",
+      "key": "train_within_F00_52",
+      "exit": 0,
+      "status": "ok",
+      "wall_seconds": 225.38715982437134,
+      "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_within_F00_52.log",
+      "recovered_after_approved_deadline_extension": true,
+      "success_confirmed_from_completed_result_or_receipt": true
+    }
+  ],
+  "old_coordinators_stopped": true,
+  "scientific_children_finished_without_interruption": true,
+  "new_deadline_local": "2026-10-23T18:30:00+08:00"
+}

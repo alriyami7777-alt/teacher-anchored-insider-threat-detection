@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-23T03:58:19.118675+00:00",
+  "dropped": [
+    "email_count"
+  ],
+  "configs": [
+    "reduced",
+    "flip01",
+    "flip05",
+    "flip10",
+    "backdoor01"
+  ],
+  "r52_test_read": false
+}

@@ -71,8 +71,11 @@ For each results table, the numbers in the LaTeX source were compared with the l
 - **Unseen-user retraining and scoring (`tab:holdout`, `fig:holdout`):** frozen code in `holdout/code/` (split, data rebuild, training recipes, scoring); data preparation from raw CERT r5.2 in `holdout/data_prep/`; seed-42 checkpoints in `holdout/checkpoints_seed42/`; step-by-step reproduction in the main README section "Reproduce the unseen-user result (seed 42)".
 - **Explanation runs (`explanation/`, `explanation_holdout/`):** code in `explanation/code/` (see `explanation/CODE_NOTE.md`).
 
-## Further R2 analyses (Phases 6C, 7 and 8, added 23 Oct 2026)
+## Further R2 analyses (Phases 6C–11, added 23–24 Oct 2026)
 Each folder has its report (`CHATGPT_PHASE*_REPORT.md`), CSVs, figures, frozen-model and code receipts, and `reproducibility_code/`. Their rows are not yet keyed to manuscript labels; this map will be refreshed when the manuscript cites them.
 - `phase6c/`: C1 and C2 analyses (see `CHATGPT_PHASE6C_REPORT.md`), including augmented TRACE and XGBoost-40 runs, retention curves and Holm-corrected contrasts.
 - `phase7/`: case-level and operational analyses on the unseen users (P1–P6: case attribution, false alarms, insider timing, daily alert budget, rank-average combination, threshold rules).
 - `phase8/`: Q1–Q5 (more seeds, gradients by day, ODST routing and leaf occupancy, explanation randomisation checks, label-free input monitoring).
+- `phase9/`: limitation tests L1–L8 (target-side restandardisation, feature removal, lead time, route interventions, seed averaging, attribution baselines, local evasion attacks, training-label poisoning).
+- `phase10/`: CERT r6.2 cross-release tests (P1–P4): threshold-only refitting, and training and testing within r6.2 on a pre-registered user-disjoint split (`R62_SPLIT_RECEIPT.json`).
+- `phase11/`: CERT r6.2 on its own terms (C1–C4 and post-hoc conditions): pooled r5.2 + r6.2 and within-r6.2 training, four-fold user-level evaluation, user ROC-AUC, top-k user capture and daily alert budgets.

@@ -1,0 +1,66 @@
+{
+  "utc": "2026-10-23T11:42:47.220633+00:00",
+  "rng": "numpy.default_rng(42)",
+  "users": 4000,
+  "folds": [
+    {
+      "fold": 1,
+      "users": 1000,
+      "official": 2,
+      "nonofficial_affected": 6,
+      "normal": 992
+    },
+    {
+      "fold": 2,
+      "users": 1000,
+      "official": 1,
+      "nonofficial_affected": 6,
+      "normal": 993
+    },
+    {
+      "fold": 3,
+      "users": 1000,
+      "official": 1,
+      "nonofficial_affected": 6,
+      "normal": 993
+    },
+    {
+      "fold": 4,
+      "users": 1000,
+      "official": 1,
+      "nonofficial_affected": 6,
+      "normal": 993
+    }
+  ],
+  "assignment_csv_sha256": "a506aaa6a345f0558cf336849b04b0654a8824383e118cae4dedb1c9cef3d018",
+  "private_hashes": {
+    "AFFECTED.npy": "4f823e92076ce2542c44d54dfaa29bffedf19757516a4cf149d1b6edbb9bff6f",
+    "FOLD1_HELDOUT.npy": "60648f843aca662d5656626c717c3e36a552cbd2dc317c45ebd9fc535d242490",
+    "FOLD1_TRAIN_USERS.npy": "65731e19f3627c44ed070e663b99a1447f21d9df0578e243b32d0436c89f8845",
+    "FOLD2_HELDOUT.npy": "c4685512525e93620ac206974153e7b2017d0396fff6a751b253857863fcf250",
+    "FOLD2_TRAIN_USERS.npy": "223cf91ee228003df6ed62c56611b88400fd377cd3c8439082a785c3f5a7d62f",
+    "FOLD3_HELDOUT.npy": "b910a2592e6fbdb4f44b02a31a2adfed2c30a75c736d85c1b0a68ebb41dde324",
+    "FOLD3_TRAIN_USERS.npy": "6abf3e49da138408507d19116846595633796e3d8b77d37096ad0299e4dae0ee",
+    "FOLD4_HELDOUT.npy": "12e5d3bc73f7de6525cf144be4e3eeebc837b9c1fae2c7566846ec1046aa87ed",
+    "FOLD4_TRAIN_USERS.npy": "6f61708a66bbb9b18dd9b0b060ad7fec4af832980f3b20974ddab9b8a47c3b5a",
+    "FOLD_ASSIGNMENT.npy": "bb15f3599a5252e22bff19bb9108cef4da7c8f85168a099e56f841df9616c565",
+    "OFFICIAL.npy": "da9f564597adb23e73c5abd12cdaf596b0314f707acc8ddfc5ad4513c3e90b4f",
+    "PSEUDONYMS.npy": "0d85fe25808b10870ee4b425c68c73911d4fba4401ca5b17dadb240c95660dac"
+  },
+  "status_metadata_read_for_stratification_only": true,
+  "features_scores_metrics_training_not_started": true,
+  "n_train_days": 412,
+  "n_validation_days": 51,
+  "TRAIN": [
+    "2010-01-02",
+    "2011-02-17"
+  ],
+  "VALIDATION": [
+    "2011-02-18",
+    "2011-04-09"
+  ],
+  "unused_final_segment": [
+    "2011-04-10",
+    "2011-06-01"
+  ]
+}

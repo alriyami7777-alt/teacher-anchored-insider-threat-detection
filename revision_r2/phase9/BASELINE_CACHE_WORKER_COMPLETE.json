@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-23T04:18:47.400503+00:00",
+  "outcomes": [
+    {
+      "utc": "2026-10-23T04:17:31.434744+00:00",
+      "key": "baseline_cache_r5.1",
+      "script": "precache9.py",
+      "args": [
+        "--release",
+        "r5.1"
+      ],
+      "exit": 0,
+      "status": "ok",
+      "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase9\\private\\logs\\baseline_cache_r5.1.log"
+    },
+    {
+      "utc": "2026-10-23T04:18:47.398917+00:00",
+      "key": "baseline_cache_r6.2",
+      "script": "precache9.py",
+      "args": [
+        "--release",
+        "r6.2"
+      ],
+      "exit": 0,
+      "status": "ok",
+      "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase9\\private\\logs\\baseline_cache_r6.2.log"
+    }
+  ],
+  "no_model_inference": true
+}

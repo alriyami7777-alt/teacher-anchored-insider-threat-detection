@@ -1,0 +1,93 @@
+{
+  "utc": "2026-10-23T06:47:16.434903+00:00",
+  "figures": [
+    {
+      "stem": "figure_L1_restandardisation",
+      "png_sha256": "689453eca955e0ec545762b3a6246ecf1f082e4f74a86f4a96c165220109a656",
+      "CSV_sha256": "2516e11cbb1506d8ac52ef7a7328e462ef90aa5cc55e6143d50021127842769d",
+      "dpi": 300,
+      "minimum_font_pt": 12.0,
+      "size_inches": [
+        15.0,
+        8.0
+      ]
+    },
+    {
+      "stem": "figure_L2_drop_features",
+      "png_sha256": "1ea36ccd6f04b2ee380e0305c9360f0084258ab78aafacc057c4f6abe2bc4f47",
+      "CSV_sha256": "4fd5cdbecc49784eafcaca8d4f0238f4564e3fbe9988cf5a2ac98557c6371f32",
+      "dpi": 300,
+      "minimum_font_pt": 12.0,
+      "size_inches": [
+        15.0,
+        6.0
+      ]
+    },
+    {
+      "stem": "figure_L3_lead_time",
+      "png_sha256": "1248153896878de6e64a1ef820453bd5da81cee28dcaa266ab0f93e7c93ee93b",
+      "CSV_sha256": "d0f4b811f5a63eccf3c1e765604ac176607cb026b5186c747f6498618b0e8481",
+      "dpi": 300,
+      "minimum_font_pt": 12.0,
+      "size_inches": [
+        13.0,
+        6.0
+      ]
+    },
+    {
+      "stem": "figure_L4_route_interventions",
+      "png_sha256": "a0a1b8cf3fe7a9abb37635274901bb5f7a575663a94e48c03ed2a51b8487f017",
+      "CSV_sha256": "d5f87874e40cb63049f7b8bbc30dad2144fe2a499bec2c2a1e54bdd901b39612",
+      "dpi": 300,
+      "minimum_font_pt": 12.0,
+      "size_inches": [
+        19.0,
+        10.0
+      ]
+    },
+    {
+      "stem": "figure_L5_seed_averaging",
+      "png_sha256": "dc02fc232b51dcdfe5d349624f0c04ca03997795cd2edef3c2009a1f8e665fa2",
+      "CSV_sha256": "c492b882ebace0a8512cd5bd8445c9b7672b9d470be5dc08aa087932a9935296",
+      "dpi": 300,
+      "minimum_font_pt": 12.0,
+      "size_inches": [
+        19.0,
+        6.0
+      ]
+    },
+    {
+      "stem": "figure_L6_attribution_baselines",
+      "png_sha256": "73a810538cb2812fba827ae95d067fec71c91fc881d7cf5bec5b6af337ee46d6",
+      "CSV_sha256": "fbca249e4cda10a3303cdee7810362640e7e3ca8fa0994a1236c4e8d4016bbce",
+      "dpi": 300,
+      "minimum_font_pt": 12.0,
+      "size_inches": [
+        15.0,
+        6.0
+      ]
+    },
+    {
+      "stem": "figure_L7_evasion",
+      "png_sha256": "740966877077a72667836137aa1ce9809b9b63c0a27b235ee0164b659fbc27f9",
+      "CSV_sha256": "72b8c065610f6ff5aef5f264254c8e5a7c9b20b6f8c16a89ca4e62d84c92cf6f",
+      "dpi": 300,
+      "minimum_font_pt": 12.0,
+      "size_inches": [
+        21.0,
+        11.0
+      ]
+    },
+    {
+      "stem": "figure_L8_poisoning",
+      "png_sha256": "1cc5b9fbb72e65053c0cd0a2d51bc879c58b777f3008841bb558839962fcba91",
+      "CSV_sha256": "0a6e3819c1adc91946146fec5335a98f3bb792641ebd99f8775d79a299c490dc",
+      "dpi": 300,
+      "minimum_font_pt": 12.0,
+      "size_inches": [
+        18.0,
+        7.0
+      ]
+    }
+  ]
+}

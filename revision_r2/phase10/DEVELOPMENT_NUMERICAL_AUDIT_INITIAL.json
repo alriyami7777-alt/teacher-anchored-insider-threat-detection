@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-23T07:43:25.205906+00:00",
+  "checks": {
+    "split_exact_default_rng42_stratified": true,
+    "disjoint_2000_2000_15_14": true,
+    "nested_adaptation_excludes_heldout": true,
+    "eligible_windows_no_boundary_or_future": true,
+    "weighted_AP_ties_matches_sklearn": true,
+    "summary_40_features_finite": true,
+    "all_available_prepared_data_integrity": true
+  },
+  "all_checks_passed": true,
+  "prepared_data": [
+    {
+      "condition": "within",
+      "files_match": true,
+      "development_users_only": true,
+      "sampled_exact_features_and_labels": true
+    }
+  ],
+  "no_target_forward": true
+}

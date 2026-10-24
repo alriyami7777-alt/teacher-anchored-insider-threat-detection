@@ -1,0 +1,6 @@
+{
+  "utc": "2026-10-24T00:28:33.6263741Z",
+  "reviewed": true,
+  "figure_sha256": "3c62628a26eea8e2548283bafc2ccd18a0f5cf3b00ad57f25ee072142b20884c",
+  "review": "Reviewed the final 21-row, 105-cell rank figure after both report writers exited: all scenario and pseudonym labels, numeric ranks, condition/model/seed labels, colour legend and footer are readable, with no clipping or overlap. The figure receipt confirms 300 dpi and at least 12-point visible fonts."
+}

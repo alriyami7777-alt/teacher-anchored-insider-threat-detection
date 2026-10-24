@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-23T07:32:32.598187+00:00",
+  "amendment_sha256": "9a0522f11c4babaa6a862debe9952c3d7509d2326eab0f333f7bd3cfbc42d4d7",
+  "split_receipt_sha256": "b719319abc2194e2dfcca7ce01fca5301348e0b9e3894ca1b3bfad6cbc52c323",
+  "preregistration_after_receipt_sha256": "a8aebb8648f4c4afc5073639482c87e94cde76e2a7575a20f87e38e1aaa0460b",
+  "split_before_any_feature_score_label_computation": true
+}

@@ -1,0 +1,106 @@
+condition,condition_label,model,model_label,seed,scenario,pseudonym,rank,status
+C1,Pooled r5.2 + r6.2,TA2,TRACE,42,r6.2-1,U_e30588979c,484,ok
+C1,Pooled r5.2 + r6.2,TA2,TRACE,42,r6.2-2,U_11428d4abe,28,ok
+C1,Pooled r5.2 + r6.2,TA2,TRACE,42,r6.2-3,U_51db80150c,25,ok
+C1,Pooled r5.2 + r6.2,TA2,TRACE,42,r6.2-4,U_70c254c4fa,490,ok
+C1,Pooled r5.2 + r6.2,TA2,TRACE,42,r6.2-5,U_c39d055168,2276,ok
+C1,Pooled r5.2 + r6.2,TA2,TRACE,52,r6.2-1,U_e30588979c,85,ok
+C1,Pooled r5.2 + r6.2,TA2,TRACE,52,r6.2-2,U_11428d4abe,19,ok
+C1,Pooled r5.2 + r6.2,TA2,TRACE,52,r6.2-3,U_51db80150c,11,ok
+C1,Pooled r5.2 + r6.2,TA2,TRACE,52,r6.2-4,U_70c254c4fa,434,ok
+C1,Pooled r5.2 + r6.2,TA2,TRACE,52,r6.2-5,U_c39d055168,2047,ok
+C1,Pooled r5.2 + r6.2,TA2,TRACE,62,r6.2-1,U_e30588979c,289,ok
+C1,Pooled r5.2 + r6.2,TA2,TRACE,62,r6.2-2,U_11428d4abe,78,ok
+C1,Pooled r5.2 + r6.2,TA2,TRACE,62,r6.2-3,U_51db80150c,1,ok
+C1,Pooled r5.2 + r6.2,TA2,TRACE,62,r6.2-4,U_70c254c4fa,1378,ok
+C1,Pooled r5.2 + r6.2,TA2,TRACE,62,r6.2-5,U_c39d055168,1929,ok
+C1,Pooled r5.2 + r6.2,XGBoost_40,XGBoost-40,42,r6.2-1,U_e30588979c,162,ok
+C1,Pooled r5.2 + r6.2,XGBoost_40,XGBoost-40,42,r6.2-2,U_11428d4abe,1,ok
+C1,Pooled r5.2 + r6.2,XGBoost_40,XGBoost-40,42,r6.2-3,U_51db80150c,123,ok
+C1,Pooled r5.2 + r6.2,XGBoost_40,XGBoost-40,42,r6.2-4,U_70c254c4fa,160,ok
+C1,Pooled r5.2 + r6.2,XGBoost_40,XGBoost-40,42,r6.2-5,U_c39d055168,2644,ok
+C1,Pooled r5.2 + r6.2,XGBoost_40,XGBoost-40,52,r6.2-1,U_e30588979c,175,ok
+C1,Pooled r5.2 + r6.2,XGBoost_40,XGBoost-40,52,r6.2-2,U_11428d4abe,1,ok
+C1,Pooled r5.2 + r6.2,XGBoost_40,XGBoost-40,52,r6.2-3,U_51db80150c,77,ok
+C1,Pooled r5.2 + r6.2,XGBoost_40,XGBoost-40,52,r6.2-4,U_70c254c4fa,286,ok
+C1,Pooled r5.2 + r6.2,XGBoost_40,XGBoost-40,52,r6.2-5,U_c39d055168,3056,ok
+C1,Pooled r5.2 + r6.2,XGBoost_40,XGBoost-40,62,r6.2-1,U_e30588979c,169,ok
+C1,Pooled r5.2 + r6.2,XGBoost_40,XGBoost-40,62,r6.2-2,U_11428d4abe,1,ok
+C1,Pooled r5.2 + r6.2,XGBoost_40,XGBoost-40,62,r6.2-3,U_51db80150c,60,ok
+C1,Pooled r5.2 + r6.2,XGBoost_40,XGBoost-40,62,r6.2-4,U_70c254c4fa,170,ok
+C1,Pooled r5.2 + r6.2,XGBoost_40,XGBoost-40,62,r6.2-5,U_c39d055168,2218,ok
+C2,Pooled + 2% oversampling,TA2,TRACE,42,r6.2-1,U_e30588979c,319,ok
+C2,Pooled + 2% oversampling,TA2,TRACE,42,r6.2-2,U_11428d4abe,1164,ok
+C2,Pooled + 2% oversampling,TA2,TRACE,42,r6.2-3,U_51db80150c,39,ok
+C2,Pooled + 2% oversampling,TA2,TRACE,42,r6.2-4,U_70c254c4fa,3124,ok
+C2,Pooled + 2% oversampling,TA2,TRACE,42,r6.2-5,U_c39d055168,2127,ok
+C2,Pooled + 2% oversampling,TA2,TRACE,52,r6.2-1,U_e30588979c,305,ok
+C2,Pooled + 2% oversampling,TA2,TRACE,52,r6.2-2,U_11428d4abe,227,ok
+C2,Pooled + 2% oversampling,TA2,TRACE,52,r6.2-3,U_51db80150c,57,ok
+C2,Pooled + 2% oversampling,TA2,TRACE,52,r6.2-4,U_70c254c4fa,3289,ok
+C2,Pooled + 2% oversampling,TA2,TRACE,52,r6.2-5,U_c39d055168,2256,ok
+C2,Pooled + 2% oversampling,TA2,TRACE,62,r6.2-1,U_e30588979c,156,ok
+C2,Pooled + 2% oversampling,TA2,TRACE,62,r6.2-2,U_11428d4abe,164,ok
+C2,Pooled + 2% oversampling,TA2,TRACE,62,r6.2-3,U_51db80150c,13,ok
+C2,Pooled + 2% oversampling,TA2,TRACE,62,r6.2-4,U_70c254c4fa,2237,ok
+C2,Pooled + 2% oversampling,TA2,TRACE,62,r6.2-5,U_c39d055168,2113,ok
+C2,Pooled + 2% oversampling,XGBoost_40,XGBoost-40,42,r6.2-1,U_e30588979c,309,ok
+C2,Pooled + 2% oversampling,XGBoost_40,XGBoost-40,42,r6.2-2,U_11428d4abe,17,ok
+C2,Pooled + 2% oversampling,XGBoost_40,XGBoost-40,42,r6.2-3,U_51db80150c,87,ok
+C2,Pooled + 2% oversampling,XGBoost_40,XGBoost-40,42,r6.2-4,U_70c254c4fa,459,ok
+C2,Pooled + 2% oversampling,XGBoost_40,XGBoost-40,42,r6.2-5,U_c39d055168,2492,ok
+C2,Pooled + 2% oversampling,XGBoost_40,XGBoost-40,52,r6.2-1,U_e30588979c,404,ok
+C2,Pooled + 2% oversampling,XGBoost_40,XGBoost-40,52,r6.2-2,U_11428d4abe,8,ok
+C2,Pooled + 2% oversampling,XGBoost_40,XGBoost-40,52,r6.2-3,U_51db80150c,71,ok
+C2,Pooled + 2% oversampling,XGBoost_40,XGBoost-40,52,r6.2-4,U_70c254c4fa,310,ok
+C2,Pooled + 2% oversampling,XGBoost_40,XGBoost-40,52,r6.2-5,U_c39d055168,2157,ok
+C2,Pooled + 2% oversampling,XGBoost_40,XGBoost-40,62,r6.2-1,U_e30588979c,329,ok
+C2,Pooled + 2% oversampling,XGBoost_40,XGBoost-40,62,r6.2-2,U_11428d4abe,1,ok
+C2,Pooled + 2% oversampling,XGBoost_40,XGBoost-40,62,r6.2-3,U_51db80150c,99,ok
+C2,Pooled + 2% oversampling,XGBoost_40,XGBoost-40,62,r6.2-4,U_70c254c4fa,348,ok
+C2,Pooled + 2% oversampling,XGBoost_40,XGBoost-40,62,r6.2-5,U_c39d055168,2045,ok
+C3,r6.2 only,TA2,TRACE,42,r6.2-1,U_e30588979c,315,ok
+C3,r6.2 only,TA2,TRACE,42,r6.2-2,U_11428d4abe,3339,ok
+C3,r6.2 only,TA2,TRACE,42,r6.2-3,U_51db80150c,87,ok
+C3,r6.2 only,TA2,TRACE,42,r6.2-4,U_70c254c4fa,1712,ok
+C3,r6.2 only,TA2,TRACE,42,r6.2-5,U_c39d055168,2429,ok
+C3,r6.2 only,TA2,TRACE,52,r6.2-1,U_e30588979c,240,ok
+C3,r6.2 only,TA2,TRACE,52,r6.2-2,U_11428d4abe,3711,ok
+C3,r6.2 only,TA2,TRACE,52,r6.2-3,U_51db80150c,28,ok
+C3,r6.2 only,TA2,TRACE,52,r6.2-4,U_70c254c4fa,1962,ok
+C3,r6.2 only,TA2,TRACE,52,r6.2-5,U_c39d055168,2474,ok
+C3,r6.2 only,TA2,TRACE,62,r6.2-1,U_e30588979c,145,ok
+C3,r6.2 only,TA2,TRACE,62,r6.2-2,U_11428d4abe,3587,ok
+C3,r6.2 only,TA2,TRACE,62,r6.2-3,U_51db80150c,39,ok
+C3,r6.2 only,TA2,TRACE,62,r6.2-4,U_70c254c4fa,2820,ok
+C3,r6.2 only,TA2,TRACE,62,r6.2-5,U_c39d055168,2413,ok
+C3,r6.2 only,XGBoost_40,XGBoost-40,42,r6.2-1,U_e30588979c,1326,ok
+C3,r6.2 only,XGBoost_40,XGBoost-40,42,r6.2-2,U_11428d4abe,1811,ok
+C3,r6.2 only,XGBoost_40,XGBoost-40,42,r6.2-3,U_51db80150c,132,ok
+C3,r6.2 only,XGBoost_40,XGBoost-40,42,r6.2-4,U_70c254c4fa,530,ok
+C3,r6.2 only,XGBoost_40,XGBoost-40,42,r6.2-5,U_c39d055168,1521,ok
+C3,r6.2 only,XGBoost_40,XGBoost-40,52,r6.2-1,U_e30588979c,1667,ok
+C3,r6.2 only,XGBoost_40,XGBoost-40,52,r6.2-2,U_11428d4abe,2249,ok
+C3,r6.2 only,XGBoost_40,XGBoost-40,52,r6.2-3,U_51db80150c,168,ok
+C3,r6.2 only,XGBoost_40,XGBoost-40,52,r6.2-4,U_70c254c4fa,647,ok
+C3,r6.2 only,XGBoost_40,XGBoost-40,52,r6.2-5,U_c39d055168,2072,ok
+C3,r6.2 only,XGBoost_40,XGBoost-40,62,r6.2-1,U_e30588979c,1167,ok
+C3,r6.2 only,XGBoost_40,XGBoost-40,62,r6.2-2,U_11428d4abe,2060,ok
+C3,r6.2 only,XGBoost_40,XGBoost-40,62,r6.2-3,U_51db80150c,187,ok
+C3,r6.2 only,XGBoost_40,XGBoost-40,62,r6.2-4,U_70c254c4fa,479,ok
+C3,r6.2 only,XGBoost_40,XGBoost-40,62,r6.2-5,U_c39d055168,2235,ok
+C4,Pooled task-only control,F00,Task-only F00,42,r6.2-1,U_e30588979c,470,ok
+C4,Pooled task-only control,F00,Task-only F00,42,r6.2-2,U_11428d4abe,47,ok
+C4,Pooled task-only control,F00,Task-only F00,42,r6.2-3,U_51db80150c,50,ok
+C4,Pooled task-only control,F00,Task-only F00,42,r6.2-4,U_70c254c4fa,285,ok
+C4,Pooled task-only control,F00,Task-only F00,42,r6.2-5,U_c39d055168,3653,ok
+C4,Pooled task-only control,F00,Task-only F00,52,r6.2-1,U_e30588979c,85,ok
+C4,Pooled task-only control,F00,Task-only F00,52,r6.2-2,U_11428d4abe,2,ok
+C4,Pooled task-only control,F00,Task-only F00,52,r6.2-3,U_51db80150c,5,ok
+C4,Pooled task-only control,F00,Task-only F00,52,r6.2-4,U_70c254c4fa,517,ok
+C4,Pooled task-only control,F00,Task-only F00,52,r6.2-5,U_c39d055168,3404,ok
+C4,Pooled task-only control,F00,Task-only F00,62,r6.2-1,U_e30588979c,411,ok
+C4,Pooled task-only control,F00,Task-only F00,62,r6.2-2,U_11428d4abe,497,ok
+C4,Pooled task-only control,F00,Task-only F00,62,r6.2-3,U_51db80150c,1,ok
+C4,Pooled task-only control,F00,Task-only F00,62,r6.2-4,U_70c254c4fa,953,ok
+C4,Pooled task-only control,F00,Task-only F00,62,r6.2-5,U_c39d055168,2177,ok

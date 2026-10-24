@@ -1,0 +1,17 @@
+condition,model,seed,metric,contrast,estimate,ci95_low,ci95_high,attempted_replicates,valid_replicates,undefined_replicates,p_unadjusted,CI_direction,null,Holm_family,Holm_family_size,p_Holm,Holm_reject_0_05,exploratory
+flip01,TA2,mean,PR_AUC,poisoned minus unpoisoned,-0.03168759941987298,-0.07189229504089419,0.000945198777677442,2000,2000,0,0.09095452273863068,compatible,0,L8,96,1.0,False,True
+flip01,XGBoost_40,mean,PR_AUC,poisoned minus unpoisoned,0.0031971900057395177,-0.003392166789608504,0.009610702085748747,2000,2000,0,0.34832583708145926,compatible,0,L8,96,1.0,False,True
+flip01,TA2,mean,insiders_detected,poisoned minus unpoisoned,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+flip01,XGBoost_40,mean,insiders_detected,poisoned minus unpoisoned,1.0,0.0,2.6666666666666665,2000,2000,0,0.272863568215892,compatible,0,L8,96,1.0,False,True
+flip05,TA2,mean,PR_AUC,poisoned minus unpoisoned,-0.03097782025760228,-0.07681034755446961,0.008067411416733582,2000,2000,0,0.15142428785607195,compatible,0,L8,96,1.0,False,True
+flip05,XGBoost_40,mean,PR_AUC,poisoned minus unpoisoned,-0.01752899028368023,-0.0404034610188014,0.0006965928110977003,2000,2000,0,0.08345827086456771,compatible,0,L8,96,1.0,False,True
+flip05,TA2,mean,insiders_detected,poisoned minus unpoisoned,0.3333333333333333,0.0,1.0,2000,2000,0,0.6511744127936032,compatible,0,L8,96,1.0,False,True
+flip05,XGBoost_40,mean,insiders_detected,poisoned minus unpoisoned,0.6666666666666666,0.0,1.6666666666666667,2000,2000,0,0.27586206896551724,compatible,0,L8,96,1.0,False,True
+flip10,TA2,mean,PR_AUC,poisoned minus unpoisoned,-0.02105821374324372,-0.0536713362256001,0.0010924533652431159,2000,2000,0,0.13993003498250875,compatible,0,L8,96,1.0,False,True
+flip10,XGBoost_40,mean,PR_AUC,poisoned minus unpoisoned,-0.008673376702716987,-0.04577221120650459,0.020743684759821378,2000,2000,0,0.5822088955522239,compatible,0,L8,96,1.0,False,True
+flip10,TA2,mean,insiders_detected,poisoned minus unpoisoned,-0.3333333333333333,-1.0,0.0,2000,2000,0,0.6226886556721639,compatible,0,L8,96,1.0,False,True
+flip10,XGBoost_40,mean,insiders_detected,poisoned minus unpoisoned,-0.3333333333333333,-2.0,1.0,2000,2000,0,0.84007996001999,compatible,0,L8,96,1.0,False,True
+backdoor01,TA2,mean,PR_AUC,poisoned minus unpoisoned,-0.020343502643551854,-0.04654382782674452,0.003971569735392324,2000,2000,0,0.10494752623688156,compatible,0,L8,96,1.0,False,True
+backdoor01,XGBoost_40,mean,PR_AUC,poisoned minus unpoisoned,-0.005224675579933742,-0.0355896031657811,0.02037817493241085,2000,2000,0,0.704647676161919,compatible,0,L8,96,1.0,False,True
+backdoor01,TA2,mean,insiders_detected,poisoned minus unpoisoned,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L8,96,1.0,False,True
+backdoor01,XGBoost_40,mean,insiders_detected,poisoned minus unpoisoned,1.0,0.0,2.6666666666666665,2000,2000,0,0.272863568215892,compatible,0,L8,96,1.0,False,True

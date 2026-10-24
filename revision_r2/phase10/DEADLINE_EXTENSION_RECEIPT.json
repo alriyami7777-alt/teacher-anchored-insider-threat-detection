@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-23T08:56:05.995647+00:00",
+  "approved_local": "2026-10-23T16:49:00+08:00",
+  "previous_deadline_local": "2026-10-23T17:45:00+08:00",
+  "deadline_local": "2026-10-23T18:30:00+08:00",
+  "previous_bytes": 96652,
+  "previous_sha256": "a8aebb8648f4c4afc5073639482c87e94cde76e2a7575a20f87e38e1aaa0460b",
+  "hashed_bytes": 97845,
+  "sha256": "4d3740434ba0819bf5c0249ec7650d626c679f6ddc850db19d1796e9821b02d4",
+  "scientific_methods_unchanged": true
+}

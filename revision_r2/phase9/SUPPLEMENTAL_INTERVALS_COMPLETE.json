@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-23T06:43:18.876710+00:00",
+  "counts": {
+    "L1": 288,
+    "L2": 192,
+    "L5": 18,
+    "L7": 384,
+    "L8": 64
+  },
+  "L3_additional_mean_metric_rows": 36,
+  "missing": [],
+  "no_new_model_inference": true,
+  "no_new_hypotheses": true,
+  "code_freeze_sha256": "fca25213c637621a1883729c649ce0a63b67b5d79b6f10a551f560ce013cc71e"
+}

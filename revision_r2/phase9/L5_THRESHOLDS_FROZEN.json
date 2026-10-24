@@ -1,0 +1,93 @@
+{
+  "utc": "2026-10-23T06:32:04.661376+00:00",
+  "thresholds": [
+    {
+      "model": "TA2",
+      "group": "three",
+      "seeds": [
+        42,
+        52,
+        62
+      ],
+      "threshold": 0.39,
+      "validation_score_sha256": "a7952fce43b4a347917d29a261732a614b01fea83bf17e794fd0338495a6deb4",
+      "population": "clean development VALIDATION only"
+    },
+    {
+      "model": "TA2",
+      "group": "eight",
+      "seeds": [
+        42,
+        52,
+        62,
+        72,
+        82,
+        92,
+        102,
+        112
+      ],
+      "threshold": 0.47000000000000003,
+      "validation_score_sha256": "1f563421fbcf2cd795a04c6a1e8f18ec0bc2eaf1a7eed66134bfb47a64a3778b",
+      "population": "clean development VALIDATION only"
+    },
+    {
+      "model": "F00",
+      "group": "three",
+      "seeds": [
+        42,
+        52,
+        62
+      ],
+      "threshold": 0.64,
+      "validation_score_sha256": "deaa34af7bb8187e7268d5281d8b00fe1088aaef44987a71b9fb43569a887d1c",
+      "population": "clean development VALIDATION only"
+    },
+    {
+      "model": "F00",
+      "group": "eight",
+      "seeds": [
+        42,
+        52,
+        62,
+        72,
+        82,
+        92,
+        102,
+        112
+      ],
+      "threshold": 0.41000000000000003,
+      "validation_score_sha256": "37d816de31c61e1a326a34a1e455000b044ab6cc8bda81096d1e24527b52a1d3",
+      "population": "clean development VALIDATION only"
+    },
+    {
+      "model": "XGBoost_40",
+      "group": "three",
+      "seeds": [
+        42,
+        52,
+        62
+      ],
+      "threshold": 0.5800000000000001,
+      "validation_score_sha256": "c2f6e92c95486739c14b7f0a8eb44589426e585a372ea9e9d1cc2c45686def68",
+      "population": "clean development VALIDATION only"
+    },
+    {
+      "model": "XGBoost_40",
+      "group": "eight",
+      "seeds": [
+        42,
+        52,
+        62,
+        72,
+        82,
+        92,
+        102,
+        112
+      ],
+      "threshold": 0.53,
+      "validation_score_sha256": "d0e7e83f0a6d4e5508fa4d2569060b92b78bc0b926a58ba254d088938f6bc5eb",
+      "population": "clean development VALIDATION only"
+    }
+  ],
+  "validation_labels_sha256": "00a48050bc36c82682fcf2bc6f29875c8cefee8a71865a087fa03431bb993e76"
+}

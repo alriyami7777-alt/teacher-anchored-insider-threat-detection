@@ -1,0 +1,19 @@
+model,group,metric,contrast,single_seed_mean,estimate,ci95_low,ci95_high,attempted_replicates,valid_replicates,undefined_replicates,p_unadjusted,CI_direction,null,Holm_family,Holm_family_size,p_Holm,Holm_reject_0_05,exploratory
+TA2,three,PR_AUC,averaged scores minus mean single-seed metrics,0.712200526293219,0.020971509613383454,0.005641739764047679,0.04167864737960876,2000,2000,0,0.027486256871564217,above,0,L5,18,0.3023488255872064,False,True
+TA2,three,insiders_detected,averaged scores minus mean single-seed metrics,24.0,0.0,0.0,0.0,2000,2000,0,1.0,compatible,0,L5,18,1.0,False,True
+TA2,three,noninsiders_flagged,averaged scores minus mean single-seed metrics,26.0,1.0,-2.666666666666668,4.666666666666668,2000,2000,0,0.6361819090454772,compatible,0,L5,18,1.0,False,True
+TA2,eight,PR_AUC,averaged scores minus mean single-seed metrics,0.7052372995106623,0.028134027371768178,0.012018876634974602,0.05709302482773543,2000,2000,0,0.030484757621189407,above,0,L5,18,0.30484757621189407,False,True
+TA2,eight,insiders_detected,averaged scores minus mean single-seed metrics,23.75,0.25,-0.5,1.0,2000,2000,0,0.6211894052973513,compatible,0,L5,18,1.0,False,True
+TA2,eight,noninsiders_flagged,averaged scores minus mean single-seed metrics,25.125,-4.125,-7.625,-0.75,2000,2000,0,0.02498750624687656,below,0,L5,18,0.2998500749625187,False,True
+F00,three,PR_AUC,averaged scores minus mean single-seed metrics,0.6924906910322249,0.03813183469160408,0.015006238843332718,0.0724481898535922,2000,2000,0,0.017491254372813594,above,0,L5,18,0.2448775612193903,False,True
+F00,three,insiders_detected,averaged scores minus mean single-seed metrics,23.666666666666668,-0.6666666666666679,-2.0,0.0,2000,2000,0,0.4397801099450275,compatible,0,L5,18,1.0,False,True
+F00,three,noninsiders_flagged,averaged scores minus mean single-seed metrics,27.666666666666668,-8.666666666666668,-13.666666666666668,-4.0,2000,2000,0,0.0004997501249375312,below,0,L5,18,0.008995502248875561,True,True
+F00,eight,PR_AUC,averaged scores minus mean single-seed metrics,0.6735383030145431,0.04421711656960847,0.023947469568601144,0.08211288267436563,2000,2000,0,0.010994502748625687,above,0,L5,18,0.16491754122938532,False,True
+F00,eight,insiders_detected,averaged scores minus mean single-seed metrics,23.75,0.25,-0.5,1.5,2000,2000,0,0.8540729635182409,compatible,0,L5,18,1.0,False,True
+F00,eight,noninsiders_flagged,averaged scores minus mean single-seed metrics,24.875,1.125,-2.75,5.375,2000,2000,0,0.6096951524237881,compatible,0,L5,18,1.0,False,True
+XGBoost_40,three,PR_AUC,averaged scores minus mean single-seed metrics,0.8240029991906518,0.001602106026816874,-2.1882202662201753e-05,0.0033284622804379735,2000,2000,0,0.06196901549225387,compatible,0,L5,18,0.5577211394302849,False,True
+XGBoost_40,three,insiders_detected,averaged scores minus mean single-seed metrics,23.0,-1.0,-2.666666666666668,0.0,2000,2000,0,0.263368315842079,compatible,0,L5,18,1.0,False,True
+XGBoost_40,three,noninsiders_flagged,averaged scores minus mean single-seed metrics,12.0,-7.0,-11.0,-3.666666666666667,2000,2000,0,0.001999000499750125,below,0,L5,18,0.03398300849575212,True,True
+XGBoost_40,eight,PR_AUC,averaged scores minus mean single-seed metrics,0.8223749167892486,0.0026086295405772786,0.00046282915256137813,0.004878018785492745,2000,2000,0,0.01899050474762619,above,0,L5,18,0.24687656171914046,False,True
+XGBoost_40,eight,insiders_detected,averaged scores minus mean single-seed metrics,23.375,-0.375,-1.5,0.375,2000,2000,0,0.6226886556721639,compatible,0,L5,18,1.0,False,True
+XGBoost_40,eight,noninsiders_flagged,averaged scores minus mean single-seed metrics,13.5,-7.5,-11.75,-3.875,2000,2000,0,0.0024987506246876563,below,0,L5,18,0.0399800099950025,True,True

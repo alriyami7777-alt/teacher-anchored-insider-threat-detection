@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-23T21:56:23.610887+00:00",
+  "approval_local": "2026-10-24T05:53:00+08:00",
+  "previous_bytes": 109413,
+  "previous_sha256": "77ebf97202719e5e931cd163281b6db9cc14ae94a8ffb6e3c5e1b86881f18cfa",
+  "hashed_bytes": 110800,
+  "sha256": "367fbe0a84762dd3358c192454aea8dbaf81ff722d0079fbea017f8936ddd0c6",
+  "prompt_sha256": "d414a9b8cff2dd7d224d6f0fe51d65386c8bb0f8df321d2ad75c669515384aaf",
+  "old_common_sha256": "ba7e5abc532355697b54649aaaefd8d5b0c04388948ab5b5b6d7de16e0315318",
+  "new_common_sha256": "92b8f5117cff05473308a2b9342ac70a574e58ee465e6ce3618d2feff3457e9b",
+  "prior_training_freeze_sha256": "00e59130ecbd1286e62b9a93a3863059e4ae8cf5e7c6cfafc3eeb9aa1d5839b5",
+  "overall_time_limit": null,
+  "per_run_limit_seconds": 5400,
+  "scientific_methods_data_RNG_priority_unchanged": true,
+  "no_heldout_rescoring": true,
+  "current_scientific_children_uninterrupted": true
+}

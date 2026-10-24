@@ -1,0 +1,298 @@
+{
+  "utc": "2026-10-23T03:58:19.098002+00:00",
+  "conditions": [
+    {
+      "utc": "2026-10-23T03:57:59.959306+00:00",
+      "config": "reduced",
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "training_population": "1500 development users TRAIN only",
+      "selection_population": "clean development VALIDATION only",
+      "original_positive_windows": 3040,
+      "modified_positive_windows": 0,
+      "actual_modified_fraction": 0.0,
+      "affected_users": [],
+      "poison_index_sha256": "e734dac55ea9fbbe782af2d8c02c3c5992131906228afb2aaaf137d6f3ed74db",
+      "added_trigger_copies": 0,
+      "train": {
+        "windows": 591000,
+        "positive_windows": 3040,
+        "X_sha256": "d0e396ce6809e2f0a34d9f7af7486cc2794e400091988fc56aa150ee7083e864",
+        "X40_sha256": "3fdefdda456cbb05967d544e85725810efe90b905ff6f36f37e90dcc3c4e32f5",
+        "y_sha256": "bfe88c0dd3a1e29c567ab8375ce0f6452d06a55591711997792244dbc6ee41f7"
+      },
+      "validation": {
+        "windows": 48000,
+        "positive_windows": 473,
+        "X_sha256": "18cd7dc423e696a8925e483240cb27de835a4c391619880c79059a1508e077d5",
+        "X40_sha256": "8f08ab6b13ba51c19a0f31fd6ecef727ea81550f5d81854b8696229b240181ef",
+        "y_sha256": "d514c0efc1fac7e2d2e581b95dc4e204063ee9817baf330bfe7ee1672b0d6f2c"
+      }
+    },
+    {
+      "utc": "2026-10-23T03:58:03.597881+00:00",
+      "config": "flip01",
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "training_population": "1500 development users TRAIN only",
+      "selection_population": "clean development VALIDATION only",
+      "original_positive_windows": 3040,
+      "modified_positive_windows": 96,
+      "actual_modified_fraction": 0.031578947368421054,
+      "affected_users": [
+        "U_79c0492cd8"
+      ],
+      "poison_index_sha256": "cb4f7fc238fcfbb48b73a58f3c802710c3e0015a4fb781569e9ff7a67aa63206",
+      "added_trigger_copies": 0,
+      "train": {
+        "windows": 591000,
+        "positive_windows": 2944,
+        "X_sha256": "e9e414692883d9e364af89437b4bfb8faca5d8c00328d70fe9af9b5105f35cc4",
+        "X40_sha256": "40ffbccd51885d50bbcd244cfde4e22eb57aa25c4666f3f5d650fab37b35e845",
+        "y_sha256": "fe3d742c877d52f1b8dd612e6bf104b09b76a53d47697c6f24afdc656737fe92"
+      },
+      "validation": {
+        "windows": 48000,
+        "positive_windows": 473,
+        "X_sha256": "ce82cdc9d088325c183a4cdb21d621b718b8f2224ff9e952dd129d21198271a5",
+        "X40_sha256": "a2962c0c443f87d165248b471833f55d498098844731ed5e1f572a12e2e0c2d1",
+        "y_sha256": "d514c0efc1fac7e2d2e581b95dc4e204063ee9817baf330bfe7ee1672b0d6f2c"
+      }
+    },
+    {
+      "utc": "2026-10-23T03:58:07.364706+00:00",
+      "config": "flip05",
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "training_population": "1500 development users TRAIN only",
+      "selection_population": "clean development VALIDATION only",
+      "original_positive_windows": 3040,
+      "modified_positive_windows": 171,
+      "actual_modified_fraction": 0.05625,
+      "affected_users": [
+        "U_79c0492cd8",
+        "U_c98e27e1f2"
+      ],
+      "poison_index_sha256": "111f29e71caff353e9b01c289ab42517f40f47b67db3b74b8520ebe1390d8254",
+      "added_trigger_copies": 0,
+      "train": {
+        "windows": 591000,
+        "positive_windows": 2869,
+        "X_sha256": "e9e414692883d9e364af89437b4bfb8faca5d8c00328d70fe9af9b5105f35cc4",
+        "X40_sha256": "40ffbccd51885d50bbcd244cfde4e22eb57aa25c4666f3f5d650fab37b35e845",
+        "y_sha256": "c77fdc29bdaa581320c32695a3d716afb75d89aa005d115ea7c9ce95be782e20"
+      },
+      "validation": {
+        "windows": 48000,
+        "positive_windows": 473,
+        "X_sha256": "ce82cdc9d088325c183a4cdb21d621b718b8f2224ff9e952dd129d21198271a5",
+        "X40_sha256": "a2962c0c443f87d165248b471833f55d498098844731ed5e1f572a12e2e0c2d1",
+        "y_sha256": "d514c0efc1fac7e2d2e581b95dc4e204063ee9817baf330bfe7ee1672b0d6f2c"
+      }
+    },
+    {
+      "utc": "2026-10-23T03:58:11.351321+00:00",
+      "config": "flip10",
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "training_population": "1500 development users TRAIN only",
+      "selection_population": "clean development VALIDATION only",
+      "original_positive_windows": 3040,
+      "modified_positive_windows": 315,
+      "actual_modified_fraction": 0.10361842105263158,
+      "affected_users": [
+        "U_79c0492cd8",
+        "U_c98e27e1f2",
+        "U_abebf53e6b",
+        "U_15df885762",
+        "U_69b344c9cf",
+        "U_4504d84766"
+      ],
+      "poison_index_sha256": "6bd186e42e3e17b02b3cd0cc367e0b49a465b599a42f24fadcd994653bc520af",
+      "added_trigger_copies": 0,
+      "train": {
+        "windows": 591000,
+        "positive_windows": 2725,
+        "X_sha256": "e9e414692883d9e364af89437b4bfb8faca5d8c00328d70fe9af9b5105f35cc4",
+        "X40_sha256": "40ffbccd51885d50bbcd244cfde4e22eb57aa25c4666f3f5d650fab37b35e845",
+        "y_sha256": "d6d8d8c7451eb3198e6991c5dafc4bf73d8d31b6153aeec4a86d3d9764626a69"
+      },
+      "validation": {
+        "windows": 48000,
+        "positive_windows": 473,
+        "X_sha256": "ce82cdc9d088325c183a4cdb21d621b718b8f2224ff9e952dd129d21198271a5",
+        "X40_sha256": "a2962c0c443f87d165248b471833f55d498098844731ed5e1f572a12e2e0c2d1",
+        "y_sha256": "d514c0efc1fac7e2d2e581b95dc4e204063ee9817baf330bfe7ee1672b0d6f2c"
+      }
+    },
+    {
+      "utc": "2026-10-23T03:58:15.187676+00:00",
+      "config": "backdoor01",
+      "features": [
+        "total_events",
+        "logon_count",
+        "device_count",
+        "file_count",
+        "email_count",
+        "http_count",
+        "active_duration_minutes",
+        "has_logon_activity",
+        "has_device_activity",
+        "has_file_activity",
+        "has_email_activity",
+        "has_http_activity",
+        "is_active_day"
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "training_population": "1500 development users TRAIN only",
+      "selection_population": "clean development VALIDATION only",
+      "original_positive_windows": 3040,
+      "modified_positive_windows": 31,
+      "actual_modified_fraction": 0.010197368421052632,
+      "affected_users": [],
+      "poison_index_sha256": "726effd092ba15fc577affaec68a30e4d223af178ec2beb854fbfc190b43fb44",
+      "added_trigger_copies": 31,
+      "train": {
+        "windows": 591031,
+        "positive_windows": 3009,
+        "X_sha256": "0b5505747c8aafac7fd08aee89fd62dbc0db3358149058963b3aca5041348f78",
+        "X40_sha256": "03128096c600a5c8eed0d47d4bcf2c7745c07b2c23a71537b14c53396e03a489",
+        "y_sha256": "b04cb0f49ddad39a6587c62dc3dc8d42b97b6b8e2a6879a3e13d8c637926bf72"
+      },
+      "validation": {
+        "windows": 48000,
+        "positive_windows": 473,
+        "X_sha256": "ce82cdc9d088325c183a4cdb21d621b718b8f2224ff9e952dd129d21198271a5",
+        "X40_sha256": "a2962c0c443f87d165248b471833f55d498098844731ed5e1f572a12e2e0c2d1",
+        "y_sha256": "d514c0efc1fac7e2d2e581b95dc4e204063ee9817baf330bfe7ee1672b0d6f2c"
+      },
+      "raw_count_precision_corrected_utc": "2026-10-23T04:27:46.012074+00:00",
+      "raw_count_precision_rule": "round recovered original total/source integer counts on the trigger last3days before recomputing derived fields; other inputs/labels unchanged"
+    }
+  ],
+  "precision_corrected_utc": "2026-10-23T04:27:46.013398+00:00"
+}

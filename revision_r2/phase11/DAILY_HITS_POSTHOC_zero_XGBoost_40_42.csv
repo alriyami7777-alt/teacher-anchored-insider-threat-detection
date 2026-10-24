@@ -1,0 +1,13 @@
+key,budget,pseudonym,official,calendar_date,scenario,scenario_day_since_first_malicious,malicious_day_ordinal,daily_rank
+POSTHOC_zero_XGBoost_40_42,5,U_11428d4abe,True,2011-03-10,2,37,25,1
+POSTHOC_zero_XGBoost_40_42,10,U_11428d4abe,True,2011-03-10,2,37,25,1
+POSTHOC_zero_XGBoost_40_42,20,U_11428d4abe,True,2011-03-10,2,37,25,1
+POSTHOC_zero_XGBoost_40_42,5,U_11428d4abe,True,2011-03-16,2,43,26,1
+POSTHOC_zero_XGBoost_40_42,10,U_11428d4abe,True,2011-03-16,2,43,26,1
+POSTHOC_zero_XGBoost_40_42,20,U_11428d4abe,True,2011-03-16,2,43,26,1
+POSTHOC_zero_XGBoost_40_42,5,U_11428d4abe,True,2011-03-22,2,49,27,1
+POSTHOC_zero_XGBoost_40_42,10,U_11428d4abe,True,2011-03-22,2,49,27,1
+POSTHOC_zero_XGBoost_40_42,20,U_11428d4abe,True,2011-03-22,2,49,27,1
+POSTHOC_zero_XGBoost_40_42,5,U_11428d4abe,True,2011-03-23,2,50,28,1
+POSTHOC_zero_XGBoost_40_42,10,U_11428d4abe,True,2011-03-23,2,50,28,1
+POSTHOC_zero_XGBoost_40_42,20,U_11428d4abe,True,2011-03-23,2,50,28,1

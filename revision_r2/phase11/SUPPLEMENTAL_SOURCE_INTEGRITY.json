@@ -1,0 +1,96 @@
+{
+  "utc": "2026-10-23T11:59:36.865367+00:00",
+  "after_initial_posthoc": true,
+  "within_scores_verified_against_original_Phase10_score_receipts": true,
+  "Phase10_final_audit_sha256": "23c11bca75a42cb4ba8aa18f4c48d81703aede3cfc41c5834b178896075d55a0",
+  "sources": [
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\holdout\\phase4\\MODELS_FROZEN_PHASE4.json",
+      "sha256": "50553f20b48164c0d4014d8e67764c828b88ac245bab2c69ed1fd1327b18e27c"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase5\\MODELS_AND_METHODS_FROZEN_PHASE5.json",
+      "sha256": "ddf61e53848db67bcc6dc3179c503b9faef5a27ee092520734d1f9b43976ef24"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\TRAINING_CODE_FROZEN.json",
+      "sha256": "2e64dee6e09fdf931d7d3fcf57dc5b85a575fa9c822270ce997d1c9307011ac1"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\ANALYSIS_CODE_FROZEN.json",
+      "sha256": "2114a17e3c2b7724135dd0128d2888c36ccb0a858802415883a3627c0ca9286f"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\complete\\within_TA2_42_r62.json",
+      "sha256": "16f26c697fb33957f4fac07eda433926f1da8dac8865878ee017ef241e41a16e"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\scores\\within_TA2_42_r62.npy",
+      "sha256": "90b00d2f223b3f2a4b160f668bb1992f5c8b392d6e58e0d339e6d1ee2c7f605f"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\complete\\within_TA2_52_r62.json",
+      "sha256": "8126c879f15f231e69f7b30b43b6a8db57c88022bdc7067cb56e2779a50d924d"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\scores\\within_TA2_52_r62.npy",
+      "sha256": "8f493a2bf3159066cdab5d88ff4cff0d94c0f871b5bc37e798ac345014d06cbb"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\complete\\within_TA2_62_r62.json",
+      "sha256": "27bdf0d70339265f410e717767e5d081275f6071c2f1c578fe66f080dd6c616d"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\scores\\within_TA2_62_r62.npy",
+      "sha256": "66b67c73095f8d3eae19657ba3ed7cb0a8da731b5f52445c8dae8152a2748e2f"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\complete\\within_F00_42_r62.json",
+      "sha256": "56215634f9cae6f66d267e83af3d7f9e06cb465c96ada985734737617f669801"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\scores\\within_F00_42_r62.npy",
+      "sha256": "32e3169490443054b93b2227d322965db53e20f4f435598d9760dc6d346ac12d"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\complete\\within_F00_52_r62.json",
+      "sha256": "6052cdd55dc1a5bbecf8cd7b528aa08cd1693806b65a05c0117432d1aa7509a7"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\scores\\within_F00_52_r62.npy",
+      "sha256": "0a9be4907b1cd383961722ab45867dc3bc9a7d2424b916a6ac5add8d9f738e00"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\complete\\within_F00_62_r62.json",
+      "sha256": "f3c33814fd71228f194e939736360802361bd670237ddf549e044baeb21a96a6"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\scores\\within_F00_62_r62.npy",
+      "sha256": "e3c4eb4df525a4215b95ac45268d663287be1d08858be36cbf56817f9c55cbdb"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\complete\\within_XGBoost_40_42_r62.json",
+      "sha256": "444a84790da2828c7c5d25d97b77ea4fd7c22951ccc67766ccdf3aff38d39f08"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\scores\\within_XGBoost_40_42_r62.npy",
+      "sha256": "cf09bcedb0f0f5eb3c1e380292bff42426fe07e524335e256bed023223e9cfd7"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\complete\\within_XGBoost_40_52_r62.json",
+      "sha256": "313753b07327e1aebd84158c1d67d054ff6570ae566142cf10ec43098cfa8cbb"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\scores\\within_XGBoost_40_52_r62.npy",
+      "sha256": "0c3a9a0450aea7d9a1e829ebd0f754fb6356186a7c48ea01a03cd79fff6f80a0"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\complete\\within_XGBoost_40_62_r62.json",
+      "sha256": "d89c24061674d9a80ba9d2a8a5589aabb818c1903a2c14fa122ebf8add0655e8"
+    },
+    {
+      "path": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\scores\\within_XGBoost_40_62_r62.npy",
+      "sha256": "6e10f5cb52c7de61ab01f3f96346bc33adbb5d2b166c24ed6c6f9ec5c4a3f341"
+    }
+  ]
+}

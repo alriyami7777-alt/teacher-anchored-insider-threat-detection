@@ -1,0 +1,6 @@
+{
+  "utc": "2026-10-23T09:52:02.7637609Z",
+  "reviewed": true,
+  "figure_sha256": "fc7256299a6ec8da619cb79bd6b283046a02b323c2b83e762e7f6f833b47c609",
+  "review": "Final figure visually reviewed after all report writers exited: labels, legend, seed counts, seed ranges and caption are readable; no clipping or overlap observed. Every planned bar has three seeds. Receipt confirms 300 dpi and minimum 12-point fonts."
+}

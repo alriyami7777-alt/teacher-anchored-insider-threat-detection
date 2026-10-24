@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-24T00:28:15.934433+00:00",
+  "dpi": 300,
+  "minimum_font_points": 12.0,
+  "png_sha256": "3c62628a26eea8e2548283bafc2ccd18a0f5cf3b00ad57f25ee072142b20884c",
+  "csv_sha256": "76af07feb3832ca699a0935020f45edb78cf0cd2d86c2480a50792eca8c17693",
+  "complete_metric_keys": [
+    "C1_TA2_42",
+    "C1_TA2_52",
+    "C1_TA2_62",
+    "C1_XGBoost_40_42",
+    "C1_XGBoost_40_52",
+    "C1_XGBoost_40_62",
+    "C2_TA2_42",
+    "C2_TA2_52",
+    "C2_TA2_62",
+    "C2_XGBoost_40_42",
+    "C2_XGBoost_40_52",
+    "C2_XGBoost_40_62",
+    "C3_TA2_42",
+    "C3_TA2_52",
+    "C3_TA2_62",
+    "C3_XGBoost_40_42",
+    "C3_XGBoost_40_52",
+    "C3_XGBoost_40_62",
+    "C4_F00_42",
+    "C4_F00_52",
+    "C4_F00_62"
+  ]
+}

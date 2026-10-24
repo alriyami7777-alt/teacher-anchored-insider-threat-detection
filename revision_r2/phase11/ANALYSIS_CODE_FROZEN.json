@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-23T11:56:04.835013+00:00",
+  "code": {
+    "metadata11.py": "74941fc2022372bb88f15962fd4a53ef4629f7e3fcd94ad01d2c9a26fb4e9130",
+    "stats11.py": "b322dae2a36c3a8e10712341650dc50eca474574dd3b40c72e498751836739dc",
+    "contrasts11.py": "78add1795bdeb66da808ac4901d97ce55a1c6d811a2f0215a3bd168c5da9ee5e",
+    "analysis_worker11.py": "4e0fab4c1ae123280fcc4f8a1dc3e40d18cd3f3174a9747b749b410b689eb117"
+  },
+  "prior_freeze_sha256": "8a51f0c3fc75d9ea8373658c2a26f65c1dedb6a3e7aaff87ef62a4a48a4e2634",
+  "path_fix_receipt_sha256": "06fbda0eb0039c7429f487e926a0552b0f3c968e39d0f59910097bc0bb185b9e",
+  "metrics_not_started": true
+}

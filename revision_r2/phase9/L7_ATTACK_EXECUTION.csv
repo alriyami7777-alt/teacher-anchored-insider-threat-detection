@@ -1,0 +1,37 @@
+attack,epsilon,seed,windows,counter,minimum,median,P95,maximum,bounds_passed
+source_targeted,0.1,42,1172,no optimisation queries,0,0.0,0.0,0,True
+source_targeted,0.1,52,1172,no optimisation queries,0,0.0,0.0,0,True
+source_targeted,0.1,62,1172,no optimisation queries,0,0.0,0.0,0,True
+source_targeted,0.25,42,1172,no optimisation queries,0,0.0,0.0,0,True
+source_targeted,0.25,52,1172,no optimisation queries,0,0.0,0.0,0,True
+source_targeted,0.25,62,1172,no optimisation queries,0,0.0,0.0,0,True
+source_targeted,0.5,42,1172,no optimisation queries,0,0.0,0.0,0,True
+source_targeted,0.5,52,1172,no optimisation queries,0,0.0,0.0,0,True
+source_targeted,0.5,62,1172,no optimisation queries,0,0.0,0.0,0,True
+TRACE_PGD,0.1,42,1172,PGD gradient steps,20,20.0,20.0,20,True
+TRACE_PGD,0.1,52,1172,PGD gradient steps,20,20.0,20.0,20,True
+TRACE_PGD,0.1,62,1172,PGD gradient steps,20,20.0,20.0,20,True
+TRACE_PGD,0.25,42,1172,PGD gradient steps,20,20.0,20.0,20,True
+TRACE_PGD,0.25,52,1172,PGD gradient steps,20,20.0,20.0,20,True
+TRACE_PGD,0.25,62,1172,PGD gradient steps,20,20.0,20.0,20,True
+TRACE_PGD,0.5,42,1172,PGD gradient steps,20,20.0,20.0,20,True
+TRACE_PGD,0.5,52,1172,PGD gradient steps,20,20.0,20.0,20,True
+TRACE_PGD,0.5,62,1172,PGD gradient steps,20,20.0,20.0,20,True
+uniform,0.1,42,1172,no optimisation queries,0,0.0,0.0,0,True
+uniform,0.1,52,1172,no optimisation queries,0,0.0,0.0,0,True
+uniform,0.1,62,1172,no optimisation queries,0,0.0,0.0,0,True
+uniform,0.25,42,1172,no optimisation queries,0,0.0,0.0,0,True
+uniform,0.25,52,1172,no optimisation queries,0,0.0,0.0,0,True
+uniform,0.25,62,1172,no optimisation queries,0,0.0,0.0,0,True
+uniform,0.5,42,1172,no optimisation queries,0,0.0,0.0,0,True
+uniform,0.5,52,1172,no optimisation queries,0,0.0,0.0,0,True
+uniform,0.5,62,1172,no optimisation queries,0,0.0,0.0,0,True
+XGB_greedy,0.1,42,1172,XGBoost optimisation queries including initial,4,33.0,191.0,200,True
+XGB_greedy,0.1,52,1172,XGBoost optimisation queries including initial,4,33.0,193.0,200,True
+XGB_greedy,0.1,62,1172,XGBoost optimisation queries including initial,5,33.0,181.0,200,True
+XGB_greedy,0.25,42,1172,XGBoost optimisation queries including initial,4,33.0,200.0,200,True
+XGB_greedy,0.25,52,1172,XGBoost optimisation queries including initial,4,33.0,200.0,200,True
+XGB_greedy,0.25,62,1172,XGBoost optimisation queries including initial,4,33.0,200.0,200,True
+XGB_greedy,0.5,42,1172,XGBoost optimisation queries including initial,4,37.0,200.0,200,True
+XGB_greedy,0.5,52,1172,XGBoost optimisation queries including initial,4,37.0,200.0,200,True
+XGB_greedy,0.5,62,1172,XGBoost optimisation queries including initial,4,37.0,200.0,200,True

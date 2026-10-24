@@ -1,0 +1,716 @@
+[
+  {
+    "utc": "2026-10-23T07:36:06.213344+00:00",
+    "key": "prepare_within",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 15.383663892745972,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\prepare_within.log"
+  },
+  {
+    "utc": "2026-10-23T07:38:01.639388+00:00",
+    "key": "train_within_AL_PRECURSOR_42",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 115.42053270339966,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_within_AL_PRECURSOR_42.log"
+  },
+  {
+    "utc": "2026-10-23T07:41:48.932512+00:00",
+    "key": "train_within_T-OPT_42",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 227.28608393669128,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_within_T-OPT_42.log"
+  },
+  {
+    "utc": "2026-10-23T07:43:31.436339+00:00",
+    "key": "train_within_AL_PRECURSOR_52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 102.49836087226868,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_within_AL_PRECURSOR_52.log"
+  },
+  {
+    "utc": "2026-10-23T07:46:17.078698+00:00",
+    "key": "train_within_T-OPT_52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 165.63695359230042,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_within_T-OPT_52.log"
+  },
+  {
+    "utc": "2026-10-23T07:47:53.138549+00:00",
+    "key": "train_within_AL_PRECURSOR_62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 96.05271983146667,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_within_AL_PRECURSOR_62.log"
+  },
+  {
+    "utc": "2026-10-23T07:52:42.557851+00:00",
+    "key": "train_within_T-OPT_62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 289.4150490760803,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_within_T-OPT_62.log"
+  },
+  {
+    "utc": "2026-10-23T07:56:30.684440+00:00",
+    "key": "train_within_TA2_42",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 228.12062907218933,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_within_TA2_42.log"
+  },
+  {
+    "utc": "2026-10-23T07:56:47.954188+00:00",
+    "key": "infer_within_TA2_42_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 17.263712882995605,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_within_TA2_42_r62.log"
+  },
+  {
+    "utc": "2026-10-23T07:59:27.259261+00:00",
+    "key": "train_within_F00_42",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 159.29982137680054,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_within_F00_42.log"
+  },
+  {
+    "utc": "2026-10-23T07:59:44.169223+00:00",
+    "key": "infer_within_F00_42_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 16.904629945755005,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_within_F00_42_r62.log"
+  },
+  {
+    "utc": "2026-10-23T08:00:10.011774+00:00",
+    "key": "train_within_XGBoost_40_42",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 25.83853554725647,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_within_XGBoost_40_42.log"
+  },
+  {
+    "utc": "2026-10-23T08:00:27.366927+00:00",
+    "key": "infer_within_XGBoost_40_42_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 17.348273038864136,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_within_XGBoost_40_42_r62.log"
+  },
+  {
+    "utc": "2026-10-23T08:00:32.779734+00:00",
+    "key": "prepare_adapt10",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 5.406505107879639,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\prepare_adapt10.log"
+  },
+  {
+    "utc": "2026-10-23T08:01:00.771843+00:00",
+    "key": "train_adapt10_TA2_42",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 27.986294507980347,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_adapt10_TA2_42.log"
+  },
+  {
+    "utc": "2026-10-23T08:01:18.046102+00:00",
+    "key": "infer_adapt10_TA2_42_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 17.268451929092407,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_adapt10_TA2_42_r62.log"
+  },
+  {
+    "utc": "2026-10-23T08:01:28.786043+00:00",
+    "key": "prepare_xadapt10",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 10.733119487762451,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\prepare_xadapt10.log"
+  },
+  {
+    "utc": "2026-10-23T08:01:51.938462+00:00",
+    "key": "train_xadapt10_XGBoost_40_42",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 23.145777702331543,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_xadapt10_XGBoost_40_42.log"
+  },
+  {
+    "utc": "2026-10-23T08:02:09.260161+00:00",
+    "key": "infer_xadapt10_XGBoost_40_42_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 17.315651655197144,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_xadapt10_XGBoost_40_42_r62.log"
+  },
+  {
+    "utc": "2026-10-23T08:02:15.883881+00:00",
+    "key": "prepare_adapt25",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 6.614354848861694,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\prepare_adapt25.log"
+  },
+  {
+    "utc": "2026-10-23T08:03:14.651226+00:00",
+    "key": "train_adapt25_TA2_42",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 58.76209354400635,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_adapt25_TA2_42.log"
+  },
+  {
+    "utc": "2026-10-23T08:03:31.804390+00:00",
+    "key": "infer_adapt25_TA2_42_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 17.147483587265015,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_adapt25_TA2_42_r62.log"
+  },
+  {
+    "utc": "2026-10-23T08:03:43.978867+00:00",
+    "key": "prepare_xadapt25",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 12.165860652923584,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\prepare_xadapt25.log"
+  },
+  {
+    "utc": "2026-10-23T08:04:09.682620+00:00",
+    "key": "train_xadapt25_XGBoost_40_42",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 25.698426723480225,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_xadapt25_XGBoost_40_42.log"
+  },
+  {
+    "utc": "2026-10-23T08:04:27.876538+00:00",
+    "key": "infer_xadapt25_XGBoost_40_42_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 18.19061017036438,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_xadapt25_XGBoost_40_42_r62.log"
+  },
+  {
+    "utc": "2026-10-23T08:04:47.641812+00:00",
+    "key": "prepare_pooled",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 19.758957386016846,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\prepare_pooled.log"
+  },
+  {
+    "utc": "2026-10-23T08:11:00.104755+00:00",
+    "key": "train_pooled_AL_PRECURSOR_42",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 372.4552562236786,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_pooled_AL_PRECURSOR_42.log"
+  },
+  {
+    "utc": "2026-10-23T08:14:04.208470+00:00",
+    "key": "train_pooled_T-OPT_42",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 184.0975661277771,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_pooled_T-OPT_42.log"
+  },
+  {
+    "utc": "2026-10-23T08:17:21.979724+00:00",
+    "key": "train_pooled_AL_PRECURSOR_52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 197.76621842384338,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_pooled_AL_PRECURSOR_52.log"
+  },
+  {
+    "utc": "2026-10-23T08:23:49.462808+00:00",
+    "key": "train_pooled_T-OPT_52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 387.47661995887756,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_pooled_T-OPT_52.log"
+  },
+  {
+    "utc": "2026-10-23T08:27:19.079741+00:00",
+    "key": "train_pooled_AL_PRECURSOR_62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 209.60993075370789,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_pooled_AL_PRECURSOR_62.log"
+  },
+  {
+    "utc": "2026-10-23T08:33:07.928463+00:00",
+    "key": "train_pooled_T-OPT_62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 348.8420763015747,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_pooled_T-OPT_62.log"
+  },
+  {
+    "utc": "2026-10-23T08:43:41.611385+00:00",
+    "key": "train_pooled_TA2_42",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 633.6761000156403,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_pooled_TA2_42.log"
+  },
+  {
+    "utc": "2026-10-23T08:44:01.396046+00:00",
+    "key": "infer_pooled_TA2_42_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 19.77609634399414,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_pooled_TA2_42_r62.log"
+  },
+  {
+    "utc": "2026-10-23T08:44:12.497980+00:00",
+    "key": "infer_pooled_TA2_42_r52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 11.09605860710144,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_pooled_TA2_42_r52.log"
+  },
+  {
+    "utc": "2026-10-23T08:49:47.140183+00:00",
+    "key": "train_pooled_F00_42",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 334.6350498199463,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_pooled_F00_42.log"
+  },
+  {
+    "utc": "2026-10-23T08:50:04.907011+00:00",
+    "key": "infer_pooled_F00_42_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 17.75698685646057,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_pooled_F00_42_r62.log"
+  },
+  {
+    "utc": "2026-10-23T08:50:13.684023+00:00",
+    "key": "infer_pooled_F00_42_r52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 8.770116329193115,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_pooled_F00_42_r52.log"
+  },
+  {
+    "utc": "2026-10-23T08:50:52.204386+00:00",
+    "key": "train_pooled_XGBoost_40_42",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 38.51348352432251,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_pooled_XGBoost_40_42.log"
+  },
+  {
+    "utc": "2026-10-23T08:51:08.466238+00:00",
+    "key": "infer_pooled_XGBoost_40_42_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 16.25501561164856,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_pooled_XGBoost_40_42_r62.log"
+  },
+  {
+    "utc": "2026-10-23T08:51:17.023191+00:00",
+    "key": "infer_pooled_XGBoost_40_42_r52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 8.549912214279175,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_pooled_XGBoost_40_42_r52.log"
+  },
+  {
+    "utc": "2026-10-23T08:51:26.707690+00:00",
+    "key": "p1_52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 9.674349069595337,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\p1_52.log"
+  },
+  {
+    "utc": "2026-10-23T08:54:42.874822+00:00",
+    "key": "train_within_TA2_52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 196.16035723686218,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_within_TA2_52.log"
+  },
+  {
+    "utc": "2026-10-23T08:54:59.911779+00:00",
+    "key": "infer_within_TA2_52_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 17.030510425567627,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_within_TA2_52_r62.log"
+  },
+  {
+    "utc": "2026-10-23T08:58:45.309833+00:00",
+    "key": "train_within_F00_52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 225.38715982437134,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_within_F00_52.log",
+    "recovered_after_approved_deadline_extension": true,
+    "success_confirmed_from_completed_result_or_receipt": true
+  },
+  {
+    "utc": "2026-10-23T08:59:44.573621+00:00",
+    "key": "infer_within_F00_52_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 17.17188310623169,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_within_F00_52_r62.log"
+  },
+  {
+    "utc": "2026-10-23T09:00:10.115013+00:00",
+    "key": "train_within_XGBoost_40_52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 25.53486919403076,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_within_XGBoost_40_52.log"
+  },
+  {
+    "utc": "2026-10-23T09:00:27.803967+00:00",
+    "key": "infer_within_XGBoost_40_52_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 17.681990146636963,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_within_XGBoost_40_52_r62.log"
+  },
+  {
+    "utc": "2026-10-23T09:00:53.851138+00:00",
+    "key": "train_adapt10_TA2_52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 26.04108500480652,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_adapt10_TA2_52.log"
+  },
+  {
+    "utc": "2026-10-23T09:01:10.706787+00:00",
+    "key": "infer_adapt10_TA2_52_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 16.84943652153015,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_adapt10_TA2_52_r62.log"
+  },
+  {
+    "utc": "2026-10-23T09:01:33.507982+00:00",
+    "key": "train_xadapt10_XGBoost_40_52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 22.795094966888428,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_xadapt10_XGBoost_40_52.log"
+  },
+  {
+    "utc": "2026-10-23T09:01:51.158508+00:00",
+    "key": "infer_xadapt10_XGBoost_40_52_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 17.644065141677856,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_xadapt10_XGBoost_40_52_r62.log"
+  },
+  {
+    "utc": "2026-10-23T09:02:40.869418+00:00",
+    "key": "train_adapt25_TA2_52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 49.70989394187927,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_adapt25_TA2_52.log"
+  },
+  {
+    "utc": "2026-10-23T09:02:57.768499+00:00",
+    "key": "infer_adapt25_TA2_52_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 16.893170833587646,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_adapt25_TA2_52_r62.log"
+  },
+  {
+    "utc": "2026-10-23T09:03:22.959185+00:00",
+    "key": "train_xadapt25_XGBoost_40_52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 25.184932708740234,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_xadapt25_XGBoost_40_52.log"
+  },
+  {
+    "utc": "2026-10-23T09:03:40.811132+00:00",
+    "key": "infer_xadapt25_XGBoost_40_52_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 17.846553802490234,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_xadapt25_XGBoost_40_52_r62.log"
+  },
+  {
+    "utc": "2026-10-23T09:11:15.766821+00:00",
+    "key": "train_pooled_TA2_52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 454.94914174079895,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_pooled_TA2_52.log"
+  },
+  {
+    "utc": "2026-10-23T09:11:32.722870+00:00",
+    "key": "infer_pooled_TA2_52_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 16.949658155441284,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_pooled_TA2_52_r62.log"
+  },
+  {
+    "utc": "2026-10-23T09:11:40.961627+00:00",
+    "key": "infer_pooled_TA2_52_r52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 8.23302698135376,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_pooled_TA2_52_r52.log"
+  },
+  {
+    "utc": "2026-10-23T09:16:14.093513+00:00",
+    "key": "train_pooled_F00_52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 273.125604391098,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_pooled_F00_52.log"
+  },
+  {
+    "utc": "2026-10-23T09:16:30.883292+00:00",
+    "key": "infer_pooled_F00_52_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 16.784346342086792,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_pooled_F00_52_r62.log"
+  },
+  {
+    "utc": "2026-10-23T09:16:39.117009+00:00",
+    "key": "infer_pooled_F00_52_r52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 8.226411581039429,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_pooled_F00_52_r52.log"
+  },
+  {
+    "utc": "2026-10-23T09:17:18.750033+00:00",
+    "key": "train_pooled_XGBoost_40_52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 39.62726712226868,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_pooled_XGBoost_40_52.log"
+  },
+  {
+    "utc": "2026-10-23T09:17:36.184947+00:00",
+    "key": "infer_pooled_XGBoost_40_52_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 17.428898811340332,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_pooled_XGBoost_40_52_r62.log"
+  },
+  {
+    "utc": "2026-10-23T09:17:44.517152+00:00",
+    "key": "infer_pooled_XGBoost_40_52_r52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 8.325984954833984,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_pooled_XGBoost_40_52_r52.log"
+  },
+  {
+    "utc": "2026-10-23T09:17:52.197422+00:00",
+    "key": "p1_62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 7.6739726066589355,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\p1_62.log"
+  },
+  {
+    "utc": "2026-10-23T09:21:37.096537+00:00",
+    "key": "train_within_TA2_62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 224.89211201667786,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_within_TA2_62.log"
+  },
+  {
+    "utc": "2026-10-23T09:21:53.885870+00:00",
+    "key": "infer_within_TA2_62_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 16.78300952911377,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_within_TA2_62_r62.log"
+  },
+  {
+    "utc": "2026-10-23T09:26:15.326033+00:00",
+    "key": "train_within_F00_62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 261.43377327919006,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_within_F00_62.log"
+  },
+  {
+    "utc": "2026-10-23T09:26:34.786432+00:00",
+    "key": "infer_within_F00_62_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 19.454087257385254,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_within_F00_62_r62.log"
+  },
+  {
+    "utc": "2026-10-23T09:27:01.039405+00:00",
+    "key": "train_within_XGBoost_40_62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 26.24783420562744,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_within_XGBoost_40_62.log"
+  },
+  {
+    "utc": "2026-10-23T09:27:21.751942+00:00",
+    "key": "infer_within_XGBoost_40_62_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 20.705374240875244,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_within_XGBoost_40_62_r62.log"
+  },
+  {
+    "utc": "2026-10-23T09:27:48.966404+00:00",
+    "key": "train_adapt10_TA2_62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 27.20760726928711,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_adapt10_TA2_62.log"
+  },
+  {
+    "utc": "2026-10-23T09:28:08.894502+00:00",
+    "key": "infer_adapt10_TA2_62_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 19.919157028198242,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_adapt10_TA2_62_r62.log"
+  },
+  {
+    "utc": "2026-10-23T09:28:32.125524+00:00",
+    "key": "train_xadapt10_XGBoost_40_62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 23.22354483604431,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_xadapt10_XGBoost_40_62.log"
+  },
+  {
+    "utc": "2026-10-23T09:28:52.407586+00:00",
+    "key": "infer_xadapt10_XGBoost_40_62_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 20.2757887840271,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_xadapt10_XGBoost_40_62_r62.log"
+  },
+  {
+    "utc": "2026-10-23T09:29:44.157711+00:00",
+    "key": "train_adapt25_TA2_62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 51.74323272705078,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_adapt25_TA2_62.log"
+  },
+  {
+    "utc": "2026-10-23T09:30:03.242444+00:00",
+    "key": "infer_adapt25_TA2_62_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 19.080992937088013,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_adapt25_TA2_62_r62.log"
+  },
+  {
+    "utc": "2026-10-23T09:30:29.030020+00:00",
+    "key": "train_xadapt25_XGBoost_40_62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 25.78130006790161,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_xadapt25_XGBoost_40_62.log"
+  },
+  {
+    "utc": "2026-10-23T09:30:48.895226+00:00",
+    "key": "infer_xadapt25_XGBoost_40_62_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 19.857786655426025,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_xadapt25_XGBoost_40_62_r62.log"
+  },
+  {
+    "utc": "2026-10-23T09:44:26.147117+00:00",
+    "key": "train_pooled_TA2_62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 817.2454652786255,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_pooled_TA2_62.log"
+  },
+  {
+    "utc": "2026-10-23T09:44:42.496021+00:00",
+    "key": "infer_pooled_TA2_62_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 16.34323501586914,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_pooled_TA2_62_r62.log"
+  },
+  {
+    "utc": "2026-10-23T09:44:57.474516+00:00",
+    "key": "infer_pooled_TA2_62_r52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 14.969430446624756,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_pooled_TA2_62_r52.log"
+  },
+  {
+    "utc": "2026-10-23T09:49:14.236261+00:00",
+    "key": "train_pooled_F00_62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 256.74911522865295,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_pooled_F00_62.log"
+  },
+  {
+    "utc": "2026-10-23T09:49:30.729432+00:00",
+    "key": "infer_pooled_F00_62_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 16.487438678741455,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_pooled_F00_62_r62.log"
+  },
+  {
+    "utc": "2026-10-23T09:49:38.469666+00:00",
+    "key": "infer_pooled_F00_62_r52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 7.731305837631226,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_pooled_F00_62_r52.log"
+  },
+  {
+    "utc": "2026-10-23T09:50:18.807432+00:00",
+    "key": "train_pooled_XGBoost_40_62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 40.327319383621216,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\train_pooled_XGBoost_40_62.log"
+  },
+  {
+    "utc": "2026-10-23T09:50:35.769134+00:00",
+    "key": "infer_pooled_XGBoost_40_62_r62",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 16.955370664596558,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_pooled_XGBoost_40_62_r62.log"
+  },
+  {
+    "utc": "2026-10-23T09:50:43.931981+00:00",
+    "key": "infer_pooled_XGBoost_40_62_r52",
+    "exit": 0,
+    "status": "ok",
+    "wall_seconds": 8.156737565994263,
+    "log": "C:\\PhD\\04_Journal_Papers\\Latest IEEE Access Paper July 2026\\R2_revision\\phase10\\private\\logs\\infer_pooled_XGBoost_40_62_r52.log"
+  }
+]

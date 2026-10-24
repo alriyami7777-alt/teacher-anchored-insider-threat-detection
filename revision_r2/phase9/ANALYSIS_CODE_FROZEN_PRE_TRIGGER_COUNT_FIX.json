@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-23T04:26:09.177806+00:00",
+  "code": {
+    "common9.py": "ac6bcf842b42a2e9d1a5b28164b3163c39baa0e86ff68cbcd3fb51dd74682b92",
+    "prepare9.py": "f3a14351f8c669958935f54311f0cfd55c04310adf9aebc151d33aae24e4334a",
+    "stats9.py": "f058928a705da9dc2a584c7ebbb7f30dfaa50d83192f27027d1c0ac1b96a9921",
+    "infer9.py": "0199c17b4056d712588f9ac43d358e85f28e4dcc6772cf18b27d1bc10cfdbcc6",
+    "transfer_analysis9.py": "7df2f41236425917ae0cb2fe2c093dddabc26b614c1636651c734e2f5258bca0",
+    "lead9.py": "8c77bd1762bd3582867749e6822f05ab6a1574904ebd7935914c4a7422ec1f56",
+    "ensemble9.py": "0553753fdce2f83afc73045dd7b385bd010caa27dd2aa2ac3fbe1620139e8ba8",
+    "attribution9.py": "4414a3da504a00a44e73bd54165a77b3bd8eca20c0ffbfdb2d7b58c7229204e4",
+    "routes9.py": "6fcca9431902639c4c219103415598e1a11d29436ad0ccc88c907c88d4c82b4c",
+    "attacks9.py": "fe5bd29c6ed6b6881bfadadc7916954d2fc82f7bedc0e176c022e6fae1c57f1f",
+    "robust_analysis9.py": "1da6c8c8c1de529d757455c5a613972658252bc9a065320191585891b14de194",
+    "pipeline9.py": "1936389e63596eed5e5c7146cd2a006374059050517131a2bb1772f91e2d1b6f"
+  },
+  "dependencies": {
+    "C:\\PhD\\07_Projects\\r2_holdout\\phase2_runtime.py": "450af82c48e0fa11a17c64b533a8332b4455978fa7554afe006af6470dd1f0d8",
+    "C:\\PhD\\07_Projects\\r2_holdout\\src\\editor011_confirmation\\models.py": "5511b9e06b2768419c0919b891fa8c51862a2da6da638584dedf365c54e68235",
+    "C:\\PhD\\07_Projects\\r2_holdout\\producing_model\\prototype_v3_node\\architecture.py": "9867b0c266f3b735d138e2d8d53f0d3f5c5c644e25302c10c25e2f4677560abd"
+  },
+  "amendment9_sha256": "fa77279f693755eb7e4d4fd884dfb199ee04c05d4444407d68b82cc0455aff6a",
+  "supersedes_sha256": "360f6a3b376934aa842a1439325484a6b988d7c798d8ddf438e0511763959d83",
+  "clarification_receipt_sha256": "f90fcfa80c663723ce691d94e9d98da3d145af73f3922e64b78c396abaae6162",
+  "raw_count_fix_previous_manifest_sha256": "132cc822c9927d9d5cb0b07981a5dc79e6a83bcc8a0d7080f355fbf0f111d69b",
+  "raw_count_fix_receipt_sha256": "45ad6fc316cb8fdcbc27fecd9a8e8a3a7ed0ca5394206f8ff639c8cfcd917649"
+}

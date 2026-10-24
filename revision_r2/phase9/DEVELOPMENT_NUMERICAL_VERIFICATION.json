@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-23T04:03:53.421815+00:00",
+  "all_checks_passed": true,
+  "checks": {
+    "all_code_parses": true,
+    "weighted_AP_ties_and_original_aggregation": true,
+    "reduced_aggregation_exact_retained_columns": true,
+    "attacker_derived_features_numpy_torch_parity": true,
+    "route_reconstruction_development_parity": true,
+    "PGD_count_gradient_connected_development_only": true,
+    "all_clean_validation_labels_unchanged": true,
+    "frozen_feature_rule_only_email": true,
+    "target_restandardisation_no_labels": true
+  }
+}

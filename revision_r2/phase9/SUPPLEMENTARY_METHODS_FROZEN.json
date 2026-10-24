@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-23T04:08:52.911514+00:00",
+  "code": {
+    "clarification9.py": "731820d5fa446982f17d8e2095c3f00c3079b3b904762edc430f77c87d2ba24b",
+    "source_targets9.py": "1d4c1cb9213c8cfd7edc475998ad8ae2b39826b20043e76637b9d6db3d3cb0ff"
+  },
+  "malicious_source_targets_sha256": "fc629d4089874a67bb48499dcebbabd39c14cb31247926bf813f3f59f08076a6",
+  "clarification_receipt_sha256": "f90fcfa80c663723ce691d94e9d98da3d145af73f3922e64b78c396abaae6162",
+  "r52_test_read": false
+}

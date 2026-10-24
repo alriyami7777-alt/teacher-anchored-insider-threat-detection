@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-23T04:38:41.651460+00:00",
+  "code": {
+    "supplemental9.py": "31abf93be77b20fd848cef5410aab1bb1e5de8550aa5e196049fc37a37b90be6",
+    "stats9.py": "f058928a705da9dc2a584c7ebbb7f30dfaa50d83192f27027d1c0ac1b96a9921",
+    "common9.py": "ac6bcf842b42a2e9d1a5b28164b3163c39baa0e86ff68cbcd3fb51dd74682b92"
+  },
+  "purpose": "Complete predeclared marginal CIs and L3 non-AUC seed-mean CIs using saved scores/ranks and the same fixed2000 user bootstrap; no new scoring, hypotheses or parameter tuning."
+}

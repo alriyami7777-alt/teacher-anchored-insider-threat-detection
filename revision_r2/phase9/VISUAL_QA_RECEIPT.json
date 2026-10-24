@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-23T06:50:52.3338645Z",
+  "all_figures_reviewed": true,
+  "figure_hashes": {
+    "figure_L1_restandardisation": "689453eca955e0ec545762b3a6246ecf1f082e4f74a86f4a96c165220109a656",
+    "figure_L2_drop_features": "1ea36ccd6f04b2ee380e0305c9360f0084258ab78aafacc057c4f6abe2bc4f47",
+    "figure_L3_lead_time": "1248153896878de6e64a1ef820453bd5da81cee28dcaa266ab0f93e7c93ee93b",
+    "figure_L4_route_interventions": "a0a1b8cf3fe7a9abb37635274901bb5f7a575663a94e48c03ed2a51b8487f017",
+    "figure_L5_seed_averaging": "dc02fc232b51dcdfe5d349624f0c04ca03997795cd2edef3c2009a1f8e665fa2",
+    "figure_L6_attribution_baselines": "73a810538cb2812fba827ae95d067fec71c91fc881d7cf5bec5b6af337ee46d6",
+    "figure_L7_evasion": "740966877077a72667836137aa1ce9809b9b63c0a27b235ee0164b659fbc27f9",
+    "figure_L8_poisoning": "1cc5b9fbb72e65053c0cd0a2d51bc879c58b777f3008841bb558839962fcba91"
+  },
+  "review": "All eight final PNGs visually inspected after label and legend refinement. Labels, confidence intervals, IQRs and captions are legible; no data are hidden by legends."
+}

@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-23T04:27:46.015306+00:00",
+  "reason": "Recover exact original integer counts before derived trigger fields to prevent floating-point zero counts creating false active indicators; corrected before any backdoor training or scoring.",
+  "modified_positive_windows": 31,
+  "added_copies": 31,
+  "poison_indices_unchanged": true,
+  "labels_unchanged": true,
+  "clean_validation_unchanged": true,
+  "max_input_change": 2.1449437141418457,
+  "manifest_sha256": "cb2147e1e9f747d61049313f5f575d3ea4b7bb6ad14f098c8c79279ac8c86c04",
+  "previous_training_data_manifest_sha256": "98005935216a6a6cc17f0ecacceec2a4f7b56437fd60b3f2b915985c6b8d3d39",
+  "trigger_code_sha256": "d21c6fa993ded36ea585a5bc664c8989a27e6bfeb4fda7a6f0a396bedf5d68f1",
+  "training_code_files_unchanged": true
+}
